@@ -1,0 +1,1 @@
+nconvert -replace_ex 127 0 0 255 255 255 0 -replace_ex 0 0 127 0 170 255 0 -o png -clevel 9 

@@ -1,0 +1,82 @@
+///Cutscene Intro - Scroll
+There'll be no more viewing tonight.
+
+Ah, the Scroll of Shurmak...
+
+bearer of sad news these
+many years ago.
+
+And so it was that Ganon, Lord of
+Darkness, had taken over Tolemac.
+
+He had stolen the treasured Celestial
+Signs and captured Link!
+
+///Cutscene Intro - Crystal
+A brave warrior would have to be
+found to face this evil monster.
+
+And so I found this champion of
+strength and courage!
+
+///Cutscene Intro - Zelda
+It is you, Princess Zelda!
+With this magic pendant, go forth.
+
+And with each sign you gather,
+so too will you gain knowledge.
+
+Find your magic wand.
+
+Use it wisely and listen to
+your allies along the way!
+
+Go now, my Princess. Restore the
+Celestial Signs and rescue Link!
+
+///Shurmak - Introduction
+I am Shurmak, your guide.
+
+I have known you since
+you were a child.
+
+You were given a difficult challenge.
+
+You will have to go far and
+overcome great danger.
+
+Stay calm, and use your knowledge
+and strength to defeat your enemies.
+
+Remember what you learn along
+the way, and persevere.
+
+Go now, to the one who has a
+bed but never sleeps...
+
+where by its side the red willow weeps,
+and to its mouth that never speaks.
+
+///Shurmak - Northeast of the spawn
+Zelda! Zelda! Do not roam unprotected!
+Look nearby for something to aid you.
+
+///Shurmak - Southeast of the spawn
+Zelda, do not be hasty! There is
+something you must have nearby here.
+
+Exploration is the key to your success.
+
+///Glebb - Empty Pitcher
+Young Princess, please attend me.
+
+A traveler of kind intentions
+has found me at last!
+
+I am collapsed with thirst and dryness.
+
+///Glebb - Filled Pitcher
+Bless you, Princess! You have saved
+the life of a weary old woman!
+
+I offer you these treasures.

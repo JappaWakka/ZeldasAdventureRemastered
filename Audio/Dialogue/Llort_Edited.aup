@@ -1,0 +1,209 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Llort_Edited_data" version="1.3.0" audacityversion="2.4.2" sel0="11.7492970522" sel1="11.7492970522" vpos="0" h="0.0000000000" zoom="21.5332031250" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="Llort_01_ShrineEntrance" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="296351">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800692.au" len="262144" min="-0.793417" max="0.930025" rms="0.102454"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0800ec4.au" len="34207" min="-0.329898" max="0.322837" rms="0.052792"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_01_ShrineEntrance" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="296351">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800dce.au" len="262144" min="-0.793423" max="0.930035" rms="0.102454"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e08001a6.au" len="34207" min="-0.329914" max="0.322863" rms="0.052792"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_02_Taunt" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="380639">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800266.au" len="262144" min="-0.951422" max="0.878765" rms="0.100348"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0800c2e.au" len="118495" min="-0.629062" max="0.636425" rms="0.086396"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_02_Taunt" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="380639">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800bea.au" len="262144" min="-0.951397" max="0.878771" rms="0.100348"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0800c9e.au" len="118495" min="-0.629087" max="0.636397" rms="0.086396"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_03_BattleStart" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="260271">
+				<waveblock start="0">
+					<simpleblockfile filename="e08008a6.au" len="260271" min="-0.900657" max="1.00032" rms="0.100678"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_03_BattleStart" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="260271">
+				<waveblock start="0">
+					<simpleblockfile filename="e080015e.au" len="260271" min="-0.900657" max="1.00032" rms="0.100679"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_04_BattleTaunt1" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="221439">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800a43.au" len="221439" min="-0.698192" max="0.826969" rms="0.091469"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_04_BattleTaunt1" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="221439">
+				<waveblock start="0">
+					<simpleblockfile filename="e08001f2.au" len="221439" min="-0.698172" max="0.826953" rms="0.091469"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_05_BattleTaunt2" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="342276">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800938.au" len="262144" min="-0.551077" max="0.563715" rms="0.064094"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0800606.au" len="80132" min="-0.040725" max="0.062011" rms="0.005886"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_05_BattleTaunt2" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="342276">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800023.au" len="262144" min="-0.551078" max="0.563709" rms="0.064094"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e08009db.au" len="80132" min="-0.04074" max="0.062007" rms="0.005886"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_06_BattleTaunt3" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="93465">
+				<waveblock start="0">
+					<simpleblockfile filename="e08005ad.au" len="93465" min="-0.568765" max="0.532633" rms="0.071134"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_06_BattleTaunt3" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="93465">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800ce0.au" len="93465" min="-0.568777" max="0.532614" rms="0.071134"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_07_BattleTaunt4" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="126213">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800d8b.au" len="126213" min="-0.870918" max="0.816206" rms="0.111525"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_07_BattleTaunt4" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="126213">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800e00.au" len="126213" min="-0.870893" max="0.816206" rms="0.111525"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_08_BattleTaunt5" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="165841">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800d66.au" len="165841" min="-0.892368" max="1.000204" rms="0.114631"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_08_BattleTaunt5" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="165841">
+				<waveblock start="0">
+					<simpleblockfile filename="e0800c5a.au" len="165841" min="-0.892354" max="1.000201" rms="0.114631"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_09_Defeated" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="393465">
+				<waveblock start="0">
+					<simpleblockfile filename="e08001ab.au" len="262144" min="-0.774439" max="0.793945" rms="0.120542"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e08000f8.au" len="131321" min="-0.464544" max="0.442845" rms="0.091632"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Llort_09_Defeated" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="393465">
+				<waveblock start="0">
+					<simpleblockfile filename="e080065a.au" len="262144" min="-0.774469" max="0.793895" rms="0.120542"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0800b6e.au" len="131321" min="-0.464562" max="0.442866" rms="0.091632"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

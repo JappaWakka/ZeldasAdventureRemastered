@@ -1,0 +1,337 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Dialogue1_data" version="1.3.0" audacityversion="2.4.2" sel0="14.2910469314" sel1="14.2910469314" vpos="0" h="0.0000000000" zoom="42.8240144292" rate="18900.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags/>
+	<wavetrack name="Dialogue1" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="3165743">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808343.au" len="161191" min="-0.560085" max="0.620577" rms="0.066847"/>
+				</waveblock>
+				<waveblock start="161191">
+					<simpleblockfile filename="e0808781.au" len="161192" min="-0.487389" max="0.437799" rms="0.054522"/>
+				</waveblock>
+				<waveblock start="322383">
+					<simpleblockfile filename="e0808444.au" len="262144" min="-0.574283" max="0.524001" rms="0.04993"/>
+				</waveblock>
+				<waveblock start="584527">
+					<simpleblockfile filename="e0808449.au" len="262144" min="-0.55021" max="0.624963" rms="0.072892"/>
+				</waveblock>
+				<waveblock start="846671">
+					<simpleblockfile filename="e080882a.au" len="262144" min="-0.417027" max="0.552375" rms="0.058225"/>
+				</waveblock>
+				<waveblock start="1108815">
+					<simpleblockfile filename="e0808c60.au" len="262144" min="-0.484364" max="0.707946" rms="0.065025"/>
+				</waveblock>
+				<waveblock start="1370959">
+					<simpleblockfile filename="e080853f.au" len="262144" min="-0.314834" max="0.349695" rms="0.040359"/>
+				</waveblock>
+				<waveblock start="1633103">
+					<simpleblockfile filename="e08082f6.au" len="262144" min="-0.526244" max="0.332256" rms="0.052457"/>
+				</waveblock>
+				<waveblock start="1895247">
+					<simpleblockfile filename="e0808e4e.au" len="262144" min="-0.555634" max="0.462413" rms="0.055968"/>
+				</waveblock>
+				<waveblock start="2157391">
+					<simpleblockfile filename="e0808e53.au" len="262144" min="-0.5576" max="0.654655" rms="0.065257"/>
+				</waveblock>
+				<waveblock start="2419535">
+					<simpleblockfile filename="e080818e.au" len="262144" min="-0.587292" max="0.674623" rms="0.084567"/>
+				</waveblock>
+				<waveblock start="2681679">
+					<simpleblockfile filename="e08089b1.au" len="262144" min="-0.458994" max="0.606854" rms="0.043838"/>
+				</waveblock>
+				<waveblock start="2943823">
+					<simpleblockfile filename="e08080ad.au" len="221920" min="-0.463964" max="0.673651" rms="0.047269"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialog_07x34y_Llort" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="136816">
+				<waveblock start="0">
+					<simpleblockfile filename="e08086f5.au" len="136816" min="-0.707946" max="0.676046" rms="0.109607"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfFire_Blacksmith_01" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="99080">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808e34.au" len="99080" min="-0.623943" max="0.707946" rms="0.067426"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfFire_Blacksmith_02" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="100184">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808ec6.au" len="100184" min="-0.707946" max="0.663344" rms="0.071251"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfFire_Blacksmith_03_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="29064">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808465.au" len="29064" min="-0.586074" max="0.707946" rms="0.079718"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialog_24x_ShrineOfDestiny_Malmord" isSelected="1" height="150" minimized="0" channel="2" linked="0" mute="0" solo="1" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="216919">
+				<waveblock start="0">
+					<simpleblockfile filename="e08086cc.au" len="132158" min="-0.61794" max="0.597394" rms="0.101829"/>
+				</waveblock>
+				<waveblock start="132158">
+					<simpleblockfile filename="e08081f6.au" len="84761" min="-0.707924" max="0.707946" rms="0.100922"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt02_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="234131">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808cd2.au" len="169660" min="-0.707946" max="0.695394" rms="0.069526"/>
+				</waveblock>
+				<waveblock start="169660">
+					<simpleblockfile filename="e08084cb.au" len="64471" min="-0.364332" max="0.321126" rms="0.062007"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt03_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="282679">
+				<waveblock start="0">
+					<simpleblockfile filename="e080825e.au" len="191274" min="-0.707946" max="0.59906" rms="0.076014"/>
+				</waveblock>
+				<waveblock start="191274">
+					<simpleblockfile filename="e08083bb.au" len="91405" min="-0.580567" max="0.580415" rms="0.068187"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt04_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="229277">
+				<waveblock start="0">
+					<simpleblockfile filename="e08089b8.au" len="165664" min="-0.699149" max="0.707946" rms="0.094265"/>
+				</waveblock>
+				<waveblock start="165664">
+					<simpleblockfile filename="e0808884.au" len="63613" min="-0.494238" max="0.620401" rms="0.082277"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt05" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="343584">
+				<waveblock start="0">
+					<simpleblockfile filename="e08084de.au" len="198531" min="-0.707946" max="0.606053" rms="0.074818"/>
+				</waveblock>
+				<waveblock start="198531">
+					<simpleblockfile filename="e0808c87.au" len="145053" min="-0.592765" max="0.525248" rms="0.075184"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt06_Battle" isSelected="0" height="152" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="296361">
+				<waveblock start="0">
+					<simpleblockfile filename="e080829c.au" len="189617" min="-0.707946" max="0.650044" rms="0.093537"/>
+				</waveblock>
+				<waveblock start="189617">
+					<simpleblockfile filename="e080878b.au" len="106744" min="-0.575819" max="0.42219" rms="0.066347"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt07_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="122913">
+				<waveblock start="0">
+					<simpleblockfile filename="e080801b.au" len="122913" min="-0.707946" max="0.645475" rms="0.08473"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt08" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="50975">
+				<waveblock start="0">
+					<simpleblockfile filename="e08081a5.au" len="50975" min="-0.690691" max="0.707946" rms="0.080547"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt09" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="71718">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808f6c.au" len="71718" min="-0.707946" max="0.664181" rms="0.111914"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfDestiny_Malmord_Taunt10" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="84517">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a9e.au" len="84517" min="-0.707946" max="0.70029" rms="0.085052"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_Canvula_Goblin_Mean_WhatYouSeek" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="136816">
+				<waveblock start="0">
+					<simpleblockfile filename="e080803b.au" len="136816" min="-0.534419" max="0.707946" rms="0.058195"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_Canvula_Goblin_Mean_Busy" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="100184">
+				<waveblock start="0">
+					<simpleblockfile filename="e080837a.au" len="100184" min="-0.682841" max="0.707946" rms="0.072295"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfStrength_Ursore_Taunt01" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="183157">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808870.au" len="183157" min="-0.707946" max="0.535397" rms="0.077548"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfStrength_Ursore_Taunt02_RedKnight" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="182274">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808493.au" len="159360" min="-0.707946" max="0.611627" rms="0.081107"/>
+				</waveblock>
+				<waveblock start="159360">
+					<simpleblockfile filename="e08081c2.au" len="22914" min="-0.011327" max="0.010367" rms="0.001783"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfStrength_Ursore_Taunt03_BlueGreenKnight" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="306953">
+				<waveblock start="0">
+					<simpleblockfile filename="e080857a.au" len="136005" min="-0.707946" max="0.475931" rms="0.060338"/>
+				</waveblock>
+				<waveblock start="136005">
+					<simpleblockfile filename="e080805d.au" len="170948" min="-0.696098" max="0.53694" rms="0.066131"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfStrength_Ursore_Taunt04_Battle" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="283893">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808e13.au" len="167623" min="-0.707946" max="0.449601" rms="0.065398"/>
+				</waveblock>
+				<waveblock start="167623">
+					<simpleblockfile filename="e0808056.au" len="116270" min="-0.590445" max="0.66944" rms="0.070569"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfStrength_Ursore_Taunt_05_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="168813">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808bc9.au" len="156638" min="-0.707946" max="0.521806" rms="0.06705"/>
+				</waveblock>
+				<waveblock start="156638">
+					<simpleblockfile filename="e0808d76.au" len="12175" min="-0.001975" max="0.001697" rms="0.000421"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfStrength_Ursore_Taunt_06_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="166496">
+				<waveblock start="0">
+					<simpleblockfile filename="e080843f.au" len="145125" min="-0.707946" max="0.647978" rms="0.063959"/>
+				</waveblock>
+				<waveblock start="145125">
+					<simpleblockfile filename="e0808cd6.au" len="21371" min="-0.082977" max="0.090577" rms="0.009576"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfStrength_Ursore_Taunt_07_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="229828">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808306.au" len="229828" min="-0.707946" max="0.650042" rms="0.090712"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue_ShrineOfStrength_Ursore_Defeated_Unused" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="267701">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808eb9.au" len="221912" min="-0.707946" max="0.610452" rms="0.070752"/>
+				</waveblock>
+				<waveblock start="221912">
+					<simpleblockfile filename="e0808132.au" len="45789" min="-0.418735" max="0.228094" rms="0.038099"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Dialogue1" isSelected="0" height="150" minimized="0" channel="2" linked="0" mute="1" solo="0" rate="18900" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="192425">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808ac5.au" len="192425" min="-0.636109" max="0.678232" rms="0.1056"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

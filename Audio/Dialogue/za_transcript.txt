@@ -1,0 +1,263 @@
+#region Cutscenes
+	sub_en_Cutscene_GameIntro
+	{
+		"Gaspra: There'll be no more viewing tonight."
+		"Gaspra: Ah, the Scroll of Shurmak..."
+		"bearer of sad news these many years ago."
+		"And so it was that Ganon..."
+		"Lord of Darkness, had taken over Tolemac."
+		"He had stolen the treasured celestial signs and captured Link!"
+		"A brave warrior would have to be found to face this evil monster."
+		"Gaspra: And so I've found this champion of strength and courage."
+		"It is you, Princess Zelda. With this magic pendant, go forth."
+		"And with each sign you gather so too will you gain knowledge."
+		"Find your magic wand..."
+		"use it wisely, and listen to your allies along the way."
+		"Go now, my princess. Restore the celestial signs and rescue Link."
+	}
+#endregion
+
+#region Overworld_VisionHenge
+	sub_en_VisionHenge_03_Shurmak_NoWand
+	{
+		"Shurmak: Zelda! Zelda! Do not roam unprotected."
+		"Look nearby for something to aid you."
+	}
+
+	sub_en_VisionHenge_04_Shurmak_Introduction
+	{
+		"Shurmak: I am Shurmak, your guide."
+		"I have known you since you were a child."
+		"You were given a difficult challenge."
+		"You will have to go far and overcome great danger."
+		"Stay calm and use your knowledge and strength to defeat your enemies."
+		"Remember what you learn along the way, and persevere."
+		"Go now to the one who has a bed but never sleeps..."
+		"where by its side the red willow weeps..."
+		"and to its mouth that never speaks."
+	}
+
+	sub_en_VisionHenge_09_Shurmak_NoWand
+	{
+		"Shurmak: Zelda, do not be hasty!"
+		"There is something you must have nearby here."
+		"Exploration is the key to your success."
+	}
+#endregion
+
+#region Overworld_PlainOfAndor
+	sub_en_PlainOfAndor_13_BeggarWoman_BeforePay
+	{
+		"Beggar Woman: Oh, fair princess..."
+		"pity a suffering creature exiled from Great Wimbish in the north!"
+		"I ask only enough for a single meal for my children..."
+		"who hunger and are chilled by the wind."
+	}
+	sub_en_PlainOfAndor_13_BeggarWoman_AfterPay
+	{
+		"Beggar Woman: You will be blessed a thousand times..."
+		"a thousand, fair princess!"
+		Inventory_AddSpell("Firestorm")
+	}
+	sub_en_PlainOfAndor_20_GlebbTheThirsty_BeforeFill
+	{
+		"Glebb the Thirsty: Young princess, please attend me."
+		"A traveler of kind intentions has found me at last!"
+		"I am collapsed with thirst and dryness."
+	}
+
+	sub_en_PlainOfAndor_20_GlebbTheThirsty_AfterFill
+	{
+		"Glebb the Thirsty: Bless you, Princess!"
+		"You have saved the life of a weary old woman!"
+		"I offer you these treasures."
+		Inventory_AddTreasure("VialOfWind")
+	}
+#endregion
+
+#region Interior_MobilinsHeadInn
+	sub_en_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_BeforeBuy
+	{
+		"Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!"
+		"You look dry, have a cup of Andor cider on the house."
+		"I have a spell of Calm to sell, but it will cost you one-hundred rubies."
+	}
+	sub_en_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_AfterBuy
+	{
+		"Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!"
+		"You look dry, have a cup of Andor cider on the house."
+	}
+	sub_en_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_PurchaseCalmSpell
+	{
+		"Lothar the Innkeeper: That is wise beyond your years."
+		"The spell of Calm will help you when you need it most, use it well."
+		"And look after yourself on the lonely Plain of Andor."
+	}
+	sub_en_PlainOfAndor_MobilinsHeadInn_WomanAtTable
+	{
+		"Woman at Table: You look like an honest maid. Sit a moment."
+		"It is said those who go deep into the earth learn to overcome the sins of grief."
+		"That may be true, but I do know this: a candle and a silver key can bring you bliss."
+		"Hurry on now, lass, time's a wasting!"
+	}
+	sub_en_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary_Complain
+	{
+		"Krebb the Weary: Why spend a whole lifetime being defeated like me?"
+		"Get it over with quick. Go home, give up."
+	}
+	sub_en_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary_AfterWait
+	{
+		"You're patient. I can see you're not one to surrender."
+		"All right, take this dagger from me."
+		"It may do you more service than it ever did me."
+	}
+	sub_en_PlainOfAndor_MobilinsHeadInn_DefeatedSoldier
+	{
+		"Defeated Soldier: I am so exhausted from my travels."
+		"If only I had known to cross the chasm rift with my ladder..."
+		"it would have saved me months!"
+	}
+#endregion
+
+#region ForestOfOgham
+	sub_en_ForestOfOgham_02_ForestTrader_BeforeBuy
+	{
+		
+		"Forest Trader: Come here, bright young lady. I have a wonderful bargain for you!"
+		"Take some Autumn Herb for free, then look around. There's plenty to buy."
+	}
+	sub_en_ForestOfOgham_02_ForestTrader_Purchase
+	{
+		Forest Trader: That was a wise purchase, young princess!
+	
+	Henid: Come close, Princess; I'll tell you a great secret! Hear me whisper: Trust no one with hair! Huh huh huh! Don't even trust me! Hah hah! I've stolen one of your lives! Hee hee hee hee hee!
+
+Shurmak: Beware the evils of greed. Act quickly; think on your feet and you will be rewarded.
+Llort: Do not come in here! You are not wanted. I am Llort, and this is my shrine; all mine!
+South Sardak: Hey dee hee, ho dee bee! You're no threat to us down here!
+South Sardak: I've failed in my mission! Llort, this enemy is coming!
+Magical Treasure Chest: Oh! Oh! What do we have here!? A human person coming close! Wow, what a great event! Hoo Hoo!
+Middle Sardak: Huh? I... I thought I was alone here! Llort, an enemy is in your cave!
+Middle Sardak: Llort, I couldn't stop her! Get ready to fight!
+Llort: I said this is my cave. Mine! This is the Shrine of Rock and I am Llort! Go away! Take nothing else! It's all mine!
+Northern Sardak: Hey! Who goes there!? Aren't you an enemy of my boss Llort? You can't come in here.
+Northern Sardak: Hey, Llort! Watch out! She's coming!
+Llort: You've been taking my things. Put them back! Don't touch anything!
+Gaspra: Congratulations, Zelda. You have prevailed. Hurry now; you must travel to a place of festival. Rumor tells it is found in the great forest to the north. And remember, all is not what it seems.
+Toadstool: Hoo hoo hoo hoo! Those Mobilins out there are so slow and stupid, they're still trying to eat their soup with a fork! Huh huh huh huh huh huh!
+Farmer: Hello there, Miss! Watch how you go out in the meadows; they're full of Leevers and Tektites this time of year!
+Alice: Great Wimbish is such a peculiar little town. The shops set on Upper Street have anything you could wish for, and if you can't find it there, you're sure to stumble across it in the market square.
+Yvonne: Hello, Zelda. My name is Yvonne. You look like a music lover, too. Music can soothe a savage beast. I believe Shurmak has graced you with her friendship. She helped me once, so I am going to help you. Listen to this! Heh heh! The flute can be used to calm the savage hiss of a snake.
+Twins (Eric and Ian): Hello, Zelda. I'm Eric and this is Ian... Well, what do you mean? I'm Eric, I've always been.  No you're not, I'm Eric!
+Twins' Father: Hello, Zelda! Welcome to my home. I'm the twins' father, and even I don't know which twin is which. Still, it is good of you to come and visit. My name is Zelda and you must be the father. No, wait! That can't be true; you just came in. You must be Zelda!
+Shaggy Woman: For thirty suns my husband and I ran the great locksmith forge for Warbane. Then Gannon came and pressed Warbane into service for his own evil plan. The forge was closed. Warbane built a fortified retreat of his own, somewhere off in the Forest of Canvula to the north. We were left with nothing but these trinkets to sell; perhaps they will be of use to you in the underground. I can not give them up cheap.
+Lounger: Hi there! Don't worry about the dog, he won't bite. I wish he did bite, then there'd be a little excitement here in Great Wimbish. Nothing ever happens here! When people do come here, they're even more boring. Everybody's dull.
+Lounger: Ohh... I don't want to see you again.
+Madame Kriggle: At last! Madame Kriggle is approached by an innocent who wishes to grow in the use of magic and spells. My old friend Shurmak has told me of your coming; I have awaited you many moons and suns. It is important to remember that magic adornments will defend thee from many beings who will attack you with magic. You may purchase my turquoise ring or my jade amulet to raise your defenses.
+Madame Kriggle: A wise choice for setting out! Come and see me again!
+Shopkeeper: Hello, little one! I hope I can be of help to you. Did you see my dog out on Upper Street? How did he smell?
+Knave: With his nose, of course! [laughter]
+Knave: Is a shrine a thing to be taken lightly? No, and a candle is needed to light a shrine! [laughter]
+Knave: [laughter] We may joke to pass the time, Princess, but we are all troubled about the future of Tolemac. You must seek out the tablets and save us! [laughter]
+Smithy: Who goes there!? Oh, it's a young girl. Don't touch anything! People steal me blind; I know you all hate me! What did I ever do to any of you!? I give an honest bargain and I grind the coal into rubies. I stay open late and work my fingers to the bone. Do any of you appreciate it? No!
+Farmer Ghost: Far away, one of Gannon's allies lives in a world of water. The entrance is hidden, and you may never find it if you fear the touch of falling water. You can cross any fjord in Skotness River with the Red Boots.
+Farmer Ghost: Stay back! This splendid farm is all mine. Isn’t it wonderful? I have worked this land for three-hundred years.
+Waldensop: Good morn, lady. A noble person such as yourself on foot-fend? If it's rest you seek, you'll get precious little comfort in this thieves' den, I'll tell you.
+Waldensop: Be careful if you go inside, milady! Some people in these parts would rob you same as look at you, they would.
+Waldensop: I would like to give you a feather as a sign of my affection. This will take you to new heights!
+Lodgekeeper: I need to make more Bumbleberry Tea, that's for certain. What!? Oh, I'm sorry, but the lodge is full. You are welcome to rest here before you head out into the Forest of Torian.
+Sir Basil: Hail, Princess Zelda, friend of Shurmak! I am Sir Basil of Tolemac and Shurmak has sent me to assist you.
+Shurmak: You seem tired now, Zelda. Leave off the contest and come back another day.
+Shurmak: Look beyond illusion to conquer the evil Pasquinade. Deception is all around you.
+Pasquinade: Look to your heart. Look to your dreams. You'll find that nothing is what it seems. Hm hm hm hm hm hm!
+Pasquinade: Welcome, my lovely! Come, sit, and rest. But first let me give you one small test.
+Gaspra: Sweet victory, but your journey has barely begun, my child. Beware of dangerous waters that await you. And watch for the mists high in the mountains.
+Shurmak: Hello, Zelda! I see you've found your own way to my retreat. You already know about magic and you have been doing well, so there's nothing more I can do at the moment. I will always be there for you. Good luck.
+Yalzan the Stern: Ten rubies gets you through the pass, young lady, no less.
+Yelena: It's good of you to come see me. I was the one who was guiding Link across Tolemac when we were spotted by one of Gannon's spies. I did what I could to stand with Link, but there were too many of them and he was taken. I wish I could come with you, but as you can see, I have not  recovered yet and there is no way I could survive the North Desert. Listen closely, and I will tell you what I can. You must heed both Shurmak and Gaspra; there is some envy between them, but it is a small thing and they both fight for the right in different ways.
+Faust: Hello there, young lady! I am Faust the Boatman and for two rubies I offer a tour to Mystery Island. What's on Mystery Island? If I told you, it wouldn't be a mystery.
+Hooded Woman: Zelda, we pray you walk softly here and bring no enemies on us. We have built our village on the Barachno Marsh as a refuge to avoid Gannon's fellows. The dome house is a home of our philosopher, Sirram Bew, whose logic is not always easy to follow.
+Sirram Bew: You are now in the presence of one whose feet have often touched the earth and whose eyes have seen what they have seen. Beware of all those beings who can harm thee, for they are dangerous, but be a friend of all who are true friends for they may aid thee.
+"Giant Swamp Rat": Hi there, Zelda. It's good to see you. I hope you like the swamp. We like it here because we know Gannon hates it!
+Gwynla: Heh heh! You look tired, my lady. I have something you might be able to use. It creates a noise. Use it when you must.
+Lonlyn: Greetings! I am Lonlyn, and I am a farmer. I have heard of you and your quest. I am a man of little wealth, but all that I have I give you!
+Squire Grip: Welcome to our fair village, my princess! We have heard of your coming. Please accept this token of welcome!
+Merribal: Let all around who hear my song / know that Zelda brave and strong / Will rid this land of every sadness And Gannon too, that prince of badness / Gannon too, that prince of badness / There was a princess young and brave / who rid this land of varlet and knave / and to the north she should now go / To find what she seeks and wants to know / To find what she seeks and wants to know
+Ethera: What foolish human comes this way? She who tarries here never leaves. Genie!
+Thabul the Mystic: Something you seek is not of this world, but above it. Defeat the woman of the air. It is to the east you must go.
+Bitterbeck: Come in! Sit with me! Warm yourself by the fire! Bitterbeck: I know it can get colder than Gannon's heart up here, but I've endured worse. Once, when I was in the Forest of Torian... No, it was... it was the Forest of Canvula. No, no, it cannot be true, for Canvula wood is always hot and did I say... I did say it was cold, right? Well, then it was the Forest of Torian.
+Toatobar: What do you want with me?! Cannot someone other-worthy help you? Even if I do help you, you cannot for a moment believe you shall defeat the mighty Gannon, do you?
+Myntoll the Jaded: I am called Myntoll, and I know who you are. Do you not grow bored with your quest? I certainly would.
+Myntoll the Jaded: You again? I suppose you want rubies or information or directions to a shrine or whatnot. Really, it is all too dull!
+Nimonee: I know you have come far, but I have nothing to give you.
+Aviyan: You can never catch me! Ha ha har rah!
+Aviyan: So, bold one, you challenge me? Can you be serious?
+Aviyan: Here are some feathered friends for you to play with! Rarrwk!
+Gaspra: You're a brave princess, indeed. Your quest continues to the northwest, to a place of burial where destiny can be challenged. Remember nothing is written, Zelda; you alone control your fate no matter how loud the voices of doom may be.
+Malmord: Fate works in the light or dark, for princesses or fools, In my shrine, you have to play by my rules!  Ha ha ha ha ha!
+Malmord: Zelda, I am your destiny!  I weep because of your quest.  I measure and I cut what you lose I deem what is fate and what is best, and I leave you no power to choose!  Ha!
+Malmord: So you found Malmord's home at last!  Now touch your wand to the stone to the right.  For I am Malmord, who controls future and past!  And I will make us even in magic and might!
+Malmord: Let us lock in combat! As you will see, time is running out!
+Gaspra: Bravo! Once again you have proven you are worthy of your quest. Hurry, now! Waters of healing and renewal await you. Remember, to look for the great sea island to the south.
+Retired Captain: Welcome, my landlocked friend. Southport is definitely the place to come if you need to set to sea.
+Foreign Woman: Imsouri, little one? You look weary... [indecipherable gibberish]
+Beachcomber: You have to beware on this great south sea. There are monsters and there are great waves that can smash even the largest vessels.  Hetari!
+Beachcomber: Ebsuri, uh, hello there! Did you see the shipwreck up the beach? It happened many storms ago, and I've collected some of the things from the wreck here. I will sell them to you if you wish.
+Blueclad Seafarer: We're too busy to help you now, Miss. Find another seafarer!
+Toobar of the Eyepatch: Imsouri! You're a small thing to be lost in a rough place like this! You won't learn anything from any of these; they've been to sea too long and their brains are scrambled! Mine seem to be okay.
+Seafarer: Imsouri! If you wish to cross the sea, bring us twenty rubies and a vial of wind. The offshore wind has died down, and you must bring your own breeze.
+Shurmak: A strong spirit leads the way to the troubled waters that lie ahead. Stay above water and you will conquer the evil Agwanda.
+Agwanda: I am Agwanda, and this is my realm! I control the waters of life and renewal. I will dry up even you tears, little one!
+South Kelpie: I am the South Kelpie! It is my honor to fight you for my mistress, the great Agwanda!
+Agwanda: I am Agwanda. I dam up the streams; I draw the water underground; I gather up even the droplets of dew and deny them to my enemies. You are trespassing here!
+North Kelpie: I am the North Kelpie, guardian of the whirlpool that lies beyond!
+East Kelpie: I'm the East Kelpie. I bar the way to my mistress, the wonderful Agwanda!
+Agwanda: I know you've come to steal the Water of Life! You shall not have it while I have substance to fill my form. Begone!
+Agwanda: You think you've beaten me, but water takes many shapes and I'll be back!
+Gaspra: You have overcome great trials, but evil still looms over Tolemac, Zelda. Stay true to your journey; that will bring you closer to young Link, who lies captive to Gannon. I hear tell of a vast fortress of strength and power. Go forward bravely, and you will be victorious.
+Anti-Gannon Soldiers: Hail Zelda! We have heard much of you. We retreated here to learn the arts of rebellion against Gannon.
+Quarry Man: Welcome to my quarry, young one. I don't see many folks these days. Ever since Gannon devastated the land there's been so little construction no one comes to me for quarry stones. I am told there is wealth in this large lump of coal, but I know not how to claim it. You may take it away with you.
+Sir Basil: Ah, Zelda! It's me, Sir Basil. You've fared well so far on your difficult journey. You will shortly be meeting Ursoar. Use well your knowledge of the broadsword.
+Shurmak: Physical strength is the next test for you, Zelda. Prepare for the dangerous series of contests just ahead.
+Stall Keeper #1: Come over here, Princess! I have things of beauty to please your eye! The red ribbon costs 50 rubies, but it has a history beyond price. Come again, you deserve many objects of beauty!
+Water Bearer: Hello, young one. You look like a friendly face. It's been many a year since I've sat down with a young woman like you to talk over my troubles. My children have all moved on to other areas of Hyrule, and I don't get to see them very much at all. Did you know that Morgan has been seeing the maid Vanity? I don't think it's at all suitable. Am I boring you? No matter; you look like you don't have much to do. It's certainly odd weather we've been having, don't you think? My, this water jug is becoming heavy! I wish my husband had installed running water in our house, but it was just too expensive; you know how things are these days. I guess I better be moving on. Have a good day and watch out for the Tektites. Sirrah!
+Water Bearer: It's wise of you to halt a spell with me, young one. I know a little of what lies concealed in the realm of combat. You must gain skill in every weapon before meeting the mighty Ursoar.
+Ursoar: Rawr! A fool has entered my realm! Rawr!
+Thirsty Child: Please, miss, I'm so thirsty! Would you draw me some water?
+Thirsty Child: You have a kind heart; my guardian's rewarded you with a gold neck-lace to increase your magic defense. May you use it well.
+Female Trainer: Welcome, Zelda. I've been waiting for you for many suns. I am here to help you learn the skills of the archer. You must learn to judge the flight of your arrow the way a hawk controls his dive. Study the pace of the bears before you let fly your arrow.
+Carny Barker: Hello there, little one! Step up and buy a ticket to the jousting field where the bravest and strongest knights in Tolemac test their skills! Who knows, beautiful, you may get a chance yourself!
+Stall Keeper #2: Dare you ride in the joust against the Red Knight? You are so young! But take up the lance, if you will.
+Red Knight: Hold tight, little enemy! You have something stolen from me and I am strong!
+Ursoar: Rawr! Who has harmed my Red Knight? I will not forget. Rawr!
+Stall Keeper #3: What have we here? A princess, wandering the field of honor on her own. Come over here, and I'll sell you a ticket to the Field of the Broadsword. Watch yourself inside; the swords are heavier than you are. Twenty rubies! Get your ticket here! Just take a step through turnstile to the east and keep your head down.
+Blue Knight: A thin waif like thee? Hah! Can you even lift a broadsword?
+Green Knight: One as small as thee put aflight my brother!? This I must test!
+Ursoar: Hrm...  Rrrr! Something does put my Blue Knight to shame and defeated my Green Knight! This will be punished! Rawr!
+Ursoar: Rar Raarrr! So, we meet at last! You are small and weak! You're no more than a bite for a warrior such as me!
+Gaspra: A shout of triumph in the teeth of the impossible. You're drawing close, but your journey will carry you far to the northwest where many say there's a rumble in the earth and a glow of fire.
+Goblin: Not everyone here is so ill of temper; take this as a token of welcome!
+Goblin: Can't you see I'm a busy Goblin? What you seek is far away to the east. Begone!
+Ryco: Ah! A customer at last! I was beginning to think I was the only person in the entire forest of Canvula! What is your fancy today?
+Shurmak: Your commitment to your quest is tested here with the ruthless Warbane. Only your passion to rescue Link and save Tolemac will defeat his fiery battles.
+Blacksmith: Begone! I, Blacksmith, have my work to do! No time for intruders!
+Blacksmith: Feel the tip of my spears and tell me they are the finest in Tolemac!
+Warbane: Further you will not go! You have not the fire in the belly to do else but obey me!
+Warbane: Let no one say my welcome is not a warm one. Ha ha ha ha ha ha! Do you still want my celestial sign, timid one?
+Warbane: The sign is rightly my own. No slip of a girl can take it from me! Mine! Only I have the fire in my heart to keep it.
+Gaspra: Zelda, life is always one order more horrifying than you expect. The great evil Gannon spoiled your victory. Make haste! Do not let him out of your sight.
+Gaspra: Princess Zelda, you've succeeded! The victory has brought peace and light back to Tolemac. Your courage and strength will not be forgotten. For now, your work is done. Off you go to celebrate Link's return. But first, remember, lessons of the heart, mercy, and human kindness prevail above all else. Farewell, young princess!
+
+//Cut Content
+Shurmak: I am Shurmak... your guide. I have brought you here to teach you the uses of the magic arts. You have already learned to use a simple magic attack with your wand, but some of Gannon's terrible allies can resist this attack. They can also reply with powerful magic weapons.
+Shurmak: You must learn to add new spells to your wand - these can attack some enemies that your wand is now powerless against. I will show you. Take up the Leather Book in the corner.
+Shurmak: Now go into your Satchel of Possessions and add the Book to your attacking wand. Use your new spell when there is no fire.
+Shurmak: You learn well, little one. There are many magic spells you can acquire for your wand. Each one increases its power based on the word, so the spells are always found in books. You will have to learn which enemies they can attack.
+Shurmak: You must also learn about magic defenses. These can defend against many magic attacks. Take up the Opal Amulet you see, and add it to your possessions.
+Shurmak: Your defenses against magic attack can be increased by adding magic ornaments. These will be contained in things you can wear on your body, like amulets and rings and bracelets. You will have to learn which magic attack they defend against.
+Shurmak: You now have one extra spell of attack in your Leather Book, and one extra spell of defense in the Opal Amulet. Look for others in your travels, and go well. I will send you back now to where I found you, but I will be watching over you when I can... and I suppose Gaspra will be watching as well. Go well, little one, and find Link.
+
+Beggar Woman: Please... I'm hungry!
+Beggar Woman: You must learn charity before you may become a true princess!
+Beggar Woman: A curse on you for your haste and wrath! You will rue the day you drove me off with your wand!
+Beggar Woman: May you never see the red willow by the cave!

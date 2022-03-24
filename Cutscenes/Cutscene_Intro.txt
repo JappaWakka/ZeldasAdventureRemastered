@@ -1,0 +1,16 @@
+﻿function Subtitle_Cutscene_Intro(VideoPosition)
+{
+	{start: 37.318, end: 39.505, text: "There'll be no more viewing tonight."}
+	{start: 43.229, end: 45.911, text: "*Thunder*"}
+	{start: 56.667, end: 59.817, text: "Ah, the Scroll of Shurmak..."}
+	{start: 59.842, end: 62.448, text: "bearer of sad news these many years ago."}
+	{start: 65.156, end: 70.599, text: "And so it was that Ganon, Lord of Darkness, had taken over Tolemac."}
+	{start: 70.885, end: 75.130, text: "He had stolen the treasured Celestial Signs and captured Link!"}
+	{start: 75.964, end: 80.911, text: "A brave warrior would have to be found to face this evil monster."}
+	{start: 85.781, end: 92.057, text: "*Magic sounds*"}
+	{start: 94.453, end: 98.958, text: "And so I found this champion of strength and courage!"}
+	{start: 99.197, end: 104.934, text: "It is you, Princess Zelda! With this magic pendant, go forth..."}
+	{start: 104.959, end: 109.320, text: "and with each sign you gather, so too will you gain knowledge."}
+	{start: 109.834, end: 111.619, text: "Find your magic wand."}
+	{start: 112.099, end: 116.228, text: "Use it wisely and listen to your allies along the way!"}
+	{start: 116,814, end: 123.075, text: "Go now, my Princess. Restore the Celestial Signs and rescue Link!"}
