@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Solids",
-    "path": "folders/Objects/Solids.yy",
+    "name": "VisionHenge",
+    "path": "folders/Objects/Solids/Overworld/VisionHenge.yy",
   },
   "resourceVersion": "1.0",
   "name": "Solid_VisionHenge_01",

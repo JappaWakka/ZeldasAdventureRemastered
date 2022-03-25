@@ -57,7 +57,7 @@
 	{
 		"Beggar Woman: You will be blessed a thousand times..."
 		"a thousand, fair princess!"
-		Inventory_AddSpell("Firestorm")
+		Spawn Spell : Firestorm
 	}
 	sub_en_PlainOfAndor_20_GlebbTheThirsty_BeforeFill
 	{
@@ -71,7 +71,7 @@
 		"Glebb the Thirsty: Bless you, Princess!"
 		"You have saved the life of a weary old woman!"
 		"I offer you these treasures."
-		Inventory_AddTreasure("VialOfWind")
+		Spawn Treasure: VialOfWind
 	}
 #endregion
 

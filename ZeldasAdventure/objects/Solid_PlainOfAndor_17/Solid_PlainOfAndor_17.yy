@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Solids",
-    "path": "folders/Objects/Solids.yy",
+    "name": "PlainOfAndor",
+    "path": "folders/Objects/Solids/Overworld/PlainOfAndor.yy",
   },
   "resourceVersion": "1.0",
   "name": "Solid_PlainOfAndor_17",

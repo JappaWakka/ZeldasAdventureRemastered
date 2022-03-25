@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Solids",
-    "path": "folders/Objects/Solids.yy",
+    "name": "ForestOfOgham",
+    "path": "folders/Objects/Solids/Overworld/ForestOfOgham.yy",
   },
   "resourceVersion": "1.0",
   "name": "Solid_ForestOfOgham_TektiteCave",
