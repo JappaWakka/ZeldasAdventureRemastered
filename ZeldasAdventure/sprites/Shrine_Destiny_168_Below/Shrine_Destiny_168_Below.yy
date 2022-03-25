@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Below",
-    "path": "folders/Sprites/Maps/Underworld/Shrine_04_Destiny/Below.yy",
+    "path": "folders/Sprites/Maps/Old/Below.yy",
   },
   "resourceVersion": "1.0",
   "name": "Shrine_Destiny_168_Below",

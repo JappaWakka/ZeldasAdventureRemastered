@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 0,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9da93581-e210-4d96-9eff-9e2ca0cb104c","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9da93581-e210-4d96-9eff-9e2ca0cb104c","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"LayerId":{"name":"84236b10-4981-440f-a086-90e5a66c7562","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ForestOfOgham_17_Warp_ShrineOfEarth","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"resourceVersion":"1.0","name":"9da93581-e210-4d96-9eff-9e2ca0cb104c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3a559966-78fb-47e9-8489-e6a4711281d5","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3a559966-78fb-47e9-8489-e6a4711281d5","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"LayerId":{"name":"1007eee2-a249-41ff-a069-df2f942f8948","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ForestOfOgham_17_Warp_ShrineOfEarth","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"resourceVersion":"1.0","name":"3a559966-78fb-47e9-8489-e6a4711281d5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"ForestOfOgham_17_Warp_ShrineOfEarth","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"58fb9274-63c6-452e-8201-a9b03830cfe6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9da93581-e210-4d96-9eff-9e2ca0cb104c","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"63d3330d-2f22-4e22-9cff-d50bf00d2578","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3a559966-78fb-47e9-8489-e6a4711281d5","path":"sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"84236b10-4981-440f-a086-90e5a66c7562","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1007eee2-a249-41ff-a069-df2f942f8948","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

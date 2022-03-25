@@ -19,9 +19,9 @@ PlayerVerticalSpeed = yy * PlayerSpeed; //Your speed(PlayerSpeed) Variable in cr
 #region Collision
 
 // Horz(x) speed collision
-if(place_meeting(x + PlayerHorizontalSpeed, y, Solid_Parent))
+if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_Solid))
 {
-	while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Solid_Parent))
+	while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_Solid))
 	{
 		x += sign(PlayerHorizontalSpeed);
 	}
@@ -32,9 +32,9 @@ if(place_meeting(x + PlayerHorizontalSpeed, y, Solid_Parent))
 	x += PlayerHorizontalSpeed;
 }
 // Vert(y) speed collision
-if(place_meeting(x, y + PlayerVerticalSpeed, Solid_Parent))
+if(place_meeting(x, y + PlayerVerticalSpeed, Parent_Solid))
 {
-	while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Solid_Parent))
+	while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Parent_Solid))
 	{
 		y += sign(PlayerVerticalSpeed);
 	}

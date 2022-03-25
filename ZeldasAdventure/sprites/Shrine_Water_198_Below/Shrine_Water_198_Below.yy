@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Shrine_05_Water",
-    "path": "folders/Sprites/Maps/Underworld/Shrine_05_Water.yy",
+    "name": "Below",
+    "path": "folders/Sprites/Maps/Old/Below.yy",
   },
   "resourceVersion": "1.0",
   "name": "Shrine_Water_198_Below",

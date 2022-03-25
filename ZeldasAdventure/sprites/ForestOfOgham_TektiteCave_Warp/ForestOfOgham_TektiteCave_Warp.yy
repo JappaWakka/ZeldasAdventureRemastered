@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 0,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"deca8198-0e5c-4219-926a-d62aeb0ed351","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"deca8198-0e5c-4219-926a-d62aeb0ed351","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"LayerId":{"name":"e9003161-b1e7-4dff-82ca-6901ed7fe815","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ForestOfOgham_TektiteCave_Warp","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"resourceVersion":"1.0","name":"deca8198-0e5c-4219-926a-d62aeb0ed351","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8d03d6ed-2b97-4c82-b3f7-030cdf1e6f82","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8d03d6ed-2b97-4c82-b3f7-030cdf1e6f82","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"LayerId":{"name":"eeb9f354-b3f8-476a-8638-f06acc684b07","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ForestOfOgham_TektiteCave_Warp","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"resourceVersion":"1.0","name":"8d03d6ed-2b97-4c82-b3f7-030cdf1e6f82","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"ForestOfOgham_TektiteCave_Warp","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d3b951c1-3280-4b9d-9781-b0b7b2dc63e8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"deca8198-0e5c-4219-926a-d62aeb0ed351","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"95e53972-2e03-48ca-b1f6-6c3e6843e690","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d03d6ed-2b97-4c82-b3f7-030cdf1e6f82","path":"sprites/ForestOfOgham_TektiteCave_Warp/ForestOfOgham_TektiteCave_Warp.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e9003161-b1e7-4dff-82ca-6901ed7fe815","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"eeb9f354-b3f8-476a-8638-f06acc684b07","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

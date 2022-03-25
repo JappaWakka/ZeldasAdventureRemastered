@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Below",
-    "path": "folders/Sprites/Maps/Underworld/Shrine_02_Illusion/Below.yy",
+    "path": "folders/Sprites/Maps/Old/Below.yy",
   },
   "resourceVersion": "1.0",
   "name": "Shrine_Illusion_70_Below",

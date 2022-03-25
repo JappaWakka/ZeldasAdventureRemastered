@@ -7,5 +7,5 @@ if room = Room_Cutscene_Logos
 else if room = Room_Cutscene_Intro
 {
 	VideoManager_Stop()
-	room_goto_next()
+	room_goto(Room_Overworld)
 }

@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 1,
+  "collisionKind": 0,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4fbc807d-6a5d-47c2-9502-013e4bdbc1ff","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4fbc807d-6a5d-47c2-9502-013e4bdbc1ff","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"LayerId":{"name":"56f17447-608b-4a3e-b880-a53a8a6d62e1","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ForestOfOgham_17_Warp_TektiteCave","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"resourceVersion":"1.0","name":"4fbc807d-6a5d-47c2-9502-013e4bdbc1ff","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"07a1c4ed-233a-4eaa-9bed-02b85c17273f","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"07a1c4ed-233a-4eaa-9bed-02b85c17273f","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"LayerId":{"name":"4f77ab18-62a3-4a61-a400-7b474da4fe29","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"ForestOfOgham_17_Warp_TektiteCave","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"resourceVersion":"1.0","name":"07a1c4ed-233a-4eaa-9bed-02b85c17273f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"ForestOfOgham_17_Warp_TektiteCave","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7fb0ee41-3e8e-4114-8bf0-1a7692e483ef","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4fbc807d-6a5d-47c2-9502-013e4bdbc1ff","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3be3e084-2147-4f1d-8dba-7fe26d75826c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07a1c4ed-233a-4eaa-9bed-02b85c17273f","path":"sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"56f17447-608b-4a3e-b880-a53a8a6d62e1","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4f77ab18-62a3-4a61-a400-7b474da4fe29","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
