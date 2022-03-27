@@ -1,0 +1,15 @@
+function Draw_Subtitle(x, y, text, textColor, textAlpha, outlineColor, outlineAlpha, outlineThickness, outlineQuality, xscale, yscale, angle)
+{
+	//By Blokatt - @blokatt, blokatt.net
+	draw_set_alpha(1);
+	draw_set_font(Font_Subtitles);
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_bottom);
+	var outlineQualityPercent = outlineQuality / 100;
+	var i;
+	for (i = 0; i < 360; i += outlineQualityPercent){
+	    draw_text_ext_transformed_color(x + lengthdir_x(outlineThickness, i), y - 16 + lengthdir_y(outlineThickness, i), string(text),28, viewWidth * global.WindowScale / 2, xscale, yscale, angle, outlineColor, outlineColor, outlineColor, outlineColor, outlineAlpha);
+	}
+	draw_text_ext_transformed_color(x, y - 16, string(text),28, viewWidth * global.WindowScale / 2, xscale, yscale, angle, textColor, textColor, textColor, textColor, textAlpha);
+}

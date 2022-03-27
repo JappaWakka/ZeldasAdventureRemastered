@@ -3,3 +3,5 @@
 *.avi
 Audio/Music_Remastered/Soundfonts/
 ldtk/
+*.sf2
+*.flp
