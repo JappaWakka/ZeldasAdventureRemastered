@@ -24,9 +24,9 @@ if global.FadeAlpha > 0
 if room = Room_Overworld
 {
 	Draw_Hearts()
-	Draw_Rupees_Overworld()
+	Draw_Rubies_Overworld()
 }
 if global.Subtitle != ""
 {
-	Draw_Subtitle(viewWidth / 2, viewHeight, global.Subtitle,c_white,1,c_black,1,1,200,1 / global.WindowScale,1 / global.WindowScale,0);
+	Draw_Subtitles(viewWidth / 2, viewHeight, global.Subtitle,c_white,1,c_black,1,1,200,1 / global.WindowScale,1 / global.WindowScale,0);
 } 

@@ -1,9 +1,9 @@
-/// @description Play Rupee Sound
-if global.CurrentRupees < global.DesiredRupees
+/// @description Play Ruby Sound
+if global.CurrentRubies < global.DesiredRubies
 {
-	if audio_is_playing(SFX_Pickup_Rupee) = false
+	if audio_is_playing(SFX_Pickup_Ruby) = false
 	{
-		audio_play_sound(SFX_Pickup_Rupee,999,false)
+		audio_play_sound(SFX_Pickup_Ruby,999,false)
 	}
-	alarm[10] = 0.25 * room_speed //Play Rupee Sound
+	alarm[10] = 0.25 * room_speed //Play Ruby Sound
 }	

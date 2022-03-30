@@ -1,6 +1,6 @@
-/// @description Add Rupee Amount
-if global.CurrentRupees < global.DesiredRupees
+/// @description Add Ruby Amount
+if global.CurrentRubies < global.DesiredRubies
 {
-	global.CurrentRupees += clamp(2, 1, global.DesiredRupees)
-	alarm[9] = 0.02 * room_speed //Add Rupee Amount
+	global.CurrentRubies = clamp(global.CurrentRubies + 2, 0, 999)
+	alarm[9] = 0.02 * room_speed //Add Ruby Amount
 }

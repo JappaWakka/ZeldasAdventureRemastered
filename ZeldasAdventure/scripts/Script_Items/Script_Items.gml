@@ -1,7 +1,7 @@
 enum Treasure
 {
 	Nothing,
-	Rupees,
+	Rubies,
 }
 
 enum Spell

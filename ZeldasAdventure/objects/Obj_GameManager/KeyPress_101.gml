@@ -1,2 +1,2 @@
-/// @description Add 250 Rupees
-AddRupees(250)
+/// @description Add 250 Rubies
+IncreaseRubies(250)

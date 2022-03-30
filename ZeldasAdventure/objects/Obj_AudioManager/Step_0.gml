@@ -12,12 +12,12 @@ if Initialized = true //Check if all the Audiogroups have been loaded
 		{
 			audio_stop_sound(global.CurrentMusic_Asset) //Stop the old music track
 			//Set the various global.CurrentMusic properties to the ones defined in the global.Music[x][y] array based on the current tile the player is on
-			Music_SetCurrent(NextTrackName)
+			Audio_SetCurrentMusic(NextTrackName)
 			BGAudio_IntroLength = global.CurrentMusic_IntroLength; //Set the length of the intro part of the audio track
 			BGAudio_LoopLength = global.CurrentMusic_LoopLength; //Set the length of the looping part of the audio track
 			BGAudio_TotalLength = BGAudio_IntroLength + BGAudio_LoopLength; //This is used to determine whether or not the playback is in the buffer area of the audio track
 			audio_sound_set_track_position(BGAudio_Track,0) //Set the playback position back to the start (just in case)
-			BGAudio_Track = Music_Play(global.CurrentMusic_Asset); //Play the song
+			BGAudio_Track = Audio_PlayMusic(global.CurrentMusic_Asset); //Play the song
 		}
 		global.SwitchTracks = false; //Whether a song has been played or not, reset the variable so a music track switch can be requested again
 	}

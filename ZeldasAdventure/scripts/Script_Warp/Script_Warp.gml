@@ -14,6 +14,7 @@ function WarpTo(TileX, TileY, PlayerX, PlayerY, FadeSpeed = 8)
 		global.CurrentTile.x = TileX;
 		global.CurrentTile.y = TileY;
 		camera_set_view_pos(view,global.CurrentTile.x * tileWidth,global.CurrentTile.y * tileHeight);
+		global.SwitchTracks = true;
 		return true;
 	}
 }
