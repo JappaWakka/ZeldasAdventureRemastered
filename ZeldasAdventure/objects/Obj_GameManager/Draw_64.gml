@@ -29,4 +29,4 @@ if room = Room_Overworld
 if global.Subtitle != ""
 {
 	Draw_Subtitles(viewWidth / 2, viewHeight, global.Subtitle,c_white,1,c_black,1,1,200,1 / global.WindowScale,1 / global.WindowScale,0);
-} 
+}

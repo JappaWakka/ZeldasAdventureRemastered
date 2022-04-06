@@ -14,17 +14,19 @@ else
 {
 	FileName = ""
 }
-if (file_exists(FileName)) {
-  CurrentVideo = video_add(FileName);
-  video_play(CurrentVideo);
-  VideoWidth = video_get_width(CurrentVideo);
-  VideoHeight = video_get_height(CurrentVideo);
-
-  BufferPixel = buffer_sizeof(buffer_u64); // size of one pixel
-  BufferVideo = buffer_create(BufferPixel * VideoWidth * VideoHeight, buffer_fixed, BufferPixel);
-  VideoSurface = -1; // surfaces should be created in Draw events only!
-  VideoPosition = video_get_playtime(CurrentVideo);
-
+if (file_exists(FileName))
+{
+	CurrentVideo = webm_add(FileName);
+	webm_play(CurrentVideo);
+	VideoWidth = webm_get_width(CurrentVideo);
+	VideoHeight = webm_get_height(CurrentVideo);
+	
+	BufferPixel = buffer_sizeof(buffer_u64); // size of one pixel
+	BufferVideo = buffer_create(BufferPixel * VideoWidth * VideoHeight, buffer_fixed, BufferPixel);
+	VideoSurface = -1; // surfaces should be created in Draw events only!
+	VideoPosition = webm_get_playtime(CurrentVideo);
+	shader = Shader_Contrast
+	u_contrast = shader_get_uniform(shader,"contrast")
 	// a hackfix for GM's internal 'used bytes' counter:
   buffer_poke(BufferVideo, buffer_get_size(BufferVideo) - 1, buffer_u8, 0);
   // just poke 0 at the very end, so we ensure everything is allocated properly.
