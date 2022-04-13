@@ -28,7 +28,7 @@ global.WarpLocations =
 	PlainOfAndor_TektiteCave_Outside : {TileX:6,TileY:31,PlayerX:300,PlayerY:162},
 	PlainOfAndor_ShrineOfEarth : {TileX:6,TileY:31,PlayerX:266,PlayerY:74},
 	
-	ShrineOfEarth_Entrance : {TileX:6,TileY:34,PlayerX:106,PlayerY:118},
+	ShrineOfEarth_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
 	
 	ShrineOfIllusion_Entrance : {TileX:6,TileY:22,PlayerX:192,PlayerY:128},
 	

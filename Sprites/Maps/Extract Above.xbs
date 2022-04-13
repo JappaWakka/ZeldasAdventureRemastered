@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><XnView_script version="1.0" name="Extract Above">
+    <Replace_color src_color="#7f4040" dst_color="#7f0000" tolerance="75"/>
+    <Replace_color src_color="#7f0000" dst_color="#ffffff" tolerance="90"/>
+    <Replace_color src_color="#984c00" dst_color="#ffffff" tolerance="50"/>
+    <Replace_color src_color="#ef7800" dst_color="#ffffff" tolerance="90"/>
+    <Replace_color src_color="#00007f" dst_color="#ffffff" tolerance="10"/>
+    <Replace_color src_color="#80ff80" dst_color="#ffffff" tolerance="50" active="false"/>
+    <Replace_color src_color="#777777" dst_color="#ffffff" tolerance="75"/>
+    <Transparent_color color="#ffffff" tolerance="0"/>
+    <Output folder="F:/Video Games/ZeldasAdventureRemastered/Sprites/Maps/Overworld/#Todo &amp; Projects/Properties/Extracted" filename="{Filename}_Above" case="0" startIndex="1" format="PNG">
+        <Options overwrite="1" orgDate="false" keepMeta="true" keepICC="false" keepFolder="false" keepParentFolder="false" keepExtension="false" delOrg="false" multipage="false" allPages="false" openExplorer="false" openBrowser="false" clearItems="false"/>
+        <PNG level="9" interlaced="false" filter="0"/>
+    </Output>
+</XnView_script>

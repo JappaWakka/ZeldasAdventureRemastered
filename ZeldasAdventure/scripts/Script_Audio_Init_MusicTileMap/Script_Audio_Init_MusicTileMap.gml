@@ -467,8 +467,6 @@ function Audio_Init_MusicTileMap()
 	global.Music[6][28] = "Forest";
 	global.Music[7][28] = "Forest";
 	
-	global.Music[12][28] = "Shrine_Earth_Sign";
-	
 	global.Music[16][28] = "Ocean";
 	global.Music[17][28] = "Ocean";
 	
@@ -483,15 +481,13 @@ function Audio_Init_MusicTileMap()
 	
 	//Y = 29
 	global.Music[6][29] = "Forest";
+	global.Music[12][29] = "Shrine_Earth_Sign";
 	
-	global.Music[12][29] = "Shrine_Earth_Boss";
 	
 	//Y = 30
 	global.Music[6][30] = "Forest";
 	
-	global.Music[10][30] = "Shrine_Earth_Regular";
-	global.Music[11][30] = "Shrine_Earth_Regular";
-	global.Music[12][30] = "Shrine_Earth_Regular";
+	global.Music[12][30] = "Shrine_Earth_Boss";
 	
 	global.Music[14][30] = "Shrine_Water";
 	global.Music[15][30] = "Shrine_Water";
@@ -499,22 +495,25 @@ function Audio_Init_MusicTileMap()
 	
 	//Y = 31
 	global.Music[6][31] = "Forest";
-	global.Music[7][31] = "Canyon_Cave";
-
-	global.Music[9][31] = "Shrine_Earth_Regular";
+	global.Music[7][31] = "Canyon_Cave";	
+	
 	global.Music[10][31] = "Shrine_Earth_Regular";
+	global.Music[11][31] = "Shrine_Earth_Regular";
+	global.Music[12][31] = "Shrine_Earth_Regular";
 	
 	global.Music[16][31] = "Shrine_Water";
 	
 	//Y = 32
+	
 	global.Music[9][32] = "Shrine_Earth_Regular";
+	global.Music[10][32] = "Shrine_Earth_Regular";
 	
 	global.Music[15][32] = "Shrine_Water";
 	global.Music[16][32] = "Shrine_Water";
 	
 	//Y = 33
 	global.Music[9][33] = "Shrine_Earth_Regular";
-	
+		
 	global.Music[11][33] = "Shrine_Earth_Ambient";
 	
 	global.Music[15][33] = "Shrine_Water";
@@ -524,13 +523,7 @@ function Audio_Init_MusicTileMap()
 	global.Music[22][33] = "Shrine_Water";
 	
 	//Y = 34
-	global.Music[6][34] = "Shrine_Earth_Regular";
-	global.Music[7][34] = "Shrine_Earth_Regular";
-	global.Music[8][34] = "Shrine_Earth_Regular";
 	global.Music[9][34] = "Shrine_Earth_Regular";
-	global.Music[10][34] = "Shrine_Earth_Ambient";
-	global.Music[11][34] = "Shrine_Earth_Regular";
-	global.Music[12][34] = "Shrine_Earth_Regular";
 	
 	global.Music[15][34] = "Shrine_Water";
 	global.Music[16][34] = "Shrine_Water";
@@ -543,8 +536,14 @@ function Audio_Init_MusicTileMap()
 	global.Music[24][34] = "Shrine_Water_Boss";
 	
 	//Y = 35
+	global.Music[6][35] = "Shrine_Earth_Regular";
+	global.Music[7][35] = "Shrine_Earth_Regular";
+	global.Music[8][35] = "Shrine_Earth_Regular";
 	global.Music[9][35] = "Shrine_Earth_Regular";
-	
+	global.Music[10][35] = "Shrine_Earth_Ambient";
+	global.Music[11][35] = "Shrine_Earth_Regular";
+	global.Music[12][35] = "Shrine_Earth_Regular";
+		
 	global.Music[17][35] = "Shrine_Water";
 	global.Music[18][35] = "Shrine_Water";
 	global.Music[19][35] = "Shrine_Water";
@@ -555,10 +554,18 @@ function Audio_Init_MusicTileMap()
 	
 	//Y = 36
 	global.Music[9][36] = "Shrine_Earth_Regular";
-	global.Music[10][36] = "Shrine_Earth_Regular";
 	
 	//Y = 37
+	global.Music[6][38] = "Shrine_Fire_Sign";
+		
+	global.Music[9][37] = "Shrine_Earth_Regular";
 	global.Music[10][37] = "Shrine_Earth_Regular";
-	global.Music[11][37] = "Shrine_Earth_Regular";
+	
+	//Y = 38
+	global.Music[6][38] = "Shrine_Fire_Boss";
+	global.Music[7][38] = "Shrine_Fire_Regular";
+	
+	global.Music[10][38] = "Shrine_Earth_Regular";
+	global.Music[11][38] = "Shrine_Earth_Regular";
 	
 }
