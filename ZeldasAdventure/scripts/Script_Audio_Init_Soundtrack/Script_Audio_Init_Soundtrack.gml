@@ -69,7 +69,7 @@ function Audio_Init_Soundtrack(New)
 		{
 			//The variables of each audio track, most of it is set to Silence by default because I still need to edit them
 			Silence : {Asset : Music_Silence, IntroLength : 0.25, LoopLength : 0.25},
-			Beach_Ocean : {Asset : Music_Beach_Ocean, IntroLength : 1.751, LoopLength : 19.845},
+			Beach_Ocean : {Asset : Music_Beach_Ocean_New, IntroLength : 3.233, LoopLength : 51.589},
 			Blacksmith : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Canyon_Normal : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Canyon_Cave : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
@@ -80,7 +80,7 @@ function Audio_Init_Soundtrack(New)
 			Fairy_Desert : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Fireplace_Normal : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Fireplace_Southport : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
-			Forest : {Asset : Music_Forest, IntroLength : 1.429, LoopLength : 19.996},
+			Forest : {Asset : Music_Forest_New, IntroLength : 3.496, LoopLength : 174.722},
 			Forest_Ocean : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Forest_Stream : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Inn : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
@@ -89,7 +89,7 @@ function Audio_Init_Soundtrack(New)
 			Marsh : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Marsh_Ocean : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Ocean : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
-			Plain : {Asset : Music_Plain, IntroLength : 1.755, LoopLength : 19.797},
+			Plain : {Asset : Music_Plain_New, IntroLength : 8.271, LoopLength : 168.990},
 			Plain_Stream : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Sirram : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 			Twinkle_Normal : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},

@@ -14,8 +14,8 @@
   "soundFile": "Music_Shrine_Illusion_New.ogg",
   "duration": 82.2853546,
   "parent": {
-    "name": "Music_JappaWakka",
-    "path": "folders/Sounds/Music_JappaWakka.yy",
+    "name": "Shrines",
+    "path": "folders/Sounds/Music_New/Shrines.yy",
   },
   "resourceVersion": "1.0",
   "name": "Music_Shrine_Illusion_New",

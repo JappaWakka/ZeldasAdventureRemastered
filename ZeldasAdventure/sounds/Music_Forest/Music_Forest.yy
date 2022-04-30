@@ -8,8 +8,8 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "AudioGroup_Music",
+    "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Forest.ogg",
   "duration": 27.3140945,

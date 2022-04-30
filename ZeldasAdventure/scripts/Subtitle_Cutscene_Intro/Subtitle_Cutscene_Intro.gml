@@ -1,6 +1,6 @@
 function Subtitle_Cutscene_Intro(VideoPosition)
 {
-	switch global.Language
+	switch global.CurrentLanguage
 	{
 	case "en":
 		if VideoPosition >= 37.361 and VideoPosition <= 39.505 {return "Gaspra: There'll be no more viewing tonight."}

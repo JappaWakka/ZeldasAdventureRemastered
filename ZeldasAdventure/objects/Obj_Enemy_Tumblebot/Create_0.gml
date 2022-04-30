@@ -1,2 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+OriginX = x
+OriginY = y
+direction = 270
+speed = 0
+image_speed = 0

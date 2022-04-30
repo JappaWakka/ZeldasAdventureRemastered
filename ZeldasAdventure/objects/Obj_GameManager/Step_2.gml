@@ -14,7 +14,7 @@ if room == Room_Overworld
 //Auto-equip Wand if nothing is equipped
 if global.CurrentSpell = Spell.Nothing
 {
-	if ArrayHas(global.Inventory,Spell.Wand) = true
+	if ArrayHas(global.Inventory_Spell,Spell.Wand) = true
 	{
 		global.CurrentSpell = Spell.Wand;
 	}

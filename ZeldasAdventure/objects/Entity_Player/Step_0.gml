@@ -93,7 +93,7 @@ else
 #region Action - Use Weapon
 if input_check_pressed("Attack") = true and IsAttacking = false
 {
-	if ArrayHas(global.Inventory,Spell.Wand) = true
+	if ArrayHas(global.Inventory_Spell,Spell.Wand) = true
 	{
 		//Set sprite, enable animation
 		if Facing = "East"
@@ -151,3 +151,8 @@ if IsAttacking = true
 #endregion
 
 #endregion
+
+if DamageDelay > 0
+{
+	DamageDelay -=1
+}

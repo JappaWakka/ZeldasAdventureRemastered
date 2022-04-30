@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"986cde21-6b25-4ed2-93fa-4892e8345247","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"986cde21-6b25-4ed2-93fa-4892e8345247","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"LayerId":{"name":"7444e1e5-6b53-49af-b62f-801e6e45ff1b","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"PlainOfAndor_02_Item_RedBoots","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"resourceVersion":"1.0","name":"986cde21-6b25-4ed2-93fa-4892e8345247","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"dbcf89ed-3ea5-409e-82ee-3038b95dcf0f","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"dbcf89ed-3ea5-409e-82ee-3038b95dcf0f","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"LayerId":{"name":"12135952-7fd9-4bc4-8a24-60669d73e3e4","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"PlainOfAndor_02_Item_RedBoots","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"resourceVersion":"1.0","name":"dbcf89ed-3ea5-409e-82ee-3038b95dcf0f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"PlainOfAndor_02_Item_RedBoots","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1b442e76-d4ce-4fd2-a70c-0bc73b434bd6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"986cde21-6b25-4ed2-93fa-4892e8345247","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"82c013b9-e0cb-42a0-a2f7-7531f05680cb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dbcf89ed-3ea5-409e-82ee-3038b95dcf0f","path":"sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7444e1e5-6b53-49af-b62f-801e6e45ff1b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"12135952-7fd9-4bc4-8a24-60669d73e3e4","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

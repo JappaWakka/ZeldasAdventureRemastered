@@ -14,8 +14,8 @@
   "soundFile": "Music_Shrine_Earth_New.ogg",
   "duration": 94.14732,
   "parent": {
-    "name": "Music_JappaWakka",
-    "path": "folders/Sounds/Music_JappaWakka.yy",
+    "name": "Shrines",
+    "path": "folders/Sounds/Music_New/Shrines.yy",
   },
   "resourceVersion": "1.0",
   "name": "Music_Shrine_Earth_New",

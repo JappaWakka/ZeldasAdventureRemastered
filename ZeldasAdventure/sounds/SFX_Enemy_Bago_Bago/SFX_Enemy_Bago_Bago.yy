@@ -8,8 +8,8 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "AudioGroup_SoundFX",
+    "path": "audiogroups/AudioGroup_SoundFX",
   },
   "soundFile": "SFX_Enemy_Bago_Bago.ogg",
   "duration": 0.5245,

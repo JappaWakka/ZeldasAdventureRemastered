@@ -1,0 +1,30 @@
+Tumblebot	= Rolling rock
+Goriya		= Yeti with boomerang
+Peahat		= Green projectile shooting plant
+Mobilin		= Big goblin
+Deeler		= Spider
+Moby		= Red bird
+Leever		= Growling orange plant
+Tektite		= Four-legged crawlers
+Keese		= Bat
+Snake		= Snake (duh)
+River Zola	= Groene spike ball throwing fishman
+Swamp Zola	= Blauwe spike ball throwing fishman
+Dolomite	= Rock monster throwing rocks
+Mole Man	= Phallic head dude digs underground
+Octorok		= Giant squid
+Molluska	= Hermite crabs
+Jackaroo	= Purple velociraptor
+Stalfo 		= Skeleton
+Vire		= Little dragon
+Pols Voice	= Purple evil face with ears
+Wizzrobe	= Wizards
+
+
+[Mini-bosses]
+Red Sardak
+Blue Sardak
+Yellow Sardak
+
+[Bosses]
+Llort

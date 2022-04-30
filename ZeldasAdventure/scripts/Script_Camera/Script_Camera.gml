@@ -3,6 +3,7 @@ function Camera_Init(Camera = view)
 	//Set initial Camera position if we're in the Overworld
 	if room == Room_Overworld
 	{
+		WarpToLocation(global.PlayerSpawn)
 		camera_set_view_pos(Camera,global.CurrentTile.x * viewWidth,global.CurrentTile.y * viewHeight);
 	}
 	//Set view size

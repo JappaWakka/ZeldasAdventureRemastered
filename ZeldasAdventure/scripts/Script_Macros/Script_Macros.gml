@@ -9,3 +9,6 @@
 #macro tileHeight 240
 #macro viewWidth 384
 #macro viewHeight 240
+#macro EnemySpeed_Slow 1
+#macro EnemySpeed_Medium 1.5
+#macro EnemySpeed_Fast 2
