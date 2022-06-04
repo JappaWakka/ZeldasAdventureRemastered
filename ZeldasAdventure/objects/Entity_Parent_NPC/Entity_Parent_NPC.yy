@@ -21,8 +21,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Parents",
-    "path": "folders/Objects/Entities/Parents.yy",
+    "name": "NPCs",
+    "path": "folders/Objects/Entities/NPCs.yy",
   },
   "resourceVersion": "1.0",
   "name": "Entity_Parent_NPC",

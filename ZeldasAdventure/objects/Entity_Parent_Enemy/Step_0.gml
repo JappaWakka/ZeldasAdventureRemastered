@@ -4,16 +4,14 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 {
 	//Activate
 	visible = true;
-	Activated = true;
 	if alarm_get(0) < 1
 	{
-		if MoveType = "Bouncing"
+		if MoveType = EnemyMoveTypes.Bouncing
 		{
 			alarm_set(0, 1);
 		}
-		else if MoveType <> "Still"
+		else if MoveType <> EnemyMoveTypes.Still
 		{
-			ChangeSpeed = true
 			alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
 		}
 	}
@@ -27,7 +25,6 @@ else
 {
 	//Deactivate
 	visible = false
-	Activated = false;
 	x = OriginX;
 	y = OriginY;
 	image_index = 0;
@@ -46,48 +43,65 @@ y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
 x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
 y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
 {
-	if MoveType = "Straight" or MoveType = "Diagonally"
+	if MoveType = EnemyMoveTypes.Straight or MoveType = EnemyMoveTypes.Diagonally
 	{
 		ChangeDirection = true;
-		ChangeSpeed = true;
 	}
-	else if MoveType = "Bouncing"
+	else if MoveType = EnemyMoveTypes.Bouncing
 	{
 		direction += 90;
 	}
 }
 
-
-if ChangeSpeed = true
-{
-	var MoveSpeedsAmount = 0
-	if ArrayHas(MoveSpeeds,EnemySpeed_Slow) {MoveSpeedsAmount +=1}
-	if ArrayHas(MoveSpeeds,EnemySpeed_Medium) {MoveSpeedsAmount +=1}
-	if ArrayHas(MoveSpeeds,EnemySpeed_Fast) {MoveSpeedsAmount +=1}
-	switch MoveSpeedsAmount
-	{
-		case 1 : speed = MoveSpeeds[0];
-		break;
-		case 2 : speed = choose(MoveSpeeds[0],MoveSpeeds[1]);
-		break;
-		case 3 : speed = choose(MoveSpeeds[0],MoveSpeeds[1],MoveSpeeds[2]);
-		break;
-	}
-	ChangeSpeed = false
-}
+if MoveSpeed = EnemySpeeds.Still {speed = EnemySpeed_Still}
+if MoveSpeed = EnemySpeeds.Slow {speed = EnemySpeed_Slow}
+if MoveSpeed = EnemySpeeds.Medium {speed = EnemySpeed_Medium}
+if MoveSpeed = EnemySpeeds.Fast {speed = EnemySpeed_Fast}
+	
 if ChangeDirection = true
 {
-	if MoveType = "Straight"
+	if MoveType = EnemyMoveTypes.Straight
 	{
-		direction = choose(90,180,0,270);
-		alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
-	}
-	else if MoveType = "Diagonally"
+		if distance_to_object(Entity_Player) <= AttackModeRange
+		{
+			if random_range(1,101) <= MoveToPlayerChance
+			{
+				if Entity_Player.x < self.x
+				{
+					if Entity_Player.y < self.y
+					{
+						direction = choose(180,90);
+					}
+					else
+					{
+						direction = choose(180,270);
+					}
+				}
+				else
+				{
+					if Entity_Player.y < self.y
+					{
+						direction = choose(0,90);
+					}
+					else
+					{
+						direction = choose(0,270);
+					}
+				}
+			}
+		}
+		else
+		{
+			direction = choose(90,180,0,270);
+		}
+	alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
+}
+	else if MoveType = EnemyMoveTypes.Diagonally
 	{
 		direction = choose(135,225,45,315);
 		alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
 	}
-	else if MoveType = "Bouncing"
+	else if MoveType = EnemyMoveTypes.Bouncing
 	{
 		direction +=90
 	}

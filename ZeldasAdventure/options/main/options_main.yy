@@ -10,7 +10,7 @@
   "option_author": "JappaWakka",
   "option_collision_compatibility": false,
   "option_copy_on_write_enabled": false,
-  "option_lastchanged": "18 March 2022 17:14:36",
+  "option_lastchanged": "04 June 2022 20:26:18",
   "option_spine_licence": false,
   "option_template_image": "${base_options_dir}/main/template_image.png",
   "option_template_icon": "${base_options_dir}/main/template_icon.png",

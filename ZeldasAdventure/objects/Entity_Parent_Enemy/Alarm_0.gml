@@ -1,17 +1,8 @@
-if MoveType <> "Bouncing"
+if MoveType <> EnemyMoveTypes.Bouncing
 {
-	if MoveType = "Straight"
+	if MoveType = EnemyMoveTypes.Straight or MoveType = EnemyMoveTypes.Diagonally
 	{
 		ChangeDirection = true
-		
-	}
-	else if MoveType = "Diagonally"
-	{
-		ChangeDirection = true
-	}
-	if random_range(0,1) == 0
-	{
-		ChangeSpeed = true
 	}
 	alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
 }
