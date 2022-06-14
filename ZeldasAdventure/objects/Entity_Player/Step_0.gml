@@ -17,11 +17,39 @@ PlayerVerticalSpeed = yy * PlayerSpeed; //Your speed(PlayerSpeed) Variable in cr
 #endregion
 
 #region Collision
-
+////Solid Objects
 // Horz(x) speed collision
 if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_Solid))
 {
 	while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_Solid))
+	{
+		x += sign(PlayerHorizontalSpeed);
+	}
+	PlayerHorizontalSpeed = 0;
+}
+ else
+{
+	x += PlayerHorizontalSpeed;
+}
+// Vert(y) speed collision
+if(place_meeting(x, y + PlayerVerticalSpeed, Parent_Solid))
+{
+	while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Parent_Solid))
+	{
+		y += sign(PlayerVerticalSpeed);
+	}
+   PlayerVerticalSpeed = 0;
+}
+else
+{
+	y += PlayerVerticalSpeed;
+}
+////Red Boots Water
+// Horz(x) speed collision
+if global.Inventory_Treasure.,
+if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_UseItem_RedBoots))
+{
+	while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_UseItem_RedBoots))
 	{
 		x += sign(PlayerHorizontalSpeed);
 	}

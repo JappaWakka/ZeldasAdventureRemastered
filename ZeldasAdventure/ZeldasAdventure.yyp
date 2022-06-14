@@ -377,7 +377,7 @@
     {"id":{"name":"Overworld_480_Below","path":"sprites/Overworld_480_Below/Overworld_480_Below.yy",},"order":246,},
     {"id":{"name":"GreatDryCanyon_07_Below","path":"sprites/GreatDryCanyon_07_Below/GreatDryCanyon_07_Below.yy",},"order":6,},
     {"id":{"name":"Shrine_Strength_14_Below","path":"sprites/Shrine_Strength_14_Below/Shrine_Strength_14_Below.yy",},"order":13,},
-    {"id":{"name":"UseItem_PlainOfAndor_01_EmptyPitcher","path":"objects/UseItem_PlainOfAndor_01_EmptyPitcher/UseItem_PlainOfAndor_01_EmptyPitcher.yy",},"order":0,},
+    {"id":{"name":"UseItem_PlainOfAndor_01_Pitcher_Empty","path":"objects/UseItem_PlainOfAndor_01_Pitcher_Empty/UseItem_PlainOfAndor_01_Pitcher_Empty.yy",},"order":0,},
     {"id":{"name":"Solid_VisionHenge_09","path":"objects/Solid_VisionHenge_09/Solid_VisionHenge_09.yy",},"order":8,},
     {"id":{"name":"input_gamepad_check_pressed","path":"scripts/input_gamepad_check_pressed/input_gamepad_check_pressed.yy",},"order":1,},
     {"id":{"name":"Overworld_290_Below","path":"sprites/Overworld_290_Below/Overworld_290_Below.yy",},"order":153,},

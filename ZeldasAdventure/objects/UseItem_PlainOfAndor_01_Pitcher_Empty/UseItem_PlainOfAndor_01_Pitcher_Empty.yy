@@ -31,7 +31,7 @@
     "path": "folders/Objects/Interactions.yy",
   },
   "resourceVersion": "1.0",
-  "name": "UseItem_PlainOfAndor_01_EmptyPitcher",
+  "name": "UseItem_PlainOfAndor_01_Pitcher_Empty",
   "tags": [],
   "resourceType": "GMObject",
 }
