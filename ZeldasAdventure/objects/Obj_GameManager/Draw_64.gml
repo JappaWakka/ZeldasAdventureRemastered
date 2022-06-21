@@ -23,8 +23,8 @@ if global.FadeAlpha > 0
 // Draw GUI - Overworld
 if room = Room_Overworld
 {
-	Draw_Hearts()
-	Draw_Rubies_Overworld()
+	Draw_HUD_Hearts()
+	Draw_HUD_Rubies()
 }
 if global.ShowSubtitles = true && global.Subtitle != ""
 {

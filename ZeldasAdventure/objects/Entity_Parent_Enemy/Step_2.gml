@@ -1,9 +1,9 @@
 //Allow other sounds to play
-if EnemySound <> -1
+if global.EnemySound <> -1
 {
-	if audio_is_playing(EnemySound) = false
+	if audio_is_playing(global.EnemySound) = false
 	{
-		global.EnemySoundPlaying = false
-		EnemySound = -1
+		global.global.EnemySoundPlaying = false
+		global.EnemySound = -1
 	}
 }

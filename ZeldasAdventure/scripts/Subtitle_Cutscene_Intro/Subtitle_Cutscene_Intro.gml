@@ -20,7 +20,7 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 		
 	case "nl":
 		if VideoPosition >= 37.361 and VideoPosition <= 39.505 {return "Gaspra: Er komt van sterrenkijken niets meer vannacht."}
-		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Ah, de Rol van Shurmak..."}
+		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Gaspra: Ah, de Rol van Shurmak..."}
 		else if VideoPosition >= 59.781 and VideoPosition <= 62.485 {return "brenger van droevig nieuws al die jaren geleden."}
 		else if VideoPosition >= 65.156 and VideoPosition <= 67.412 {return "En zo gebeurde het dat Ganon..."}
 		else if VideoPosition >= 67.436 and VideoPosition <= 70.599 {return "Heer van de Duisternis, erin slaagde Tolemac over te nemen."}

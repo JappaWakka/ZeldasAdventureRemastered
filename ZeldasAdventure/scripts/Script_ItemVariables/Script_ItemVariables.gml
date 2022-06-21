@@ -1,0 +1,90 @@
+enum Treasure
+{
+	Flowers,
+	Ticket1,
+	Candle,
+	Compass_Earth,
+	Compass_Illusion,
+	Compass_Air,
+	Compass_Destiny,
+	Compass_Water,
+	Compass_Strength,
+	Compass_Fire,
+	Diamond,
+	Flute,
+	Knife,
+	Harp,
+	Ticket2,
+	Potion,
+	UnderworldMap_Earth,
+	UnderworldMap_Illusion,
+	UnderworldMap_Air,
+	UnderworldMap_Destiny,
+	UnderworldMap_Water,
+	UnderworldMap_Strength,
+	UnderworldMap_Fire,
+	Carpet,
+	MagicShield,
+	Bell,
+	Raft,
+	RedBoots,
+	Repellant,
+	RedRibbon,
+	Rubies,
+	VialOfWind,
+	YellowBoots,
+	Ladder,
+	Bone,
+	BlackOrb,
+	Plank,
+	Coal,
+	EmptyPitcher,
+	FullPitcher
+}
+
+enum Treasure_Cut
+{
+	VialOfAcid,
+	AlligatorShoes,
+	BrownJar,
+	Brush,
+	RawSteak,
+	GoldTrumpet,
+	FishingNet,
+	WhiteOrbs,
+	Scroll,
+	WoodenSpoon,
+	SilverTrumpet
+}
+
+enum Spell
+{
+	Wand,
+	Bow,
+	Broadsword,
+	Calm,
+	Feather,
+	RingsOfFire,
+	Firestorm,
+	GoldNecklace,
+	Hammer,
+	JadeAmulet,
+	Joust,
+	JadeRing,
+	Dagger,
+	Noise,
+	Pyros,
+	RoarStick,
+	ShortAxe,
+	SapphireRing,
+	Boomerang
+}
+
+enum Spell_Cut
+{
+	Hourglass,
+	LeatherBook,
+	EnergyOrb,
+	OpalAmulet,
+	Trident
+}

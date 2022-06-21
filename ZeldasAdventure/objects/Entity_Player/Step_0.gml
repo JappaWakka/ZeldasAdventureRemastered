@@ -44,33 +44,36 @@ else
 {
 	y += PlayerVerticalSpeed;
 }
+
 ////Red Boots Water
-// Horz(x) speed collision
-if global.Inventory_Treasure.,
-if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_UseItem_RedBoots))
+if ArrayHas(global.Inventory_Treasure,Treasure.RedBoots) = false
 {
-	while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_UseItem_RedBoots))
+	// Horz(x) speed collision
+	if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_UseItem_RedBoots))
 	{
-		x += sign(PlayerHorizontalSpeed);
+		while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_UseItem_RedBoots))
+		{
+			x += sign(PlayerHorizontalSpeed);
+		}
+		PlayerHorizontalSpeed = 0;
 	}
-	PlayerHorizontalSpeed = 0;
-}
- else
-{
-	x += PlayerHorizontalSpeed;
-}
-// Vert(y) speed collision
-if(place_meeting(x, y + PlayerVerticalSpeed, Parent_Solid))
-{
-	while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Parent_Solid))
+	 else
 	{
-		y += sign(PlayerVerticalSpeed);
+		x += PlayerHorizontalSpeed;
 	}
-   PlayerVerticalSpeed = 0;
-}
-else
-{
-	y += PlayerVerticalSpeed;
+	// Vert(y) speed collision
+	if(place_meeting(x, y + PlayerVerticalSpeed, Parent_UseItem_RedBoots))
+	{
+		while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Parent_UseItem_RedBoots))
+		{
+			y += sign(PlayerVerticalSpeed);
+		}
+	   PlayerVerticalSpeed = 0;
+	}
+	else
+	{
+		y += PlayerVerticalSpeed;
+	}
 }
 
 #endregion

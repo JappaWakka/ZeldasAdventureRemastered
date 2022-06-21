@@ -1,6 +1,6 @@
 Subtitle_Cutscene_GameIntro
 {
-	//'English
+	//English
 	"Gaspra: There'll be no more viewing tonight."
 	"Gaspra: Ah, the Scroll of Shurmak..."
 	"bearer of sad news these many years ago."
@@ -14,7 +14,7 @@ Subtitle_Cutscene_GameIntro
 	"use it wisely, and listen to your allies along the way."
 	"Go now, my princess. Restore the celestial signs and rescue Link."
 	
-	//'Nederlands
+	//Nederlands
 	"Gaspra: Er komt van sterrenkijken niets meer vannacht."
 	"Ah, de Rol van Shurmak..."
 	"brenger van droevig nieuws al die jaren geleden."

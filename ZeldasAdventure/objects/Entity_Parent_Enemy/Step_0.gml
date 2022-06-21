@@ -31,9 +31,9 @@ else
 	direction = 90;
 	speed = 0;
 	image_speed = 0;
-	if EnemySound <> -1
+	if global.EnemySound <> -1
 	{
-		audio_stop_sound(EnemySound)
+		audio_stop_sound(global.EnemySound)
 	}
 }
 
@@ -52,11 +52,6 @@ y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
 		direction += 90;
 	}
 }
-
-if MoveSpeed = EnemySpeeds.Still {speed = EnemySpeed_Still}
-if MoveSpeed = EnemySpeeds.Slow {speed = EnemySpeed_Slow}
-if MoveSpeed = EnemySpeeds.Medium {speed = EnemySpeed_Medium}
-if MoveSpeed = EnemySpeeds.Fast {speed = EnemySpeed_Fast}
 	
 if ChangeDirection = true
 {

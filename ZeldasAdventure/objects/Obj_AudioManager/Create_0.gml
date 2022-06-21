@@ -11,7 +11,7 @@ if !audio_group_is_loaded(AudioGroup_SoundFX)
 	audio_group_load(AudioGroup_SoundFX);
 	Initialized = false; //Don't play any sound effects yet
 	global.CameraIsPanning = true; //If global.CameraIsPanning is true, the player can't move (or make sounds)
-	global.EnemySoundPlaying = false
+	global.global.EnemySoundPlaying = false
 }
 if room == Room_Overworld //Check if we're in the Overworld room and not in the Main Menu or a Cutscene room for example
 {

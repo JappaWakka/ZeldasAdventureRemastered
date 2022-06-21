@@ -16,9 +16,9 @@ switch direction
 }
 if distance_to_object(Entity_Player) <= AttackModeRange
 {
-	MoveSpeed = EnemySpeeds.Medium
+	MoveSpeed = global.EnemySpeeds.Medium
 }
 else
 {
-	MoveSpeed = EnemySpeeds.Slow
+	MoveSpeed = global.EnemySpeeds.Slow
 }
