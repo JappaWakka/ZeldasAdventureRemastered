@@ -57,6 +57,66 @@ enum Treasure_Cut
 	SilverTrumpet
 }
 
+
+global.Treasure_Index =
+[
+	Treasure.Flowers,
+	Treasure.Ticket1,
+	Treasure.Candle,
+	Treasure.Compass_Earth,
+	Treasure.Compass_Illusion,
+	Treasure.Compass_Air,
+	Treasure.Compass_Destiny,
+	Treasure.Compass_Water,
+	Treasure.Compass_Strength,
+	Treasure.Compass_Fire,
+	Treasure.Diamond,
+	Treasure.Flute,
+	Treasure.Knife,
+	Treasure.Harp,
+	Treasure.Ticket2,
+	Treasure.Potion,
+	Treasure.UnderworldMap_Earth,
+	Treasure.UnderworldMap_Illusion,
+	Treasure.UnderworldMap_Air,
+	Treasure.UnderworldMap_Destiny,
+	Treasure.UnderworldMap_Water,
+	Treasure.UnderworldMap_Strength,
+	Treasure.UnderworldMap_Fire,
+	Treasure.Carpet,
+	Treasure.MagicShield,
+	Treasure.Bell,
+	Treasure.Raft,
+	Treasure.RedBoots,
+	Treasure.Repellant,
+	Treasure.RedRibbon,
+	Treasure.Rubies,
+	Treasure.VialOfWind,
+	Treasure.YellowBoots,
+	Treasure.Ladder,
+	Treasure.Bone,
+	Treasure.BlackOrb,
+	Treasure.Plank,
+	Treasure.Coal,
+	Treasure.EmptyPitcher,
+	Treasure.FullPitcher
+]
+
+global.Treasure_Cut_Index =
+[
+	Treasure_Cut.VialOfAcid,
+	Treasure_Cut.AlligatorShoes,
+	Treasure_Cut.BrownJar,
+	Treasure_Cut.Brush,
+	Treasure_Cut.RawSteak,
+	Treasure_Cut.GoldTrumpet,
+	Treasure_Cut.FishingNet,
+	Treasure_Cut.WhiteOrbs,
+	Treasure_Cut.Scroll,
+	Treasure_Cut.WoodenSpoon,
+	Treasure_Cut.SilverTrumpet
+]
+
 enum Spell
 {
 	Wand,
@@ -88,3 +148,35 @@ enum Spell_Cut
 	OpalAmulet,
 	Trident
 }
+
+global.Spell_Index =
+[
+	Spell.Wand,
+	Spell.Bow,
+	Spell.Broadsword,
+	Spell.Calm,
+	Spell.Feather,
+	Spell.RingsOfFire,
+	Spell.Firestorm,
+	Spell.GoldNecklace,
+	Spell.Hammer,
+	Spell.JadeAmulet,
+	Spell.Joust,
+	Spell.JadeRing,
+	Spell.Dagger,
+	Spell.Noise,
+	Spell.Pyros,
+	Spell.RoarStick,
+	Spell.ShortAxe,
+	Spell.SapphireRing,
+	Spell.Boomerang
+]
+
+global.Spell_Cut_Index =
+[
+	Spell_Cut.Hourglass,
+	Spell_Cut.LeatherBook,
+	Spell_Cut.EnergyOrb,
+	Spell_Cut.OpalAmulet,
+	Spell_Cut.Trident
+]

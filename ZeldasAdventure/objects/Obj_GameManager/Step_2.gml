@@ -9,13 +9,13 @@ if global.Fullscreen <> window_get_fullscreen()
 if room == Room_Overworld
 {
 	Camera_Pan()
-}
-
-//Auto-equip Wand if nothing is equipped
-if global.CurrentSpell = Spell.Nothing
-{
-	if ArrayHas(global.Inventory_Spell,Spell.Wand) = true
+	//Auto-equip Wand if nothing is equipped
+	if global.CurrentSpell = -1
 	{
-		global.CurrentSpell = Spell.Wand;
+		if global.Inventory_Spell[Spell.Wand] = true
+		{
+			global.CurrentSpell = Spell.Wand;
+		}
 	}
 }
+

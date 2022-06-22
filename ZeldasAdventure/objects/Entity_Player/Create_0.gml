@@ -1,5 +1,5 @@
 /// @description Variables
-PlayerSpeedMultiplier = 2;
+PlayerSpeedMultiplier = 1;
 PlayerSpeed = 1 * PlayerSpeedMultiplier;
 Facing = "South";
 IsAttacking = false;

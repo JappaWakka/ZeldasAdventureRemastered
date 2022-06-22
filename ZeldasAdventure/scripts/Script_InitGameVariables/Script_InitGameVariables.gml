@@ -14,8 +14,8 @@ function InitGameVariables()
 		Nederlands : "nl"
 	}
 	global.Subtitle = "";
-	global.CurrentTreasure = Treasure.Nothing;
-	global.CurrentSpell = Spell.Nothing;
+	global.CurrentTreasure = -1;
+	global.CurrentSpell = -1;
 	
 	//Player Variables
 	global.Name = "EMPTY";
