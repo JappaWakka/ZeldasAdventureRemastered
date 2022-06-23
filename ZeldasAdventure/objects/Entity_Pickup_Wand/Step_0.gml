@@ -1,4 +1,4 @@
-if global.Inventory_Spell[Spell.Wand] = false
+if global.Inventory.Spells[Spells.Wand] = false
 {
 	visible = true;
 }

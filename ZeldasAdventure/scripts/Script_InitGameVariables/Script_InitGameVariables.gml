@@ -16,7 +16,21 @@ function InitGameVariables()
 	global.Subtitle = "";
 	global.CurrentTreasure = -1;
 	global.CurrentSpell = -1;
-	
+	global.INVENTORY_SLOTS_TREASURE_MAX = INVENTORY_SLOTS_TREASURE
+
+	if global.AddCutItems = true
+	{
+		global.INVENTORY_SLOTS_TREASURE_MAX = INVENTORY_SLOTS_TREASURE + INVENTORY_SLOTS_TREASURE_CUT
+	}
+
+	global.INVENTORY_SLOTS_SPELLS_MAX = INVENTORY_SLOTS_SPELLS
+
+	if global.AddCutItems = true
+	{
+		global.INVENTORY_SLOTS_SPELLS_MAX = INVENTORY_SLOTS_SPELLS + INVENTORY_SLOTS_SPELLS_CUT
+	}
+
+		
 	//Player Variables
 	global.Name = "EMPTY";
 	global.CurrentHealth = 60;
@@ -28,18 +42,10 @@ function InitGameVariables()
 	global.CurrentRubies = 0;
 	global.CurrentTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";
-			
 	
-	global.CelestialSigns =
-	{
-		Earth : {Owned : false},
-		Illusion : {Owned : false},
-		Air : {Owned : false},
-		Destiny : {Owned : false},
-		Water : {Owned : false},
-		Strength : {Owned : false},
-		Fire : {Owned : false},
-	}
+	global.Inventory = {Treasure : array_create(0), Spells : array_create(0), CelestialSigns : array_create(0)}
+	
+	
 
 	//Option Variables
 	global.DebugMode = true;
@@ -48,4 +54,5 @@ function InitGameVariables()
 	global.NewSoundtrack = false;
 	global.ShowSubtitles = true;
 	global.CurrentLanguage = global.Languages.English;
+	global.AddCutItems = false;
 }
