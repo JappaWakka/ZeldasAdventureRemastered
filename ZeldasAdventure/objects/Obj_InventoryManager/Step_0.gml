@@ -15,13 +15,13 @@ if Alpha = 255
 	{
 		if InventoryIndex = 0
 		{
-			if SelectedIndex[InventoryIndex] < array_length(RemainingItems[InventoryIndex])
+			if SelectedIndex[InventoryIndex] < array_length(InventoryArray(InventoryIndex))
 			{
 				SelectedIndex[InventoryIndex] +=1;
 			}
 			if SelectedIndex[InventoryIndex] > ScrollOffsetX_Treasure + 5
 			{
-				if ScrollOffsetX_Treasure < array_length(RemainingItems[InventoryIndex]) - 7
+				if ScrollOffsetX_Treasure < array_length(InventoryArray(InventoryIndex)) - 7
 				{
 					ScrollOffsetX_Treasure += 1;
 				}	
@@ -29,13 +29,13 @@ if Alpha = 255
 		}
 		else if InventoryIndex = 1
 		{
-			if SelectedIndex[InventoryIndex] < array_length(RemainingItems[InventoryIndex])
+			if SelectedIndex[InventoryIndex] < array_length(InventoryArray(InventoryIndex))
 			{
 				SelectedIndex[InventoryIndex] +=1;
 			}
 			if SelectedIndex[InventoryIndex] > ScrollOffsetX_Spells + 5
 			{
-				if ScrollOffsetX_Spells < array_length(RemainingItems[InventoryIndex]) - 7
+				if ScrollOffsetX_Spells < array_length(InventoryArray(InventoryIndex)) - 7
 				{
 					ScrollOffsetX_Spells += 1;
 				}	

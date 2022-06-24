@@ -786,6 +786,7 @@
     {"id":{"name":"Vendoss_01_Below","path":"sprites/Vendoss_01_Below/Vendoss_01_Below.yy",},"order":2,},
     {"id":{"name":"Overworld_266_Below","path":"sprites/Overworld_266_Below/Overworld_266_Below.yy",},"order":141,},
     {"id":{"name":"input_y","path":"scripts/input_y/input_y.yy",},"order":4,},
+    {"id":{"name":"Script_Inventory_AddFindRemoveItem","path":"scripts/Script_Inventory_AddFindRemoveItem/Script_Inventory_AddFindRemoveItem.yy",},"order":19,},
     {"id":{"name":"Obj_InputManager","path":"objects/Obj_InputManager/Obj_InputManager.yy",},"order":1,},
     {"id":{"name":"Overworld_378_Below","path":"sprites/Overworld_378_Below/Overworld_378_Below.yy",},"order":196,},
     {"id":{"name":"Shrine_Air_12_Below","path":"sprites/Shrine_Air_12_Below/Shrine_Air_12_Below.yy",},"order":11,},

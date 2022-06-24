@@ -4,12 +4,14 @@
 #macro INVENTORY_SLOTS_SPELLS 19
 #macro INVENTORY_SLOTS_SPELLS_CUT 5
 
+#macro INVENTORY_SLOTS_CELESTIALSIGNS 7
+
 #macro INVENTORY_ROW_LENGTH 6
 #macro INVENTORY_SEPARATOR 5
 
-function InventoryArray(Index)
+function InventoryArray(InventoryIndex)
 {
-	switch Index
+	switch InventoryIndex
 	{
 	case 0 :
 		return global.Inventory.Treasure
@@ -24,9 +26,9 @@ function InventoryArray(Index)
 	return -1
 	
 }
-function ItemIndex(Inventory)
+function ItemIndex(InventoryIndex)
 {
-	switch Inventory
+	switch InventoryIndex
 	{
 	case 0 :
 		return global.Treasure_Index
@@ -41,6 +43,7 @@ function ItemIndex(Inventory)
 	return -1
 	
 }
+
 enum CelestialSigns
 {
 	Earth,
