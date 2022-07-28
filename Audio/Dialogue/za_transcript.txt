@@ -2,7 +2,8 @@
 	Subtitle_ShrineOfEarth_01_Shurmak_EvilsOfGreed
 	{
 		"Shurmak: Beware the evils of greed."
-		"Act quickly, think on your feet and you will be rewarded."
+		"Act quickly, think on your feet"
+		"and you will be rewarded."
 	}
 	
 	Subtitle_ShrineOfEarth_02_Llort_YouAreNotWanted
