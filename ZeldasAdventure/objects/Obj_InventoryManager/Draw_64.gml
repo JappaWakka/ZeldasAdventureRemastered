@@ -54,7 +54,7 @@ for (var i = 0; i < array_length(InventoryArray(0)); i += 1)
 	TreasureOffsetX += 32 + INVENTORY_SEPARATOR;
 }
 surface_reset_target();
-draw_surface(TreasureSurface,55 + INVENTORY_SEPARATOR,119)
+draw_surface(TreasureSurface,55 + INVENTORY_SEPARATOR,TreasurePositionY)
 
 //Draw Spell Items
 var SpellsSurface = surface_create(218,34);
@@ -72,21 +72,27 @@ for (var i = 0; i < array_length(InventoryArray(1)); i += 1){
 	SpellsOffsetX += 32 + INVENTORY_SEPARATOR;
 }
 surface_reset_target();
-draw_surface(TreasureSurface,55 + INVENTORY_SEPARATOR,119)
+draw_surface(SpellsSurface,55 + INVENTORY_SEPARATOR,SpellsPositionY)
 
 //Draw cursor
 var CursorPositionX = 0
 if InventoryIndex = 0
 {
+	if array_length(InventoryArray(0)) = 0
+	{
+		CursorPositionX = 55 + INVENTORY_SEPARATOR
+	}
+	else
+	{
 	CursorPositionX =
 		clamp(
 		TreasurePositionX
-		+ (32 + INVENTORY_SEPARATOR) * SelectedIndex[0]
-		- (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Treasure,
+			+ (32 + INVENTORY_SEPARATOR) * SelectedIndex[0]
+			- (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Treasure,
 		0,
 		TreasureOffsetX + 55 + INVENTORY_SEPARATOR - (32 + INVENTORY_SEPARATOR)
 		);
-
+	}
 	draw_sprite_ext(
 		Sprite_Cursor,
 		0,
@@ -98,15 +104,21 @@ if InventoryIndex = 0
 }
 else if InventoryIndex = 1
 {
+	if array_length(InventoryArray(1)) = 0
+	{
+		CursorPositionX = 55 + INVENTORY_SEPARATOR
+	}
+	else
+	{
 	CursorPositionX =
 		clamp(
 		SpellsPositionX
 		+ (32 + INVENTORY_SEPARATOR) * SelectedIndex[1]
 		- (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Spells,
 		0,
-		SpellsPositionX + 55 + INVENTORY_SEPARATOR - (32 + INVENTORY_SEPARATOR)
+		SpellsOffsetX + 55 + INVENTORY_SEPARATOR - (32 + INVENTORY_SEPARATOR)
 		);
-
+	}
 	draw_sprite_ext(
 		Sprite_Cursor,
 		0,

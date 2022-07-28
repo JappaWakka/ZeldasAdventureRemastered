@@ -19,21 +19,7 @@ function Add_Item(Item,InventoryIndex)
 		return false
 	}
 	
-	array_resize //Make the array bigger so the new item fits in
-	(
-		InventoryArray //Select Inventory Array
-		(
-			InventoryIndex //0 = Treasure, 1 = Spells, 2 = Celestial Signs
-		),
-		array_length //Current size of the inventory array + 1
-		(
-			InventoryArray
-			(
-				InventoryIndex
-			)
-		)
-		+ 1
-	);
+	
 	//Make the last entry of the specified inventory array the Item Number
 	InventoryArray(InventoryIndex) 
 	[

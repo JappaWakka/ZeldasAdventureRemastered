@@ -46,7 +46,7 @@ else
 }
 
 ////Red Boots Water
-if global.Inventory.Treasure[Treasure.RedBoots] = false
+if Find_Item(Treasure.RedBoots,0) = -1
 {
 	// Horz(x) speed collision
 	if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_UseItem_RedBoots))
@@ -124,7 +124,7 @@ else
 #region Action - Use Weapon
 if input_check_pressed("Attack") = true and IsAttacking = false
 {
-	if global.Inventory.Spells[Spells.Wand] = true
+	if Find_Item(Spells.Wand, 1) <> -1
 	{
 		//Set sprite, enable animation
 		if Facing = "East"

@@ -1,12 +1,12 @@
 if global.CurrentRubies == 0
 {
-	global.Inventory.Treasure[Treasure.Rubies] = false
+	Remove_Item(Treasure.Rubies,0)
 }
 else
 {
-	if global.Inventory.Treasure[Treasure.Rubies] = false
+	if Find_Item(Treasure.Rubies,0) = -1
 	{
-		global.Inventory.Treasure[Treasure.Rubies] = true
+		Add_Item(Treasure.Rubies,0)
 	}
 }
 if Alpha = 255
@@ -21,7 +21,7 @@ if Alpha = 255
 			}
 			if SelectedIndex[InventoryIndex] > ScrollOffsetX_Treasure + 5
 			{
-				if ScrollOffsetX_Treasure < array_length(InventoryArray(InventoryIndex)) - 7
+				if ScrollOffsetX_Treasure < array_length(InventoryArray(InventoryIndex)) - 6
 				{
 					ScrollOffsetX_Treasure += 1;
 				}	
@@ -35,7 +35,7 @@ if Alpha = 255
 			}
 			if SelectedIndex[InventoryIndex] > ScrollOffsetX_Spells + 5
 			{
-				if ScrollOffsetX_Spells < array_length(InventoryArray(InventoryIndex)) - 7
+				if ScrollOffsetX_Spells < array_length(InventoryArray(InventoryIndex)) - 6
 				{
 					ScrollOffsetX_Spells += 1;
 				}	
@@ -77,7 +77,7 @@ if Alpha = 255
 			}
 		}
 	}
-	
+	 
 	if input_check_pressed("Down") = true
 	{
 		if InventoryIndex = 0
@@ -85,12 +85,13 @@ if Alpha = 255
 			InventoryIndex = 1
 		}
 		
-		if SelectedIndex[0] < ScrollOffsetX_Treasure
+	}
+	if input_check_pressed("Up") = true
+	{
+		if InventoryIndex = 1
 		{
-			if ScrollOffsetX_Treasure > 0
-			{
-				ScrollOffsetX_Treasure -= 1
-			}	
+			InventoryIndex = 0
 		}
+		
 	}
 }

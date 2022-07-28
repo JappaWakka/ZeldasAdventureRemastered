@@ -9,8 +9,8 @@ if SelectedIndex[1] = -1
 {
 	SelectedIndex[1] = 0
 }
-ScrollOffsetX_Treasure = clamp(SelectedIndex[0],0, INVENTORY_SLOTS_TREASURE - 7)
-ScrollOffsetX_Spells = clamp(SelectedIndex[1],0, INVENTORY_SLOTS_SPELLS - 7)
+ScrollOffsetX_Treasure = clamp(SelectedIndex[0],0, global.InventorySlots_Max[0] - 7)
+ScrollOffsetX_Spells = clamp(SelectedIndex[1],0,global.InventorySlots_Max[1] - 7)
 
 Alpha = 0
 OpeningClosing = false

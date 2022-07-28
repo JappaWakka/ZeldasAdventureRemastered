@@ -1,6 +1,3 @@
-/// @description Variables
-PlayerSpeedMultiplier = 1;
-PlayerSpeed = 1 * PlayerSpeedMultiplier;
-Facing = "South";
+/// @description VariablesFacing = "South";
 IsAttacking = false;
 DamageDelay = 0

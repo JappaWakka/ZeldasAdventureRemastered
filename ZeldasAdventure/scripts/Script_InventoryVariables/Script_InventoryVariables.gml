@@ -96,11 +96,7 @@ enum Treasure
 	Plank,
 	Coal,
 	EmptyPitcher,
-	FullPitcher
-}
-
-enum Treasure_Cut
-{
+	FullPitcher,
 	VialOfAcid,
 	AlligatorShoes,
 	BrownJar,
@@ -113,6 +109,7 @@ enum Treasure_Cut
 	WoodenSpoon,
 	SilverTrumpet
 }
+
 
 global.CelestialSigns_Index =
 [
@@ -166,17 +163,17 @@ global.Treasure_Index =
 	Treasure.Coal,
 	Treasure.EmptyPitcher,
 	Treasure.FullPitcher,
-	Treasure_Cut.VialOfAcid,
-	Treasure_Cut.AlligatorShoes,
-	Treasure_Cut.BrownJar,
-	Treasure_Cut.Brush,
-	Treasure_Cut.RawSteak,
-	Treasure_Cut.GoldTrumpet,
-	Treasure_Cut.FishingNet,
-	Treasure_Cut.WhiteOrbs,
-	Treasure_Cut.Scroll,
-	Treasure_Cut.WoodenSpoon,
-	Treasure_Cut.SilverTrumpet
+	Treasure.VialOfAcid,
+	Treasure.AlligatorShoes,
+	Treasure.BrownJar,
+	Treasure.Brush,
+	Treasure.RawSteak,
+	Treasure.GoldTrumpet,
+	Treasure.FishingNet,
+	Treasure.WhiteOrbs,
+	Treasure.Scroll,
+	Treasure.WoodenSpoon,
+	Treasure.SilverTrumpet
 ]
 
 
@@ -200,17 +197,14 @@ enum Spells
 	RoarStick,
 	ShortAxe,
 	SapphireRing,
-	Boomerang
-}
-
-enum Spells_Cut
-{
+	Boomerang,
 	Hourglass,
 	LeatherBook,
 	EnergyOrb,
 	OpalAmulet,
 	Trident
 }
+
 
 global.Spells_Index =
 [
@@ -233,10 +227,10 @@ global.Spells_Index =
 	Spells.ShortAxe,
 	Spells.SapphireRing,
 	Spells.Boomerang,
-	Spells_Cut.Hourglass,
-	Spells_Cut.LeatherBook,
-	Spells_Cut.EnergyOrb,
-	Spells_Cut.OpalAmulet,
-	Spells_Cut.Trident
+	Spells.Hourglass,
+	Spells.LeatherBook,
+	Spells.EnergyOrb,
+	Spells.OpalAmulet,
+	Spells.Trident
 ]
 

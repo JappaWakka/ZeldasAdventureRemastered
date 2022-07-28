@@ -2,7 +2,7 @@ function InitGameVariables()
 {
 	
 	//System Variables
-	global.AddCutItems = false;
+	global.AddCutItems = true;
 	global.CurrentSaveGame = 0;
 	global.FadeSpeed = 8;
 	global.FadeProgress = 2;
