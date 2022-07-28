@@ -37,31 +37,14 @@ if OpeningClosing = true
 draw_sprite_ext(Sprite_Inventory_Background,0,0,0,1,1,0,c_white,Alpha);
 
 
-//Determine amount of Treasure Items to draw
-for (var i = 0; i < INVENTORY_SLOTS_TREASURE - 1; i += 1)
-{
-	if global.Inventory.Treasure[i] = false
-	{
-		array_push(RemoveItems[0],i)
-	}
-}
-for (var i = array_length(RemainingItems[0]) - 1; i > 0; i -= 1)
-{
-	if ArrayHas(RemoveItems[0],RemainingItems[0][i])
-	{
-		array_delete(RemainingItems[0],RemoveItems[0][i] -1,0)
-		i = -1
-	}
-}
-
 //Draw Treasure Items
 var TreasureSurface = surface_create(218,34);
 surface_set_target(TreasureSurface);
-for (var i = 0; i < array_length(RemainingItems[0]); i += 1)
+for (var i = 0; i < array_length(InventoryArray(0)); i += 1)
 {
 	draw_sprite_ext(
 	Sprite_Inventory_Treasure,
-	RemainingItems[0][i],
+	InventoryArray(0)[i],
 	TreasureOffsetX,
 	0,
 	1,1,0,
@@ -73,30 +56,13 @@ for (var i = 0; i < array_length(RemainingItems[0]); i += 1)
 surface_reset_target();
 draw_surface(TreasureSurface,55 + INVENTORY_SEPARATOR,119)
 
-//Determine amount of Spell Items to draw
-for (var i = 0; i < INVENTORY_SLOTS_SPELLS - 1; i += 1)
-{
-	if global.Inventory.Spells[i] = false
-	{
-		array_push(RemoveItems[1],i)
-	}
-}
-for (var i = array_length(RemainingItems[1]); i > 0; i -= 1)
-{
-	if ArrayHas(RemoveItems[1],RemainingItems[1][i])
-	{
-		array_delete(RemainingItems[1],RemoveItems[1][i] - 1,1)
-		i = -1
-	}
-}
-
 //Draw Spell Items
 var SpellsSurface = surface_create(218,34);
 surface_set_target(SpellsSurface);
-for (var i = 0; i < array_length(RemainingItems[1]); i += 1){
+for (var i = 0; i < array_length(InventoryArray(1)); i += 1){
 	draw_sprite_ext(
 	Sprite_Inventory_Spells,
-	RemainingItems[1][i],
+	InventoryArray(1)[i],
 	SpellsOffsetX,
 	0,
 	1,1,0,

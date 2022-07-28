@@ -1,6 +1,8 @@
 function InitGameVariables()
 {
+	
 	//System Variables
+	global.AddCutItems = false;
 	global.CurrentSaveGame = 0;
 	global.FadeSpeed = 8;
 	global.FadeProgress = 2;
@@ -16,21 +18,23 @@ function InitGameVariables()
 	global.Subtitle = "";
 	global.CurrentTreasure = -1;
 	global.CurrentSpell = -1;
-	global.INVENTORY_SLOTS_TREASURE_MAX = INVENTORY_SLOTS_TREASURE
+	global.InventorySlots_Max = [0,0,0]
+	global.InventorySlots_Max[0] = INVENTORY_SLOTS_TREASURE
+
 
 	if global.AddCutItems = true
 	{
-		global.INVENTORY_SLOTS_TREASURE_MAX = INVENTORY_SLOTS_TREASURE + INVENTORY_SLOTS_TREASURE_CUT
+		global.InventorySlots_Max[0] = INVENTORY_SLOTS_TREASURE + INVENTORY_SLOTS_TREASURE_CUT
 	}
 
-	global.INVENTORY_SLOTS_SPELLS_MAX = INVENTORY_SLOTS_SPELLS
+	global.InventorySlots_Max[1] = INVENTORY_SLOTS_SPELLS
 
 	if global.AddCutItems = true
 	{
-		global.INVENTORY_SLOTS_SPELLS_MAX = INVENTORY_SLOTS_SPELLS + INVENTORY_SLOTS_SPELLS_CUT
+		global.InventorySlots_Max[1] = INVENTORY_SLOTS_SPELLS + INVENTORY_SLOTS_SPELLS_CUT
 	}
 
-		
+	global.InventorySlots_Max[2] = INVENTORY_SLOTS_CELESTIALSIGNS
 	//Player Variables
 	global.Name = "EMPTY";
 	global.CurrentHealth = 60;
@@ -45,8 +49,6 @@ function InitGameVariables()
 	
 	global.Inventory = {Treasure : array_create(0), Spells : array_create(0), CelestialSigns : array_create(0)}
 	
-	
-
 	//Option Variables
 	global.DebugMode = true;
 	global.WindowScale = 3;
@@ -54,5 +56,4 @@ function InitGameVariables()
 	global.NewSoundtrack = false;
 	global.ShowSubtitles = true;
 	global.CurrentLanguage = global.Languages.English;
-	global.AddCutItems = false;
 }

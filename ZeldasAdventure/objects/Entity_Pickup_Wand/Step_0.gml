@@ -1,4 +1,4 @@
-if global.Inventory.Spells[Spells.Wand] = false
+if Find_Item(Spells.Wand,1) = -1
 {
 	visible = true;
 }
