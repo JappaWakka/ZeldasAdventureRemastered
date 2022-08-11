@@ -1,4 +1,4 @@
-if Initialized = true //Check if all the Audiogroups have been loaded
+if global.Initialized = true //Check if all the Audiogroups have been loaded
 {
 	if global.SwitchTracks = true //A music track switch has been requested, at the room start or by the Camera (controlled by Obj_GameManager)
 	{

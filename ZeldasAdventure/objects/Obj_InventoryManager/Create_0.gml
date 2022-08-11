@@ -1,11 +1,32 @@
-SelectedIndex = [Find_Item(global.CurrentTreasure,0), Find_Item(global.CurrentSpell,1)]
-InventoryIndex = 0
+if global.RemasteredMode == true
+{
+	SelectedIndex = [Find_Item(global.CurrentTreasure,0), Find_Item(global.CurrentSpell,1)]
+	InventoryIndex = 0
+}
+else
+{
+	if global.CurrentItem[0] == 0
+	{
+		SelectedIndex = [Find_Item(global.CurrentItem[1],0),-1]
+		InventoryIndex = 0
+	}
+	else if global.CurrentItem[0] == 1
+	{
+		SelectedIndex = [-1, Find_Item(global.CurrentItem[1],1)]
+		InventoryIndex = 1
+	}
+	else
+	{
+		SelectedIndex = [-1,-1]
+		InventoryIndex = 0
+	}
+}
 
-if SelectedIndex[0] = -1
+if SelectedIndex[0] == -1
 {
 	SelectedIndex[0] = 0
 }
-if SelectedIndex[1] = -1
+if SelectedIndex[1] == -1
 {
 	SelectedIndex[1] = 0
 }

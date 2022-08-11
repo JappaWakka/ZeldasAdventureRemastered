@@ -1,9 +1,5 @@
-if MoveType = EnemyMoveTypes.Straight or MoveType = EnemyMoveTypes.Diagonally
-{
-	move_bounce_all(false);
-	alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
-}
-else if MoveType = "Bouncing"
-{
-	move_bounce_all(false);
-}
+//Bouncing & Straight Movement
+move_bounce_all(false);
+//Don't add this when bouncing
+alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
+

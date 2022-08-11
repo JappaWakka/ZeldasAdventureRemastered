@@ -205,6 +205,86 @@ enum Spells
 	Trident
 }
 
+function CastCost(Item)
+{
+	var Cost = -1
+	switch Item
+	{
+		case Spells.Wand :
+			Cost = 0;
+			break;
+		case Spells.Bow :
+			Cost = 1;
+			break;
+		case Spells.Broadsword :
+			Cost = 2;
+			break;
+		case Spells.Calm :
+			Cost =1;
+			break;
+		case Spells.Feather :
+			Cost =2;
+			break;
+		case Spells.RingsOfFire :
+			Cost =3;
+			break;
+		case Spells.Firestorm :
+			Cost =1;
+			break;
+		case Spells.GoldNecklace :
+			Cost =2;
+			break;
+		case Spells.Hammer :
+			Cost =2;
+			break;
+		case Spells.JadeAmulet :
+			Cost =24;
+			break;
+		case Spells.Joust :
+			Cost =3;
+			break;
+		case Spells.JadeRing :
+			Cost =3;
+			break;
+		case Spells.Dagger :
+			Cost =2;
+			break;
+		case Spells.Noise :
+			Cost =1;
+			break;
+		case Spells.Pyros :
+			Cost =4;
+			break;
+		case Spells.RoarStick :
+			Cost =3;
+			break;
+		case Spells.ShortAxe :
+			Cost =2;
+			break;
+		case Spells.SapphireRing :
+			Cost =26;
+			break;
+		case Spells.Boomerang :
+			Cost =1;
+			break;
+		case Spells.Hourglass :
+			Cost =-1;
+			break;
+		case Spells.LeatherBook :
+			Cost =-1;
+			break;
+		case Spells.EnergyOrb :
+			Cost =-1;
+			break;
+		case Spells.OpalAmulet :
+			Cost =-1;
+			break;
+		case Spells.Trident :
+			Cost = -1
+			break;
+	}
+	return Cost
+};
 
 global.Spells_Index =
 [

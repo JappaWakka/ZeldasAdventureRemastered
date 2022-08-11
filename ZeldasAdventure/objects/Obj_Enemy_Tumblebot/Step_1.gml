@@ -16,9 +16,54 @@ switch direction
 }
 if distance_to_object(Entity_Player) <= AttackModeRange
 {
-	MoveSpeed = global.EnemySpeeds.Medium
+	speed = global.EnemySpeeds.Medium
 }
 else
 {
-	MoveSpeed = global.EnemySpeeds.Slow
+	speed = global.EnemySpeeds.Slow
+}
+
+if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
+y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
+x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
+y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
+{
+	ChangeDirection = true;
+}
+
+if ChangeDirection = true
+{
+	if distance_to_object(Entity_Player) <= AttackModeRange
+	{
+		if random_range(1,101) <= MoveToPlayerChance
+		{
+			if Entity_Player.x < self.x
+			{
+				if Entity_Player.y < self.y
+				{
+					direction = choose(180,90);
+				}
+				else
+				{
+					direction = choose(180,270);
+				}
+			}
+			else
+			{
+				if Entity_Player.y < self.y
+				{
+					direction = choose(0,90);
+				}
+				else
+				{
+					direction = choose(0,270);
+				}
+			}
+		}
+	}
+	else
+	{
+		direction = choose(90,180,0,270);
+	}
+	alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
 }

@@ -7,14 +7,7 @@ var SpellsPositionY = 177
 var TreasureOffsetX = 0 - (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Treasure
 var SpellsOffsetX = 0 - (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Spells
 
-if input_check_pressed("Inventory")
-{
-	if global.FadeAlpha = 0 && OpeningClosing = false
-	{
-		global.FadeProgress = 0;
-		OpeningClosing = true;
-	}
-}
+
 if OpeningClosing = true
 {
 	if global.FadeProgress > 0
@@ -74,6 +67,35 @@ for (var i = 0; i < array_length(InventoryArray(1)); i += 1){
 surface_reset_target();
 draw_surface(SpellsSurface,55 + INVENTORY_SEPARATOR,SpellsPositionY)
 
+//Draw CurrentItem(s)
+if global.RemasteredMode = false
+{
+	if global.CurrentItem <> -1 && global.CurrentItem[1] <> -1
+	{
+		if global.CurrentItem[0] = 0
+		{
+			draw_sprite_ext(
+			Sprite_Inventory_Treasure,
+			InventoryArray(0)[global.CurrentItem[1]],
+			320,
+			144,
+			1,1,0,
+			c_white,
+			Alpha);
+		}
+		else
+		{
+			draw_sprite_ext(
+			Sprite_Inventory_Spells,
+			InventoryArray(1)[global.CurrentItem[1]],
+			320,
+			144,
+			1,1,0,
+			c_white,
+			Alpha);
+		}
+	}
+}
 //Draw cursor
 var CursorPositionX = 0
 if InventoryIndex = 0

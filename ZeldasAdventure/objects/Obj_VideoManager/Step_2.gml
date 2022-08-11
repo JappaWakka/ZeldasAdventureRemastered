@@ -1,5 +1,5 @@
 /// @description Skip Cutscene
-if input_check_pressed("Attack") or input_check_pressed("Use Spell") or input_check_pressed("Inventory")
+if input_check_pressed("Action") or input_check_pressed("Special") or input_check_pressed("Inventory")
 {
 	if room = Room_Cutscene_Logos
 	{
@@ -14,7 +14,7 @@ if input_check_pressed("Attack") or input_check_pressed("Use Spell") or input_ch
 		room_goto(Room_Overworld)
 	}
 }
-if input_check_pressed("Pause Menu")
+if input_check_pressed("Menu")
 	{
 		if room = Room_Cutscene_Logos or room = Room_Cutscene_Intro
 		{

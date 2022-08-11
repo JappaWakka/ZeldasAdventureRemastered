@@ -12,7 +12,7 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Shrine_Earth_Ambient.ogg",
-  "duration": 41.71072,
+  "duration": 61.1123123,
   "parent": {
     "name": "Shrines",
     "path": "folders/Sounds/Music_Original/Shrines.yy",

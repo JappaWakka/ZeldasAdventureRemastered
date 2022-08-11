@@ -16,10 +16,12 @@ function InitGameVariables()
 		Nederlands : "nl"
 	}
 	global.Subtitle = "";
+	global.CurrentItem = [-1,-1]
 	global.CurrentTreasure = -1;
 	global.CurrentSpell = -1;
-	global.InventorySlots_Max = [0,0,0]
-	global.InventorySlots_Max[0] = INVENTORY_SLOTS_TREASURE
+	global.CurrentCastCost = 0;
+	global.InventorySlots_Max = [0,0,0];
+	global.InventorySlots_Max[0] = INVENTORY_SLOTS_TREASURE;
 
 
 	if global.AddCutItems = true
@@ -55,5 +57,6 @@ function InitGameVariables()
 	global.Fullscreen = 0;
 	global.NewSoundtrack = false;
 	global.ShowSubtitles = true;
+	global.RemasteredMode = false;
 	global.CurrentLanguage = global.Languages.English;
 }

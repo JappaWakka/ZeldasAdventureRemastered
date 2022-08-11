@@ -121,58 +121,119 @@ else
 }
 
 
-#region Action - Use Weapon
-if input_check_pressed("Attack") = true and IsAttacking = false
+#region Action - Attacking
+if global.RemasteredMode = false and IsAttacking = false
 {
-	if Find_Item(Spells.Wand, 1) <> -1
+	if input_check_pressed("Action") = true or input_check_pressed("Special") = true
 	{
-		//Set sprite, enable animation
-		if Facing = "East"
+		if Find_Item(Spells.Wand, 1) <> -1 and global.CurrentItem[0] = 1 and global.CurrentRubies >= CastCost(global.CurrentItem[1])
 		{
-			sprite_index = Zelda_Attack_East;
-			IsAttacking = true;
-		}
-		if Facing = "West"
-		{
-			sprite_index = Zelda_Attack_West;
-			IsAttacking = true;
-		}
-		if Facing = "South"
-		{
-			sprite_index = Zelda_Attack_South;
-			IsAttacking = true;
-		}
-		if Facing = "North"
-		{
-			sprite_index = Zelda_Attack_North;
-			IsAttacking = true;
-		}
-		
-		// Use Spell - Wand
-		if global.CurrentSpell = Spells.Wand
-		{
-			audio_play_sound(SFX_Use_Wand,false,false)
+			//If casting a spell, pay the casting cost
+			global.CurrentRubies -= CastCost(global.CurrentItem[1])
+			//Set sprite, enable animation
 			if Facing = "East"
 			{
-				instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				sprite_index = Zelda_Attack_East;
+				IsAttacking = true;
 			}
 			if Facing = "West"
 			{
-				instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				sprite_index = Zelda_Attack_West;
+				IsAttacking = true;
 			}
 			if Facing = "South"
 			{
-				instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				sprite_index = Zelda_Attack_South;
+				IsAttacking = true;
 			}
 			if Facing = "North"
 			{
-				instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				sprite_index = Zelda_Attack_North;
+				IsAttacking = true;
+			}
+			
+			// Use Spell - Wand
+			if global.CurrentItem[1] = Spells.Wand
+			{
+				audio_play_sound(SFX_Use_Wand,false,false)
+				if Facing = "East"
+				{
+					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = "West"
+				{
+					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = "South"
+				{
+					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = "North"
+				{
+					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				}
 			}
 		}
+		else
+		{
+			audio_play_sound(SFX_Use_Error,false,false)
+		}
 	}
-	else
+}
+if global.RemasteredMode = true and IsAttacking = false
+{
+	if input_check_pressed("Special") = true
 	{
-		audio_play_sound(SFX_Use_Error,false,false)
+		if Find_Item(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
+		{
+			//Set sprite, enable animation
+			if Facing = "East"
+			{
+				sprite_index = Zelda_Attack_East;
+				IsAttacking = true;
+			}
+			if Facing = "West"
+			{
+				sprite_index = Zelda_Attack_West;
+				IsAttacking = true;
+			}
+			if Facing = "South"
+			{
+				sprite_index = Zelda_Attack_South;
+				IsAttacking = true;
+			}
+			if Facing = "North"
+			{
+				sprite_index = Zelda_Attack_North;
+				IsAttacking = true;
+			}
+			
+			// Use Spell - Wand
+			if global.CurrentSpell = Spells.Wand
+			{
+				audio_play_sound(SFX_Use_Wand,false,false)
+				if Facing = "East"
+				{
+					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = "West"
+				{
+					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = "South"
+				{
+					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = "North"
+				{
+					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+				}
+			}
+		}
+		else
+		{
+			audio_play_sound(SFX_Use_Error,false,false)
+		}
 	}
 }
 if IsAttacking = true

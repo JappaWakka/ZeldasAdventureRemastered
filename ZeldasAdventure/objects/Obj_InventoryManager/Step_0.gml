@@ -1,3 +1,52 @@
+if input_check_pressed("Inventory")
+{
+	if global.FadeAlpha == 0 && OpeningClosing == false
+	{
+		global.FadeProgress = 0;
+		OpeningClosing = true;
+	}
+	if global.RemasteredMode = true
+	{
+		SelectedIndex = [Find_Item(global.CurrentTreasure,0), Find_Item(global.CurrentSpell,1)]
+		InventoryIndex = 0
+	}
+	else
+	{
+		if global.CurrentItem[0] == 0
+		{
+			SelectedIndex = [Find_Item(global.CurrentItem[1],0),-1]
+			InventoryIndex = 0
+		}
+		else if global.CurrentItem[0] == 1
+		{
+			SelectedIndex = [-1, Find_Item(global.CurrentItem[1],1)]
+			InventoryIndex = 1
+		}
+		else
+		{
+			SelectedIndex = [-1,-1]
+			InventoryIndex = 0
+		}
+	}
+}
+if SelectedIndex[0] == -1
+{
+	SelectedIndex[0] = 0
+}
+if SelectedIndex[1] == -1
+{
+	SelectedIndex[1] = 0
+}
+if Alpha == 255
+{
+	if input_check_pressed("Action")
+	{
+		if array_length(InventoryArray(InventoryIndex)) > 0
+		{
+			global.CurrentItem = [InventoryIndex,InventoryArray(InventoryIndex)[SelectedIndex[InventoryIndex]]]
+		}
+	}
+}
 if global.CurrentRubies == 0
 {
 	Remove_Item(Treasure.Rubies,0)
