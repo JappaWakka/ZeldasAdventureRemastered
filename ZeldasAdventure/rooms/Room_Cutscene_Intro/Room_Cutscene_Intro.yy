@@ -14,6 +14,7 @@
   ],
   "layers": [
     {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"Obj_DrawHUD","path":"objects/Obj_DrawHUD/Obj_DrawHUD.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":72.0,"y":0.0,"resourceVersion":"1.0","name":"inst_754B8F8E","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Obj_GameManager","path":"objects/Obj_GameManager/Obj_GameManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":24.0,"y":0.0,"resourceVersion":"1.0","name":"inst_4E3F6B08","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Obj_VideoManager","path":"objects/Obj_VideoManager/Obj_VideoManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,"resourceVersion":"1.0","name":"inst_58341284","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Obj_InputManager","path":"objects/Obj_InputManager/Obj_InputManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":0.0,"resourceVersion":"1.0","name":"inst_45DEE2ED","tags":[],"resourceType":"GMRInstance",},
@@ -27,6 +28,7 @@
     {"name":"inst_58341284","path":"rooms/Room_Cutscene_Intro/Room_Cutscene_Intro.yy",},
     {"name":"inst_4E3F6B08","path":"rooms/Room_Cutscene_Intro/Room_Cutscene_Intro.yy",},
     {"name":"inst_45DEE2ED","path":"rooms/Room_Cutscene_Intro/Room_Cutscene_Intro.yy",},
+    {"name":"inst_754B8F8E","path":"rooms/Room_Cutscene_Intro/Room_Cutscene_Intro.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

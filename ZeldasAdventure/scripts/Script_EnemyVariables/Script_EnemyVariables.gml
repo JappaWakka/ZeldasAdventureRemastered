@@ -1,9 +1,9 @@
 global.EnemySpeeds =
 {
 	Still: 0,
-	Slow : 72 * (delta_time / 1000000),
-	Medium : 104 * (delta_time / 1000000),
-	Fast: 128 * (delta_time / 1000000)
+	Slow : 1,
+	Medium : 1.4,
+	Fast: 1.8
 }
 
 global.EnemySound = -1

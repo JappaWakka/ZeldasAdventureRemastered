@@ -23,13 +23,6 @@ else
 	speed = global.EnemySpeeds.Slow
 }
 
-if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
-y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
-x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
-y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
-{
-	ChangeDirection = true;
-}
 
 if ChangeDirection = true
 {
@@ -66,4 +59,5 @@ if ChangeDirection = true
 		direction = choose(90,180,0,270);
 	}
 	alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
+	ChangeDirection = false;
 }

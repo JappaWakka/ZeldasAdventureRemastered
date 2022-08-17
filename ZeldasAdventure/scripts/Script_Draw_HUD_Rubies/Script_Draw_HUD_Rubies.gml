@@ -4,7 +4,7 @@ function Draw_HUD_Rubies()
 	var RubyOffset =
 	{
 		x: 64,
-		y: 24,
+		y: 24
 	}
 	
 	var LeadingZeroes = ""
@@ -23,9 +23,9 @@ function Draw_HUD_Rubies()
 	}
 	
 	var RubyFont = Font_Rubies_Overworld()
-	var Rubiestring = LeadingZeroes + string(_CurrentRubies)
+	var Rubystring = LeadingZeroes + string(_CurrentRubies)
 	
 	draw_sprite(Sprite_HUD_Ruby_Icon,0,RubyOffset.x - 14, RubyOffset.y)
 	draw_set_font(RubyFont)
-	draw_text(RubyOffset.x,RubyOffset.y,Rubiestring)
+	draw_text(RubyOffset.x,RubyOffset.y,Rubystring)
 }

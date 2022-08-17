@@ -495,7 +495,7 @@
       ],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Backgrounds","tags":[],"resourceType":"GMRLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "${project_dir}/rooms/Room_Overworld/RoomCreationCode.gml",
+  "creationCodeFile": "${project_dir}/rooms/Room_Overworld_backup/RoomCreationCode.gml",
   "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_4EE3794E","path":"rooms/Room_Overworld_backup/Room_Overworld_backup.yy",},

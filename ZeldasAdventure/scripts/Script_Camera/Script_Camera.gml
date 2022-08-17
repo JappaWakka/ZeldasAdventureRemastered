@@ -38,6 +38,8 @@ function Camera_Pan()
 		
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
+			global.CurrentTile.x = Desired.x / tileWidth;
+			global.CurrentTile.y = Desired.y / tileHeight;
 			camera_set_view_pos(view,Current.x + PanTo.x,Current.y + PanTo.y);
 			if ((Desired.x != Current.x + PanTo.x) or (Desired.y != Current.y + PanTo.y))
 			{
@@ -45,8 +47,6 @@ function Camera_Pan()
 			}
 			else
 			{
-				global.CurrentTile.x = Desired.x / tileWidth;
-				global.CurrentTile.y = Desired.y / tileHeight;
 				global.SwitchTracks = true;
 				if global.FadeAlpha = 0
 				{
