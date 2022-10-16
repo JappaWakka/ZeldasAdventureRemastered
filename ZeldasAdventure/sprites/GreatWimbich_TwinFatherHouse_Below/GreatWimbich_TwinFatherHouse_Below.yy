@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "GreatWimbich_TwinFatherHouse_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4d834377-f083-457c-a50c-5d56d8664603","path":"sprites/GreatWimbich_TwinFatherHouse_Below/GreatWimbich_TwinFatherHouse_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4d834377-f083-457c-a50c-5d56d8664603","path":"sprites/GreatWimbich_TwinFatherHouse_Below/GreatWimbich_TwinFatherHouse_Below.yy",},"LayerId":{"name":"efdf556c-c49c-4073-9655-057858a5dad1","path":"sprites/GreatWimbich_TwinFatherHouse_Below/GreatWimbich_TwinFatherHouse_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"GreatWimbich_TwinFatherHouse_Below","path":"sprites/GreatWimbich_TwinFatherHouse_Below/GreatWimbich_TwinFatherHouse_Below.yy",},"resourceVersion":"1.0","name":"4d834377-f083-457c-a50c-5d56d8664603","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4d834377-f083-457c-a50c-5d56d8664603",},
   ],
   "sequence": {
-    "spriteId": {"name":"GreatWimbich_TwinFatherHouse_Below","path":"sprites/GreatWimbich_TwinFatherHouse_Below/GreatWimbich_TwinFatherHouse_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "GreatWimbich_TwinFatherHouse_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e2eb1681-ed78-4249-9a53-ed6bcb37ebd5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4d834377-f083-457c-a50c-5d56d8664603","path":"sprites/GreatWimbich_TwinFatherHouse_Below/GreatWimbich_TwinFatherHouse_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"GreatWimbich_TwinFatherHouse_Below","path":"sprites/GreatWimbich_TwinFatherHouse_Below/GreatWimbich_TwinFatherHouse_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "GreatWimbich_TwinFatherHouse_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"efdf556c-c49c-4073-9655-057858a5dad1","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"efdf556c-c49c-4073-9655-057858a5dad1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "GreatWimbich",
     "path": "folders/Sprites/Maps/Overworld/GreatWimbich.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GreatWimbich_TwinFatherHouse_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

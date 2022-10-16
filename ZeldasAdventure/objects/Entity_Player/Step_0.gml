@@ -80,7 +80,7 @@ if Find_Item(Treasure.RedBoots,0) = -1
 
 #region SpriteChanges & Direction
 
-AnimSpeed = 1
+AnimSpeed = PlayerSpeedMultiplier
 if global.CameraIsPanning = false
 {
 	if IsAttacking = false

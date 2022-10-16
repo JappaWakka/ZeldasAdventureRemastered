@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "ForestOfOgham_09_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"18ce7325-a662-45dd-adb2-3539d2df420f","path":"sprites/ForestOfOgham_09_Below/ForestOfOgham_09_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"18ce7325-a662-45dd-adb2-3539d2df420f","path":"sprites/ForestOfOgham_09_Below/ForestOfOgham_09_Below.yy",},"LayerId":{"name":"a0644479-39a9-4428-bdaa-59eba5eeca9f","path":"sprites/ForestOfOgham_09_Below/ForestOfOgham_09_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ForestOfOgham_09_Below","path":"sprites/ForestOfOgham_09_Below/ForestOfOgham_09_Below.yy",},"resourceVersion":"1.0","name":"18ce7325-a662-45dd-adb2-3539d2df420f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"18ce7325-a662-45dd-adb2-3539d2df420f",},
   ],
   "sequence": {
-    "spriteId": {"name":"ForestOfOgham_09_Below","path":"sprites/ForestOfOgham_09_Below/ForestOfOgham_09_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "ForestOfOgham_09_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"040b833f-bee1-4f59-92dd-a5978cbfb6d8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18ce7325-a662-45dd-adb2-3539d2df420f","path":"sprites/ForestOfOgham_09_Below/ForestOfOgham_09_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ForestOfOgham_09_Below","path":"sprites/ForestOfOgham_09_Below/ForestOfOgham_09_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "ForestOfOgham_09_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a0644479-39a9-4428-bdaa-59eba5eeca9f","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a0644479-39a9-4428-bdaa-59eba5eeca9f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ForestOfOgham",
     "path": "folders/Sprites/Maps/Overworld/ForestOfOgham.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ForestOfOgham_09_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

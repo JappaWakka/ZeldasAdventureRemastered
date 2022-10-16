@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "PlainOfAndor_01_Solid",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"068c1ca6-effb-4d36-88e3-c33d10c255e7","path":"sprites/PlainOfAndor_01_Solid/PlainOfAndor_01_Solid.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"068c1ca6-effb-4d36-88e3-c33d10c255e7","path":"sprites/PlainOfAndor_01_Solid/PlainOfAndor_01_Solid.yy",},"LayerId":{"name":"3c6eba80-1233-4144-a5ec-bfd35f65f032","path":"sprites/PlainOfAndor_01_Solid/PlainOfAndor_01_Solid.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"PlainOfAndor_01_Solid","path":"sprites/PlainOfAndor_01_Solid/PlainOfAndor_01_Solid.yy",},"resourceVersion":"1.0","name":"068c1ca6-effb-4d36-88e3-c33d10c255e7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"068c1ca6-effb-4d36-88e3-c33d10c255e7",},
   ],
   "sequence": {
-    "spriteId": {"name":"PlainOfAndor_01_Solid","path":"sprites/PlainOfAndor_01_Solid/PlainOfAndor_01_Solid.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "PlainOfAndor_01_Solid",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e5aab7c6-f7e0-4f9e-9080-5b52a48b7c54","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"068c1ca6-effb-4d36-88e3-c33d10c255e7","path":"sprites/PlainOfAndor_01_Solid/PlainOfAndor_01_Solid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"PlainOfAndor_01_Solid","path":"sprites/PlainOfAndor_01_Solid/PlainOfAndor_01_Solid.yy",},
-    "resourceVersion": "1.4",
-    "name": "PlainOfAndor_01_Solid",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3c6eba80-1233-4144-a5ec-bfd35f65f032","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3c6eba80-1233-4144-a5ec-bfd35f65f032","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "PlainOfAndor",
     "path": "folders/Sprites/Maps/Overworld/PlainOfAndor.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "PlainOfAndor_01_Solid",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

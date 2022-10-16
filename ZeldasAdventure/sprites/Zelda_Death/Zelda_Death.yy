@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Zelda_Death",
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -24,21 +27,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4d62f3f6-c158-4355-abb2-d8bd7ef51cfc","path":"sprites/Zelda_Death/Zelda_Death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4d62f3f6-c158-4355-abb2-d8bd7ef51cfc","path":"sprites/Zelda_Death/Zelda_Death.yy",},"LayerId":{"name":"ed6b8452-8b8d-420d-8e0e-5e9049b939fc","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Death","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","name":"4d62f3f6-c158-4355-abb2-d8bd7ef51cfc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c6751968-9044-4754-8d82-87e3685d4964","path":"sprites/Zelda_Death/Zelda_Death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c6751968-9044-4754-8d82-87e3685d4964","path":"sprites/Zelda_Death/Zelda_Death.yy",},"LayerId":{"name":"ed6b8452-8b8d-420d-8e0e-5e9049b939fc","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Death","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","name":"c6751968-9044-4754-8d82-87e3685d4964","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6c55663d-1c05-4075-81b2-9d469c46426e","path":"sprites/Zelda_Death/Zelda_Death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6c55663d-1c05-4075-81b2-9d469c46426e","path":"sprites/Zelda_Death/Zelda_Death.yy",},"LayerId":{"name":"ed6b8452-8b8d-420d-8e0e-5e9049b939fc","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Death","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","name":"6c55663d-1c05-4075-81b2-9d469c46426e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c02c740e-51ca-4021-a1c2-6045c31e9dd7","path":"sprites/Zelda_Death/Zelda_Death.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c02c740e-51ca-4021-a1c2-6045c31e9dd7","path":"sprites/Zelda_Death/Zelda_Death.yy",},"LayerId":{"name":"ed6b8452-8b8d-420d-8e0e-5e9049b939fc","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Death","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","name":"c02c740e-51ca-4021-a1c2-6045c31e9dd7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4d62f3f6-c158-4355-abb2-d8bd7ef51cfc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c6751968-9044-4754-8d82-87e3685d4964",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c55663d-1c05-4075-81b2-9d469c46426e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c02c740e-51ca-4021-a1c2-6045c31e9dd7",},
   ],
   "sequence": {
-    "spriteId": {"name":"Zelda_Death","path":"sprites/Zelda_Death/Zelda_Death.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Zelda_Death",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 8.0,
@@ -49,12 +46,12 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"5160f8bd-2d06-4b06-9297-bd56deade30e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4d62f3f6-c158-4355-abb2-d8bd7ef51cfc","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4d6f7c4e-2d71-4e7b-b500-d5f87ba6001f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c6751968-9044-4754-8d82-87e3685d4964","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6a2074bf-b899-4f61-b42a-a7f72d125f02","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6c55663d-1c05-4075-81b2-9d469c46426e","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5d477bbe-68de-4b27-94aa-a7ab21dfa85f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c02c740e-51ca-4021-a1c2-6045c31e9dd7","path":"sprites/Zelda_Death/Zelda_Death.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -70,22 +67,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Zelda_Death","path":"sprites/Zelda_Death/Zelda_Death.yy",},
-    "resourceVersion": "1.4",
-    "name": "Zelda_Death",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ed6b8452-8b8d-420d-8e0e-5e9049b939fc","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ed6b8452-8b8d-420d-8e0e-5e9049b939fc","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Other",
     "path": "folders/Sprites/Entities/Player/Other.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Zelda_Death",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

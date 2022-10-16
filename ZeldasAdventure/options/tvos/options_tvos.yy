@@ -1,5 +1,8 @@
 {
-  "option_tvos_display_name": "Made in GameMaker Studio 2",
+  "resourceType": "GMtvOSOptions",
+  "resourceVersion": "1.3",
+  "name": "tvOS",
+  "option_tvos_display_name": "Made in GameMaker",
   "option_tvos_bundle_name": "com.company.game",
   "option_tvos_version": "1.0.0.0",
   "option_tvos_output_dir": "~/GameMakerStudio2/tvOS",
@@ -20,8 +23,4 @@
   "option_tvos_display_cursor": false,
   "option_tvos_podfile_path": "${options_dir}\\tvos\\Podfile",
   "option_tvos_podfile_lock_path": "${options_dir}\\tvos\\Podfile.lock",
-  "resourceVersion": "1.3",
-  "name": "tvOS",
-  "tags": [],
-  "resourceType": "GMtvOSOptions",
 }

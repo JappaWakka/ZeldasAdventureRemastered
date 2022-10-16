@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "PlainOfAndor_01_Item_RedBoots",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"390c0f4c-a1ee-4d3c-a48b-46be30e6eb90","path":"sprites/PlainOfAndor_01_Item_RedBoots/PlainOfAndor_01_Item_RedBoots.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"390c0f4c-a1ee-4d3c-a48b-46be30e6eb90","path":"sprites/PlainOfAndor_01_Item_RedBoots/PlainOfAndor_01_Item_RedBoots.yy",},"LayerId":{"name":"aa66b38e-e544-44a8-b27e-29bfe054e9d0","path":"sprites/PlainOfAndor_01_Item_RedBoots/PlainOfAndor_01_Item_RedBoots.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"PlainOfAndor_01_Item_RedBoots","path":"sprites/PlainOfAndor_01_Item_RedBoots/PlainOfAndor_01_Item_RedBoots.yy",},"resourceVersion":"1.0","name":"390c0f4c-a1ee-4d3c-a48b-46be30e6eb90","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"390c0f4c-a1ee-4d3c-a48b-46be30e6eb90",},
   ],
   "sequence": {
-    "spriteId": {"name":"PlainOfAndor_01_Item_RedBoots","path":"sprites/PlainOfAndor_01_Item_RedBoots/PlainOfAndor_01_Item_RedBoots.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "PlainOfAndor_01_Item_RedBoots",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8dc1c105-fbd1-459d-b535-e01192cdb31c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"390c0f4c-a1ee-4d3c-a48b-46be30e6eb90","path":"sprites/PlainOfAndor_01_Item_RedBoots/PlainOfAndor_01_Item_RedBoots.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"PlainOfAndor_01_Item_RedBoots","path":"sprites/PlainOfAndor_01_Item_RedBoots/PlainOfAndor_01_Item_RedBoots.yy",},
-    "resourceVersion": "1.4",
-    "name": "PlainOfAndor_01_Item_RedBoots",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"aa66b38e-e544-44a8-b27e-29bfe054e9d0","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"aa66b38e-e544-44a8-b27e-29bfe054e9d0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "PlainOfAndor",
     "path": "folders/Sprites/Maps/Overworld/PlainOfAndor.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "PlainOfAndor_01_Item_RedBoots",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

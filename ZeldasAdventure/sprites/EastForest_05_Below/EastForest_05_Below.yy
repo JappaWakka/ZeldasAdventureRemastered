@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "EastForest_05_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a695acb0-c399-4c93-a318-0318b1217d7b","path":"sprites/EastForest_05_Below/EastForest_05_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a695acb0-c399-4c93-a318-0318b1217d7b","path":"sprites/EastForest_05_Below/EastForest_05_Below.yy",},"LayerId":{"name":"820f255e-88a5-413a-aca8-489d41131da3","path":"sprites/EastForest_05_Below/EastForest_05_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"EastForest_05_Below","path":"sprites/EastForest_05_Below/EastForest_05_Below.yy",},"resourceVersion":"1.0","name":"a695acb0-c399-4c93-a318-0318b1217d7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a695acb0-c399-4c93-a318-0318b1217d7b",},
   ],
   "sequence": {
-    "spriteId": {"name":"EastForest_05_Below","path":"sprites/EastForest_05_Below/EastForest_05_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "EastForest_05_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f1caa549-2e02-45e0-9377-15ce9817a31e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a695acb0-c399-4c93-a318-0318b1217d7b","path":"sprites/EastForest_05_Below/EastForest_05_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"EastForest_05_Below","path":"sprites/EastForest_05_Below/EastForest_05_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "EastForest_05_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"820f255e-88a5-413a-aca8-489d41131da3","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"820f255e-88a5-413a-aca8-489d41131da3","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "EastForest",
     "path": "folders/Sprites/Maps/Overworld/EastForest.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "EastForest_05_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

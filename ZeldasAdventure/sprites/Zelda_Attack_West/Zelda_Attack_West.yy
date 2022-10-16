@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Zelda_Attack_West",
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -24,24 +27,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f4729855-dab3-47a1-8f0b-57782604430c","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f4729855-dab3-47a1-8f0b-57782604430c","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":{"name":"4fc76e8a-c526-4c3a-bdb8-80072e90839b","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_West","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"f4729855-dab3-47a1-8f0b-57782604430c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"400c7ffd-0a37-4d1b-9da4-e3a494ba8a77","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"400c7ffd-0a37-4d1b-9da4-e3a494ba8a77","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":{"name":"4fc76e8a-c526-4c3a-bdb8-80072e90839b","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_West","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"400c7ffd-0a37-4d1b-9da4-e3a494ba8a77","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d8f81da4-911b-49c2-888f-3a6da3b39e02","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d8f81da4-911b-49c2-888f-3a6da3b39e02","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":{"name":"4fc76e8a-c526-4c3a-bdb8-80072e90839b","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_West","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"d8f81da4-911b-49c2-888f-3a6da3b39e02","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c25903dd-7cd4-419c-8f5c-ef377e7b252a","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c25903dd-7cd4-419c-8f5c-ef377e7b252a","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":{"name":"4fc76e8a-c526-4c3a-bdb8-80072e90839b","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_West","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"c25903dd-7cd4-419c-8f5c-ef377e7b252a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"76121570-e8ff-4e07-8642-576248977ecf","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"76121570-e8ff-4e07-8642-576248977ecf","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"LayerId":{"name":"4fc76e8a-c526-4c3a-bdb8-80072e90839b","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_West","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","name":"76121570-e8ff-4e07-8642-576248977ecf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4729855-dab3-47a1-8f0b-57782604430c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"400c7ffd-0a37-4d1b-9da4-e3a494ba8a77",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d8f81da4-911b-49c2-888f-3a6da3b39e02",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c25903dd-7cd4-419c-8f5c-ef377e7b252a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"76121570-e8ff-4e07-8642-576248977ecf",},
   ],
   "sequence": {
-    "spriteId": {"name":"Zelda_Attack_West","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Zelda_Attack_West",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -52,13 +47,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"074e10f8-6786-459a-8f5a-1d102b4d495c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4729855-dab3-47a1-8f0b-57782604430c","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"dea38b06-497e-484b-9c51-f62693e8de3d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"400c7ffd-0a37-4d1b-9da4-e3a494ba8a77","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"652ceccd-36db-458b-8cf7-5365725e3f8c","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8f81da4-911b-49c2-888f-3a6da3b39e02","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"db654908-a82b-4914-aabc-d935a065d926","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c25903dd-7cd4-419c-8f5c-ef377e7b252a","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d28342f2-84a9-4fa4-bc2e-075cde863c1c","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76121570-e8ff-4e07-8642-576248977ecf","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -74,22 +69,13 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Zelda_Attack_West","path":"sprites/Zelda_Attack_West/Zelda_Attack_West.yy",},
-    "resourceVersion": "1.4",
-    "name": "Zelda_Attack_West",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4fc76e8a-c526-4c3a-bdb8-80072e90839b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4fc76e8a-c526-4c3a-bdb8-80072e90839b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Attack",
     "path": "folders/Sprites/Entities/Player/Attack.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Zelda_Attack_West",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

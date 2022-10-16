@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "GanonsGauntlet_08_Ganon_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"839c8617-ecf7-4302-b702-00ecef8c7e5f","path":"sprites/GanonsGauntlet_08_Ganon_Below/GanonsGauntlet_08_Ganon_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"839c8617-ecf7-4302-b702-00ecef8c7e5f","path":"sprites/GanonsGauntlet_08_Ganon_Below/GanonsGauntlet_08_Ganon_Below.yy",},"LayerId":{"name":"97701cc2-0d15-4239-b89e-79f6a766cffa","path":"sprites/GanonsGauntlet_08_Ganon_Below/GanonsGauntlet_08_Ganon_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"GanonsGauntlet_08_Ganon_Below","path":"sprites/GanonsGauntlet_08_Ganon_Below/GanonsGauntlet_08_Ganon_Below.yy",},"resourceVersion":"1.0","name":"839c8617-ecf7-4302-b702-00ecef8c7e5f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"839c8617-ecf7-4302-b702-00ecef8c7e5f",},
   ],
   "sequence": {
-    "spriteId": {"name":"GanonsGauntlet_08_Ganon_Below","path":"sprites/GanonsGauntlet_08_Ganon_Below/GanonsGauntlet_08_Ganon_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "GanonsGauntlet_08_Ganon_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"8f64ff81-8d9e-4ff9-a5d6-c333ef41fc0b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"839c8617-ecf7-4302-b702-00ecef8c7e5f","path":"sprites/GanonsGauntlet_08_Ganon_Below/GanonsGauntlet_08_Ganon_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"GanonsGauntlet_08_Ganon_Below","path":"sprites/GanonsGauntlet_08_Ganon_Below/GanonsGauntlet_08_Ganon_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "GanonsGauntlet_08_Ganon_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"97701cc2-0d15-4239-b89e-79f6a766cffa","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"97701cc2-0d15-4239-b89e-79f6a766cffa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "GanonsGauntlet",
     "path": "folders/Sprites/Maps/Underworld/GanonsGauntlet.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GanonsGauntlet_08_Ganon_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "MeadowOfSkotness_11_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"693d6bee-2cb0-4731-8a5c-61d3303bdfca","path":"sprites/MeadowOfSkotness_11_Below/MeadowOfSkotness_11_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"693d6bee-2cb0-4731-8a5c-61d3303bdfca","path":"sprites/MeadowOfSkotness_11_Below/MeadowOfSkotness_11_Below.yy",},"LayerId":{"name":"9c9e7ebb-5184-470d-bc10-91e72c57e763","path":"sprites/MeadowOfSkotness_11_Below/MeadowOfSkotness_11_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"MeadowOfSkotness_11_Below","path":"sprites/MeadowOfSkotness_11_Below/MeadowOfSkotness_11_Below.yy",},"resourceVersion":"1.0","name":"693d6bee-2cb0-4731-8a5c-61d3303bdfca","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"693d6bee-2cb0-4731-8a5c-61d3303bdfca",},
   ],
   "sequence": {
-    "spriteId": {"name":"MeadowOfSkotness_11_Below","path":"sprites/MeadowOfSkotness_11_Below/MeadowOfSkotness_11_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "MeadowOfSkotness_11_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"3f8da353-d957-4ed7-9090-47694dc7949c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"693d6bee-2cb0-4731-8a5c-61d3303bdfca","path":"sprites/MeadowOfSkotness_11_Below/MeadowOfSkotness_11_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"MeadowOfSkotness_11_Below","path":"sprites/MeadowOfSkotness_11_Below/MeadowOfSkotness_11_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "MeadowOfSkotness_11_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9c9e7ebb-5184-470d-bc10-91e72c57e763","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9c9e7ebb-5184-470d-bc10-91e72c57e763","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "MeadowOfSkotness",
     "path": "folders/Sprites/Maps/Overworld/MeadowOfSkotness.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "MeadowOfSkotness_11_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMPS5Options",
+  "resourceVersion": "1.0",
+  "name": "PlayStation 5",
   "option_ps5_package_id": "IV0002-NPXS29129_00-APP0990000000022",
   "option_ps5_passcode": "GvE6xCpZxd96scOUGuLPbuLp8O800B0s",
   "option_ps5_nptitleid": "",
@@ -24,15 +27,4 @@
   "option_ps5_nptitledat_file": "${options_dir}\\ps5\\sce_sys\\nptitle.dat",
   "option_ps5_paramsfo_file": "${options_dir}\\ps5\\sce_sys\\param.sfo",
   "option_ps5_trophy00trp_file": "${options_dir}\\ps5\\sce_sys\\trophy\\trophy00.trp",
-  "option_ps5_shareparam_file": "${options_dir}\\ps5\\sce_sys\\shareparam.json",
-  "option_ps5_pronunciation_file": "${options_dir}\\ps5\\sce_sys\\pronunciation.xml",
-  "option_ps5_pronunciation_sig": "${options_dir}\\ps5\\sce_sys\\pronunciation.sig",
-  "option_ps5_onion": 2048,
-  "option_ps5_garlic": 1024,
-  "option_ps5_neo_onion": 2048,
-  "option_ps5_neo_garlic": 1536,
-  "resourceVersion": "1.0",
-  "name": "PlayStation 5",
-  "tags": [],
-  "resourceType": "GMPS5Options",
 }

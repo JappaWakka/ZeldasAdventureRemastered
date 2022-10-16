@@ -1,6 +1,9 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Sprite_Enemy_Moby_South",
   "bboxMode": 2,
-  "collisionKind": 1,
+  "collisionKind": 2,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -24,33 +27,19 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a7fc296c-f97b-4385-a9df-2b30e9df5e72","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a7fc296c-f97b-4385-a9df-2b30e9df5e72","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":{"name":"c699d695-743c-4d53-819b-eb01097bf837","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"a7fc296c-f97b-4385-a9df-2b30e9df5e72","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"65264bff-5b46-4b9d-ad43-30ab2a1ac0be","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"65264bff-5b46-4b9d-ad43-30ab2a1ac0be","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":{"name":"c699d695-743c-4d53-819b-eb01097bf837","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"65264bff-5b46-4b9d-ad43-30ab2a1ac0be","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"25d2054f-75dd-45b7-bc66-f23f0510b76e","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"25d2054f-75dd-45b7-bc66-f23f0510b76e","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":{"name":"c699d695-743c-4d53-819b-eb01097bf837","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"25d2054f-75dd-45b7-bc66-f23f0510b76e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d31f8198-a4dc-4881-be56-3df0be41bcac","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d31f8198-a4dc-4881-be56-3df0be41bcac","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":{"name":"c699d695-743c-4d53-819b-eb01097bf837","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"d31f8198-a4dc-4881-be56-3df0be41bcac","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"379d474e-b527-483f-b79a-0b7558bc2f1a","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"379d474e-b527-483f-b79a-0b7558bc2f1a","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":{"name":"c699d695-743c-4d53-819b-eb01097bf837","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"379d474e-b527-483f-b79a-0b7558bc2f1a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"92ee1a8a-f1c5-4aad-989b-76a34e39b227","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"92ee1a8a-f1c5-4aad-989b-76a34e39b227","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":{"name":"c699d695-743c-4d53-819b-eb01097bf837","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"92ee1a8a-f1c5-4aad-989b-76a34e39b227","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"32e5786b-125e-4510-a596-41ee4a2175d4","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"32e5786b-125e-4510-a596-41ee4a2175d4","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":{"name":"c699d695-743c-4d53-819b-eb01097bf837","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"32e5786b-125e-4510-a596-41ee4a2175d4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"717b6c05-adb7-4d80-9010-0e52f8668ec5","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"717b6c05-adb7-4d80-9010-0e52f8668ec5","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"LayerId":{"name":"c699d695-743c-4d53-819b-eb01097bf837","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","name":"717b6c05-adb7-4d80-9010-0e52f8668ec5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a7fc296c-f97b-4385-a9df-2b30e9df5e72",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"65264bff-5b46-4b9d-ad43-30ab2a1ac0be",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"25d2054f-75dd-45b7-bc66-f23f0510b76e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d31f8198-a4dc-4881-be56-3df0be41bcac",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"379d474e-b527-483f-b79a-0b7558bc2f1a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"92ee1a8a-f1c5-4aad-989b-76a34e39b227",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"32e5786b-125e-4510-a596-41ee4a2175d4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"717b6c05-adb7-4d80-9010-0e52f8668ec5",},
   ],
   "sequence": {
-    "spriteId": {"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Sprite_Enemy_Moby_South",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -61,7 +50,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"87ac4937-64a8-44fd-96b0-96f005cce796","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a7fc296c-f97b-4385-a9df-2b30e9df5e72","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8039b700-60e4-4e0a-86ce-c3fd566b08ef","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"65264bff-5b46-4b9d-ad43-30ab2a1ac0be","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"1f86da05-8362-426f-9ddc-b8fa2d5f2ce2","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"25d2054f-75dd-45b7-bc66-f23f0510b76e","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -70,7 +59,7 @@
             {"id":"0c268aac-8032-462b-8840-06ea80521fe6","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"92ee1a8a-f1c5-4aad-989b-76a34e39b227","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5c3e968b-97d4-4d1c-a78d-5a16183024ca","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"32e5786b-125e-4510-a596-41ee4a2175d4","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e170fa17-6ec7-4ff5-933d-a4bb31b197de","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"717b6c05-adb7-4d80-9010-0e52f8668ec5","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -86,22 +75,13 @@
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Sprite_Enemy_Moby_South","path":"sprites/Sprite_Enemy_Moby_South/Sprite_Enemy_Moby_South.yy",},
-    "resourceVersion": "1.4",
-    "name": "Sprite_Enemy_Moby_South",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c699d695-743c-4d53-819b-eb01097bf837","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c699d695-743c-4d53-819b-eb01097bf837","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Moby",
     "path": "folders/Sprites/Entities/Enemies/Moby.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Sprite_Enemy_Moby_South",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

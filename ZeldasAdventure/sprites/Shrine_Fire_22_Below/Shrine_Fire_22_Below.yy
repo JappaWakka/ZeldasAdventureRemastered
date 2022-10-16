@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Shrine_Fire_22_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"1ebd673e-a765-4514-8417-cfb352c3e483","path":"sprites/Shrine_Fire_22_Below/Shrine_Fire_22_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1ebd673e-a765-4514-8417-cfb352c3e483","path":"sprites/Shrine_Fire_22_Below/Shrine_Fire_22_Below.yy",},"LayerId":{"name":"53f01d32-7a08-411a-9bc1-f431774a5db4","path":"sprites/Shrine_Fire_22_Below/Shrine_Fire_22_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Shrine_Fire_22_Below","path":"sprites/Shrine_Fire_22_Below/Shrine_Fire_22_Below.yy",},"resourceVersion":"1.0","name":"1ebd673e-a765-4514-8417-cfb352c3e483","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1ebd673e-a765-4514-8417-cfb352c3e483",},
   ],
   "sequence": {
-    "spriteId": {"name":"Shrine_Fire_22_Below","path":"sprites/Shrine_Fire_22_Below/Shrine_Fire_22_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Shrine_Fire_22_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"968b9663-ed6b-41af-a265-ae7591a10dcb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1ebd673e-a765-4514-8417-cfb352c3e483","path":"sprites/Shrine_Fire_22_Below/Shrine_Fire_22_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Shrine_Fire_22_Below","path":"sprites/Shrine_Fire_22_Below/Shrine_Fire_22_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "Shrine_Fire_22_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"53f01d32-7a08-411a-9bc1-f431774a5db4","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"53f01d32-7a08-411a-9bc1-f431774a5db4","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Shrine_07_Fire",
     "path": "folders/Sprites/Maps/Underworld/Shrine_07_Fire.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Shrine_Fire_22_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "GanonsGauntlet_03_Aviana_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3d6c49ef-28ae-4418-b0d3-bb972137b080","path":"sprites/GanonsGauntlet_03_Aviana_Below/GanonsGauntlet_03_Aviana_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3d6c49ef-28ae-4418-b0d3-bb972137b080","path":"sprites/GanonsGauntlet_03_Aviana_Below/GanonsGauntlet_03_Aviana_Below.yy",},"LayerId":{"name":"694c61a5-6ce6-4de7-a627-817d1894d401","path":"sprites/GanonsGauntlet_03_Aviana_Below/GanonsGauntlet_03_Aviana_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"GanonsGauntlet_03_Aviana_Below","path":"sprites/GanonsGauntlet_03_Aviana_Below/GanonsGauntlet_03_Aviana_Below.yy",},"resourceVersion":"1.0","name":"3d6c49ef-28ae-4418-b0d3-bb972137b080","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3d6c49ef-28ae-4418-b0d3-bb972137b080",},
   ],
   "sequence": {
-    "spriteId": {"name":"GanonsGauntlet_03_Aviana_Below","path":"sprites/GanonsGauntlet_03_Aviana_Below/GanonsGauntlet_03_Aviana_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "GanonsGauntlet_03_Aviana_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"7a355286-65ef-4da6-9c5b-55b24be693ff","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3d6c49ef-28ae-4418-b0d3-bb972137b080","path":"sprites/GanonsGauntlet_03_Aviana_Below/GanonsGauntlet_03_Aviana_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"GanonsGauntlet_03_Aviana_Below","path":"sprites/GanonsGauntlet_03_Aviana_Below/GanonsGauntlet_03_Aviana_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "GanonsGauntlet_03_Aviana_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"694c61a5-6ce6-4de7-a627-817d1894d401","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"694c61a5-6ce6-4de7-a627-817d1894d401","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "GanonsGauntlet",
     "path": "folders/Sprites/Maps/Underworld/GanonsGauntlet.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GanonsGauntlet_03_Aviana_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

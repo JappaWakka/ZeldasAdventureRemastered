@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "ForestOfFindo_03_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"55afedf9-a6a4-4d72-a564-19c3ccbceea7","path":"sprites/ForestOfFindo_03_Below/ForestOfFindo_03_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"55afedf9-a6a4-4d72-a564-19c3ccbceea7","path":"sprites/ForestOfFindo_03_Below/ForestOfFindo_03_Below.yy",},"LayerId":{"name":"6820e647-6209-4355-bc74-e8fc9c1b22df","path":"sprites/ForestOfFindo_03_Below/ForestOfFindo_03_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ForestOfFindo_03_Below","path":"sprites/ForestOfFindo_03_Below/ForestOfFindo_03_Below.yy",},"resourceVersion":"1.0","name":"55afedf9-a6a4-4d72-a564-19c3ccbceea7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55afedf9-a6a4-4d72-a564-19c3ccbceea7",},
   ],
   "sequence": {
-    "spriteId": {"name":"ForestOfFindo_03_Below","path":"sprites/ForestOfFindo_03_Below/ForestOfFindo_03_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "ForestOfFindo_03_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b39e7075-a825-4d1e-91c6-c2d97c0c29ba","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55afedf9-a6a4-4d72-a564-19c3ccbceea7","path":"sprites/ForestOfFindo_03_Below/ForestOfFindo_03_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ForestOfFindo_03_Below","path":"sprites/ForestOfFindo_03_Below/ForestOfFindo_03_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "ForestOfFindo_03_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6820e647-6209-4355-bc74-e8fc9c1b22df","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6820e647-6209-4355-bc74-e8fc9c1b22df","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ForestOfFindo",
     "path": "folders/Sprites/Maps/Overworld/ForestOfFindo.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ForestOfFindo_03_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

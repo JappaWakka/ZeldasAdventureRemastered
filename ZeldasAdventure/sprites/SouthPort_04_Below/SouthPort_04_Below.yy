@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "SouthPort_04_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b20638b9-03fd-4b3e-8b6e-92ea73233da3","path":"sprites/SouthPort_04_Below/SouthPort_04_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b20638b9-03fd-4b3e-8b6e-92ea73233da3","path":"sprites/SouthPort_04_Below/SouthPort_04_Below.yy",},"LayerId":{"name":"c0ec8ed1-71a9-4cd5-93b6-e278c6624327","path":"sprites/SouthPort_04_Below/SouthPort_04_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"SouthPort_04_Below","path":"sprites/SouthPort_04_Below/SouthPort_04_Below.yy",},"resourceVersion":"1.0","name":"b20638b9-03fd-4b3e-8b6e-92ea73233da3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b20638b9-03fd-4b3e-8b6e-92ea73233da3",},
   ],
   "sequence": {
-    "spriteId": {"name":"SouthPort_04_Below","path":"sprites/SouthPort_04_Below/SouthPort_04_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "SouthPort_04_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"79ffaa80-5ba7-4a5f-b54d-3ce9ef5b79d3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b20638b9-03fd-4b3e-8b6e-92ea73233da3","path":"sprites/SouthPort_04_Below/SouthPort_04_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"SouthPort_04_Below","path":"sprites/SouthPort_04_Below/SouthPort_04_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "SouthPort_04_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c0ec8ed1-71a9-4cd5-93b6-e278c6624327","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c0ec8ed1-71a9-4cd5-93b6-e278c6624327","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "SouthPort",
     "path": "folders/Sprites/Maps/Overworld/SouthPort.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SouthPort_04_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "ForestOfTorian_WhiteSteedLodge_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"00f76cac-eaff-4dfc-bed7-7452262d6668","path":"sprites/ForestOfTorian_WhiteSteedLodge_Below/ForestOfTorian_WhiteSteedLodge_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"00f76cac-eaff-4dfc-bed7-7452262d6668","path":"sprites/ForestOfTorian_WhiteSteedLodge_Below/ForestOfTorian_WhiteSteedLodge_Below.yy",},"LayerId":{"name":"b30cbe9e-90b4-4330-99c6-fb8e02517544","path":"sprites/ForestOfTorian_WhiteSteedLodge_Below/ForestOfTorian_WhiteSteedLodge_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ForestOfTorian_WhiteSteedLodge_Below","path":"sprites/ForestOfTorian_WhiteSteedLodge_Below/ForestOfTorian_WhiteSteedLodge_Below.yy",},"resourceVersion":"1.0","name":"00f76cac-eaff-4dfc-bed7-7452262d6668","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"00f76cac-eaff-4dfc-bed7-7452262d6668",},
   ],
   "sequence": {
-    "spriteId": {"name":"ForestOfTorian_WhiteSteedLodge_Below","path":"sprites/ForestOfTorian_WhiteSteedLodge_Below/ForestOfTorian_WhiteSteedLodge_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "ForestOfTorian_WhiteSteedLodge_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a4c8bb0a-e99d-49de-9a22-ee1a72536f03","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"00f76cac-eaff-4dfc-bed7-7452262d6668","path":"sprites/ForestOfTorian_WhiteSteedLodge_Below/ForestOfTorian_WhiteSteedLodge_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ForestOfTorian_WhiteSteedLodge_Below","path":"sprites/ForestOfTorian_WhiteSteedLodge_Below/ForestOfTorian_WhiteSteedLodge_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "ForestOfTorian_WhiteSteedLodge_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b30cbe9e-90b4-4330-99c6-fb8e02517544","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b30cbe9e-90b4-4330-99c6-fb8e02517544","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ForestOfTorian",
     "path": "folders/Sprites/Maps/Overworld/ForestOfTorian.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ForestOfTorian_WhiteSteedLodge_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

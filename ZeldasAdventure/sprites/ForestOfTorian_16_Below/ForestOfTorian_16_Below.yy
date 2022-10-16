@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "ForestOfTorian_16_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"af071f6b-797a-4c65-9072-d5e702fb46cb","path":"sprites/ForestOfTorian_16_Below/ForestOfTorian_16_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"af071f6b-797a-4c65-9072-d5e702fb46cb","path":"sprites/ForestOfTorian_16_Below/ForestOfTorian_16_Below.yy",},"LayerId":{"name":"6c095504-6f22-4f1c-bfd2-5343b94d9d07","path":"sprites/ForestOfTorian_16_Below/ForestOfTorian_16_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"ForestOfTorian_16_Below","path":"sprites/ForestOfTorian_16_Below/ForestOfTorian_16_Below.yy",},"resourceVersion":"1.0","name":"af071f6b-797a-4c65-9072-d5e702fb46cb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"af071f6b-797a-4c65-9072-d5e702fb46cb",},
   ],
   "sequence": {
-    "spriteId": {"name":"ForestOfTorian_16_Below","path":"sprites/ForestOfTorian_16_Below/ForestOfTorian_16_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "ForestOfTorian_16_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"490cf5de-d699-4ff5-9fb6-96cbe5415e5f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"af071f6b-797a-4c65-9072-d5e702fb46cb","path":"sprites/ForestOfTorian_16_Below/ForestOfTorian_16_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"ForestOfTorian_16_Below","path":"sprites/ForestOfTorian_16_Below/ForestOfTorian_16_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "ForestOfTorian_16_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6c095504-6f22-4f1c-bfd2-5343b94d9d07","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6c095504-6f22-4f1c-bfd2-5343b94d9d07","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "ForestOfTorian",
     "path": "folders/Sprites/Maps/Overworld/ForestOfTorian.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "ForestOfTorian_16_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -2,6 +2,9 @@ function InitGameVariables()
 {
 	
 	//System Variables
+	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
+	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
+	
 	global.AddCutItems = true;
 	global.CurrentSaveGame = 0;
 	global.FadeSpeed = 8;
@@ -19,7 +22,6 @@ function InitGameVariables()
 	global.CurrentItem = [-1,-1]
 	global.CurrentTreasure = -1;
 	global.CurrentSpell = -1;
-	global.CurrentCastCost = 0;
 	global.InventorySlots_Max = [0,0,0];
 	global.InventorySlots_Max[0] = INVENTORY_SLOTS_TREASURE;
 
@@ -43,6 +45,7 @@ function InitGameVariables()
 	global.MaxHealth = 60;
 	global.Power = 1;
 	global.Defense = 1;
+	global.BaseAttackDamage = 10;
 	global.DamagePerHit = 10 / global.Defense;
 	global.CurrentLocation = "Overworld"; //To determine which map to display in the inventory
 	global.CurrentRubies = 0;

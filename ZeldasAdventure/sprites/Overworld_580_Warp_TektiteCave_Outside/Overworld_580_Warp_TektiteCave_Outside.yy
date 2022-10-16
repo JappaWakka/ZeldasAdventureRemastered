@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Overworld_580_Warp_TektiteCave_Outside",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"578e7e62-e3c5-4cb3-bd11-bbc3ed53cb41","path":"sprites/Overworld_580_Warp_TektiteCave_Outside/Overworld_580_Warp_TektiteCave_Outside.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"578e7e62-e3c5-4cb3-bd11-bbc3ed53cb41","path":"sprites/Overworld_580_Warp_TektiteCave_Outside/Overworld_580_Warp_TektiteCave_Outside.yy",},"LayerId":{"name":"e0496ee9-9975-4814-a542-4907e39f44ba","path":"sprites/Overworld_580_Warp_TektiteCave_Outside/Overworld_580_Warp_TektiteCave_Outside.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Overworld_580_Warp_TektiteCave_Outside","path":"sprites/Overworld_580_Warp_TektiteCave_Outside/Overworld_580_Warp_TektiteCave_Outside.yy",},"resourceVersion":"1.0","name":"578e7e62-e3c5-4cb3-bd11-bbc3ed53cb41","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"578e7e62-e3c5-4cb3-bd11-bbc3ed53cb41",},
   ],
   "sequence": {
-    "spriteId": {"name":"Overworld_580_Warp_TektiteCave_Outside","path":"sprites/Overworld_580_Warp_TektiteCave_Outside/Overworld_580_Warp_TektiteCave_Outside.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Overworld_580_Warp_TektiteCave_Outside",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"a7268ecb-b7fd-442d-8685-9b8bffd1f3ac","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"578e7e62-e3c5-4cb3-bd11-bbc3ed53cb41","path":"sprites/Overworld_580_Warp_TektiteCave_Outside/Overworld_580_Warp_TektiteCave_Outside.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Overworld_580_Warp_TektiteCave_Outside","path":"sprites/Overworld_580_Warp_TektiteCave_Outside/Overworld_580_Warp_TektiteCave_Outside.yy",},
-    "resourceVersion": "1.4",
-    "name": "Overworld_580_Warp_TektiteCave_Outside",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e0496ee9-9975-4814-a542-4907e39f44ba","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e0496ee9-9975-4814-a542-4907e39f44ba","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Warps",
     "path": "folders/Sprites/Maps/Old/Warps.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Overworld_580_Warp_TektiteCave_Outside",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

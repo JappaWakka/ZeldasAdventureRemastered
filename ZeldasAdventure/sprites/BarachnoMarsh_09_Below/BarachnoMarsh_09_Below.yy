@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "BarachnoMarsh_09_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d01911bc-607c-4e12-b7c2-6b4c377db363","path":"sprites/BarachnoMarsh_09_Below/BarachnoMarsh_09_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d01911bc-607c-4e12-b7c2-6b4c377db363","path":"sprites/BarachnoMarsh_09_Below/BarachnoMarsh_09_Below.yy",},"LayerId":{"name":"1aa23177-58e2-4223-b03c-fed3ad971e86","path":"sprites/BarachnoMarsh_09_Below/BarachnoMarsh_09_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"BarachnoMarsh_09_Below","path":"sprites/BarachnoMarsh_09_Below/BarachnoMarsh_09_Below.yy",},"resourceVersion":"1.0","name":"d01911bc-607c-4e12-b7c2-6b4c377db363","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d01911bc-607c-4e12-b7c2-6b4c377db363",},
   ],
   "sequence": {
-    "spriteId": {"name":"BarachnoMarsh_09_Below","path":"sprites/BarachnoMarsh_09_Below/BarachnoMarsh_09_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "BarachnoMarsh_09_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"bb005970-94e0-4357-9548-1f45e7105961","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d01911bc-607c-4e12-b7c2-6b4c377db363","path":"sprites/BarachnoMarsh_09_Below/BarachnoMarsh_09_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"BarachnoMarsh_09_Below","path":"sprites/BarachnoMarsh_09_Below/BarachnoMarsh_09_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "BarachnoMarsh_09_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1aa23177-58e2-4223-b03c-fed3ad971e86","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1aa23177-58e2-4223-b03c-fed3ad971e86","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "BarachnoMarsh",
     "path": "folders/Sprites/Maps/Overworld/BarachnoMarsh.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "BarachnoMarsh_09_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

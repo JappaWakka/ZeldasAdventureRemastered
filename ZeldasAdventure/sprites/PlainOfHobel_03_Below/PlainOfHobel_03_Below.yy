@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "PlainOfHobel_03_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"5ada4929-3b88-4076-b9b1-27e637ce9616","path":"sprites/PlainOfHobel_03_Below/PlainOfHobel_03_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5ada4929-3b88-4076-b9b1-27e637ce9616","path":"sprites/PlainOfHobel_03_Below/PlainOfHobel_03_Below.yy",},"LayerId":{"name":"c91904f5-9e95-491b-86bf-8e4ed59c7c8c","path":"sprites/PlainOfHobel_03_Below/PlainOfHobel_03_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"PlainOfHobel_03_Below","path":"sprites/PlainOfHobel_03_Below/PlainOfHobel_03_Below.yy",},"resourceVersion":"1.0","name":"5ada4929-3b88-4076-b9b1-27e637ce9616","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5ada4929-3b88-4076-b9b1-27e637ce9616",},
   ],
   "sequence": {
-    "spriteId": {"name":"PlainOfHobel_03_Below","path":"sprites/PlainOfHobel_03_Below/PlainOfHobel_03_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "PlainOfHobel_03_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"316b148f-f8f7-4f2f-9267-24447dab4ce3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5ada4929-3b88-4076-b9b1-27e637ce9616","path":"sprites/PlainOfHobel_03_Below/PlainOfHobel_03_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"PlainOfHobel_03_Below","path":"sprites/PlainOfHobel_03_Below/PlainOfHobel_03_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "PlainOfHobel_03_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c91904f5-9e95-491b-86bf-8e4ed59c7c8c","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c91904f5-9e95-491b-86bf-8e4ed59c7c8c","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "PlainOfHobel",
     "path": "folders/Sprites/Maps/Overworld/PlainOfHobel.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "PlainOfHobel_03_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

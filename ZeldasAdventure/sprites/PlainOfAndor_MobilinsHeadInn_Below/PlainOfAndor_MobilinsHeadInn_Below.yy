@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "PlainOfAndor_MobilinsHeadInn_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"90cc1d9b-a01a-45df-a865-1bee88fec4ac","path":"sprites/PlainOfAndor_MobilinsHeadInn_Below/PlainOfAndor_MobilinsHeadInn_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"90cc1d9b-a01a-45df-a865-1bee88fec4ac","path":"sprites/PlainOfAndor_MobilinsHeadInn_Below/PlainOfAndor_MobilinsHeadInn_Below.yy",},"LayerId":{"name":"0c656cd4-ace9-447b-b741-193a116351aa","path":"sprites/PlainOfAndor_MobilinsHeadInn_Below/PlainOfAndor_MobilinsHeadInn_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"PlainOfAndor_MobilinsHeadInn_Below","path":"sprites/PlainOfAndor_MobilinsHeadInn_Below/PlainOfAndor_MobilinsHeadInn_Below.yy",},"resourceVersion":"1.0","name":"90cc1d9b-a01a-45df-a865-1bee88fec4ac","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90cc1d9b-a01a-45df-a865-1bee88fec4ac",},
   ],
   "sequence": {
-    "spriteId": {"name":"PlainOfAndor_MobilinsHeadInn_Below","path":"sprites/PlainOfAndor_MobilinsHeadInn_Below/PlainOfAndor_MobilinsHeadInn_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "PlainOfAndor_MobilinsHeadInn_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"bcce1d16-5be3-4942-8e00-8c1b324f0111","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90cc1d9b-a01a-45df-a865-1bee88fec4ac","path":"sprites/PlainOfAndor_MobilinsHeadInn_Below/PlainOfAndor_MobilinsHeadInn_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"PlainOfAndor_MobilinsHeadInn_Below","path":"sprites/PlainOfAndor_MobilinsHeadInn_Below/PlainOfAndor_MobilinsHeadInn_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "PlainOfAndor_MobilinsHeadInn_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0c656cd4-ace9-447b-b741-193a116351aa","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0c656cd4-ace9-447b-b741-193a116351aa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "PlainOfAndor",
     "path": "folders/Sprites/Maps/Overworld/PlainOfAndor.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "PlainOfAndor_MobilinsHeadInn_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

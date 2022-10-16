@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "GanonsGauntlet_05_Agwanda_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"021b3186-cd47-4270-a84e-7e614ad18ba4","path":"sprites/GanonsGauntlet_05_Agwanda_Below/GanonsGauntlet_05_Agwanda_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"021b3186-cd47-4270-a84e-7e614ad18ba4","path":"sprites/GanonsGauntlet_05_Agwanda_Below/GanonsGauntlet_05_Agwanda_Below.yy",},"LayerId":{"name":"8055d3e9-5fde-4237-8f4d-beab8ebca960","path":"sprites/GanonsGauntlet_05_Agwanda_Below/GanonsGauntlet_05_Agwanda_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"GanonsGauntlet_05_Agwanda_Below","path":"sprites/GanonsGauntlet_05_Agwanda_Below/GanonsGauntlet_05_Agwanda_Below.yy",},"resourceVersion":"1.0","name":"021b3186-cd47-4270-a84e-7e614ad18ba4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"021b3186-cd47-4270-a84e-7e614ad18ba4",},
   ],
   "sequence": {
-    "spriteId": {"name":"GanonsGauntlet_05_Agwanda_Below","path":"sprites/GanonsGauntlet_05_Agwanda_Below/GanonsGauntlet_05_Agwanda_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "GanonsGauntlet_05_Agwanda_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"813397ae-80e3-43bd-bfd2-0130b8956046","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"021b3186-cd47-4270-a84e-7e614ad18ba4","path":"sprites/GanonsGauntlet_05_Agwanda_Below/GanonsGauntlet_05_Agwanda_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"GanonsGauntlet_05_Agwanda_Below","path":"sprites/GanonsGauntlet_05_Agwanda_Below/GanonsGauntlet_05_Agwanda_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "GanonsGauntlet_05_Agwanda_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8055d3e9-5fde-4237-8f4d-beab8ebca960","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8055d3e9-5fde-4237-8f4d-beab8ebca960","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "GanonsGauntlet",
     "path": "folders/Sprites/Maps/Underworld/GanonsGauntlet.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GanonsGauntlet_05_Agwanda_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

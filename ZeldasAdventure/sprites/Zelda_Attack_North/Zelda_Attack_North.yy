@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Zelda_Attack_North",
   "bboxMode": 2,
   "collisionKind": 2,
   "type": 0,
@@ -24,24 +27,16 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"3c77ff05-5eee-4a7c-8646-a0f06812b2fe","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3c77ff05-5eee-4a7c-8646-a0f06812b2fe","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":{"name":"fe7086cd-91fe-4c06-aae7-a4b0543b6648","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_North","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"3c77ff05-5eee-4a7c-8646-a0f06812b2fe","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"a7da40a4-6d0a-4c6e-a42f-a1d5928f15d3","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a7da40a4-6d0a-4c6e-a42f-a1d5928f15d3","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":{"name":"fe7086cd-91fe-4c06-aae7-a4b0543b6648","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_North","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"a7da40a4-6d0a-4c6e-a42f-a1d5928f15d3","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"576eab20-93fb-4e5c-bee7-2551bb13a05d","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"576eab20-93fb-4e5c-bee7-2551bb13a05d","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":{"name":"fe7086cd-91fe-4c06-aae7-a4b0543b6648","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_North","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"576eab20-93fb-4e5c-bee7-2551bb13a05d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1bbb717f-bc15-4708-b9eb-8e214b34dea7","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1bbb717f-bc15-4708-b9eb-8e214b34dea7","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":{"name":"fe7086cd-91fe-4c06-aae7-a4b0543b6648","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_North","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"1bbb717f-bc15-4708-b9eb-8e214b34dea7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6a6ab5d8-995c-45a8-a6cd-ad1130babd6f","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6a6ab5d8-995c-45a8-a6cd-ad1130babd6f","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"LayerId":{"name":"fe7086cd-91fe-4c06-aae7-a4b0543b6648","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Attack_North","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","name":"6a6ab5d8-995c-45a8-a6cd-ad1130babd6f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3c77ff05-5eee-4a7c-8646-a0f06812b2fe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a7da40a4-6d0a-4c6e-a42f-a1d5928f15d3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"576eab20-93fb-4e5c-bee7-2551bb13a05d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1bbb717f-bc15-4708-b9eb-8e214b34dea7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a6ab5d8-995c-45a8-a6cd-ad1130babd6f",},
   ],
   "sequence": {
-    "spriteId": {"name":"Zelda_Attack_North","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Zelda_Attack_North",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -52,13 +47,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"d6624efb-a3aa-4bc3-9fdf-8739a16acd78","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3c77ff05-5eee-4a7c-8646-a0f06812b2fe","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"79c9a609-16cd-4ce3-b35b-2a1c2247cf18","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a7da40a4-6d0a-4c6e-a42f-a1d5928f15d3","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d35057fe-da3a-4389-8ad6-f6752276515a","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"576eab20-93fb-4e5c-bee7-2551bb13a05d","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"88e0b4ea-3208-4858-89d2-8fa37124ccae","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1bbb717f-bc15-4708-b9eb-8e214b34dea7","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"ac3e569f-69e8-4fbf-871c-87ec00c4b298","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6a6ab5d8-995c-45a8-a6cd-ad1130babd6f","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -74,22 +69,13 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Zelda_Attack_North","path":"sprites/Zelda_Attack_North/Zelda_Attack_North.yy",},
-    "resourceVersion": "1.4",
-    "name": "Zelda_Attack_North",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fe7086cd-91fe-4c06-aae7-a4b0543b6648","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"fe7086cd-91fe-4c06-aae7-a4b0543b6648","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Attack",
     "path": "folders/Sprites/Entities/Player/Attack.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Zelda_Attack_North",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

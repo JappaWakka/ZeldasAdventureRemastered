@@ -132,6 +132,7 @@ if Alpha = 255
 		if InventoryIndex = 0
 		{
 			InventoryIndex = 1
+			SelectedIndex[1] = ScrollOffsetX_Spells + (SelectedIndex[0] - ScrollOffsetX_Treasure)
 		}
 		
 	}
@@ -140,6 +141,7 @@ if Alpha = 255
 		if InventoryIndex = 1
 		{
 			InventoryIndex = 0
+			SelectedIndex[0] = ScrollOffsetX_Treasure + (SelectedIndex[1] - ScrollOffsetX_Spells)
 		}
 		
 	}

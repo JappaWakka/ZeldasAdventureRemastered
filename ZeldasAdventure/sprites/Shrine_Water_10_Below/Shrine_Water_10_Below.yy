@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Shrine_Water_10_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"aa996c51-f59f-49e1-9ae9-2b49f51a56ee","path":"sprites/Shrine_Water_10_Below/Shrine_Water_10_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"aa996c51-f59f-49e1-9ae9-2b49f51a56ee","path":"sprites/Shrine_Water_10_Below/Shrine_Water_10_Below.yy",},"LayerId":{"name":"d93953b3-b39d-499f-9b76-0a7fc942096b","path":"sprites/Shrine_Water_10_Below/Shrine_Water_10_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Shrine_Water_10_Below","path":"sprites/Shrine_Water_10_Below/Shrine_Water_10_Below.yy",},"resourceVersion":"1.0","name":"aa996c51-f59f-49e1-9ae9-2b49f51a56ee","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aa996c51-f59f-49e1-9ae9-2b49f51a56ee",},
   ],
   "sequence": {
-    "spriteId": {"name":"Shrine_Water_10_Below","path":"sprites/Shrine_Water_10_Below/Shrine_Water_10_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Shrine_Water_10_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"1f30773c-a4e1-4a61-b894-670925800a21","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa996c51-f59f-49e1-9ae9-2b49f51a56ee","path":"sprites/Shrine_Water_10_Below/Shrine_Water_10_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Shrine_Water_10_Below","path":"sprites/Shrine_Water_10_Below/Shrine_Water_10_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "Shrine_Water_10_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d93953b3-b39d-499f-9b76-0a7fc942096b","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d93953b3-b39d-499f-9b76-0a7fc942096b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Shrine_05_Water",
     "path": "folders/Sprites/Maps/Underworld/Shrine_05_Water.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Shrine_Water_10_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

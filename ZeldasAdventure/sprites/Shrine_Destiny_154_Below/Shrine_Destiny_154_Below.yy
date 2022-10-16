@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Shrine_Destiny_154_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"26ea1711-f799-4f5c-8893-3440cf96d9a5","path":"sprites/Shrine_Destiny_154_Below/Shrine_Destiny_154_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"26ea1711-f799-4f5c-8893-3440cf96d9a5","path":"sprites/Shrine_Destiny_154_Below/Shrine_Destiny_154_Below.yy",},"LayerId":{"name":"3f20e9cc-325b-40e8-bf5b-4385bc89d7ef","path":"sprites/Shrine_Destiny_154_Below/Shrine_Destiny_154_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Shrine_Destiny_154_Below","path":"sprites/Shrine_Destiny_154_Below/Shrine_Destiny_154_Below.yy",},"resourceVersion":"1.0","name":"26ea1711-f799-4f5c-8893-3440cf96d9a5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26ea1711-f799-4f5c-8893-3440cf96d9a5",},
   ],
   "sequence": {
-    "spriteId": {"name":"Shrine_Destiny_154_Below","path":"sprites/Shrine_Destiny_154_Below/Shrine_Destiny_154_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Shrine_Destiny_154_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"f3c4e641-9341-4e78-8c22-e4d818c5b27d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"26ea1711-f799-4f5c-8893-3440cf96d9a5","path":"sprites/Shrine_Destiny_154_Below/Shrine_Destiny_154_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Shrine_Destiny_154_Below","path":"sprites/Shrine_Destiny_154_Below/Shrine_Destiny_154_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "Shrine_Destiny_154_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3f20e9cc-325b-40e8-bf5b-4385bc89d7ef","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3f20e9cc-325b-40e8-bf5b-4385bc89d7ef","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Below",
     "path": "folders/Sprites/Maps/Old/Below.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Shrine_Destiny_154_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -43,5 +43,19 @@ y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
 	ChangeDirection = true;
 }
 
+if DamageDelay > 0
+{
+	DamageDelay -=1
+}
 
 image_speed = speed
+timerDuration -= 1
+if timerDuration = 0 and timerIndex > 0
+{
+	timerIndex += 1
+	if timerIndex = 6
+	{
+		timerIndex = 0
+	}
+	timerDuration = 4
+}

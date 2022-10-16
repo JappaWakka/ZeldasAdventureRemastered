@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "UbatoHills_08_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"84f4e00c-4fdf-4c25-98ba-e6fd19042d03","path":"sprites/UbatoHills_08_Below/UbatoHills_08_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"84f4e00c-4fdf-4c25-98ba-e6fd19042d03","path":"sprites/UbatoHills_08_Below/UbatoHills_08_Below.yy",},"LayerId":{"name":"5f04626b-ea40-4f51-8a17-fcf216c749a8","path":"sprites/UbatoHills_08_Below/UbatoHills_08_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"UbatoHills_08_Below","path":"sprites/UbatoHills_08_Below/UbatoHills_08_Below.yy",},"resourceVersion":"1.0","name":"84f4e00c-4fdf-4c25-98ba-e6fd19042d03","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"84f4e00c-4fdf-4c25-98ba-e6fd19042d03",},
   ],
   "sequence": {
-    "spriteId": {"name":"UbatoHills_08_Below","path":"sprites/UbatoHills_08_Below/UbatoHills_08_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "UbatoHills_08_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"6ce55ae6-d38a-4a8e-998f-bc14a2507813","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"84f4e00c-4fdf-4c25-98ba-e6fd19042d03","path":"sprites/UbatoHills_08_Below/UbatoHills_08_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"UbatoHills_08_Below","path":"sprites/UbatoHills_08_Below/UbatoHills_08_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "UbatoHills_08_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5f04626b-ea40-4f51-8a17-fcf216c749a8","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5f04626b-ea40-4f51-8a17-fcf216c749a8","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "UbatoHills",
     "path": "folders/Sprites/Maps/Overworld/UbatoHills.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "UbatoHills_08_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

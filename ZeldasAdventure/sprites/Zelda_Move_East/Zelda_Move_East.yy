@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "Zelda_Move_East",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -24,24 +27,16 @@
   "gridX": 48,
   "gridY": 48,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"4c3f3f12-6cd3-477f-9377-0de1cac0da2c","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4c3f3f12-6cd3-477f-9377-0de1cac0da2c","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":{"name":"6c3c20ad-08cf-4cc6-b932-0fd42aa7aab6","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Move_East","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"4c3f3f12-6cd3-477f-9377-0de1cac0da2c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"465fb38a-4a12-4ad8-a6dd-230a03bfaa3d","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"465fb38a-4a12-4ad8-a6dd-230a03bfaa3d","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":{"name":"6c3c20ad-08cf-4cc6-b932-0fd42aa7aab6","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Move_East","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"465fb38a-4a12-4ad8-a6dd-230a03bfaa3d","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ef2320f6-fca4-427d-b5b6-5cffb42c2f70","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ef2320f6-fca4-427d-b5b6-5cffb42c2f70","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":{"name":"6c3c20ad-08cf-4cc6-b932-0fd42aa7aab6","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Move_East","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"ef2320f6-fca4-427d-b5b6-5cffb42c2f70","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1c1ffd6b-0735-4e6d-b00a-79efebc92afe","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1c1ffd6b-0735-4e6d-b00a-79efebc92afe","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":{"name":"6c3c20ad-08cf-4cc6-b932-0fd42aa7aab6","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Move_East","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"1c1ffd6b-0735-4e6d-b00a-79efebc92afe","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d7d2fd31-f3ec-4d8f-ac24-c803a477262f","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d7d2fd31-f3ec-4d8f-ac24-c803a477262f","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"LayerId":{"name":"6c3c20ad-08cf-4cc6-b932-0fd42aa7aab6","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Zelda_Move_East","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","name":"d7d2fd31-f3ec-4d8f-ac24-c803a477262f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c3f3f12-6cd3-477f-9377-0de1cac0da2c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"465fb38a-4a12-4ad8-a6dd-230a03bfaa3d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ef2320f6-fca4-427d-b5b6-5cffb42c2f70",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1c1ffd6b-0735-4e6d-b00a-79efebc92afe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7d2fd31-f3ec-4d8f-ac24-c803a477262f",},
   ],
   "sequence": {
-    "spriteId": {"name":"Zelda_Move_East","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "Zelda_Move_East",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -52,13 +47,13 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"fad7722e-ec29-4839-88b4-930bd2745a4d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c3f3f12-6cd3-477f-9377-0de1cac0da2c","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"8246eab4-1027-4597-8d65-2a8d3a87eea1","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"465fb38a-4a12-4ad8-a6dd-230a03bfaa3d","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"4f2efcbb-b8a4-474e-a022-cf466d2f2c32","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ef2320f6-fca4-427d-b5b6-5cffb42c2f70","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"53e26b7d-f174-46ea-9cc8-78d12baffaf6","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1c1ffd6b-0735-4e6d-b00a-79efebc92afe","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"57cdc591-85bd-4cab-9887-a4343bd06cc6","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7d2fd31-f3ec-4d8f-ac24-c803a477262f","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -74,14 +69,9 @@
     "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Zelda_Move_East","path":"sprites/Zelda_Move_East/Zelda_Move_East.yy",},
-    "resourceVersion": "1.4",
-    "name": "Zelda_Move_East",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6c3c20ad-08cf-4cc6-b932-0fd42aa7aab6","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6c3c20ad-08cf-4cc6-b932-0fd42aa7aab6","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": {
     "left": 0,
@@ -112,8 +102,4 @@
     "name": "Move",
     "path": "folders/Sprites/Entities/Player/Move.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Zelda_Move_East",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

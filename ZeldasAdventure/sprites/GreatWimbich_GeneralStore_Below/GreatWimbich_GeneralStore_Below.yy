@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "GreatWimbich_GeneralStore_Below",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,12 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"82a2c64d-279c-4240-9e44-e5c8eec4c3fc","path":"sprites/GreatWimbich_GeneralStore_Below/GreatWimbich_GeneralStore_Below.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"82a2c64d-279c-4240-9e44-e5c8eec4c3fc","path":"sprites/GreatWimbich_GeneralStore_Below/GreatWimbich_GeneralStore_Below.yy",},"LayerId":{"name":"32566f43-4167-4f1f-8614-074d7d4877a7","path":"sprites/GreatWimbich_GeneralStore_Below/GreatWimbich_GeneralStore_Below.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"GreatWimbich_GeneralStore_Below","path":"sprites/GreatWimbich_GeneralStore_Below/GreatWimbich_GeneralStore_Below.yy",},"resourceVersion":"1.0","name":"82a2c64d-279c-4240-9e44-e5c8eec4c3fc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"82a2c64d-279c-4240-9e44-e5c8eec4c3fc",},
   ],
   "sequence": {
-    "spriteId": {"name":"GreatWimbich_GeneralStore_Below","path":"sprites/GreatWimbich_GeneralStore_Below/GreatWimbich_GeneralStore_Below.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "GreatWimbich_GeneralStore_Below",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"b79d1cfe-ec62-40df-a8fe-660231511c78","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82a2c64d-279c-4240-9e44-e5c8eec4c3fc","path":"sprites/GreatWimbich_GeneralStore_Below/GreatWimbich_GeneralStore_Below.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -58,22 +61,13 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"GreatWimbich_GeneralStore_Below","path":"sprites/GreatWimbich_GeneralStore_Below/GreatWimbich_GeneralStore_Below.yy",},
-    "resourceVersion": "1.4",
-    "name": "GreatWimbich_GeneralStore_Below",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"32566f43-4167-4f1f-8614-074d7d4877a7","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"32566f43-4167-4f1f-8614-074d7d4877a7","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "GreatWimbich",
     "path": "folders/Sprites/Maps/Overworld/GreatWimbich.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "GreatWimbich_GeneralStore_Below",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

@@ -3,6 +3,13 @@ if !audio_group_is_loaded(AudioGroup_Music)
 {
 	Audio_Init_Soundtrack(global.NewSoundtrack);
 	audio_group_load(AudioGroup_Music);
+	
+	global.CurrentMusic_Name = "Beach_Ocean";
+	global.CurrentMusic_Asset = Music_Silence;
+	global.CurrentMusic_IntroLength = 0.25;
+	global.CurrentMusic_LoopLength = 0.25;
+	global.SwitchTracks = true
+	
 	global.Initialized = false; //Don't play any music yet
 	global.CameraIsPanning = true; //If global.CameraIsPanning is true, the player can't move (or make sounds)
 }
