@@ -26,7 +26,7 @@ else
 	y = OriginY;
 	image_index = 0;
 	direction = 90;
-	speed = 0;
+	speed = global.EnemySpeeds.Still;
 	image_speed = 0;
 	if global.EnemySound <> -1
 	{
@@ -34,28 +34,51 @@ else
 	}
 }
 
-//Don't move outside of the current tile
-if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
-y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
-x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
-y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
-{
-	ChangeDirection = true;
-}
-
-if DamageDelay > 0
-{
-	DamageDelay -=1
-}
-
-image_speed = speed
+//Damage Animation
 timerDuration -= 1
 if timerDuration = 0 and timerIndex > 0
 {
 	timerIndex += 1
 	if timerIndex = 6
 	{
+		EnemyState = EnemyStates.Move
 		timerIndex = 0
 	}
 	timerDuration = 4
 }
+if timerIndex = 1
+{
+	direction = HitFromDirection
+	speed = 4
+}
+
+
+//Don't move outside of the current tile
+if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
+y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
+x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
+y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
+{
+	if EnemyState != EnemyStates.Damaged
+	{
+		ChangeDirection = true;
+	}
+	else
+	{
+		speed =  global.EnemySpeeds.Still
+	}
+}
+
+if DamageDelay > 0
+{
+	DamageDelay -=1
+}
+if EnemyState != EnemyStates.Damaged
+{
+	image_speed = speed
+}
+else
+{
+	image_speed = 0
+}
+

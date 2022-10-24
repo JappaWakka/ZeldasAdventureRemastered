@@ -16,3 +16,11 @@ enum EnemyStates
 	Attack,
 	Damaged
 };
+
+global.Directions =
+{
+	North : 90,
+	West : 180,
+	South : 270,
+	East : 0
+}

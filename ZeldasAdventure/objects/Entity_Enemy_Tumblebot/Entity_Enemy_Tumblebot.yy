@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Enemy_Tumblebot",
+  "name": "Entity_Enemy_Tumblebot",
   "spriteId": {
     "name": "Sprite_Enemy_Tumblebot_North",
     "path": "sprites/Sprite_Enemy_Tumblebot_North/Sprite_Enemy_Tumblebot_North.yy",

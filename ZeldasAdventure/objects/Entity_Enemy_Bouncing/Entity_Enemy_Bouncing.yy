@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_Enemy_Bouncing",
+  "name": "Entity_Enemy_Bouncing",
   "spriteId": null,
   "solid": false,
   "visible": true,

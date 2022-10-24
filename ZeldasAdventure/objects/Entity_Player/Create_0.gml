@@ -1,4 +1,4 @@
 /// @description Variables
-Facing = "South";
+Facing = global.Directions.South;
 IsAttacking = false;
 DamageDelay = 0;

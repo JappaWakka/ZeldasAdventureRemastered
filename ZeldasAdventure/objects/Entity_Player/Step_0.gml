@@ -89,25 +89,25 @@ if global.CameraIsPanning = false
 		{
 			image_speed = AnimSpeed;
 			sprite_index = Zelda_Move_East;
-			Facing = "East"
+			Facing = global.Directions.East
 		}
 		else if(input_check("Left") = true and input_check("Right") = false)
 		{
 			image_speed = AnimSpeed;
 			sprite_index = Zelda_Move_West;
-			Facing = "West"
+			Facing = global.Directions.West
 		}
 		else if(input_check("Down") = true and input_check("Up") = false)
 		{
 			image_speed = AnimSpeed;
 			sprite_index = Zelda_Move_South;
-			Facing = "South"
+			Facing = global.Directions.South
 		}
 		else if(input_check("Up") = true and input_check("Down") = false)
 		{
 			image_speed = AnimSpeed;
 			sprite_index = Zelda_Move_North;
-			Facing = "North"
+			Facing = global.Directions.North
 		}
 		else
 		{
@@ -131,22 +131,22 @@ if global.RemasteredMode = false and IsAttacking = false
 			//If casting a spell, pay the casting cost
 			global.CurrentRubies -= CastCost(global.CurrentItem[1])
 			//Set sprite, enable animation
-			if Facing = "East"
+			if Facing = global.Directions.East
 			{
 				sprite_index = Zelda_Attack_East;
 				IsAttacking = true;
 			}
-			if Facing = "West"
+			if Facing = global.Directions.West
 			{
 				sprite_index = Zelda_Attack_West;
 				IsAttacking = true;
 			}
-			if Facing = "South"
+			if Facing = global.Directions.South
 			{
 				sprite_index = Zelda_Attack_South;
 				IsAttacking = true;
 			}
-			if Facing = "North"
+			if Facing = global.Directions.North
 			{
 				sprite_index = Zelda_Attack_North;
 				IsAttacking = true;
@@ -156,19 +156,19 @@ if global.RemasteredMode = false and IsAttacking = false
 			if global.CurrentItem[1] = Spells.Wand
 			{
 				audio_play_sound(SFX_Use_Wand,false,false)
-				if Facing = "East"
+				if Facing = global.Directions.East
 				{
 					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
 				}
-				if Facing = "West"
+				if Facing = global.Directions.West
 				{
 					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
 				}
-				if Facing = "South"
+				if Facing = global.Directions.South
 				{
 					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
 				}
-				if Facing = "North"
+				if Facing = global.Directions.North
 				{
 					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
 				}
@@ -187,22 +187,22 @@ if global.RemasteredMode = true and IsAttacking = false
 		if Find_Item(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
 		{
 			//Set sprite, enable animation
-			if Facing = "East"
+			if Facing = global.Directions.East
 			{
 				sprite_index = Zelda_Attack_East;
 				IsAttacking = true;
 			}
-			if Facing = "West"
+			if Facing = global.Directions.West
 			{
 				sprite_index = Zelda_Attack_West;
 				IsAttacking = true;
 			}
-			if Facing = "South"
+			if Facing = global.Directions.South
 			{
 				sprite_index = Zelda_Attack_South;
 				IsAttacking = true;
 			}
-			if Facing = "North"
+			if Facing = global.Directions.North
 			{
 				sprite_index = Zelda_Attack_North;
 				IsAttacking = true;
@@ -212,19 +212,19 @@ if global.RemasteredMode = true and IsAttacking = false
 			if global.CurrentSpell = Spells.Wand
 			{
 				audio_play_sound(SFX_Use_Wand,false,false)
-				if Facing = "East"
+				if Facing = global.Directions.East
 				{
 					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
 				}
-				if Facing = "West"
+				if Facing = global.Directions.West
 				{
 					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
 				}
-				if Facing = "South"
+				if Facing = global.Directions.South
 				{
 					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
 				}
-				if Facing = "North"
+				if Facing = global.Directions.North
 				{
 					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
 				}
