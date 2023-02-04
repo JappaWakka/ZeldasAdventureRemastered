@@ -22,5 +22,10 @@ global.Directions =
 	North : 90,
 	West : 180,
 	South : 270,
-	East : 0
+	East : 0,	
+	NorthEast : 45,
+	NorthWest : 135,
+	SouthWest : 225,
+	SouthEast : 315
 }
+

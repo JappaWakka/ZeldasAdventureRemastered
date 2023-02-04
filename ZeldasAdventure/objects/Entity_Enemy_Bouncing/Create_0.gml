@@ -1,7 +1,5 @@
 OriginX = x
 OriginY = y
-direction = choose(135,225,45,315);
+direction = choose(global.Directions.NorthWest,global.Directions.SouthWest,global.Directions.NorthEast,global.Directions.SouthEast);
 speed = 0
 image_speed = 0
-
-

@@ -1,16 +1,16 @@
 //Change sprite
 switch direction
 {
-	case 135 :
+	case global.Directions.NorthWest :
 		sprite_index = Sprite_Enemy_Tumblebot_East
 		break;
-	case 225 :
+	case global.Directions.SouthWest :
 		sprite_index = Sprite_Enemy_Tumblebot_South
 		break;
-	case 45 :
+	case global.Directions.NorthEast :
 		sprite_index = Sprite_Enemy_Tumblebot_West
 		break;
-	case 315 :
+	case global.Directions.SouthEast :
 		sprite_index = Sprite_Enemy_Tumblebot_North
 		break;
 }

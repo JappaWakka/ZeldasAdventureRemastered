@@ -21,13 +21,18 @@ function WarpTo(TileX, TileY, PlayerX, PlayerY, FadeSpeed = 8)
 
 global.WarpLocations =
 {
+	//Vision Henge
+	VisionHenge_Spawn : {TileX:6,TileY:22,PlayerX:192,PlayerY:128},
+	
 	//Plain Of Andor
-	PlainOfAndor_Spawn : {TileX:6,TileY:22,PlayerX:192,PlayerY:128},
+	PlainOfAndor_MobilinsHeadInn_Outside : {TileX:9,TileY:21,PlayerX:96,PlayerY:188},
+
+	//Forest of Ogham
+	ForestOfOgham_TektiteCave_Inside : {TileX:7,TileY:31,PlayerX:38,PlayerY:128},
+	ForestOfOgham_TektiteCave_Outside : {TileX:6,TileY:31,PlayerX:300,PlayerY:162},
+	ForestOfOgham_ShrineOfEarth : {TileX:6,TileY:31,PlayerX:266,PlayerY:74},
 	
-	PlainOfAndor_TektiteCave_Inside : {TileX:7,TileY:31,PlayerX:38,PlayerY:128},
-	PlainOfAndor_TektiteCave_Outside : {TileX:6,TileY:31,PlayerX:300,PlayerY:162},
-	PlainOfAndor_ShrineOfEarth : {TileX:6,TileY:31,PlayerX:266,PlayerY:74},
-	
+	//Shrines
 	ShrineOfEarth_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
 	
 	ShrineOfIllusion_Entrance : {TileX:6,TileY:22,PlayerX:192,PlayerY:128},
@@ -52,10 +57,10 @@ function WarpToLocation(Name)
 	{
 		case "Spawn_Overworld" :
 			WarpTo(
-			global.WarpLocations.PlainOfAndor_Spawn.TileX,
-			global.WarpLocations.PlainOfAndor_Spawn.TileY,
-			global.WarpLocations.PlainOfAndor_Spawn.PlayerX,
-			global.WarpLocations.PlainOfAndor_Spawn.PlayerY
+			global.WarpLocations.VisionHenge_Spawn.TileX,
+			global.WarpLocations.VisionHenge_Spawn.TileY,
+			global.WarpLocations.VisionHenge_Spawn.PlayerX,
+			global.WarpLocations.VisionHenge_Spawn.PlayerY
 			)
 			break;
 		case "Spawn_Shrine1":
@@ -68,10 +73,10 @@ function WarpToLocation(Name)
 			break;
 		case "Shrine1_Outside":
 			WarpTo(
-			global.WarpLocations.PlainOfAndor_ShrineOfEarth.TileX,
-			global.WarpLocations.PlainOfAndor_ShrineOfEarth.TileY,
-			global.WarpLocations.PlainOfAndor_ShrineOfEarth.PlayerX,
-			global.WarpLocations.PlainOfAndor_ShrineOfEarth.PlayerY
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth.TileX,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth.TileY,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth.PlayerX,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth.PlayerY
 			)
 			break;
 		case "Spawn_Shrine2":
@@ -132,18 +137,26 @@ function WarpToLocation(Name)
 			break;
 		case "TektiteCave_Inside":
 			WarpTo(
-			global.WarpLocations.PlainOfAndor_TektiteCave_Inside.TileX,
-			global.WarpLocations.PlainOfAndor_TektiteCave_Inside.TileY,
-			global.WarpLocations.PlainOfAndor_TektiteCave_Inside.PlayerX,
-			global.WarpLocations.PlainOfAndor_TektiteCave_Inside.PlayerY
+			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.TileX,
+			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.TileY,
+			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.PlayerX,
+			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.PlayerY
 			)
 			break;
 		case "TektiteCave_Outside":
 			WarpTo(
-			global.WarpLocations.PlainOfAndor_TektiteCave_Outside.TileX,
-			global.WarpLocations.PlainOfAndor_TektiteCave_Outside.TileY,
-			global.WarpLocations.PlainOfAndor_TektiteCave_Outside.PlayerX,
-			global.WarpLocations.PlainOfAndor_TektiteCave_Outside.PlayerY
+			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.TileX,
+			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.TileY,
+			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.PlayerX,
+			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.PlayerY
+			)
+			break;
+		case "MobilinsHeadInn_Outside":
+			WarpTo(
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.TileX,
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.TileY,
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.PlayerX,
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.PlayerY
 			)
 			break;
 		

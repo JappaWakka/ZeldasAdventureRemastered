@@ -158,19 +158,19 @@ if global.RemasteredMode = false and IsAttacking = false
 				audio_play_sound(SFX_Use_Wand,false,false)
 				if Facing = global.Directions.East
 				{
-					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 				if Facing = global.Directions.West
 				{
-					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 				if Facing = global.Directions.South
 				{
-					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 				if Facing = global.Directions.North
 				{
-					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 			}
 		}
@@ -214,19 +214,19 @@ if global.RemasteredMode = true and IsAttacking = false
 				audio_play_sound(SFX_Use_Wand,false,false)
 				if Facing = global.Directions.East
 				{
-					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 				if Facing = global.Directions.West
 				{
-					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 				if Facing = global.Directions.South
 				{
-					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 				if Facing = global.Directions.North
 				{
-					instance_create_layer(x,y,"Temporary",Entity_Hitbox_Spell_Wand)
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 			}
 		}

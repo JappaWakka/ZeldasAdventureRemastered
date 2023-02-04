@@ -82,3 +82,10 @@ else
 	image_speed = 0
 }
 
+if HitPoints <= 0
+{
+	instance_create_layer(x,y,"Temporary_AbovePlayer",Particle_EnemyDefeat)
+	instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops)
+	instance_destroy();
+	
+}

@@ -1,2 +1,2 @@
 /// @description Add 250 Rubies
-IncreaseRubies(250)
+AddRubies(250)
