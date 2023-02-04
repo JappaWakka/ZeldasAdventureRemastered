@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "PlainOfAndor_07_Item_RedBoots",
+  "name": "PlainOfAndor_06_Solid",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -11,28 +11,28 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 239,
+  "bbox_right": 56,
   "bbox_top": 0,
-  "bbox_bottom": 76,
+  "bbox_bottom": 239,
   "HTile": false,
   "VTile": false,
   "For3D": false,
   "width": 384,
   "height": 240,
   "textureGroupId": {
-    "name": "TextureGroup_Maps",
-    "path": "texturegroups/TextureGroup_Maps",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8cff6197-64e0-4cba-af23-0a6a53c27483",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7db3e48a-2f91-4b10-a1f3-689e4a85f711",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "PlainOfAndor_07_Item_RedBoots",
+    "name": "PlainOfAndor_06_Solid",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -44,7 +44,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"300a0b1d-52d2-4c87-b7a1-d132ed73aef9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8cff6197-64e0-4cba-af23-0a6a53c27483","path":"sprites/PlainOfAndor_07_Item_RedBoots/PlainOfAndor_07_Item_RedBoots.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"003166b9-889d-4380-b5b2-a097e266f310","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7db3e48a-2f91-4b10-a1f3-689e4a85f711","path":"sprites/PlainOfAndor_06_Solid/PlainOfAndor_06_Solid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -63,7 +63,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9d2d7247-6e64-4f74-9fd2-a839b42be36b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"32ebacf8-0492-4cff-b584-f1321764d66a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {

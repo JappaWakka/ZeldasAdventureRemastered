@@ -1,7 +1,11 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Parent_UseItem_RedBoots",
   "spriteId": null,
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -24,8 +28,4 @@
     "name": "Interactions",
     "path": "folders/Objects/Interactions.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Parent_UseItem_RedBoots",
-  "tags": [],
-  "resourceType": "GMObject",
 }

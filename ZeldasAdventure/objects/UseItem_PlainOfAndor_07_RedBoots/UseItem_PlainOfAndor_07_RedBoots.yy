@@ -1,14 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Parent_Solid",
-  "spriteId": null,
-  "solid": true,
+  "name": "UseItem_PlainOfAndor_07_RedBoots",
+  "spriteId": {
+    "name": "PlainOfAndor_07_Item_RedBoots",
+    "path": "sprites/PlainOfAndor_07_Item_RedBoots/PlainOfAndor_07_Item_RedBoots.yy",
+  },
+  "solid": false,
   "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Parent_UseItem_RedBoots",
+    "path": "objects/Parent_UseItem_RedBoots/Parent_UseItem_RedBoots.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Solids",
-    "path": "folders/Objects/Solids.yy",
+    "name": "Interactions",
+    "path": "folders/Objects/Interactions.yy",
   },
 }

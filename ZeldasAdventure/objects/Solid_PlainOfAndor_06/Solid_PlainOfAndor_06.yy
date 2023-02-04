@@ -1,14 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Parent_Solid",
-  "spriteId": null,
+  "name": "Solid_PlainOfAndor_06",
+  "spriteId": {
+    "name": "PlainOfAndor_06_Solid",
+    "path": "sprites/PlainOfAndor_06_Solid/PlainOfAndor_06_Solid.yy",
+  },
   "solid": true,
   "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Parent_Solid",
+    "path": "objects/Parent_Solid/Parent_Solid.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Solids",
-    "path": "folders/Objects/Solids.yy",
+    "name": "PlainOfAndor",
+    "path": "folders/Objects/Solids/Overworld/PlainOfAndor.yy",
   },
 }
