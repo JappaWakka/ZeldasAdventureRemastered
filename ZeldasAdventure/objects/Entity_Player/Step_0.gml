@@ -155,7 +155,7 @@ if global.RemasteredMode = false and IsAttacking = false
 			// Use Spell - Wand
 			if global.CurrentItem[1] = Spells.Wand
 			{
-				audio_play_sound(SFX_Use_Wand,false,false)
+				audio_play_sound_relative(SFX_Use_Wand,600,false)
 				if Facing = global.Directions.East
 				{
 					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
@@ -211,7 +211,7 @@ if global.RemasteredMode = true and IsAttacking = false
 			// Use Spell - Wand
 			if global.CurrentSpell = Spells.Wand
 			{
-				audio_play_sound(SFX_Use_Wand,false,false)
+				audio_play_sound_relative(SFX_Use_Wand,600,false)
 				if Facing = global.Directions.East
 				{
 					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
@@ -232,7 +232,7 @@ if global.RemasteredMode = true and IsAttacking = false
 		}
 		else
 		{
-			audio_play_sound(SFX_Use_Error,false,false)
+			audio_play_sound_relative(SFX_Use_Error,600,false)
 		}
 	}
 }

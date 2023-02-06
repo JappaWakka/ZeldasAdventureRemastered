@@ -2,7 +2,7 @@ function AddRubies(Amount)
 {
 	if audio_is_playing(SFX_Pickup_Ruby) = false
 	{
-		audio_play_sound(SFX_Pickup_Ruby,999,false)
+		audio_play_sound_relative(SFX_Pickup_Ruby,999,false)
 	}
 	global.DesiredRubies = clamp(global.CurrentRubies + Amount, 0, 999)
 	
@@ -17,7 +17,7 @@ function RemoveRubies(Amount)
 {
 	if audio_is_playing(SFX_Pickup_Ruby) = false
 	{
-		audio_play_sound(SFX_Pickup_Ruby,999,false)
+		audio_play_sound_relative(SFX_Pickup_Ruby,999,false)
 	}
 	global.DesiredRubies = clamp(global.CurrentRubies - Amount, 0, 999)
 	
