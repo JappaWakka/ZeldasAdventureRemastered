@@ -9,7 +9,7 @@
 #macro INVENTORY_ROW_LENGTH 6
 #macro INVENTORY_SEPARATOR 5
 
-function InventoryArray(InventoryIndex)
+function InventoryList(InventoryIndex)
 {
 	switch InventoryIndex
 	{
@@ -26,7 +26,7 @@ function InventoryArray(InventoryIndex)
 	return -1
 	
 }
-function ItemIndex(InventoryIndex)
+function ItemIDIndex(InventoryIndex)
 {
 	switch InventoryIndex
 	{

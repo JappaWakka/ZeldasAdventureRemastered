@@ -1,2 +1,5 @@
 /// @description Add 250 Rubies
-AddRubies(250)
+if global.DebugMode = true
+{
+	AddRubies(250)
+}

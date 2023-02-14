@@ -1,6 +1,6 @@
 ///Add Wand to Inventory
-audio_play_sound(SFX_Pickup_Item,false,false)
-Add_Item(Spells.Wand,1)
+audio_play_sound_relative(SFX_Pickup_Item,100,false)
+Item_Add(Spells.Wand,1)
 
 //Auto-equip Wand if nothing is equipped
 if global.RemasteredMode = true

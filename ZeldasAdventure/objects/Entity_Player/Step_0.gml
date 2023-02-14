@@ -14,9 +14,31 @@ else
 PlayerHorizontalSpeed = xx * PlayerSpeed; //Your speed(PlayerSpeed) Variable in create event
 PlayerVerticalSpeed = yy * PlayerSpeed; //Your speed(PlayerSpeed) Variable in create event
 
-#endregion
 
 #region Collision
+////Red Boots Water
+if Item_FindIndex(Treasure.RedBoots,0) = -1
+{
+	// Horz(x) speed collision
+	if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_UseItem_RedBoots))
+	{
+		while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_UseItem_RedBoots))
+		{
+			x += sign(PlayerHorizontalSpeed);
+		}
+		PlayerHorizontalSpeed = 0;
+	}
+	// Vert(y) speed collision
+	if(place_meeting(x, y + PlayerVerticalSpeed, Parent_UseItem_RedBoots))
+	{
+		while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Parent_UseItem_RedBoots))
+		{
+			y += sign(PlayerVerticalSpeed);
+		}
+	   PlayerVerticalSpeed = 0;
+	}
+}
+
 ////Solid Objects
 // Horz(x) speed collision
 if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_Solid))
@@ -45,37 +67,8 @@ else
 	y += PlayerVerticalSpeed;
 }
 
-////Red Boots Water
-if Find_Item(Treasure.RedBoots,0) = -1
-{
-	// Horz(x) speed collision
-	if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_UseItem_RedBoots))
-	{
-		while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_UseItem_RedBoots))
-		{
-			x += sign(PlayerHorizontalSpeed);
-		}
-		PlayerHorizontalSpeed = 0;
-	}
-	 else
-	{
-		x += PlayerHorizontalSpeed;
-	}
-	// Vert(y) speed collision
-	if(place_meeting(x, y + PlayerVerticalSpeed, Parent_UseItem_RedBoots))
-	{
-		while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Parent_UseItem_RedBoots))
-		{
-			y += sign(PlayerVerticalSpeed);
-		}
-	   PlayerVerticalSpeed = 0;
-	}
-	else
-	{
-		y += PlayerVerticalSpeed;
-	}
-}
 
+#endregion
 #endregion
 
 #region SpriteChanges & Direction
@@ -126,65 +119,114 @@ if global.RemasteredMode = false and IsAttacking = false
 {
 	if input_check_pressed("Action") = true or input_check_pressed("Special") = true
 	{
-		if Find_Item(Spells.Wand, 1) <> -1 and global.CurrentItem[0] = 1 and global.CurrentRubies >= CastCost(global.CurrentItem[1])
+		//Current Item is a Spell
+		if global.CurrentItem[0] = 1
 		{
-			//If casting a spell, pay the casting cost
-			global.CurrentRubies -= CastCost(global.CurrentItem[1])
-			//Set sprite, enable animation
-			if Facing = global.Directions.East
+			if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentRubies >= CastCost(global.CurrentItem[1])
 			{
-				sprite_index = Zelda_Attack_East;
-				IsAttacking = true;
-			}
-			if Facing = global.Directions.West
-			{
-				sprite_index = Zelda_Attack_West;
-				IsAttacking = true;
-			}
-			if Facing = global.Directions.South
-			{
-				sprite_index = Zelda_Attack_South;
-				IsAttacking = true;
-			}
-			if Facing = global.Directions.North
-			{
-				sprite_index = Zelda_Attack_North;
-				IsAttacking = true;
-			}
-			
-			// Use Spell - Wand
-			if global.CurrentItem[1] = Spells.Wand
-			{
-				audio_play_sound_relative(SFX_Use_Wand,600,false)
+				//If casting a spell, pay the casting cost
+				global.CurrentRubies -= CastCost(global.CurrentItem[1])
+				//Set sprite, enable animation
 				if Facing = global.Directions.East
 				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					sprite_index = Zelda_Attack_East;
+					IsAttacking = true;
 				}
 				if Facing = global.Directions.West
 				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					sprite_index = Zelda_Attack_West;
+					IsAttacking = true;
 				}
 				if Facing = global.Directions.South
 				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					sprite_index = Zelda_Attack_South;
+					IsAttacking = true;
 				}
 				if Facing = global.Directions.North
 				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					sprite_index = Zelda_Attack_North;
+					IsAttacking = true;
+				}
+				
+				// Use Spell - Wand
+				if global.CurrentItem[1] = Spells.Wand
+				{
+					audio_play_sound_relative(SFX_Use_Wand,600,false)
+					if Facing = global.Directions.East
+					{
+						instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					}
+					if Facing = global.Directions.West
+					{
+						instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					}
+					if Facing = global.Directions.South
+					{
+						instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					}
+					if Facing = global.Directions.North
+					{
+						instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					}
 				}
 			}
+			else
+			{
+				audio_play_sound_relative(SFX_Use_Error,100,false)
+			}
+		//Current Item is a Treasure
 		}
 		else
 		{
-			audio_play_sound(SFX_Use_Error,false,false)
+			switch Item_FindValue(global.CurrentItem[1],0)
+			{
+				case Treasure.EmptyPitcher:
+					if collision_point(x, y, UseItem_PlainOfAndor_01_Pitcher_Empty, false, false)
+						{
+							Item_Remove(Treasure.EmptyPitcher,0);
+							if global.RemasteredMode = true
+							{
+								global.CurrentTreasure = -1
+							}
+							else
+							{
+								global.CurrentItem[1] = -1
+							}
+								
+							instance_create_layer(1632,4736 - 4,"Items",Entity_Pickup_FullPitcher)
+							break;
+						}
+						else
+						{
+							audio_play_sound_relative(SFX_Use_Error,100,false)
+							break;
+						}
+					
+			}
+			
 		}
+	}
+}
+//Auto-equip Wand if nothing is equipped
+if global.RemasteredMode = true
+{
+	if global.CurrentSpell = -1 && Item_FindIndex(Spells.Wand, 1) <> -1
+	{
+		global.CurrentSpell = Spells.Wand;
+	}
+}
+else
+{
+	if global.CurrentItem[1] = -1 && Item_FindIndex(Spells.Wand, 1) <> -1
+	{
+		global.CurrentItem = [1,Spells.Wand];
 	}
 }
 if global.RemasteredMode = true and IsAttacking = false
 {
 	if input_check_pressed("Special") = true
 	{
-		if Find_Item(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
+		if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
 		{
 			//Set sprite, enable animation
 			if Facing = global.Directions.East

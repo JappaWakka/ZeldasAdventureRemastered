@@ -1,16 +1,17 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "UseItem_PlainOfAndor_01_Pitcher_Empty",
   "spriteId": {
     "name": "PlainOfAndor_01_Item_EmptyPitcher",
     "path": "sprites/PlainOfAndor_01_Item_EmptyPitcher/PlainOfAndor_01_Item_EmptyPitcher.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Parent_Solid",
-    "path": "objects/Parent_Solid/Parent_Solid.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -30,8 +31,4 @@
     "name": "Interactions",
     "path": "folders/Objects/Interactions.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "UseItem_PlainOfAndor_01_Pitcher_Empty",
-  "tags": [],
-  "resourceType": "GMObject",
 }

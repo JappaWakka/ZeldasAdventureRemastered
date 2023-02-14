@@ -10,12 +10,20 @@ if room == Room_Overworld
 {
 	Camera_Pan()
 	//Auto-equip Wand if nothing is equipped
-	if global.CurrentSpell = -1
+	if global.RemasteredMode = true
 	{
-		if Find_Item(Spells.Wand,1) <> -1
+		if global.CurrentSpell = -1 && Item_FindIndex(Spells.Wand,1) <> -1
+			{
+				global.CurrentSpell = Spells.Wand;
+			}
+	}
+	else
+	{
+		if global.CurrentItem[1] = -1 && Item_FindIndex(Spells.Wand,1) <> -1
 		{
-			global.CurrentSpell = Spells.Wand;
+			global.CurrentItem = [1,Spells.Wand];
 		}
 	}
+
 }
 

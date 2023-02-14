@@ -52,7 +52,8 @@ function InitGameVariables()
 	global.CurrentTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";
 	
-	global.Inventory = {Treasure : array_create(0), Spells : array_create(0), CelestialSigns : array_create(0)}
+	global.CurrentKeys = 0
+	global.Inventory = {Treasure : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
 	
 	//Option Variables
 	global.DebugMode = true;

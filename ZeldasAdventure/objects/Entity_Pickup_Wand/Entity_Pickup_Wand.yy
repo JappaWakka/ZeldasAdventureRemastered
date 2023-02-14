@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Entity_Pickup_Wand",
   "spriteId": {
     "name": "Sprite_Pickup_Wand",
     "path": "sprites/Sprite_Pickup_Wand/Sprite_Pickup_Wand.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": {
     "name": "Hitbox_Pickup_Big",
     "path": "sprites/Hitbox_Pickup_Big/Hitbox_Pickup_Big.yy",
@@ -24,8 +28,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Entity_Player","path":"objects/Entity_Player/Entity_Player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Entity_Player","path":"objects/Entity_Player/Entity_Player.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,8 +37,4 @@
     "name": "Spells",
     "path": "folders/Objects/Entities/Pickups/Spells.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Entity_Pickup_Wand",
-  "tags": [],
-  "resourceType": "GMObject",
 }

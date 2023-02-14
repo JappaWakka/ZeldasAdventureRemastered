@@ -1,2 +1,5 @@
 /// @description Fill HP
-FillHP()
+if global.DebugMode = true
+{
+	FillHP()
+}

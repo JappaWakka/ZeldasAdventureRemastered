@@ -1,18 +1,18 @@
 if global.RemasteredMode == true
 {
-	SelectedIndex = [Find_Item(global.CurrentTreasure,0), Find_Item(global.CurrentSpell,1)]
+	SelectedIndex = [Item_FindIndex(global.CurrentTreasure,0), Item_FindIndex(global.CurrentSpell,1)]
 	InventoryIndex = 0
 }
 else
 {
-	if global.CurrentItem[0] == 0
+	if global.CurrentItem[0] == 0 //Treasure
 	{
-		SelectedIndex = [Find_Item(global.CurrentItem[1],0),-1]
+		SelectedIndex = [Item_FindIndex(global.CurrentItem[1],0),-1]
 		InventoryIndex = 0
 	}
-	else if global.CurrentItem[0] == 1
+	else if global.CurrentItem[0] == 1 //Spell
 	{
-		SelectedIndex = [-1, Find_Item(global.CurrentItem[1],1)]
+		SelectedIndex = [-1, Item_FindIndex(global.CurrentItem[1],1)]
 		InventoryIndex = 1
 	}
 	else
