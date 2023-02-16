@@ -12,7 +12,6 @@ function InitGameVariables()
 	global.FadeAlpha = 0;
 	global.CameraIsPanning = false;
 	global.CameraPanSpeed = {x: 12, y: 8};
-	global.DefeatedEnemyList = array_create(0);
 	global.DesiredRubies = 0;
 	global.Languages = {
 		English : "en",
@@ -23,36 +22,38 @@ function InitGameVariables()
 	global.CurrentTreasure = -1;
 	global.CurrentSpell = -1;
 	global.InventorySlots_Max = [0,0,0];
+
 	global.InventorySlots_Max[0] = INVENTORY_SLOTS_TREASURE;
-
-
 	if global.AddCutItems = true
 	{
 		global.InventorySlots_Max[0] = INVENTORY_SLOTS_TREASURE + INVENTORY_SLOTS_TREASURE_CUT
 	}
 
 	global.InventorySlots_Max[1] = INVENTORY_SLOTS_SPELLS
-
 	if global.AddCutItems = true
 	{
 		global.InventorySlots_Max[1] = INVENTORY_SLOTS_SPELLS + INVENTORY_SLOTS_SPELLS_CUT
 	}
 
 	global.InventorySlots_Max[2] = INVENTORY_SLOTS_CELESTIALSIGNS
+	
 	//Player Variables
 	global.Name = "EMPTY";
 	global.CurrentHealth = 60;
 	global.MaxHealth = 60;
 	global.Power = 1;
 	global.Defense = 1;
-	global.BaseAttackDamage = 10;
-	global.DamagePerHit = 10 / global.Defense;
+	
+	global.BaseDamage = 10;
+	global.AttackDamage = global.BaseDamage * global.Power;
+	global.DefenseDamage = global.BaseDamage / global.Defense;
+	
 	global.CurrentLocation = "Overworld"; //To determine which map to display in the inventory
-	global.CurrentRubies = 0;
 	global.CurrentTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";
 	
-	global.CurrentKeys = 0
+	global.CurrentRubies = 0;
+	global.CurrentKeys = 0;
 	global.Inventory = {Treasure : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
 	
 	//Option Variables

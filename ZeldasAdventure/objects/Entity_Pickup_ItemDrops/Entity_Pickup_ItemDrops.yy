@@ -38,7 +38,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Entities/Pickups.yy",
+    "name": "Other",
+    "path": "folders/Objects/Entities/Pickups/Other.yy",
   },
 }

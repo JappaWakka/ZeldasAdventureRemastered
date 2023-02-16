@@ -63,12 +63,14 @@ if Alpha == 255
 		}
 	}
 }
+//If no rubies, remove the item
 if global.CurrentRubies == 0
 {
 	Item_Remove(Treasure.Rubies,0)
 }
 else
 {
+	//If there are rubies, add the item back
 	if Item_FindIndex(Treasure.Rubies,0) = -1
 	{
 		Item_Add(Treasure.Rubies,0)
@@ -89,6 +91,8 @@ if Alpha = 255
 				if ScrollOffsetX_Treasure < ds_list_size(InventoryList(0)) - 6
 				{
 					ScrollOffsetX_Treasure += 1;
+					Scrolled = [1,0]  // Direction, InventoryIndex
+					alarm[0] = room_speed / 4
 				}	
 			}
 		}
@@ -103,6 +107,8 @@ if Alpha = 255
 				if ScrollOffsetX_Spells < ds_list_size(InventoryList(1)) - 6
 				{
 					ScrollOffsetX_Spells += 1;
+					Scrolled = [1,1]  // Direction, InventoryIndex
+					alarm[0] = room_speed / 4
 				}	
 			}
 		}
@@ -127,6 +133,8 @@ if Alpha = 255
 				if ScrollOffsetX_Treasure > 0
 				{
 					ScrollOffsetX_Treasure -= 1
+					Scrolled = [-1,0]  // Direction, InventoryIndex
+					alarm[0] = room_speed / 4
 				}	
 			}
 		}
@@ -142,6 +150,8 @@ if Alpha = 255
 				if ScrollOffsetX_Spells > 0
 				{
 					ScrollOffsetX_Spells -= 1
+					Scrolled = [-1,1]  // Direction, InventoryIndex
+					alarm[0] = room_speed / 4
 				}	
 			}
 		}

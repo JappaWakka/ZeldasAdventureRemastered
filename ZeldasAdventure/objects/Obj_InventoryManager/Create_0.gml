@@ -1,3 +1,5 @@
+Scrolled = [0,0] // Direction, InventoryIndex
+
 if global.RemasteredMode == true
 {
 	SelectedIndex = [Item_FindIndex(global.CurrentTreasure,0), Item_FindIndex(global.CurrentSpell,1)]

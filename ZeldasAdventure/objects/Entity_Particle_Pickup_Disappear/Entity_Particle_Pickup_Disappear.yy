@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Particle_ItemDrop_Disappear",
+  "name": "Entity_Particle_Pickup_Disappear",
   "spriteId": {
-    "name": "Sprite_Particle_EnemyDefeat",
-    "path": "sprites/Sprite_Particle_EnemyDefeat/Sprite_Particle_EnemyDefeat.yy",
+    "name": "Sprite_Particle_Pickup_Disappear",
+    "path": "sprites/Sprite_Particle_Pickup_Disappear/Sprite_Particle_Pickup_Disappear.yy",
   },
   "solid": false,
   "visible": true,

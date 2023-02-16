@@ -17,5 +17,5 @@ else
 		global.CurrentItem = [1,Spells.Wand];
 	}
 }
-	
+instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
 instance_destroy()

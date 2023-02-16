@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Particle_EnemyDefeat",
+  "name": "Entity_Particle_EnemyDefeat",
   "spriteId": {
     "name": "Sprite_Particle_EnemyDefeat",
     "path": "sprites/Sprite_Particle_EnemyDefeat/Sprite_Particle_EnemyDefeat.yy",

@@ -43,6 +43,25 @@ if Alpha = 255
 	draw_text(333,KeysY,global.CurrentKeys)
 }
 
+//Draw inventory labels
+if Alpha = 255
+{
+	draw_set_font(Font_Small)
+	draw_set_color(c_black)
+	draw_set_halign(fa_center)
+	
+	//Treasures
+	draw_text(98,97,UI_Inventory_Text(0))
+	draw_text(98,97,UI_Inventory_Text(0)) // Make it extra thick
+	
+	//Weapons
+	draw_text(94,156,UI_Inventory_Text(1))
+	draw_text(94,156,UI_Inventory_Text(1)) // Make it extra thick
+	
+	//Reset Font Properties
+	draw_set_color(c_white)
+	draw_set_halign(fa_left)
+}
 //Draw buttons
 if Alpha = 255
 {
@@ -69,6 +88,50 @@ if Alpha = 255
 	//Reset Font Properties
 	draw_set_color(c_white)
 	draw_set_halign(fa_left)
+}
+
+//Draw Scroll Indicators
+if Alpha = 255
+{
+	if Scrolled[0] = -1
+	{
+		if Scrolled[1] = 0
+		{
+			draw_sprite(Sprite_Inventory_Button_ArrowLeft_Hover,0,26,114)
+		}
+		if Scrolled[1] = 1
+		{
+			draw_sprite(Sprite_Inventory_Button_ArrowLeft_Hover,0,26,172)
+		}
+	}
+	if Scrolled[0] = 1
+	{
+		if Scrolled[1] = 0
+		{
+			draw_sprite(Sprite_Inventory_Button_ArrowRight_Hover,0,290,115)
+		}
+		if Scrolled[1] = 1
+		{
+			draw_sprite(Sprite_Inventory_Button_ArrowRight_Hover,0,290,173)
+		}
+	}
+	
+}
+
+//Draw Celestial Signs
+for (var i = 0; i < ds_list_size(InventoryList(2)); i += 1)
+{
+	if Item_FindValue(i,2) != -1
+	{
+		draw_sprite_ext(
+		Sprite_Inventory_CelestialSigns,
+		Item_FindValue(i,2), //ImageIndex
+		153, 28, //position x,y
+		1,1, //scale x,y
+		0, //rotation
+		c_white, //color
+		Alpha);
+	}
 }
 
 //Draw Treasure Items
