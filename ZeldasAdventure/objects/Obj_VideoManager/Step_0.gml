@@ -20,7 +20,7 @@ if (webm_exists(CurrentVideo))
 		}
 		else if room = Room_Cutscene_Intro
 		{
-			room_goto(Room_Overworld)
+			room_goto(Room_MainMenu)
 		}
 	}
 }

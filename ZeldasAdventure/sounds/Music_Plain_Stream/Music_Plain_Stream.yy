@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Music_Plain_Stream",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Plain_Stream.ogg",
-  "duration": 41.8574066,
+  "duration": 41.857407,
   "parent": {
-    "name": "Music_Original",
-    "path": "folders/Sounds/Music_Original.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Music_Plain_Stream",
-  "tags": [],
-  "resourceType": "GMSound",
 }

@@ -49,7 +49,7 @@ if timerDuration = 0 and timerIndex > 0
 if timerIndex = 1
 {
 	direction = HitFromDirection
-	speed = 4
+	speed = d(4)
 }
 
 

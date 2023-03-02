@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Music_Shrine_Earth_Boss",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Shrine_Earth_Boss.ogg",
-  "duration": 41.8383751,
+  "duration": 41.838375,
   "parent": {
     "name": "Shrines",
-    "path": "folders/Sounds/Music_Original/Shrines.yy",
+    "path": "folders/Sounds/Music/Shrines.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Music_Shrine_Earth_Boss",
-  "tags": [],
-  "resourceType": "GMSound",
 }

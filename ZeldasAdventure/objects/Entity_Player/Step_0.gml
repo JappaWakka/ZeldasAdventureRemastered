@@ -11,8 +11,8 @@ else
 	xx = false
 	yy = false
 }
-PlayerHorizontalSpeed = xx * PlayerSpeed; //Your speed(PlayerSpeed) Variable in create event
-PlayerVerticalSpeed = yy * PlayerSpeed; //Your speed(PlayerSpeed) Variable in create event
+PlayerHorizontalSpeed = d(xx * PlayerSpeed); //Your speed(PlayerSpeed) Variable in create event
+PlayerVerticalSpeed = d(yy * PlayerSpeed); //Your speed(PlayerSpeed) Variable in create event
 
 
 #region Collision
@@ -73,7 +73,7 @@ else
 
 #region SpriteChanges & Direction
 
-AnimSpeed = PlayerSpeedMultiplier
+AnimSpeed = d(PlayerSpeedMultiplier)
 if global.CameraIsPanning = false
 {
 	if IsAttacking = false
@@ -181,7 +181,7 @@ if global.RemasteredMode = false and IsAttacking = false
 			switch Item_FindValue(global.CurrentItem[1],0)
 			{
 				case Treasure.EmptyPitcher:
-					if collision_point(x, y, UseItem_PlainOfAndor_01_Pitcher_Empty, false, false)
+					if global.CurrentTile.x = 4 && global.CurrentTile.y = 19
 						{
 							Item_Remove(Treasure.EmptyPitcher,0);
 							if global.RemasteredMode = true

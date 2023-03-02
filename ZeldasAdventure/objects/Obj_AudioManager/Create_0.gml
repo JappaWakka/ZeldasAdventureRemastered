@@ -1,7 +1,7 @@
 //Load Audio Groups
 if !audio_group_is_loaded(AudioGroup_Music)
 {
-	Audio_Init_Soundtrack(global.NewSoundtrack);
+	Audio_Init_Soundtrack();
 	audio_group_load(AudioGroup_Music);
 	
 	global.CurrentMusic_Name = "Beach_Ocean";

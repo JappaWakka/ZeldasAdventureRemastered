@@ -33,7 +33,6 @@ function FillHP()
 {
 	if global.CurrentHealth < global.MaxHealth
 	{
-		alarm[11] = 0.1 * room_speed
+		Obj_GameManager.DoFillHearts = true
 	}
 }
-			

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Music_Forest",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Forest.ogg",
-  "duration": 27.3140945,
+  "duration": 27.314095,
   "parent": {
-    "name": "Music_Original",
-    "path": "folders/Sounds/Music_Original.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Music_Forest",
-  "tags": [],
-  "resourceType": "GMSound",
 }

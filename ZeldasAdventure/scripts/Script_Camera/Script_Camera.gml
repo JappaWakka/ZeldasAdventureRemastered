@@ -12,6 +12,7 @@ function Camera_Init(Camera = view)
 		camera_set_view_size(Camera,viewWidth,viewHeight);
 	}
 	//Set window size
+	display_set_gui_size(viewWidth,viewHeight)
 	window_set_size(viewWidth * global.WindowScale,viewHeight * global.WindowScale);
 	surface_resize(application_surface,viewWidth,viewHeight);
 }

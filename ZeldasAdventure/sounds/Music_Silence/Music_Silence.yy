@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "Music_Silence",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "Music_Silence.ogg",
   "duration": 1.0,
   "parent": {
-    "name": "Music_Original",
-    "path": "folders/Sounds/Music_Original.yy",
+    "name": "Music",
+    "path": "folders/Sounds/Music.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Music_Silence",
-  "tags": [],
-  "resourceType": "GMSound",
 }

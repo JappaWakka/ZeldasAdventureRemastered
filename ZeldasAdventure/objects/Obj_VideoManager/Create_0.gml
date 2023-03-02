@@ -4,11 +4,11 @@ CurrentVideo = -1;
 
 if room = Room_Cutscene_Logos
 {
-	FileName = working_directory + "Cutscenes/Cutscene_Logos.webm";
+	FileName = working_directory + "Video/Cutscene_Logos.webm";
 }
 else if room = Room_Cutscene_Intro
 {
-	FileName = working_directory + "Cutscenes/Cutscene_Intro.webm";
+	FileName = working_directory + "Video/Cutscene_Intro.webm";
 }
 else
 {

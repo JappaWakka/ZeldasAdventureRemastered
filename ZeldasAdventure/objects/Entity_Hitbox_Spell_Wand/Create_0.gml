@@ -14,4 +14,4 @@ else if Entity_Player.Facing = global.Directions.North
 {
 	image_index = 3;
 }
-alarm[0] = 15;
+alarm[0] = d(15);

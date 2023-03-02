@@ -11,7 +11,7 @@ if input_check_pressed("Action") or input_check_pressed("Special") or input_chec
 		VideoManager_Stop()
 		global.FadeProgress = 1
 		global.FadeAlpha = 255
-		room_goto(Room_Overworld)
+		room_goto(Room_MainMenu)
 	}
 	global.Subtitle = ""
 }
@@ -22,7 +22,7 @@ if input_check_pressed("Menu")
 		VideoManager_Stop()
 		global.FadeProgress = 1
 		global.FadeAlpha = 255
-		room_goto(Room_Overworld)
+		room_goto(Room_MainMenu)
 	}
 	global.Subtitle = ""
 }

@@ -48,7 +48,7 @@ function InitGameVariables()
 	global.AttackDamage = global.BaseDamage * global.Power;
 	global.DefenseDamage = global.BaseDamage / global.Defense;
 	
-	global.CurrentLocation = "Overworld"; //To determine which map to display in the inventory
+	global.CurrentMap = "Overworld"; //To determine which map to display in the inventory
 	global.CurrentTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";
 	
@@ -64,4 +64,49 @@ function InitGameVariables()
 	global.ShowSubtitles = true;
 	global.RemasteredMode = false;
 	global.CurrentLanguage = global.Languages.English;
+	global.VolumeMaster = 1;
+	global.VolumeMusic = 1;
+	global.VolumeSoundFX = 1;
+		
+	//Entity Variables
+	#macro PlayerBaseSpeed 1.5
+	global.EnemySpeeds =
+	{
+		Still: 0,
+		Slow : d(1),
+		Medium : d(1.4),
+		Fast: d(1.8)
+	};
+	
+	global.EnemySound = -1;
+	
+	enum EnemyStates
+	{
+		Idle,
+		Move,
+		Attack,
+		Damaged
+	};
+	
+	global.Directions =
+	{
+		North : 90,
+		West : 180,
+		South : 270,
+		East : 0,	
+		NorthEast : 45,
+		NorthWest : 135,
+		SouthWest : 225,
+		SouthEast : 315
+	}
+	
+	//Save File Variables
+	global.SavePlayerNames = 
+	[
+		Save1 = "EMPTY",
+		Save2 = "EMPTY",
+		Save3 = "EMPTY"
+	]
+		
+	global.SaveDataFileName = "System/SaveData.ini"
 }
