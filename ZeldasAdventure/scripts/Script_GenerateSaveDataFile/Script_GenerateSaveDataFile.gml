@@ -2,22 +2,23 @@ function Script_GenerateSaveDataFile()
 {
 	ini_open(global.SaveDataFileName)
 	
-	for (var i = 1; i <= array_length(global.SavePlayerNames); i++)
+	for (var i = 1; i <= 3; i++)
 	{
-		if !ini_section_exists("Save" & i)
+		var Section = "Save"string(i)
+		if !ini_section_exists(Section)
 		{
-			ini_write_string("Save" & i, "Name", "EMPTY");
-			ini_write_real("Save" & i, "CurrentHealth", 60);
-			ini_write_real("Save" & i, "MaxHealth", 60);
-			ini_write_real("Save" & i, "Power", 1);
-			ini_write_real("Save" & i, "Defense", 1);
-			ini_write_string("Save" & i, "CurrentMap", "Overworld");
-			ini_write_string("Save" & i, "PlayerSpawn", "Spawn_Overworld");
-			ini_write_real("Save" & i, "CurrentTileX", 6);
-			ini_write_real("Save" & i, "CurrentTileY", 22);
-			ini_write_real("Save" & i, "CurrentRubies", 0);
-			ini_write_real("Save" & i, "CurrentKeys", 0);
-			ini_write_string("Save" & i, "Inventory", "");
+			ini_write_string(Section, "Name", "EMPTY");
+			ini_write_real(Section, "CurrentHealth", 60);
+			ini_write_real(Section, "MaxHealth", 60);
+			ini_write_real(Section, "Power", 1);
+			ini_write_real(Section, "Defense", 1);
+			ini_write_string(Section, "CurrentMap", "Overworld");
+			ini_write_string(Section, "PlayerSpawn", "Spawn_Overworld");
+			ini_write_real(Section, "CurrentTileX", 6);
+			ini_write_real(Section, "CurrentTileY", 22);
+			ini_write_real(Section, "CurrentRubies", 0);
+			ini_write_real(Section, "CurrentKeys", 0);
+			ini_write_string(Section, "Inventory", "");
 		}
 	}
 	
@@ -34,4 +35,5 @@ function Script_GenerateSaveDataFile()
 			ini_write_real("Options", "VolumeMusic", 1);
 			ini_write_real("Options", "VolumeSoundFX", 1);
 	}
+	ini_close()
 }

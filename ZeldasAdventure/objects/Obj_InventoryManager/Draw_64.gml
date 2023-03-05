@@ -15,13 +15,17 @@ if OpeningClosing = true
 		if Alpha = 0
 		{
 			Alpha = 255;
-			instance_deactivate_layer("PlayerAndNPCS");
+			instance_deactivate_object(Entity_Player)
+			Entity_Parent_NPC.speed = 0;
+			Entity_Parent_NPC.image_speed = 0;
 			instance_deactivate_layer("Enemies");
 		}
 		else
 		{
 			Alpha = 0;
-			instance_activate_layer("PlayerAndNPCS");
+			instance_activate_object(Entity_Player)
+			Entity_Parent_NPC.speed = Entity_Parent_NPC.DefaultSpeed;
+			Entity_Parent_NPC.image_speed = Entity_Parent_NPC.ImageSpeed;
 			instance_activate_layer("Enemies");
 		}
 		OpeningClosing = false;
@@ -32,9 +36,10 @@ draw_sprite_ext(Sprite_Inventory_Background,0,0,0,1,1,0,c_white,Alpha);
 //Draw Keys
 if Alpha = 255
 {
-	draw_set_font(Font_KeyNumber())
-	draw_set_color(c_white)
-	draw_set_halign(fa_left)
+	draw_set_font(Font_KeyNumber());
+	draw_set_color(c_white);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 	var KeysY = 119
 	if global.RemasteredMode = true
 	{
@@ -46,9 +51,10 @@ if Alpha = 255
 //Draw inventory labels
 if Alpha = 255
 {
-	draw_set_font(Font_Small)
-	draw_set_color(c_black)
-	draw_set_halign(fa_center)
+	draw_set_font(Font_Small);
+	draw_set_color(c_black);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_top);
 	
 	//Treasures
 	draw_text(98,97,UI_Inventory_Text(0))

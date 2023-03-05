@@ -1,6 +1,6 @@
 if EnemyState != EnemyStates.Damaged
 {
-	if distance_to_object(Entity_Player) <= AttackModeRange
+	if Script_AggroRange() = true
 	{
 		speed = global.EnemySpeeds.Medium
 	}

@@ -20,8 +20,8 @@
   "width": 48,
   "height": 48,
   "textureGroupId": {
-    "name": "TextureGroup_UI",
-    "path": "texturegroups/TextureGroup_UI",
+    "name": "TextureGroup_Entities",
+    "path": "texturegroups/TextureGroup_Entities",
   },
   "swatchColours": null,
   "gridX": 0,

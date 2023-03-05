@@ -122,7 +122,7 @@ if global.RemasteredMode = false and IsAttacking = false
 		//Current Item is a Spell
 		if global.CurrentItem[0] = 1
 		{
-			if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentRubies >= CastCost(global.CurrentItem[1])
+			if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentItem[1] <> -1 and global.CurrentRubies >= CastCost(global.CurrentItem[1])
 			{
 				//If casting a spell, pay the casting cost
 				global.CurrentRubies -= CastCost(global.CurrentItem[1])
@@ -152,22 +152,23 @@ if global.RemasteredMode = false and IsAttacking = false
 				if global.CurrentItem[1] = Spells.Wand
 				{
 					audio_play_sound_relative(SFX_Use_Wand,600,false)
-					if Facing = global.Directions.East
-					{
-						instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-					}
-					if Facing = global.Directions.West
-					{
-						instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-					}
-					if Facing = global.Directions.South
-					{
-						instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-					}
-					if Facing = global.Directions.North
-					{
-						instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-					}
+				}
+				// Melee damage (happens also when using other spells)
+				if Facing = global.Directions.East
+				{
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = global.Directions.West
+				{
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = global.Directions.South
+				{
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+				}
+				if Facing = global.Directions.North
+				{
+					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
 				}
 			}
 			else
@@ -193,7 +194,7 @@ if global.RemasteredMode = false and IsAttacking = false
 								global.CurrentItem[1] = -1
 							}
 								
-							instance_create_layer(1632,4736 - 4,"Items",Entity_Pickup_FullPitcher)
+							instance_create_layer(1632,4736,"Items",Entity_Pickup_FullPitcher)
 							break;
 						}
 						else
@@ -201,7 +202,12 @@ if global.RemasteredMode = false and IsAttacking = false
 							audio_play_sound_relative(SFX_Use_Error,100,false)
 							break;
 						}
-					
+				case Treasure.FullPitcher:
+					if global.CurrentTile.x <> 9 && global.CurrentTile.y <> 23
+					{
+							audio_play_sound_relative(SFX_Use_Error,100,false)
+							break;
+					}
 			}
 			
 		}

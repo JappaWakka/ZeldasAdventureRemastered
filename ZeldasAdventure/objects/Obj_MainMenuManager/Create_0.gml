@@ -26,10 +26,11 @@ enum SaveGames
 
 //Check for existence of Save Data and generate if they don't exist
 Script_GenerateSaveDataFile()
-for (var i = 1; i <= array_length(global.SavePlayerNames); i++)
+for (var i = 1; i <= 3; i++)
 {
 	ini_open(global.SaveDataFileName)
-	var SaveName = ini_read_string("Save" & i, "Name", "[DEFAULT]")
+	var Section = "Save"string(i)
+	var SaveName = ini_read_string(Section, "Name", "[DEFAULT]")
 	if SaveName != "[DEFAULT]" && SaveName != ""
 	{
 		global.SavePlayerNames[i] = SaveName

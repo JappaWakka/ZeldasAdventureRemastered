@@ -57,7 +57,7 @@ function InitGameVariables()
 	global.Inventory = {Treasure : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
 	
 	//Option Variables
-	global.DebugMode = true;
+	global.DebugMode = false;
 	global.WindowScale = 3;
 	global.Fullscreen = 0;
 	global.NewSoundtrack = false;
@@ -101,12 +101,7 @@ function InitGameVariables()
 	}
 	
 	//Save File Variables
-	global.SavePlayerNames = 
-	[
-		Save1 = "EMPTY",
-		Save2 = "EMPTY",
-		Save3 = "EMPTY"
-	]
+	global.SavePlayerNames = array_create(3, "EMPTY")
 		
 	global.SaveDataFileName = "System/SaveData.ini"
 }

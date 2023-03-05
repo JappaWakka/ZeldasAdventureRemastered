@@ -20,6 +20,8 @@ if (webm_exists(CurrentVideo))
 		}
 		else if room = Room_Cutscene_Intro
 		{
+			global.FadeProgress = 1
+			global.FadeAlpha = 255
 			room_goto(Room_MainMenu)
 		}
 	}

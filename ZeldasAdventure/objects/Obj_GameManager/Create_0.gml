@@ -1,5 +1,6 @@
 ///@description Set Initial Stuff
 Camera_Init()
+InitGameVariables()
 
 //Define Alarms, enable looping
 ChangeRubyAlarms = create_alarm_array(2);

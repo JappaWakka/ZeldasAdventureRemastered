@@ -14,7 +14,7 @@ switch direction
 		sprite_index = Sprite_Enemy_Tumblebot_North
 		break;
 }
-if distance_to_object(Entity_Player) <= AttackModeRange
+if Script_AggroRange() = true
 {
 	speed = global.EnemySpeeds.Medium
 }

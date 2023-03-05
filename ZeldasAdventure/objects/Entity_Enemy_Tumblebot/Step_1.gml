@@ -17,7 +17,7 @@ if EnemyState != EnemyStates.Damaged
 			break;
 	}
 
-	if distance_to_object(Entity_Player) <= AttackModeRange
+	if Script_AggroRange() = true
 	{
 		speed = global.EnemySpeeds.Medium
 	}
@@ -31,7 +31,7 @@ if ChangeDirection = true
 {
 	if EnemyState != EnemyStates.Damaged
 	{
-		if distance_to_object(Entity_Player) <= AttackModeRange
+		if Script_AggroRange() = true
 		{
 			if random_range(1,101) <= MoveToPlayerChance
 			{
