@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Solid_PlainOfAndor_MobilinsHeadInn_Below_Solid",
   "spriteId": {
-    "name": "PlainOfAndor_MobilinsHeadInn_Below_Solid",
-    "path": "sprites/PlainOfAndor_MobilinsHeadInn_Below_Solid/PlainOfAndor_MobilinsHeadInn_Below_Solid.yy",
+    "name": "PlainOfAndor_MobilinsHeadInn_Solid",
+    "path": "sprites/PlainOfAndor_MobilinsHeadInn_Solid/PlainOfAndor_MobilinsHeadInn_Solid.yy",
   },
   "solid": true,
   "visible": false,

@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "UseItem_PlainOfAndor_02_RedBoots",
   "spriteId": {
     "name": "PlainOfAndor_02_Item_RedBoots",
     "path": "sprites/PlainOfAndor_02_Item_RedBoots/PlainOfAndor_02_Item_RedBoots.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -27,11 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Interactions",
-    "path": "folders/Objects/Interactions.yy",
+    "name": "Item_RedBoots",
+    "path": "folders/Objects/Interactions/Item_RedBoots.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "UseItem_PlainOfAndor_02_RedBoots",
-  "tags": [],
-  "resourceType": "GMObject",
 }

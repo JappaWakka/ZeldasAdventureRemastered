@@ -25,6 +25,7 @@ global.WarpLocations =
 	VisionHenge_Spawn : {TileX:6,TileY:22,PlayerX:192,PlayerY:128},
 	
 	//Plain Of Andor
+	PlainOfAndor_MobilinsHeadInn_Inside : {TileX:10,TileY:21,PlayerX:64,PlayerY:148},
 	PlainOfAndor_MobilinsHeadInn_Outside : {TileX:9,TileY:21,PlayerX:96,PlayerY:188},
 
 	//Forest of Ogham
@@ -149,6 +150,14 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.TileY,
 			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.PlayerX,
 			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.PlayerY
+			)
+			break;
+		case "MobilinsHeadInn_Inside":
+			WarpTo(
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.TileX,
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.TileY,
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.PlayerX,
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.PlayerY
 			)
 			break;
 		case "MobilinsHeadInn_Outside":

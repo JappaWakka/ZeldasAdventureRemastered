@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Interactions",
-    "path": "folders/Objects/Interactions.yy",
+    "name": "Item_RedBoots",
+    "path": "folders/Objects/Interactions/Item_RedBoots.yy",
   },
 }
