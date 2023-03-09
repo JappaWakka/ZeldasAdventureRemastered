@@ -14,8 +14,6 @@ else
 PlayerHorizontalSpeed = d(xx * PlayerSpeed); //Your speed(PlayerSpeed) Variable in create event
 PlayerVerticalSpeed = d(yy * PlayerSpeed); //Your speed(PlayerSpeed) Variable in create event
 
-
-#region Collision
 ////Red Boots Water
 if Item_FindIndex(Treasure.RedBoots,0) = -1
 {
@@ -67,8 +65,15 @@ else
 	y += PlayerVerticalSpeed;
 }
 
+if PlayerHorizontalSpeed > 0 or PlayerVerticalSpeed > 0
+{
+	Moving = true
+}
+else
+{
+	Moving = false
+}
 
-#endregion
 #endregion
 
 #region SpriteChanges & Direction

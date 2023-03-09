@@ -1,4 +1,4 @@
-function Subtitle_PlainOfAndor_20_GlebbTheThirsty_BeforeFill(AudioPosition)
+function Subtitle_PlainOfAndor_20_GlebbTheThirsty_AfterFill(AudioPosition)
 {
 	switch global.CurrentLanguage
 	{

@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ParticlesAndProjectiles",
-    "path": "folders/Objects/Entities/ParticlesAndProjectiles.yy",
+    "name": "Particles",
+    "path": "folders/Objects/Entities/Particles.yy",
   },
 }

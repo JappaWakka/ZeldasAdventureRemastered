@@ -39,15 +39,6 @@ function InitGameVariables()
 	
 	//Player Variables
 	global.Name = "EMPTY";
-	global.CurrentHealth = 60;
-	global.MaxHealth = 60;
-	global.Power = 1;
-	global.Defense = 1;
-	
-	global.BaseDamage = 10;
-	global.AttackDamage = global.BaseDamage * global.Power;
-	global.DefenseDamage = global.BaseDamage / global.Defense;
-	
 	global.CurrentMap = "Overworld"; //To determine which map to display in the inventory
 	global.CurrentTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";
@@ -55,6 +46,11 @@ function InitGameVariables()
 	global.CurrentRubies = 0;
 	global.CurrentKeys = 0;
 	global.Inventory = {Treasure : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
+	
+	global.CurrentHealth = 60;
+	global.MaxHealth = 60;
+	global.Power = 30;
+	global.Defense = 30;
 	
 	//Option Variables
 	global.DebugMode = false;

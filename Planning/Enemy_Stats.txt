@@ -1,0 +1,169 @@
+enemy.crockarock has different stats on different cells:
+	 [health=12, damage=72, defense=38] on cells a7, a8, c8, d7
+	 [health=60, damage=72, defense=38] on cells c7
+enemy.lanmola always has the stats:
+	 [health=60, damage=68, defense=20]
+enemy.lowder always has the stats:
+	 [health=60, damage=57, defense=10]
+enemy.deeler has different stats on different cells:
+	 [health=60, damage=57, defense=20] on cells b8, e9, h10, i10
+	 [health=60, damage=40, defense=0] on cells f7, g29, g30, g31, h10, j10, m10, m13, n13, o12
+enemy.bagoBago has different stats on different cells:
+	 [health=12, damage=50, defense=10] on cells c8
+	 [health=60, damage=40, defense=0] on cells p13
+enemy.goriya always has the stats:
+	 [health=60, damage=45, defense=10, weakness=None, bonusDamage=5]
+enemy.leever always has the stats:
+	 [health=60, damage=40, defense=0]
+enemy.peahat always has the stats:
+	 [health=60, damage=44, defense=10]
+enemy.tumbleWeed always has the stats:
+	 [health=60, damage=40, defense=0]
+enemy.moblin always has the stats:
+	 [health=60, damage=50, defense=15]
+enemy.moby always has the stats:
+	 [health=60, damage=45, defense=0]
+enemy.llort has different stats on different cells:
+	 [health=60, damage=60, defense=24] on cells gl1, s118
+	 [health=60, damage=50, defense=24] on cells s121
+enemy.ganonFairy has different stats on different cells:
+	 [health=0, damage=0, defense=0] on cells gl1, gl2, gl3, gl5, gl8
+	 [health=50, damage=0, defense=0] on cells gl7
+enemy.swampZola.green always has the stats:
+	 [health=60, damage=50, defense=20]
+enemy.rope always has the stats:
+	 [health=5, damage=57, defense=500]
+enemy.tektite has different stats on different cells:
+	 [health=60, damage=51, defense=5] on cells j16, k15, k16, l16, m14, m15, r5, r8, v10, v12, v9, x9
+	 [health=60, damage=40, defense=0] on cells q10, s101a, s103, s104, s116
+enemy.greenBird always has the stats:
+	 [health=60, damage=62, defense=30]
+enemy.octorok always has the stats:
+	 [health=60, damage=61, defense=23]
+enemy.floorSpikes has different stats on different cells:
+	 [health=99, damage=58, defense=99] on cells l8, s5, s219, s420, s607, s608, s612, s614, s622, s626
+	 [health=999, damage=40, defense=999] on cells q15
+enemy.mimicMole always has the stats:
+	 [health=60, damage=45, defense=5]
+enemy.swampZola.blue always has the stats:
+	 [health=60, damage=62, defense=30]
+enemy.seaMonster always has the stats:
+	 [health=60, damage=58, defense=30]
+enemy.guard always has the stats:
+	 [health=0, damage=0, defense=0]
+enemy.alligatorMan has different stats on different cells:
+	 [health=60, damage=45, defense=10] on cells r20
+	 [health=60, damage=57, defense=20] on cells s16, t16, u14, v15, v18, w15
+enemy.giantSquid has different stats on different cells:
+	 [health=12, damage=81, defense=34] on cells s20, s517, s523
+	 [health=60, damage=50, defense=15] on cells s515
+enemy.patra always has the stats:
+	 [health=30, damage=37, defense=5]
+enemy.gibdo always has the stats:
+	 [health=60, damage=73, defense=30]
+enemy.ironKnuckle has different stats on different cells:
+	 [health=60, damage=58, defense=32] on cells s613, s615, s617, s625
+	 [health=60, damage=75, defense=32] on cells s626
+enemy.blob always has the stats:
+	 [health=0, damage=0, defense=0]
+enemy.cactus always has the stats:
+	 [health=60, damage=57, defense=10]
+enemy.purpleBird always has the stats:
+	 [health=60, damage=52, defense=20]
+enemy.axeMan always has the stats:
+	 [health=12, damage=67, defense=36]
+enemy.pasquinade has different stats on different cells:
+	 [health=60, damage=55, defense=24] on cells gl2
+	 [health=0, damage=0, defense=0] on cells s217
+	 [health=70, damage=55, defense=24] on cells s224
+enemy.aviana has different stats on different cells:
+	 [health=60, damage=60, defense=24, weakness=Feather, bonusDamage=0] on cells gl3
+	 [health=770, damage=60, defense=24, weakness=Feather, bonusDamage=0] on cells s321
+enemy.malmord has different stats on different cells:
+	 [health=1, damage=80, defense=0] on cells gl4
+	 [health=90, damage=60, defense=24] on cells s422
+enemy.dragonfly has different stats on different cells:
+	 [health=1, damage=0, defense=0] on cells gl4
+	 [health=60, damage=50, defense=10] on cells s312, s313, s317
+enemy.agwanda has different stats on different cells:
+	 [health=50, damage=86, defense=30] on cells gl5
+	 [health=0, damage=0, defense=0] on cells s516
+	 [health=110, damage=86, defense=28] on cells s525
+enemy.warbane has different stats on different cells:
+	 [health=50, damage=86, defense=34] on cells gl7
+	 [health=0, damage=0, defense=0] on cells s712, s721
+	 [health=50, damage=76, defense=38] on cells s723
+enemy.ganon always has the stats:
+	 [health=60, damage=82, defense=40]
+enemy.keese always has the stats:
+	 [health=60, damage=45, defense=10]
+enemy.sardak.red always has the stats:
+	 [health=280, damage=50, defense=30, weakness=JadeRing, bonusDamage=70]
+enemy.sardak.blue always has the stats:
+	 [health=80, damage=50, defense=30, weakness=JadeRing, bonusDamage=70]
+enemy.sardak.yellow always has the stats:
+	 [health=280, damage=50, defense=30, weakness=JadeRing, bonusDamage=70]
+enemy.jackaroo always has the stats:
+	 [health=60, damage=51, defense=5]
+enemy.stalfos always has the stats:
+	 [health=60, damage=51, defense=15]
+enemy.vire always has the stats:
+	 [health=60, damage=51, defense=15]
+enemy.polsVoice always has the stats:
+	 [health=280, damage=51, defense=31, weakness=Noise, bonusDamage=70]
+enemy.wizzrobe always has the stats:
+	 [health=280, damage=45, defense=35, weakness=Dagger, bonusDamage=70]
+enemy.wallmaster always has the stats:
+	 [health=0, damage=0, defense=0]
+enemy.tornado always has the stats:
+	 [health=280, damage=52, defense=32, weakness=Calm, bonusDamage=72]
+enemy.loccasin has different stats on different cells:
+	 [health=60, damage=57, defense=20] on cells s304
+	 [health=20, damage=48, defense=30] on cells s709, s711
+enemy.vapora always has the stats:
+	 [health=60, damage=57, defense=25]
+enemy.tumbleSkull always has the stats:
+	 [health=60, damage=57, defense=10]
+enemy.volta always has the stats:
+	 [health=60, damage=52, defense=10]
+enemy.floorSpikes.blue has different stats on different cells:
+	 [health=0, damage=58, defense=0] on cells s316
+	 [health=0, damage=0, defense=0] on cells s318, s508, s513
+enemy.spikedBlock always has the stats:
+	 [health=99, damage=58, defense=99]
+enemy.jack always has the stats:
+	 [health=99, damage=48, defense=99]
+enemy.floorSpikes.white always has the stats:
+	 [health=99, damage=58, defense=99]
+enemy.romraven has different stats on different cells:
+	 [health=30, damage=50, defense=15] on cells s418
+	 [health=0, damage=40, defense=34] on cells s421
+	 [health=30, damage=45, defense=0] on cells s710, s715
+enemy.wallSpike always has the stats:
+	 [health=99, damage=60, defense=99]
+enemy.zol always has the stats:
+	 [health=60, damage=54, defense=30]
+enemy.kelpi always has the stats:
+	 [health=280, damage=69, defense=34, weakness=TurquoiseRing, bonusDamage=70]
+enemy.turtle always has the stats:
+	 [health=60, damage=62, defense=35]
+enemy.purpleFish always has the stats:
+	 [health=60, damage=62, defense=35]
+enemy.knight.red always has the stats:
+	 [health=280, damage=73, defense=35, weakness=Joust, bonusDamage=70]
+enemy.knight.blue always has the stats:
+	 [health=280, damage=73, defense=35, weakness=Broadsword, bonusDamage=70]
+enemy.knight.green always has the stats:
+	 [health=280, damage=73, defense=35, weakness=Broadsword, bonusDamage=70]
+enemy.ursore always has the stats:
+	 [health=130, damage=80, defense=34]
+enemy.spearThrower always has the stats:
+	 [health=30, damage=81, defense=30]
+enemy.lavaLizard always has the stats:
+	 [health=18, damage=81, defense=36]
+enemy.kannis always has the stats:
+	 [health=8, damage=96, defense=40]
+enemy.bolla always has the stats:
+	 [health=30, damage=81, defense=30]
+enemy.archer always has the stats:
+	 [health=280, damage=72, defense=40, weakness=GoldNecklace, bonusDamage=70]

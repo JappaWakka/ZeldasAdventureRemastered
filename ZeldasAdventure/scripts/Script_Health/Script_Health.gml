@@ -1,18 +1,26 @@
-function DecreaseHP(Multiplier = 1)
+function DecreaseHP(Amount = 10)
 {
-	global.CurrentHealth -= global.DefenseDamage * Multiplier
+	global.CurrentHealth -= Amount
+	if global.CurrentHealth < 0
+	{
+		global.CurrentHealth = 0
+	}
 }
 
-function IncreaseHP(Multiplier = 1)
+function IncreaseHP(Amount = 10)
 {
-	global.CurrentHealth += global.DefenseDamage * Multiplier
+	global.CurrentHealth += Amount
+	if global.CurrentHealth > global.MaxHealth
+	{
+		global.CurrentHealth = global.MaxHealth
+	}
 }
 
 function DecreaseMaxHealth()
 {
-	if global.MaxHealth > global.DefenseDamage * 2
+	if global.MaxHealth > 20
 	{
-		global.MaxHealth -= global.DefenseDamage * 2
+		global.MaxHealth -= 20
 	}
 	if global.CurrentHealth > global.MaxHealth
 	{
@@ -24,9 +32,9 @@ function IncreaseMaxHealth()
 {
 	if global.CurrentHealth == global.MaxHealth
 	{
-		global.CurrentHealth += global.DefenseDamage * 2
+		global.CurrentHealth += 20
 	}
-	global.MaxHealth += global.DefenseDamage * 2
+	global.MaxHealth += 20
 }
 
 function FillHP()

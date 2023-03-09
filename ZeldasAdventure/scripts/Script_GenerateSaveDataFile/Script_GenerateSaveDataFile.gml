@@ -10,8 +10,8 @@ function Script_GenerateSaveDataFile()
 			ini_write_string(Section, "Name", "EMPTY");
 			ini_write_real(Section, "CurrentHealth", 60);
 			ini_write_real(Section, "MaxHealth", 60);
-			ini_write_real(Section, "Power", 1);
-			ini_write_real(Section, "Defense", 1);
+			ini_write_real(Section, "Power", 30);
+			ini_write_real(Section, "Defense", 30);
 			ini_write_string(Section, "CurrentMap", "Overworld");
 			ini_write_string(Section, "PlayerSpawn", "Spawn_Overworld");
 			ini_write_real(Section, "CurrentTileX", 6);
