@@ -9,7 +9,7 @@ function Draw_Subtitles(x, y, text, textColor, textAlpha, outlineColor, outlineA
 	var outlineQualityPercent = outlineQuality / 100;
 	var i;
 	for (i = 0; i < 360; i += outlineQualityPercent){
-	    draw_text_ext_transformed_color(x + lengthdir_x(outlineThickness, i), y - 16 + lengthdir_y(outlineThickness, i), string(text),32, viewWidth * global.WindowScale / 2, xscale, yscale, angle, outlineColor, outlineColor, outlineColor, outlineColor, outlineAlpha);
+	    draw_text_ext_transformed_color(x + lengthdir_x(outlineThickness, i), y - 16 + lengthdir_y(outlineThickness, i), string(text),32, ViewWidth * global.WindowScale / 2, xscale, yscale, angle, outlineColor, outlineColor, outlineColor, outlineColor, outlineAlpha);
 	}
-	draw_text_ext_transformed_color(x, y - 16, string(text),32, viewWidth * global.WindowScale / 2, xscale, yscale, angle, textColor, textColor, textColor, textColor, textAlpha);
+	draw_text_ext_transformed_color(x, y - 16, string(text),32, ViewWidth * global.WindowScale / 2, xscale, yscale, angle, textColor, textColor, textColor, textColor, textAlpha);
 }

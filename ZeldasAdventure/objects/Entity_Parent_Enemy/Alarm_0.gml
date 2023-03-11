@@ -1,3 +1,4 @@
+///@description Change Direction
 if EnemyState = EnemyStates.Move
 {
 	ChangeDirection = true

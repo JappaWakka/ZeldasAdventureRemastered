@@ -4,17 +4,17 @@ function Camera_Init(Camera = view)
 	if room == Room_Overworld
 	{
 		WarpToLocation(global.PlayerSpawn)
-		camera_set_view_pos(Camera,global.CurrentTile.x * viewWidth,global.CurrentTile.y * viewHeight);
+		camera_set_view_pos(Camera,global.CurrentTile.x * ViewWidth,global.CurrentTile.y * ViewHeight);
 	}
 	//Set view size
-	if camera_get_view_width(Camera) <> viewWidth || camera_get_view_height(Camera) <> viewHeight
+	if camera_get_view_width(Camera) <> ViewWidth || camera_get_view_height(Camera) <> ViewHeight
 	{
-		camera_set_view_size(Camera,viewWidth,viewHeight);
+		camera_set_view_size(Camera,ViewWidth,ViewHeight);
 	}
 	//Set window size
-	display_set_gui_size(viewWidth,viewHeight)
-	window_set_size(viewWidth * global.WindowScale,viewHeight * global.WindowScale);
-	surface_resize(application_surface,viewWidth,viewHeight);
+	display_set_gui_size(ViewWidth,ViewHeight)
+	window_set_size(ViewWidth * global.WindowScale,ViewHeight * global.WindowScale);
+	surface_resize(application_surface,ViewWidth,ViewHeight);
 }
 
 function Camera_Pan()

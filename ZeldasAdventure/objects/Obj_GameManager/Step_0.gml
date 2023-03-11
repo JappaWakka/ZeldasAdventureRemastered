@@ -1,4 +1,4 @@
-/// @description Update Delta Time
+/// Update Delta Time
 delta_step()
 
 //Update Alarms

@@ -7,3 +7,7 @@ if global.EnemySound <> -1
 		global.EnemySound = -1
 	}
 }
+else
+{
+	global.EnemySoundPlaying = false
+}

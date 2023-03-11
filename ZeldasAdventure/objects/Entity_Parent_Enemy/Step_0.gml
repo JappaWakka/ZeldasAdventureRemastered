@@ -5,7 +5,7 @@ global.CameraIsPanning = false
 {
 	//Activate
 	visible = true;
-	if alarm_get(0) < 1
+	if alarm_get(0) = -1
 	{
 		if EnemyState = EnemyStates.Move
 		{
@@ -15,7 +15,15 @@ global.CameraIsPanning = false
 	//Play enemy sound
 	if alarm_get(1) = -1
 	{
-		alarm_set(1, random_range(4*room_speed,10*room_speed));
+		alarm_set(1, random_range(2*room_speed,6*room_speed));
+	}
+	//Attack
+	if alarm_get(2) = -1
+	{
+		if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
+		{
+			alarm_set(2, random_range(0, 2 * room_speed));
+		}
 	}
 }
 else
@@ -28,10 +36,6 @@ else
 	direction = 90;
 	speed = global.EnemySpeeds.Still;
 	image_speed = 0;
-	if global.EnemySound <> -1
-	{
-		audio_stop_sound(global.EnemySound)
-	}
 }
 
 //Damage Animation
@@ -52,7 +56,10 @@ if timerIndex = 1
 	speed = d(4)
 }
 
-
+if EnemyState = EnemyStates.Attack
+{
+	speed = global.EnemySpeeds.Still
+}
 //Don't move outside of the current tile
 if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
 y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
@@ -65,7 +72,7 @@ y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
 	}
 	else
 	{
-		speed =  global.EnemySpeeds.Still
+		speed = global.EnemySpeeds.Still
 	}
 }
 

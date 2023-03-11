@@ -5,7 +5,6 @@ if DamageDelay = 0
 		///Reduce PitPoints, play damage sound
 		DecreaseHP(other.Power - GetDefense())
 		audio_play_sound_relative(SFX_Zelda_Damage,1000,false)
-		instance_destroy(other)
 		DamageDelay = 1 * room_speed
 		if timeline_index = -1
 		{
@@ -32,3 +31,4 @@ if DamageDelay = 0
 		}
 	}
 }
+instance_destroy(other)

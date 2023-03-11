@@ -56,7 +56,6 @@ function InitGameVariables()
 	global.DebugMode = false;
 	global.WindowScale = 3;
 	global.Fullscreen = 0;
-	global.NewSoundtrack = false;
 	global.ShowSubtitles = true;
 	global.RemasteredMode = false;
 	global.CurrentLanguage = global.Languages.English;
