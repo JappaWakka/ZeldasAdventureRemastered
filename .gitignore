@@ -1,7 +1,6 @@
 *.ttf
 *.otf
 *.avi
-Audio/Music_Remastered/Soundfonts/
 ldtk/
 *.sf2
 *.flp
@@ -7488,12 +7487,6 @@ Planning/export/overworld/VisionHenge_05 (g23)/waterpalette.png
 *.zip
 *.exe
 Sprites/\#projects/Shrine Items.png
-Audio/Music_Remastered/MainTheme.ogg
-Audio/Music_Remastered/Original Compositions/Projects & Old Versions/Shrine_Illusion v3_Fade.mp3
-Audio/Music_Remastered/Original Compositions/Projects & Old Versions/Shrine_Illusion v3_Fade.wav
-Audio/Music_Remastered/Projects & Old Versions/MainTheme v2.mp3
-Audio/Music_Remastered/Projects & Old Versions/MainTheme v2.ogg
-Audio/Music_Remastered/Projects & Old Versions/Samples/Thunder Strike.wav
 ZeldasAdventure/objects/DeltaObject/Create_0.gml
 ZeldasAdventure/objects/DeltaObject/DeltaObject.yy
 ZeldasAdventure/objects/DeltaObject/Step_2.gml
@@ -12049,9 +12042,6 @@ Audio/Dialogue/Sliced/ShrineOfWater/s525/line1.wav
 Audio/Dialogue/Sliced/ShrineOfWater/s525/line2.wav
 Audio/Dialogue/Sliced/ShrineOfWater/s525/line3.wav
 Audio/Dialogue/Sliced/ShrineOfWater/s525/line4.wav
-Audio/Music_Remastered/MainTheme.ogg
-Audio/Music_Remastered/Original Compositions/Projects & Old Versions/Shrine_Illusion v3_Fade.mp3
-Audio/Music_Remastered/Original Compositions/Projects & Old Versions/Shrine_Illusion v3_Fade.wav
 Planning/export/common/hudSprites/0.png
 Planning/export/common/hudSprites/1.png
 Planning/export/common/hudSprites/2.png
