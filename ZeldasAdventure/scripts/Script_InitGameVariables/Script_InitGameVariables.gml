@@ -1,5 +1,10 @@
 function InitGameVariables()
 {
+	//Save File Variables
+	global.SavePlayerNames = array_create(3, "EMPTY")
+		
+	global.SaveDataFileName = "System/SaveData.ini"
+	Script_GenerateSaveDataFile()
 	
 	//System Variables
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
@@ -53,15 +58,30 @@ function InitGameVariables()
 	global.Defense = 30;
 	
 	//Option Variables
-	global.DebugMode = false;
-	global.WindowScale = 3;
-	global.Fullscreen = 0;
-	global.ShowSubtitles = true;
-	global.RemasteredMode = false;
-	global.CurrentLanguage = global.Languages.English;
-	global.VolumeMaster = 1;
-	global.VolumeMusic = 1;
-	global.VolumeSoundFX = 1;
+	ini_open(global.SaveDataFileName)
+	
+	global.DebugMode = bool(ini_read_real("Options", "DebugMode", 0));
+	global.WindowScale = ini_read_real("Options", "WindowScale", 3);
+	global.Fullscreen = bool(ini_read_real("Options", "Fullscreen", 0));
+	global.ShowSubtitles = bool(ini_read_real("Options", "ShowSubtitles", 1));
+	global.RemasteredMode = bool(ini_read_real("Options", "RemasteredMode", 0));
+	var Language = ini_read_string("Options", "CurrentLanguage", "en");
+	switch Language
+	{
+		case "en" :
+			global.CurrentLanguage = global.Languages.English;
+			break;
+		case "nl" :
+			global.CurrentLanguage = global.Languages.Nederlands;
+			break;
+	}
+	global.VolumeMaster = ini_read_real("Options", "VolumeMaster", 1);
+	global.VolumeMusic = ini_read_real("Options", "VolumeMusic", 1);
+	global.VolumeSoundFX = ini_read_real("Options", "VolumeSoundFX", 1);
+	global.VolumeDialogue = ini_read_real("Options", "VolumeDialogue", 1);
+	audio_group_set_gain(AudioGroup_Music,global.VolumeMusic * global.VolumeMaster,0);
+	audio_group_set_gain(AudioGroup_SoundFX,global.VolumeSoundFX * global.VolumeMaster,0);
+	audio_group_set_gain(AudioGroup_Dialogue,global.VolumeDialogue * global.VolumeMaster,0);
 		
 	//Entity Variables
 	#macro PlayerBaseSpeed 1.5
@@ -95,8 +115,4 @@ function InitGameVariables()
 		SouthEast : 315
 	}
 	
-	//Save File Variables
-	global.SavePlayerNames = array_create(3, "EMPTY")
-		
-	global.SaveDataFileName = "System/SaveData.ini"
 }

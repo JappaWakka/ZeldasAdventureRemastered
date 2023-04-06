@@ -21,6 +21,13 @@ if !audio_group_is_loaded(AudioGroup_SoundFX)
 	global.EnemySoundPlaying = false
 }
 
+if !audio_group_is_loaded(AudioGroup_Dialogue)
+{
+	audio_group_load(AudioGroup_Dialogue);
+	global.Initialized = false; //Don't play any sound effects yet
+	global.CameraIsPanning = true; //If global.CameraIsPanning is true, the player can't move (or make sounds)
+}
+
 if room == Room_Overworld //Check if we're in the Overworld room and not in the Main Menu or a Cutscene room for example
 {
 	Audio_Init_MusicTileMap() //This function stores which tiles correspond to which music track in the two-dimensional array global.Music[x][y]

@@ -24,8 +24,7 @@ enum SaveGames
 	Save3
 }
 
-//Check for existence of Save Data and generate if they don't exist
-Script_GenerateSaveDataFile()
+//Fetch the Save Game names from the Save Data
 for (var i = 1; i <= 3; i++)
 {
 	ini_open(global.SaveDataFileName)
@@ -49,15 +48,15 @@ ds_Menu_Main = CreateMenuPage(
 ["Play",				Menu_ElementType.ScriptRunner,		SaveGame_Play			],
 ["Delete",				Menu_ElementType.ScriptRunner,		SaveGame_Delete			],
 ["Tutorial",			Menu_ElementType.ScriptRunner,		StartTutorial			],
-["Settings",			Menu_ElementType.PageTransfer,		ChangePage,				Menu_Page.Settings		],
+["Settings",			Menu_ElementType.PageTransfer,		Menu_Page.Settings		],
 ["Exit",				Menu_ElementType.ScriptRunner,		QuitGame				]
 );
 
 ds_Menu_Settings = CreateMenuPage(
-["Game",				Menu_ElementType.PageTransfer,		ChangePage,				Menu_Page.Game			],
-["Audio",				Menu_ElementType.PageTransfer,		ChangePage,				Menu_Page.Audio			],
-["Controls",			Menu_ElementType.PageTransfer,		ChangePage,				Menu_Page.Controls		],
-["Back",				Menu_ElementType.PageTransfer,		ChangePage,				Menu_Page.Main			]
+["Game",				Menu_ElementType.PageTransfer,		Menu_Page.Game			],
+["Audio Volume",		Menu_ElementType.PageTransfer,		Menu_Page.Audio			],
+["Controls",			Menu_ElementType.PageTransfer,		Menu_Page.Controls		],
+["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Main			]
 );
 
 ds_Menu_Game = CreateMenuPage(
@@ -66,7 +65,7 @@ ds_Menu_Game = CreateMenuPage(
 ["Remastered Mode",		Menu_ElementType.Toggle,			RemasteredModeEnabled,	0,					["Off","On"]				],
 ["Subtitles",			Menu_ElementType.Toggle,			SubtitlesEnabled,		1,					["Off","On"]				],
 ["Language",			Menu_ElementType.Shift,				SetLanguage,			0,					["English","Nederlands"]	],
-["Back",				Menu_ElementType.PageTransfer,		ChangePage,				Menu_Page.Main		]
+["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
 
 ds_Menu_Audio = CreateMenuPage(
@@ -74,11 +73,11 @@ ds_Menu_Audio = CreateMenuPage(
 ["Music",				Menu_ElementType.Slider,			ChangeVolume,			1,					[0,1],					1	],
 ["SoundFX",				Menu_ElementType.Slider,			ChangeVolume,			1,					[0,1],					2	],
 ["Dialogue",			Menu_ElementType.Slider,			ChangeVolume,			1,					[0,1],					3	],
-["Back",				Menu_ElementType.PageTransfer,		ChangePage,				Menu_Page.Main		]
+["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
 
 ds_Menu_Controls = CreateMenuPage(
-["ConfigDevice",		Menu_ElementType.Toggle,			SetConfigDevice,		["Keyboard","Gamepad"]	],
+["Device to Config",	Menu_ElementType.Toggle,			SetConfigDevice,		["Keyboard","Gamepad"]	],
 ["Left",				Menu_ElementType.Input,				SetInput,				"Left",				vk_left,					gp_padl		],
 ["Right",				Menu_ElementType.Input,				SetInput,				"Right",			vk_right,					gp_padr		],
 ["Up",					Menu_ElementType.Input,				SetInput,				"Up",				vk_up,						gp_padr		],
@@ -87,10 +86,12 @@ ds_Menu_Controls = CreateMenuPage(
 ["Special",				Menu_ElementType.Input,				SetInput,				"Special",			vk_alt,						gp_face2	],
 ["Inventory",			Menu_ElementType.Input,				SetInput,				"Inventory",		vk_space,					gp_face3	],
 ["Menu",				Menu_ElementType.Input,				SetInput,				"Menu",				vk_escape,					gp_start	],
-["Back",				Menu_ElementType.PageTransfer,		ChangePage,				Menu_Page.Main		]
+["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
 
-PageIndex = 0;
+IsFading = false;
+NextPage = -1;
+PageIndex = 1;
 Menu_Pages = [ds_Menu_Main, ds_Menu_Settings, ds_Menu_Game, ds_Menu_Audio, ds_Menu_Controls];
 var i = 0, Array_Length = array_length(Menu_Pages);
 repeat(Array_Length)

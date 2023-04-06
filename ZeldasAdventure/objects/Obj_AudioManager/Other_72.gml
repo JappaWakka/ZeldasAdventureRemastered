@@ -1,4 +1,4 @@
-if audio_group_is_loaded(AudioGroup_Music) && audio_group_is_loaded(AudioGroup_SoundFX) //If all Audiogroups have been loaded
+if audio_group_is_loaded(AudioGroup_Music) && audio_group_is_loaded(AudioGroup_SoundFX) && audio_group_is_loaded(AudioGroup_Dialogue) //If all Audiogroups have been loaded
 {
 	if room == Room_Overworld //Check if we're in the Overworld room and not in the Main Menu or a Cutscene room for example
 	{

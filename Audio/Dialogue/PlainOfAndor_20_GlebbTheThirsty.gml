@@ -1,9 +1,9 @@
 #region Used
 	Subtitle_PlainOfAndor_20_GlebbTheThirsty_BeforeFill
 	{
-		"Glebb the Thirsty: Young princess, please attend me."
-		"A traveler of kind intentions has found me at last!"
-		"I am collapsed with thirst and dryness."
+		{return "Glebb the Thirsty: Young princess, please attend me."}
+		{return "A traveler of kind intentions has found me at last!"}
+		{return "I am collapsed with thirst and dryness."}
 	}
 
 	Subtitle_PlainOfAndor_20_GlebbTheThirsty_AfterFill
@@ -11,7 +11,6 @@
 		"Glebb the Thirsty: Bless you, Princess!"
 		"You have saved the life of a weary old woman!"
 		"I offer you these treasures."
-		Spawn Treasure: VialOfWind
 	}
 #endregion
 	

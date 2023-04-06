@@ -27,13 +27,13 @@ function Script_GenerateSaveDataFile()
 			ini_write_real("Options", "DebugMode", 1);
 			ini_write_real("Options", "WindowScale", 3);
 			ini_write_real("Options", "Fullscreen", 0);
-			//ini_write_real("Options", "NewSoundtrack", 0);
 			ini_write_real("Options", "ShowSubtitles", 1);
 			ini_write_real("Options", "RemasteredMode", 0);
 			ini_write_string("Options", "CurrentLanguage", "en");
 			ini_write_real("Options", "VolumeMaster", 1);
 			ini_write_real("Options", "VolumeMusic", 1);
 			ini_write_real("Options", "VolumeSoundFX", 1);
+			ini_write_real("Options", "VolumeDialogue", 1);
 	}
 	ini_close()
 }

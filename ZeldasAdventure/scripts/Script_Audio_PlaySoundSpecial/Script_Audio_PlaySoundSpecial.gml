@@ -10,11 +10,11 @@ function audio_play_sound_pan(soundid, priority, loops, pan){
  ***************************************************/
 
 audio_falloff_set_model(audio_falloff_linear_distance);
-return audio_play_sound_at(argument0, -median(-1, argument3, 1), 0, 0, 1, 0, 0, argument2, argument1,global.VolumeSoundFX * global.VolumeMaster);
+return audio_play_sound_at(argument0, -median(-1, argument3, 1), 0, 0, 1, 0, 0, argument2, argument1);
 
 }
 
-function audio_play_sound_relative(soundid, priority, loops){
+function audio_play_sound_relative(soundid, priority, loops = false){
 ///audio_play_sound_pan(soundid, priority, loops, pan)
 /***************************************************
   Simple audio panning.
@@ -32,7 +32,7 @@ audio_falloff_set_model(audio_falloff_linear_distance);
 return audio_play_sound_pan(soundid, priority, loops, AudioX);
 }
 
-function audio_play_sound_relative_toplayer(soundid, priority, loops){
+function audio_play_sound_relative_toplayer(soundid, priority, loops = false){
 ///audio_play_sound_pan(soundid, priority, loops, pan)
 /***************************************************
   Simple audio panning.
@@ -50,7 +50,7 @@ audio_falloff_set_model(audio_falloff_linear_distance);
 return audio_play_sound_pan(soundid, priority, loops, AudioX);
 }
 
-function audio_play_sound_relative_toentity(entity, soundid, priority, loops){
+function audio_play_sound_relative_toentity(entity, soundid, priority, loops = false){
 ///audio_play_sound_pan(soundid, priority, loops, pan)
 /***************************************************
   Simple audio panning.

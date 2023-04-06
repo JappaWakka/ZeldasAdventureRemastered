@@ -11,13 +11,13 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "AudioGroup_Dialogue",
+    "path": "audiogroups/AudioGroup_Dialogue",
   },
   "soundFile": "Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill.ogg",
   "duration": 9.793915,
   "parent": {
     "name": "PlainOfAndor",
-    "path": "folders/Sounds/SoundFX/Dialogue/PlainOfAndor.yy",
+    "path": "folders/Sounds/Dialogue/PlainOfAndor.yy",
   },
 }
