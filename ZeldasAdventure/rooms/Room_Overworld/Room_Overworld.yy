@@ -65,6 +65,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EE3794E_1","properties":[],"isDnd":false,"objectId":{"name":"Entity_Player","path":"objects/Entity_Player/Entity_Player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2496.0,"y":5408.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2ECA7C5F","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_GlebbTheThirsty","path":"objects/Entity_NPC_GlebbTheThirsty/Entity_NPC_GlebbTheThirsty.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3720.0,"y":5620.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_411AA90A","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_BeggarWoman","path":"objects/Entity_NPC_BeggarWoman/Entity_NPC_BeggarWoman.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3652.0,"y":5224.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_615ADB07","properties":[],"isDnd":false,"objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":0.0,},
       ],"visible":true,"depth":100500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Temporary_BelowPlayer","instances":[],"visible":true,"depth":100600,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Enemies","instances":[
@@ -771,6 +772,7 @@
     {"name":"inst_B851AC5","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_173A96F4","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_A35EF7A","path":"rooms/Room_Overworld/Room_Overworld.yy",},
+    {"name":"inst_615ADB07","path":"rooms/Room_Overworld/Room_Overworld.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

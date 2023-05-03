@@ -1588,7 +1588,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"controllertypes.csv","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"licenses.txt","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"sdl2.txt","CopyToMask":-1,"filePath":"datafiles",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"SaveData.ini","CopyToMask":-1,"filePath":"datafiles/System",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"SaveData.ini","CopyToMask":3035426170322551022,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cutscene_Intro.webm","CopyToMask":-1,"filePath":"datafiles/Video",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cutscene_Logos.webm","CopyToMask":-1,"filePath":"datafiles/Video",},
   ],

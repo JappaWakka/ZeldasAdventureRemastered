@@ -3,7 +3,7 @@ function InitGameVariables()
 	//Save File Variables
 	global.SavePlayerNames = array_create(3, "EMPTY")
 		
-	global.SaveDataFileName = "System/SaveData.ini"
+	global.SaveDataFileName = "SaveData.ini"
 	Script_GenerateSaveDataFile()
 	
 	//System Variables
@@ -82,7 +82,7 @@ function InitGameVariables()
 	audio_group_set_gain(AudioGroup_Music,global.VolumeMusic * global.VolumeMaster,0);
 	audio_group_set_gain(AudioGroup_SoundFX,global.VolumeSoundFX * global.VolumeMaster,0);
 	audio_group_set_gain(AudioGroup_Dialogue,global.VolumeDialogue * global.VolumeMaster,0);
-		
+	ini_close()
 	//Entity Variables
 	#macro PlayerBaseSpeed 1.5
 	global.DeathAmountForTrigger =

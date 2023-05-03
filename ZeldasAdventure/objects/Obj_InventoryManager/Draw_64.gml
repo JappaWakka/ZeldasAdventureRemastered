@@ -16,16 +16,22 @@ if OpeningClosing = true
 		{
 			Alpha = 255;
 			instance_deactivate_object(Entity_Player)
-			Entity_Parent_NPC.speed = 0;
-			Entity_Parent_NPC.image_speed = 0;
+			if object_exists(Entity_Parent_NPC) = true
+			{
+				Entity_Parent_NPC.speed = 0;
+				Entity_Parent_NPC.image_speed = 0;
+			}
 			instance_deactivate_layer("Enemies");
 		}
 		else
 		{
 			Alpha = 0;
 			instance_activate_object(Entity_Player)
-			Entity_Parent_NPC.speed = Entity_Parent_NPC.DefaultSpeed;
-			Entity_Parent_NPC.image_speed = Entity_Parent_NPC.ImageSpeed;
+			if object_exists(Entity_Parent_NPC) = true
+			{
+				Entity_Parent_NPC.speed = Entity_Parent_NPC.DefaultSpeed;
+				Entity_Parent_NPC.image_speed = Entity_Parent_NPC.ImageSpeed;
+			}
 			instance_activate_layer("Enemies");
 		}
 		OpeningClosing = false;

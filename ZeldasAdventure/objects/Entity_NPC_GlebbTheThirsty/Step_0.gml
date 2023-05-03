@@ -18,37 +18,40 @@ if Item_FindIndex(Treasure.VialOfWind,0) = -1
 			}
 			else
 			{
-				if global.RemasteredMode = false and IsAttacking = false
+				if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false
 				{
-					if input_check_pressed("Action") = true or input_check_pressed("Special") = true
+					if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 					{
-						if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.FullPitcher
+						if input_check_pressed("Action") = true or input_check_pressed("Special") = true
 						{
-							Item_Remove(Treasure.FullPitcher,0);
-							global.CurrentItem[1] = -1
-							if instance_exists(Entity_Pickup_VialOfWind) = false
+							if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.FullPitcher
 							{
-								instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
-								CurrentDialogue = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
-								DialogueIndex = audio_play_sound_relative(CurrentDialogue,500,false)
+								Item_Remove(Treasure.FullPitcher,0);
+								global.CurrentItem[1] = -1
+								if instance_exists(Entity_Pickup_VialOfWind) = false
+								{
+									instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
+									CurrentDialogue = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
+									DialogueIndex = audio_play_sound_relative(CurrentDialogue,500,false)
+								}
 							}
+							
 						}
-						
 					}
-				}
-				if global.RemasteredMode = true and IsAttacking = false
-				{
-					if input_check_pressed("Action") = true
+					if global.RemasteredMode = true and Entity_Player.IsAttacking = false
 					{
-						if Item_FindValue(global.CurrentTreasure,0) = Treasure.FullPitcher
+						if input_check_pressed("Action") = true
 						{
-							Item_Remove(Treasure.FullPitcher,0);
-							global.CurrentTreasure = -1
-							if instance_exists(Entity_Pickup_VialOfWind) = false
+							if Item_FindValue(global.CurrentTreasure,0) = Treasure.FullPitcher
 							{
-								instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
-								CurrentDialogue = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
-								DialogueIndex = audio_play_sound_relative(CurrentDialogue,500,false)
+								Item_Remove(Treasure.FullPitcher,0);
+								global.CurrentTreasure = -1
+								if instance_exists(Entity_Pickup_VialOfWind) = false
+								{
+									instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
+									CurrentDialogue = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
+									DialogueIndex = audio_play_sound_relative(CurrentDialogue,500,false)
+								}
 							}
 						}
 					}

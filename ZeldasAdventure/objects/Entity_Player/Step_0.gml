@@ -213,6 +213,9 @@ if global.RemasteredMode = false and IsAttacking = false
 							audio_play_sound_relative(SFX_Use_Error,100,false)
 							break;
 					}
+				default:
+					audio_play_sound_relative(SFX_Use_Error,100,false);
+					break;
 			}
 			
 		}
