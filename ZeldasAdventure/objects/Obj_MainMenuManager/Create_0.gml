@@ -56,11 +56,13 @@ ds_Menu_Settings = CreateMenuPage(
 ["Game",				Menu_ElementType.PageTransfer,		Menu_Page.Game			],
 ["Audio Volume",		Menu_ElementType.PageTransfer,		Menu_Page.Audio			],
 ["Controls",			Menu_ElementType.PageTransfer,		Menu_Page.Controls		],
+["Reset Controls",		Menu_ElementType.ScriptRunner,		Controls_Reset			],
+["Save Settings",		Menu_ElementType.ScriptRunner,		Settings_Save			],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Main			]
 );
 
 ds_Menu_Game = CreateMenuPage(
-["Window Mode",			Menu_ElementType.Toggle,			SetWindowMode,			0,					["Windowed","Fullscreen"]	],
+["Window Mode",			Menu_ElementType.Toggle,			SetWindowMode,			0,					["Window","Full"]	],
 ["Resolution",			Menu_ElementType.Shift,				SetResolution,			2,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
 ["Remastered Mode",		Menu_ElementType.Toggle,			RemasteredModeEnabled,	0,					["Off","On"]				],
 ["Subtitles",			Menu_ElementType.Toggle,			SubtitlesEnabled,		1,					["Off","On"]				],
@@ -77,21 +79,18 @@ ds_Menu_Audio = CreateMenuPage(
 );
 
 ds_Menu_Controls = CreateMenuPage(
-["Device to Config",	Menu_ElementType.Toggle,			SetConfigDevice,		["Keyboard","Gamepad"]	],
-["Left",				Menu_ElementType.Input,				SetInput,				"Left",				vk_left,					gp_padl		],
-["Right",				Menu_ElementType.Input,				SetInput,				"Right",			vk_right,					gp_padr		],
-["Up",					Menu_ElementType.Input,				SetInput,				"Up",				vk_up,						gp_padr		],
-["Down",				Menu_ElementType.Input,				SetInput,				"Down",				vk_down,					gp_padd		],
-["Action",				Menu_ElementType.Input,				SetInput,				"Action",			vk_control,					gp_face1	],
-["Special",				Menu_ElementType.Input,				SetInput,				"Special",			vk_alt,						gp_face2	],
-["Inventory",			Menu_ElementType.Input,				SetInput,				"Inventory",		vk_space,					gp_face3	],
-["Menu",				Menu_ElementType.Input,				SetInput,				"Menu",				vk_escape,					gp_start	],
+["Device to Config",	Menu_ElementType.Toggle,			SetConfigDevice,		0,					["Keys","Gamepad"]	],
+["Left",				Menu_ElementType.Input,				"Left",					input_binding_get("Left",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Left",		INPUT_SOURCE.GAMEPAD),	],
+["Right",				Menu_ElementType.Input,				"Right",				input_binding_get("Right",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Right",		INPUT_SOURCE.GAMEPAD),	],
+["Up",					Menu_ElementType.Input,				"Up",					input_binding_get("Up",			INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Up",			INPUT_SOURCE.GAMEPAD),	],
+["Down",				Menu_ElementType.Input,				"Down",					input_binding_get("Down",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Down",		INPUT_SOURCE.GAMEPAD),	],
+["Action",				Menu_ElementType.Input,				"Action",				input_binding_get("Action",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Action",		INPUT_SOURCE.GAMEPAD),	],
+["Special",				Menu_ElementType.Input,				"Special",				input_binding_get("Special",	INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Special",	INPUT_SOURCE.GAMEPAD),	],
+["Inventory",			Menu_ElementType.Input,				"Inventory",			input_binding_get("Inventory",	INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Inventory",	INPUT_SOURCE.GAMEPAD),	],
+["Menu",				Menu_ElementType.Input,				"Menu",					input_binding_get("Menu",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Menu",		INPUT_SOURCE.GAMEPAD),	],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
 
-IsFading = false;
-NextPage = -1;
-PageIndex = 1;
 Menu_Pages = [ds_Menu_Main, ds_Menu_Settings, ds_Menu_Game, ds_Menu_Audio, ds_Menu_Controls];
 var i = 0, Array_Length = array_length(Menu_Pages);
 repeat(Array_Length)
@@ -99,3 +98,12 @@ repeat(Array_Length)
 	Menu_CurrentEntry[i] = 0;
 	i++
 }
+
+//Other Variables
+ConfigDevice = 0; //0 = Keyboard, 1 = Gamepad
+IsFading = false;
+IsInputting = false;
+CanChangeControls = false;
+NextPage = -1;
+PageIndex = 0;
+

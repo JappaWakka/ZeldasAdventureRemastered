@@ -85,6 +85,10 @@ function InitGameVariables()
 		
 	//Entity Variables
 	#macro PlayerBaseSpeed 1.5
+	global.DeathAmountForTrigger =
+	{
+		BoomerangSpell : 1
+	}
 	global.EnemySpeeds =
 	{
 		Still: 0,

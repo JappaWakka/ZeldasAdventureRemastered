@@ -1,4 +1,5 @@
 if PageIndex = 0 //Main Menu
 {
-	room_goto(Room_Overworld)
+	global.FadeProgress = 0;
+	room_goto(Room_Overworld);
 }

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Menu_ChangeSetting",
+  "name": "Settings_ChangeValue",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "AudioGroup_SoundFX",
     "path": "audiogroups/AudioGroup_SoundFX",
   },
-  "soundFile": "Menu_ChangeSetting.ogg",
+  "soundFile": "Settings_ChangeValue.ogg",
   "duration": 0.032751,
   "parent": {
     "name": "Menus",

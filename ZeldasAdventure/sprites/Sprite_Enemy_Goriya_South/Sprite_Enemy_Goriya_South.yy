@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "Sprite_Enemy_Goriya_South",
   "bboxMode": 2,
-  "collisionKind": 1,
+  "collisionKind": 2,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,

@@ -24,16 +24,36 @@ function Script_GenerateSaveDataFile()
 	
 	if !ini_section_exists("Options")
 	{
-			ini_write_real("Options", "DebugMode", 1);
-			ini_write_real("Options", "WindowScale", 3);
-			ini_write_real("Options", "Fullscreen", 0);
-			ini_write_real("Options", "ShowSubtitles", 1);
-			ini_write_real("Options", "RemasteredMode", 0);
-			ini_write_string("Options", "CurrentLanguage", "en");
-			ini_write_real("Options", "VolumeMaster", 1);
-			ini_write_real("Options", "VolumeMusic", 1);
-			ini_write_real("Options", "VolumeSoundFX", 1);
-			ini_write_real("Options", "VolumeDialogue", 1);
+		ini_write_real("Options",	"DebugMode",		1);
+		ini_write_real("Options",	"WindowScale",		3);
+		ini_write_real("Options",	"Fullscreen",		0);
+		ini_write_real("Options",	"ShowSubtitles",	1);
+		ini_write_real("Options",	"RemasteredMode",	0);
+		ini_write_string("Options",	"CurrentLanguage",	"en");
+		ini_write_real("Options",	"VolumeMaster",		1);
+		ini_write_real("Options",	 "VolumeMusic",		1);
+		ini_write_real("Options",	 "VolumeSoundFX",	1);
+		ini_write_real("Options",	 "VolumeDialogue",	1);
+	}
+	if !ini_section_exists("Controls")
+	{
+		ini_write_string("Controls",	 "Keyboard Left",		"Left");
+		ini_write_string("Controls",	 "Keyboard Right",		"Right");
+		ini_write_string("Controls",	 "Keyboard Up",			"Up");
+		ini_write_string("Controls",	 "Keyboard Down",		"Down");
+		ini_write_string("Controls",	 "Keyboard Action",		"Control");
+		ini_write_string("Controls",	 "Keyboard Special",	"Shift");
+		ini_write_string("Controls",	 "Keyboard Inventory",	"Space");
+		ini_write_string("Controls",	 "Keyboard Menu",		"Escape");
+										
+		ini_write_string("Controls",	 "Gamepad Left",		"D-Pad Left");
+		ini_write_string("Controls",	 "Gamepad Right",		"D-Pad Right");
+		ini_write_string("Controls",	 "Gamepad Up",			"D-Pad Up");
+		ini_write_string("Controls",	 "Gamepad Down",		"D-Pad Down");
+		ini_write_string("Controls",	 "Gamepad Action",		"A");
+		ini_write_string("Controls",	 "Gamepad Special",		"B");
+		ini_write_string("Controls",	 "Gamepad Inventory",	"X");
+		ini_write_string("Controls",	 "Gamepad Menu",		"Start");
 	}
 	ini_close()
 }

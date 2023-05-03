@@ -15,7 +15,7 @@ if DamageDelay = 0
 	}
 	else ///When you have the Magic Shield
 	{
-		if other.Moving = true
+		if Moving = true
 		{
 			///Reduce PitPoints, play damage sound
 			DecreaseHP(other.Power - GetDefense())

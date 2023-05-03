@@ -25,14 +25,7 @@ if Item_FindIndex(Treasure.VialOfWind,0) = -1
 						if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.FullPitcher
 						{
 							Item_Remove(Treasure.FullPitcher,0);
-							if global.RemasteredMode = true
-							{
-								global.CurrentTreasure = -1
-							}
-							else
-							{
-								global.CurrentItem[1] = -1
-							}
+							global.CurrentItem[1] = -1
 							if instance_exists(Entity_Pickup_VialOfWind) = false
 							{
 								instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
@@ -50,15 +43,7 @@ if Item_FindIndex(Treasure.VialOfWind,0) = -1
 						if Item_FindValue(global.CurrentTreasure,0) = Treasure.FullPitcher
 						{
 							Item_Remove(Treasure.FullPitcher,0);
-							if global.RemasteredMode = true
-							{
-								global.CurrentTreasure = -1
-							}
-							else
-							{
-								global.CurrentItem[1] = -1
-							}
-								
+							global.CurrentTreasure = -1
 							if instance_exists(Entity_Pickup_VialOfWind) = false
 							{
 								instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
@@ -112,7 +97,7 @@ if Item_FindIndex(Treasure.VialOfWind,0) = -1
 		visible = false
 		if IsDialoguePlaying = true
 		{
-			audio_stop_sound(Dialog_PlainOfAndor_20_GlebbTheThirsty_BeforeFill)
+			audio_stop_sound(DialogueIndex)
 			global.Subtitle = ""
 		}
 	}

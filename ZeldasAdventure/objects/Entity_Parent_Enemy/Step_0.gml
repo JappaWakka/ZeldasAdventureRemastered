@@ -22,7 +22,7 @@ global.CameraIsPanning = false
 	{
 		if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
 		{
-			alarm_set(2, random_range(0, 2 * room_speed));
+			alarm_set(2, random_range(0, 3 * room_speed));
 		}
 	}
 }
@@ -91,6 +91,20 @@ else
 
 if HitPoints <= 0
 {
+	switch TriggerScriptName
+	{
+			case "BoomerangSpell" :
+				if global.DeathAmountForTrigger.BoomerangSpell > 0
+				{
+					global.DeathAmountForTrigger.BoomerangSpell -= 1
+				}
+				if global.DeathAmountForTrigger.BoomerangSpell = 0
+				{
+					Script_Trigger_BoomerangSpell()
+				}
+				break
+	}
+	
 	instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Particle_EnemyDefeat)
 	instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops)
 	instance_destroy();

@@ -11,7 +11,7 @@ function SetDefaultInput(){
 	
 	input_default_gamepad_button(gp_padl, "Left");
 	input_default_gamepad_button(gp_padr, "Right");
-	input_default_gamepad_button(gp_padr, "Up");
+	input_default_gamepad_button(gp_padu, "Up");
 	input_default_gamepad_button(gp_padd, "Down");
 	
 	input_default_gamepad_button(gp_face1, "Action"); //A Button
