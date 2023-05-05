@@ -19,11 +19,11 @@ if EnemyState != EnemyStates.Damaged
 
 	if Script_AggroRange() = true
 	{
-		speed = global.EnemySpeeds.Medium
+		speed = d(global.EnemySpeeds.Medium)
 	}
 	else
 	{
-		speed = global.EnemySpeeds.Slow
+		speed = d(global.EnemySpeeds.Slow)
 	}
 }
 

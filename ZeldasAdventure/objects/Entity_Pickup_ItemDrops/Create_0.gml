@@ -14,6 +14,8 @@ switch irandom_range(1,4)
 		case 3 :
 			image_index = 2;
 			EnemyDropType = "Heart"
+			StartPositionX = x
+			StartPositionY = y
 			path_start(Path_ItemDrop_Heart, 1.4, path_action_stop, false);
 			break;
 		case 4 :

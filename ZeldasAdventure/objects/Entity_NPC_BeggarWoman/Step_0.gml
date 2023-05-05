@@ -1,8 +1,8 @@
-if Item_FindIndex(Spells.Firestorm,1) = -1 
+var IsDialoguePlaying = audio_is_playing(CurrentDialogue)
+if x >= global.CurrentTile.x * tileWidth && x <= global.CurrentTile.x * tileWidth + tileWidth &&
+y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight + tileHeight
 {
-	var IsDialoguePlaying = audio_is_playing(CurrentDialogue)
-	if x >= global.CurrentTile.x * tileWidth && x <= global.CurrentTile.x * tileWidth + tileWidth &&
-	y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight + tileHeight
+	if Item_FindIndex(Spells.Firestorm,1) = -1 
 	{
 		if global.CameraIsPanning = false
 		{
@@ -13,7 +13,7 @@ if Item_FindIndex(Spells.Firestorm,1) = -1
 			}
 			visible = true
 			image_speed = d(ImageSpeed)
-			if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false
+			if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false and audio_is_playing(Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees) = false
 			{
 				if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 				{
@@ -88,20 +88,20 @@ if Item_FindIndex(Spells.Firestorm,1) = -1
 			}
 		}
 	}
-	else
-	{
-		image_speed = 0
-		image_index = 0
-		visible = false
-		if IsDialoguePlaying = true
-		{
-			audio_stop_sound(DialogueIndex)
-			global.Subtitle = ""
-			HasSpoken = true
-		}
-	}
 }
 else
 {
-	instance_destroy()
+	image_speed = 0
+	image_index = 0
+	visible = false
+	if IsDialoguePlaying = true
+	{
+		audio_stop_sound(DialogueIndex)
+		global.Subtitle = ""
+		HasSpoken = true
+	}
+	if Item_FindIndex(Spells.Firestorm,1) <> -1 
+	{
+		instance_destroy()
+	}
 }

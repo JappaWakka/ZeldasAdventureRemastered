@@ -92,9 +92,9 @@ function InitGameVariables()
 	global.EnemySpeeds =
 	{
 		Still: 0,
-		Slow : d(1),
-		Medium : d(1.4),
-		Fast: d(1.8)
+		Slow : 1,
+		Medium : 1.4,
+		Fast: 1.8
 	};
 	
 	global.EnemySound = -1;

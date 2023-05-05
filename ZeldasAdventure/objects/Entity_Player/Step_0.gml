@@ -213,6 +213,20 @@ if global.RemasteredMode = false and IsAttacking = false
 							audio_play_sound_relative(SFX_Use_Error,100,false)
 							break;
 					}
+				case Treasure.Rubies:
+					if Item_FindIndex(Spells.Firestorm,1) <> -1 && global.CurrentTile.x = 9 && global.CurrentTile.y = 21
+					{
+						audio_play_sound_relative(SFX_Use_Error,100,false);
+						break;
+					}
+					else
+					{
+						if global.CurrentTile.x <> 9 && global.CurrentTile.y <> 21
+						{
+							audio_play_sound_relative(SFX_Use_Error,100,false);
+						}
+						break;
+					}
 				default:
 					audio_play_sound_relative(SFX_Use_Error,100,false);
 					break;
