@@ -318,3 +318,30 @@ if DamageDelay > 0
 {
 	DamageDelay -=1
 }
+
+if IsDead = true
+{
+	WarpToLocation(global.PlayerSpawn);
+	
+	if global.FadeProgress = 0
+	{
+		image_speed = 1
+	}
+		
+	if global.FadeProgress = 1
+	{
+		global.CurrentHealth = global.MaxHealth
+		sprite_index = Zelda_Move_South;
+		Facing = global.Directions.South;
+		IsAttacking = false;
+		DamageDelay = 0;
+	}
+	if global.FadeProgress = 2
+	{
+		if audio_is_playing(SFX_Zelda_Death) = false
+		{
+			global.SwitchTracks = true
+			IsDead = false
+		}
+	}
+}

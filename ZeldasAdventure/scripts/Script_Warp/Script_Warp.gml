@@ -9,6 +9,7 @@ function WarpTo(TileX, TileY, PlayerX, PlayerY, FadeSpeed = 8)
 	
 	if global.FadeProgress = 1
 	{
+		global.FadeSpeed = FadeSpeed;
 		Entity_Player.x = TileX * tileWidth + PlayerX;
 		Entity_Player.y = TileY * tileHeight + PlayerY;
 		global.CurrentTile.x = TileX;
@@ -35,6 +36,7 @@ global.WarpLocations =
 	
 	//Shrines
 	ShrineOfEarth_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
+	ShrineOfEarth_Boss : {TileX:12,TileY:31,PlayerX:88,PlayerY:132},
 	
 	ShrineOfIllusion_Entrance : {TileX:6,TileY:22,PlayerX:192,PlayerY:128},
 	
@@ -70,6 +72,14 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_Entrance.TileY,
 			global.WarpLocations.ShrineOfEarth_Entrance.PlayerX,
 			global.WarpLocations.ShrineOfEarth_Entrance.PlayerY
+			)
+			break;
+		case "Spawn_Shrine1_Boss":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_Boss.TileX,
+			global.WarpLocations.ShrineOfEarth_Boss.TileY,
+			global.WarpLocations.ShrineOfEarth_Boss.PlayerX,
+			global.WarpLocations.ShrineOfEarth_Boss.PlayerY
 			)
 			break;
 		case "Shrine1_Outside":
