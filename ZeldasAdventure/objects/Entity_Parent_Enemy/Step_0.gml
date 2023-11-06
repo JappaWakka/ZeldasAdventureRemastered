@@ -100,7 +100,7 @@ if HitPoints <= 0
 				}
 				if global.DeathAmountForTrigger.BoomerangSpell = 0
 				{
-					Script_Trigger_BoomerangSpell()
+					Script_Trigger_BoomerangSpell() //Spawn Boomerang Spell Pickup
 				}
 				break
 	}

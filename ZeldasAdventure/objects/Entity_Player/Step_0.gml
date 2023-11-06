@@ -119,7 +119,7 @@ else
 }
 
 
-#region Action - Attacking
+#region Action - Using Spells & Treasures
 if global.RemasteredMode = false and IsAttacking = false
 {
 	if input_check_pressed("Action") = true or input_check_pressed("Special") = true
@@ -131,49 +131,23 @@ if global.RemasteredMode = false and IsAttacking = false
 			{
 				//If casting a spell, pay the casting cost
 				global.CurrentRubies -= CastCost(global.CurrentItem[1])
-				//Set sprite, enable animation
-				if Facing = global.Directions.East
-				{
-					sprite_index = Zelda_Attack_East;
-					IsAttacking = true;
-				}
-				if Facing = global.Directions.West
-				{
-					sprite_index = Zelda_Attack_West;
-					IsAttacking = true;
-				}
-				if Facing = global.Directions.South
-				{
-					sprite_index = Zelda_Attack_South;
-					IsAttacking = true;
-				}
-				if Facing = global.Directions.North
-				{
-					sprite_index = Zelda_Attack_North;
-					IsAttacking = true;
-				}
+				global.DesiredRubies = global.CurrentRubies
+				// Melee damage and sprite change (happens also when using other spells)
+				UseSpell_Any();
 				
-				// Use Spell - Wand
-				if global.CurrentItem[1] = Spells.Wand
+				if CanUseSpell = true
 				{
-					audio_play_sound_relative(SFX_Use_Wand,600,false)
-				}
-				// Melee damage (happens also when using other spells)
-				if Facing = global.Directions.East
-				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-				}
-				if Facing = global.Directions.West
-				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-				}
-				if Facing = global.Directions.South
-				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-				}
-				if Facing = global.Directions.North
-				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+					// Use Spell - Wand
+					if global.CurrentItem[1] = Spells.Wand
+					{
+						UseSpell_Wand()
+					}
+					
+					// Use Spell - Firestorm
+					if global.CurrentItem[1] = Spells.Firestorm
+					{
+						UseSpell_Firestorm()
+					}
 				}
 			}
 			else
@@ -187,46 +161,14 @@ if global.RemasteredMode = false and IsAttacking = false
 			switch Item_FindValue(global.CurrentItem[1],0)
 			{
 				case Treasure.EmptyPitcher:
-					if global.CurrentTile.x = 4 && global.CurrentTile.y = 19
-						{
-							Item_Remove(Treasure.EmptyPitcher,0);
-							if global.RemasteredMode = true
-							{
-								global.CurrentTreasure = -1
-							}
-							else
-							{
-								global.CurrentItem[1] = -1
-							}
-								
-							instance_create_layer(1632,4736,"Items",Entity_Pickup_FullPitcher)
-							break;
-						}
-						else
-						{
-							audio_play_sound_relative(SFX_Use_Error,100,false)
-							break;
-						}
+					UseTreasure_EmptyPitcher()
+					break;					
 				case Treasure.FullPitcher:
-					if global.CurrentTile.x <> 9 && global.CurrentTile.y <> 23
-					{
-							audio_play_sound_relative(SFX_Use_Error,100,false)
-							break;
-					}
+					UseTreasure_FullPitcher()
+					break;
 				case Treasure.Rubies:
-					if Item_FindIndex(Spells.Firestorm,1) <> -1 && global.CurrentTile.x = 9 && global.CurrentTile.y = 21
-					{
-						audio_play_sound_relative(SFX_Use_Error,100,false);
-						break;
-					}
-					else
-					{
-						if global.CurrentTile.x <> 9 && global.CurrentTile.y <> 21
-						{
-							audio_play_sound_relative(SFX_Use_Error,100,false);
-						}
-						break;
-					}
+					UseTreasure_Rubies();
+					break;
 				default:
 					audio_play_sound_relative(SFX_Use_Error,100,false);
 					break;
@@ -235,6 +177,57 @@ if global.RemasteredMode = false and IsAttacking = false
 		}
 	}
 }
+
+if global.RemasteredMode = true and IsAttacking = false
+{
+	if input_check_pressed("Action") = true
+	{
+		switch Item_FindValue(global.CurrentTreasure,0)
+			{
+				case Treasure.EmptyPitcher:
+					UseTreasure_EmptyPitcher()
+					break;					
+				case Treasure.FullPitcher:
+					UseTreasure_FullPitcher()
+					break;
+				case Treasure.Rubies:
+					UseTreasure_Rubies();
+					break;
+				default:
+					
+					audio_play_sound_relative(SFX_Use_Error,100,false);
+					break;
+			}
+	}
+	if input_check_pressed("Special") = true
+	{
+		if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell) and CanUseSpell = true
+		{
+			//If casting a spell, pay the casting cost
+			global.CurrentRubies -= CastCost(global.CurrentSpell)
+			global.DesiredRubies = global.CurrentRubies
+			
+			// Melee damage and sprite change (happens also when using other spells)
+			UseSpell_Any();
+						
+			// Use Spell - Wand
+			if global.CurrentSpell = Spells.Wand
+			{
+				UseSpell_Wand()
+			}				
+			// Use Spell - Firestorm
+			if global.CurrentSpell = Spells.Firestorm
+			{
+				UseSpell_Firestorm()	
+			}
+		}
+		else
+		{
+			audio_play_sound_relative(SFX_Use_Error,600,false)
+		}
+	}
+}
+
 //Auto-equip Wand if nothing is equipped
 if global.RemasteredMode = true
 {
@@ -248,62 +241,6 @@ else
 	if global.CurrentItem[1] = -1 && Item_FindIndex(Spells.Wand, 1) <> -1
 	{
 		global.CurrentItem = [1,Spells.Wand];
-	}
-}
-if global.RemasteredMode = true and IsAttacking = false
-{
-	if input_check_pressed("Special") = true
-	{
-		if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
-		{
-			//Set sprite, enable animation
-			if Facing = global.Directions.East
-			{
-				sprite_index = Zelda_Attack_East;
-				IsAttacking = true;
-			}
-			if Facing = global.Directions.West
-			{
-				sprite_index = Zelda_Attack_West;
-				IsAttacking = true;
-			}
-			if Facing = global.Directions.South
-			{
-				sprite_index = Zelda_Attack_South;
-				IsAttacking = true;
-			}
-			if Facing = global.Directions.North
-			{
-				sprite_index = Zelda_Attack_North;
-				IsAttacking = true;
-			}
-			
-			// Use Spell - Wand
-			if global.CurrentSpell = Spells.Wand
-			{
-				audio_play_sound_relative(SFX_Use_Wand,600,false)
-				if Facing = global.Directions.East
-				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-				}
-				if Facing = global.Directions.West
-				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-				}
-				if Facing = global.Directions.South
-				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-				}
-				if Facing = global.Directions.North
-				{
-					instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
-				}
-			}
-		}
-		else
-		{
-			audio_play_sound_relative(SFX_Use_Error,600,false)
-		}
 	}
 }
 if IsAttacking = true

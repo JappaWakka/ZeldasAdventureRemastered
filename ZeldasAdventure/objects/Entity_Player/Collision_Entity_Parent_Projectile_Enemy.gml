@@ -2,7 +2,7 @@ if DamageDelay = 0
 {
 	if Item_FindIndex(Treasure.MagicShield,0) = -1
 	{
-		///Reduce PitPoints, play damage sound
+		///Reduce HitPoints, play damage sound
 		DecreaseHP(other.Power - GetDefense())
 		audio_play_sound_relative(SFX_Zelda_Damage,1000,false)
 		
@@ -32,7 +32,7 @@ if DamageDelay = 0
 	{
 		if Moving = true
 		{
-			///Reduce PitPoints, play damage sound
+			///Reduce HitPoints, play damage sound
 			DecreaseHP(other.Power - GetDefense())
 			audio_play_sound_relative(SFX_Zelda_Damage,1000,false)
 			instance_destroy(other)

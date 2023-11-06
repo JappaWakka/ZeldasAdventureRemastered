@@ -10,10 +10,10 @@ function InitGameVariables()
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
 	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
 	
-	global.AddCutItems = true;
+	global.AddCutItems = true; //Include items that were cut from the original game
 	global.CurrentSaveGame = 0;
 	global.FadeSpeed = 8;
-	global.FadeProgress = 2;
+	global.FadeProgress = 2; //0 = Fade Out, 1 = Fade In, 2 = Finished, 3 = Warp
 	global.FadeAlpha = 0;
 	global.CameraIsPanning = false;
 	global.CameraPanSpeed = {x: 12, y: 8};
@@ -85,7 +85,7 @@ function InitGameVariables()
 	ini_close()
 	//Entity Variables
 	#macro PlayerBaseSpeed 1.5
-	global.DeathAmountForTrigger =
+	global.DeathAmountForTrigger = //Amount of Entities to defeat before spawning a certain Pickup
 	{
 		BoomerangSpell : 1
 	}
@@ -97,7 +97,13 @@ function InitGameVariables()
 		Fast: 1.8
 	};
 	
-	global.EnemySound = -1;
+	global.ProjectileSpeeds =
+	{
+		Player_Medium : 1.5 + d(0.4),
+		Enemy_Medium : 1.4 + d(0.4)
+	}
+	
+	global.EnemySound = -1; //The currently playing enemy sound
 	
 	enum EnemyStates
 	{
