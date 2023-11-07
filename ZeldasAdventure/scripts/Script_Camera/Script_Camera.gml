@@ -45,6 +45,11 @@ function Camera_Pan()
 			if ((Desired.x != Current.x + PanTo.x) or (Desired.y != Current.y + PanTo.y))
 			{
 				global.CameraIsPanning = true;
+				if audio_is_playing(global.CurrentDialogue_ID)
+				{
+					audio_stop_sound(global.CurrentDialogue_ID)
+					global.Subtitle = ""
+				}
 			}
 			else
 			{

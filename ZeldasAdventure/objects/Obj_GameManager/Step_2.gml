@@ -24,6 +24,11 @@ if room == Room_Overworld
 			global.CurrentItem = [1,Spells.Wand];
 		}
 	}
+	if audio_is_playing(global.CurrentDialogue_ID) = false
+	{
+		global.CurrentDialogue_Asset = Dialog_None
+		global.Subtitle = ""
+	}
 
 }
 

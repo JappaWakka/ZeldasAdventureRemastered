@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Inventory",
-    "path": "folders/Scripts/Inventory.yy",
+    "name": "Macros, Enums & Variables",
+    "path": "folders/Scripts/Macros, Enums & Variables.yy",
   },
 }

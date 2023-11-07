@@ -10,6 +10,8 @@ function InitGameVariables()
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
 	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
 	
+	global.CurrentDialogue_Asset = Dialog_None;
+	global.CurrentDialogue_ID = audio_play_sound(Dialog_None,500,false);
 	global.AddCutItems = true; //Include items that were cut from the original game
 	global.CurrentSaveGame = 0;
 	global.FadeSpeed = 8;
@@ -23,6 +25,7 @@ function InitGameVariables()
 		Nederlands : "nl"
 	}
 	global.Subtitle = "";
+	global.CanUseSpell = true
 	global.CurrentItem = [-1,-1]
 	global.CurrentTreasure = -1;
 	global.CurrentSpell = -1;
@@ -99,8 +102,8 @@ function InitGameVariables()
 	
 	global.ProjectileSpeeds =
 	{
-		Player_Medium : 1.5 + d(0.4),
-		Enemy_Medium : 1.4 + d(0.4)
+		Player : 1.5 + d(0.4),
+		Enemy : 1.4 + d(0.4)
 	}
 	
 	global.EnemySound = -1; //The currently playing enemy sound

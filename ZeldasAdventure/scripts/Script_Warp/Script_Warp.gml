@@ -2,6 +2,11 @@ function WarpTo(TileX, TileY, PlayerX, PlayerY, FadeSpeed = 8)
 {
 	if global.FadeProgress = 3
 	{
+		if audio_is_playing(global.CurrentDialogue_ID)
+		{
+			audio_stop_sound(global.CurrentDialogue_ID)
+			global.Subtitle = ""
+		}
 		global.FadeProgress = 0;
 		global.FadeSpeed = FadeSpeed;
 		return false;

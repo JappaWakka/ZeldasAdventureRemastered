@@ -1,7 +1,14 @@
 if DamageDelay = 0
 {
 	///Reduce HitPoints, play damage sound
-	HitPoints -= other.Power - Defense
+	if WeakToSpell != -1 and other.SpellUsed = WeakToSpell
+	{
+		HitPoints -= other.Power
+	}
+	else
+	{
+		HitPoints -= other.Power - Defense
+	}
 	audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
 	EnemyState = EnemyStates.Damaged
 	StartDamageAnimation = true

@@ -1,0 +1,12 @@
+﻿1
+00:00:00,001 --> 00:00:02,620
+Lothar the Innkeeper: That is wise beyond your years.
+
+2
+00:00:02,873 --> 00:00:07,286
+The spell of Calm will help you when you need it most, use it well.
+
+3
+00:00:07,387 --> 00:00:10,840
+And look after yourself on the lonely Plain of Andor.
+

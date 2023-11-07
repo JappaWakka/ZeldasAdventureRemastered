@@ -129,25 +129,32 @@ if global.RemasteredMode = false and IsAttacking = false
 		{
 			if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentItem[1] <> -1 and global.CurrentRubies >= CastCost(global.CurrentItem[1])
 			{
-				//If casting a spell, pay the casting cost
-				global.CurrentRubies -= CastCost(global.CurrentItem[1])
-				global.DesiredRubies = global.CurrentRubies
 				// Melee damage and sprite change (happens also when using other spells)
 				UseSpell_Any();
 				
-				if CanUseSpell = true
+				// Use Spell - Wand
+				if global.CurrentItem[1] = Spells.Wand
 				{
-					// Use Spell - Wand
-					if global.CurrentItem[1] = Spells.Wand
-					{
-						UseSpell_Wand()
-					}
+					UseSpell_Wand()
+				}
+				
+				// Use Spell - Firestorm
+				if global.CurrentItem[1] = Spells.Firestorm
+				{
+					UseSpell_Firestorm()
+				}
+				// Use Spell - JadeRing
+				if global.CurrentItem[1] = Spells.JadeRing
+				{
+					UseSpell_JadeRing()
+				}
+				
+				if global.CanUseSpell = true
+				{
+					//If casting a spell, pay the casting cost
+					global.CurrentRubies -= CastCost(global.CurrentItem[1])
+					global.DesiredRubies = global.CurrentRubies
 					
-					// Use Spell - Firestorm
-					if global.CurrentItem[1] = Spells.Firestorm
-					{
-						UseSpell_Firestorm()
-					}
 				}
 			}
 			else
@@ -201,12 +208,8 @@ if global.RemasteredMode = true and IsAttacking = false
 	}
 	if input_check_pressed("Special") = true
 	{
-		if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell) and CanUseSpell = true
+		if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
 		{
-			//If casting a spell, pay the casting cost
-			global.CurrentRubies -= CastCost(global.CurrentSpell)
-			global.DesiredRubies = global.CurrentRubies
-			
 			// Melee damage and sprite change (happens also when using other spells)
 			UseSpell_Any();
 						
@@ -219,6 +222,19 @@ if global.RemasteredMode = true and IsAttacking = false
 			if global.CurrentSpell = Spells.Firestorm
 			{
 				UseSpell_Firestorm()	
+			}
+			// Use Spell - JadeRing
+			if global.CurrentSpell = Spells.JadeRing
+			{
+				UseSpell_JadeRing()
+			}
+				
+			if global.CanUseSpell = true
+			{
+				//If casting a spell, pay the casting cost
+				global.CurrentRubies -= CastCost(global.CurrentSpell)
+				global.DesiredRubies = global.CurrentRubies
+				
 			}
 		}
 		else

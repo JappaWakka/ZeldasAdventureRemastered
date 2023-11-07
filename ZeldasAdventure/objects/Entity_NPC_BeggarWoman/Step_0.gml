@@ -1,4 +1,4 @@
-var IsDialoguePlaying = audio_is_playing(CurrentDialogue)
+
 if x >= global.CurrentTile.x * tileWidth && x <= global.CurrentTile.x * tileWidth + tileWidth &&
 y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight + tileHeight
 {
@@ -8,26 +8,27 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 		{
 			if HasSpoken = false
 			{
-				DialogueIndex = audio_play_sound_relative(Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees,500,false)
+				global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees
+				global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 				HasSpoken = true
 			}
 			visible = true
 			image_speed = d(ImageSpeed)
-			if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false and audio_is_playing(Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees) = false
+			if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false and audio_is_playing(global.CurrentDialogue_ID) = false
 			{
 				if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 				{
 					if input_check_pressed("Action") = true or input_check_pressed("Special") = true
 						{
-							if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.Rubies
+							if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.Rubies and global.CurrentRubies >= 5
 							{
 								RemoveRubies(5);
 								global.CurrentItem[1] = -1
 								if instance_exists(Entity_Pickup_Firestorm) = false
 								{
 									instance_create_layer(3606,5232,"Items",Entity_Pickup_Firestorm)
-									CurrentDialogue = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
-									DialogueIndex = audio_play_sound_relative(CurrentDialogue,500,false)
+									global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
+									global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 								}
 							}
 							
@@ -37,7 +38,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 				{
 					if input_check_pressed("Action") = true
 					{
-						if Item_FindValue(global.CurrentTreasure,0) = Treasure.Rubies
+						if Item_FindValue(global.CurrentTreasure,0) = Treasure.Rubies and global.CurrentRubies >= 5
 						{
 							RemoveRubies(5);
 							global.CurrentTreasure = -1
@@ -45,8 +46,8 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 							if instance_exists(Entity_Pickup_Firestorm) = false
 							{
 								instance_create_layer(3606,5232,"Items",Entity_Pickup_Firestorm)
-								CurrentDialogue = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
-								DialogueIndex = audio_play_sound_relative(CurrentDialogue,500,false)
+								global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
+								global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 							}
 						}
 					}
@@ -60,29 +61,29 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 		}
 				
 		
-		if IsDialoguePlaying = true
+		if global.CurrentDialogue_Asset != Dialog_None
 		{
 			if Obj_InventoryManager.Alpha = 0
 			{
-				if audio_is_paused(DialogueIndex) = true
+				if audio_is_paused(global.CurrentDialogue_ID) = true
 				{
-					audio_resume_sound(DialogueIndex)
+					audio_resume_sound(global.CurrentDialogue_ID)
 				}
-				var AudioPosition = audio_sound_get_track_position(DialogueIndex)
-				if CurrentDialogue = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees
+				var AudioPosition = audio_sound_get_track_position(global.CurrentDialogue_ID)
+				if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees
 				{
 					global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees(AudioPosition)
 				}
-				if CurrentDialogue = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
+				if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
 				{
 					global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRupees(AudioPosition)
 				}
 			}
 			else
 			{
-				if audio_is_paused(DialogueIndex) = false
+				if audio_is_paused(global.CurrentDialogue_ID) = false
 				{
-					audio_pause_sound(DialogueIndex)
+					audio_pause_sound(global.CurrentDialogue_ID)
 				}
 				global.Subtitle = ""
 			}
@@ -94,12 +95,6 @@ else
 	image_speed = 0
 	image_index = 0
 	visible = false
-	if IsDialoguePlaying = true
-	{
-		audio_stop_sound(DialogueIndex)
-		global.Subtitle = ""
-		HasSpoken = true
-	}
 	if Item_FindIndex(Spells.Firestorm,1) <> -1 
 	{
 		instance_destroy()

@@ -11,6 +11,22 @@ function UseTreasure_Rubies()
 			audio_play_sound_relative(SFX_Use_Error,100,false);
 		}
 	}
+	//Mobilin's Head Inn
+	else if global.CurrentTile.x = 10 && global.CurrentTile.y = 21
+	{
+		//If you already have the Calm Spell
+		if Item_FindIndex(Spells.Calm,1) <> -1
+		{
+			audio_play_sound_relative(SFX_Use_Error,100,false);
+		}
+		else
+		{
+			if Entity_Pickup_Calm.PlayerInBuyRange = false
+			{
+				audio_play_sound_relative(SFX_Use_Error,100,false);
+			}
+		}
+	}
 	else
 	{
 		audio_play_sound_relative(SFX_Use_Error,100,false);

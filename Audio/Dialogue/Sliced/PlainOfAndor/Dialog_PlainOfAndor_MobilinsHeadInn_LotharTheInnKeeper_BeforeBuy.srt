@@ -1,0 +1,15 @@
+﻿1
+00:00:00,001 --> 00:00:03,813
+Lothar the Innkeeper: Welcome to
+the Mobilin's Head Inn, my princess!
+
+2
+00:00:03,838 --> 00:00:08,787
+You look dry, have a cup
+of Andor cider on the house.
+
+3
+00:00:09,106 --> 00:00:13,753
+I have a spell of Calm to sell, but
+it will cost you 100 rubies.
+
