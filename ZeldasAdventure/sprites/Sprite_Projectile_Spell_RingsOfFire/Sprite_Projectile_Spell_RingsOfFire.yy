@@ -1,9 +1,9 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sprite_Projectile_Firestorm",
+  "name": "Sprite_Projectile_Spell_RingsOfFire",
   "bboxMode": 1,
-  "collisionKind": 1,
+  "collisionKind": 5,
   "type": 0,
   "origin": 5,
   "preMultiplyAlpha": false,
@@ -35,7 +35,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sprite_Projectile_Firestorm",
+    "name": "Sprite_Projectile_Spell_RingsOfFire",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -47,10 +47,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"67ccad3d-7736-43f5-99b1-9253ccb0ee26","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55c6b8c8-f1c9-4816-88dc-54eddc4d18f3","path":"sprites/Sprite_Projectile_Firestorm/Sprite_Projectile_Firestorm.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"66862fb7-cb69-4664-a2d8-7af80e9c306e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"36673575-c829-4dee-8847-7db96138b88f","path":"sprites/Sprite_Projectile_Firestorm/Sprite_Projectile_Firestorm.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"3e9c1913-b562-4511-a147-3b3d47b49451","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d233964-a9a3-4311-966e-1afb189aac14","path":"sprites/Sprite_Projectile_Firestorm/Sprite_Projectile_Firestorm.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"26b0cbf9-5e3e-473e-97d2-ce669b3efcd1","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df406959-df78-4606-a2ed-d08f68095364","path":"sprites/Sprite_Projectile_Firestorm/Sprite_Projectile_Firestorm.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"67ccad3d-7736-43f5-99b1-9253ccb0ee26","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55c6b8c8-f1c9-4816-88dc-54eddc4d18f3","path":"sprites/Sprite_Projectile_Spell_RingsOfFire/Sprite_Projectile_Spell_RingsOfFire.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"66862fb7-cb69-4664-a2d8-7af80e9c306e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"36673575-c829-4dee-8847-7db96138b88f","path":"sprites/Sprite_Projectile_Spell_RingsOfFire/Sprite_Projectile_Spell_RingsOfFire.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3e9c1913-b562-4511-a147-3b3d47b49451","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d233964-a9a3-4311-966e-1afb189aac14","path":"sprites/Sprite_Projectile_Spell_RingsOfFire/Sprite_Projectile_Spell_RingsOfFire.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"26b0cbf9-5e3e-473e-97d2-ce669b3efcd1","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"df406959-df78-4606-a2ed-d08f68095364","path":"sprites/Sprite_Projectile_Spell_RingsOfFire/Sprite_Projectile_Spell_RingsOfFire.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -73,7 +73,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ParticlesAndProjectiles",
-    "path": "folders/Sprites/Entities/ParticlesAndProjectiles.yy",
+    "name": "Projectiles_Player",
+    "path": "folders/Sprites/Entities/Projectiles_Player.yy",
   },
 }

@@ -40,6 +40,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileSpeed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"global.ProjectileSpeeds.Player + d(0.4)",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"DestroyOnEnemyImpact","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"SpellUsed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"Spells.JadeRing",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"BonusDamageIfWeak","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"70",},
   ],
   "parent": {
     "name": "Projectiles_Player",

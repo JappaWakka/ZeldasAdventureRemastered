@@ -69,7 +69,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ParticlesAndProjectiles",
-    "path": "folders/Sprites/Entities/ParticlesAndProjectiles.yy",
+    "name": "Projectiles_Player",
+    "path": "folders/Sprites/Entities/Projectiles_Player.yy",
   },
 }

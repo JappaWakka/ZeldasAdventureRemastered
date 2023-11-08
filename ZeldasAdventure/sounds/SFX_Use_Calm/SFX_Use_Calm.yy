@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SFX_Use_Calm",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -11,14 +14,10 @@
     "name": "AudioGroup_SoundFX",
     "path": "audiogroups/AudioGroup_SoundFX",
   },
-  "soundFile": "SFX_Use_CalmSpell.wav",
+  "soundFile": "SFX_Use_Calm.wav",
   "duration": 0.32,
   "parent": {
     "name": "WeaponsAndItems",
     "path": "folders/Sounds/SoundFX/WeaponsAndItems.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SFX_Use_CalmSpell",
-  "tags": [],
-  "resourceType": "GMSound",
 }

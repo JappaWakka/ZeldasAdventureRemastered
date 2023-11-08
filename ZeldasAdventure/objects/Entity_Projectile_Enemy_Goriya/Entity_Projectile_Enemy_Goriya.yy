@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Entity_Projectile_Enemy_Goriya",
   "spriteId": {
-    "name": "Sprite_Projectile_Goriya_Boomerang",
-    "path": "sprites/Sprite_Projectile_Goriya_Boomerang/Sprite_Projectile_Goriya_Boomerang.yy",
+    "name": "Sprite_Projectile_Goriya",
+    "path": "sprites/Sprite_Projectile_Goriya/Sprite_Projectile_Goriya.yy",
   },
   "solid": false,
   "visible": true,

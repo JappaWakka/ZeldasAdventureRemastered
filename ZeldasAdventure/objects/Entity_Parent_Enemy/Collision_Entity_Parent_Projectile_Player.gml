@@ -3,7 +3,7 @@ if DamageDelay = 0
 	///Reduce HitPoints, play damage sound
 	if WeakToSpell != -1 and other.SpellUsed = WeakToSpell
 	{
-		HitPoints -= other.Power
+		HitPoints -= other.Power + other.BonusDamageIfWeak
 	}
 	else
 	{

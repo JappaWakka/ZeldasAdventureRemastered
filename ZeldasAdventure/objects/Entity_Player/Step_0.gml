@@ -148,12 +148,20 @@ if global.RemasteredMode = false and IsAttacking = false
 				{
 					UseSpell_JadeRing()
 				}
+				// Use Spell - Calm
+				if global.CurrentItem[1] = Spells.Calm
+				{
+					UseSpell_Calm()
+				}
 				
 				if global.CanUseSpell = true
 				{
 					//If casting a spell, pay the casting cost
-					global.CurrentRubies -= CastCost(global.CurrentItem[1])
-					global.DesiredRubies = global.CurrentRubies
+					global.DesiredRubies -= CastCost(global.CurrentItem[1])
+					if global.CurrentRubies > global.DesiredRubies
+					{
+						global.CurrentRubies = global.DesiredRubies
+					}
 					
 				}
 			}
@@ -228,13 +236,20 @@ if global.RemasteredMode = true and IsAttacking = false
 			{
 				UseSpell_JadeRing()
 			}
+			// Use Spell - Calm
+			if global.CurrentSpell = Spells.Calm
+			{
+				UseSpell_Calm()
+			}
 				
 			if global.CanUseSpell = true
 			{
 				//If casting a spell, pay the casting cost
-				global.CurrentRubies -= CastCost(global.CurrentSpell)
-				global.DesiredRubies = global.CurrentRubies
-				
+				global.DesiredRubies -= CastCost(global.CurrentSpell)
+				if global.CurrentRubies > global.DesiredRubies
+				{
+					global.CurrentRubies = global.DesiredRubies
+				}
 			}
 		}
 		else

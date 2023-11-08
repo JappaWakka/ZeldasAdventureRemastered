@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Projectile_Player_Firestorm",
+  "name": "Entity_Projectile_Player_Calm",
   "spriteId": {
-    "name": "Sprite_Projectile_Spell_FireStorm",
-    "path": "sprites/Sprite_Projectile_Spell_FireStorm/Sprite_Projectile_Spell_FireStorm.yy",
+    "name": "Sprite_Projectile_Spell_Calm",
+    "path": "sprites/Sprite_Projectile_Spell_Calm/Sprite_Projectile_Spell_Calm.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,18 +27,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileSpeed","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"global.EnemySpeeds.Medium + d(0.4)",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileDirection","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"\"Straight\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Power","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"40",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Power","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"18",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Power","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"12",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileSpeed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"global.ProjectileSpeeds.Player * 1.5 + d(0.4)",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"DestroyOnEnemyImpact","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"True",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"SpellUsed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"Spells.Firestorm",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"SpellUsed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"Spells.Calm",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"BonusDamageIfWeak","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"70",},
   ],
   "parent": {
     "name": "Projectiles_Player",
