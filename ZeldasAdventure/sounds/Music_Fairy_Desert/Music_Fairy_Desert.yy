@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Music_Plain",
+  "name": "Music_Fairy_Desert",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,8 +14,8 @@
     "name": "AudioGroup_Music",
     "path": "audiogroups/AudioGroup_Music",
   },
-  "soundFile": "Music_Plain.ogg",
-  "duration": 27.020594,
+  "soundFile": "Music_Fairy_Desert.ogg",
+  "duration": 28.848095,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
