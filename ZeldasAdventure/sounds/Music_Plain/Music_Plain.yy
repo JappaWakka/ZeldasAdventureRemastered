@@ -15,7 +15,7 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Plain.ogg",
-  "duration": 27.020594,
+  "duration": 26.511562,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",
