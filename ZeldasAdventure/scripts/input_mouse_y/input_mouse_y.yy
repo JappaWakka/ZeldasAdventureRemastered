@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "input_mouse_y",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Mouse (Direct)",
-    "path": "folders/Input/Mouse (Direct).yy",
+    "name": "24  Mouse (Direct)",
+    "path": "folders/Input/24  Mouse (Direct).yy",
   },
-  "resourceVersion": "1.0",
-  "name": "input_mouse_y",
-  "tags": [],
-  "resourceType": "GMScript",
 }

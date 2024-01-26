@@ -80,14 +80,14 @@ ds_Menu_Audio = CreateMenuPage(
 
 ds_Menu_Controls = CreateMenuPage(
 ["Device to Config",	Menu_ElementType.Toggle,			SetConfigDevice,		0,					["Keys","Gamepad"]	],
-["Left",				Menu_ElementType.Input,				"Left",					input_binding_get("Left",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Left",		INPUT_SOURCE.GAMEPAD),	],
-["Right",				Menu_ElementType.Input,				"Right",				input_binding_get("Right",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Right",		INPUT_SOURCE.GAMEPAD),	],
-["Up",					Menu_ElementType.Input,				"Up",					input_binding_get("Up",			INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Up",			INPUT_SOURCE.GAMEPAD),	],
-["Down",				Menu_ElementType.Input,				"Down",					input_binding_get("Down",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Down",		INPUT_SOURCE.GAMEPAD),	],
-["Action",				Menu_ElementType.Input,				"Action",				input_binding_get("Action",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Action",		INPUT_SOURCE.GAMEPAD),	],
-["Special",				Menu_ElementType.Input,				"Special",				input_binding_get("Special",	INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Special",	INPUT_SOURCE.GAMEPAD),	],
-["Inventory",			Menu_ElementType.Input,				"Inventory",			input_binding_get("Inventory",	INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Inventory",	INPUT_SOURCE.GAMEPAD),	],
-["Menu",				Menu_ElementType.Input,				"Menu",					input_binding_get("Menu",		INPUT_SOURCE.KEYBOARD_AND_MOUSE),			input_binding_get("Menu",		INPUT_SOURCE.GAMEPAD),	],
+["left",				Menu_ElementType.Input,				"Left",					input_binding_get("left",,,"keyboard_and_mouse"),			input_binding_get("left",,,"gamepad"),	],
+["right",				Menu_ElementType.Input,				"Right",				input_binding_get("right",,,"keyboard_and_mouse"),			input_binding_get("right",,,"gamepad"),	],
+["Up",					Menu_ElementType.Input,				"Up",					input_binding_get("up",,,"keyboard_and_mouse"),			input_binding_get("up",,,"gamepad"),	],
+["Down",				Menu_ElementType.Input,				"Down",					input_binding_get("down",,,"keyboard_and_mouse"),			input_binding_get("down",,,"gamepad"),	],
+["Action",				Menu_ElementType.Input,				"Action",				input_binding_get("action",,,"keyboard_and_mouse"),			input_binding_get("action",,,"gamepad"),	],
+["Special",				Menu_ElementType.Input,				"Special",				input_binding_get("special",,,"keyboard_and_mouse"),			input_binding_get("special",,,"gamepad"),	],
+["Inventory",			Menu_ElementType.Input,				"Inventory",			input_binding_get("inventory",,,"keyboard_and_mouse"),			input_binding_get("inventory",,,"gamepad"),	],
+["Menu",				Menu_ElementType.Input,				"Menu",					input_binding_get("menu",,,"keyboard_and_mouse"),			input_binding_get("menu",,,"gamepad"),	],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
 

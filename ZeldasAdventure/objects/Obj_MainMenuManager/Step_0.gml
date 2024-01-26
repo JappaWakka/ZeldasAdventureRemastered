@@ -12,20 +12,20 @@ else //SettingMenu
 			switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 			{
 				case Menu_ElementType.Shift:
-					var OptionChange = input_check_pressed("Right") - input_check_pressed("Left");
+					var OptionChange = input_check_pressed("right") - input_check_pressed("left");
 					if OptionChange !=0
 					{
 						audio_play_sound(Settings_ChangeValue,1000,false)
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] += OptionChange;
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = clamp(CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]], 0, array_length(CurrentGrid[# 4, Menu_CurrentEntry[PageIndex]])-1)
 					}
-					if input_check_pressed("Action") = true or input_check_pressed("Special") = true
+					if input_check_pressed("action") = true or input_check_pressed("special") = true
 					{
 						IsInputting = false
 					}
 					break;
 				case Menu_ElementType.Slider:
-					var OptionChange = input_check("Right") - input_check("Left");
+					var OptionChange = input_check("right") - input_check("left");
 					var CurrentArray = CurrentGrid[# 4, Menu_CurrentEntry[PageIndex]]
 					if OptionChange !=0
 					{
@@ -33,20 +33,20 @@ else //SettingMenu
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] += OptionChange * 0.01;
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = clamp(CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]], CurrentArray[0], CurrentArray[1])
 					}
-					if input_check_pressed("Action") = true or input_check_pressed("Special") = true
+					if input_check_pressed("action") = true or input_check_pressed("special") = true
 					{
 						IsInputting = false
 					}
 					break;
 				case Menu_ElementType.Toggle:
-					var OptionChange = input_check_pressed("Right") - input_check_pressed("Left");
+					var OptionChange = input_check_pressed("right") - input_check_pressed("left");
 					if OptionChange !=0
 					{
 						audio_play_sound(Settings_ChangeValue,1000,false)
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] += OptionChange;
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = clamp(CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]], 0, 1)
 					}
-					if input_check_pressed("Action") = true or input_check_pressed("Special") = true
+					if input_check_pressed("action") = true or input_check_pressed("special") = true
 					{
 						IsInputting = false
 					}
@@ -81,7 +81,7 @@ else //SettingMenu
 		}
 		else
 		{
-			var OptionChange = input_check_pressed("Down") - input_check_pressed("Up");
+			var OptionChange = input_check_pressed("down") - input_check_pressed("up");
 			if OptionChange !=0
 			{
 				Menu_CurrentEntry[PageIndex] += OptionChange;
@@ -94,7 +94,7 @@ else //SettingMenu
 					Menu_CurrentEntry[PageIndex] = GridHeight - 1;
 				}
 			}
-			if input_check_pressed("Action") = true or input_check_pressed("Special") = true
+			if input_check_pressed("action") = true or input_check_pressed("special") = true
 			{
 				switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 				{

@@ -3,8 +3,8 @@
 
 if global.CameraIsPanning = false and IsAttacking = false
 {
-xx = input_check("Right") - input_check("Left");
-yy = input_check("Down") - input_check("Up");
+xx = input_check("right") - input_check("left");
+yy = input_check("down") - input_check("up");
 }
 else
 {
@@ -83,25 +83,25 @@ if global.CameraIsPanning = false
 {
 	if IsAttacking = false
 	{
-		if(input_check("Right") = true and input_check("Left") = false)
+		if(input_check("right") = true and input_check("left") = false)
 		{
 			image_speed = AnimSpeed;
 			sprite_index = Zelda_Move_East;
 			Facing = global.Directions.East
 		}
-		else if(input_check("Left") = true and input_check("Right") = false)
+		else if(input_check("left") = true and input_check("right") = false)
 		{
 			image_speed = AnimSpeed;
 			sprite_index = Zelda_Move_West;
 			Facing = global.Directions.West
 		}
-		else if(input_check("Down") = true and input_check("Up") = false)
+		else if(input_check("down") = true and input_check("up") = false)
 		{
 			image_speed = AnimSpeed;
 			sprite_index = Zelda_Move_South;
 			Facing = global.Directions.South
 		}
-		else if(input_check("Up") = true and input_check("Down") = false)
+		else if(input_check("up") = true and input_check("down") = false)
 		{
 			image_speed = AnimSpeed;
 			sprite_index = Zelda_Move_North;
@@ -122,7 +122,7 @@ else
 #region Action - Using Spells & Treasures
 if global.RemasteredMode = false and IsAttacking = false
 {
-	if input_check_pressed("Action") = true or input_check_pressed("Special") = true
+	if input_check_pressed("action") = true or input_check_pressed("special") = true
 	{
 		//Current Item is a Spell
 		if global.CurrentItem[0] = 1
@@ -195,7 +195,7 @@ if global.RemasteredMode = false and IsAttacking = false
 
 if global.RemasteredMode = true and IsAttacking = false
 {
-	if input_check_pressed("Action") = true
+	if input_check_pressed("action") = true
 	{
 		switch Item_FindValue(global.CurrentTreasure,0)
 			{
@@ -214,7 +214,7 @@ if global.RemasteredMode = true and IsAttacking = false
 					break;
 			}
 	}
-	if input_check_pressed("Special") = true
+	if input_check_pressed("special") = true
 	{
 		if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
 		{

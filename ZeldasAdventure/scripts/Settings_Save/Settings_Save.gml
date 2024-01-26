@@ -1,6 +1,6 @@
 function SaveSettings(){
-	input_default_key(vk_left, "Left");
-	input_default_key(vk_right, "Right");
+	input_default_key(vk_left, "left");
+	input_default_key(vk_right, "right");
 	input_default_key(vk_up, "Up");
 	input_default_key(vk_down, "Down");
 	
@@ -9,8 +9,8 @@ function SaveSettings(){
 	input_default_key(vk_space, "Inventory"); //Select Button
 	input_default_key(vk_escape, "Menu"); //Start Button
 	
-	input_default_gamepad_button(gp_padl, "Left");
-	input_default_gamepad_button(gp_padr, "Right");
+	input_default_gamepad_button(gp_padl, "left");
+	input_default_gamepad_button(gp_padr, "right");
 	input_default_gamepad_button(gp_padu, "Up");
 	input_default_gamepad_button(gp_padd, "Down");
 	

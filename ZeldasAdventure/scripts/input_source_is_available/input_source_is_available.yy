@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "input_source_is_available",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Source Assignment",
-    "path": "folders/Input/Source Assignment.yy",
+    "name": "18  Sources",
+    "path": "folders/Input/18  Sources.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "input_source_is_available",
-  "tags": [],
-  "resourceType": "GMScript",
 }

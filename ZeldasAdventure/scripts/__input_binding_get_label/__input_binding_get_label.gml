@@ -1,17 +1,19 @@
+// Feather disable all
+
 function __input_binding_get_label(_type, _value, _axis_negative)
 {
-    if (__INPUT_TOUCH_SUPPORT)
+    if (!INPUT_ON_PC)
     {
         //Touch bindings
         if (__INPUT_ON_PS)
         {
-            if (((_type == "gamepad button") && (_value == gp_select))
-            ||  ((_type == "mouse button"  ) && (_value == mb_left)))
+            if (((_type == __INPUT_BINDING_GAMEPAD_BUTTON) && (_value == gp_select))
+            ||  ((_type == __INPUT_BINDING_MOUSE_BUTTON  ) && (_value == mb_left  )))
             {
                 return "gamepad touchpad click";
             }
         }
-        else if ((_type == "mouse button") && (_value == mb_left))
+        else if ((_type == __INPUT_BINDING_MOUSE_BUTTON) && (_value == mb_left))
         {
             return "touchscreen press";
         }
@@ -19,11 +21,11 @@ function __input_binding_get_label(_type, _value, _axis_negative)
     
     switch(_type)
     {
-        case "key":
+        case __INPUT_BINDING_KEY:
             return __input_key_get_name(_value);
         break;
         
-        case "mouse button":
+        case __INPUT_BINDING_MOUSE_BUTTON:
             switch(_value)
             {
                 case mb_left:    return "mouse button left";    break;
@@ -36,16 +38,16 @@ function __input_binding_get_label(_type, _value, _axis_negative)
             }
         break;
         
-        case "mouse wheel up":
+        case __INPUT_BINDING_MOUSE_WHEEL_UP:
             return "mouse wheel up";
         break;
         
-        case "mouse wheel down":
+        case __INPUT_BINDING_MOUSE_WHEEL_DOWN:
             return "mouse wheel down";
         break;
         
-        case "gamepad button":
-        case "gamepad axis":
+        case __INPUT_BINDING_GAMEPAD_BUTTON:
+        case __INPUT_BINDING_GAMEPAD_AXIS:
             switch(_value)
             {
                 case gp_face1:      return "gamepad face south";         break; //Xbox A, Nintendo B, PlayStation Cross
@@ -56,7 +58,6 @@ function __input_binding_get_label(_type, _value, _axis_negative)
                 case gp_shoulderr:  return "gamepad shoulder r";         break;
                 case gp_shoulderlb: return "gamepad trigger l";          break;
                 case gp_shoulderrb: return "gamepad trigger r";          break;
-                case gp_select:     return "gamepad select";             break;
                 case gp_start:      return "gamepad start";              break;
                 case gp_stickl:     return "gamepad thumbstick l click"; break;
                 case gp_stickr:     return "gamepad thumbstick r click"; break;
@@ -76,10 +77,16 @@ function __input_binding_get_label(_type, _value, _axis_negative)
                 case gp_axislh: return _axis_negative? "gamepad thumbstick l left" : "gamepad thumbstick l right"; break;
                 case gp_axislv: return _axis_negative? "gamepad thumbstick l up"   : "gamepad thumbstick l down";  break;
                 case gp_axisrh: return _axis_negative? "gamepad thumbstick r left" : "gamepad thumbstick r right"; break;
-                case gp_axisrv: return _axis_negative? "gamepad thumbstick r up"   : "gamepad thumbstick r down";  break;
+                case gp_axisrv: return _axis_negative? "gamepad thumbstick r up"   : "gamepad thumbstick r down";  break;                
+                
+                case gp_select: return (__INPUT_ON_PS? "gamepad touchpad click" : "gamepad select"); break;
                 
                 default: return "gamepad input unknown"; break;
             }
+        break;
+        
+        case __INPUT_BINDING_VIRTUAL_BUTTON:
+            return "virtual button";
         break;
         
         default:

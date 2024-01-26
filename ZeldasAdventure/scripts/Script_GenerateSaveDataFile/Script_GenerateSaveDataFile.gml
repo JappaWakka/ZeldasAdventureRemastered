@@ -37,8 +37,8 @@ function Script_GenerateSaveDataFile()
 	}
 	if !ini_section_exists("Controls")
 	{
-		ini_write_string("Controls",	 "Keyboard Left",		"Left");
-		ini_write_string("Controls",	 "Keyboard Right",		"Right");
+		ini_write_string("Controls",	 "Keyboard Left",		"left");
+		ini_write_string("Controls",	 "Keyboard Right",		"right");
 		ini_write_string("Controls",	 "Keyboard Up",			"Up");
 		ini_write_string("Controls",	 "Keyboard Down",		"Down");
 		ini_write_string("Controls",	 "Keyboard Action",		"Control");

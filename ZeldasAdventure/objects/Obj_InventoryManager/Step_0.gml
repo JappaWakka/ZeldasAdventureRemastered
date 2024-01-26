@@ -1,4 +1,4 @@
-if input_check_pressed("Inventory")
+if input_check_pressed("inventory")
 {
 	if global.FadeAlpha == 0 && OpeningClosing == false
 	{
@@ -42,7 +42,7 @@ if SelectedIndex[1] == -1
 }
 if Alpha == 255
 {
-	if input_check_pressed("Action") or input_check_pressed("Special")
+	if input_check_pressed("action") or input_check_pressed("special")
 	{
 		if InventoryIndex = 2
 		{
@@ -78,7 +78,7 @@ else
 }
 if Alpha = 255
 {
-	if mouse_wheel_down() = true or input_check_pressed("Right") = true
+	if mouse_wheel_down() = true or input_check_pressed("right") = true
 	{
 		if InventoryIndex = 0
 		{
@@ -119,7 +119,7 @@ if Alpha = 255
 	}
 		
 	
-	if mouse_wheel_up() = true or input_check_pressed("Left") = true
+	if mouse_wheel_up() = true or input_check_pressed("left") = true
 	{
 		if InventoryIndex = 0
 		{
@@ -161,7 +161,7 @@ if Alpha = 255
 		}
 	}
 	 
-	if input_check_pressed("Down") = true
+	if input_check_pressed("down") = true
 	{
 		if InventoryIndex = 2 or InventoryIndex = 3 //Map Menu or Save Menu buttons
 		{
@@ -174,7 +174,7 @@ if Alpha = 255
 		}
 	}
 	
-	if input_check_pressed("Up") = true
+	if input_check_pressed("up") = true
 	{
 		if InventoryIndex = 1
 		{

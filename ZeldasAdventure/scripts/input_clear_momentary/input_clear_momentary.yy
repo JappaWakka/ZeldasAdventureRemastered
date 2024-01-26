@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "input_clear_momentary",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Other",
-    "path": "folders/Input/Other.yy",
+    "name": "23  Other",
+    "path": "folders/Input/23  Other.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "input_clear_momentary",
-  "tags": [],
-  "resourceType": "GMScript",
 }

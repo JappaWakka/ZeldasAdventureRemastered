@@ -1,12 +1,11 @@
 {
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "input_cursor_limit_circle",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Cursor",
-    "path": "folders/Input/(System)/Deprecated/Cursor.yy",
+    "name": "10  Cursor Control",
+    "path": "folders/Input/10  Cursor Control.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "input_cursor_limit_circle",
-  "tags": [],
-  "resourceType": "GMScript",
 }

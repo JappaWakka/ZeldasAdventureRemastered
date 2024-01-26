@@ -35,7 +35,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 			{
 				if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 				{
-					if input_check_pressed("Action") = true or input_check_pressed("Special") = true
+					if input_check_pressed("action") = true or input_check_pressed("special") = true
 						{
 							if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.Rubies and global.CurrentRubies >= ItemCost.Price and PlayerInBuyRange = true
 							{
@@ -55,7 +55,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 				}
 				if global.RemasteredMode = true and Entity_Player.IsAttacking = false
 				{
-					if input_check_pressed("Action") = true
+					if input_check_pressed("action") = true
 					{
 						if Item_FindValue(global.CurrentTreasure,0) = Treasure.Rubies and global.CurrentRubies >= ItemCost.Price and PlayerInBuyRange = true
 						{

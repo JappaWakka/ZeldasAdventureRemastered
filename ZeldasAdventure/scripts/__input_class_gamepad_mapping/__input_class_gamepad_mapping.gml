@@ -1,26 +1,26 @@
+// Feather disable all
 /// @param GMconstant
 /// @param rawIndex
 /// @param rawMappingType
 /// @param SDLname
-/// @param label
-/// @param color
 
-function __input_class_gamepad_mapping(_gm, _raw, _type, _sdl_name, _label, _color) constructor
+function __input_class_gamepad_mapping(_gm, _raw, _type, _sdl_name) constructor
 {
+    __INPUT_GLOBAL_STATIC_VARIABLE  //Set static __global
+    
     gm       = _gm;
     raw      = _raw;
     type     = _type;
     sdl_name = _sdl_name;
-    label    = _label;
-    color    = _color;
-            
-    invert           = false;
-    clamp_negative   = false;
-    clamp_positive   = false;
-    reverse          = false;
-    limited_range    = false;
-    extended_range   = false;
-    hat_mask         = undefined;
+    
+    invert         = false;
+    clamp_negative = false;
+    clamp_positive = false;
+    reverse        = false;
+    limited_range  = false;
+    extended_range = false;
+    hat_mask       = undefined;
+    scale          = 1;
     
     //Hat-on-axis and split axis
     raw_negative = undefined;
@@ -43,60 +43,79 @@ function __input_class_gamepad_mapping(_gm, _raw, _type, _sdl_name, _label, _col
     press         = false;
     release       = false;
     
-    static tick = function(_gamepad)
+    __value_previous = undefined;
+    __value_delta    = 0.0;
+    
+    static tick = function(_gamepad, _scan)
     {
         held_previous = held;
-        value         = 0.0;
-        held          = false;
-        press         = false;
-        release       = false;
+        if (__value_previous != undefined) __value_previous = value; //Don't update the previous value until we get our first scanned value
         
-        switch(type)
-        {
-            case __INPUT_MAPPING.BUTTON:
-                value = gamepad_button_check(_gamepad, raw);
-            break;
+        value   = 0.0;
+        held    = false;
+        press   = false;
+        release = false;
+        
+        if (!_scan) return;
+        
+        if (__global.__game_input_allowed || (__global.__allow_gamepad_tester && __global.__gamepad_tester_data.__enabled && is_debug_overlay_open()))
+        {        
+            switch(type)
+            {
+                case __INPUT_MAPPING.BUTTON:
+                    value = gamepad_button_check(_gamepad, raw);
+                break;
+                    
+                case __INPUT_MAPPING.AXIS:
+                    value = gamepad_axis_value(_gamepad, raw);
+                break;
+                    
+                case __INPUT_MAPPING.HAT:
+                    value = ((gamepad_hat_value(_gamepad, raw) & hat_mask) > 0);
+                break;
+                    
+                case __INPUT_MAPPING.HAT_TO_AXIS:
+                    value = ((gamepad_hat_value( _gamepad, raw_positive) & hat_mask_positive) > 0) - ((gamepad_hat_value(_gamepad, raw_negative) & hat_mask_negative) > 0);
+                break;
+                    
+                case __INPUT_MAPPING.BUTTON_TO_AXIS:
+                    var _positive = gamepad_button_check(_gamepad, raw_positive);
+                    var _negative = gamepad_button_check(_gamepad, raw_negative);
+                    
+                    value = _positive - _negative;
+                break;
+                    
+                case __INPUT_MAPPING.SPLIT_AXIS:
+                    var _positive = gamepad_axis_value(_gamepad, raw_positive);
+                    var _negative = gamepad_axis_value(_gamepad, raw_negative);
+                    
+                    if (positive_clamp_negative) _positive = clamp(_positive, -1, 0);
+                    if (positive_clamp_positive) _positive = clamp(_positive,  0, 1);
+                    if (negative_clamp_negative) _negative = clamp(_negative, -1, 0);
+                    if (negative_clamp_positive) _negative = clamp(_negative,  0, 1);
+                    
+                    value = _positive - _negative;
+                break;
+            }
+             
+            if (limited_range)  value = 2*value - 1; //Expand 0 -> 1 range to the full -1 -> +1
+            if (extended_range) value = 0.5 + 0.5*value; //Reduce -1 -> +1 range to 0 -> 1
+            if (reverse)        value = -value;
+            if (clamp_negative) value = clamp(value, -1, 0);
+            if (clamp_positive) value = clamp(value,  0, 1);
+            if (invert)         value = 1 - value;
+                  
+            value = clamp(scale*value, -1, 1);
             
-            case __INPUT_MAPPING.AXIS:
-                value = gamepad_axis_value(_gamepad, raw);
-            break;
+            if (__value_previous == undefined)
+            {
+                //Capture the initial value
+                __value_previous = value;
+            }
             
-            case __INPUT_MAPPING.HAT:
-                value = ((gamepad_hat_value(_gamepad, raw) & hat_mask) > 0);
-            break;
-            
-            case __INPUT_MAPPING.HAT_TO_AXIS:
-                value = ((gamepad_hat_value( _gamepad, raw_positive) & hat_mask_positive) > 0) - ((gamepad_hat_value(_gamepad, raw_negative) & hat_mask_negative) > 0);
-            break;
-            
-            case __INPUT_MAPPING.BUTTON_TO_AXIS:
-                var _positive = gamepad_button_check(_gamepad, raw_positive);
-                var _negative = gamepad_button_check(_gamepad, raw_negative);
-                
-                value = _positive - _negative;
-            break;                
-            
-            case __INPUT_MAPPING.SPLIT_AXIS:
-                var _positive = gamepad_axis_value(_gamepad, raw_positive);
-                var _negative = gamepad_axis_value(_gamepad, raw_negative);
-                
-                if (positive_clamp_negative) _positive = clamp(_positive, -1, 0);
-                if (positive_clamp_positive) _positive = clamp(_positive,  0, 1);
-                if (negative_clamp_negative) _negative = clamp(_negative, -1, 0);
-                if (negative_clamp_positive) _negative = clamp(_negative,  0, 1);
-                
-                value = _positive - _negative;
-            break;
+            __value_delta = value - __value_previous;
+            held = (abs(value) > __INPUT_HOLD_THRESHOLD);
         }
-        
-        if (limited_range)  value = 2*value - 1; //Expand 0 -> 1 range to the full -1 -> +1
-        if (extended_range) value = 0.5 + 0.5*value; //Reduce -1 -> +1 range to 0 -> 1
-        if (clamp_negative) value = clamp(value, -1, 0);
-        if (clamp_positive) value = clamp(value,  0, 1);
-        if (invert)         value = 1 - value;
-        if (reverse)        value = -value;
-        
-        held = (abs(value) > __INPUT_HOLD_THRESHOLD);
         
         if (held_previous != held)
         {
@@ -109,5 +128,27 @@ function __input_class_gamepad_mapping(_gm, _raw, _type, _sdl_name, _label, _col
                 release = true;
             }
         }
+    }
+    
+    static __calibrate = function(_success)
+    {
+        if (type != __INPUT_MAPPING.BUTTON)
+        {
+            value   = 0.0;
+            held    = false;
+            press   = false;
+            release = false;
+
+            if ((abs(__value_delta) != 0.0) && (abs(__value_delta) != 0.5))
+            {
+                __value_previous = 0.0;
+                __value_delta    = 0.0;
+                if (not _success) return true;
+            }
+                
+            __value_delta = 0.0;
+        }
+                    
+        return false;
     }
 }
