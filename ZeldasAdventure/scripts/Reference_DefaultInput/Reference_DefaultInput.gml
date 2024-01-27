@@ -10,5 +10,6 @@ return
     special: input_binding_key(vk_alt),
     inventory:  input_binding_key(vk_space),
     menu:  input_binding_key(vk_escape),
+	accept: input_binding_key(vk_enter),
 	}
 }

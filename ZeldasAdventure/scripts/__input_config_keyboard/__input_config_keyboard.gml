@@ -5,7 +5,7 @@
 #macro INPUT_SWITCH_KEYBOARD_ALLOWED  false
 
 //Whether to merge control keys, for example Left Shift and Right Shift upon user rebind
-#macro INPUT_MERGE_CONTROL_KEYS  false
+#macro INPUT_MERGE_CONTROL_KEYS  true
 
 //The following macro controls default key filtering behaviour on platforms supporting keyboard
 //Expected values are:

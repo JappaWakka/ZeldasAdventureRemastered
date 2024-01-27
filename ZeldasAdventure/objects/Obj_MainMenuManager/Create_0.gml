@@ -62,12 +62,12 @@ ds_Menu_Settings = CreateMenuPage(
 );
 
 ds_Menu_Game = CreateMenuPage(
-["Window Mode",			Menu_ElementType.Toggle,			SetWindowMode,			0,					["Window","Full"]	],
-["Resolution",			Menu_ElementType.Shift,				SetResolution,			2,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
-["Remastered Mode",		Menu_ElementType.Toggle,			RemasteredModeEnabled,	0,					["Off","On"]				],
-["Subtitles",			Menu_ElementType.Toggle,			SubtitlesEnabled,		1,					["Off","On"]				],
-["Language",			Menu_ElementType.Shift,				SetLanguage,			0,					["English","Nederlands"]	],
-["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
+["Window Mode",			Menu_ElementType.Toggle,			ChangeWindowMode,				0,					["Window","Full"]	],
+["Resolution",			Menu_ElementType.Shift,				ChangeResolution,				2,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
+["Remastered Mode",		Menu_ElementType.Toggle,			ChangeRemasteredModeEnabled,	0,					["Off","On"]				],
+["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			1,					["Off","On"]				],
+["Language",			Menu_ElementType.Shift,				ChangeLanguage,					0,					["English","Nederlands"]	],
+["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings				]
 );
 
 ds_Menu_Audio = CreateMenuPage(
@@ -79,15 +79,15 @@ ds_Menu_Audio = CreateMenuPage(
 );
 
 ds_Menu_Controls = CreateMenuPage(
-["Device to Config",	Menu_ElementType.Toggle,			SetConfigDevice,		0,					["Keys","Gamepad"]	],
-["left",				Menu_ElementType.Input,				"Left",					input_binding_get("left",,,"keyboard_and_mouse"),			input_binding_get("left",,,"gamepad"),	],
-["right",				Menu_ElementType.Input,				"Right",				input_binding_get("right",,,"keyboard_and_mouse"),			input_binding_get("right",,,"gamepad"),	],
-["Up",					Menu_ElementType.Input,				"Up",					input_binding_get("up",,,"keyboard_and_mouse"),			input_binding_get("up",,,"gamepad"),	],
-["Down",				Menu_ElementType.Input,				"Down",					input_binding_get("down",,,"keyboard_and_mouse"),			input_binding_get("down",,,"gamepad"),	],
-["Action",				Menu_ElementType.Input,				"Action",				input_binding_get("action",,,"keyboard_and_mouse"),			input_binding_get("action",,,"gamepad"),	],
-["Special",				Menu_ElementType.Input,				"Special",				input_binding_get("special",,,"keyboard_and_mouse"),			input_binding_get("special",,,"gamepad"),	],
-["Inventory",			Menu_ElementType.Input,				"Inventory",			input_binding_get("inventory",,,"keyboard_and_mouse"),			input_binding_get("inventory",,,"gamepad"),	],
-["Menu",				Menu_ElementType.Input,				"Menu",					input_binding_get("menu",,,"keyboard_and_mouse"),			input_binding_get("menu",,,"gamepad"),	],
+["Device to Config",	Menu_ElementType.Toggle,			ChangeConfigDevice,		0,					["Keys","Gamepad"]	],
+["Left",				Menu_ElementType.Input,				"left"					],
+["Right",				Menu_ElementType.Input,				"right"					],
+["Up",					Menu_ElementType.Input,				"up"					],
+["Down",				Menu_ElementType.Input,				"down"					],
+["Action",				Menu_ElementType.Input,				"action"				],
+["Special",				Menu_ElementType.Input,				"special"				],
+["Inventory",			Menu_ElementType.Input,				"inventory"				],
+["Menu",				Menu_ElementType.Input,				"menu"					],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
 
@@ -103,7 +103,13 @@ repeat(Array_Length)
 ConfigDevice = 0; //0 = Keyboard, 1 = Gamepad
 IsFading = false;
 IsInputting = false;
-CanChangeControls = false;
+CanChangeControls = true;
 NextPage = -1;
-PageIndex = 0;
+PageIndex = 1;
 
+input_ignore_key_remove(vk_alt)
+input_ignore_key_remove(vk_lalt)
+input_ignore_key_remove(vk_ralt)
+
+ChangeValueAlarm = new Alarm(8, function(){audio_play_sound(Settings_ChangeValue,1000,false)}, true)
+FirstChangeDone = false

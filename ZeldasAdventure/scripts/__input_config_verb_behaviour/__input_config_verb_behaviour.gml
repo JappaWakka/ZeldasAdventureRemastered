@@ -1,5 +1,5 @@
 //Maximum number of alternate bindings per verb per profile
-#macro INPUT_MAX_ALTERNATE_BINDINGS  2
+#macro INPUT_MAX_ALTERNATE_BINDINGS  1
 
 //Whether to tolerate incorrect number of alternate bindings when importing
 //This should typically be left as <false> to detect errors and such

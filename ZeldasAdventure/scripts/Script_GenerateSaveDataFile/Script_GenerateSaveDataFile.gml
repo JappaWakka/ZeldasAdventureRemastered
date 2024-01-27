@@ -4,7 +4,7 @@ function Script_GenerateSaveDataFile()
 	
 	for (var i = 1; i <= 3; i++)
 	{
-		var Section = "Save"string(i)
+		var Section = "Save" + string(i)
 		if !ini_section_exists(Section)
 		{
 			ini_write_string(Section, "Name", "EMPTY");
@@ -35,25 +35,12 @@ function Script_GenerateSaveDataFile()
 		ini_write_real("Options",	 "VolumeSoundFX",	1);
 		ini_write_real("Options",	 "VolumeDialogue",	1);
 	}
-	if !ini_section_exists("Controls")
-	{
-		ini_write_string("Controls",	 "Keyboard Left",		"left");
-		ini_write_string("Controls",	 "Keyboard Right",		"right");
-		ini_write_string("Controls",	 "Keyboard Up",			"Up");
-		ini_write_string("Controls",	 "Keyboard Down",		"Down");
-		ini_write_string("Controls",	 "Keyboard Action",		"Control");
-		ini_write_string("Controls",	 "Keyboard Special",	"Shift");
-		ini_write_string("Controls",	 "Keyboard Inventory",	"Space");
-		ini_write_string("Controls",	 "Keyboard Menu",		"Escape");
-										
-		ini_write_string("Controls",	 "Gamepad Left",		"D-Pad Left");
-		ini_write_string("Controls",	 "Gamepad Right",		"D-Pad Right");
-		ini_write_string("Controls",	 "Gamepad Up",			"D-Pad Up");
-		ini_write_string("Controls",	 "Gamepad Down",		"D-Pad Down");
-		ini_write_string("Controls",	 "Gamepad Action",		"A");
-		ini_write_string("Controls",	 "Gamepad Special",		"B");
-		ini_write_string("Controls",	 "Gamepad Inventory",	"X");
-		ini_write_string("Controls",	 "Gamepad Menu",		"Start");
-	}
 	ini_close()
+	
+	if file_exists(global.KeyBindingsFileName) = false
+	{
+		var KeyBindingsJSON = file_text_open_write(global.KeyBindingsFileName)
+		file_text_write_string(KeyBindingsJSON,input_system_export())
+		file_text_close(KeyBindingsJSON)
+	}
 }

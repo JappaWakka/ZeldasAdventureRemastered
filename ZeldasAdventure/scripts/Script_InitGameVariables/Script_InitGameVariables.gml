@@ -4,6 +4,7 @@ function InitGameVariables()
 	global.SavePlayerNames = array_create(3, "EMPTY")
 		
 	global.SaveDataFileName = "SaveData.ini"
+	global.KeyBindingsFileName = "KeyBindings.json"
 	Script_GenerateSaveDataFile()
 	
 	//System Variables
@@ -86,6 +87,11 @@ function InitGameVariables()
 	audio_group_set_gain(AudioGroup_SoundFX,global.VolumeSoundFX * global.VolumeMaster,0);
 	audio_group_set_gain(AudioGroup_Dialogue,global.VolumeDialogue * global.VolumeMaster,0);
 	ini_close()
+	
+	var KeyBindingsJSON = file_text_open_read(global.KeyBindingsFileName)
+	input_system_import(file_text_read_string(KeyBindingsJSON))
+	file_text_close(KeyBindingsJSON)
+	
 	//Entity Variables
 	#macro PlayerBaseSpeed 1.5
 	global.DeathAmountForTrigger = //Amount of Entities to defeat before spawning a certain Pickup

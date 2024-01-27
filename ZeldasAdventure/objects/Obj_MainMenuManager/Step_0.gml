@@ -18,8 +18,9 @@ else //SettingMenu
 						audio_play_sound(Settings_ChangeValue,1000,false)
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] += OptionChange;
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = clamp(CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]], 0, array_length(CurrentGrid[# 4, Menu_CurrentEntry[PageIndex]])-1)
+						script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]])
 					}
-					if input_check_pressed("action") = true or input_check_pressed("special") = true
+					if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
 					{
 						IsInputting = false
 					}
@@ -27,13 +28,28 @@ else //SettingMenu
 				case Menu_ElementType.Slider:
 					var OptionChange = input_check("right") - input_check("left");
 					var CurrentArray = CurrentGrid[# 4, Menu_CurrentEntry[PageIndex]]
+					
 					if OptionChange !=0
 					{
-						audio_play_sound(Settings_ChangeValue,1000,false)
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] += OptionChange * 0.01;
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = clamp(CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]], CurrentArray[0], CurrentArray[1])
+						script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],CurrentGrid[# 5, Menu_CurrentEntry[PageIndex]], CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]])
+						if FirstChangeDone = false
+						{
+							audio_play_sound(Settings_ChangeValue,1000,false)
+							FirstChangeDone = true
+						}
+						run_alarm(ChangeValueAlarm)
 					}
-					if input_check_pressed("action") = true or input_check_pressed("special") = true
+					else
+					{
+						if ChangeValueAlarm.time != ChangeValueAlarm.startTime
+						{
+							ChangeValueAlarm.restart();
+							FirstChangeDone = false;
+						}
+					}
+					if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
 					{
 						IsInputting = false
 					}
@@ -45,44 +61,61 @@ else //SettingMenu
 						audio_play_sound(Settings_ChangeValue,1000,false)
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] += OptionChange;
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = clamp(CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]], 0, 1)
+						script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]])
 					}
-					if input_check_pressed("action") = true or input_check_pressed("special") = true
+					if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
 					{
 						IsInputting = false
 					}
 					break;
 				case Menu_ElementType.Input:
-					var LastKey = keyboard_lastkey;
-					var LastButton = gamepad_last_input(0);
-					if ConfigDevice = 0
+					if input_binding_scan_in_progress() = false
 					{
-						if keyboard_check_pressed(LastKey) = true
+						input_binding_scan_start(
+						function(new_binding)
 						{
-							if LastKey != CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]]
+							var CurrentGrid = Menu_Pages[PageIndex];
+							if ConfigDevice = 0
 							{
-								audio_play_sound(Settings_ChangeValue,1000,false)
+								input_binding_set_safe(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],new_binding,,,"keyboard_and_mouse")
+								if input_binding_get(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],,,"keyboard_and_mouse")  != new_binding
+								{									
+									audio_play_sound(Settings_ChangeValue,1000,false)
+								}
 							}
-							CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = LastKey
+							else
+							{
+								if input_binding_get(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],,,"gamepad")  != new_binding
+								{
+									input_binding_set_safe(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],new_binding,,,"gamepad")
+									audio_play_sound(Settings_ChangeValue,1000,false)
+								}
+							}
+							CanChangeControls = false
+							alarm[0] = 5
+							IsInputting = false
 						}
-					}
-					else
-					{
-						if gamepad_button_check_pressed(0, LastButton) = true
+						,function()
 						{
-							if LastButton != CurrentGrid[# 4, Menu_CurrentEntry[PageIndex]]
-							{
-								audio_play_sound(Settings_ChangeValue,1000,false)
-							}
-							CurrentGrid[# 4, Menu_CurrentEntry[PageIndex]] = LastButton
-						}
+							CanChangeControls = false
+							alarm[0] = 5
+							IsInputting = false
+							
+						});
 					}
 					break;
 			}
 		}
 		else
 		{
+			if ChangeValueAlarm.time != ChangeValueAlarm.startTime
+			{
+				ChangeValueAlarm.restart();
+				FirstChangeDone = false;
+			}
+			
 			var OptionChange = input_check_pressed("down") - input_check_pressed("up");
-			if OptionChange !=0
+			if OptionChange !=0 and CanChangeControls = true
 			{
 				Menu_CurrentEntry[PageIndex] += OptionChange;
 				if (Menu_CurrentEntry[PageIndex] > GridHeight - 1)
@@ -94,11 +127,13 @@ else //SettingMenu
 					Menu_CurrentEntry[PageIndex] = GridHeight - 1;
 				}
 			}
-			if input_check_pressed("action") = true or input_check_pressed("special") = true
+			if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
 			{
 				switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 				{
 					case Menu_ElementType.ScriptRunner:
+						audio_play_sound(Settings_PageTransfer,1000,false)
+						script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]])
 						break;
 					case Menu_ElementType.PageTransfer:
 						global.FadeSpeed = 16;
@@ -110,11 +145,18 @@ else //SettingMenu
 					case Menu_ElementType.Shift:
 					case Menu_ElementType.Slider:
 					case Menu_ElementType.Toggle:
+						if IsInputting = false
+						{
+							IsInputting = true;
+						}
+						break;
 					case Menu_ElementType.Input:
+					if IsInputting = false and CanChangeControls = true
+					{
 						audio_play_sound(Settings_ChangeValue,1000,false)
 						IsInputting = true;
 						break;
-					
+					}
 				}
 			}
 		}

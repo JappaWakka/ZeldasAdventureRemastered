@@ -1,21 +1,21 @@
-function SaveSettings(){
-	input_default_key(vk_left, "left");
-	input_default_key(vk_right, "right");
-	input_default_key(vk_up, "Up");
-	input_default_key(vk_down, "Down");
+function Settings_Save()
+{
+	ini_open(global.SaveDataFileName)
+	if !ini_section_exists("Options")
+	{
+		ini_write_real("Options",	"WindowScale",		global.WindowScale);
+		ini_write_real("Options",	"Fullscreen",		real(global.Fullscreen));
+		ini_write_real("Options",	"ShowSubtitles",	real(global.ShowSubtitles));
+		ini_write_real("Options",	"RemasteredMode",	real(global.RemasteredMode));
+		ini_write_string("Options",	"CurrentLanguage",	global.CurrentLanguage);
+		ini_write_real("Options",	"VolumeMaster",		global.VolumeMaster);
+		ini_write_real("Options",	 "VolumeMusic",		global.VolumeMusic);
+		ini_write_real("Options",	 "VolumeSoundFX",	global.VolumeSoundFX);
+		ini_write_real("Options",	 "VolumeDialogue",	global.VolumeDialogue);
+	}
+	ini_close()
 	
-	input_default_key(vk_control, "Action"); //A Button
-	input_default_key(vk_alt, "Special"); //B Button
-	input_default_key(vk_space, "Inventory"); //Select Button
-	input_default_key(vk_escape, "Menu"); //Start Button
-	
-	input_default_gamepad_button(gp_padl, "left");
-	input_default_gamepad_button(gp_padr, "right");
-	input_default_gamepad_button(gp_padu, "Up");
-	input_default_gamepad_button(gp_padd, "Down");
-	
-	input_default_gamepad_button(gp_face1, "Action"); //A Button
-	input_default_gamepad_button(gp_face2, "Special"); //B Button
-	input_default_gamepad_button(gp_face3, "Inventory"); //X Button
-	input_default_gamepad_button(gp_start, "Menu"); //Start Button
+	var KeyBindingsJSON = file_text_open_write(global.KeyBindingsFileName)
+	file_text_write_string(KeyBindingsJSON,input_system_export())
+	file_text_close(KeyBindingsJSON)
 }

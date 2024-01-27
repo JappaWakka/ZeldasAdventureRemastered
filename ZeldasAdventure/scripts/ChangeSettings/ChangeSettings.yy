@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Controls_Reset",
+  "name": "ChangeSettings",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

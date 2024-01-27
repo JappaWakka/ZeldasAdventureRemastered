@@ -1,5 +1,5 @@
 /// @description Skip Cutscene
-if input_check_pressed("action") or input_check_pressed("special") or input_check_pressed("inventory")
+if input_check_pressed("action") or input_check_pressed("special") or input_check_pressed("inventory") or input_check_pressed("accept")
 {
 	if room = Room_Cutscene_Logos
 	{
