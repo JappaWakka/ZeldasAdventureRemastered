@@ -1,9 +1,149 @@
 var MainMenuBackground
 if PageIndex = 0 //Main Menu
 {
+	//Setup some variables
+	var CurrentGrid = Menu_Pages[PageIndex];
+	var SaveNameSeparationDistance = 22;
+	var CursorPositions =
+	[
+		[92,62],	//0 - Save A
+		[92,84],	//1 - Save B
+		[92,106],	//2 - Save C
+		[134,163],	//3 - Play
+		[134,196],	//4 - Delete
+		[237,196],	//5 - Tutorial
+		[340,196],	//6 - Settings
+		[333,163]	//7 - Exit
+	]
 	//Draw Background
 	MainMenuBackground = Sprite_MainMenu_Background
 	draw_sprite(MainMenuBackground,0,0,0);
+	
+	//Draw Save File Names
+	var SaveIndex = 0
+	var SaveNameY
+	repeat(3)
+	{
+		SaveNameY = 55 + (SaveIndex * SaveNameSeparationDistance);
+		var DrawColor = c_white;
+		draw_set_font(Font_SaveGameFont())
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+				
+		draw_text_color(108, SaveNameY, global.SavePlayerNames[SaveIndex],DrawColor,DrawColor,DrawColor,DrawColor,1);
+		
+		//Draw Selected Save Icon
+		if (SaveIndex == global.CurrentSaveGame)
+		{
+			draw_sprite(
+				Sprite_MainMenu_SelectedSave,
+				0,
+				89, //x
+				58 + (SaveIndex * SaveNameSeparationDistance), //y
+				);
+		}
+		
+		//Draw Cursor
+		if (SaveIndex == Menu_CurrentEntry[PageIndex])
+		{
+			draw_sprite(
+				Sprite_Cursor,
+				0,
+				CursorPositions[SaveIndex][0], //x
+				CursorPositions[SaveIndex][1], //y
+				);
+		}
+		
+		SaveIndex++;
+	}
+	if Menu_CurrentEntry[PageIndex] >= 3
+	{
+		//Draw Highlighted Buttons
+		switch Menu_CurrentEntry[PageIndex]
+		{
+			case 3:
+				draw_sprite(
+				Sprite_MainMenu_Button_Play_Hover,
+				0,
+				46, //x
+				139, //y
+				);
+				break;
+				
+			case 4:
+				draw_sprite(
+				Sprite_MainMenu_Button_Delete_Hover,
+				0,
+				47, //x
+				174, //y
+				);
+				break;
+				
+			case 5:
+				draw_sprite(
+				Sprite_MainMenu_Button_Settings_Hover,
+				0,
+				149, //x
+				174, //y
+				);
+				break;
+				
+			case 6:
+				draw_sprite(
+				Sprite_MainMenu_Button_Tutorial_Hover,
+				0,
+				252, //x
+				174, //y
+				);
+				break;
+				
+			case 7:
+				draw_sprite(
+				Sprite_MainMenu_Button_Exit_Hover,
+				0,
+				258, //x
+				130, //y
+				);
+				break;
+		}
+		
+		//Draw Cursor
+		draw_sprite(
+			Sprite_Cursor,
+			0,
+			CursorPositions[Menu_CurrentEntry[PageIndex]][0], //x
+			CursorPositions[Menu_CurrentEntry[PageIndex]][1], //y
+			);
+	}
+	//Draw Button Text
+		draw_set_color(make_color_rgb(55,23,16))
+		draw_set_halign(fa_center)
+		
+			//Regular Font
+			draw_set_font(Font_Menu)
+			
+				//Play
+				draw_text(90,146,UI_MainMenu_Main_Text(3))
+				
+				//Delete
+				draw_text(90,180,UI_MainMenu_Main_Text(4))
+				
+				//Settings
+				draw_text(194,180,UI_MainMenu_Main_Text(5))
+				
+				//Tutorial
+				draw_text(296,180,UI_MainMenu_Main_Text(6))
+				
+			//Fancy Font
+				//Exit
+				draw_set_font(Font_Fancy)
+				draw_text(298,138,UI_MainMenu_Main_Text(7))
+				draw_text(298,138,UI_MainMenu_Main_Text(7)) // Make it extra thick
+		
+		//Reset Font Properties
+		draw_set_color(c_white)
+		draw_set_halign(fa_left)
+		
 }
 else //SettingMenu
 {
@@ -38,7 +178,7 @@ else //SettingMenu
 	{
 		LeftTextY = StartPosition.y + (ElementIndexLeft * SeparationDistance.y);
 		var DrawColor = c_black;
-		draw_set_font(Font_Settings)
+		draw_set_font(Font_Menu)
 		if (ElementIndexLeft == Menu_CurrentEntry[PageIndex])
 		{
 			DrawColor = make_color_rgb(141,48,18);

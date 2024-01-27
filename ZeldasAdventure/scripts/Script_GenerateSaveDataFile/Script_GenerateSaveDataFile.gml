@@ -2,7 +2,7 @@ function Script_GenerateSaveDataFile()
 {
 	ini_open(global.SaveDataFileName)
 	
-	for (var i = 1; i <= 3; i++)
+	for (var i = 0; i <= 2; i++)
 	{
 		var Section = "Save" + string(i)
 		if !ini_section_exists(Section)
@@ -18,7 +18,9 @@ function Script_GenerateSaveDataFile()
 			ini_write_real(Section, "CurrentTileY", 22);
 			ini_write_real(Section, "CurrentRubies", 0);
 			ini_write_real(Section, "CurrentKeys", 0);
-			ini_write_string(Section, "Inventory", "");
+			ini_write_string(Section, "InventoryTreasures", "");
+			ini_write_string(Section, "InventorySpells", "");
+			ini_write_string(Section, "InventoryCelestialSigns", "");
 		}
 	}
 	

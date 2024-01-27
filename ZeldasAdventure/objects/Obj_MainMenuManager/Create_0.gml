@@ -25,10 +25,10 @@ enum SaveGames
 }
 
 //Fetch the Save Game names from the Save Data
-for (var i = 1; i <= 3; i++)
+for (var i = 0; i <= 2; i++)
 {
 	ini_open(global.SaveDataFileName)
-	var Section = "Save"string(i)
+	var Section = "Save" + string(i)
 	var SaveName = ini_read_string(Section, "Name", "[DEFAULT]")
 	if SaveName != "[DEFAULT]" && SaveName != ""
 	{
@@ -42,10 +42,10 @@ for (var i = 1; i <= 3; i++)
 }
 
 ds_Menu_Main = CreateMenuPage(
-["Save A",				Menu_ElementType.ScriptRunner,		SaveGame_Select,		SaveGames.Save1			],
-["Save B",				Menu_ElementType.ScriptRunner,		SaveGame_Select,		SaveGames.Save2			],
-["Save C",				Menu_ElementType.ScriptRunner,		SaveGame_Select,		SaveGames.Save3			],
-["Play",				Menu_ElementType.ScriptRunner,		SaveGame_Play			],
+["Save A",				Menu_ElementType.ScriptRunner,		SaveGame_Select			],
+["Save B",				Menu_ElementType.ScriptRunner,		SaveGame_Select			],
+["Save C",				Menu_ElementType.ScriptRunner,		SaveGame_Select			],
+["Play",				Menu_ElementType.ScriptRunner,		SaveGame_Play,			],
 ["Delete",				Menu_ElementType.ScriptRunner,		SaveGame_Delete			],
 ["Tutorial",			Menu_ElementType.ScriptRunner,		StartTutorial			],
 ["Settings",			Menu_ElementType.PageTransfer,		Menu_Page.Settings		],
@@ -105,7 +105,7 @@ IsFading = false;
 IsInputting = false;
 CanChangeControls = true;
 NextPage = -1;
-PageIndex = 1;
+PageIndex = 0;
 
 input_ignore_key_remove(vk_alt)
 input_ignore_key_remove(vk_lalt)
