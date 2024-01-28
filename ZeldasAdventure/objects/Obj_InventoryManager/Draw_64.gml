@@ -79,11 +79,11 @@ if Alpha = 255
 {
 	if InventoryIndex = 2
 	{
-		draw_sprite(Sprite_Inventory_Button_Map_Hover,0,39,35)
+		draw_sprite(Sprite_Inventory_Button_Map,0,39,35)
 	}
 	if InventoryIndex = 3
 	{
-		draw_sprite(Sprite_Inventory_Button_Exit_Hover,0,269,35)
+		draw_sprite(Sprite_Inventory_Button_Exit,0,269,35)
 	}
 	draw_set_font(Font_Fancy)
 	draw_set_color(make_color_rgb(55,23,16))
@@ -109,22 +109,22 @@ if Alpha = 255
 	{
 		if Scrolled[1] = 0
 		{
-			draw_sprite(Sprite_Inventory_Button_ArrowLeft_Hover,0,26,114)
+			draw_sprite(Sprite_Inventory_Button_ArrowLeft,0,26,114)
 		}
 		if Scrolled[1] = 1
 		{
-			draw_sprite(Sprite_Inventory_Button_ArrowLeft_Hover,0,26,172)
+			draw_sprite(Sprite_Inventory_Button_ArrowLeft,0,26,172)
 		}
 	}
 	if Scrolled[0] = 1
 	{
 		if Scrolled[1] = 0
 		{
-			draw_sprite(Sprite_Inventory_Button_ArrowRight_Hover,0,290,115)
+			draw_sprite(Sprite_Inventory_Button_ArrowRight,0,290,115)
 		}
 		if Scrolled[1] = 1
 		{
-			draw_sprite(Sprite_Inventory_Button_ArrowRight_Hover,0,290,173)
+			draw_sprite(Sprite_Inventory_Button_ArrowRight,0,290,173)
 		}
 	}
 	

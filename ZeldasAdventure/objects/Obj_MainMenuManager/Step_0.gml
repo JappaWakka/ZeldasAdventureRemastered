@@ -9,13 +9,13 @@ if PageIndex = 0 //Main Menu
 			switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 			{
 				case Menu_ElementType.ScriptRunner:
-					audio_play_sound(Settings_PageTransfer,1000,false)
+					audio_play_sound(Settings_Accept,1000,false)
 					script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]])
 					break;
 				case Menu_ElementType.PageTransfer:
 					global.FadeSpeed = 16;
 					global.FadeProgress = 0;
-					audio_play_sound(Settings_PageTransfer,1000,false)
+					audio_play_sound(Settings_Accept,1000,false)
 					IsFading = true;
 					NextPage = CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]]
 					break;
@@ -53,7 +53,7 @@ if PageIndex = 0 //Main Menu
 					}
 					break;
 				case 7:
-					if OptionChangeY = -1
+					if OptionChangeX = -1
 					{
 						Menu_CurrentEntry[PageIndex] = 3;
 					}
@@ -65,22 +65,48 @@ if PageIndex = 0 //Main Menu
 			switch Menu_CurrentEntry[PageIndex]
 			{
 				case 0:
+					if OptionChangeY = -1
+					{
+						Menu_CurrentEntry[PageIndex] = 5;
+					}
+					if OptionChangeY = 1
+					{
+						Menu_CurrentEntry[PageIndex] += OptionChangeY;
+					}
+					break;
 				case 1:
 				case 2:
 				case 3:
 					Menu_CurrentEntry[PageIndex] += OptionChangeY;
 					break;
 				case 4:
-				case 5:
 					if OptionChangeY = -1
 					{
 						Menu_CurrentEntry[PageIndex] = 3;
+					}
+					if OptionChangeY = 1
+					{
+						Menu_CurrentEntry[PageIndex] = 0;
+					}
+					break;
+				case 5:
+					if OptionChangeY = -1
+					{
+						Menu_CurrentEntry[PageIndex] = 7;
+					}
+					if OptionChangeY = 1
+					{
+						Menu_CurrentEntry[PageIndex] = 0;
 					}
 					break;
 				case 6:
 					if OptionChangeY = -1
 					{
 						Menu_CurrentEntry[PageIndex] = 7;
+					}
+					if OptionChangeY = 1
+					{
+						Menu_CurrentEntry[PageIndex] = 0;
 					}
 					break;
 				case 7:
@@ -101,6 +127,113 @@ if PageIndex = 0 //Main Menu
 			if (Menu_CurrentEntry[PageIndex] < 0)
 			{
 				Menu_CurrentEntry[PageIndex] = GridHeight - 1;
+			}
+		}
+	}
+	else
+	{
+		if NextPage != -1 && global.FadeProgress > 0
+		{
+			PageIndex = NextPage;
+			IsFading = false;
+			NextPage = -1;
+			global.FadeSpeed = 8;
+		}
+	}
+}
+else if PageIndex = 5 //Name Input Menu
+{
+	if IsFading == false
+	{
+		
+		var CurrentGrid = Menu_Pages[PageIndex];
+	
+		if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
+		{
+			//All entries in this menu are ScriptRunners
+			script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],CurrentGrid[# 0, Menu_CurrentEntry[PageIndex]])
+		}
+		var OptionChangeX = input_check_pressed("right") - input_check_pressed("left");
+		var OptionChangeY = input_check_pressed("down") - input_check_pressed("up");
+		if OptionChangeX !=0
+		{
+			if Menu_CurrentEntry[PageIndex] != 27
+			{
+				switch Menu_CurrentEntry[PageIndex]
+				{
+					case 0:
+					case 9:
+					case 18:
+						if OptionChangeX = -1
+						{
+							Menu_CurrentEntry[PageIndex] += 8;
+						}
+						else
+						{
+							Menu_CurrentEntry[PageIndex] += OptionChangeX;
+						}
+						break;
+					case 8:
+					case 17:
+					case 26:
+						if OptionChangeX = 1
+						{
+							Menu_CurrentEntry[PageIndex] -= 8;
+						}
+						else
+						{
+							Menu_CurrentEntry[PageIndex] += OptionChangeX;
+						}
+						break;
+					default:
+						Menu_CurrentEntry[PageIndex] += OptionChangeX;
+						break;
+				}
+				
+			}
+		}
+		if OptionChangeY !=0
+		{
+			if Menu_CurrentEntry[PageIndex] <= 8
+			{
+				if OptionChangeY = -1
+				{
+					Menu_CurrentEntry[PageIndex] = 27
+				}
+				else if OptionChangeY = 1
+				{
+					Menu_CurrentEntry[PageIndex] += 9
+				}
+			}
+			else if Menu_CurrentEntry[PageIndex] = 27
+			{
+				if OptionChangeY = 1
+				{
+					Menu_CurrentEntry[PageIndex] = 0
+				}
+			}
+			else if Menu_CurrentEntry[PageIndex] >= 18 and Menu_CurrentEntry[PageIndex] <= 26
+			{
+				
+				if OptionChangeY = -1
+				{
+					Menu_CurrentEntry[PageIndex] -= 9
+				}
+				else if OptionChangeY = 1
+				{
+					Menu_CurrentEntry[PageIndex] -= 18
+				}
+			}
+			else
+			{
+				if OptionChangeY = -1
+				{
+					Menu_CurrentEntry[PageIndex] -= 9
+				}
+				else if OptionChangeY = 1
+				{
+					Menu_CurrentEntry[PageIndex] += 9
+				}
 			}
 		}
 	}
@@ -236,13 +369,13 @@ else //SettingMenu
 				switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 				{
 					case Menu_ElementType.ScriptRunner:
-						audio_play_sound(Settings_PageTransfer,1000,false)
+						audio_play_sound(Settings_Accept,1000,false)
 						script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]])
 						break;
 					case Menu_ElementType.PageTransfer:
 						global.FadeSpeed = 16;
 						global.FadeProgress = 0;
-						audio_play_sound(Settings_PageTransfer,1000,false)
+						audio_play_sound(Settings_Accept,1000,false)
 						IsFading = true;
 						NextPage = CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]]
 						break;

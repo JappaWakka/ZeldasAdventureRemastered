@@ -1,8 +1,8 @@
 function InitGameVariables()
 {
 	//Save File Variables
-	global.SavePlayerNames = array_create(3, "EMPTY")
-		
+	global.SavePlayerNames = array_create(3,"")
+	
 	global.SaveDataFileName = "SaveData.ini"
 	global.KeyBindingsFileName = "KeyBindings.json"
 	Script_GenerateSaveDataFile()
@@ -46,8 +46,18 @@ function InitGameVariables()
 
 	global.InventorySlots_Max[2] = INVENTORY_SLOTS_CELESTIALSIGNS
 	
+	//Fetch the Save Game names from the Save Data
+	for (var i = 0; i <= 2; i++)
+	{
+		ini_open(global.SaveDataFileName)
+		var Section = "Save" + string(i)
+		var SaveName = ini_read_string(Section, "Name", "")
+		global.SavePlayerNames[i] = SaveName
+		ini_close()
+	}
+	
 	//Player Variables
-	global.Name = "EMPTY";
+	global.Name = "ZELDA";
 	global.CurrentMap = "Overworld"; //To determine which map to display in the inventory
 	global.CurrentTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";

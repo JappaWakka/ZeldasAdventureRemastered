@@ -24,31 +24,15 @@ enum SaveGames
 	Save3
 }
 
-//Fetch the Save Game names from the Save Data
-for (var i = 0; i <= 2; i++)
-{
-	ini_open(global.SaveDataFileName)
-	var Section = "Save" + string(i)
-	var SaveName = ini_read_string(Section, "Name", "[DEFAULT]")
-	if SaveName != "[DEFAULT]" && SaveName != ""
-	{
-		global.SavePlayerNames[i] = SaveName
-	}
-	else
-	{
-		global.SavePlayerNames[i] = "EMPTY"
-	}
-	ini_close()
-}
 
 ds_Menu_Main = CreateMenuPage(
 ["Save A",				Menu_ElementType.ScriptRunner,		SaveGame_Select			],
 ["Save B",				Menu_ElementType.ScriptRunner,		SaveGame_Select			],
 ["Save C",				Menu_ElementType.ScriptRunner,		SaveGame_Select			],
-["Play",				Menu_ElementType.ScriptRunner,		SaveGame_Play,			],
+["Play",				Menu_ElementType.ScriptRunner,		SaveGame_Play			],
 ["Delete",				Menu_ElementType.ScriptRunner,		SaveGame_Delete			],
-["Tutorial",			Menu_ElementType.ScriptRunner,		StartTutorial			],
 ["Settings",			Menu_ElementType.PageTransfer,		Menu_Page.Settings		],
+["Tutorial",			Menu_ElementType.ScriptRunner,		StartTutorial			],
 ["Exit",				Menu_ElementType.ScriptRunner,		QuitGame				]
 );
 
@@ -91,7 +75,38 @@ ds_Menu_Controls = CreateMenuPage(
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
 
-Menu_Pages = [ds_Menu_Main, ds_Menu_Settings, ds_Menu_Game, ds_Menu_Audio, ds_Menu_Controls];
+ds_Menu_Name = CreateMenuPage(
+["A",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["B",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["C",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["D",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["E",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["F",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["G",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["H",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["I",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["J",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["K",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["L",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["M",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["N",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["O",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["P",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["Q",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["R",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["S",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["T",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["U",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["V",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["W",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["X",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["Y",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["Z",				Menu_ElementType.ScriptRunner,		NameEntry_AddChar			],
+["Backspace",		Menu_ElementType.ScriptRunner,		NameEntry_RemoveChar		],
+["Done",			Menu_ElementType.ScriptRunner,		NameEntry_SaveName			]
+);
+
+Menu_Pages = [ds_Menu_Main, ds_Menu_Settings, ds_Menu_Game, ds_Menu_Audio, ds_Menu_Controls, ds_Menu_Name];
 var i = 0, Array_Length = array_length(Menu_Pages);
 repeat(Array_Length)
 {
@@ -113,3 +128,8 @@ input_ignore_key_remove(vk_ralt)
 
 ChangeValueAlarm = new Alarm(8, function(){audio_play_sound(Settings_ChangeValue,1000,false)}, true)
 FirstChangeDone = false
+ConfirmDelete = 0
+
+InputName = ""
+
+CurrentCharPositionObject = instance_create_layer(88,92,"Instances",Obj_NameEntryMenu_CurrentCharPosition)

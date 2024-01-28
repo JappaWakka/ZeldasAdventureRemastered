@@ -1,4 +1,4 @@
-var MainMenuBackground
+var MenuBackground
 if PageIndex = 0 //Main Menu
 {
 	//Setup some variables
@@ -6,9 +6,9 @@ if PageIndex = 0 //Main Menu
 	var SaveNameSeparationDistance = 22;
 	var CursorPositions =
 	[
-		[92,62],	//0 - Save A
-		[92,84],	//1 - Save B
-		[92,106],	//2 - Save C
+		[89,62],	//0 - Save A
+		[89,84],	//1 - Save B
+		[89,106],	//2 - Save C
 		[134,163],	//3 - Play
 		[134,196],	//4 - Delete
 		[237,196],	//5 - Tutorial
@@ -16,8 +16,8 @@ if PageIndex = 0 //Main Menu
 		[333,163]	//7 - Exit
 	]
 	//Draw Background
-	MainMenuBackground = Sprite_MainMenu_Background
-	draw_sprite(MainMenuBackground,0,0,0);
+	MenuBackground = Sprite_MainMenu_Background
+	draw_sprite(MenuBackground,0,0,0);
 	
 	//Draw Save File Names
 	var SaveIndex = 0
@@ -25,20 +25,31 @@ if PageIndex = 0 //Main Menu
 	repeat(3)
 	{
 		SaveNameY = 55 + (SaveIndex * SaveNameSeparationDistance);
-		var DrawColor = c_white;
-		draw_set_font(Font_SaveGameFont())
+		draw_set_font(Font_Menu)
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
-				
-		draw_text_color(108, SaveNameY, global.SavePlayerNames[SaveIndex],DrawColor,DrawColor,DrawColor,DrawColor,1);
 		
+		var GradientColor0 = make_color_rgb(255,247,107)
+		var GradientColor1 = make_color_rgb(198,123,16)
+		var PlayerName
+		if global.SavePlayerNames[SaveIndex] != ""
+		{
+			PlayerName = global.SavePlayerNames[SaveIndex]
+		}
+		else
+		{
+			PlayerName = "EMPTY"
+		}
+		
+		draw_text_color(99, SaveNameY,PlayerName,GradientColor0,GradientColor0,GradientColor1,GradientColor1,1);
+				
 		//Draw Selected Save Icon
 		if (SaveIndex == global.CurrentSaveGame)
 		{
 			draw_sprite(
 				Sprite_MainMenu_SelectedSave,
 				0,
-				89, //x
+				85, //x
 				58 + (SaveIndex * SaveNameSeparationDistance), //y
 				);
 		}
@@ -46,6 +57,7 @@ if PageIndex = 0 //Main Menu
 		//Draw Cursor
 		if (SaveIndex == Menu_CurrentEntry[PageIndex])
 		{
+			
 			draw_sprite(
 				Sprite_Cursor,
 				0,
@@ -63,7 +75,7 @@ if PageIndex = 0 //Main Menu
 		{
 			case 3:
 				draw_sprite(
-				Sprite_MainMenu_Button_Play_Hover,
+				Sprite_MainMenu_Button_Play,
 				0,
 				46, //x
 				139, //y
@@ -72,7 +84,7 @@ if PageIndex = 0 //Main Menu
 				
 			case 4:
 				draw_sprite(
-				Sprite_MainMenu_Button_Delete_Hover,
+				Sprite_MainMenu_Button_Delete,
 				0,
 				47, //x
 				174, //y
@@ -81,7 +93,7 @@ if PageIndex = 0 //Main Menu
 				
 			case 5:
 				draw_sprite(
-				Sprite_MainMenu_Button_Settings_Hover,
+				Sprite_MainMenu_Button_Settings,
 				0,
 				149, //x
 				174, //y
@@ -90,7 +102,7 @@ if PageIndex = 0 //Main Menu
 				
 			case 6:
 				draw_sprite(
-				Sprite_MainMenu_Button_Tutorial_Hover,
+				Sprite_MainMenu_Button_Tutorial,
 				0,
 				252, //x
 				174, //y
@@ -99,7 +111,7 @@ if PageIndex = 0 //Main Menu
 				
 			case 7:
 				draw_sprite(
-				Sprite_MainMenu_Button_Exit_Hover,
+				Sprite_MainMenu_Button_Exit,
 				0,
 				258, //x
 				130, //y
@@ -123,27 +135,118 @@ if PageIndex = 0 //Main Menu
 			draw_set_font(Font_Menu)
 			
 				//Play
-				draw_text(90,146,UI_MainMenu_Main_Text(3))
+				draw_text(90,146,UI_MainMenu_Text(3))
 				
 				//Delete
-				draw_text(90,180,UI_MainMenu_Main_Text(4))
+				draw_text(90,180,UI_MainMenu_Text(4))
 				
 				//Settings
-				draw_text(194,180,UI_MainMenu_Main_Text(5))
+				draw_text(194,180,UI_MainMenu_Text(5))
 				
 				//Tutorial
-				draw_text(296,180,UI_MainMenu_Main_Text(6))
+				draw_text(296,180,UI_MainMenu_Text(6))
 				
 			//Fancy Font
 				//Exit
 				draw_set_font(Font_Fancy)
-				draw_text(298,138,UI_MainMenu_Main_Text(7))
-				draw_text(298,138,UI_MainMenu_Main_Text(7)) // Make it extra thick
+				draw_text(298,138,UI_MainMenu_Text(7))
+				draw_text(298,138,UI_MainMenu_Text(7)) // Make it extra thick
 		
 		//Reset Font Properties
 		draw_set_color(c_white)
 		draw_set_halign(fa_left)
 		
+}
+else if PageIndex = 5 //Name Input Menu
+{
+	//Setup some variables
+	var CurrentGrid = Menu_Pages[PageIndex];
+	var CharButtonsDistance = 
+	{
+		x: 28,
+		y: 25
+	}
+	var CurrentIndex = 0
+	var CurrentColumn = 0
+	var CurrentRow = 0
+	
+	//Draw Background
+	MenuBackground = Sprite_NameEntryMenu_Background
+	draw_sprite(MenuBackground,0,0,0);
+	
+	//Draw Active Key Buttons
+	repeat(27)
+	{
+		if CurrentIndex = Menu_CurrentEntry[PageIndex]
+		{
+			draw_sprite(
+				Sprite_NameEntryMenu_Button_Keys,
+				CurrentIndex,
+				67 + CurrentColumn * CharButtonsDistance.x, //x
+				127 + CurrentRow * CharButtonsDistance.y, //y
+				)
+			//Draw Cursor
+			draw_sprite(
+				Sprite_Cursor,
+				0,
+				67 + CurrentColumn * CharButtonsDistance.x + 24, //x
+				127 + CurrentRow * CharButtonsDistance.y + 16, //y
+				);
+		}
+		CurrentColumn++
+		if CurrentColumn > 8
+		{
+			CurrentRow += 1
+			CurrentColumn = 0
+		}		
+		CurrentIndex++
+	}
+	//Draw Active Done Button
+	if Menu_CurrentEntry[PageIndex] = 27
+	{
+		draw_sprite(
+				Sprite_NameEntryMenu_Button_Done,
+				0,
+				274, //x
+				41, //y
+				);
+		
+		//Draw Cursor
+		draw_sprite(
+			Sprite_Cursor,
+			0,
+			329, //x
+			75, //y
+			);
+	}
+	
+	//Draw Name Input
+		draw_set_font(Font_Menu)
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+		
+		var GradientColor0 = make_color_rgb(255,247,107)
+		var GradientColor1 = make_color_rgb(198,123,16)
+		draw_text_color(88,92,InputName,GradientColor0,GradientColor0,GradientColor1,GradientColor1,1);
+		
+		CurrentCharPositionObject.x = 92 + string_width(Obj_MainMenuManager.InputName)
+	
+	//Draw Instruction Title
+		draw_set_halign(fa_center)
+		draw_set_color(c_black)
+		draw_set_font(Font_Regular)
+		
+		draw_text(180,54,UI_NameEntryMenu_Text(0))
+	
+	//Draw Done Button Text
+		draw_set_font(Font_Fancy)
+		draw_text(314,50,UI_NameEntryMenu_Text(1))
+		draw_text(314,50,UI_NameEntryMenu_Text(1)) // Make it extra thick
+	
+	//Reset Font Properties
+		draw_set_color(c_white)
+		draw_set_halign(fa_left)
+	
 }
 else //SettingMenu
 {
@@ -163,8 +266,8 @@ else //SettingMenu
 	}
 	
 	//Draw Background
-	MainMenuBackground = Sprite_SettingsMenu_Background
-	draw_sprite(MainMenuBackground,0,0,0);
+	MenuBackground = Sprite_SettingsMenu_Background
+	draw_sprite(MenuBackground,0,0,0);
 	
 	//Draw Elements on Left Side
 	draw_set_valign(fa_middle);
@@ -184,7 +287,7 @@ else //SettingMenu
 			DrawColor = make_color_rgb(141,48,18);
 		}
 		
-		draw_text_color(LeftTextX, LeftTextY, CurrentGrid[# 0, ElementIndexLeft],DrawColor,DrawColor,DrawColor,DrawColor,1);
+		draw_text_color(LeftTextX, LeftTextY, UI_SettingsMenu_Text(PageIndex,ElementIndexLeft),DrawColor,DrawColor,DrawColor,DrawColor,1);
 		
 		ElementIndexLeft++;
 	}
@@ -230,7 +333,7 @@ else //SettingMenu
 					{
 						DrawColor = c_black;
 					}
-					draw_text_color(RightTextX, RightTextY, LeftShift + CurrentArray[CurrentValue] + RightShift,DrawColor,DrawColor,DrawColor,DrawColor,1);
+					draw_text_color(RightTextX, RightTextY, LeftShift + UI_SettingsMenu_Text(PageIndex,ElementIndexRight,CurrentValue) + RightShift,DrawColor,DrawColor,DrawColor,DrawColor,1);
 					break;
 				
 				case Menu_ElementType.Slider:
@@ -284,8 +387,8 @@ else //SettingMenu
 						DrawAlpha0 = 0.5
 						DrawAlpha1 = 1
 					}
-					draw_text_color(RightTextX, RightTextY, CurrentArray[0],DrawColor0,DrawColor0,DrawColor0,DrawColor0,DrawAlpha0);
-					draw_text_color(RightTextX + string_width(CurrentArray[0]) + SeparationDistance.x, RightTextY, CurrentArray[1],DrawColor1,DrawColor1,DrawColor1,DrawColor1,DrawAlpha1);
+					draw_text_color(RightTextX, RightTextY,UI_SettingsMenu_Text(PageIndex,ElementIndexRight,0),DrawColor0,DrawColor0,DrawColor0,DrawColor0,DrawAlpha0);
+					draw_text_color(RightTextX + string_width(UI_SettingsMenu_Text(PageIndex,ElementIndexRight,0)) + SeparationDistance.x, RightTextY,UI_SettingsMenu_Text(PageIndex,ElementIndexRight,1),DrawColor1,DrawColor1,DrawColor1,DrawColor1,DrawAlpha1);
 					break;
 				case Menu_ElementType.Input:
 					var BindingName = CurrentGrid[# 2, ElementIndexRight]

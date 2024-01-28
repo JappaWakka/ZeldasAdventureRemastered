@@ -1,7 +1,7 @@
 function Settings_Save()
 {
 	ini_open(global.SaveDataFileName)
-	if !ini_section_exists("Options")
+	if ini_section_exists("Options")
 	{
 		ini_write_real("Options",	"WindowScale",		global.WindowScale);
 		ini_write_real("Options",	"Fullscreen",		real(global.Fullscreen));
