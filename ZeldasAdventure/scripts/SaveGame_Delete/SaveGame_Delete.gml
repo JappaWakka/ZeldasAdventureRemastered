@@ -11,7 +11,7 @@ function SaveGame_Delete()
 			ini_write_string(Section, "CurrentMap", "Overworld");
 			ini_write_string(Section, "InventoryCelestialSigns", "");
 			ini_write_string(Section, "InventorySpells", "");
-			ini_write_string(Section, "InventoryTreasures", "");
+			ini_write_string(Section, "InventoryTreasure", "");
 			ini_write_real(Section, "CurrentKeys", 0);
 			ini_write_real(Section, "CurrentRubies", 0);
 			ini_write_real(Section, "CurrentTileY", 22);

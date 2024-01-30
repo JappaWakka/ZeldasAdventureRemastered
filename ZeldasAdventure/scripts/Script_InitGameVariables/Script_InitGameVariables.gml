@@ -65,6 +65,7 @@ function InitGameVariables()
 	global.CurrentRubies = 0;
 	global.CurrentKeys = 0;
 	global.Inventory = {Treasure : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
+	global.Register = ds_list_create()
 	
 	global.CurrentHealth = 60;
 	global.MaxHealth = 60;

@@ -117,6 +117,8 @@ repeat(Array_Length)
 //Other Variables
 ConfigDevice = 0; //0 = Keyboard, 1 = Gamepad
 IsFading = false;
+HasPressedPlay = false;
+IsQuiting = false;
 IsInputting = false;
 CanChangeControls = true;
 NextPage = -1;
@@ -131,5 +133,7 @@ FirstChangeDone = false
 ConfirmDelete = 0
 
 InputName = ""
-
 CurrentCharPositionObject = instance_create_layer(88,92,"Instances",Obj_NameEntryMenu_CurrentCharPosition)
+
+//Reset player variables whenever you're entering the main menu
+ResetPlayerVariables()

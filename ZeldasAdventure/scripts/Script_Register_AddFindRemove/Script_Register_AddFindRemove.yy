@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Script_Inventory_AddFindRemoveItem",
+  "name": "Script_Register_AddFindRemove",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

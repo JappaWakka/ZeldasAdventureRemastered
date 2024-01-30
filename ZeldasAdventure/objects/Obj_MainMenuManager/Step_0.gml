@@ -1,6 +1,20 @@
 if PageIndex = 0 //Main Menu
 {
-	if IsFading == false
+	if IsQuiting = true
+	{
+		if global.FadeProgress = 1
+		{
+			game_end()
+		}
+	}
+	else if HasPressedPlay = true
+	{
+		if global.FadeProgress = 1
+		{			
+			room_goto(Room_Overworld);
+		}
+	}
+	else if IsFading == false
 	{
 		var CurrentGrid = Menu_Pages[PageIndex];
 		var GridHeight = ds_grid_height(CurrentGrid);

@@ -3,6 +3,6 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 {
 	if global.HasSpawned = true
 	{
-		global.PlayerSpawn = "Spawn_Shrine1"
+		global.CurrentMap = "ShrineEarth"
 	}
 }

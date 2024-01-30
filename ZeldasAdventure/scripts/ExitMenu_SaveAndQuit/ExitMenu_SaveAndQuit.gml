@@ -1,0 +1,90 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function ExitMenu_SaveAndQuit()
+{
+	ini_open(global.SaveDataFileName)
+		var Section = "Save" + string(global.CurrentSaveGame)
+		if ini_section_exists(Section)
+		{
+			ini_write_string(Section, "CurrentMap", global.CurrentMap);
+			
+			if !ds_list_empty(global.Inventory.CelestialSigns)
+			{
+				var SaveString = ""
+				var size = ds_list_size(global.Inventory.CelestialSigns);
+				for (var i = 0; i < size; i++)
+				{
+					if SaveString = ""
+					{
+						SaveString = SaveString + string(Item_FindValue(i,2))
+					}
+					else
+					{
+						SaveString = SaveString + "," + string(Item_FindValue(i,2))
+					}
+				}
+			    ini_write_string(Section, "InventoryCelestialSigns", SaveString);
+			}
+			if !ds_list_empty(global.Inventory.Spells)
+			{
+				var SaveString = ""
+				var size = ds_list_size(global.Inventory.Spells);
+				for (var i = 0; i < size; i++)
+				{
+					if SaveString = ""
+					{
+						SaveString = SaveString + string(Item_FindValue(i,1))
+					}
+					else
+					{
+						SaveString = SaveString + "," + string(Item_FindValue(i,1))
+					}
+				}
+				ini_write_string(Section, "InventorySpells", SaveString);
+			}
+			if !ds_list_empty(global.Inventory.Treasures)
+			{
+				var SaveString = ""
+				var size = ds_list_size(global.Inventory.Treasures);
+				for (var i = 0; i < size; i++)
+				{
+					if SaveString = ""
+					{
+						SaveString = SaveString + string(Item_FindValue(i,0))
+					}
+					else
+					{
+						SaveString = SaveString + "," + string(Item_FindValue(i,0))
+					}
+				}
+				ini_write_string(Section, "InventoryTreasure", SaveString);
+			}
+			if !ds_list_empty(global.Register)
+			{
+				var SaveString = ""
+				var size = ds_list_size(global.Register);
+				for (var i = 0; i < size; i++)
+				{
+					if SaveString = ""
+					{
+						SaveString = SaveString + string(Register_FindValue(i))
+					}
+					else
+					{
+						SaveString = SaveString + "," + string(Register_FindValue(i))
+					}
+				}
+				ini_write_string(Section, "InventoryTreasure", SaveString);
+			}
+			ini_write_real(Section, "CurrentKeys", global.CurrentKeys);
+			ini_write_real(Section, "CurrentRubies", global.CurrentRubies);
+			ini_write_string(Section, "PlayerSpawn", global.PlayerSpawn);
+			ini_write_real(Section, "Defense", global.Defense);
+			ini_write_real(Section, "Power", global.Power);
+			ini_write_real(Section, "MaxHealth", global.MaxHealth);
+			ini_write_real(Section, "CurrentHealth", global.CurrentHealth);
+		}
+		ini_close()
+		
+		global.FadeProgress = 0;
+}
