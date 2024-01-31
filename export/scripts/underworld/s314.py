@@ -1,0 +1,68 @@
+# This is not real python, but approxiamates it.
+
+# Actor description 0
+# Used for actors: [0]
+class enemy_vapora:
+	def onDeathOrRaftRideFinished(self):
+		op12_0x2cd0(actor=cast[1])
+		despawn(actor=cast[2])
+		despawn(actor=cast[3])
+		save[VAPORA_DEFEATED] = 1 # 0x1, b'\x00\x01'
+		
+	def onLoad_maybe(self):
+		if save[VAPORA_DEFEATED] == 0:
+			spawnAndAnimate(actor=self)
+			playVoiceLine(source=self, soundId=0)
+		
+# Actor description 2
+# Used for actors: [1]
+class item_treasure_rug:
+	def onTouch(self):
+		save[Rug] = 1 # 0x1, b'\x00\x01'
+		showSparklesAndDespawn(actor=self)
+		
+	def onLoad_maybe(self):
+		if save[VAPORA_DEFEATED] == 1 and save[Rug] == 0:
+			spawnAndAnimate(actor=self)
+		
+# Actor description 3
+# Used for actors: [2, 3]
+class env_laserWall:
+	def onLoad_maybe(self):
+		if save[VAPORA_DEFEATED] == 1:
+			nop
+		else:
+			spawnAndAnimate(actor=self)
+		
+class Cell:
+	def onEntry(self):
+		save[CELL_SELF + 0] = 29491 # 0x7333, b's3'
+		save[CELL_SELF + 1] = 12596 # 0x3134, b'14'
+		save[CELL_SELF + 2] = 0 # 0x0, b'\x00\x00'
+		save[CELL_UP + 0] = 29491 # 0x7333, b's3'
+		save[CELL_UP + 1] = 12598 # 0x3136, b'16'
+		save[CELL_UP + 2] = 115 # 0x73, b'\x00s'
+		save[CELL_DOWN + 0] = 0 # 0x0, b'\x00\x00'
+		save[CELL_DOWN + 1] = 0 # 0x0, b'\x00\x00'
+		save[CELL_DOWN + 2] = 0 # 0x0, b'\x00\x00'
+		save[CELL_RIGHT + 0] = 29491 # 0x7333, b's3'
+		save[CELL_RIGHT + 1] = 12595 # 0x3133, b'13'
+		save[CELL_RIGHT + 2] = 115 # 0x73, b'\x00s'
+		save[CELL_LEFT + 0] = 0 # 0x0, b'\x00\x00'
+		save[CELL_LEFT + 1] = 0 # 0x0, b'\x00\x00'
+		save[CELL_LEFT + 2] = 0 # 0x0, b'\x00\x00'
+		save[RESPAWN_CELL_ID_maybe] = 14 # 0xe, b'\x00\x0e'
+		disableIcePhysics()
+		
+	def onTouchTrigger(self):
+		if save[VAPORA_DEFEATED] == 1:
+			returnValue = 1
+		else:
+			returnValue = 0
+		
+# No local variables
+
+# Extra script data
+extraData = [
+	[[]],
+]

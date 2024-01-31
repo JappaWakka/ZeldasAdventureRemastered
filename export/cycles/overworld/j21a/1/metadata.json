@@ -1,0 +1,6 @@
+{
+  "timeBetweenFrames_exceptFirstFrame": 0,
+  "durationOfFirstFrame": 21,
+  "putRandomDelayAfterFrame": null,
+  "putExtraRandomDelayAfter2ndFrame": false
+}

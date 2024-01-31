@@ -26,6 +26,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Item_RedBoots",
-    "path": "folders/Objects/Interactions/Item_RedBoots.yy",
+    "path": "folders/Objects/SpecialCollisions/Item_RedBoots.yy",
   },
 }

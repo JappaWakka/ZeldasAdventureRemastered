@@ -12,6 +12,19 @@ function Register_Add(RegisterName)
 	return true;
 }
 
+function Register_Registered(RegisterName)
+{
+	var Index = Register_FindIndex(RegisterName)
+	if Index = -1 
+	{
+		return false
+	}
+	else
+	{
+		return true
+	}
+}
+
 function Register_FindIndex(RegisterName)
 {
 	return ds_list_find_index(global.Register,RegisterName)

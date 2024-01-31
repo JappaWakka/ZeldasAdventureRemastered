@@ -6,7 +6,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 	{
 		if global.CameraIsPanning = false
 		{
-			if Register_FindIndex("HasPaidBeggarWoman") = -1
+			if Register_Registered("PaidBeggarWoman") = false
 			{
 				if HasSpoken = false
 				{
@@ -19,7 +19,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 			image_speed = d(ImageSpeed)
 			if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false and audio_is_playing(global.CurrentDialogue_ID) = false
 			{
-				if Register_FindIndex("HasPaidBeggarWoman") = -1
+				if Register_Registered("PaidBeggarWoman") = false
 				{
 					if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 					{
@@ -29,7 +29,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 								{
 									RemoveRubies(5);
 									global.CurrentItem[1] = -1
-									Register_Add("HasPaidBeggarWoman")
+									Register_Add("PaidBeggarWoman")
 								}
 								
 							}
@@ -42,7 +42,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 							{
 								RemoveRubies(5);
 								global.CurrentTreasure = -1
-								Register_Add("HasPaidBeggarWoman")
+								Register_Add("PaidBeggarWoman")
 							}
 						}
 					}
