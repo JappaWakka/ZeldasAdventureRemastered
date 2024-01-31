@@ -81,7 +81,7 @@ else
 AnimSpeed = d(PlayerSpeedMultiplier)
 if global.CameraIsPanning = false
 {
-	if IsAttacking = false
+	if IsAttacking = false and IsDead = false
 	{
 		if(input_check("right") = true and input_check("left") = false)
 		{
@@ -120,7 +120,7 @@ else
 
 
 #region Action - Using Spells & Treasures
-if global.RemasteredMode = false and IsAttacking = false
+if global.RemasteredMode = false and IsAttacking = false and IsDead = false
 {
 	if input_check_pressed("action") = true or input_check_pressed("special") = true
 	{
@@ -193,7 +193,7 @@ if global.RemasteredMode = false and IsAttacking = false
 	}
 }
 
-if global.RemasteredMode = true and IsAttacking = false
+if global.RemasteredMode = true and IsAttacking = false and IsDead = false
 {
 	if input_check_pressed("action") = true
 	{
@@ -293,6 +293,7 @@ if IsDead = true
 	
 	if global.FadeProgress = 0
 	{
+		sprite_index = Zelda_Death
 		image_speed = 1
 	}
 		
