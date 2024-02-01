@@ -1,0 +1,12 @@
+﻿1
+00:00:00,001 --> 00:00:02,920
+Defeated Soldier: I am so exhausted from my travels.
+
+2
+00:00:03,000 --> 00:00:07,113
+If only I had known to cross the chasm rift with a ladder...
+
+3
+00:00:07,240 --> 00:00:09,986
+it would have saved me months!
+

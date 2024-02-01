@@ -1,6 +1,5 @@
 
-if x >= global.CurrentTile.x * tileWidth && x <= global.CurrentTile.x * tileWidth + tileWidth &&
-y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight + tileHeight
+if IsPlayerOnSameTile() = true
 {
 	if Item_FindIndex(Spells.Firestorm,1) = -1 
 	{
@@ -15,8 +14,6 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 					HasSpoken = true
 				}
 			}
-			visible = true
-			image_speed = d(ImageSpeed)
 			if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false and audio_is_playing(global.CurrentDialogue_ID) = false
 			{
 				if Register_Registered("PaidBeggarWoman") = false
@@ -51,17 +48,12 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 				{
 					if instance_exists(Entity_Pickup_Firestorm) = false
 						{
-							instance_create_layer(3606,5232,"Items",Entity_Pickup_Firestorm)
+							instance_create_layer(3606,5232,"Items_AboveForeground",Entity_Pickup_Firestorm)
 							global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
 							global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 						}
 				}
 			}
-		}
-		else
-		{
-			visible = false
-			image_speed = 0
 		}
 				
 		
@@ -96,9 +88,6 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 }
 else
 {
-	image_speed = 0
-	image_index = 0
-	visible = false
 	if Item_FindIndex(Spells.Firestorm,1) <> -1 
 	{
 		instance_destroy()

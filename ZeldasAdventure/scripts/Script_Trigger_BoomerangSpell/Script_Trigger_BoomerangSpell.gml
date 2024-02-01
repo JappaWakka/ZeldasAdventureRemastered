@@ -4,6 +4,6 @@ function Script_Trigger_BoomerangSpell()
 {
 	if instance_exists(Entity_Pickup_Boomerang) = false
 	{
-		instance_create_layer(1216,5680,"Items",Entity_Pickup_Boomerang)
+		instance_create_layer(1216,5680,"Items_AboveForeground",Entity_Pickup_Boomerang)
 	}							
 }

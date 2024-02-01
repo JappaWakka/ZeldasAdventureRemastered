@@ -12,7 +12,7 @@ function UseTreasure_EmptyPitcher()
 			global.CurrentItem[1] = -1
 		}
 			
-		instance_create_layer(1632,4736,"Items",Entity_Pickup_FullPitcher)
+		instance_create_layer(1632,4736,"Items_AboveForeground",Entity_Pickup_FullPitcher)
 	}
 	else
 	{

@@ -1,5 +1,4 @@
-if x >= global.CurrentTile.x * tileWidth && x <= global.CurrentTile.x * tileWidth + tileWidth &&
-y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight + tileHeight
+if IsPlayerOnSameTile() = true
 {
 	if Item_FindIndex(Spells.Calm,1) = -1 
 	{
@@ -9,7 +8,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 			
 			if instance_number(Entity_ItemCost) = 0
 			{
-				ItemCost = instance_create_layer(x,y,"Items",Entity_ItemCost)
+				ItemCost = instance_create_layer(x,y,"Items_AboveForeground",Entity_ItemCost)
 				ItemCost.Price = 100
 			}
 			

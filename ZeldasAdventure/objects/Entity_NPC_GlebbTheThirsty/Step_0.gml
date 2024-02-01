@@ -1,21 +1,18 @@
 
-if x >= global.CurrentTile.x * tileWidth && x <= global.CurrentTile.x * tileWidth + tileWidth &&
-y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight + tileHeight
+if IsPlayerOnSameTile() = true
 {
 	if Item_FindIndex(Treasure.VialOfWind,0) = -1 
 	{
 		if global.CameraIsPanning = false
 		{
-			visible = true
-			image_speed = d(ImageSpeed)
 			if Register_Registered("GlebbNoLongerThirsty") = true and Item_FindIndex(Treasure.VialOfWind,0) = -1
 			{
 				if instance_exists(Entity_Pickup_VialOfWind) = false
-					{
-						instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
-						global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
-						global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					}
+				{
+					instance_create_layer(3696,5568,"Temporary_AbovePlayer",Entity_Pickup_VialOfWind)
+					global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
+					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
+				}
 			}
 			else
 			{
@@ -23,7 +20,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 				{
 					if instance_exists(Entity_Pickup_EmptyPitcher) = false
 					{
-						instance_create_layer(3680,5616,"Items",Entity_Pickup_EmptyPitcher)
+						instance_create_layer(3680,5616,"Temporary_AbovePlayer",Entity_Pickup_EmptyPitcher)
 						global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_BeforeFill
 						global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 					}
@@ -42,7 +39,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 									global.CurrentItem[1] = -1
 									if instance_exists(Entity_Pickup_VialOfWind) = false
 									{
-										instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
+										instance_create_layer(3696,5568,"Temporary_AbovePlayer",Entity_Pickup_VialOfWind)
 										global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
 										global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 									}
@@ -60,7 +57,7 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 									global.CurrentTreasure = -1
 									if instance_exists(Entity_Pickup_VialOfWind) = false
 									{
-										instance_create_layer(3696,5568,"Items",Entity_Pickup_VialOfWind)
+										instance_create_layer(3696,5568,"Items_AboveForeground",Entity_Pickup_VialOfWind)
 										global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
 										global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 									}
@@ -71,11 +68,6 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 					}
 				}
 			}
-		}
-		else
-		{
-			visible = false
-			image_speed = 0
 		}
 				
 		
@@ -110,9 +102,6 @@ y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight
 }
 else
 {
-	image_speed = 0
-	image_index = 0
-	visible = false
 	if Item_FindIndex(Treasure.VialOfWind,0) <> -1
 	{
 		instance_destroy()

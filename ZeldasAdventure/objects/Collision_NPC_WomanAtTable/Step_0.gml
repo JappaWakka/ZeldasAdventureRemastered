@@ -1,16 +1,15 @@
-if x >= global.CurrentTile.x * tileWidth && x <= global.CurrentTile.x * tileWidth + tileWidth &&
-y >= global.CurrentTile.y * tileHeight && y <= global.CurrentTile.y * tileHeight + tileHeight
+if IsPlayerOnSameTile() = true
 {
 	if global.CameraIsPanning = false
 	{
-		if Register_Registered("WomanAtTableTalk") = false
+		if Register_Registered("WomanAtTable") = false
 		{
 			if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 			{
 				global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_WomanAtTable
 				Audio_StopMusic()
-				global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-				Register_Add("WomanAtTableTalk")
+				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_WomanAtTable, global.CurrentDialogue_Asset,500,false)
+				Register_Add("WomanAtTable")
 			}
 			
 		}

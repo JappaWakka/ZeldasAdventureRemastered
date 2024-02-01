@@ -42,7 +42,7 @@ ds_Menu_Settings = CreateMenuPage(
 ["Controls",			Menu_ElementType.PageTransfer,		Menu_Page.Controls		],
 ["Reset Controls",		Menu_ElementType.ScriptRunner,		Controls_Reset			],
 ["Save Settings",		Menu_ElementType.ScriptRunner,		Settings_Save			],
-["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Main			]
+["Back",				Menu_ElementType.ScriptRunner,		Settings_ExitToMain		]
 );
 
 ds_Menu_Game = CreateMenuPage(
@@ -122,7 +122,7 @@ IsQuiting = false;
 IsInputting = false;
 CanChangeControls = true;
 NextPage = -1;
-PageIndex = 0;
+PageIndex = 0; //0 = Main, 1 = Settings, 2 = Game, 3 = Audio, 4 = Controls, 5 = Name
 
 input_ignore_key_remove(vk_alt)
 input_ignore_key_remove(vk_lalt)
@@ -137,3 +137,7 @@ CurrentCharPositionObject = instance_create_layer(88,92,"Instances",Obj_NameEntr
 
 //Reset player variables whenever you're entering the main menu
 ResetPlayerVariables()
+
+Settings_Update()
+
+SavedSettings = false

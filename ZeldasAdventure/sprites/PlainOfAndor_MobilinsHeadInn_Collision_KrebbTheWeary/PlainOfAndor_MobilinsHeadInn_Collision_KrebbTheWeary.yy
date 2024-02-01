@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 240,
-  "bbox_right": 300,
-  "bbox_top": 114,
-  "bbox_bottom": 163,
+  "bbox_left": 239,
+  "bbox_right": 289,
+  "bbox_top": 126,
+  "bbox_bottom": 175,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,7 +28,7 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c3d4d0f0-861f-42a3-ac6c-c2c04d5cb7b2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a035f22-f292-4eb5-bef4-907bc2b41c84",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a16cbdf9-264e-4a61-b9e7-263b2d6c3396","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3d4d0f0-861f-42a3-ac6c-c2c04d5cb7b2","path":"sprites/PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary/PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b3e29553-2360-4fa5-888c-4abe76e195cc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a035f22-f292-4eb5-bef4-907bc2b41c84","path":"sprites/PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary/PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,7 +64,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6224be50-26d9-4356-969c-4d320cc8e65b","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7bb3ee29-6b10-4bf4-8271-2a97abfa307a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {

@@ -1,4 +1,7 @@
-if Item_FindIndex(Treasure.VialOfWind,0) <> -1
+if IsPlayerOnSameTile = false
 {
-	instance_destroy()
+	if Item_FindIndex(Treasure.VialOfWind,0) <> -1
+	{
+		instance_destroy()
+	}
 }
