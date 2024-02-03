@@ -1654,6 +1654,7 @@
     {"id":{"name":"EastForest_09_Below","path":"sprites/EastForest_09_Below/EastForest_09_Below.yy",},"order":8,},
     {"id":{"name":"VisionHenge_06_Solid","path":"sprites/VisionHenge_06_Solid/VisionHenge_06_Solid.yy",},"order":17,},
     {"id":{"name":"Shrine_Air_116_Below","path":"sprites/Shrine_Air_116_Below/Shrine_Air_116_Below.yy",},"order":309,},
+    {"id":{"name":"PlainOfAndor_09_Cycle_Water","path":"sprites/PlainOfAndor_09_Cycle_Water/PlainOfAndor_09_Cycle_Water.yy",},"order":88,},
     {"id":{"name":"input_binding_scan_start","path":"scripts/input_binding_scan_start/input_binding_scan_start.yy",},"order":5,},
     {"id":{"name":"input_accessibility_verb_toggle_get","path":"scripts/input_accessibility_verb_toggle_get/input_accessibility_verb_toggle_get.yy",},"order":6,},
     {"id":{"name":"input_binding_mouse_button","path":"scripts/input_binding_mouse_button/input_binding_mouse_button.yy",},"order":4,},
