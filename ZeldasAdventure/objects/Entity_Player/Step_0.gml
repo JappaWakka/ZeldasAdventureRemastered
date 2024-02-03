@@ -1,71 +1,28 @@
 /// @description Continous Events
 #region Movement
+var xdir = 0
+var ydir = 0
 
 if global.CameraIsPanning = false and IsAttacking = false
 {
-xx = input_check("right") - input_check("left");
-yy = input_check("down") - input_check("up");
+	xdir = input_check("right") - input_check("left");
+	ydir = input_check("down") - input_check("up");
 }
 else
 {
-	xx = false
-	yy = false
-}
-PlayerHorizontalSpeed = d(xx * PlayerSpeed); //Your speed(PlayerSpeed) Variable in create event
-PlayerVerticalSpeed = d(yy * PlayerSpeed); //Your speed(PlayerSpeed) Variable in create event
-
-////Red Boots Water
-if Item_FindIndex(Treasure.RedBoots,0) = -1
-{
-	// Horz(x) speed collision
-	if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_UseItem_RedBoots))
-	{
-		while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_UseItem_RedBoots))
-		{
-			x += sign(PlayerHorizontalSpeed);
-		}
-		PlayerHorizontalSpeed = 0;
-	}
-	// Vert(y) speed collision
-	if(place_meeting(x, y + PlayerVerticalSpeed, Parent_UseItem_RedBoots))
-	{
-		while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Parent_UseItem_RedBoots))
-		{
-			y += sign(PlayerVerticalSpeed);
-		}
-	   PlayerVerticalSpeed = 0;
-	}
+	xdir = 0
+	ydir = 0
 }
 
-////Solid Objects
-// Horz(x) speed collision
-if(place_meeting(x + PlayerHorizontalSpeed, y, Parent_Solid))
-{
-	while(!place_meeting(x + sign(PlayerHorizontalSpeed), y, Parent_Solid))
-	{
-		x += sign(PlayerHorizontalSpeed);
-	}
-	PlayerHorizontalSpeed = 0;
-}
- else
-{
-	x += PlayerHorizontalSpeed;
-}
-// Vert(y) speed collision
-if(place_meeting(x, y + PlayerVerticalSpeed, Parent_Solid))
-{
-	while(!place_meeting(x, y + sign(PlayerVerticalSpeed), Parent_Solid))
-	{
-		y += sign(PlayerVerticalSpeed);
-	}
-   PlayerVerticalSpeed = 0;
-}
-else
-{
-	y += PlayerVerticalSpeed;
-}
 
-if PlayerHorizontalSpeed > 0 or PlayerVerticalSpeed > 0
+var MoveDistance = point_distance(0,0,xdir,ydir);
+
+var MoveDirection = point_direction(0,0, xdir, ydir);
+
+// Move the player smoothly and check for colissions
+move(Acceleration, MoveDirection, MaxSpeed, MoveDistance);
+
+if xdir != 0 or ydir != 0
 {
 	Moving = true
 }
@@ -78,7 +35,7 @@ else
 
 #region SpriteChanges & Direction
 
-AnimSpeed = d(PlayerSpeedMultiplier)
+AnimSpeed = d(SpeedMultiplier)
 if global.CameraIsPanning = false
 {
 	if IsAttacking = false and IsDead = false

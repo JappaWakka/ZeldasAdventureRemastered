@@ -105,6 +105,7 @@ function InitGameVariables()
 	
 	//Entity Variables
 	#macro PlayerBaseSpeed 1.5
+	#macro PlayerAcceleration_Slippery 0.065
 	global.DeathAmountForTrigger = //Amount of Entities to defeat before spawning a certain Pickup
 	{
 		BoomerangSpell : 1
