@@ -1,17 +1,0 @@
-Adobe After Effects v18.4 Windows 64 render log for project “Cutscenes.aep”
-
-Rendering started on 20-3-2022 at 19:09:38
-
-  20-3-2022 19:09:38: Starting composition “Cutscene_Logos”.
-
-  Output To: H:\Video Games\GMS2 Projects\Cutscenes\Cutscene_Logos.avi    20-3-2022 19:09:55: Finished composition “Cutscene_Logos”.
-
-
-  20-3-2022 19:09:55: Starting composition “Cutscene_Intro”.
-
-  Output To: H:\Video Games\GMS2 Projects\Cutscenes\Cutscene_Intro.avi    20-3-2022 19:11:11: Finished composition “Cutscene_Intro”.
-
-
-  Total Time Elapsed: 1 Min, 32 Sec
-Log closed on 20-3-2022 at 19:11:11
-
