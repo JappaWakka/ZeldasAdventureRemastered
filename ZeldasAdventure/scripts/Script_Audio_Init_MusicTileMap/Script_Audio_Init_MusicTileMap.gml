@@ -250,6 +250,15 @@ function Audio_Init_MusicTileMap()
 	global.Music[26][15] = "Canyon_Normal";
 	
 	//Y = 16
+	global.Music[0][16] = "Gauntlet_1_Llort";
+	global.Music[1][16] = "Gauntlet_2_Pasquinade";
+	global.Music[2][15] = "Gauntlet_3_Avianna";
+	global.Music[3][15] = "Gauntlet_4_Malmort";
+	global.Music[4][16] = "Gauntlet_5_Agwanda";
+	global.Music[5][16] = "Gauntlet_6_Ursore"; //Unused
+	global.Music[6][16] = "Gauntlet_7_Warbane";
+	global.Music[7][16] = "Gauntlet_8_Gannon";
+	
 	global.Music[9][16] = "Plain_Stream";
 	global.Music[10][16] = "Plain_Stream";
 	global.Music[11][15] = "Plain";
@@ -476,8 +485,8 @@ function Audio_Init_MusicTileMap()
 	global.Music[24][28] = "Shrine_Destiny";
 	global.Music[25][28] = "Shrine_Destiny";
 	global.Music[26][28] = "Shrine_Destiny";
-	global.Music[27][28] = "Shrine_Boss";
-	global.Music[28][28] = "Shrine_Destiny";
+	global.Music[27][28] = "Shrine_Destiny_Boss";
+	global.Music[28][28] = "Shrine_Destiny_Sign";
 	
 	//Y = 29
 	global.Music[6][29] = "Forest";
@@ -548,24 +557,102 @@ function Audio_Init_MusicTileMap()
 	global.Music[18][35] = "Shrine_Water";
 	global.Music[19][35] = "Shrine_Water";
 	
-	global.Music[24][34] = "Shrine_Water_Boss";
-	global.Music[25][34] = "Shrine_Water_Boss";
-	global.Music[26][34] = "Shrine_Water";
+	global.Music[24][35] = "Shrine_Water_Boss";
+	global.Music[25][35] = "Shrine_Water_Boss";
+	global.Music[26][35] = "Shrine_Water_Sign";
 	
 	//Y = 36
 	global.Music[9][36] = "Shrine_Earth_Regular";
+	global.Music[18][36] = "Shrine_Water";
+	global.Music[19][36] = "Shrine_Water";
 	
 	//Y = 37
-	global.Music[6][38] = "Shrine_Fire_Sign";
+	global.Music[6][37] = "Shrine_Fire_Sign";
 		
 	global.Music[9][37] = "Shrine_Earth_Regular";
 	global.Music[10][37] = "Shrine_Earth_Regular";
 	
+	global.Music[21][37] = "Shrine_Strength_Sign";
+	global.Music[22][37] = "Shrine_Strength_Boss";
+	global.Music[23][37] = "Shrine_Strength";
+	global.Music[24][37] = "Shrine_Strength";
+	global.Music[25][37] = "Shrine_Strength";
+	
 	//Y = 38
+	global.Music[2][38] = "Shrine_Fire_Regular";
+	global.Music[3][38] = "Shrine_Fire_Regular";
+	global.Music[4][38] = "Shrine_Fire_Regular";
+	
 	global.Music[6][38] = "Shrine_Fire_Boss";
 	global.Music[7][38] = "Shrine_Fire_Regular";
 	
 	global.Music[10][38] = "Shrine_Earth_Regular";
 	global.Music[11][38] = "Shrine_Earth_Regular";
+	
+	global.Music[25][38] = "Shrine_Strength";
+	global.Music[26][38] = "Shrine_Strength";
+	
+	//Y = 39
+	global.Music[2][39] = "Shrine_Fire_Regular";
+	global.Music[4][39] = "Shrine_Fire_Regular";
+	
+	global.Music[7][39] = "Shrine_Fire_Regular";
+	
+	global.Music[26][39] = "Shrine_Strength";
+	global.Music[27][39] = "Shrine_Strength";
+	
+	//Y = 40
+	global.Music[2][40] = "Shrine_Fire_Regular";
+	
+	global.Music[4][40] = "Shrine_Fire_Regular";
+	
+	global.Music[5][40] = "Shrine_Fire_Regular";
+	
+	global.Music[7][40] = "Shrine_Fire_Regular";
+	global.Music[8][40] = "Shrine_Fire_Regular";
+	
+	global.Music[15][40] = "Shrine_Strength";
+	global.Music[16][40] = "Shrine_Strength";
+	
+	global.Music[26][40] = "Shrine_Strength";
+	global.Music[27][40] = "Shrine_Strength";
+	
+	//Y = 41
+	global.Music[1][41] = "Shrine_Fire_Regular";
+	global.Music[2][41] = "Shrine_Fire_Regular";
+	
+	global.Music[5][41] = "Shrine_Fire_Regular";
+	global.Music[6][41] = "Shrine_Fire_Regular";
+	global.Music[7][41] = "Shrine_Fire_Regular";
+	global.Music[8][41] = "Shrine_Fire_Regular";
+	
+	global.Music[15][41] = "Shrine_Strength";
+	global.Music[16][41] = "Shrine_Strength";
+	global.Music[17][41] = "Shrine_Strength";
+	global.Music[18][41] = "Shrine_Strength";
+	
+	global.Music[25][41] = "Shrine_Strength";
+	global.Music[26][41] = "Shrine_Strength";
+	
+	//Y = 42
+	global.Music[1][42] = "Shrine_Fire_Regular";
+	global.Music[2][42] = "Shrine_Fire_Regular";
+	global.Music[3][42] = "Shrine_Fire_Regular";
+	
+	global.Music[18][42] = "Shrine_Strength";
+	
+	global.Music[24][42] = "Shrine_Strength";
+	global.Music[25][42] = "Shrine_Strength";
+	
+	//Y = 43
+	global.Music[3][43] = "Shrine_Fire_Regular";
+	
+	global.Music[18][41] = "Shrine_Strength";
+	global.Music[19][41] = "Shrine_Strength";
+	global.Music[20][41] = "Shrine_Strength";
+	global.Music[21][41] = "Shrine_Strength";
+	global.Music[22][41] = "Shrine_Strength";
+	global.Music[23][41] = "Shrine_Strength";
+	global.Music[24][41] = "Shrine_Strength";
 	
 }

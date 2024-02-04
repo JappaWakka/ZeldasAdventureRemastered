@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SFX_Enemy_Octorok",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/AudioGroup_SoundFX",
   },
   "soundFile": "SFX_Enemy_Octorok.ogg",
-  "duration": 0.877625,
+  "duration": 0.855646,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/SoundFX/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SFX_Enemy_Octorok",
-  "tags": [],
-  "resourceType": "GMSound",
 }

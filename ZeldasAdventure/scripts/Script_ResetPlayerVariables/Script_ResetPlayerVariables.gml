@@ -3,7 +3,7 @@
 function ResetPlayerVariables(){
 //Player Variables
 	global.Name = "ZELDA";
-	global.CurrentMap = "Overworld"; //To determine which map to display in the inventory
+	global.CurrentMap = Maps.Overworld; //To determine which map to display in the inventory
 	global.CurrentTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";
 	

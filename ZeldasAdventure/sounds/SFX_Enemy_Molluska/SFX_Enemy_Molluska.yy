@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SFX_Enemy_Molluska",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/AudioGroup_SoundFX",
   },
   "soundFile": "SFX_Enemy_Molluska.ogg",
-  "duration": 0.573833,
+  "duration": 0.912154,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/SoundFX/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SFX_Enemy_Molluska",
-  "tags": [],
-  "resourceType": "GMSound",
 }

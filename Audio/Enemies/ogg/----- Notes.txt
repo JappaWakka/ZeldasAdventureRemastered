@@ -1,0 +1,35 @@
+Notes for the Zelda's Adventure enemy/NPC SFX:
+
+* The following enemies do not make sounds when attacking Zelda:
+  -Blacksmith
+  -Dragonfly (Gannon's Gauntlet only)
+  -Jack
+  -Keese (Shrine of Earth only)
+  -Pickpockets
+  -Pols Voice (Shrine of Illusion only)
+  -Snake (the flute sound only plays when the flute is played)
+  -Spike Block
+  -Spike Trap
+  -Ursore's Knights
+  -Vapora (second one only)
+  -Wallmaster
+  -Warbane (Gannon's Gauntlet only)
+  -Water Spout
+
+* Enemies can re-use the same sound. Instances include:
+  -Bounder + Cactorok
+  -Giant Squid + Squid
+  -Moby + Aviana
+  -Patra + Pol's Voice
+  -Peahat + Zol
+
+* When two or more types of enemy are on-screen, only one sound is shared between all of them. This sound pack associates each enemy with the sound they most frequently (or only) use.
+
+* Friendly NPCs that use the "wandering enemy" pathing logic have their own unique sounds upon encountering Zelda. These include:
+  -Great Wimbich dog that gives you the Short Axe
+  -The three fairies
+  -Ghini the ghost dog
+
+* The Vaporas are strange. The first one you fight reuses the Crystal Shard's sound when it attacks, while the second one makes no noise whatsoever (apart from the voicelines). Either sound can work for them.
+
+* Gulls are even stranger. They use the Wizzrobe sound in the Shrine of Destiny's giant pit room, then a unique sound in the room before Malmord, and then the Fireball sound in their Shrine of Fire rooms. For the purposes of this pack, I've labeled the second sound as being theirs.

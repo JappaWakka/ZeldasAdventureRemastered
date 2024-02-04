@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SFX_Enemy_Dolomite",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/AudioGroup_SoundFX",
   },
   "soundFile": "SFX_Enemy_Dolomite.ogg",
-  "duration": 0.85425,
+  "duration": 0.821406,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/SoundFX/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SFX_Enemy_Dolomite",
-  "tags": [],
-  "resourceType": "GMSound",
 }

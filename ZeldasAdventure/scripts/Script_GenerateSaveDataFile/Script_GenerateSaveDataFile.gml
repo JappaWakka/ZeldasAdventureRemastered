@@ -1,4 +1,4 @@
-function Script_GenerateSaveDataFile()
+function GenerateSaveDataFile()
 {
 	ini_open(global.SaveDataFileName)
 	
@@ -13,7 +13,6 @@ function Script_GenerateSaveDataFile()
 			ini_write_string(Section, "InventoryTreasure", "");
 			ini_write_real(Section, "CurrentKeys", 0);
 			ini_write_real(Section, "CurrentRubies", 0);
-			ini_write_string(Section, "CurrentMap", "Overworld");
 			ini_write_string(Section, "PlayerSpawn", "Spawn_Overworld");
 			ini_write_real(Section, "Defense", 30);
 			ini_write_real(Section, "Power", 30);

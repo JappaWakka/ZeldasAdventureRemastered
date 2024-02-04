@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SFX_Enemy_Tumblebot",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -11,14 +14,10 @@
     "name": "AudioGroup_SoundFX",
     "path": "audiogroups/AudioGroup_SoundFX",
   },
-  "soundFile": "SFX_Enemy_Tumblebot.wav",
-  "duration": 0.786312,
+  "soundFile": "SFX_Enemy_Tumblebot.ogg",
+  "duration": 0.876644,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/SoundFX/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SFX_Enemy_Tumblebot",
-  "tags": [],
-  "resourceType": "GMSound",
 }

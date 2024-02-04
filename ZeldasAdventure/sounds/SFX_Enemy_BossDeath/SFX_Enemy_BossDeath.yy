@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SFX_Enemy_BossDeath",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "SFX_Enemy_BossDeath.ogg",
   "duration": 1.564308,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sounds/SoundFX/Enemies.yy",
+    "name": "DamageAndDeath",
+    "path": "folders/Sounds/SoundFX/DamageAndDeath.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SFX_Enemy_BossDeath",
-  "tags": [],
-  "resourceType": "GMSound",
 }

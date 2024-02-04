@@ -16,7 +16,6 @@ function SaveGame_Play(){
 			global.DebugMode = false
 		}
 		
-		global.CurrentMap = ini_read_string(Section, "CurrentMap", "Overworld"); //To determine which map to display in the inventory
 		global.PlayerSpawn = ini_read_string(Section, "PlayerSpawn", "Spawn_Overworld");
 		
 		global.CurrentRubies = ini_read_real(Section, "CurrentRubies", 0);

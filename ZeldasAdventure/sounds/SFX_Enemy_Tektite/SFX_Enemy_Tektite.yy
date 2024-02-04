@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SFX_Enemy_Tektite",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -11,14 +14,10 @@
     "name": "AudioGroup_SoundFX",
     "path": "audiogroups/AudioGroup_SoundFX",
   },
-  "soundFile": "SFX_Enemy_Tektite.wav",
-  "duration": 0.812688,
+  "soundFile": "SFX_Enemy_Tektite.ogg",
+  "duration": 0.802449,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/SoundFX/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SFX_Enemy_Tektite",
-  "tags": [],
-  "resourceType": "GMSound",
 }

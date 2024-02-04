@@ -5,9 +5,10 @@ function InitGameVariables()
 	
 	global.SaveDataFileName = "SaveData.ini"
 	global.KeyBindingsFileName = "KeyBindings.json"
-	Script_GenerateSaveDataFile()
+	GenerateSaveDataFile()
 	
 	//System Variables
+	Init_SpawnPoints_TileMap()
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
 	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
 	
@@ -57,8 +58,21 @@ function InitGameVariables()
 	}
 	
 	//Player Variables
+	enum Maps
+	{
+		Overworld,
+		Shrine1,
+		Shrine2,
+		Shrine3,
+		Shrine4,
+		Shrine5,
+		Shrine6,
+		Shrine7,
+		Gauntlet
+		
+	}
 	global.Name = "ZELDA";
-	global.CurrentMap = "Overworld"; //To determine which map to display in the inventory
+	global.CurrentMap = Maps.Overworld; //To determine which map to display in the inventory
 	global.CurrentTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";
 	

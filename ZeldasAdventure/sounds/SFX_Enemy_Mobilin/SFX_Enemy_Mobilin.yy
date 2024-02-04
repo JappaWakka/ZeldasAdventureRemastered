@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "SFX_Enemy_Mobilin",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -11,14 +14,10 @@
     "name": "AudioGroup_SoundFX",
     "path": "audiogroups/AudioGroup_SoundFX",
   },
-  "soundFile": "SFX_Enemy_Mobilin.wav",
-  "duration": 1.062229,
+  "soundFile": "SFX_Enemy_Mobilin.ogg",
+  "duration": 1.053016,
   "parent": {
     "name": "Enemies",
     "path": "folders/Sounds/SoundFX/Enemies.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "SFX_Enemy_Mobilin",
-  "tags": [],
-  "resourceType": "GMSound",
 }
