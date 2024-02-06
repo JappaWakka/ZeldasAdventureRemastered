@@ -4,7 +4,8 @@ enum Menu_Page
 	Settings,
 	Game,
 	Audio,
-	Controls
+	Controls,
+	NameInput
 }
 
 enum Menu_ElementType
@@ -45,20 +46,25 @@ ds_Menu_Settings = CreateMenuPage(
 ["Back",				Menu_ElementType.ScriptRunner,		Settings_ExitToMain		]
 );
 
+var LanguageIndex = 0
+if global.CurrentLanguage = "nl"
+{
+	LanguageIndex = 1
+}
 ds_Menu_Game = CreateMenuPage(
-["Window Mode",			Menu_ElementType.Toggle,			ChangeWindowMode,				0,					["Window","Full"]	],
-["Resolution",			Menu_ElementType.Shift,				ChangeResolution,				2,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
-["Remastered Mode",		Menu_ElementType.Toggle,			ChangeRemasteredModeEnabled,	0,					["Off","On"]				],
-["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			1,					["Off","On"]				],
-["Language",			Menu_ElementType.Shift,				ChangeLanguage,					0,					["English","Nederlands"]	],
+["Window Mode",			Menu_ElementType.Toggle,			ChangeWindowMode,				real(global.Fullscreen),				["Window","Full"]	],
+["Resolution",			Menu_ElementType.Shift,				ChangeResolution,				global.WindowScale - 1,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
+["Remastered Mode",		Menu_ElementType.Toggle,			ChangeRemasteredModeEnabled,	real(global.RemasteredMode),			["Off","On"]				],
+["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			real(global.ShowSubtitles),				["Off","On"]				],
+["Language",			Menu_ElementType.Shift,				ChangeLanguage,					LanguageIndex,							["English","Nederlands"]	],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings				]
 );
 
 ds_Menu_Audio = CreateMenuPage(
-["Master",				Menu_ElementType.Slider,			ChangeVolume,			1,					[0,1],					0	],
-["Music",				Menu_ElementType.Slider,			ChangeVolume,			1,					[0,1],					1	],
-["SoundFX",				Menu_ElementType.Slider,			ChangeVolume,			1,					[0,1],					2	],
-["Dialogue",			Menu_ElementType.Slider,			ChangeVolume,			1,					[0,1],					3	],
+["Master",				Menu_ElementType.Slider,			ChangeVolume,			global.VolumeMaster,					[0,1],					0	],
+["Music",				Menu_ElementType.Slider,			ChangeVolume,			global.VolumeMusic,						[0,1],					1	],
+["SoundFX",				Menu_ElementType.Slider,			ChangeVolume,			global.VolumeSoundFX,					[0,1],					2	],
+["Dialogue",			Menu_ElementType.Slider,			ChangeVolume,			global.VolumeDialogue,					[0,1],					3	],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
 
@@ -68,8 +74,8 @@ ds_Menu_Controls = CreateMenuPage(
 ["Right",				Menu_ElementType.Input,				"right"					],
 ["Up",					Menu_ElementType.Input,				"up"					],
 ["Down",				Menu_ElementType.Input,				"down"					],
-["Action",				Menu_ElementType.Input,				"action"				],
-["Special",				Menu_ElementType.Input,				"special"				],
+["Action 1",			Menu_ElementType.Input,				"action1"				],
+["Action 2",			Menu_ElementType.Input,				"action2"				],
 ["Inventory",			Menu_ElementType.Input,				"inventory"				],
 ["Menu",				Menu_ElementType.Input,				"menu"					],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]

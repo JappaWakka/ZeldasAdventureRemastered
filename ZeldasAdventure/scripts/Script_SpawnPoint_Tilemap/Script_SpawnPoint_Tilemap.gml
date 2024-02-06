@@ -1,4 +1,4 @@
-//This function stores which tiles correspond to which SpawnPoints track in the two-dimensional array global.SpawnPoints[x][y]
+//This function stores which tiles correspond to which SpawnPoint in the two-dimensional array global.SpawnPoints[x][y]
 function Init_SpawnPoints_TileMap()
 {
 	//Y = 0
@@ -14,7 +14,7 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[5][1] = "Spawn_Shrine3";
 	global.SpawnPoints[6][1] = "Spawn_Shrine3";
 	
-	global.SpawnPoints[10][0] = "Spawn_Shrine3";
+	global.SpawnPoints[10][1] = "Spawn_Shrine3";
 	
 	global.SpawnPoints[25][1] = "Spawn_Overworld";
 	
@@ -647,11 +647,11 @@ function Init_SpawnPoints_TileMap()
 	//Y = 43
 	global.SpawnPoints[3][43] = "Spawn_Shrine7_Regular";
 	
-	global.SpawnPoints[18][41] = "Spawn_Shrine6";
-	global.SpawnPoints[19][41] = "Spawn_Shrine6";
-	global.SpawnPoints[20][41] = "Spawn_Shrine6";
-	global.SpawnPoints[21][41] = "Spawn_Shrine6";
-	global.SpawnPoints[22][41] = "Spawn_Shrine6";
-	global.SpawnPoints[23][41] = "Spawn_Shrine6";
-	global.SpawnPoints[24][41] = "Spawn_Shrine6";
+	global.SpawnPoints[18][43] = "Spawn_Shrine6";
+	global.SpawnPoints[19][43] = "Spawn_Shrine6";
+	global.SpawnPoints[20][43] = "Spawn_Shrine6";
+	global.SpawnPoints[21][43] = "Spawn_Shrine6";
+	global.SpawnPoints[22][43] = "Spawn_Shrine6";
+	global.SpawnPoints[23][43] = "Spawn_Shrine6";
+	global.SpawnPoints[24][43] = "Spawn_Shrine6";
 }

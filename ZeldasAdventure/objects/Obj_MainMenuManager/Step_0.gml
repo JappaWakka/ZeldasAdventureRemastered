@@ -1,4 +1,4 @@
-if PageIndex = 0 //Main Menu
+if PageIndex = Menu_Page.Main
 {
 	if IsQuiting = true
 	{
@@ -18,7 +18,7 @@ if PageIndex = 0 //Main Menu
 	{
 		var CurrentGrid = Menu_Pages[PageIndex];
 		var GridHeight = ds_grid_height(CurrentGrid);
-		if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
+		if input_check_pressed("action1") = true or input_check_pressed("accept")
 		{
 			switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 			{
@@ -155,14 +155,28 @@ if PageIndex = 0 //Main Menu
 		}
 	}
 }
-else if PageIndex = 5 //Name Input Menu
+else if PageIndex = Menu_Page.NameInput //Name Input Menu
 {
-	if IsFading == false
+	if HasPressedPlay = true
 	{
-		
+		if global.FadeProgress = 1
+		{			
+			room_goto(Room_Overworld);
+		}
+	}
+	else if IsFading == false
+	{
+		if input_check_pressed("action2") = true
+		{
+			global.FadeSpeed = 16;
+			global.FadeProgress = 0;
+			audio_play_sound(Settings_Accept,1000,false)
+			IsFading = true;
+			NextPage = Menu_Page.Main;
+		}
 		var CurrentGrid = Menu_Pages[PageIndex];
 	
-		if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
+		if input_check_pressed("action1") = true or input_check_pressed("accept")
 		{
 			//All entries in this menu are ScriptRunners
 			script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],CurrentGrid[# 0, Menu_CurrentEntry[PageIndex]])
@@ -251,6 +265,16 @@ else if PageIndex = 5 //Name Input Menu
 			}
 		}
 	}
+	else
+	{
+		if NextPage != -1 && global.FadeProgress > 0
+		{
+			PageIndex = NextPage;
+			IsFading = false;
+			NextPage = -1;
+			global.FadeSpeed = 8;
+		}
+	}
 }
 else //SettingMenu
 {
@@ -271,7 +295,7 @@ else //SettingMenu
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = clamp(CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]], 0, array_length(CurrentGrid[# 4, Menu_CurrentEntry[PageIndex]])-1)
 						script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]])
 					}
-					if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
+					if input_check_pressed("action1") = true or input_check_pressed("action2") = true or input_check_pressed("accept")
 					{
 						IsInputting = false
 					}
@@ -300,7 +324,7 @@ else //SettingMenu
 							FirstChangeDone = false;
 						}
 					}
-					if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
+					if input_check_pressed("action1") = true or input_check_pressed("action2") = true or input_check_pressed("accept")
 					{
 						IsInputting = false
 					}
@@ -314,7 +338,7 @@ else //SettingMenu
 						CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]] = clamp(CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]], 0, 1)
 						script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],CurrentGrid[# 3, Menu_CurrentEntry[PageIndex]])
 					}
-					if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
+					if input_check_pressed("action1") = true or input_check_pressed("action2") = true or input_check_pressed("accept")
 					{
 						IsInputting = false
 					}
@@ -378,7 +402,7 @@ else //SettingMenu
 					Menu_CurrentEntry[PageIndex] = GridHeight - 1;
 				}
 			}
-			if input_check_pressed("action") = true or input_check_pressed("special") = true or input_check_pressed("accept")
+			if input_check_pressed("action1") = true or input_check_pressed("accept")
 			{
 				switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 				{
@@ -408,6 +432,28 @@ else //SettingMenu
 						IsInputting = true;
 						break;
 					}
+				}
+			}
+			if input_check_pressed("action2") = true
+			{
+				switch PageIndex
+				{
+					case 1:
+						global.FadeSpeed = 16;
+						global.FadeProgress = 0;
+						audio_play_sound(Settings_Accept,1000,false)
+						IsFading = true;
+						NextPage = Menu_Page.Main;
+						break;
+					case 2:
+					case 3:
+					case 4:
+						global.FadeSpeed = 16;
+						global.FadeProgress = 0;
+						audio_play_sound(Settings_Accept,1000,false)
+						IsFading = true;
+						NextPage = Menu_Page.Settings;
+						break;
 				}
 			}
 		}

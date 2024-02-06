@@ -79,7 +79,7 @@ else
 #region Action - Using Spells & Treasures
 if global.RemasteredMode = false and IsAttacking = false and IsDead = false
 {
-	if input_check_pressed("action") = true or input_check_pressed("special") = true
+	if input_check_pressed("action1") = true or input_check_pressed("action2") = true
 	{
 		//Current Item is a Spell
 		if global.CurrentItem[0] = 1
@@ -152,7 +152,7 @@ if global.RemasteredMode = false and IsAttacking = false and IsDead = false
 
 if global.RemasteredMode = true and IsAttacking = false and IsDead = false
 {
-	if input_check_pressed("action") = true
+	if input_check_pressed("action1") = true
 	{
 		switch Item_FindValue(global.CurrentTreasure,0)
 			{
@@ -171,7 +171,7 @@ if global.RemasteredMode = true and IsAttacking = false and IsDead = false
 					break;
 			}
 	}
-	if input_check_pressed("special") = true
+	if input_check_pressed("action2") = true
 	{
 		if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
 		{

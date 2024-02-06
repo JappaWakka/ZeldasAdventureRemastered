@@ -20,8 +20,13 @@ function ChangeRemasteredModeEnabled(Value){
 	global.RemasteredMode = bool(Value)
 }
 
-function ChangeResolution(Value){
-	global.WindowScale = Value + 1	
+function ChangeResolution(Value)
+{
+	global.WindowScale = Value + 1
+	if global.Fullscreen = false
+	{
+		window_set_size(ViewWidth * global.WindowScale,ViewHeight * global.WindowScale);
+	}
 }
 
 function ChangeSubtitlesEnabled(Value){

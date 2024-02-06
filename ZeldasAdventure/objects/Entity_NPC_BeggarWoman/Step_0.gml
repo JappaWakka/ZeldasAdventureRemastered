@@ -20,7 +20,7 @@ if IsPlayerOnSameTile() = true
 				{
 					if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 					{
-						if input_check_pressed("action") = true or input_check_pressed("special") = true
+						if input_check_pressed("action1") = true or input_check_pressed("action2") = true
 							{
 								if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.Rubies and global.CurrentRubies >= 5
 								{
@@ -33,7 +33,7 @@ if IsPlayerOnSameTile() = true
 					}
 					if global.RemasteredMode = true and Entity_Player.IsAttacking = false
 					{
-						if input_check_pressed("action") = true
+						if input_check_pressed("action1") = true
 						{
 							if Item_FindValue(global.CurrentTreasure,0) = Treasure.Rubies and global.CurrentRubies >= 5
 							{

@@ -1,19 +1,28 @@
-/// @description And so it begins
+/// @description Initialization
 
+ConfirmSkip = false
+SkipHintAlpha = 0
 CurrentVideo = -1;
 
-if room = Room_Cutscene_Logos
+switch room
 {
-	FileName = working_directory + "Video/Cutscene_Logos.webm";
+	case Room_Cutscene_Logos:
+		FileName = working_directory + "Video/Cutscene_Logos.webm";
+		break;
+		
+	case Room_Cutscene_Intro:
+		FileName = working_directory + "Video/Cutscene_Intro.webm";
+		break;
+		
+	case Room_Cutscene_Shrine_Earth:
+		FileName = working_directory + "Video/Cutscene_Shrine_Earth.webm";
+		break;
+		
+	default:
+		FileName = ""
+		break;
 }
-else if room = Room_Cutscene_Intro
-{
-	FileName = working_directory + "Video/Cutscene_Intro.webm";
-}
-else
-{
-	FileName = ""
-}
+
 if (file_exists(FileName))
 {
 	CurrentVideo = webm_add(FileName);

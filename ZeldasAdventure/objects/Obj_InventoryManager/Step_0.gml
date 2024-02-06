@@ -42,7 +42,7 @@ if SelectedIndex[1] == -1
 }
 if Alpha == 255
 {
-	if input_check_pressed("action") or input_check_pressed("special")
+	if input_check_pressed("action1") or input_check_pressed("action2")
 	{
 		if InventoryIndex = 2
 		{

@@ -71,6 +71,7 @@ function InitGameVariables()
 		Gauntlet
 		
 	}
+	global.VisitedMaps = ds_list_create()
 	global.Name = "ZELDA";
 	global.CurrentMap = Maps.Overworld; //To determine which map to display in the inventory
 	global.CurrentTile = {x: 6, y: 22};
@@ -113,10 +114,18 @@ function InitGameVariables()
 	audio_group_set_gain(AudioGroup_Dialogue,global.VolumeDialogue * global.VolumeMaster,0);
 	ini_close()
 	
-	var KeyBindingsJSON = file_text_open_read(global.KeyBindingsFileName)
-	input_system_import(file_text_read_string(KeyBindingsJSON))
-	file_text_close(KeyBindingsJSON)
-	
+	if file_exists(global.KeyBindingsFileName)
+	{
+		var KeyBindingsJSON = file_text_open_read(global.KeyBindingsFileName)
+		input_system_import(file_text_read_string(KeyBindingsJSON))
+		file_text_close(KeyBindingsJSON)
+	}
+	else
+	{
+		var KeyBindingsJSON = file_text_open_write(global.KeyBindingsFileName)
+		file_text_write_string(KeyBindingsJSON,input_system_export())
+		file_text_close(KeyBindingsJSON)
+	}
 	//Entity Variables
 	#macro PlayerBaseSpeed 1.5
 	#macro PlayerAcceleration_Slippery 0.065

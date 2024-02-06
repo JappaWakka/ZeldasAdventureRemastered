@@ -19,8 +19,8 @@ function NameEntry_SaveName()
 	ini_close()
 	global.SavePlayerNames[global.CurrentSaveGame] = SaveName
 	audio_play_sound(Menu_NameInput_Confirm,1000,false)
-	InputName = ""
 	SaveGame_Play()
+	
 }
 
 function NameEntry_AddChar(Char)

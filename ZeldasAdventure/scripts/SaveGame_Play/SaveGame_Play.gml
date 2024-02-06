@@ -66,9 +66,10 @@ function SaveGame_Play(){
 	}
 	else
 	{
+		InputName = ""
 		global.FadeSpeed = 16;
 		global.FadeProgress = 0;
 		IsFading = true;
-		NextPage = 5
+		NextPage = Menu_Page.NameInput
 	}
 }

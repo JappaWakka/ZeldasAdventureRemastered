@@ -14,7 +14,7 @@ function Audio_Init_MusicTileMap()
 	global.Music[5][1] = "Shrine_Air";
 	global.Music[6][1] = "Shrine_Air";
 	
-	global.Music[10][0] = "Shrine_Air";
+	global.Music[10][1] = "Shrine_Air";
 	
 	global.Music[25][1] = "Desert";
 	
@@ -647,12 +647,12 @@ function Audio_Init_MusicTileMap()
 	//Y = 43
 	global.Music[3][43] = "Shrine_Fire_Regular";
 	
-	global.Music[18][41] = "Shrine_Strength";
-	global.Music[19][41] = "Shrine_Strength";
-	global.Music[20][41] = "Shrine_Strength";
-	global.Music[21][41] = "Shrine_Strength";
-	global.Music[22][41] = "Shrine_Strength";
-	global.Music[23][41] = "Shrine_Strength";
-	global.Music[24][41] = "Shrine_Strength";
+	global.Music[18][43] = "Shrine_Strength";
+	global.Music[19][43] = "Shrine_Strength";
+	global.Music[20][43] = "Shrine_Strength";
+	global.Music[21][43] = "Shrine_Strength";
+	global.Music[22][43] = "Shrine_Strength";
+	global.Music[23][43] = "Shrine_Strength";
+	global.Music[24][43] = "Shrine_Strength";
 	
 }
