@@ -19,6 +19,7 @@ function InitGameVariables()
 	global.FadeSpeed = 8;
 	global.FadeProgress = 2; //0 = Fade Out, 1 = Fade In, 2 = Finished, 3 = Warp
 	global.FadeAlpha = 0;
+	global.FadeBeforePan = false;
 	global.CameraIsPanning = false;
 	global.CameraPanSpeed = {x: 12, y: 8};
 	global.DesiredRubies = 0;

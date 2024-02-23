@@ -14,6 +14,7 @@ if IsPlayerOnSameTile() = true
 			
 		}
 	}
+	
 	if global.CurrentDialogue_Asset != Dialog_None
 	{
 		if Obj_InventoryManager.Alpha = 0
@@ -52,4 +53,8 @@ if IsPlayerOnSameTile() = true
 			global.SwitchTracks = true
 		}
 	}
+}
+else if instance_exists(Entity_Pickup_Dagger) = false and Item_FindIndex(Spells.Dagger,1) = -1
+{
+	Register_Remove("KrebbTheWeary")
 }

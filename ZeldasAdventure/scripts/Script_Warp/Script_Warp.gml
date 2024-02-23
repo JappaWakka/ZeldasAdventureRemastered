@@ -1,4 +1,4 @@
-function WarpTo(TileX, TileY, PlayerX, PlayerY, FadeSpeed = 8)
+function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 8)
 {
 	if global.FadeProgress = 3
 	{
@@ -14,9 +14,19 @@ function WarpTo(TileX, TileY, PlayerX, PlayerY, FadeSpeed = 8)
 	
 	if global.FadeProgress = 1
 	{
+		var DestinationX = PlayerX
+		if PlayerX = -1
+		{
+			DestinationX = Entity_Player.x
+		}
+		var DestinationY = PlayerY
+		if PlayerY = -1
+		{
+			DestinationY = Entity_Player.y
+		}
 		global.FadeSpeed = FadeSpeed;
-		Entity_Player.x = TileX * tileWidth + PlayerX;
-		Entity_Player.y = TileY * tileHeight + PlayerY;
+		Entity_Player.x = TileX * tileWidth + DestinationX;
+		Entity_Player.y = TileY * tileHeight + DestinationY;
 		global.CurrentTile.x = TileX;
 		global.CurrentTile.y = TileY;
 		camera_set_view_pos(view,global.CurrentTile.x * tileWidth,global.CurrentTile.y * tileHeight);

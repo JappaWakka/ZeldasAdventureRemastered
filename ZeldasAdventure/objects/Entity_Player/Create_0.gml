@@ -3,4 +3,4 @@ Facing = global.Directions.South;
 IsAttacking = false;
 DamageDelay = 0;
 IsDead = false;
-CurrentSpeed = 0;
+instance_create_layer(x,y,"PlayerAndNPCParent",Entity_Collision_Player)

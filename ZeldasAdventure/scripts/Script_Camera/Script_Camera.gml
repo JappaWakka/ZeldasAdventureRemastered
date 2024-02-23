@@ -19,7 +19,7 @@ function Camera_Init(Camera = view)
 
 function Camera_Pan()
 {
-	if(instance_exists(Entity_Player))
+	if(instance_exists(Entity_Collision_Player))
 	{
 		var Current =
 		{
@@ -28,8 +28,8 @@ function Camera_Pan()
 		}
 		var Desired =
 		{
-			x : (Entity_Player.x / 384 - frac(Entity_Player.x / 384)) * 384,
-			y : (Entity_Player.y / 240 - frac(Entity_Player.y / 240)) * 240,
+			x : (Entity_Collision_Player.x / 384 - frac(Entity_Collision_Player.x / 384)) * 384,
+			y : (Entity_Collision_Player.y / 240 - frac(Entity_Collision_Player.y / 240)) * 240,
 		}
 		var PanTo =
 		{
@@ -41,22 +41,43 @@ function Camera_Pan()
 		{
 			global.CurrentTile.x = Desired.x / tileWidth;
 			global.CurrentTile.y = Desired.y / tileHeight;
-			camera_set_view_pos(view,Current.x + PanTo.x,Current.y + PanTo.y);
-			if ((Desired.x != Current.x + PanTo.x) or (Desired.y != Current.y + PanTo.y))
+			
+			if global.FadeBeforePan = false
 			{
-				global.CameraIsPanning = true;
-				if audio_is_playing(global.CurrentDialogue_ID)
+				camera_set_view_pos(view,Current.x + PanTo.x,Current.y + PanTo.y);
+				if ((Desired.x != Current.x + PanTo.x) or (Desired.y != Current.y + PanTo.y))
 				{
-					audio_stop_sound(global.CurrentDialogue_ID)
-					global.Subtitle = ""
+					global.CameraIsPanning = true;
+					if audio_is_playing(global.CurrentDialogue_ID)
+					{
+						audio_stop_sound(global.CurrentDialogue_ID)
+						global.Subtitle = ""
+					}
+				}
+				else
+				{
+					global.SwitchTracks = true;
+					if global.FadeAlpha = 0
+					{
+						global.CameraIsPanning = false;
+					}
 				}
 			}
 			else
 			{
-				global.SwitchTracks = true;
-				if global.FadeAlpha = 0
+				if global.FadeProgress = 3
 				{
-					global.CameraIsPanning = false;
+					if audio_is_playing(global.CurrentDialogue_ID)
+					{
+						audio_stop_sound(global.CurrentDialogue_ID)
+						global.Subtitle = ""
+					}
+					global.FadeProgress = 0;
+					global.FadeSpeed = 8;
+				}
+				if global.FadeProgress = 1
+				{
+					camera_set_view_pos(view,Desired.x,Desired.y);
 				}
 			}
 		}

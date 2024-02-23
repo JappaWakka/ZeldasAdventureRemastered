@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Collision_NPC_KrebbTheWeary",
-  "spriteId": {
-    "name": "PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary",
-    "path": "sprites/PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary/PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary.yy",
-  },
+  "name": "Parent_FadeBeforePan",
+  "spriteId": null,
   "solid": false,
   "visible": false,
   "managed": true,
@@ -24,13 +21,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NPCs",
-    "path": "folders/Objects/SpecialCollisions/NPCs.yy",
+    "name": "FadeBeforePan",
+    "path": "folders/Objects/FadeBeforePan.yy",
   },
 }

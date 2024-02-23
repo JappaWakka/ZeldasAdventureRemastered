@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SpecialCollisions",
-    "path": "folders/Objects/SpecialCollisions.yy",
+    "name": "NPCs",
+    "path": "folders/Objects/SpecialCollisions/NPCs.yy",
   },
 }
