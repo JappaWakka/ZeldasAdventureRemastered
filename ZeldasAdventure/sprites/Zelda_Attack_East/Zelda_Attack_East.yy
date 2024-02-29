@@ -31,6 +31,8 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"59256680-7ad2-4a95-8ced-63de9d09e1cc",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"23edf801-5b0e-434e-83eb-9290cf70dd71",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d86c93e-3861-4f08-8288-b9c2f5ff5662",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"90fa7777-cbb3-4b3f-b352-4abfa05132d1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5c65a855-66cd-4449-8f72-3a5bc8a3d43d",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -42,7 +44,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 5.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -50,6 +52,8 @@
             {"id":"2b055ab8-4f85-4426-9139-f851a45ba2a8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"59256680-7ad2-4a95-8ced-63de9d09e1cc","path":"sprites/Zelda_Attack_East/Zelda_Attack_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"0afcec91-558e-4f4d-8943-1273235b231a","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"23edf801-5b0e-434e-83eb-9290cf70dd71","path":"sprites/Zelda_Attack_East/Zelda_Attack_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"e0a741f6-49a9-43a3-9bb6-a741780ce2f5","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d86c93e-3861-4f08-8288-b9c2f5ff5662","path":"sprites/Zelda_Attack_East/Zelda_Attack_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4685a9b2-1466-4b75-88a1-b1ececd5f813","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"90fa7777-cbb3-4b3f-b352-4abfa05132d1","path":"sprites/Zelda_Attack_East/Zelda_Attack_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"251cfc63-099d-49a9-938c-9d52a1547dc8","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5c65a855-66cd-4449-8f72-3a5bc8a3d43d","path":"sprites/Zelda_Attack_East/Zelda_Attack_East.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

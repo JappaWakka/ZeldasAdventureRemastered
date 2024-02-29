@@ -31,6 +31,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d5ae7b8-d47f-4fee-b83a-f4ec5f71d042",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2d40f3a4-b2c2-43de-948d-2c102bc8d8aa",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"177db892-58ce-420e-b1b8-29301b797e68",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c782437d-b982-4b14-8102-e6abdfa7a337",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -42,7 +43,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 3.0,
+    "length": 4.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -50,6 +51,7 @@
             {"id":"5340c305-7ed9-41a9-adbb-4cbff558b7c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d5ae7b8-d47f-4fee-b83a-f4ec5f71d042","path":"sprites/Zelda_Slide/Zelda_Slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f0d4b0ff-f361-45ec-a0ce-9e47dfdff15e","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2d40f3a4-b2c2-43de-948d-2c102bc8d8aa","path":"sprites/Zelda_Slide/Zelda_Slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d623c64b-54d1-4934-8061-76fd18fa0fe4","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"177db892-58ce-420e-b1b8-29301b797e68","path":"sprites/Zelda_Slide/Zelda_Slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5b685bb6-33b6-4b8d-ba7c-5ef8a737717c","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c782437d-b982-4b14-8102-e6abdfa7a337","path":"sprites/Zelda_Slide/Zelda_Slide.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

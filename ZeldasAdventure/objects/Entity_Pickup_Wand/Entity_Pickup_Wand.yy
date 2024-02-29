@@ -9,10 +9,7 @@
   "solid": false,
   "visible": false,
   "managed": true,
-  "spriteMaskId": {
-    "name": "Hitbox_Pickup_Big",
-    "path": "sprites/Hitbox_Pickup_Big/Hitbox_Pickup_Big.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
