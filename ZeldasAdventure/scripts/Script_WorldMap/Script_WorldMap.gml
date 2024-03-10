@@ -5,6 +5,7 @@ function WorldMap_Add_VisitedTile(TileX, TileY)
 		if global.WorldMap_Tiles[i][1] = TileX and global.WorldMap_Tiles[i][2] = TileY
 		{
 			global.WorldMap_Tiles[i][3] = true
+			ds_list_add(global.VisitedMaps,i)
 		}
 	}
 }
@@ -512,5 +513,14 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine7,2,42,false],		//460
 		[Maps.Shrine7,3,42,false],		//461
 		[Maps.Shrine7,3,43,false],		//462
+	//Ganon's Gauntlet
+		[Maps.Gauntlet,0,16,false],		//463
+		[Maps.Gauntlet,1,16,false],		//464
+		[Maps.Gauntlet,2,16,false],		//465
+		[Maps.Gauntlet,3,16,false],		//466
+		[Maps.Gauntlet,4,16,false],		//467
+		[Maps.Gauntlet,5,16,false],		//468
+		[Maps.Gauntlet,6,16,false],		//469
+		[Maps.Gauntlet,7,16,false],		//470
 	]
 }
