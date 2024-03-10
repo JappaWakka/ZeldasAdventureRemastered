@@ -438,16 +438,26 @@ else //SettingMenu
 			{
 				switch PageIndex
 				{
-					case 1:
+					case Menu_Page.Settings:
+						if SavedSettings = false
+						{
+							Settings_Discard()
+						}
+						else
+						{
+							Settings_Update()
+						}
+						//Return to Main Menu
 						global.FadeSpeed = 16;
 						global.FadeProgress = 0;
 						audio_play_sound(Settings_Accept,1000,false)
 						IsFading = true;
 						NextPage = Menu_Page.Main;
 						break;
-					case 2:
-					case 3:
-					case 4:
+					case Menu_Page.Game:
+					case Menu_Page.Audio:
+					case Menu_Page.Controls:
+						//Return to Settings Menu
 						global.FadeSpeed = 16;
 						global.FadeProgress = 0;
 						audio_play_sound(Settings_Accept,1000,false)

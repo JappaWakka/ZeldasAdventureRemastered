@@ -255,7 +255,7 @@ else //SettingMenu
 	
 	var SeparationDistance =
 	{
-		x : 8, // Distance between Dividing Line and Elements
+		x : 6, // Distance between Dividing Line and Elements
 		y : 18  // Distance between each Element
 	}
 	
