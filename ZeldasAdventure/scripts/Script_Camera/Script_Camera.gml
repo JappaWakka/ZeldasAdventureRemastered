@@ -39,6 +39,10 @@ function Camera_Pan()
 		
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
+			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)
+			instance_activate_object(Entity_Parent_Player)
+			instance_activate_region(Desired.x, Desired.y, tileWidth, tileHeight,true)
+			
 			global.CurrentTile.x = Desired.x / tileWidth;
 			global.CurrentTile.y = Desired.y / tileHeight;
 			
