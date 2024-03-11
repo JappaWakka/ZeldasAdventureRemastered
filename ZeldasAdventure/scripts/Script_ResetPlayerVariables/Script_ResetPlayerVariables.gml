@@ -16,4 +16,5 @@ function ResetPlayerVariables(){
 	global.MaxHealth = 60;
 	global.Power = 30;
 	global.Defense = 30;
+	global.VisitedMaps = ds_list_create()
 }

@@ -9,6 +9,7 @@ function InitGameVariables()
 	
 	//System Variables
 	Init_SpawnPoints_TileMap()
+	WorldMap_Tiles_Init()
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
 	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
 	
@@ -72,7 +73,6 @@ function InitGameVariables()
 		Gauntlet
 		
 	}
-	global.VisitedMaps = ds_list_create()
 	global.Name = "ZELDA";
 	global.CurrentMap = Maps.Overworld; //To determine which map to display in the inventory
 	global.CurrentTile = {x: 6, y: 22};
@@ -87,6 +87,7 @@ function InitGameVariables()
 	global.MaxHealth = 60;
 	global.Power = 30;
 	global.Defense = 30;
+	global.VisitedMaps = ds_list_create()
 	
 	//Option Variables
 	ini_open(global.SaveDataFileName)
@@ -169,5 +170,11 @@ function InitGameVariables()
 		SouthWest : 225,
 		SouthEast : 315
 	}
+	
+	enum MapTileType
+	{
+		Regular,
+		SignRoom
+	};
 	
 }

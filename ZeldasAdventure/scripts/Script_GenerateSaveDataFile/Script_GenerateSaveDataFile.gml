@@ -7,18 +7,19 @@ function GenerateSaveDataFile()
 		var Section = "Save" + string(i)
 		if !ini_section_exists(Section)
 		{
-			ini_write_string(Section, "Register", "");
-			ini_write_string(Section, "InventoryCelestialSigns", "");
-			ini_write_string(Section, "InventorySpells", "");
-			ini_write_string(Section, "InventoryTreasure", "");
-			ini_write_real(Section, "CurrentKeys", 0);
-			ini_write_real(Section, "CurrentRubies", 0);
-			ini_write_string(Section, "PlayerSpawn", "Spawn_Overworld");
-			ini_write_real(Section, "Defense", 30);
-			ini_write_real(Section, "Power", 30);
-			ini_write_real(Section, "MaxHealth", 60);
-			ini_write_real(Section, "CurrentHealth", 60);
 			ini_write_string(Section, "Name", "");
+			ini_write_real(Section, "CurrentHealth", 60);
+			ini_write_real(Section, "MaxHealth", 60);
+			ini_write_real(Section, "Power", 30);
+			ini_write_real(Section, "Defense", 30);
+			ini_write_string(Section, "PlayerSpawn", "Spawn_Overworld");
+			ini_write_real(Section, "CurrentRubies", 0);
+			ini_write_real(Section, "CurrentKeys", 0);
+			ini_write_string(Section, "InventoryTreasure", "");
+			ini_write_string(Section, "InventorySpells", "");
+			ini_write_string(Section, "InventoryCelestialSigns", "");
+			ini_write_string(Section, "Register", "");
+			ini_write_string(Section, "VisitedTiles", "");
 		}
 	}
 	

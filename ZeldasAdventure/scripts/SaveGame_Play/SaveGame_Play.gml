@@ -58,6 +58,9 @@ function SaveGame_Play(){
 		global.MaxHealth = ini_read_real(Section, "MaxHealth", 60);
 		global.Power = ini_read_real(Section, "Power", 30);
 		global.Defense = ini_read_real(Section, "Defense", 30);
+		
+		var VisitedTilesList = string_split(ini_read_string(Section, "VisitedTiles", ""),",")
+		WorldMap_UpdateVisitedTiles(VisitedTilesList)
 		ini_close()
 		
 		
