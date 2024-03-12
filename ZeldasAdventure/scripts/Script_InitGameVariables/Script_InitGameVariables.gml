@@ -174,6 +174,7 @@ function InitGameVariables()
 	enum MapTileType
 	{
 		Regular,
+		Large,
 		SignRoom
 	};
 	

@@ -39,13 +39,19 @@ function Camera_Pan()
 		
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
+			//Deactivate old tile, activate new tile
 			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)
 			instance_activate_object(Entity_Parent_Player)
 			instance_activate_region(Desired.x, Desired.y, tileWidth, tileHeight,true)
 			
+			//Update Current Tile
 			global.CurrentTile.x = Desired.x / tileWidth;
 			global.CurrentTile.y = Desired.y / tileHeight;
 			
+			//Add new tile to visited tiles if it's not already there
+			WorldMap_Add_VisitedTile(global.CurrentTile.x,global.CurrentTile.y)	
+			
+			//Do camera panning (and fading if necessary)
 			if global.FadeBeforePan = false
 			{
 				camera_set_view_pos(view,Current.x + PanTo.x,Current.y + PanTo.y);
