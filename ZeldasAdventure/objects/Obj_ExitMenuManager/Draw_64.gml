@@ -1,5 +1,5 @@
 //Setup some variables
-var CursorXPosition = 310
+var CursorXPosition = 308
 var CursorYStart = 69
 var CursorYSepararation = 51
 if Alpha = 255
