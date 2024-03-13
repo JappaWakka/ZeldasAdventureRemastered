@@ -6,7 +6,19 @@ if room = Room_Overworld
 	if global.HasSpawned = false
 	{
 		WarpToLocation(global.PlayerSpawn)
-		if global.FadeProgress = 2 {global.HasSpawned = true}
+		if global.FadeProgress = 2
+		{
+			global.HasSpawned = true
+			if WorldMap_GetCurrentTileID() != -1
+			{
+				WorldMap_Add_VisitedTile(global.CurrentTile.x,global.CurrentTile.y)
+				global.CurrentMap = WorldMap_GetMapID(WorldMap_GetCurrentTileID())
+			}
+			else
+			{
+				global.CurrentMap = Maps.Overworld
+			}
+		}
 	}
 	else
 	{

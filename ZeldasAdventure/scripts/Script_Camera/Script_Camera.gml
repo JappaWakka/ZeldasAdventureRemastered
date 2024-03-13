@@ -49,7 +49,15 @@ function Camera_Pan()
 			global.CurrentTile.y = Desired.y / tileHeight;
 			
 			//Add new tile to visited tiles if it's not already there
-			WorldMap_Add_VisitedTile(global.CurrentTile.x,global.CurrentTile.y)	
+			if WorldMap_GetCurrentTileID() != -1
+			{
+				WorldMap_Add_VisitedTile(global.CurrentTile.x,global.CurrentTile.y)
+				global.CurrentMap = WorldMap_GetMapID(WorldMap_GetCurrentTileID())
+			}
+			else
+			{
+				global.CurrentMap = Maps.Overworld
+			}
 			
 			//Do camera panning (and fading if necessary)
 			if global.FadeBeforePan = false

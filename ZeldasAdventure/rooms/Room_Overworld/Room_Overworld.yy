@@ -19,6 +19,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"System","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_43F12DB0","properties":[],"isDnd":false,"objectId":{"name":"Obj_DrawHUD","path":"objects/Obj_DrawHUD/Obj_DrawHUD.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_639BAB18","properties":[],"isDnd":false,"objectId":{"name":"Obj_InventoryManager","path":"objects/Obj_InventoryManager/Obj_InventoryManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5F96DFB6","properties":[],"isDnd":false,"objectId":{"name":"Obj_WorldMapManager","path":"objects/Obj_WorldMapManager/Obj_WorldMapManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1A93CB0A_1","properties":[],"isDnd":false,"objectId":{"name":"Obj_GameManager","path":"objects/Obj_GameManager/Obj_GameManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_E3F6549_1","properties":[],"isDnd":false,"objectId":{"name":"Obj_AudioManager","path":"objects/Obj_AudioManager/Obj_AudioManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":0.0,},
       ],"visible":true,"depth":100000,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -70,7 +71,6 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Items_BelowForeground","instances":[],"visible":true,"depth":100300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Temporary_AbovePlayer","instances":[],"visible":true,"depth":100400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":6,"gridY":6,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"NPCs_AbovePlayer","instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D91C2F7","properties":[],"isDnd":false,"objectId":{"name":"Entity_Player","path":"objects/Entity_Player/Entity_Player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2496.0,"y":5408.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B555509","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_KrebbTheWeary","path":"objects/Entity_NPC_KrebbTheWeary/Entity_NPC_KrebbTheWeary.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4076.0,"y":5164.0,},
       ],"visible":true,"depth":100500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"PlayerAndNPCParent","instances":[
@@ -863,13 +863,13 @@
     {"name":"inst_3F889345","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_C88688F","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_77E82B3E","path":"rooms/Room_Overworld/Room_Overworld.yy",},
-    {"name":"inst_4D91C2F7","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_6B555509","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_23C6AD91","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_1CB26B0D","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_76FD2A82","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_4800CF92","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_46D634F0","path":"rooms/Room_Overworld/Room_Overworld.yy",},
+    {"name":"inst_5F96DFB6","path":"rooms/Room_Overworld/Room_Overworld.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -71,8 +71,9 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 				if TextIndex = 5 {return "Action 1/Accept"}
 				if TextIndex = 6 {return "Action 2/Cancel"}
 				if TextIndex = 7 {return "Inventory"}
-				if TextIndex = 8 {return "Menu"}
-				if TextIndex = 9 {return "Back"}
+				if TextIndex = 8 {return "Map"}
+				if TextIndex = 9 {return "Menu"}
+				if TextIndex = 10 {return "Back"}
 				break;
 		}
 	break;
@@ -81,7 +82,7 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 		switch MenuIndex
 		{
 			case 1: //Settings - Main
-				if TextIndex = 0	  {return "Spel"}
+				if TextIndex = 0 {return "Spel"}
 				if TextIndex = 1 {return "Geluidsvolume"}
 				if TextIndex = 2 {return "Besturing"}
 				if TextIndex = 3 {return "Herstel Besturing"}
@@ -141,13 +142,14 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 				}
 				if TextIndex = 1 {return "Links"}
 				if TextIndex = 2 {return "Rechts"}
-				if TextIndex = 3 {return "Op"}
-				if TextIndex = 4 {return "Neer"}
+				if TextIndex = 3 {return "Omhoog"}
+				if TextIndex = 4 {return "Omlaag"}
 				if TextIndex = 5 {return "Actie 1/Bevestig"}
 				if TextIndex = 6 {return "Actie 2/Annuleer"}
 				if TextIndex = 7 {return "Inventaris"}
-				if TextIndex = 8 {return "Menu"}
-				if TextIndex = 9 {return "Terug"}
+				if TextIndex = 8 {return "Kaart"}
+				if TextIndex = 9 {return "Menu"}
+				if TextIndex = 10 {return "Terug"}
 				break;
 		}
 		break;

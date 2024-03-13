@@ -256,7 +256,7 @@ else //SettingMenu
 	var SeparationDistance =
 	{
 		x : 6, // Distance between Dividing Line and Elements
-		y : 18  // Distance between each Element
+		y : 16  // Distance between each Element
 	}
 	
 	var StartPosition = 
@@ -272,6 +272,7 @@ else //SettingMenu
 	//Draw Elements on Left Side
 	draw_set_valign(fa_middle);
 	draw_set_halign(fa_right);
+	draw_set_font(Font_Settings)
 	
 	var ElementIndexLeft = 0;
 	var LeftTextX = StartPosition.x - SeparationDistance.x;
@@ -281,7 +282,7 @@ else //SettingMenu
 	{
 		LeftTextY = StartPosition.y + (ElementIndexLeft * SeparationDistance.y);
 		var DrawColor = c_black;
-		draw_set_font(Font_Menu)
+		
 		if (ElementIndexLeft == Menu_CurrentEntry[PageIndex])
 		{
 			DrawColor = make_color_rgb(141,48,18);

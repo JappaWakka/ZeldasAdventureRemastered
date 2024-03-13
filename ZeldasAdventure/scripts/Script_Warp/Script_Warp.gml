@@ -17,18 +17,27 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 8)
 		var DestinationX = PlayerX
 		if PlayerX = -1
 		{
-			DestinationX = Entity_Player.x
+			DestinationX = Entity_Collision_Player.x
 		}
 		var DestinationY = PlayerY
 		if PlayerY = -1
 		{
-			DestinationY = Entity_Player.y
+			DestinationY = Entity_Collision_Player.y
 		}
 		global.FadeSpeed = FadeSpeed;
-		Entity_Player.x = TileX * tileWidth + DestinationX;
-		Entity_Player.y = TileY * tileHeight + DestinationY;
+		Entity_Collision_Player.x = TileX * tileWidth + DestinationX;
+		Entity_Collision_Player.y = TileY * tileHeight + DestinationY;
 		global.CurrentTile.x = TileX;
 		global.CurrentTile.y = TileY;
+		if WorldMap_GetCurrentTileID() != -1
+		{
+			WorldMap_Add_VisitedTile(global.CurrentTile.x,global.CurrentTile.y)
+			global.CurrentMap = WorldMap_GetMapID(WorldMap_GetCurrentTileID())
+		}
+		else
+		{
+			global.CurrentMap = Maps.Overworld
+		}
 		camera_set_view_pos(view,global.CurrentTile.x * tileWidth,global.CurrentTile.y * tileHeight);
 		global.SwitchTracks = true;
 		return true;

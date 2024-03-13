@@ -34,6 +34,12 @@ function WorldMap_GetCurrentTileID()
 	}
 	return -1
 }
+
+function WorldMap_GetMapID(TileID)
+{
+	return global.WorldMap_Tiles[TileID][0]
+}
+
 function WorldMap_UpdateVisitedTiles(IDArray)
 {
 	for (var i = 0; i <= array_length(IDArray)-1; i++)
@@ -61,6 +67,7 @@ function WorldMap_Tiles_Init()
 	global.WorldMap_Tiles =
 	[
 	//Overworld
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Overworld		,25		,0		,0			,MapTileType.Regular		,25		,0		],	//0
 		[Maps.Overworld		,25		,1		,1			,MapTileType.Regular		,25		,1		],	//1
 		[Maps.Overworld		,24		,2		,2			,MapTileType.Regular		,24		,2		],	//2
@@ -354,8 +361,9 @@ function WorldMap_Tiles_Init()
 		[Maps.Overworld		,6		,29		,290		,MapTileType.Regular		,6		,29		],	//290
 		[Maps.Overworld		,6		,30		,291		,MapTileType.Regular		,6		,30		],	//291
 		[Maps.Overworld		,6		,31		,292		,MapTileType.Regular		,6		,31		],	//292
-		[Maps.Overworld		,7		,31		,292		,MapTileType.Regular		,-1		,-1		],	//293
+		[Maps.Overworld		,7		,31		,293		,MapTileType.Regular		,7		,31		],	//293
 	//Shrine 1 (Earth)
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Shrine1		,12		,29		,294		,MapTileType.SignRoom		,18		,8		],	//294
 		[Maps.Shrine1		,12		,30		,295		,MapTileType.Large			,18		,10		],	//295
 		[Maps.Shrine1		,10		,31		,296		,MapTileType.Large			,14		,10		],	//296
@@ -379,6 +387,7 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine1		,10		,38		,314		,MapTileType.Large			,14		,24		],	//314
 		[Maps.Shrine1		,11		,38		,315		,MapTileType.Large			,16		,24		],	//315
 	//Shrine 2 (Illusion)                                                               
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Shrine2		,27		,18		,316		,MapTileType.SignRoom		,22		,6		],	//316
 		[Maps.Shrine2		,27		,19		,317		,MapTileType.Large			,22		,8		],	//317
 		[Maps.Shrine2		,24		,20		,318		,MapTileType.Large			,16		,10		],	//318
@@ -405,6 +414,7 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine2		,19		,26		,339		,MapTileType.Large			,6		,22		],	//339
 		[Maps.Shrine2		,19		,27		,340		,MapTileType.Large			,6		,24		],	//340
 	//Shrine 3 (Air)	                                                                
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Shrine3		,6		,0		,341		,MapTileType.Large			,10		,6		],	//341
 		[Maps.Shrine3		,7		,0		,342		,MapTileType.Large			,12		,6		],	//342
 		[Maps.Shrine3		,8		,0		,343		,MapTileType.Large			,14		,6		],	//343
@@ -428,6 +438,7 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine3		,8		,7		,361		,MapTileType.Large			,14		,22		],	//361
 		[Maps.Shrine3		,9		,7		,362		,MapTileType.Large			,16		,22		],	//362
 	//Shrine 4 (Destiny)                                                                
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Shrine4		,26		,22		,363		,MapTileType.Large			,16		,8		],	//363
 		[Maps.Shrine4		,26		,23		,364		,MapTileType.Large			,16		,10		],	//364
 		[Maps.Shrine4		,23		,24		,365		,MapTileType.Large			,10		,12		],	//365
@@ -450,6 +461,7 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine4		,27		,28		,382		,MapTileType.Large			,18		,20		],	//382
 		[Maps.Shrine4		,28		,28		,383		,MapTileType.SignRoom		,20		,20		],	//383
 	//Shrine 5 (Water)
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Shrine5		,14		,30		,384		,MapTileType.Large			,6		,12		],	//384
 		[Maps.Shrine5		,15		,30		,385		,MapTileType.Large			,8		,12		],	//385
 		[Maps.Shrine5		,16		,30		,386		,MapTileType.Large			,10		,12		],	//386
@@ -477,6 +489,7 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine5		,18		,36		,408		,MapTileType.Large			,14		,24		],	//408
 		[Maps.Shrine5		,19		,36		,409		,MapTileType.Large			,16		,24		],	//409
 	//Shrine 6 (Strength)                                                               
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Shrine6		,21		,37		,410		,MapTileType.SignRoom		,12		,8		],	//410
 		[Maps.Shrine6		,22		,37		,411		,MapTileType.Large			,14		,8		],	//411
 		[Maps.Shrine6		,23		,37		,412		,MapTileType.Large			,16		,8		],	//412
@@ -507,6 +520,7 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine6		,23		,43		,437		,MapTileType.Large			,16		,20		],	//437
 		[Maps.Shrine6		,24		,43		,438		,MapTileType.Large			,18		,20		],	//438
 	//Shrine 7 (Fire) 
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Shrine7		,6		,37		,439		,MapTileType.SignRoom		,14		,6		],	//439
 		[Maps.Shrine7		,2		,38		,440		,MapTileType.Large			,8		,12		],	//440
 		[Maps.Shrine7		,3		,38		,441		,MapTileType.Large			,10		,12		],	//441
@@ -532,6 +546,7 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine7		,3		,42		,461		,MapTileType.Large			,10		,20		],	//461
 		[Maps.Shrine7		,3		,43		,462		,MapTileType.Large			,10		,22		],	//462
 	//Ganon's Gauntlet                                                                  
+		//MapID				,TileX	,TileY	,TileID		,TileType					,MapX	,MapY
 		[Maps.Gauntlet		,0		,16		,463		,MapTileType.Regular		,4		,10		],	//463 Llort
 		[Maps.Gauntlet		,1		,16		,464		,MapTileType.Large			,12		,10		],	//464 Pasquinade
 		[Maps.Gauntlet		,2		,16		,465		,MapTileType.Large			,20		,10		],	//465 Aviana

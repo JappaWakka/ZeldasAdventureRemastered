@@ -20,9 +20,10 @@ function __input_config_verbs()
             left:  input_binding_key(vk_left),
             right: input_binding_key(vk_right),
             
-            action1: input_binding_key(vk_control),
-            action2: input_binding_key(vk_alt),
-            inventory:  input_binding_key(vk_space),
+            action1: input_binding_key(ord("Z")),
+            action2: input_binding_key(ord("X")),
+            inventory:  input_binding_key(ord("C")),
+            map:  input_binding_key(ord("V")),
             menu:  input_binding_key(vk_escape),
 			accept: input_binding_key(vk_enter),
         },
@@ -37,6 +38,7 @@ function __input_config_verbs()
             action1:  input_binding_gamepad_button(gp_face1), //A Button
             action2:  input_binding_gamepad_button(gp_face2), //B Button
             inventory:  input_binding_gamepad_button(gp_face3), //X Button
+            map:  input_binding_gamepad_button(gp_face4), //Y Button
             menu: input_binding_gamepad_button(gp_start),
         },
         

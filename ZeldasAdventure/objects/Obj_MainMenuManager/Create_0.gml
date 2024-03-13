@@ -77,6 +77,7 @@ ds_Menu_Controls = CreateMenuPage(
 ["Action 1 (Accept)",	Menu_ElementType.Input,				"action1"				],
 ["Action 2 (Cancel)",	Menu_ElementType.Input,				"action2"				],
 ["Inventory",			Menu_ElementType.Input,				"inventory"				],
+["Map",					Menu_ElementType.Input,				"map"					],
 ["Menu",				Menu_ElementType.Input,				"menu"					],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings		]
 );
