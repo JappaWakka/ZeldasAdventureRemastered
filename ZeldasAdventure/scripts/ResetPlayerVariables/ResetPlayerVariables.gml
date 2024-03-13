@@ -9,12 +9,17 @@ function ResetPlayerVariables(){
 	
 	global.CurrentRubies = 0;
 	global.CurrentKeys = 0;
-	global.Inventory = {Treasure : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
+	global.Inventory = {Treasures : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
 	global.Register = ds_list_create()
 	
 	global.CurrentHealth = 60;
 	global.MaxHealth = 60;
 	global.Power = 30;
 	global.Defense = 30;
-	global.VisitedMaps = ds_list_create()
+	global.VisitedTiles = ds_list_create()
+	
+	global.CurrentItem = [-1,-1]
+	global.CurrentTreasure = -1;
+	global.CurrentSpell = -1;
+	
 }

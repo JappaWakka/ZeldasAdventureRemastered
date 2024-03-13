@@ -1,11 +1,11 @@
 
 if IsPlayerOnSameTile() = true
 {
-	if Item_FindIndex(Treasure.VialOfWind,0) = -1 
+	if Item_FindIndex(Treasures.VialOfWind,0) = -1 
 	{
 		if global.CameraIsPanning = false
 		{
-			if Register_Registered("GlebbNoLongerThirsty") = true and Item_FindIndex(Treasure.VialOfWind,0) = -1
+			if Register_Registered("GlebbNoLongerThirsty") = true and Item_FindIndex(Treasures.VialOfWind,0) = -1
 			{
 				if instance_exists(Entity_Pickup_VialOfWind) = false
 				{
@@ -16,7 +16,7 @@ if IsPlayerOnSameTile() = true
 			}
 			else
 			{
-				if Item_FindIndex(Treasure.FullPitcher,0) = -1 && Item_FindIndex(Treasure.EmptyPitcher,0) = -1
+				if Item_FindIndex(Treasures.FullPitcher,0) = -1 && Item_FindIndex(Treasures.EmptyPitcher,0) = -1
 				{
 					if instance_exists(Entity_Pickup_EmptyPitcher) = false
 					{
@@ -33,9 +33,9 @@ if IsPlayerOnSameTile() = true
 						{
 							if input_check_pressed("action1") = true or input_check_pressed("action2") = true
 							{
-								if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.FullPitcher
+								if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasures.FullPitcher
 								{
-									Item_Remove(Treasure.FullPitcher,0);
+									Item_Remove(Treasures.FullPitcher,0);
 									global.CurrentItem[1] = -1
 									if instance_exists(Entity_Pickup_VialOfWind) = false
 									{
@@ -51,9 +51,9 @@ if IsPlayerOnSameTile() = true
 						{
 							if input_check_pressed("action1") = true
 							{
-								if Item_FindValue(global.CurrentTreasure,0) = Treasure.FullPitcher
+								if Item_FindValue(global.CurrentTreasure,0) = Treasures.FullPitcher
 								{
-									Item_Remove(Treasure.FullPitcher,0);
+									Item_Remove(Treasures.FullPitcher,0);
 									global.CurrentTreasure = -1
 									if instance_exists(Entity_Pickup_VialOfWind) = false
 									{
@@ -102,7 +102,7 @@ if IsPlayerOnSameTile() = true
 }
 else
 {
-	if Item_FindIndex(Treasure.VialOfWind,0) <> -1
+	if Item_FindIndex(Treasures.VialOfWind,0) <> -1
 	{
 		instance_destroy()
 	}

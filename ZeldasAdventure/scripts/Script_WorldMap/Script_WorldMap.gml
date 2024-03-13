@@ -6,7 +6,7 @@ function WorldMap_Add_VisitedTile(TileX, TileY)
 		{
 			if WorldMap_HasVisitedTile(global.WorldMap_Tiles[i][3]) = false
 			{
-				ds_list_add(global.VisitedMaps,global.WorldMap_Tiles[i][3])
+				ds_list_add(global.VisitedTiles,global.WorldMap_Tiles[i][3])
 			}
 		}
 	}
@@ -14,7 +14,7 @@ function WorldMap_Add_VisitedTile(TileX, TileY)
 
 function WorldMap_HasVisitedTile(TileID)
 {
-	if ds_list_find_index(global.VisitedMaps,TileID) != -1
+	if ds_list_find_index(global.VisitedTiles,TileID) != -1
 	{
 		return true
 	}
@@ -46,7 +46,7 @@ function WorldMap_UpdateVisitedTiles(IDArray)
 	{
 		if IDArray[i] != "" and WorldMap_HasVisitedTile(IDArray[i]) = false
 		{	
-			ds_list_add(global.VisitedMaps,IDArray[i])
+			ds_list_add(global.VisitedTiles,IDArray[i])
 		}
 			
 	}

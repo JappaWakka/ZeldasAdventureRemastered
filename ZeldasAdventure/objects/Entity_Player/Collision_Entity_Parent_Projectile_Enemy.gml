@@ -1,6 +1,6 @@
 if DamageDelay = 0
 {
-	if Item_FindIndex(Treasure.MagicShield,0) = -1
+	if Item_FindIndex(Treasures.MagicShield,0) = -1
 	{
 		///Reduce HitPoints, play damage sound
 		DecreaseHP(other.Power - GetDefense())

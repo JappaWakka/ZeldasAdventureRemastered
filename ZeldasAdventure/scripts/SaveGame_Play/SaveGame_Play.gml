@@ -20,9 +20,9 @@ function SaveGame_Play(){
 		
 		global.CurrentRubies = ini_read_real(Section, "CurrentRubies", 0);
 		global.CurrentKeys = ini_read_real(Section, "CurrentKeys", 0);
-		global.Inventory = {Treasure : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
+		global.Inventory = {Treasures : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
 		
-		var InventoryTreasureList = string_split(ini_read_string(Section, "InventoryTreasure", ""),",")
+		var InventoryTreasureList = string_split(ini_read_string(Section, "InventoryTreasures", ""),",")
 		for (var i = 0; i <= array_length(InventoryTreasureList) - 1; i++)
 		{
 			if InventoryTreasureList[i] != ""

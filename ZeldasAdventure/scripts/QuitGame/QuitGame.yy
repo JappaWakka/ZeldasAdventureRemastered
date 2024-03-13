@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "MainMenuFunctions",
-    "path": "folders/Scripts/MainMenuFunctions.yy",
+    "name": "MenuFunctions",
+    "path": "folders/Scripts/MenuFunctions.yy",
   },
 }

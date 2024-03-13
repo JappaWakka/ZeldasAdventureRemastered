@@ -88,26 +88,26 @@ if Alpha = 255
 				}
 				break;
 			case Maps.Shrine1:
-				CompassItem = Treasure.Compass_Earth
-				UnderworldMapItem = Treasure.UnderworldMap_Earth
+				CompassItem = Treasures.Compass_Earth
+				UnderworldMapItem = Treasures.UnderworldMap_Earth
 			case Maps.Shrine2:
-				CompassItem = Treasure.Compass_Earth
-				UnderworldMapItem = Treasure.UnderworldMap_Earth
+				CompassItem = Treasures.Compass_Earth
+				UnderworldMapItem = Treasures.UnderworldMap_Earth
 			case Maps.Shrine3:
-				CompassItem = Treasure.Compass_Earth
-				UnderworldMapItem = Treasure.UnderworldMap_Earth
+				CompassItem = Treasures.Compass_Earth
+				UnderworldMapItem = Treasures.UnderworldMap_Earth
 			case Maps.Shrine4:
-				CompassItem = Treasure.Compass_Earth
-				UnderworldMapItem = Treasure.UnderworldMap_Earth
+				CompassItem = Treasures.Compass_Earth
+				UnderworldMapItem = Treasures.UnderworldMap_Earth
 			case Maps.Shrine5:
-				CompassItem = Treasure.Compass_Earth
-				UnderworldMapItem = Treasure.UnderworldMap_Earth
+				CompassItem = Treasures.Compass_Earth
+				UnderworldMapItem = Treasures.UnderworldMap_Earth
 			case Maps.Shrine6:
-				CompassItem = Treasure.Compass_Earth
-				UnderworldMapItem = Treasure.UnderworldMap_Earth
+				CompassItem = Treasures.Compass_Earth
+				UnderworldMapItem = Treasures.UnderworldMap_Earth
 			case Maps.Shrine7:
-				CompassItem = Treasure.Compass_Earth
-				UnderworldMapItem = Treasure.UnderworldMap_Earth
+				CompassItem = Treasures.Compass_Earth
+				UnderworldMapItem = Treasures.UnderworldMap_Earth
 				break;
 		}
 		if CompassItem != -1 and UnderworldMapItem != -1

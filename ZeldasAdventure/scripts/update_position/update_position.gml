@@ -15,7 +15,7 @@ function update_position(argument0, argument1) {
 	
 	var FreeToMoveCurrent = true
 	////Red Boots Water
-	if Item_FindIndex(Treasure.RedBoots,0) = -1
+	if Item_FindIndex(Treasures.RedBoots,0) = -1
 	{
 		if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
 		{
@@ -66,7 +66,7 @@ function update_position(argument0, argument1) {
 				var FreeToMoveNew = true
 				
 				////Red Boots Water
-				if Item_FindIndex(Treasure.RedBoots,0) = -1
+				if Item_FindIndex(Treasures.RedBoots,0) = -1
 				{
 					if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
 					{

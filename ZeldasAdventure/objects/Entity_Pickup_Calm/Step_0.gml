@@ -36,7 +36,7 @@ if IsPlayerOnSameTile() = true
 				{
 					if input_check_pressed("action1") = true or input_check_pressed("action2") = true
 						{
-							if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasure.Rubies and global.CurrentRubies >= ItemCost.Price and PlayerInBuyRange = true
+							if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasures.Rubies and global.CurrentRubies >= ItemCost.Price and PlayerInBuyRange = true
 							{
 								RemoveRubies(ItemCost.Price);
 								global.CurrentItem[1] = -1
@@ -56,7 +56,7 @@ if IsPlayerOnSameTile() = true
 				{
 					if input_check_pressed("action1") = true
 					{
-						if Item_FindValue(global.CurrentTreasure,0) = Treasure.Rubies and global.CurrentRubies >= ItemCost.Price and PlayerInBuyRange = true
+						if Item_FindValue(global.CurrentTreasure,0) = Treasures.Rubies and global.CurrentRubies >= ItemCost.Price and PlayerInBuyRange = true
 						{
 							RemoveRubies(ItemCost.Price);
 							global.CurrentTreasure = -1

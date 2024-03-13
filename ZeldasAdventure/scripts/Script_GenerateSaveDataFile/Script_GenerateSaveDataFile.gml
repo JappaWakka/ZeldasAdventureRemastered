@@ -15,7 +15,7 @@ function GenerateSaveDataFile()
 			ini_write_string(Section, "PlayerSpawn", "Spawn_Overworld");
 			ini_write_real(Section, "CurrentRubies", 0);
 			ini_write_real(Section, "CurrentKeys", 0);
-			ini_write_string(Section, "InventoryTreasure", "");
+			ini_write_string(Section, "InventoryTreasures", "");
 			ini_write_string(Section, "InventorySpells", "");
 			ini_write_string(Section, "InventoryCelestialSigns", "");
 			ini_write_string(Section, "Register", "");

@@ -62,7 +62,7 @@ if PageIndex = 0 //Main Menu
 				Sprite_Cursor,
 				0,
 				CursorPositions[SaveIndex][0], //x
-				CursorPositions[SaveIndex][1], //y
+				CursorPositions[SaveIndex][1] //y
 				);
 		}
 		
@@ -119,13 +119,7 @@ if PageIndex = 0 //Main Menu
 				break;
 		}
 		
-		//Draw Cursor
-		draw_sprite(
-			Sprite_Cursor,
-			0,
-			CursorPositions[Menu_CurrentEntry[PageIndex]][0], //x
-			CursorPositions[Menu_CurrentEntry[PageIndex]][1], //y
-			);
+		
 	}
 	//Draw Button Text
 		draw_set_color(make_color_rgb(55,23,16))
@@ -156,6 +150,16 @@ if PageIndex = 0 //Main Menu
 		draw_set_color(c_white)
 		draw_set_halign(fa_left)
 		
+		if Menu_CurrentEntry[PageIndex] >= 3
+		{
+			//Draw Cursor
+			draw_sprite(
+				Sprite_Cursor,
+				0,
+				CursorPositions[Menu_CurrentEntry[PageIndex]][0], //x
+				CursorPositions[Menu_CurrentEntry[PageIndex]][1] //y
+				);
+		}
 }
 else if PageIndex = 5 //Name Input Menu
 {

@@ -14,7 +14,7 @@ function InventoryList(InventoryIndex)
 	switch InventoryIndex
 	{
 	case 0 :
-		return global.Inventory.Treasure
+		return global.Inventory.Treasures
 		break
 	case 1 :
 		return global.Inventory.Spells
@@ -38,7 +38,7 @@ enum CelestialSigns
 	Fire
 }
 
-enum Treasure
+enum Treasures
 {
 	Flowers,
 	Ticket1,

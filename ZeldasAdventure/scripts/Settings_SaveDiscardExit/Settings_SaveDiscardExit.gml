@@ -35,22 +35,25 @@ function Settings_Discard()
 	global.VolumeDialogue		=	TempVolumeDialogue
 	
 	//Reset Game Menu (2)
-	Menu_Pages[2][0][3] = real(global.Fullscreen)
-	Menu_Pages[2][1][3] = global.WindowScale - 1
-	Menu_Pages[2][2][3] = real(global.RemasteredMode)
-	Menu_Pages[2][3][3] = real(global.ShowSubtitles)
+	var CurrentGrid = Menu_Pages[2]
+	CurrentGrid[# 3, 0] = real(global.Fullscreen)
+	CurrentGrid[# 3, 1] = global.WindowScale - 1
+	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
+	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
 	var LanguageIndex = 0
 	if global.CurrentLanguage = "nl"
 	{
 		LanguageIndex = 1
 	}
-	Menu_Pages[2][5][3] = LanguageIndex
+	
+	CurrentGrid[# 3, 4]  = LanguageIndex
 	
 	//Reset Audio Menu (3)
-	Menu_Pages[3][0][3] = global.VolumeMaster
-	Menu_Pages[3][1][3] = global.VolumeMusic
-	Menu_Pages[3][2][3] = global.VolumeSoundFX
-	Menu_Pages[3][3][3] = global.VolumeDialogue
+	CurrentGrid = Menu_Pages[3]
+	CurrentGrid[# 3, 0] = global.VolumeMaster
+	CurrentGrid[# 3, 1] = global.VolumeMusic
+	CurrentGrid[# 3, 2] = global.VolumeSoundFX
+	CurrentGrid[# 3, 3] = global.VolumeDialogue
 	
 	//Reset Controls Menu
 	var KeyBindingsJSON = file_text_open_read(global.KeyBindingsFileName)

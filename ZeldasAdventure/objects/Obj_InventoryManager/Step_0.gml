@@ -2,7 +2,8 @@ if input_check_pressed("inventory")
 {
 	if global.FadeAlpha == 0 && OpeningClosing == false
 	{
-		if Obj_WorldMapManager.Alpha = 0 and Obj_WorldMapManager.OpeningClosing == false
+		if Obj_WorldMapManager.Alpha = 0 and Obj_WorldMapManager.OpeningClosing = false
+		and Obj_ExitMenuManager.Alpha = 0 and Obj_ExitMenuManager.OpeningClosing = false
 		{
 			global.FadeProgress = 0;
 			OpeningClosing = true;
@@ -63,6 +64,7 @@ if Alpha == 255
 		{
 			if InventoryIndex = 2
 			{
+				//Open WorldMap
 				if global.FadeAlpha == 0 && OpeningClosing == false
 				{
 					global.FadeProgress = 0;
@@ -72,6 +74,11 @@ if Alpha == 255
 			else if InventoryIndex = 3
 			{
 				//Open SaveMenu
+				if global.FadeAlpha == 0 && OpeningClosing == false
+				{
+					global.FadeProgress = 0;
+					Obj_ExitMenuManager.OpeningClosing = true;
+				}
 			}
 			else //Treasures or Spells
 			{
@@ -88,14 +95,14 @@ if Alpha == 255
 //If no rubies, remove the item
 if global.CurrentRubies == 0
 {
-	Item_Remove(Treasure.Rubies,0)
+	Item_Remove(Treasures.Rubies,0)
 }
 else
 {
 	//If there are rubies, add the item back
-	if Item_FindIndex(Treasure.Rubies,0) = -1
+	if Item_FindIndex(Treasures.Rubies,0) = -1
 	{
-		Item_Add(Treasure.Rubies,0)
+		Item_Add(Treasures.Rubies,0)
 	}
 }
 if Alpha = 255

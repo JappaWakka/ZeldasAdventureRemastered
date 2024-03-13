@@ -60,13 +60,13 @@ if global.RemasteredMode = false and IsAttacking = false and IsDead = false
 		{
 			switch Item_FindValue(global.CurrentItem[1],0)
 			{
-				case Treasure.EmptyPitcher:
+				case Treasures.EmptyPitcher:
 					UseTreasure_EmptyPitcher()
 					break;					
-				case Treasure.FullPitcher:
+				case Treasures.FullPitcher:
 					UseTreasure_FullPitcher()
 					break;
-				case Treasure.Rubies:
+				case Treasures.Rubies:
 					UseTreasure_Rubies();
 					break;
 				default:
@@ -84,13 +84,13 @@ if global.RemasteredMode = true and IsAttacking = false and IsDead = false
 	{
 		switch Item_FindValue(global.CurrentTreasure,0)
 			{
-				case Treasure.EmptyPitcher:
+				case Treasures.EmptyPitcher:
 					UseTreasure_EmptyPitcher()
 					break;					
-				case Treasure.FullPitcher:
+				case Treasures.FullPitcher:
 					UseTreasure_FullPitcher()
 					break;
-				case Treasure.Rubies:
+				case Treasures.Rubies:
 					UseTreasure_Rubies();
 					break;
 				default:

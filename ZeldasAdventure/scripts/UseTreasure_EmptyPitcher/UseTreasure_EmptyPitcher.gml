@@ -2,7 +2,7 @@ function UseTreasure_EmptyPitcher()
 {
 	if global.CurrentTile.x = 4 && global.CurrentTile.y = 19
 	{
-		Item_Remove(Treasure.EmptyPitcher,0);
+		Item_Remove(Treasures.EmptyPitcher,0);
 		if global.RemasteredMode = true
 		{
 			global.CurrentTreasure = -1

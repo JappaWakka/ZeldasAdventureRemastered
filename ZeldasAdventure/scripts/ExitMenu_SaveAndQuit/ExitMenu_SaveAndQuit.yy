@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "ExitMenu",
-    "path": "folders/Scripts/ExitMenu.yy",
+    "name": "MenuFunctions",
+    "path": "folders/Scripts/MenuFunctions.yy",
   },
 }
