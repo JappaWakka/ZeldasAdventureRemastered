@@ -17,11 +17,7 @@ function move(argument0, argument1, argument2, argument3) {
 	// Here we update the player position to the new cordinates checking for collisions
 	// if we collide we check for the closest direction to make the collision slippery.
 	update_position( move_vector[0], move_vector[1]);
-	if argument3
-	{
-		var test = "a"
-		
-	}
+	
 	// Here we update our current speed and current direction variables.
 	Speed = move_vector[0]; Direction = move_vector[1];
 

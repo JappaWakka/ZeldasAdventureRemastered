@@ -1,4 +1,8 @@
 ///@description Set Initial Stuff
+if room = Room_Overworld
+{
+	instance_create_layer(Entity_Player.x,Entity_Player.y,"PlayerAndNPCParent",Entity_Collision_Player)
+}
 Camera_Init()
 
 //Define Alarms, enable looping

@@ -14,13 +14,16 @@ else
 	ydir = 0
 }
 
-
 var MoveDistance = point_distance(0,0,xdir,ydir);
-
 var MoveDirection = point_direction(0,0, xdir, ydir);
 
 // Move the player smoothly and check for colissions
-move(Acceleration, MoveDirection, MaxSpeed, MoveDistance);
+var DiagonalSpeedMultiplier = 1
+if xdir != 0 and ydir != 0
+{
+	DiagonalSpeedMultiplier = 1.41
+}
+move(Acceleration, MoveDirection, MaxSpeed * DiagonalSpeedMultiplier, MoveDistance);
 
 if xdir != 0 or ydir != 0
 {
