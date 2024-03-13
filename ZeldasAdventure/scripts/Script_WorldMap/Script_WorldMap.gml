@@ -239,16 +239,16 @@ function WorldMap_Tiles_Init()
 		[Maps.Overworld		,26		,15		,168		,MapTileType.Regular		,26		,15		],	//168
 		[Maps.Overworld		,9		,16		,169		,MapTileType.Regular		,9		,16		],	//169
 		[Maps.Overworld		,10		,16		,170		,MapTileType.Regular		,10		,16		],	//170
-		[Maps.Overworld		,11		,15		,171		,MapTileType.Regular		,11		,15		],	//171
-		[Maps.Overworld		,12		,15		,172		,MapTileType.Regular		,12		,15		],	//172
+		[Maps.Overworld		,11		,16		,171		,MapTileType.Regular		,11		,16		],	//171
+		[Maps.Overworld		,12		,16		,172		,MapTileType.Regular		,12		,16		],	//172
 		[Maps.Overworld		,13		,16		,173		,MapTileType.Regular		,13		,16		],	//173
 		[Maps.Overworld		,14		,16		,174		,MapTileType.Regular		,14		,16		],	//174
-		[Maps.Overworld		,16		,15		,175		,MapTileType.Regular		,16		,15		],	//175
-		[Maps.Overworld		,17		,15		,176		,MapTileType.Regular		,17		,15		],	//176
-		[Maps.Overworld		,18		,15		,177		,MapTileType.Regular		,18		,15		],	//177
-		[Maps.Overworld		,19		,15		,178		,MapTileType.Regular		,19		,15		],	//178
-		[Maps.Overworld		,20		,15		,179		,MapTileType.Regular		,20		,15		],	//179
-		[Maps.Overworld		,21		,15		,180		,MapTileType.Regular		,21		,15		],	//180
+		[Maps.Overworld		,16		,16		,175		,MapTileType.Regular		,16		,16		],	//175
+		[Maps.Overworld		,17		,16		,176		,MapTileType.Regular		,17		,16		],	//176
+		[Maps.Overworld		,18		,16		,177		,MapTileType.Regular		,18		,16		],	//177
+		[Maps.Overworld		,19		,16		,178		,MapTileType.Regular		,19		,16		],	//178
+		[Maps.Overworld		,20		,16		,179		,MapTileType.Regular		,20		,16		],	//179
+		[Maps.Overworld		,21		,16		,180		,MapTileType.Regular		,21		,16		],	//180
 		[Maps.Overworld		,22		,16		,163		,MapTileType.Regular		,-1		,-1		],	//181
 		[Maps.Overworld		,24		,16		,182		,MapTileType.Regular		,24		,16		],	//182
 		[Maps.Overworld		,25		,16		,183		,MapTileType.Regular		,25		,16		],	//183

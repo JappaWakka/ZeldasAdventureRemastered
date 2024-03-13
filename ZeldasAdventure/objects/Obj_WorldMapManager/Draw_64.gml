@@ -1,5 +1,5 @@
 var TilesStartPositionX = 66
-var TilesStartPositionY = 58
+var TilesStartPositionY = 59
 
 var TileSeparatorX = 8
 var TileSeparatorY = 5
