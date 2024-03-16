@@ -13,10 +13,10 @@ Subtitle_VisionHenge_04_Shurmak_Introduction
 	
 	//'Nederlands
 	"Shurmak: Ik ben Shurmak, jouw gids."
-	"Ik kende je al toen je nog maar een kind was."
-	"Je hebt een uitdagende taak gekregen."
+	"Ik ken je al sinds je nog maar een kind was."
+	"Je hebt een moeilijke taak gekregen."
 	"Je zult ver moeten reizen en grote gevaren moeten trotseren."
-	"Blijf kalm en gebruik je kennis en kracht om je vijanden te verslaan..."
+	"Blijf kalm en gebruik je kennis en kracht om je vijanden te verslaan."
 	"Onthoud wat je leert tijdens je reis en geef niet op."
 	"Ga nu naar degene die een bed heeft, maar nooit slaapt..."
 	"waarbij een rode wilg waakt..."

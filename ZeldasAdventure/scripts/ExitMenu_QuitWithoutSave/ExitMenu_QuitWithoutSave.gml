@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function ExitMenu_QuitWithoutSave()
 {
+	Audio_StopMusic()
 	global.FadeProgress = 0;
 	global.FadeSpeed = 16;
 	QuitToMainMenu = true;

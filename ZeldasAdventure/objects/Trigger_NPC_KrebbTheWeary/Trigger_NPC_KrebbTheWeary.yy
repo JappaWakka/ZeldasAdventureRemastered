@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Collision_NPC_KrebbTheWeary",
+  "name": "Trigger_NPC_KrebbTheWeary",
   "spriteId": {
     "name": "PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary",
     "path": "sprites/PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary/PlainOfAndor_MobilinsHeadInn_Collision_KrebbTheWeary.yy",
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NPCs",
-    "path": "folders/Objects/SpecialCollisions/NPCs.yy",
+    "name": "PlainOfAndor",
+    "path": "folders/Objects/Entities/DialogTriggers/PlainOfAndor.yy",
   },
 }

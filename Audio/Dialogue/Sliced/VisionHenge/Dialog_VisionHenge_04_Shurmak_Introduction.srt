@@ -1,0 +1,36 @@
+﻿1
+00:00:00,001 --> 00:00:01,787
+Shurmak: I am Shurmak, your guide.
+
+2
+00:00:02,113 --> 00:00:04,386
+I have known you since you were a child.
+
+3
+00:00:04,607 --> 00:00:06,473
+You were given a difficult challenge.
+
+4
+00:00:06,840 --> 00:00:09,660
+You will have to go far and overcome great danger.
+
+5
+00:00:09,860 --> 00:00:13,893
+Stay calm and use your knowledge and strength to defeat your enemies.
+
+6
+00:00:14,335 --> 00:00:17,368
+Remember what you learn along the way, and persevere.
+
+7
+00:00:17,889 --> 00:00:20,709
+Go now to the one who has a bed but never sleeps...
+
+8
+00:00:21,033 --> 00:00:23,453
+where by its side the red willow weeps...
+
+9
+00:00:23,680 --> 00:00:26,066
+and to its mouth that never speaks.
+

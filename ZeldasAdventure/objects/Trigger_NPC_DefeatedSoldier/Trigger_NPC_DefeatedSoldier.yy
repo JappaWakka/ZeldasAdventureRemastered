@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Collision_NPC_WomanAtTable",
+  "name": "Trigger_NPC_DefeatedSoldier",
   "spriteId": {
-    "name": "PlainOfAndor_MobilinsHeadInn_Collision_WomanAtTable",
-    "path": "sprites/PlainOfAndor_MobilinsHeadInn_Collision_WomanAtTable/PlainOfAndor_MobilinsHeadInn_Collision_WomanAtTable.yy",
+    "name": "PlainOfAndor_MobilinsHeadInn_Collision_DefeatedSoldier",
+    "path": "sprites/PlainOfAndor_MobilinsHeadInn_Collision_DefeatedSoldier/PlainOfAndor_MobilinsHeadInn_Collision_DefeatedSoldier.yy",
   },
   "solid": false,
   "visible": false,
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NPCs",
-    "path": "folders/Objects/SpecialCollisions/NPCs.yy",
+    "name": "PlainOfAndor",
+    "path": "folders/Objects/Entities/DialogTriggers/PlainOfAndor.yy",
   },
 }
