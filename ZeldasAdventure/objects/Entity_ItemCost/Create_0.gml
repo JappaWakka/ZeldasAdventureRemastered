@@ -1,4 +1,4 @@
-alarm[0] = 0.75 * room_speed
+alarm[0] = 0.75 * FrameRate
 if Animate
 {
 	visible = true

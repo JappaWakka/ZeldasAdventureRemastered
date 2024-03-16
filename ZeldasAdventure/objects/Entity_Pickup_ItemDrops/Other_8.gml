@@ -2,5 +2,5 @@
 
 if EnemyDropType == "Heart"
 {
-	alarm_set(0,room_speed * 5)
+	alarm_set(0,FrameRate * 5)
 }

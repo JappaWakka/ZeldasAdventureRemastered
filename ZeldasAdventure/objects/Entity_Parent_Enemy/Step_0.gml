@@ -13,14 +13,14 @@ if IsPlayerOnSameTile() = true && global.CameraIsPanning = false
 	//Play enemy sound
 	if alarm_get(1) = -1
 	{
-		alarm_set(1, random_range(2*room_speed,6*room_speed));
+		alarm_set(1, random_range(2*FrameRate,6*FrameRate));
 	}
 	//Attack
 	if alarm_get(2) = -1
 	{
 		if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
 		{
-			alarm_set(2, random_range(0, 3 * room_speed));
+			alarm_set(2, random_range(0, 3 * FrameRate));
 		}
 	}
 }

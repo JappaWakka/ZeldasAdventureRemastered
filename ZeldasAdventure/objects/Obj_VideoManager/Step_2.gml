@@ -26,7 +26,7 @@ if input_check_pressed("action1") or input_check_pressed("action2") or input_che
 				else
 				{
 					ConfirmSkip = true
-					alarm[0] = 3 * 60
+					alarm[0] = 3 * FrameRate
 				}
 		
 		}

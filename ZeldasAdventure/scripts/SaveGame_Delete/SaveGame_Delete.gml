@@ -26,7 +26,7 @@ function SaveGame_Delete()
 		ini_close()
 		global.SavePlayerNames[global.CurrentSaveGame] = ""
 		ConfirmDelete = 2
-		alarm[1] = 60
+		alarm[1] = FrameRate
 	}
 	else
 	{

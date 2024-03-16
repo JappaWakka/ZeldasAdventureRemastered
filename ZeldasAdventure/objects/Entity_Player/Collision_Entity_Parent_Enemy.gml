@@ -10,12 +10,12 @@ if DamageDelay = 0
 		audio_play_sound(SFX_Zelda_Death,1000,false)
 		global.FadeProgress = 0;
 		global.FadeSpeed = 1
-		DamageDelay = 8 * room_speed
+		DamageDelay = 8 * FrameRate
 		IsDead = true
 	}
 	else
 	{
-		DamageDelay = 1 * room_speed
+		DamageDelay = 1 * FrameRate
 		if timeline_index = -1
 		{
 			timeline_index = Damage_Player;

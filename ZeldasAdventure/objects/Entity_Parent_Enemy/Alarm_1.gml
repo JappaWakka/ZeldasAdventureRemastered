@@ -7,4 +7,4 @@ if IsPlayerOnSameTile() = true && global.CameraIsPanning = false
 		global.EnemySoundPlaying = true
 	}
 }
-alarm_set(1, random_range(2*room_speed,6*room_speed));
+alarm_set(1, random_range(2*FrameRate,6*FrameRate));

@@ -7,5 +7,5 @@ if DamageDelay = 0 && ImmuneToWand = false
 	StartDamageAnimation = true
 	HitFromDirection = Entity_Player.Facing
 	///Reset DamageDelay
-	DamageDelay = 1 * room_speed
+	DamageDelay = 1 * FrameRate
 }

@@ -123,7 +123,7 @@ if Alpha = 255
 					{
 						ScrollOffsetX_Treasure += 1;
 						Scrolled = [1,0]  // Direction, InventoryIndex
-						alarm[0] = room_speed / 4
+						alarm[0] = FrameRate / 4
 					}	
 				}
 			}
@@ -139,7 +139,7 @@ if Alpha = 255
 					{
 						ScrollOffsetX_Spells += 1;
 						Scrolled = [1,1]  // Direction, InventoryIndex
-						alarm[0] = room_speed / 4
+						alarm[0] = FrameRate / 4
 					}	
 				}
 			}
@@ -165,7 +165,7 @@ if Alpha = 255
 					{
 						ScrollOffsetX_Treasure -= 1
 						Scrolled = [-1,0]  // Direction, InventoryIndex
-						alarm[0] = room_speed / 4
+						alarm[0] = FrameRate / 4
 					}	
 				}
 			}
@@ -182,7 +182,7 @@ if Alpha = 255
 					{
 						ScrollOffsetX_Spells -= 1
 						Scrolled = [-1,1]  // Direction, InventoryIndex
-						alarm[0] = room_speed / 4
+						alarm[0] = FrameRate / 4
 					}	
 				}
 			}

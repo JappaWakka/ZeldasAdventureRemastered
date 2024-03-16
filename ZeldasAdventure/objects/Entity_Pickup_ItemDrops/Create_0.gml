@@ -4,12 +4,12 @@ switch irandom_range(1,4)
 		case 1 :
 			EnemyDropType = "Ruby_5"
 			image_index = 0;
-			alarm_set(0,room_speed * 5)
+			alarm_set(0,FrameRate * 5)
 			break;
 		case 2 :
 			image_index = 1;
 			EnemyDropType = "Ruby_10"
-			alarm_set(0,room_speed * 5)
+			alarm_set(0,FrameRate * 5)
 			break;
 		case 3 :
 			image_index = 2;

@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "Sprite_Projectile_Spell_Calm",
-  "bboxMode": 0,
+  "bboxMode": 1,
   "collisionKind": 5,
   "type": 0,
   "origin": 5,

@@ -38,6 +38,11 @@ if global.RemasteredMode = false and IsAttacking = false and IsDead = false
 				{
 					UseSpell_Calm()
 				}
+				// Use Spell - Boomerang
+				if global.CurrentItem[1] = Spells.Boomerang
+				{
+					UseSpell_Boomerang()
+				}
 				
 				if global.CanUseSpell = true
 				{
@@ -125,6 +130,11 @@ if global.RemasteredMode = true and IsAttacking = false and IsDead = false
 			if global.CurrentSpell = Spells.Calm
 			{
 				UseSpell_Calm()
+			}
+			// Use Spell - Boomerang
+			if global.CurrentSpell = Spells.Boomerang
+			{
+				UseSpell_Boomerang()
 			}
 				
 			if global.CanUseSpell = true

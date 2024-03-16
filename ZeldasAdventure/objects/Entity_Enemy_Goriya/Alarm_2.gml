@@ -5,5 +5,5 @@ if EnemyState != EnemyStates.Attack
 	Boomerang.direction = direction
 	EnemyState = EnemyStates.Attack
 	
-	ResetAlarm = new Alarm(0.75 * room_speed,ResetEnemyState,false)
+	ResetAlarm = new Alarm(0.75 * FrameRate,ResetEnemyState,false)
 }

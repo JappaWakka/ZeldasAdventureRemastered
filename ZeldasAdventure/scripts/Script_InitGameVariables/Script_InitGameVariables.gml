@@ -8,6 +8,7 @@ function InitGameVariables()
 	GenerateSaveDataFile()
 	
 	//System Variables
+	#macro FrameRate 60
 	Init_SpawnPoints_TileMap()
 	WorldMap_Tiles_Init()
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]

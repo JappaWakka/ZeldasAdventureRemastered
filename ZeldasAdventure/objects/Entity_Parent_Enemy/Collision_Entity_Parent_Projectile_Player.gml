@@ -18,5 +18,5 @@ if DamageDelay = 0
 		instance_destroy(other)
 	}
 	///Reset DamageDelay
-	DamageDelay = 1 * room_speed
+	DamageDelay = 1 * FrameRate
 }
