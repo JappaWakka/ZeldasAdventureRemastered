@@ -43,6 +43,11 @@ if global.RemasteredMode = false and IsAttacking = false and IsDead = false
 				{
 					UseSpell_Boomerang()
 				}
+				// Use Spell - Dagger
+				if global.CurrentItem[1] = Spells.Dagger
+				{
+					UseSpell_Dagger()
+				}
 				
 				if global.CanUseSpell = true
 				{
@@ -135,6 +140,11 @@ if global.RemasteredMode = true and IsAttacking = false and IsDead = false
 			if global.CurrentSpell = Spells.Boomerang
 			{
 				UseSpell_Boomerang()
+			}
+			// Use Spell - Dagger
+			if global.CurrentSpell = Spells.Dagger
+			{
+				UseSpell_Dagger()
 			}
 				
 			if global.CanUseSpell = true
