@@ -30,7 +30,8 @@ if IsPlayerOnSameTile() = true
 			}
 			
 			
-			if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false and global.CurrentDialogue_Asset = Dialog_None and variable_instance_exists(id, "ItemCost")
+			if IsMenuVisible() = false
+			and global.CurrentDialogue_Asset = Dialog_None and variable_instance_exists(id, "ItemCost")
 			{
 				if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 				{

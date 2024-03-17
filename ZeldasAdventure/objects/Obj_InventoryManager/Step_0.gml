@@ -2,8 +2,7 @@ if input_check_pressed("inventory")
 {
 	if global.FadeAlpha == 0 && OpeningClosing == false
 	{
-		if Obj_WorldMapManager.Alpha = 0 and Obj_WorldMapManager.OpeningClosing = false
-		and Obj_ExitMenuManager.Alpha = 0 and Obj_ExitMenuManager.OpeningClosing = false
+		if IsOtherMenuThanInventoryVisible() = false
 		{
 			global.FadeProgress = 0;
 			OpeningClosing = true;
@@ -67,15 +66,17 @@ if Alpha == 255
 				//Open WorldMap
 				if global.FadeAlpha == 0 && OpeningClosing == false
 				{
+					audio_play_sound(Settings_Accept,1000,false)
 					global.FadeProgress = 0;
 					Obj_WorldMapManager.OpeningClosing = true;
 				}
 			}
 			else if InventoryIndex = 3
 			{
-				//Open SaveMenu
+				//Open ExitMenu
 				if global.FadeAlpha == 0 && OpeningClosing == false
 				{
+					audio_play_sound(Settings_Accept,1000,false)
 					global.FadeProgress = 0;
 					Obj_ExitMenuManager.OpeningClosing = true;
 				}

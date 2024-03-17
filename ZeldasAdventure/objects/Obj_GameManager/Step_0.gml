@@ -69,30 +69,31 @@ if room = Room_Overworld
 				break;
 		}
 	}
-}
-//Update Alarms
+	//Update Alarms
 
-//Change Ruby amount & Play Ruby sound
-if global.CurrentRubies != global.DesiredRubies
-{
-	run_alarms(ChangeRubyAlarms)
-}
-else
-{
-	ChangeRubyAlarms[0].restart()
-	ChangeRubyAlarms[1].restart()
-}
-
-//Fill Hearts
-if DoFillHearts = true
-{
-	if global.CurrentHealth < global.MaxHealth
+	//Change Ruby amount & Play Ruby sound
+	if global.CurrentRubies != global.DesiredRubies
 	{
-		run_alarm(FillHeartsAlarm)
+		run_alarms(ChangeRubyAlarms)
 	}
 	else
 	{
-		DoFillHearts = false
-		FillHeartsAlarm.restart()
+		ChangeRubyAlarms[0].restart()
+		ChangeRubyAlarms[1].restart()
 	}
+
+	//Fill Hearts
+	if DoFillHearts = true
+	{
+		if global.CurrentHealth < global.MaxHealth
+		{
+			run_alarm(FillHeartsAlarm)
+		}
+		else
+		{
+			DoFillHearts = false
+			FillHeartsAlarm.restart()
+		}
+	}
+
 }

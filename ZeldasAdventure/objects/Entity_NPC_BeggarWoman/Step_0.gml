@@ -14,7 +14,7 @@ if IsPlayerOnSameTile() = true
 					HasSpoken = true
 				}
 			}
-			if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false and audio_is_playing(global.CurrentDialogue_ID) = false
+			if IsMenuVisible() = false and audio_is_playing(global.CurrentDialogue_ID) = false
 			{
 				if Register_Registered("PaidBeggarWoman") = false
 				{
@@ -59,7 +59,7 @@ if IsPlayerOnSameTile() = true
 		
 		if global.CurrentDialogue_Asset != Dialog_None
 		{
-			if Obj_InventoryManager.Alpha = 0
+			if IsMenuVisible() = false
 			{
 				if audio_is_paused(global.CurrentDialogue_ID) = true
 				{

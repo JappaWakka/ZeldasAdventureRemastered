@@ -95,7 +95,7 @@ function ExitMenu_SaveAndQuit()
 	ini_write_real(Section, "Defense", global.Defense);
 	ini_write_real(Section, "Power", global.Power);
 	ini_write_real(Section, "MaxHealth", global.MaxHealth);
-	ini_write_real(Section, "CurrentHealth", global.CurrentHealth);
+	ini_write_real(Section, "CurrentHealth", global.MaxHealth);
 	ini_write_string(Section, "Name", global.Name);
 	
 	ini_close()

@@ -24,7 +24,7 @@ if IsPlayerOnSameTile() = true
 	
 	if global.CurrentDialogue_Asset != Dialog_None
 	{
-		if Obj_InventoryManager.Alpha = 0
+		if IsMenuVisible() = false
 		{
 			if audio_is_paused(global.CurrentDialogue_ID) = true
 			{

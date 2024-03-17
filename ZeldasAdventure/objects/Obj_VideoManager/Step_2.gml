@@ -12,15 +12,18 @@ if input_check_pressed("action1") or input_check_pressed("action2") or input_che
 				VideoManager_Stop()
 				global.FadeProgress = 1
 				global.FadeAlpha = 255
+				global.Subtitle = ""
 				room_goto(Room_MainMenu)
 				
 			case Room_Cutscene_Shrine_Earth:
 				if ConfirmSkip == true
 				{
+					VideoManager_Stop()
 					SkipHintAlpha = 0
 					global.PlayerSpawn = "Shrine1_Outside"
 					global.FadeProgress = 1
 					global.FadeAlpha = 255
+					global.Subtitle = ""
 					room_goto(Room_Overworld);
 				}
 				else
@@ -28,9 +31,21 @@ if input_check_pressed("action1") or input_check_pressed("action2") or input_che
 					ConfirmSkip = true
 					alarm[0] = 3 * FrameRate
 				}
-		
+			case Room_Cutscene_Shrine_Earth:
+				if ConfirmSkip == true
+				{
+					SkipHintAlpha = 0
+					global.FadeProgress = 1
+					global.FadeAlpha = 255
+					global.Subtitle = ""
+					room_goto(Room_MainMenu)
+				}
+				else
+				{
+					ConfirmSkip = true
+					alarm[0] = 3 * FrameRate
+				}
 		}
-	global.Subtitle = ""
 }
 if input_check_pressed("menu")
 {

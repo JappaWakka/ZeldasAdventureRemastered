@@ -27,7 +27,7 @@ if IsPlayerOnSameTile() = true
 				}
 				else
 				{
-					if Obj_InventoryManager.Alpha = 0 and Obj_InventoryManager.OpeningClosing = false
+					if IsMenuVisible() = false
 					{
 						if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 						{
@@ -73,7 +73,7 @@ if IsPlayerOnSameTile() = true
 		
 		if global.CurrentDialogue_Asset != Dialog_None
 		{
-			if Obj_InventoryManager.Alpha = 0
+			if IsMenuVisible() = false
 			{
 				if audio_is_paused(global.CurrentDialogue_ID) = true
 				{
