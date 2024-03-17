@@ -1,0 +1,197 @@
+﻿1
+00:00:02,260 --> 00:00:06,580
+Welcome to Zelda's Adventure, an
+action-adventure role-playing game.
+
+2
+00:00:07,379 --> 00:00:12,053
+As a player, you will adopt the
+personality of our heroine Princess Zelda.
+
+3
+00:00:12,719 --> 00:00:17,673
+To play the game succesfully, you
+must explore the great land of Tolemac.
+
+4
+00:00:18,267 --> 00:00:20,993
+To control Zelda's
+movement around Tolemac...
+
+5
+00:00:21,266 --> 00:00:26,426
+...move the controller left, right,
+up, down and diagonally.
+
+6
+00:00:27,307 --> 00:00:29,293
+The court astronomer Gaspra...
+
+7
+00:00:29,333 --> 00:00:33,413
+...will introduce the story of Zelda
+and describe how her quest came about.
+
+8
+00:00:33,751 --> 00:00:36,665
+He will also reappear every time...
+
+9
+00:00:36,746 --> 00:00:40,320
+...Zelda has succesfully
+completed an underworld shrine...
+
+10
+00:00:40,573 --> 00:00:44,361
+...and collected one of seven
+treasured Celestial Signs.
+
+11
+00:00:45,166 --> 00:00:48,859
+Another mentor and guide
+to Zelda is me... Shurmak.
+
+12
+00:00:49,107 --> 00:00:52,254
+Throughout the game I help
+orient Zelda and guide her.
+
+13
+00:00:53,039 --> 00:00:57,426
+While exploring, Zelda will encounter
+many enemies that inhabit this land.
+
+14
+00:00:57,700 --> 00:01:01,474
+She must defeat them
+by using skill and speed.
+
+15
+00:01:01,970 --> 00:01:03,977
+Zelda attacks them with her wand.
+
+16
+00:01:04,396 --> 00:01:08,230
+You employ the wand by
+pressing Action Button 1.
+
+17
+00:01:09,057 --> 00:01:13,526
+If Zelda is succesful at defeating
+her enemies, she will be rewarded.
+
+18
+00:01:13,776 --> 00:01:16,129
+They will randomly
+drop rubies and hearts...
+
+19
+00:01:16,154 --> 00:01:19,843
+...that will increase her currency
+and life units respectively.
+
+20
+00:01:20,639 --> 00:01:23,159
+Rubies which are the currency of Tolemac...
+
+21
+00:01:23,500 --> 00:01:25,288
+...can be used to buy useful items...
+
+22
+00:01:25,312 --> 00:01:28,867
+...and are indicated on the
+top-left corner of the screen.
+
+23
+00:01:29,516 --> 00:01:34,176
+Hearts are the life units that give Zelda
+strength to fight throughout the game.
+
+24
+00:01:34,602 --> 00:01:38,068
+They are represented on the
+upper-right corner of the play screen.
+
+25
+00:01:38,688 --> 00:01:44,361
+To select an object or a weapon on the
+inventory screen, press Action Button 2.
+
+26
+00:01:45,297 --> 00:01:47,365
+Once in the inventory screen...
+
+27
+00:01:47,438 --> 00:01:50,371
+...you can access useful
+items and weapons...
+
+28
+00:01:50,416 --> 00:01:54,936
+...by selecting an object with your
+cursor and the pressing Action Button 1.
+
+29
+00:01:55,706 --> 00:01:59,660
+Treasures and weapons can be scrolled by
+pressing the left window button...
+
+30
+00:01:59,685 --> 00:02:03,766
+...to move left, and by pressing
+the right window button to move right.
+
+31
+00:02:04,601 --> 00:02:09,218
+The weapon in use appears in the window
+in the lower right of the inventory screen.
+
+32
+00:02:09,977 --> 00:02:13,584
+If you select a useful item
+from the treasures selection...
+
+33
+00:02:13,859 --> 00:02:18,067
+The item will appear in the same window
+where the weapon selection appeared.
+
+34
+00:02:18,289 --> 00:02:22,688
+Zelda can use only one
+item or weapon at a time.
+
+35
+00:02:23,514 --> 00:02:27,267
+In Zelda's travels she will
+find many locked doors.
+
+36
+00:02:27,664 --> 00:02:31,750
+She must have a key in her possession
+to pass through these locked entrances.
+
+37
+00:02:32,096 --> 00:02:36,029
+The number of keys in Zelda's possession
+will appear in the small window...
+
+38
+00:02:36,188 --> 00:02:38,968
+...in the upper right of
+the inventory screen.
+
+39
+00:02:39,411 --> 00:02:41,331
+To help navigate through Tolemac...
+
+40
+00:02:41,610 --> 00:02:45,510
+...a map is available by moving
+your joystick to the map button...
+
+41
+00:02:45,630 --> 00:02:48,337
+...and then pressing your Action Button 1.
+
