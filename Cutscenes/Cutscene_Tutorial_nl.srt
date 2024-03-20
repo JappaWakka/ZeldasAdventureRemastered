@@ -1,0 +1,356 @@
+﻿1
+00:00:02,260 --> 00:00:06,580
+"Welkom bij Zelda's Adventure, een actie-avonturen rollenspel."
+
+2
+00:00:07,379 --> 00:00:12,053
+"Als speler neem je de persoonlijkheid aan van onze heldin Prinses Zelda."
+
+3
+00:00:12,719 --> 00:00:17,673
+"Om het spel succesvol te spelen, moet je het grote land Tolemac verkennen."
+
+4
+00:00:18,267 --> 00:00:20,993
+"Om Zelda's beweging door Tolemac te besturen"
+
+5
+00:00:21,266 --> 00:00:26,426
+"beweeg je de controller naar links, rechts, omhoog, omlaag en diagonaal."
+
+6
+00:00:27,307 --> 00:00:30,985
+"De hofastronoom Gaspra zal het verhaal van Zelda introduceren"
+
+7
+00:00:31,010 --> 00:00:33,556
+"en beschrijven hoe haar zoektocht tot stand is gekomen."
+
+8
+00:00:33,751 --> 00:00:36,665
+"Hij zal ook telkens weer verschijnen"
+
+9
+00:00:36,690 --> 00:00:40,320
+"als Zelda met succes een tempel in de onderwereld heeft voltooid"
+
+10
+00:00:40,573 --> 00:00:44,397
+"en een van de zeven kostbare Hemelse Tekens heeft verzameld."
+
+11
+00:00:45,166 --> 00:00:48,859
+"Een andere mentor en gids voor Zelda ben ik, Shurmak."
+
+12
+00:00:49,107 --> 00:00:52,254
+"Gedurende het spel help ik Zelda te oriënteren en haar te begeleiden."
+
+13
+00:00:53,011 --> 00:00:54,173
+"Tijdens haar verkenningstocht"
+
+14
+00:00:54,198 --> 00:00:57,426
+"zal Zelda veel vijanden tegenkomen die dit land bewonen."
+
+15
+00:00:57,700 --> 00:01:01,474
+"Ze moet ze verslaan door vaardigheid en snelheid te gebruiken."
+
+16
+00:01:01,970 --> 00:01:03,977
+"Zelda valt ze aan met haar toverstaf."
+
+17
+00:01:04,396 --> 00:01:08,230
+"Je gebruikt de toverstaf door op Actieknop 1 te drukken."
+
+18
+00:01:09,057 --> 00:01:13,526
+"Als Zelda succesvol is in het verslaan van haar vijanden, wordt ze beloond."
+
+19
+00:01:13,776 --> 00:01:16,129
+"Ze laten willekeurig robijnen en harten vallen"
+
+20
+00:01:16,154 --> 00:01:19,843
+"die respectievelijk haar valuta en levenseenheden verhogen."
+
+21
+00:01:20,639 --> 00:01:23,159
+"Robijnen, de valuta van Tolemac"
+
+22
+00:01:23,218 --> 00:01:25,359
+"kunnen worden gebruikt om nuttige voorwerpen te kopen"
+
+23
+00:01:25,384 --> 00:01:28,860
+"en worden aangegeven in de linkerbovenhoek van het scherm."
+
+24
+00:01:29,529 --> 00:01:32,369
+"Harten zijn de levenseenheden die Zelda kracht geven"
+
+25
+00:01:32,394 --> 00:01:34,443
+"om te vechten tijdens het spel."
+
+26
+00:01:34,602 --> 00:01:38,068
+"Ze worden weergegeven in de rechterbovenhoek van het speelscherm."
+
+27
+00:01:38,688 --> 00:01:42,052
+"Om een voorwerp of een wapen te selecteren in het inventarisscherm"
+
+28
+00:01:42,076 --> 00:01:44,461
+"druk je op Actieknop 2."
+
+29
+00:01:45,297 --> 00:01:47,365
+"Eenmaal in het inventarisscherm"
+
+30
+00:01:47,438 --> 00:01:50,371
+"heb je toegang tot nuttige voorwerpen en wapens"
+
+31
+00:01:50,396 --> 00:01:54,936
+"door een voorwerp te selecteren met je cursor en op Actieknop 1 te drukken."
+
+32
+00:01:55,706 --> 00:01:59,660
+"Schatten en wapens kun je scrollen door op de linker vensterknop te drukken"
+
+33
+00:01:59,685 --> 00:02:00,801
+"om naar links te gaan"
+
+34
+00:02:00,825 --> 00:02:03,806
+"en door op de rechter vensterknop te drukken om naar rechts te gaan."
+
+35
+00:02:04,601 --> 00:02:07,517
+"Het wapen dat in gebruik is, verschijnt in het venster rechtsonder"
+
+36
+00:02:07,541 --> 00:02:09,218
+"in het inventarisatiescherm."
+
+37
+00:02:09,977 --> 00:02:13,584
+"Als je een nuttig voorwerp selecteert uit de selectie schatten"
+
+38
+00:02:13,859 --> 00:02:18,067
+"verschijnt het voorwerp in hetzelfde venster waar de wapenselectie verscheen."
+
+39
+00:02:18,289 --> 00:02:22,688
+"Zelda kan maar één voorwerp of wapen tegelijk gebruiken."
+
+40
+00:02:23,514 --> 00:02:27,267
+"Tijdens Zelda's reizen zal ze veel gesloten deuren tegenkomen."
+
+41
+00:02:27,664 --> 00:02:31,750
+"Ze moet een sleutel in haar bezit hebben om door deze gesloten ingangen te kunnen."
+
+42
+00:02:32,096 --> 00:02:36,029
+"Het aantal sleutels in Zelda's bezit verschijnt in het kleine venster"
+
+43
+00:02:36,188 --> 00:02:38,968
+"rechtsboven in het inventarisscherm."
+
+44
+00:02:39,411 --> 00:02:41,331
+"Om te helpen met navigeren door Tolemac"
+
+45
+00:02:41,610 --> 00:02:45,510
+"is een kaart beschikbaar door je joystick naar de Kaart-knop te bewegen"
+
+46
+00:02:45,630 --> 00:02:48,337
+"en dan op je Actieknop 1 te drukken."
+
+47
+00:02:49,269 --> 00:02:50,750
+"Er zijn twee soorten kaarten:"
+
+48
+00:02:51,089 --> 00:02:54,862
+"Eén voor de bovenwereld en één voor elk van de onderwerelden."
+
+49
+00:02:55,210 --> 00:02:59,330
+"De kaart voor de bovenwereld laat zien waar je bent en waar je naartoe hebt gereisd."
+
+50
+00:03:00,105 --> 00:03:04,666
+"De kaarten voor elk van de onderwerelden laten zien waar je bent"
+
+51
+00:03:04,727 --> 00:03:08,753
+"waar je hebt gereisd en waar je heen moet om je zoektocht te voltooien."
+
+52
+00:03:09,522 --> 00:03:13,776
+"Druk op Actieknop 2 om terug te keren naar het spel."
+
+53
+00:03:14,168 --> 00:03:16,215
+"Als je klaar bent om het spel te verlaten"
+
+54
+00:03:16,240 --> 00:03:20,449
+"ga je met je cursor naar de knop Afsluiten en druk je op Actieknop 1."
+
+55
+00:03:21,489 --> 00:03:25,329
+"Je komt dan in het scherm voor opslaan, doorgaan en afsluiten."
+
+56
+00:03:25,730 --> 00:03:27,770
+"Om een van deze knoppen te activeren"
+
+57
+00:03:27,795 --> 00:03:32,203
+"moet je de cursor naar de knop verplaatsen en op Actieknop 1 drukken."
+
+58
+00:03:33,597 --> 00:03:37,964
+"Als je opslaat en stopt, kom je bij het speler selectiescherm"
+
+59
+00:03:38,015 --> 00:03:41,533
+"waar je de optie hebt om opnieuw te spelen of het spel te verlaten."
+
+60
+00:03:42,307 --> 00:03:44,050
+"Als je terugkomt om opnieuw te spelen"
+
+61
+00:03:44,237 --> 00:03:47,724
+"kun je opnieuw beginnen waar je gebleven was door je naam te selecteren."
+
+62
+00:03:48,658 --> 00:03:51,885
+"Je keert dan terug naar het eerste scherm van de gameplay"
+
+63
+00:03:51,960 --> 00:03:55,506
+"met alle items en wapens nog in de inventaris."
+
+64
+00:03:56,393 --> 00:04:01,430
+"Als je stopt zonder op te slaan, kom je bij het speler selectiescherm"
+
+65
+00:04:01,483 --> 00:04:05,096
+"waar je de optie hebt om opnieuw te spelen of het spel af te sluiten."
+
+66
+00:04:06,025 --> 00:04:07,872
+"Als je terugkeert naar de gameplay"
+
+67
+00:04:07,897 --> 00:04:10,790
+"kun je niet terugkeren naar je vorige spel."
+
+68
+00:04:10,848 --> 00:04:15,809
+"Je status zal echter wel gelijk zijn aan het laatste spel dat je hebt opgeslagen."
+
+69
+00:04:16,586 --> 00:04:18,319
+"Als je Terug naar Spel kiest"
+
+70
+00:04:18,383 --> 00:04:22,463
+"kom je bij het inventarisscherm waar je op Actieknop 2 drukt"
+
+71
+00:04:22,563 --> 00:04:24,616
+"wat je vervolgens terugbrengt naar de gameplay."
+
+72
+00:04:25,036 --> 00:04:29,103
+"Voor elk spel moet je een naam kiezen voor je held of heldin."
+
+73
+00:04:29,633 --> 00:04:33,506
+"Je kunt de Creëer-knop kiezen door de cursor op de knop te zetten"
+
+74
+00:04:33,682 --> 00:04:36,015
+"en op Actieknop 1 te drukken."
+
+75
+00:04:36,954 --> 00:04:39,364
+"Dit brengt je naar het naaminvoerscherm"
+
+76
+00:04:39,388 --> 00:04:41,814
+"waar je je naam intypt op het toetsenbord"
+
+77
+00:04:41,869 --> 00:04:45,489
+"door de gewenste letters te selecteren met Actieknop 1"
+
+78
+00:04:45,533 --> 00:04:48,142
+"en vervolgens je cursor op de knop Klaar te zetten"
+
+79
+00:04:48,196 --> 00:04:50,896
+"en nogmaals op Actieknop 1 te drukken."
+
+80
+00:04:52,042 --> 00:04:54,875
+"Dit brengt je terug naar het speler selectiescherm."
+
+81
+00:04:55,266 --> 00:04:58,145
+"Hier druk je op Speel door de Speel-knop te selecteren"
+
+82
+00:04:58,259 --> 00:05:00,446
+"en op Actieknop 1 te drukken."
+
+83
+00:05:00,964 --> 00:05:03,064
+"Je begint dan met het spel."
+
+84
+00:05:03,600 --> 00:05:07,580
+"Om de naam van een speler te wissen, plaats je de cursor op de Wis-knop"
+
+85
+00:05:07,682 --> 00:05:12,295
+"en hou je drie seconden lang de Actieknop 1 ingedrukt."
+
+86
+00:05:13,397 --> 00:05:17,170
+"Om het spel te verlaten, plaats je de cursor op de Stop-knop"
+
+87
+00:05:17,231 --> 00:05:19,038
+"en druk je op Actieknop 1."
+
+88
+00:05:19,329 --> 00:05:22,149
+"Dat is alles wat ik voor nu zal onthullen."
+
+89
+00:05:22,663 --> 00:05:25,263
+"De rest is aan jou om te ontdekken."
+

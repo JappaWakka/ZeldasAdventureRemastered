@@ -25,6 +25,9 @@ if (webm_exists(CurrentVideo))
 			case Room_Cutscene_Intro:
 				global.Subtitle = Subtitle_Cutscene_Intro(VideoPosition)
 				break;
+			case Room_Cutscene_Tutorial:
+				global.Subtitle = Subtitle_Cutscene_Tutorial(VideoPosition)
+				break;
 			default:
 				global.Subtitle = ""
 				break;

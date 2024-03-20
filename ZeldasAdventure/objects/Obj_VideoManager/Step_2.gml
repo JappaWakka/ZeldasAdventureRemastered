@@ -31,7 +31,7 @@ if input_check_pressed("action1") or input_check_pressed("action2") or input_che
 					ConfirmSkip = true
 					alarm[0] = 3 * FrameRate
 				}
-			case Room_Cutscene_Shrine_Earth:
+			case Room_Cutscene_Tutorial:
 				if ConfirmSkip == true
 				{
 					SkipHintAlpha = 0

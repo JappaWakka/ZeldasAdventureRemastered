@@ -95,14 +95,14 @@
 		{
 		case "en":
 			if AudioPosition >= 0.000 and AudioPosition <= 2.920 {return "Defeated Soldier: I am so exhausted from my travels."}
-			else if AudioPosition >= 3.000 and AudioPosition <= 7.113 {return "If only I had known to cross the chasm rift with a ladder..."}
+			else if AudioPosition >= 3.000 and AudioPosition <= 7.113 {return "If only I had known to cross the chasm rift with a ladder"}
 			else if AudioPosition >= 7.240 and AudioPosition <= 9.986 {return "it would have saved me months!"}
 			else return ""		
 			break;
 			
 		case "nl":
 			if AudioPosition >= 0.000 and AudioPosition <= 2.920 {return "Verslagen soldaat: Ik ben zo uitgeput van mijn reizen."}
-			else if AudioPosition >= 3.000 and AudioPosition <= 7.113 {return "Had ik maar geweten dat ik de kloof met een ladder kon oversteken..."}
+			else if AudioPosition >= 3.000 and AudioPosition <= 7.113 {return "Had ik maar geweten dat ik de kloof met een ladder kon oversteken"}
 			else if AudioPosition >= 7.240 and AudioPosition <= 9.986 {return "dat had me maanden bespaard!"}
 			else return ""		
 			break;

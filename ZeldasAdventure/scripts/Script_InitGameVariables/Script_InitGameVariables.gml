@@ -14,8 +14,6 @@ function InitGameVariables()
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
 	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
 	
-	global.CurrentDialogue_Asset = Dialog_None;
-	global.CurrentDialogue_ID = audio_play_sound(Dialog_None,500,false);
 	global.AddCutItems = true; //Include items that were cut from the original game
 	global.CurrentSaveGame = 0;
 	global.FadeSpeed = 8;

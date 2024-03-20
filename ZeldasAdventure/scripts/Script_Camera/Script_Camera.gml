@@ -1,15 +1,15 @@
-function Camera_Init(Camera = view)
+function Camera_Init()
 {
 	//Set initial Camera position if we're in the Overworld
 	if room == Room_Overworld
 	{
 		WarpToLocation(global.PlayerSpawn)
-		camera_set_view_pos(Camera,global.CurrentTile.x * ViewWidth,global.CurrentTile.y * ViewHeight);
+		camera_set_view_pos(view,global.CurrentTile.x * ViewWidth,global.CurrentTile.y * ViewHeight);
 	}
 	//Set view size
-	if camera_get_view_width(Camera) <> ViewWidth || camera_get_view_height(Camera) <> ViewHeight
+	if camera_get_view_width(view) <> ViewWidth || camera_get_view_height(view) <> ViewHeight
 	{
-		camera_set_view_size(Camera,ViewWidth,ViewHeight);
+		camera_set_view_size(view,ViewWidth,ViewHeight);
 	}
 	//Set window size
 	display_set_gui_size(ViewWidth,ViewHeight)

@@ -1,70 +1,58 @@
 ﻿1
 00:00:02,260 --> 00:00:06,580
-Welcome to Zelda's Adventure, an
-action-adventure role-playing game.
+Welcome to Zelda's Adventure, an action-adventure role-playing game.
 
 2
 00:00:07,379 --> 00:00:12,053
-As a player, you will adopt the
-personality of our heroine Princess Zelda.
+As a player, you will adopt the personality of our heroine Princess Zelda.
 
 3
 00:00:12,719 --> 00:00:17,673
-To play the game succesfully, you
-must explore the great land of Tolemac.
+To play the game succesfully, you must explore the great land of Tolemac.
 
 4
 00:00:18,267 --> 00:00:20,993
-To control Zelda's
-movement around Tolemac...
+To control Zelda's movement around Tolemac
 
 5
 00:00:21,266 --> 00:00:26,426
-...move the controller left, right,
-up, down and diagonally.
+move the controller left, right, up, down and diagonally.
 
 6
 00:00:27,307 --> 00:00:29,293
-The court astronomer Gaspra...
+The court astronomer Gaspra
 
 7
 00:00:29,333 --> 00:00:33,413
-...will introduce the story of Zelda
-and describe how her quest came about.
+will introduce the story of Zelda and describe how her quest came about.
 
 8
 00:00:33,751 --> 00:00:36,665
-He will also reappear every time...
+He will also reappear every time
 
 9
 00:00:36,746 --> 00:00:40,320
-...Zelda has succesfully
-completed an underworld shrine...
+Zelda has succesfully completed an underworld shrine
 
 10
 00:00:40,573 --> 00:00:44,361
-...and collected one of seven
-treasured Celestial Signs.
+and collected one of seven treasured Celestial Signs.
 
 11
 00:00:45,166 --> 00:00:48,859
-Another mentor and guide
-to Zelda is me... Shurmak.
+Another mentor and guide to Zelda is me Shurmak.
 
 12
 00:00:49,107 --> 00:00:52,254
-Throughout the game I help
-orient Zelda and guide her.
+Throughout the game I help orient Zelda and guide her.
 
 13
 00:00:53,039 --> 00:00:57,426
-While exploring, Zelda will encounter
-many enemies that inhabit this land.
+While exploring, Zelda will encounter many enemies that inhabit this land.
 
 14
 00:00:57,700 --> 00:01:01,474
-She must defeat them
-by using skill and speed.
+She must defeat them by using skill and speed.
 
 15
 00:01:01,970 --> 00:01:03,977
@@ -72,126 +60,277 @@ Zelda attacks them with her wand.
 
 16
 00:01:04,396 --> 00:01:08,230
-You employ the wand by
-pressing Action Button 1.
+You employ the wand by pressing Action Button 1.
 
 17
 00:01:09,057 --> 00:01:13,526
-If Zelda is succesful at defeating
-her enemies, she will be rewarded.
+If Zelda is succesful at defeating her enemies, she will be rewarded.
 
 18
 00:01:13,776 --> 00:01:16,129
-They will randomly
-drop rubies and hearts...
+They will randomly drop rubies and hearts
 
 19
 00:01:16,154 --> 00:01:19,843
-...that will increase her currency
-and life units respectively.
+that will increase her currency and life units respectively.
 
 20
 00:01:20,639 --> 00:01:23,159
-Rubies which are the currency of Tolemac...
+Rubies which are the currency of Tolemac
 
 21
 00:01:23,500 --> 00:01:25,288
-...can be used to buy useful items...
+can be used to buy useful items
 
 22
 00:01:25,312 --> 00:01:28,867
-...and are indicated on the
-top-left corner of the screen.
+and are indicated on the top-left corner of the screen.
 
 23
 00:01:29,516 --> 00:01:34,176
-Hearts are the life units that give Zelda
-strength to fight throughout the game.
+Hearts are the life units that give Zelda strength to fight throughout the game.
 
 24
 00:01:34,602 --> 00:01:38,068
-They are represented on the
-upper-right corner of the play screen.
+They are represented on the upper-right corner of the play screen.
 
 25
 00:01:38,688 --> 00:01:44,361
-To select an object or a weapon on the
-inventory screen, press Action Button 2.
+To select an object or a weapon on the inventory screen, press Action Button 2.
 
 26
 00:01:45,297 --> 00:01:47,365
-Once in the inventory screen...
+Once in the inventory screen
 
 27
 00:01:47,438 --> 00:01:50,371
-...you can access useful
-items and weapons...
+you can access useful items and weapons
 
 28
 00:01:50,416 --> 00:01:54,936
-...by selecting an object with your
-cursor and the pressing Action Button 1.
+by selecting an object with your cursor and the pressing Action Button 1.
 
 29
 00:01:55,706 --> 00:01:59,660
-Treasures and weapons can be scrolled by
-pressing the left window button...
+Treasures and weapons can be scrolled by pressing the left window button
 
 30
 00:01:59,685 --> 00:02:03,766
-...to move left, and by pressing
-the right window button to move right.
+to move left, and by pressing the right window button to move right.
 
 31
 00:02:04,601 --> 00:02:09,218
-The weapon in use appears in the window
-in the lower right of the inventory screen.
+The weapon in use appears in the window in the lower right of the inventory screen.
 
 32
 00:02:09,977 --> 00:02:13,584
-If you select a useful item
-from the treasures selection...
+If you select a useful item from the treasures selection
 
 33
 00:02:13,859 --> 00:02:18,067
-The item will appear in the same window
-where the weapon selection appeared.
+the item will appear in the same window where the weapon selection appeared.
 
 34
 00:02:18,289 --> 00:02:22,688
-Zelda can use only one
-item or weapon at a time.
+Zelda can use only one item or weapon at a time.
 
 35
 00:02:23,514 --> 00:02:27,267
-In Zelda's travels she will
-find many locked doors.
+In Zelda's travels she will find many locked doors.
 
 36
 00:02:27,664 --> 00:02:31,750
-She must have a key in her possession
-to pass through these locked entrances.
+She must have a key in her possession to pass through these locked entrances.
 
 37
 00:02:32,096 --> 00:02:36,029
-The number of keys in Zelda's possession
-will appear in the small window...
+The number of keys in Zelda's possession will appear in the small window
 
 38
 00:02:36,188 --> 00:02:38,968
-...in the upper right of
-the inventory screen.
+in the upper right of the inventory screen.
 
 39
 00:02:39,411 --> 00:02:41,331
-To help navigate through Tolemac...
+To help navigate through Tolemac
 
 40
 00:02:41,610 --> 00:02:45,510
-...a map is available by moving
-your joystick to the map button...
+a map is available by moving your joystick to the map button
 
 41
 00:02:45,630 --> 00:02:48,337
-...and then pressing your Action Button 1.
+and then pressing your Action Button 1.
+
+42
+00:02:49,269 --> 00:02:50,750
+There are two types of maps:
+
+43
+00:02:51,089 --> 00:02:54,862
+One for the overworld and one for each of the underworlds.
+
+44
+00:02:55,210 --> 00:02:59,330
+The map for the overworld will reveal where you are and where you have traveled.
+
+45
+00:03:00,105 --> 00:03:04,666
+The maps for each of the underworlds will reveal where you are
+
+46
+00:03:04,727 --> 00:03:08,753
+where you have traveled, and where you need to go to complete your quest.
+
+47
+00:03:09,522 --> 00:03:13,776
+To return to gameplay, press Action Button 2.
+
+48
+00:03:14,168 --> 00:03:16,215
+When you are ready to exit game
+
+49
+00:03:16,240 --> 00:03:20,449
+move your cursor to exit button and press Action Button 1.
+
+50
+00:03:21,489 --> 00:03:25,329
+You will then arrive at the save, continue and quit screen.
+
+51
+00:03:25,730 --> 00:03:27,770
+To activate any of these buttons
+
+52
+00:03:27,795 --> 00:03:32,203
+you must move the cursor to the button and press Action Button 1.
+
+53
+00:03:33,597 --> 00:03:37,964
+If you save and quit, you will arrive at the player select screen
+
+54
+00:03:38,015 --> 00:03:41,533
+where you have to option to play again or exit game.
+
+55
+00:03:42,307 --> 00:03:44,050
+When you come back to play again
+
+56
+00:03:44,237 --> 00:03:47,724
+you can restart where you left off by selecting your name.
+
+57
+00:03:48,658 --> 00:03:51,885
+You will then return to the first screen of gameplay
+
+58
+00:03:51,960 --> 00:03:55,506
+with all items and weapons still in the inventory.
+
+59
+00:03:56,393 --> 00:04:01,430
+If you quit without save, you will arrive at the player select screen
+
+60
+00:04:01,483 --> 00:04:05,096
+where you have to option to play again or exit game.
+
+61
+00:04:06,025 --> 00:04:07,872
+When you return to gameplay
+
+62
+00:04:07,897 --> 00:04:10,790
+you will not be able to return to your previous game.
+
+63
+00:04:10,848 --> 00:04:15,809
+However, your status will be fled the last game you saved.
+
+64
+00:04:16,586 --> 00:04:18,319
+If you choose Return to Game
+
+65
+00:04:18,383 --> 00:04:22,463
+you will arrive at the inventory screen where you press Action Button 2
+
+66
+00:04:22,563 --> 00:04:24,616
+which then returns you to gameplay.
+
+67
+00:04:25,036 --> 00:04:29,103
+Before each game, you must select a name for your hero or heroine.
+
+68
+00:04:29,633 --> 00:04:33,506
+You can choose the create button by moving the cursor onto the button
+
+69
+00:04:33,682 --> 00:04:36,015
+and pressing Action Button 1.
+
+70
+00:04:36,954 --> 00:04:39,364
+This takes you to the enter name screen
+
+71
+00:04:39,388 --> 00:04:41,814
+where you type in your name on the keyboard
+
+72
+00:04:41,869 --> 00:04:45,489
+by selecting the desired letters with Action Button 1
+
+73
+00:04:45,533 --> 00:04:48,142
+and then moving your cursor to the done button
+
+74
+00:04:48,196 --> 00:04:50,896
+and pressing Action Button 1 again.
+
+75
+00:04:52,042 --> 00:04:54,875
+This takes you back to the player select screen.
+
+76
+00:04:55,266 --> 00:04:58,145
+Here you press play by selecting the play button
+
+77
+00:04:58,259 --> 00:05:00,446
+and pressing Action Button 1.
+
+78
+00:05:00,964 --> 00:05:03,064
+You will then begin the game.
+
+79
+00:05:03,600 --> 00:05:07,580
+To delete a player's name, place the cursor on the delete button
+
+80
+00:05:07,682 --> 00:05:12,295
+and press Action Button 1 for a three second duration.
+
+81
+00:05:13,397 --> 00:05:17,170
+To exit game, place the cursor on the exit button
+
+82
+00:05:17,231 --> 00:05:19,038
+and press Action Button 1.
+
+83
+00:05:19,329 --> 00:05:22,149
+That is all I will reveal for now.
+
+84
+00:05:22,663 --> 00:05:25,263
+The rest is up to you to discover.
 

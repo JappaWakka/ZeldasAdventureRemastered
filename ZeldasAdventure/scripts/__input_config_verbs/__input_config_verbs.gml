@@ -52,6 +52,7 @@ function __input_config_verbs()
             action1:  input_binding_virtual_button(),
             action2:  input_binding_virtual_button(),
             inventory:  input_binding_virtual_button(),
+            map: input_binding_virtual_button(),
             menu: input_binding_virtual_button(),
         }
     };
