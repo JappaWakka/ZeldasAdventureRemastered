@@ -2,19 +2,19 @@ Scrolled = [0,0] // Direction, InventoryIndex
 
 if global.RemasteredMode == true
 {
-	SelectedIndex = [Item_FindIndex(global.CurrentTreasure,0), Item_FindIndex(global.CurrentSpell,1)]
+	SelectedIndex = [global.CurrentTreasure, global.CurrentSpell]
 	InventoryIndex = 0
 }
 else
 {
 	if global.CurrentItem[0] == 0 //Treasure
 	{
-		SelectedIndex = [Item_FindIndex(global.CurrentItem[1],0),-1]
+		SelectedIndex = [global.CurrentItem[1],-1]
 		InventoryIndex = 0
 	}
 	else if global.CurrentItem[0] == 1 //Spell
 	{
-		SelectedIndex = [-1, Item_FindIndex(global.CurrentItem[1],1)]
+		SelectedIndex = [-1, global.CurrentItem[1]]
 		InventoryIndex = 1
 	}
 	else

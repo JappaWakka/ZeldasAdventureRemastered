@@ -41,7 +41,7 @@ else
 Entity_Player.AnimSpeed = d(SpeedMultiplier)
 if global.CameraIsPanning = false
 {
-	if Entity_Player.IsAttacking = false and Entity_Player.IsDead = false
+	if Entity_Player.IsAttacking = false and global.PlayerIsDead = false
 	{
 		if(input_check("right") = true and input_check("left") = false)
 		{
@@ -75,7 +75,10 @@ if global.CameraIsPanning = false
 }
 else
 {
-	Entity_Player.image_speed = 0;
+	if global.PlayerIsDead = false
+	{
+		Entity_Player.image_speed = 0;
+	}
 }
 
 #endregion

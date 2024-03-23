@@ -16,7 +16,7 @@ if (webm_exists(CurrentVideo)) {
 	  surface_reset_target();
 	}
 	// then we just slap the video frame on that surf.
-	var contrast = 1.15
+	var contrast = 1.175
 	shader_set(shader)
 	shader_set_uniform_f(u_contrast,contrast)
 	buffer_set_surface(BufferVideo, VideoSurface, 0);

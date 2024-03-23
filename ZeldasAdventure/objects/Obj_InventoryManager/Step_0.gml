@@ -12,19 +12,19 @@ if input_check_pressed("inventory")
 	{
 		if global.RemasteredMode = true
 		{
-			SelectedIndex = [Item_FindIndex(global.CurrentTreasure,0), Item_FindIndex(global.CurrentSpell,1)]
+			SelectedIndex = [global.CurrentTreasure, global.CurrentSpell]
 			InventoryIndex = 0
 		}
 		else
 		{
 			if global.CurrentItem[0] == 0
 			{
-				SelectedIndex = [Item_FindIndex(global.CurrentItem[1],0),-1]
+				SelectedIndex = [global.CurrentItem[1],-1]
 				InventoryIndex = 0
 			}
 			else if global.CurrentItem[0] == 1
 			{
-				SelectedIndex = [-1, Item_FindIndex(global.CurrentItem[1],1)]
+				SelectedIndex = [-1, global.CurrentItem[1]]
 				InventoryIndex = 1
 			}
 			else
@@ -44,20 +44,20 @@ if SelectedIndex[1] == -1
 {
 	SelectedIndex[1] = 0
 }
-if Alpha == 255
+if Alpha == 255 
 {
 	if input_check_pressed("action2") = true
 	{
 		if global.FadeAlpha == 0 && OpeningClosing == false
 		{
-			if Obj_WorldMapManager.Alpha = 0 and Obj_WorldMapManager.OpeningClosing == false
+			if IsOtherMenuThanInventoryVisible() = false
 			{
 				global.FadeProgress = 0;
 				OpeningClosing = true;
 			}
 		}
 	}	
-	if Obj_WorldMapManager.Alpha = 0 and Obj_WorldMapManager.OpeningClosing == false
+	if IsOtherMenuThanInventoryVisible() = false
 	{
 		if input_check_pressed("action1") = true
 		{
@@ -108,7 +108,7 @@ else
 }
 if Alpha = 255
 {
-	if Obj_WorldMapManager.Alpha = 0 and Obj_WorldMapManager.OpeningClosing == false and OpeningClosing = false
+	if IsOtherMenuThanInventoryVisible() = false and OpeningClosing = false
 	{
 		if mouse_wheel_down() = true or input_check_pressed("right") = true
 		{

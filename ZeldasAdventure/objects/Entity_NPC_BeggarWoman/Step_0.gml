@@ -55,34 +55,34 @@ if IsPlayerOnSameTile() = true
 				}
 			}
 		}
-				
+			
+	}	
 		
-		if global.CurrentDialogue_Asset != Dialog_None
+	if global.CurrentDialogue_Asset != Dialog_None
+	{
+		if IsMenuVisible() = false
 		{
-			if IsMenuVisible() = false
+			if audio_is_paused(global.CurrentDialogue_ID) = true
 			{
-				if audio_is_paused(global.CurrentDialogue_ID) = true
-				{
-					audio_resume_sound(global.CurrentDialogue_ID)
-				}
-				var AudioPosition = audio_sound_get_track_position(global.CurrentDialogue_ID)
-				if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees
-				{
-					global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees(AudioPosition)
-				}
-				if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
-				{
-					global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRupees(AudioPosition)
-				}
+				audio_resume_sound(global.CurrentDialogue_ID)
 			}
-			else
+			var AudioPosition = audio_sound_get_track_position(global.CurrentDialogue_ID)
+			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees
 			{
-				if audio_is_paused(global.CurrentDialogue_ID) = false
-				{
-					audio_pause_sound(global.CurrentDialogue_ID)
-				}
-				global.Subtitle = ""
+				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees(AudioPosition)
 			}
+			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
+			{
+				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRupees(AudioPosition)
+			}
+		}
+		else
+		{
+			if audio_is_paused(global.CurrentDialogue_ID) = false
+			{
+				audio_pause_sound(global.CurrentDialogue_ID)
+			}
+			global.Subtitle = ""
 		}
 	}
 }

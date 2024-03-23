@@ -6,7 +6,7 @@ if DamageDelay = 0
 		DecreaseHP(other.Power - GetDefense())
 		audio_play_sound_relative(SFX_Zelda_Damage,1000,false)
 		
-		if global.DebugMode = false && global.CurrentHealth = 0 && IsDead = false
+		if global.DebugMode = false && global.CurrentHealth = 0 && global.PlayerIsDead = false
 		{
 			sprite_index = Zelda_Death
 			image_speed = 1
@@ -15,7 +15,8 @@ if DamageDelay = 0
 			global.FadeProgress = 0;
 			global.FadeSpeed = 1
 			DamageDelay = 8 * FrameRate
-			IsDead = true
+			global.PlayerIsDead = true
+			global.HasResetEnemies = false
 		}
 		else
 		{
@@ -36,7 +37,7 @@ if DamageDelay = 0
 			DecreaseHP(other.Power - GetDefense())
 			audio_play_sound_relative(SFX_Zelda_Damage,1000,false)
 			instance_destroy(other)
-			if global.DebugMode = false && global.CurrentHealth = 0 && IsDead = false
+			if global.DebugMode = false && global.CurrentHealth = 0 && global.PlayerIsDead = false
 			{
 				sprite_index = Zelda_Death
 				image_speed = 1
@@ -45,7 +46,8 @@ if DamageDelay = 0
 				global.FadeProgress = 0;
 				global.FadeSpeed = 1
 				DamageDelay = 8 * FrameRate
-				IsDead = true
+				global.PlayerIsDead = true
+				global.HasResetEnemies = false
 			}
 			else
 			{

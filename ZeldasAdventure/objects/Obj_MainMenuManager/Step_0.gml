@@ -14,6 +14,13 @@ if PageIndex = Menu_Page.Main
 			room_goto(Room_Overworld);
 		}
 	}
+	else if HasPressedTutorial = true
+	{
+		if global.FadeProgress = 1
+		{			
+			room_goto(Room_Cutscene_Tutorial);
+		}
+	}
 	else if IsFading == false
 	{
 		var CurrentGrid = Menu_Pages[PageIndex];

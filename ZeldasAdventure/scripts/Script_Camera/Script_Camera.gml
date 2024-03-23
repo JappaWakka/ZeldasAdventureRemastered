@@ -40,6 +40,7 @@ function Camera_Pan()
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
 			//Deactivate old tile, activate new tile
+			instance_destroy(Entity_Pickup_ItemDrops)
 			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)
 			instance_activate_object(Entity_Parent_Player)
 			instance_activate_region(Desired.x, Desired.y, tileWidth, tileHeight,true)
@@ -74,7 +75,10 @@ function Camera_Pan()
 				}
 				else
 				{
-					global.SwitchTracks = true;
+					if audio_is_playing(SFX_Zelda_Death) = false
+					{
+						global.SwitchTracks = true;
+					}
 					if global.FadeAlpha = 0
 					{
 						global.CameraIsPanning = false;

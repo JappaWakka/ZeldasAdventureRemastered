@@ -101,7 +101,7 @@ function ExitMenu_SaveAndQuit()
 	ini_close()
 	
 	Audio_StopMusic()
-	global.FadeProgress = 0;
-	global.FadeSpeed = 16;
 	QuitToMainMenu = true;
+	global.FadeSpeed = 16;
+	global.FadeProgress = 0;
 }

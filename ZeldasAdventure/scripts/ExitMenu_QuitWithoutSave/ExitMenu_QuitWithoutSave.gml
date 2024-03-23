@@ -3,7 +3,7 @@
 function ExitMenu_QuitWithoutSave()
 {
 	Audio_StopMusic()
+	QuitToMainMenu = true;
 	global.FadeProgress = 0;
 	global.FadeSpeed = 16;
-	QuitToMainMenu = true;
 }

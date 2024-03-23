@@ -2070,9 +2070,9 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"controllertypes.csv","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"input_license.txt","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"sdl2.txt","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cutscene_Logos.webm","CopyToMask":-1,"filePath":"datafiles/Video",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cutscene_Intro.webm","CopyToMask":-1,"filePath":"datafiles/Video",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cutscene_Shrine_Earth.webm","CopyToMask":-1,"filePath":"datafiles/Video",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cutscene_Logos.webm","CopyToMask":-1,"filePath":"datafiles/Video",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cutscene_Tutorial.webm","CopyToMask":-1,"filePath":"datafiles/Video",},
   ],
   "MetaData": {

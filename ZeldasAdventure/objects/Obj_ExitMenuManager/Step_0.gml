@@ -1,11 +1,4 @@
-if QuitToMainMenu = true
-{
-	if global.FadeProgress = 1
-	{
-		room_goto(Room_MainMenu);
-	}
-}
-else if OpeningClosing == false
+if QuitToMainMenu = false and OpeningClosing == false
 {
 	if Alpha = 255
 	{

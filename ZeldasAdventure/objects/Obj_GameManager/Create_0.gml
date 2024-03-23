@@ -11,5 +11,13 @@ ChangeRubyAlarms[0] = new Alarm(1, ChangeRubyAmount, true);
 ChangeRubyAlarms[1] = new Alarm(15, PlayRubySound, true);
 
 global.HasSpawned = false
+if room != Room_Overworld
+{
+	global.PlayerIsDead = false
+}
+if global.PlayerIsDead = false
+{
+	global.HasResetEnemies = true
+}
 DoFillHearts = false
 FillHeartsAlarm = new Alarm(6, IncreaseHP, true);

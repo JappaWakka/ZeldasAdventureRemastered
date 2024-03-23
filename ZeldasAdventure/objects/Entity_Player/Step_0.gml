@@ -5,7 +5,7 @@ y = Entity_Collision_Player.y
 #region SpriteChanges & Direction
 
 #region Action - Using Spells & Treasures
-if global.RemasteredMode = false and IsAttacking = false and IsDead = false
+if global.RemasteredMode = false and IsAttacking = false and global.PlayerIsDead = false
 {
 	if input_check_pressed("action1") = true or input_check_pressed("action2") = true
 	{
@@ -18,33 +18,33 @@ if global.RemasteredMode = false and IsAttacking = false and IsDead = false
 				UseSpell_Any();
 				
 				// Use Spell - Wand
-				if global.CurrentItem[1] = Spells.Wand
+				if Item_FindValue(global.CurrentItem[1],1) = Spells.Wand
 				{
 					UseSpell_Wand()
 				}
 				
 				// Use Spell - Firestorm
-				if global.CurrentItem[1] = Spells.Firestorm
+				if Item_FindValue(global.CurrentItem[1],1) = Spells.Firestorm
 				{
 					UseSpell_Firestorm()
 				}
 				// Use Spell - JadeRing
-				if global.CurrentItem[1] = Spells.JadeRing
+				if Item_FindValue(global.CurrentItem[1],1) = Spells.JadeRing
 				{
 					UseSpell_JadeRing()
 				}
 				// Use Spell - Calm
-				if global.CurrentItem[1] = Spells.Calm
+				if Item_FindValue(global.CurrentItem[1],1) = Spells.Calm
 				{
 					UseSpell_Calm()
 				}
 				// Use Spell - Boomerang
-				if global.CurrentItem[1] = Spells.Boomerang
+				if Item_FindValue(global.CurrentItem[1],1) = Spells.Boomerang
 				{
 					UseSpell_Boomerang()
 				}
 				// Use Spell - Dagger
-				if global.CurrentItem[1] = Spells.Dagger
+				if Item_FindValue(global.CurrentItem[1],1) = Spells.Dagger
 				{
 					UseSpell_Dagger()
 				}
@@ -88,7 +88,7 @@ if global.RemasteredMode = false and IsAttacking = false and IsDead = false
 	}
 }
 
-if global.RemasteredMode = true and IsAttacking = false and IsDead = false
+if global.RemasteredMode = true and IsAttacking = false and global.PlayerIsDead = false
 {
 	if input_check_pressed("action1") = true
 	{
@@ -117,32 +117,32 @@ if global.RemasteredMode = true and IsAttacking = false and IsDead = false
 			UseSpell_Any();
 						
 			// Use Spell - Wand
-			if global.CurrentSpell = Spells.Wand
+			if Item_FindValue(global.CurrentSpell,1) = Spells.Wand
 			{
 				UseSpell_Wand()
 			}				
 			// Use Spell - Firestorm
-			if global.CurrentSpell = Spells.Firestorm
+			if Item_FindValue(global.CurrentSpell,1) = Spells.Firestorm
 			{
-				UseSpell_Firestorm()	
+				UseSpell_Firestorm()
 			}
 			// Use Spell - JadeRing
-			if global.CurrentSpell = Spells.JadeRing
+			if Item_FindValue(global.CurrentSpell,1) = Spells.JadeRing
 			{
 				UseSpell_JadeRing()
 			}
 			// Use Spell - Calm
-			if global.CurrentSpell = Spells.Calm
+			if Item_FindValue(global.CurrentSpell,1) = Spells.Calm
 			{
 				UseSpell_Calm()
 			}
 			// Use Spell - Boomerang
-			if global.CurrentSpell = Spells.Boomerang
+			if Item_FindValue(global.CurrentSpell,1) = Spells.Boomerang
 			{
 				UseSpell_Boomerang()
 			}
 			// Use Spell - Dagger
-			if global.CurrentSpell = Spells.Dagger
+			if Item_FindValue(global.CurrentSpell,1) = Spells.Dagger
 			{
 				UseSpell_Dagger()
 			}
@@ -167,16 +167,16 @@ if global.RemasteredMode = true and IsAttacking = false and IsDead = false
 //Auto-equip Wand if nothing is equipped
 if global.RemasteredMode = true
 {
-	if global.CurrentSpell = -1 && Item_FindIndex(Spells.Wand, 1) <> -1
+	if Item_FindValue(global.CurrentSpell,1) = -1 && Item_FindIndex(Spells.Wand, 1) <> -1
 	{
-		global.CurrentSpell = Spells.Wand;
+		global.CurrentSpell = Item_FindIndex(Spells.Wand,1);
 	}
 }
 else
 {
 	if global.CurrentItem[1] = -1 && Item_FindIndex(Spells.Wand, 1) <> -1
 	{
-		global.CurrentItem = [1,Spells.Wand];
+		global.CurrentItem = [1,Item_FindIndex(Spells.Wand,1)];
 	}
 }
 if IsAttacking = true
@@ -192,14 +192,12 @@ if DamageDelay > 0
 	DamageDelay -=1
 }
 
-if IsDead = true
+if global.PlayerIsDead = true
 {
-	WarpToLocation(global.PlayerSpawn);
-	
 	if global.FadeProgress = 0
 	{
-		sprite_index = Zelda_Death
-		image_speed = 1
+		sprite_index = Zelda_Death;
+		image_speed = 1;
 	}
 		
 	if global.FadeProgress = 1
@@ -209,13 +207,21 @@ if IsDead = true
 		Facing = global.Directions.South;
 		IsAttacking = false;
 		DamageDelay = 0;
+		image_speed = 0;
+		timeline_index = -1;
+		image_alpha = 1;
+		if global.HasResetEnemies = false
+		{
+			global.HasResetEnemies = true
+			room_goto(Room_Overworld)
+		}
 	}
 	if global.FadeProgress = 2
 	{
 		if audio_is_playing(SFX_Zelda_Death) = false
 		{
 			global.SwitchTracks = true
-			IsDead = false
+			global.PlayerIsDead = false
 		}
 	}
 }

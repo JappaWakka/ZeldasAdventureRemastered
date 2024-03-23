@@ -125,11 +125,12 @@ repeat(Array_Length)
 ConfigDevice = 0; //0 = Keyboard, 1 = Gamepad
 IsFading = false;
 HasPressedPlay = false;
+HasPressedTutorial = false;
 IsQuiting = false;
 IsInputting = false;
 CanChangeControls = true;
 NextPage = -1;
-PageIndex = 0; //0 = Main, 1 = Settings, 2 = Game, 3 = Audio, 4 = Controls, 5 = Name
+PageIndex = Menu_Page.Main;
 
 input_ignore_key_remove(vk_alt)
 input_ignore_key_remove(vk_lalt)

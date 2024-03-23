@@ -79,11 +79,13 @@ function SaveGame_Play(){
 		}
 		ini_close()
 		
+		global.PlayerIsDead = false;
 		global.FadeProgress = 0;
 		HasPressedPlay = true
 	}
 	else
-	{
+	{		
+		global.PlayerIsDead = false;
 		InputName = ""
 		global.FadeSpeed = 16;
 		global.FadeProgress = 0;
