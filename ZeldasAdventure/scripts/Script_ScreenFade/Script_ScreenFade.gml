@@ -1,4 +1,4 @@
-function FadeIn(StartAlpha = 255, EndAlpha = 0, FadeSpeed = 8)
+function FadeIn(StartAlpha = 255, EndAlpha = 0, FadeSpeed = 12)
 {
 	global.FadeAlpha = clamp(StartAlpha - 1 * d(FadeSpeed),0,255);
 	if global.FadeAlpha > EndAlpha
@@ -13,7 +13,7 @@ function FadeIn(StartAlpha = 255, EndAlpha = 0, FadeSpeed = 8)
 	}
 }
 
-function FadeOut(StartAlpha = 0, EndAlpha = 255,FadeSpeed = 8)
+function FadeOut(StartAlpha = 0, EndAlpha = 255,FadeSpeed = 12)
 {
 	global.FadeAlpha = clamp(StartAlpha + 1 * d(FadeSpeed),0,255)
 	if global.FadeAlpha < EndAlpha

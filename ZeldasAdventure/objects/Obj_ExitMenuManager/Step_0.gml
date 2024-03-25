@@ -91,7 +91,7 @@ else
 				instance_activate_layer("Enemies");
 			}
 		}
-		global.FadeSpeed = 8;
+		global.FadeSpeed = 12;
 		OpeningClosing = false;
 	}
 }

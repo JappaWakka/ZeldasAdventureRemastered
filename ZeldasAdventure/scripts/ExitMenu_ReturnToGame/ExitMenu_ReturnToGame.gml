@@ -3,6 +3,6 @@
 function ExitMenu_ReturnToGame()
 {
 	global.FadeProgress = 0;
-	global.FadeSpeed = 8;
+	global.FadeSpeed = 12;
 	OpeningClosing = true;
 }

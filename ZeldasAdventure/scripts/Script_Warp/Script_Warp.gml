@@ -1,4 +1,4 @@
-function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 8)
+function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 {
 	if global.FadeProgress = 3
 	{

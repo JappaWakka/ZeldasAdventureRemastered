@@ -158,7 +158,7 @@ if PageIndex = Menu_Page.Main
 			PageIndex = NextPage;
 			IsFading = false;
 			NextPage = -1;
-			global.FadeSpeed = 8;
+			global.FadeSpeed = 12;
 		}
 	}
 }
@@ -279,7 +279,7 @@ else if PageIndex = Menu_Page.NameInput //Name Input Menu
 			PageIndex = NextPage;
 			IsFading = false;
 			NextPage = -1;
-			global.FadeSpeed = 8;
+			global.FadeSpeed = 12;
 		}
 	}
 }
@@ -482,7 +482,7 @@ else //SettingMenu
 			PageIndex = NextPage;
 			IsFading = false;
 			NextPage = -1;
-			global.FadeSpeed = 8;
+			global.FadeSpeed = 12;
 		}
 	}
 }

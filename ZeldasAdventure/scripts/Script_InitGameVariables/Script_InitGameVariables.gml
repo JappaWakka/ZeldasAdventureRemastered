@@ -16,7 +16,7 @@ function InitGameVariables()
 	
 	global.AddCutItems = true; //Include items that were cut from the original game
 	global.CurrentSaveGame = 0;
-	global.FadeSpeed = 8;
+	global.FadeSpeed = 12;
 	global.FadeProgress = 2; //0 = Fade Out, 1 = Fade In, 2 = Finished, 3 = Warp
 	global.FadeAlpha = 0;
 	global.FadeBeforePan = false;

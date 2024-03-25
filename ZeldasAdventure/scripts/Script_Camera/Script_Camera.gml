@@ -95,7 +95,7 @@ function Camera_Pan()
 						global.Subtitle = ""
 					}
 					global.FadeProgress = 0;
-					global.FadeSpeed = 8;
+					global.FadeSpeed = 12;
 				}
 				if global.FadeProgress = 1
 				{
