@@ -13,10 +13,10 @@ else
 
 
 //Don't move outside of the current tile
-if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
-y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
-x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
-y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
+if x + abs(hspeed) * 3 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
+y + abs(vspeed) * 3 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
+x - abs(hspeed) * 3 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
+y - abs(vspeed) * 3 <= global.CurrentTile.y * tileHeight && vspeed < 0
 {
 	instance_destroy()
 }
