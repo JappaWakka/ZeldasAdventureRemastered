@@ -2,6 +2,21 @@
 x = Entity_Collision_Player.x
 y = Entity_Collision_Player.y
 
+if IsMenuVisible() = true
+{
+	if timeline_index = Damage_Player
+	{
+		timeline_running = false
+	}
+}
+else
+{
+	if timeline_index = Damage_Player
+	{
+		timeline_running = true
+	}
+}
+
 #region SpriteChanges & Direction
 
 #region Action - Using Spells & Treasures
