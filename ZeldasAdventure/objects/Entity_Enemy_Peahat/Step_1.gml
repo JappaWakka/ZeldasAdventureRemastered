@@ -27,29 +27,29 @@ if ChangeDirection = true
 				{
 					if Entity_Player.y < self.y
 					{
-						direction = choose(180,90);
+						direction = choose(global.Directions.West,global.Directions.North);
 					}
 					else
 					{
-						direction = choose(180,270);
+						direction = choose(global.Directions.West,global.Directions.South);
 					}
 				}
 				else
 				{
 					if Entity_Player.y < self.y
 					{
-						direction = choose(0,90);
+						direction = choose(global.Directions.East,global.Directions.North);
 					}
 					else
 					{
-						direction = choose(0,270);
+						direction = choose(global.Directions.East,global.Directions.South);
 					}
 				}
 			}
 		}
 		else
 		{
-			direction = choose(90,180,0,270);
+			direction = choose(global.Directions.North,global.Directions.West,global.Directions.East,global.Directions.South);
 		}
 	}
 	else

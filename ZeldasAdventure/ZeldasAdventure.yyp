@@ -209,6 +209,7 @@
     {"id":{"name":"Script_GetDefense","path":"scripts/Script_GetDefense/Script_GetDefense.yy",},"order":16,},
     {"id":{"name":"Sprite_Inventory_Background","path":"sprites/Sprite_Inventory_Background/Sprite_Inventory_Background.yy",},"order":0,},
     {"id":{"name":"Subtitle_Cutscene_Tutorial","path":"scripts/Subtitle_Cutscene_Tutorial/Subtitle_Cutscene_Tutorial.yy",},"order":1,},
+    {"id":{"name":"Enemy_Collision_Solid","path":"sprites/Enemy_Collision_Solid/Enemy_Collision_Solid.yy",},"order":6,},
     {"id":{"name":"Zelda_Collision_Solid","path":"sprites/Zelda_Collision_Solid/Zelda_Collision_Solid.yy",},"order":3,},
     {"id":{"name":"SFX_Enemy_SeaMonster","path":"sounds/SFX_Enemy_SeaMonster/SFX_Enemy_SeaMonster.yy",},"order":18,},
     {"id":{"name":"Shrine_Earth_16","path":"sprites/Shrine_Earth_16/Shrine_Earth_16.yy",},"order":349,},

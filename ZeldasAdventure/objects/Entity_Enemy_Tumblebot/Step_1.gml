@@ -3,16 +3,16 @@ if EnemyState != EnemyStates.Damaged
 	//Change sprite
 	switch direction
 	{
-		case 0 :
+		case global.Directions.East :
 			sprite_index = Sprite_Enemy_Tumblebot_East
 			break;
-		case 270 :
+		case global.Directions.South :
 			sprite_index = Sprite_Enemy_Tumblebot_South
 			break;
-		case 180 :
+		case global.Directions.West :
 			sprite_index = Sprite_Enemy_Tumblebot_West
 			break;
-		case 90 :
+		case global.Directions.North :
 			sprite_index = Sprite_Enemy_Tumblebot_North
 			break;
 	}
@@ -39,29 +39,29 @@ if ChangeDirection = true
 				{
 					if Entity_Player.y < self.y
 					{
-						direction = choose(180,90);
+						direction = choose(global.Directions.West,global.Directions.North);
 					}
 					else
 					{
-						direction = choose(180,270);
+						direction = choose(global.Directions.West,global.Directions.South);
 					}
 				}
 				else
 				{
 					if Entity_Player.y < self.y
 					{
-						direction = choose(0,90);
+						direction = choose(global.Directions.East,global.Directions.North);
 					}
 					else
 					{
-						direction = choose(0,270);
+						direction = choose(global.Directions.East,global.Directions.South);
 					}
 				}
 			}
 		}
 		else
 		{
-			direction = choose(90,180,0,270);
+			direction = choose(global.Directions.North,global.Directions.West,global.Directions.East,global.Directions.South);
 		}
 	}
 	else

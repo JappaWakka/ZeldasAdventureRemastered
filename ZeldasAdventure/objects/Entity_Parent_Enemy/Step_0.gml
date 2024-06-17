@@ -23,15 +23,71 @@ if IsPlayerOnSameTile() = true && global.CameraIsPanning = false
 			alarm_set(2, random_range(0, 3 * FrameRate));
 		}
 	}
+	//Player Damage
+	//Melee
+	if collision_circle(x,y,HitRadius,Entity_Hitbox_Spell_Wand,true,true)
+	{
+		if DamageDelay = 0 && ImmuneToWand = false
+		{
+			///Reduce HitPoints, play damage sound
+			HitPoints -= GetPower() - Defense
+			audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
+			EnemyState = EnemyStates.Damaged
+			StartDamageAnimation = true
+			HitFromDirection = Entity_Player.Facing
+			///Reset DamageDelay
+			DamageDelay = 1 * FrameRate
+		}
+	}
+	//Spell
+	if instance_number(Entity_Parent_Projectile_Player) > 0
+	{
+		var HitProjectile = -1
+		for (var i = 0; i < instance_number(Entity_Parent_Projectile_Player); ++i;)
+		{
+			if collision_circle(x,y,HitRadius,Entity_Parent_Projectile_Player,true,true)
+		    {
+				HitProjectile = instance_find(Entity_Parent_Projectile_Player,i);
+			}
+		}
+		if HitProjectile != -1
+		{
+			if DamageDelay = 0
+			{
+				///Reduce HitPoints, play damage sound
+				if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
+				{
+					HitPoints -= HitProjectile.Power + HitProjectile.BonusDamageIfWeak
+				}
+				else
+				{
+					HitPoints -= HitProjectile.Power - Defense
+				}
+				audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
+				EnemyState = EnemyStates.Damaged
+				StartDamageAnimation = true
+				HitFromDirection = HitProjectile.direction
+				if HitProjectile.DestroyOnEnemyImpact = true
+				{
+					instance_destroy(HitProjectile)
+				}
+				///Reset DamageDelay
+				DamageDelay = 1 * FrameRate
+			}
+		}
+	}
 }
 else
 {
 	//Deactivate
 	visible = false
-	x = OriginX;
-	y = OriginY;
-	image_index = 0;
-	direction = 90;
+	if IsMenuVisible = false
+	{
+		x = OriginX;
+		y = OriginY;
+		image_index = 0;
+		direction = 90;
+	}
 	speed = global.EnemySpeeds.Still;
 	image_speed = 0;
 }
