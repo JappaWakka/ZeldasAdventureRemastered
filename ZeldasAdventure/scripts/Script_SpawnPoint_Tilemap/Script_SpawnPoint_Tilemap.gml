@@ -2,44 +2,44 @@
 function Init_SpawnPoints_TileMap()
 {
 	//Y = 0
-	global.SpawnPoints[6][0] = "Spawn_Shrine3";
-	global.SpawnPoints[7][0] = "Spawn_Shrine3";
-	global.SpawnPoints[8][0] = "Spawn_Shrine3";
-	global.SpawnPoints[9][0] = "Spawn_Shrine3";
-	global.SpawnPoints[10][0] = "Spawn_Shrine3";
+	global.SpawnPoints[6][0] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[7][0] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[8][0] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[9][0] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[10][0] = "Spawn_ShrineOfAir";
 	
 	global.SpawnPoints[25][0] = "Spawn_Overworld";
 	
 	//Y = 1
-	global.SpawnPoints[5][1] = "Spawn_Shrine3";
-	global.SpawnPoints[6][1] = "Spawn_Shrine3";
+	global.SpawnPoints[5][1] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[6][1] = "Spawn_ShrineOfAir";
 	
-	global.SpawnPoints[10][1] = "Spawn_Shrine3";
+	global.SpawnPoints[10][1] = "Spawn_ShrineOfAir";
 	
 	global.SpawnPoints[25][1] = "Spawn_Overworld";
 	
 	//Y = 2
-	global.SpawnPoints[5][2] = "Spawn_Shrine3";
-	global.SpawnPoints[6][2] = "Spawn_Shrine3_Boss";
+	global.SpawnPoints[5][2] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[6][2] = "Spawn_ShrineOfAir_Boss";
 	
-	global.SpawnPoints[9][2] = "Spawn_Shrine3";
-	global.SpawnPoints[10][2] = "Spawn_Shrine3";
+	global.SpawnPoints[9][2] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[10][2] = "Spawn_ShrineOfAir";
 	
 	global.SpawnPoints[24][2] = "Spawn_Overworld";
 	global.SpawnPoints[25][2] = "Spawn_Overworld";
 	
 	//Y = 3	
-	global.SpawnPoints[6][3] = "Spawn_Shrine3_Boss";
+	global.SpawnPoints[6][3] = "Spawn_ShrineOfAir_Boss";
 	
-	global.SpawnPoints[9][3] = "Spawn_Shrine3";
+	global.SpawnPoints[9][3] = "Spawn_ShrineOfAir";
 	
 	global.SpawnPoints[24][3] = "Spawn_Overworld";
 	global.SpawnPoints[25][3] = "Spawn_Overworld";
 	
 	//Y = 4
-	global.SpawnPoints[6][4] = "Spawn_Shrine3";
-	global.SpawnPoints[7][4] = "Spawn_Shrine3";
-	global.SpawnPoints[8][4] = "Spawn_Shrine3";
+	global.SpawnPoints[6][4] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[7][4] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[8][4] = "Spawn_ShrineOfAir";
 	
 	global.SpawnPoints[17][4] = "Spawn_Overworld";
 	global.SpawnPoints[18][4] = "Spawn_Overworld";
@@ -51,7 +51,7 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[25][4] = "Spawn_Overworld";
 	
 	//Y = 5
-	global.SpawnPoints[8][5] = "Spawn_Shrine3";
+	global.SpawnPoints[8][5] = "Spawn_ShrineOfAir";
 	
 	global.SpawnPoints[17][5] = "Spawn_Overworld";
 	global.SpawnPoints[18][5] = "Spawn_Overworld";
@@ -71,8 +71,8 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[4][6] = "Spawn_Overworld";
 	global.SpawnPoints[5][6] = "Spawn_Overworld";
 	
-	global.SpawnPoints[8][6] = "Spawn_Shrine3";
-	global.SpawnPoints[9][6] = "Spawn_Shrine3";
+	global.SpawnPoints[8][6] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[9][6] = "Spawn_ShrineOfAir";
 	
 	global.SpawnPoints[13][6] = "Spawn_Overworld";
 	
@@ -91,8 +91,8 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[4][7] = "Spawn_Overworld";
 	global.SpawnPoints[5][7] = "Spawn_Overworld";
 	
-	global.SpawnPoints[8][7] = "Spawn_Shrine3";
-	global.SpawnPoints[9][7] = "Spawn_Shrine3";
+	global.SpawnPoints[8][7] = "Spawn_ShrineOfAir";
+	global.SpawnPoints[9][7] = "Spawn_ShrineOfAir";
 	
 	global.SpawnPoints[11][7] = "Spawn_Overworld";
 	global.SpawnPoints[12][7] = "Spawn_Overworld";
@@ -308,7 +308,7 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[20][18] = "Spawn_Overworld";
 	global.SpawnPoints[21][18] = "Spawn_Overworld";
 	
-	global.SpawnPoints[27][18] = "Spawn_Shrine2_Boss";
+	global.SpawnPoints[27][18] = "Spawn_ShrineOfIllusion_Boss";
 	
 	//Y = 19
 	global.SpawnPoints[4][19] = "Spawn_Overworld";
@@ -327,7 +327,7 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[20][19] = "Spawn_Overworld";
 	global.SpawnPoints[21][19] = "Spawn_Overworld";
 	
-	global.SpawnPoints[27][19] = "Spawn_Shrine2_Boss";
+	global.SpawnPoints[27][19] = "Spawn_ShrineOfIllusion_Boss";
 	
 	//Y = 20
 	global.SpawnPoints[4][20] = "Spawn_Overworld";
@@ -341,10 +341,10 @@ function Init_SpawnPoints_TileMap()
 	
 	global.SpawnPoints[15][20] = "Spawn_Overworld";
 	
-	global.SpawnPoints[24][20] = "Spawn_Shrine2";
-	global.SpawnPoints[25][20] = "Spawn_Shrine2";
-	global.SpawnPoints[26][20] = "Spawn_Shrine2";
-	global.SpawnPoints[27][20] = "Spawn_Shrine2";
+	global.SpawnPoints[24][20] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[25][20] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[26][20] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[27][20] = "Spawn_ShrineOfIllusion";
 	
 	//Y = 21
 	global.SpawnPoints[4][21] = "Spawn_Overworld";
@@ -358,11 +358,11 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[14][21] = "Spawn_Overworld";
 	global.SpawnPoints[15][21] = "Spawn_Overworld";
 	
-	global.SpawnPoints[20][21] = "Spawn_Shrine2";
-	global.SpawnPoints[21][21] = "Spawn_Shrine2";
-	global.SpawnPoints[22][21] = "Spawn_Shrine2";
-	global.SpawnPoints[23][21] = "Spawn_Shrine2";
-	global.SpawnPoints[24][21] = "Spawn_Shrine2";
+	global.SpawnPoints[20][21] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[21][21] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[22][21] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[23][21] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[24][21] = "Spawn_ShrineOfIllusion";
 	
 	//Y = 22
 	global.SpawnPoints[4][22] = "Spawn_Overworld";
@@ -374,13 +374,13 @@ function Init_SpawnPoints_TileMap()
 	
 	global.SpawnPoints[14][22] = "Spawn_Overworld";
 	
-	global.SpawnPoints[20][22] = "Spawn_Shrine2";
-	global.SpawnPoints[21][22] = "Spawn_Shrine2";
+	global.SpawnPoints[20][22] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[21][22] = "Spawn_ShrineOfIllusion";
 	
-	global.SpawnPoints[23][22] = "Spawn_Shrine2";
-	global.SpawnPoints[24][22] = "Spawn_Shrine2";
+	global.SpawnPoints[23][22] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[24][22] = "Spawn_ShrineOfIllusion";
 	
-	global.SpawnPoints[26][22] = "Spawn_Shrine4";
+	global.SpawnPoints[26][22] = "Spawn_ShrineOfDestiny";
 	
 	//Y = 23
 	global.SpawnPoints[3][23] = "Spawn_Overworld";
@@ -395,10 +395,10 @@ function Init_SpawnPoints_TileMap()
 	
 	global.SpawnPoints[14][23] = "Spawn_Overworld";
 	
-	global.SpawnPoints[20][23] = "Spawn_Shrine2";
-	global.SpawnPoints[21][23] = "Spawn_Shrine2";
+	global.SpawnPoints[20][23] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[21][23] = "Spawn_ShrineOfIllusion";
 	
-	global.SpawnPoints[23][23] = "Spawn_Shrine4";
+	global.SpawnPoints[23][23] = "Spawn_ShrineOfDestiny";
 	
 	//Y = 24
 	global.SpawnPoints[5][24] = "Spawn_Overworld";
@@ -411,14 +411,14 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[13][24] = "Spawn_Overworld";
 	global.SpawnPoints[14][24] = "Spawn_Overworld";
 	
-	global.SpawnPoints[18][24] = "Spawn_Shrine2";
-	global.SpawnPoints[19][24] = "Spawn_Shrine2";
-	global.SpawnPoints[20][24] = "Spawn_Shrine2";
+	global.SpawnPoints[18][24] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[19][24] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[20][24] = "Spawn_ShrineOfIllusion";
 	
-	global.SpawnPoints[23][24] = "Spawn_Shrine4";
-	global.SpawnPoints[24][24] = "Spawn_Shrine4";
-	global.SpawnPoints[25][24] = "Spawn_Shrine4";
-	global.SpawnPoints[26][24] = "Spawn_Shrine4";
+	global.SpawnPoints[23][24] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[24][24] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[25][24] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[26][24] = "Spawn_ShrineOfDestiny";
 	
 	//Y = 25
 	global.SpawnPoints[5][25] = "Spawn_Overworld";
@@ -431,10 +431,10 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[11][25] = "Spawn_Overworld";
 	global.SpawnPoints[12][25] = "Spawn_Overworld";
 	
-	global.SpawnPoints[18][25] = "Spawn_Shrine2";
-	global.SpawnPoints[19][25] = "Spawn_Shrine2";
+	global.SpawnPoints[18][25] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[19][25] = "Spawn_ShrineOfIllusion";
 	
-	global.SpawnPoints[23][25] = "Spawn_Shrine4";
+	global.SpawnPoints[23][25] = "Spawn_ShrineOfDestiny";
 	
 	//Y = 26
 	global.SpawnPoints[5][26] = "Spawn_Overworld";
@@ -444,12 +444,12 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[11][26] = "Spawn_Overworld";
 	global.SpawnPoints[12][26] = "Spawn_Overworld";
 	
-	global.SpawnPoints[18][26] = "Spawn_Shrine2";
-	global.SpawnPoints[19][26] = "Spawn_Shrine2";
+	global.SpawnPoints[18][26] = "Spawn_ShrineOfIllusion";
+	global.SpawnPoints[19][26] = "Spawn_ShrineOfIllusion";
 	
-	global.SpawnPoints[21][26] = "Spawn_Shrine4";
-	global.SpawnPoints[22][26] = "Spawn_Shrine4";
-	global.SpawnPoints[23][26] = "Spawn_Shrine4";
+	global.SpawnPoints[21][26] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[22][26] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[23][26] = "Spawn_ShrineOfDestiny";
 	
 	//Y = 27
 	global.SpawnPoints[5][27] = "Spawn_Overworld";
@@ -465,12 +465,12 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[16][27] = "Spawn_Overworld";
 	global.SpawnPoints[17][27] = "Spawn_Overworld";
 	
-	global.SpawnPoints[19][27] = "Spawn_Shrine2";
+	global.SpawnPoints[19][27] = "Spawn_ShrineOfIllusion";
 	
-	global.SpawnPoints[21][27] = "Spawn_Shrine4";
+	global.SpawnPoints[21][27] = "Spawn_ShrineOfDestiny";
 	
-	global.SpawnPoints[23][27] = "Spawn_Shrine4";
-	global.SpawnPoints[24][27] = "Spawn_Shrine4";
+	global.SpawnPoints[23][27] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[24][27] = "Spawn_ShrineOfDestiny";
 	
 	//Y = 28
 	global.SpawnPoints[6][28] = "Spawn_Overworld";
@@ -479,179 +479,179 @@ function Init_SpawnPoints_TileMap()
 	global.SpawnPoints[16][28] = "Spawn_Overworld";
 	global.SpawnPoints[17][28] = "Spawn_Overworld";
 	
-	global.SpawnPoints[21][28] = "Spawn_Shrine4";
-	global.SpawnPoints[22][28] = "Spawn_Shrine4";
-	global.SpawnPoints[23][28] = "Spawn_Shrine4";
-	global.SpawnPoints[24][28] = "Spawn_Shrine4";
-	global.SpawnPoints[25][28] = "Spawn_Shrine4";
-	global.SpawnPoints[26][28] = "Spawn_Shrine4";
-	global.SpawnPoints[27][28] = "Spawn_Shrine4_Boss";
-	global.SpawnPoints[28][28] = "Spawn_Shrine4_Boss";
+	global.SpawnPoints[21][28] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[22][28] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[23][28] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[24][28] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[25][28] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[26][28] = "Spawn_ShrineOfDestiny";
+	global.SpawnPoints[27][28] = "Spawn_ShrineOfDestiny_Boss";
+	global.SpawnPoints[28][28] = "Spawn_ShrineOfDestiny_Boss";
 	
 	//Y = 29
 	global.SpawnPoints[6][29] = "Spawn_Overworld";
-	global.SpawnPoints[12][29] = "Spawn_Shrine1_Boss";
+	global.SpawnPoints[12][29] = "Spawn_ShrineOfEarth_Boss";
 	
 	
 	//Y = 30
 	global.SpawnPoints[6][30] = "Spawn_Overworld";
 	
-	global.SpawnPoints[12][30] = "Spawn_Shrine1_Boss";
+	global.SpawnPoints[12][30] = "Spawn_ShrineOfEarth_Boss";
 	
-	global.SpawnPoints[14][30] = "Spawn_Shrine5";
-	global.SpawnPoints[15][30] = "Spawn_Shrine5";
-	global.SpawnPoints[16][30] = "Spawn_Shrine5";
+	global.SpawnPoints[14][30] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[15][30] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[16][30] = "Spawn_ShrineOfWater";
 	
 	//Y = 31
 	global.SpawnPoints[6][31] = "Spawn_Overworld";
 	global.SpawnPoints[7][31] = "Spawn_Overworld";	
 	
-	global.SpawnPoints[10][31] = "Spawn_Shrine1";
-	global.SpawnPoints[11][31] = "Spawn_Shrine1";
-	global.SpawnPoints[12][31] = "Spawn_Shrine1";
+	global.SpawnPoints[10][31] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[11][31] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[12][31] = "Spawn_ShrineOfEarth";
 	
-	global.SpawnPoints[16][31] = "Spawn_Shrine5";
+	global.SpawnPoints[16][31] = "Spawn_ShrineOfWater";
 	
 	//Y = 32
 	
-	global.SpawnPoints[9][32] = "Spawn_Shrine1";
-	global.SpawnPoints[10][32] = "Spawn_Shrine1";
+	global.SpawnPoints[9][32] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[10][32] = "Spawn_ShrineOfEarth";
 	
-	global.SpawnPoints[15][32] = "Spawn_Shrine5";
-	global.SpawnPoints[16][32] = "Spawn_Shrine5";
+	global.SpawnPoints[15][32] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[16][32] = "Spawn_ShrineOfWater";
 	
 	//Y = 33
-	global.SpawnPoints[9][33] = "Spawn_Shrine1";
+	global.SpawnPoints[9][33] = "Spawn_ShrineOfEarth";
 		
-	global.SpawnPoints[11][33] = "Spawn_Shrine1";
+	global.SpawnPoints[11][33] = "Spawn_ShrineOfEarth";
 	
-	global.SpawnPoints[15][33] = "Spawn_Shrine5";
+	global.SpawnPoints[15][33] = "Spawn_ShrineOfWater";
 	
-	global.SpawnPoints[20][33] = "Spawn_Shrine5";
-	global.SpawnPoints[21][33] = "Spawn_Shrine5";
-	global.SpawnPoints[22][33] = "Spawn_Shrine5";
+	global.SpawnPoints[20][33] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[21][33] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[22][33] = "Spawn_ShrineOfWater";
 	
 	//Y = 34
-	global.SpawnPoints[9][34] = "Spawn_Shrine1";
+	global.SpawnPoints[9][34] = "Spawn_ShrineOfEarth";
 	
-	global.SpawnPoints[15][34] = "Spawn_Shrine5";
-	global.SpawnPoints[16][34] = "Spawn_Shrine5";
-	global.SpawnPoints[17][34] = "Spawn_Shrine5";
+	global.SpawnPoints[15][34] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[16][34] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[17][34] = "Spawn_ShrineOfWater";
 	
-	global.SpawnPoints[19][34] = "Spawn_Shrine5";
-	global.SpawnPoints[20][34] = "Spawn_Shrine5";
-	global.SpawnPoints[22][34] = "Spawn_Shrine5";
-	global.SpawnPoints[23][34] = "Spawn_Shrine5_Boss";
-	global.SpawnPoints[24][34] = "Spawn_Shrine5_Boss";
+	global.SpawnPoints[19][34] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[20][34] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[22][34] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[23][34] = "Spawn_ShrineOfWater_Boss";
+	global.SpawnPoints[24][34] = "Spawn_ShrineOfWater_Boss";
 	
 	//Y = 35
-	global.SpawnPoints[6][35] = "Spawn_Shrine1";
-	global.SpawnPoints[7][35] = "Spawn_Shrine1";
-	global.SpawnPoints[8][35] = "Spawn_Shrine1";
-	global.SpawnPoints[9][35] = "Spawn_Shrine1";
-	global.SpawnPoints[10][35] = "Spawn_Shrine1";
-	global.SpawnPoints[11][35] = "Spawn_Shrine1";
-	global.SpawnPoints[12][35] = "Spawn_Shrine1";
+	global.SpawnPoints[6][35] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[7][35] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[8][35] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[9][35] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[10][35] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[11][35] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[12][35] = "Spawn_ShrineOfEarth";
 		
-	global.SpawnPoints[17][35] = "Spawn_Shrine5";
-	global.SpawnPoints[18][35] = "Spawn_Shrine5";
-	global.SpawnPoints[19][35] = "Spawn_Shrine5";
+	global.SpawnPoints[17][35] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[18][35] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[19][35] = "Spawn_ShrineOfWater";
 	
-	global.SpawnPoints[24][35] = "Spawn_Shrine5_Boss";
-	global.SpawnPoints[25][35] = "Spawn_Shrine5_Boss";
-	global.SpawnPoints[26][35] = "Spawn_Shrine5_Boss";
+	global.SpawnPoints[24][35] = "Spawn_ShrineOfWater_Boss";
+	global.SpawnPoints[25][35] = "Spawn_ShrineOfWater_Boss";
+	global.SpawnPoints[26][35] = "Spawn_ShrineOfWater_Boss";
 	
 	//Y = 36
-	global.SpawnPoints[9][36] = "Spawn_Shrine1";
-	global.SpawnPoints[18][36] = "Spawn_Shrine5";
-	global.SpawnPoints[19][36] = "Spawn_Shrine5";
+	global.SpawnPoints[9][36] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[18][36] = "Spawn_ShrineOfWater";
+	global.SpawnPoints[19][36] = "Spawn_ShrineOfWater";
 	
 	//Y = 37
-	global.SpawnPoints[6][37] = "Spawn_Shrine7_Boss";
+	global.SpawnPoints[6][37] = "Spawn_ShrineOfFire_Boss";
 		
-	global.SpawnPoints[9][37] = "Spawn_Shrine1";
-	global.SpawnPoints[10][37] = "Spawn_Shrine1";
+	global.SpawnPoints[9][37] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[10][37] = "Spawn_ShrineOfEarth";
 	
-	global.SpawnPoints[21][37] = "Spawn_Shrine6_Boss";
-	global.SpawnPoints[22][37] = "Spawn_Shrine6_Boss";
-	global.SpawnPoints[23][37] = "Spawn_Shrine6";
-	global.SpawnPoints[24][37] = "Spawn_Shrine6";
-	global.SpawnPoints[25][37] = "Spawn_Shrine6";
+	global.SpawnPoints[21][37] = "Spawn_ShrineOfStrength_Boss";
+	global.SpawnPoints[22][37] = "Spawn_ShrineOfStrength_Boss";
+	global.SpawnPoints[23][37] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[24][37] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[25][37] = "Spawn_ShrineOfStrength";
 	
 	//Y = 38
-	global.SpawnPoints[2][38] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[3][38] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[4][38] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[2][38] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[3][38] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[4][38] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[6][38] = "Spawn_Shrine7_Boss";
-	global.SpawnPoints[7][38] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[6][38] = "Spawn_ShrineOfFire_Boss";
+	global.SpawnPoints[7][38] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[10][38] = "Spawn_Shrine1";
-	global.SpawnPoints[11][38] = "Spawn_Shrine1";
+	global.SpawnPoints[10][38] = "Spawn_ShrineOfEarth";
+	global.SpawnPoints[11][38] = "Spawn_ShrineOfEarth";
 	
-	global.SpawnPoints[25][38] = "Spawn_Shrine6";
-	global.SpawnPoints[26][38] = "Spawn_Shrine6";
+	global.SpawnPoints[25][38] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[26][38] = "Spawn_ShrineOfStrength";
 	
 	//Y = 39
-	global.SpawnPoints[2][39] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[4][39] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[2][39] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[4][39] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[7][39] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[7][39] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[26][39] = "Spawn_Shrine6";
-	global.SpawnPoints[27][39] = "Spawn_Shrine6";
+	global.SpawnPoints[26][39] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[27][39] = "Spawn_ShrineOfStrength";
 	
 	//Y = 40
-	global.SpawnPoints[2][40] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[2][40] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[4][40] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[4][40] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[5][40] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[5][40] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[7][40] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[8][40] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[7][40] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[8][40] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[15][40] = "Spawn_Shrine6";
-	global.SpawnPoints[16][40] = "Spawn_Shrine6";
+	global.SpawnPoints[15][40] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[16][40] = "Spawn_ShrineOfStrength";
 	
-	global.SpawnPoints[26][40] = "Spawn_Shrine6";
-	global.SpawnPoints[27][40] = "Spawn_Shrine6";
+	global.SpawnPoints[26][40] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[27][40] = "Spawn_ShrineOfStrength";
 	
 	//Y = 41
-	global.SpawnPoints[1][41] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[2][41] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[1][41] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[2][41] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[5][41] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[6][41] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[7][41] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[8][41] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[5][41] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[6][41] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[7][41] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[8][41] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[15][41] = "Spawn_Shrine6";
-	global.SpawnPoints[16][41] = "Spawn_Shrine6";
-	global.SpawnPoints[17][41] = "Spawn_Shrine6";
-	global.SpawnPoints[18][41] = "Spawn_Shrine6";
+	global.SpawnPoints[15][41] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[16][41] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[17][41] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[18][41] = "Spawn_ShrineOfStrength";
 	
-	global.SpawnPoints[25][41] = "Spawn_Shrine6";
-	global.SpawnPoints[26][41] = "Spawn_Shrine6";
+	global.SpawnPoints[25][41] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[26][41] = "Spawn_ShrineOfStrength";
 	
 	//Y = 42
-	global.SpawnPoints[1][42] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[2][42] = "Spawn_Shrine7_Regular";
-	global.SpawnPoints[3][42] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[1][42] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[2][42] = "Spawn_ShrineOfFire_Regular";
+	global.SpawnPoints[3][42] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[18][42] = "Spawn_Shrine6";
+	global.SpawnPoints[18][42] = "Spawn_ShrineOfStrength";
 	
-	global.SpawnPoints[24][42] = "Spawn_Shrine6";
-	global.SpawnPoints[25][42] = "Spawn_Shrine6";
+	global.SpawnPoints[24][42] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[25][42] = "Spawn_ShrineOfStrength";
 	
 	//Y = 43
-	global.SpawnPoints[3][43] = "Spawn_Shrine7_Regular";
+	global.SpawnPoints[3][43] = "Spawn_ShrineOfFire_Regular";
 	
-	global.SpawnPoints[18][43] = "Spawn_Shrine6";
-	global.SpawnPoints[19][43] = "Spawn_Shrine6";
-	global.SpawnPoints[20][43] = "Spawn_Shrine6";
-	global.SpawnPoints[21][43] = "Spawn_Shrine6";
-	global.SpawnPoints[22][43] = "Spawn_Shrine6";
-	global.SpawnPoints[23][43] = "Spawn_Shrine6";
-	global.SpawnPoints[24][43] = "Spawn_Shrine6";
+	global.SpawnPoints[18][43] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[19][43] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[20][43] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[21][43] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[22][43] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[23][43] = "Spawn_ShrineOfStrength";
+	global.SpawnPoints[24][43] = "Spawn_ShrineOfStrength";
 }

@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Warps",
-    "path": "folders/Objects/Warps.yy",
+    "name": "Overworld",
+    "path": "folders/Objects/Warps/Overworld.yy",
   },
 }

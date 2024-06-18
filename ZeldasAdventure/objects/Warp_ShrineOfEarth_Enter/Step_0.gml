@@ -1,6 +1,6 @@
 if Triggered = true
 {
-	WarpToLocation("Spawn_Shrine1");
+	WarpToLocation("Spawn_ShrineOfEarth");
 }
 if global.FadeProgress = 2
 {

@@ -87,6 +87,11 @@ function Camera_Pan()
 			}
 			else
 			{
+				if global.CameraIsPanning = false
+				{
+					global.FadeProgress = 3
+					global.CameraIsPanning = true
+				}
 				if global.FadeProgress = 3
 				{
 					if audio_is_playing(global.CurrentDialogue_ID)
@@ -100,6 +105,7 @@ function Camera_Pan()
 				if global.FadeProgress = 1
 				{
 					camera_set_view_pos(view,Desired.x,Desired.y);
+					global.CameraIsPanning = false
 				}
 			}
 		}

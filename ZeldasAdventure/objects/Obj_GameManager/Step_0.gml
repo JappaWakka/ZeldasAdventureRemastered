@@ -29,38 +29,38 @@ if room = Room_Overworld
 				global.CurrentMap = Maps.Overworld
 				break;
 			
-			case "Spawn_Shrine1":
-			case "Spawn_Shrine1_Boss":
+			case "Spawn_ShrineOfEarth":
+			case "Spawn_ShrineOfEarth_Boss":
 				global.CurrentMap = Maps.Shrine1
 				break;
 			
-			case "Spawn_Shrine2":
-			case "Spawn_Shrine2_Boss":
+			case "Spawn_ShrineOfIllusion":
+			case "Spawn_ShrineOfIllusion_Boss":
 				global.CurrentMap = Maps.Shrine2
 				break;
 			
-			case "Spawn_Shrin3":
-			case "Spawn_Shrine3_Boss":
+			case "Spawn_ShrineOfAir":
+			case "Spawn_ShrineOfAir_Boss":
 				global.CurrentMap = Maps.Shrine3
 				break;
 			
-			case "Spawn_Shrine4":
-			case "Spawn_Shrine4_Boss":
+			case "Spawn_ShrineOfDestiny":
+			case "Spawn_ShrineOfDestiny_Boss":
 				global.CurrentMap = Maps.Shrine4
 				break;
 			
-			case "Spawn_Shrine5":
-			case "Spawn_Shrine5_Boss":
+			case "Spawn_ShrineOfWater":
+			case "Spawn_ShrineOfWater_Boss":
 				global.CurrentMap = Maps.Shrine5
 				break;
 			
-			case "Spawn_Shrine6":
-			case "Spawn_Shrine6_Boss":
+			case "Spawn_ShrineOfStrength":
+			case "Spawn_ShrineOfStrength_Boss":
 				global.CurrentMap = Maps.Shrine6
 				break;
 			
-			case "Spawn_Shrine7":
-			case "Spawn_Shrine7_Boss":
+			case "Spawn_ShrineOfFire":
+			case "Spawn_ShrineOfFire_Boss":
 				global.CurrentMap = Maps.Shrine7
 				break;
 			

@@ -91,6 +91,9 @@ if global.RemasteredMode = false and IsAttacking = false and global.PlayerIsDead
 				case Treasures.FullPitcher:
 					UseTreasure_FullPitcher()
 					break;
+				case Treasures.Ladder:
+					UseTreasure_Ladder()
+					break;
 				case Treasures.Rubies:
 					UseTreasure_Rubies();
 					break;

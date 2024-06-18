@@ -22,6 +22,14 @@ function update_position(argument0, argument1) {
 			FreeToMoveCurrent = false
 		}
 	}
+	////Ladder Hole
+	if Register_Registered("PlacedLadder") = false
+	{
+		if place_meeting(x_target, y_target, UseItem_ShrineOfEarth_02_Ladder)
+		{
+			FreeToMoveCurrent = false
+		}
+	}
 	////Solid Objects
 	if place_meeting(x_target, y_target, Parent_Solid)
 	{
@@ -71,6 +79,14 @@ function update_position(argument0, argument1) {
 					if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
 					{
 						FreeToMoveNew = false
+					}
+				}
+				////Ladder Hole
+				if Register_Registered("PlacedLadder") = false
+				{
+					if place_meeting(x_target, y_target, UseItem_ShrineOfEarth_02_Ladder)
+					{
+						FreeToMoveCurrent = false
 					}
 				}
 				////Solid Objects

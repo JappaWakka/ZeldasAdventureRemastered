@@ -59,10 +59,16 @@ global.WarpLocations =
 	ForestOfOgham_ShrineOfEarth : {TileX:6,TileY:31,PlayerX:266,PlayerY:74},
 	
 	//Shrines
-	ShrineOfEarth_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
-	ShrineOfEarth_Boss : {TileX:12,TileY:31,PlayerX:88,PlayerY:132},
-	
-	ShrineOfIllusion_Entrance : {TileX:6,TileY:22,PlayerX:192,PlayerY:128},
+	ShrineOfEarth_Spawn_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
+	ShrineOfEarth_Spawn_Boss : {TileX:12,TileY:31,PlayerX:88,PlayerY:132},
+	ShrineOfEarth_09_to_11 : {TileX:11,TileY:35,PlayerX:288,PlayerY:208},
+	ShrineOfEarth_11_to_09 : {TileX:11,TileY:38,PlayerX:288,PlayerY:24},
+	ShrineOfEarth_13_to_14 : {TileX:9,TileY:34,PlayerX:360,PlayerY:136},
+	ShrineOfEarth_14_to_13 : {TileX:11,TileY:34,PlayerX:24,PlayerY:136},
+	ShrineOfEarth_21_to_22 : {TileX:12,TileY:29,PlayerX:176,PlayerY:208},
+	ShrineOfEarth_22_to_21 : {TileX:12,TileY:30,PlayerX:188,PlayerY:28},
+
+	ShrineOfIllusion_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
 	
 	ShrineOfAir_Entrance : {TileX:5,TileY:2,PlayerX:184,PlayerY:128},
 	
@@ -90,23 +96,71 @@ function WarpToLocation(Name)
 			global.WarpLocations.VisionHenge_Spawn.PlayerY
 			)
 			break;
-		case "Spawn_Shrine1":
+		case "Spawn_ShrineOfEarth":
 			WarpTo(
-			global.WarpLocations.ShrineOfEarth_Entrance.TileX,
-			global.WarpLocations.ShrineOfEarth_Entrance.TileY,
-			global.WarpLocations.ShrineOfEarth_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfEarth_Entrance.PlayerY
+			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.TileX,
+			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.TileY,
+			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.PlayerX,
+			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.PlayerY
 			)
 			break;
-		case "Spawn_Shrine1_Boss":
+		case "Spawn_ShrineOfEarth_Boss":
 			WarpTo(
-			global.WarpLocations.ShrineOfEarth_Boss.TileX,
-			global.WarpLocations.ShrineOfEarth_Boss.TileY,
-			global.WarpLocations.ShrineOfEarth_Boss.PlayerX,
-			global.WarpLocations.ShrineOfEarth_Boss.PlayerY
+			global.WarpLocations.ShrineOfEarth_Spawn_Boss.TileX,
+			global.WarpLocations.ShrineOfEarth_Spawn_Boss.TileY,
+			global.WarpLocations.ShrineOfEarth_Spawn_Boss.PlayerX,
+			global.WarpLocations.ShrineOfEarth_Spawn_Boss.PlayerY
 			)
 			break;
-		case "Shrine1_Outside":
+		case "ShrineOfEarth_09_to_11":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_09_to_11.TileX,
+			global.WarpLocations.ShrineOfEarth_09_to_11.TileY,
+			global.WarpLocations.ShrineOfEarth_09_to_11.PlayerX,
+			global.WarpLocations.ShrineOfEarth_09_to_11.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_11_to_09":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_11_to_09.TileX,
+			global.WarpLocations.ShrineOfEarth_11_to_09.TileY,
+			global.WarpLocations.ShrineOfEarth_11_to_09.PlayerX,
+			global.WarpLocations.ShrineOfEarth_11_to_09.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_13_to_14":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_13_to_14.TileX,
+			global.WarpLocations.ShrineOfEarth_13_to_14.TileY,
+			global.WarpLocations.ShrineOfEarth_13_to_14.PlayerX,
+			global.WarpLocations.ShrineOfEarth_13_to_14.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_14_to_13":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_14_to_13.TileX,
+			global.WarpLocations.ShrineOfEarth_14_to_13.TileY,
+			global.WarpLocations.ShrineOfEarth_14_to_13.PlayerX,
+			global.WarpLocations.ShrineOfEarth_14_to_13.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_21_to_22":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_21_to_22.TileX,
+			global.WarpLocations.ShrineOfEarth_21_to_22.TileY,
+			global.WarpLocations.ShrineOfEarth_21_to_22.PlayerX,
+			global.WarpLocations.ShrineOfEarth_21_to_22.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_22_to_21":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_22_to_21.TileX,
+			global.WarpLocations.ShrineOfEarth_22_to_21.TileY,
+			global.WarpLocations.ShrineOfEarth_22_to_21.PlayerX,
+			global.WarpLocations.ShrineOfEarth_22_to_21.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_Outside":
 			WarpTo(
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth.TileX,
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth.TileY,
@@ -114,7 +168,7 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth.PlayerY
 			)
 			break;
-		case "Spawn_Shrine2":
+		case "Spawn_ShrineOfIllusion":
 			WarpTo(
 			global.WarpLocations.ShrineOfIllusion_Entrance.TileX,
 			global.WarpLocations.ShrineOfIllusion_Entrance.TileY,
@@ -122,7 +176,7 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfIllusion_Entrance.PlayerY
 			)
 			break;
-		case "Spawn_Shrine3":
+		case "Spawn_ShrineOfAir":
 			WarpTo(
 			global.WarpLocations.ShrineOfAir_Entrance.TileX,
 			global.WarpLocations.ShrineOfAir_Entrance.TileY,
@@ -130,7 +184,7 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfAir_Entrance.PlayerY
 			)
 			break;
-		case "Spawn_Shrine4":
+		case "Spawn_ShrineOfDestiny":
 			WarpTo(
 			global.WarpLocations.ShrineOfDestiny_Entrance.TileX,
 			global.WarpLocations.ShrineOfDestiny_Entrance.TileY,
@@ -138,7 +192,7 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfDestiny_Entrance.PlayerY
 			)
 			break;
-		case "Spawn_Shrine5":
+		case "Spawn_ShrineOfWater":
 			WarpTo(
 			global.WarpLocations.ShrineOfWater_Entrance.TileX,
 			global.WarpLocations.ShrineOfWater_Entrance.TileY,
@@ -146,7 +200,7 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfWater_Entrance.PlayerY
 			)
 			break;
-		case "Spawn_Shrine6":
+		case "Spawn_ShrineOfStrength":
 			WarpTo(
 			global.WarpLocations.ShrineOfStrength_Entrance.TileX,
 			global.WarpLocations.ShrineOfStrength_Entrance.TileY,
@@ -154,7 +208,7 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfStrength_Entrance.PlayerY
 			)
 			break;
-		case "Spawn_Shrine7":
+		case "Spawn_ShrineOfFire":
 			WarpTo(
 			global.WarpLocations.ShrineOfFire_Entrance.TileX,
 			global.WarpLocations.ShrineOfFire_Entrance.TileY,

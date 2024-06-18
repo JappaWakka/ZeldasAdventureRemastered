@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Warp_ShrineOfEarth_Enter",
   "spriteId": {
     "name": "ForestOfOgham_17_Warp_ShrineOfEarth",
     "path": "sprites/ForestOfOgham_17_Warp_ShrineOfEarth/ForestOfOgham_17_Warp_ShrineOfEarth.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,16 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Warps",
-    "path": "folders/Objects/Warps.yy",
+    "name": "ShrineOfEarth",
+    "path": "folders/Objects/Warps/ShrineOfEarth.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Warp_ShrineOfEarth_Enter",
-  "tags": [],
-  "resourceType": "GMObject",
 }

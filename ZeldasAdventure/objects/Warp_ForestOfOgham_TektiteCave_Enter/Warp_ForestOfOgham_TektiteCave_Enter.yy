@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Warp_ForestOfOgham_TektiteCave_Enter",
   "spriteId": {
     "name": "ForestOfOgham_17_Warp_TektiteCave",
     "path": "sprites/ForestOfOgham_17_Warp_TektiteCave/ForestOfOgham_17_Warp_TektiteCave.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -24,16 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Warps",
-    "path": "folders/Objects/Warps.yy",
+    "name": "Overworld",
+    "path": "folders/Objects/Warps/Overworld.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Warp_ForestOfOgham_TektiteCave_Enter",
-  "tags": [],
-  "resourceType": "GMObject",
 }

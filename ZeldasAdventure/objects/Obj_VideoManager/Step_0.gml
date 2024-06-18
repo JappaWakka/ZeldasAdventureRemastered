@@ -54,7 +54,7 @@ if (webm_exists(CurrentVideo))
 				room_goto(Room_MainMenu)
 				
 			case Room_Cutscene_Shrine_Earth:
-				global.PlayerSpawn = "Shrine1_Outside"
+				global.PlayerSpawn = "ShrineOfEarth_Outside"
 				global.FadeProgress = 1
 				global.FadeAlpha = 255
 				room_goto(Room_Overworld);
