@@ -22,6 +22,7 @@ function InitGameVariables()
 	global.FadeBeforePan = false;
 	global.CameraIsPanning = false;
 	global.CameraPanSpeed = {x: 12, y: 8};
+	global.CandleUsed = false;
 	global.DesiredRubies = 0;
 	global.Languages = {
 		English : "en",

@@ -37,13 +37,33 @@ function Camera_Pan()
 			y: clamp(Desired.y - Current.y, -global.CameraPanSpeed.y, +global.CameraPanSpeed.y),
 		}
 		
+		//Variables for events after panning/fading
+		var ResetCandleDarkness = false
+		var DisableLadderObject = false
+		
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
+			
 			//Deactivate old tile, activate new tile
 			instance_destroy(Entity_Pickup_ItemDrops)
 			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)
 			instance_activate_object(Entity_Parent_Player)
 			instance_activate_region(Desired.x, Desired.y, tileWidth, tileHeight,true)
+			
+			//Temporarily prevent ladder from disappearing
+			if Register_Registered("PlacedLadder") = true and
+			global.CurrentTile.x = 10 && global.CurrentTile.y = 32
+			{
+				DisableLadderObject = true
+				instance_activate_object(UseItem_ShrineOfEarth_02_Ladder)
+			}
+			
+			//Remember to reset global.CandleUsed after panning
+			if global.CandleUsed = true
+			{
+				ResetCandleDarkness = true
+				instance_activate_object(Parent_UseItem_Candle)
+			}
 			
 			//Update Current Tile
 			global.CurrentTile.x = Desired.x / tileWidth;
@@ -110,6 +130,22 @@ function Camera_Pan()
 				{
 					global.CameraIsPanning = false
 				}
+			}
+		}
+		else
+		{
+			//Reset global.CandleUsed after panning
+			if ResetCandleDarkness = true
+			{
+				global.CandleUsed = false
+				ResetCandleDarkness = false
+				instance_deactivate_object(Parent_UseItem_Candle)
+			}
+			//Disable Ladder Object after panning
+			if DisableLadderObject = true
+			{
+				instance_deactivate_object(UseItem_ShrineOfEarth_02_Ladder)
+				DisableLadderObject = false
 			}
 		}
 	}

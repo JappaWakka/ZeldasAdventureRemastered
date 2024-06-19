@@ -94,6 +94,9 @@ if global.RemasteredMode = false and IsAttacking = false and global.PlayerIsDead
 				case Treasures.Ladder:
 					UseTreasure_Ladder()
 					break;
+				case Treasures.Candle:
+					UseTreasure_Candle()
+					break;
 				case Treasures.Rubies:
 					UseTreasure_Rubies();
 					break;
@@ -118,11 +121,16 @@ if global.RemasteredMode = true and IsAttacking = false and global.PlayerIsDead 
 				case Treasures.FullPitcher:
 					UseTreasure_FullPitcher()
 					break;
+				case Treasures.Ladder:
+					UseTreasure_Ladder()
+					break;
+				case Treasures.Candle:
+					UseTreasure_Candle()
+					break;
 				case Treasures.Rubies:
 					UseTreasure_Rubies();
 					break;
 				default:
-					
 					audio_play_sound_relative(SFX_Use_Error,100,false);
 					break;
 			}
