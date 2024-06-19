@@ -105,6 +105,9 @@ function Camera_Pan()
 				if global.FadeProgress = 1
 				{
 					camera_set_view_pos(view,Desired.x,Desired.y);
+				}
+				if global.FadeProgress = 2
+				{
 					global.CameraIsPanning = false
 				}
 			}

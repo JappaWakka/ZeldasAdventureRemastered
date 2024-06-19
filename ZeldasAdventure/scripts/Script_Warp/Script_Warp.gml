@@ -24,6 +24,10 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		{
 			DestinationY = Entity_Collision_Player.y
 		}
+		instance_destroy(Entity_Pickup_ItemDrops)
+		var PrevousTileX = global.CurrentTile.x
+		var PrevousTileY = global.CurrentTile.y
+		
 		global.FadeSpeed = FadeSpeed;
 		Entity_Collision_Player.x = TileX * tileWidth + DestinationX;
 		Entity_Collision_Player.y = TileY * tileHeight + DestinationY;
@@ -39,7 +43,11 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 			global.CurrentMap = Maps.Overworld
 		}
 		camera_set_view_pos(view,global.CurrentTile.x * tileWidth,global.CurrentTile.y * tileHeight);
+		instance_deactivate_region(PrevousTileX * tileWidth, PrevousTileY * tileHeight, tileWidth, tileHeight,true,true)
+		instance_activate_region(TileX * tileWidth, TileY * tileHeight, tileWidth, tileHeight, true)
+		instance_activate_object(Entity_Parent_Player)
 		global.SwitchTracks = true;
+		
 		return true;
 	}
 }
