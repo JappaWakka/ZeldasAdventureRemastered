@@ -99,15 +99,22 @@ if timerDuration = 0 and timerIndex > 0
 	timerIndex += 1
 	if timerIndex = 6
 	{
-		EnemyState = EnemyStates.Move
 		timerIndex = 0
+		EnemyState = EnemyStates.Move
+		ChangeDirection = true
 	}
 	timerDuration = 4
 }
-if timerIndex = 1
+if timerIndex >= 1 or DistanceLeftToKnockBack > 0
 {
 	direction = HitFromDirection
 	speed = d(4)
+	DistanceLeftToKnockBack -= speed
+}
+if DistanceLeftToKnockBack <= 0 && EnemyState = EnemyStates.Damaged
+{
+	DistanceLeftToKnockBack = 0
+	speed = 0
 }
 
 if EnemyState = EnemyStates.Attack
@@ -127,6 +134,7 @@ y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
 	else
 	{
 		speed = global.EnemySpeeds.Still
+		DistanceLeftToKnockBack = 0
 	}
 }
 
@@ -160,7 +168,10 @@ if HitPoints <= 0
 	}
 	
 	instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Particle_EnemyDefeat)
-	instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops)
+	if DropsItemOnDefeat = true
+	{
+		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops)
+	}
 	instance_destroy();
 	
 }

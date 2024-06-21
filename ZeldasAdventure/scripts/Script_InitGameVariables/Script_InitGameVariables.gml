@@ -159,6 +159,13 @@ function InitGameVariables()
 		Damaged
 	};
 	
+	global.KnockbackDistances =
+	{
+		None: 0,
+		Small : 28,
+		Large : 52
+	};
+	
 	global.Directions =
 	{
 		North : 90,

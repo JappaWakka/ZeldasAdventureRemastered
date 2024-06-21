@@ -2,6 +2,7 @@ if StartDamageAnimation = true
 {
 	timerDuration = 4
 	timerIndex = 1
+	DistanceLeftToKnockBack = KnockbackDistance
 	StartDamageAnimation = false
 }
 switch timerIndex
