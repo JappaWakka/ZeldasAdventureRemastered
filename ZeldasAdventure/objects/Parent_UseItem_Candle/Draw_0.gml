@@ -8,3 +8,8 @@ draw_set_alpha(Alpha)
 draw_rectangle(DrawStart.x,DrawStart.y,DrawStart.x + 384,DrawStart.y + 240,false)
 draw_set_color(c_white)
 draw_set_alpha(1)
+
+if Alpha > 0 && IsMenuVisible() = false && IsPlayerOnSameTile() = true
+{
+	draw_sprite(Entity_Player.sprite_index,Entity_Player.image_index,Entity_Player.x,Entity_Player.y)
+}

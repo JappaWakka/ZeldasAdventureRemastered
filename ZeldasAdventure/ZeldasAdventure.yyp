@@ -2075,6 +2075,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Underworld","folderPath":"folders/Objects/Solids/Underworld.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Shrine_01_Earth","folderPath":"folders/Objects/Solids/Underworld/Shrine_01_Earth.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"SpecialCollisions","folderPath":"folders/Objects/SpecialCollisions.yy","order":4,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Item_Candle","folderPath":"folders/Objects/SpecialCollisions/Item_Candle.yy","order":4,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Item_Ladder","folderPath":"folders/Objects/SpecialCollisions/Item_Ladder.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Item_RedBoots","folderPath":"folders/Objects/SpecialCollisions/Item_RedBoots.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"NPCs","folderPath":"folders/Objects/SpecialCollisions/NPCs.yy","order":1,},
@@ -2187,7 +2188,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"WorldMap","folderPath":"folders/Sprites/UI/WorldMap.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Item_Candle","folderPath":"folders/Objects/SpecialCollisions/Item_Candle.yy","order":4,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

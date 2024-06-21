@@ -23,7 +23,7 @@ if xdir != 0 and ydir != 0
 {
 	DiagonalSpeedMultiplier = 1.41
 }
-move(Acceleration, MoveDirection, MaxSpeed * DiagonalSpeedMultiplier, MoveDistance);
+move(Acceleration, MoveDirection, MaxSpeed * SpeedMultiplier * DiagonalSpeedMultiplier, MoveDistance);
 
 if xdir != 0 or ydir != 0
 {

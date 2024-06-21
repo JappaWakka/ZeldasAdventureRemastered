@@ -36,11 +36,7 @@ function Camera_Pan()
 			x: clamp(Desired.x - Current.x, -global.CameraPanSpeed.x, +global.CameraPanSpeed.x),
 			y: clamp(Desired.y - Current.y, -global.CameraPanSpeed.y, +global.CameraPanSpeed.y),
 		}
-		
-		//Variables for events after panning/fading
-		var ResetCandleDarkness = false
-		var DisableLadderObject = false
-		
+				
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
 			
@@ -52,17 +48,14 @@ function Camera_Pan()
 			
 			//Temporarily prevent ladder from disappearing
 			if Register_Registered("PlacedLadder") = true and
-			global.CurrentTile.x = 10 && global.CurrentTile.y = 32
+			global.CurrentTile.x = 7 && global.CurrentTile.y = 35
 			{
 				DisableLadderObject = true
-				instance_activate_object(UseItem_ShrineOfEarth_02_Ladder)
+				instance_activate_object(Entity_UsedItem_Ladder)
 			}
-			
-			//Remember to reset global.CandleUsed after panning
-			if global.CandleUsed = true
+			else
 			{
-				ResetCandleDarkness = true
-				instance_activate_object(Parent_UseItem_Candle)
+				DisableLadderObject = false
 			}
 			
 			//Update Current Tile
@@ -107,6 +100,17 @@ function Camera_Pan()
 			}
 			else
 			{
+				//Remember to reset global.CandleUsed after panning
+				if global.CandleUsed = true
+				{
+					ResetCandleDarkness = true
+					instance_activate_object(Parent_UseItem_Candle)
+				}
+					else
+				{
+					ResetCandleDarkness = false
+				}
+				//Fade
 				if global.CameraIsPanning = false
 				{
 					global.FadeProgress = 3
@@ -135,16 +139,16 @@ function Camera_Pan()
 		else
 		{
 			//Reset global.CandleUsed after panning
-			if ResetCandleDarkness = true
+			if ResetCandleDarkness = true && global.CandleUsed = true
 			{
 				global.CandleUsed = false
-				ResetCandleDarkness = false
 				instance_deactivate_object(Parent_UseItem_Candle)
+				ResetCandleDarkness = false
 			}
 			//Disable Ladder Object after panning
-			if DisableLadderObject = true
+			if DisableLadderObject = true && global.CurrentTile.x != 7 && global.CurrentTile.y != 35
 			{
-				instance_deactivate_object(UseItem_ShrineOfEarth_02_Ladder)
+				instance_deactivate_object(Entity_UsedItem_Ladder)
 				DisableLadderObject = false
 			}
 		}

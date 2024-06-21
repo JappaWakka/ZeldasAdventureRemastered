@@ -207,7 +207,7 @@ else
 }
 if IsAttacking = true
 {
-	image_speed = AnimSpeed;
+	image_speed = 1;
 }
 #endregion
 
