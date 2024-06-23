@@ -2,11 +2,19 @@ if EnemyState != EnemyStates.Damaged
 {
 	if Script_AggroRange() = true
 	{
-		speed = d(global.EnemySpeeds.Medium)
+		if speed = RegularSpeed
+		{
+			if global.EnemySoundPlaying = false
+			{
+				global.EnemySound = audio_play_sound_relative(EnemySoundName,1000,false)
+				global.EnemySoundPlaying = true
+			}
+		}
+		speed = AggroSpeed
 	}
 	else
 	{
-		speed = d(global.EnemySpeeds.Slow)
+		speed = RegularSpeed
 	}
 }
 

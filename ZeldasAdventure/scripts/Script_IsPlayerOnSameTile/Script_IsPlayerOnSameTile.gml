@@ -12,3 +12,16 @@ function IsPlayerOnSameTile()
 		return false
 	}
 }
+
+function IsPlayerOnSameTile_Enemy()
+{
+	if OriginX >= global.CurrentTile.x * tileWidth && OriginX <= global.CurrentTile.x * tileWidth + tileWidth &&
+	OriginY >= global.CurrentTile.y * tileHeight && OriginY <= global.CurrentTile.y * tileHeight + tileHeight
+	{
+		return true
+	}
+	else
+	{
+		return false
+	}
+}
