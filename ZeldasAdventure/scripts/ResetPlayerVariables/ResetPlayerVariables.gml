@@ -11,6 +11,7 @@ function ResetPlayerVariables(){
 	global.CurrentKeys = 0;
 	global.Inventory = {Treasures : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
 	global.Register = ds_list_create()
+	global.TempRegister = ds_list_create()
 	
 	global.CurrentHealth = 60;
 	global.MaxHealth = 60;

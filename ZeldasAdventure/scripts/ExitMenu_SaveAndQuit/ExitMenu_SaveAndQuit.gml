@@ -91,6 +91,24 @@ function ExitMenu_SaveAndQuit()
 	}
 	ini_write_real(Section, "CurrentKeys", global.CurrentKeys);
 	ini_write_real(Section, "CurrentRubies", global.CurrentRubies);
+	if global.RemasteredMode = false
+	{
+		if global.CurrentItem[0] = 0
+		{
+			ini_write_real(Section, "CurrentTreasure", global.CurrentItem[1]);
+			ini_write_real(Section, "CurrentSpell", -1);
+		}
+		else
+		{
+			ini_write_real(Section, "CurrentTreasure", -1);
+			ini_write_real(Section, "CurrentSpell", global.CurrentItem[1]);
+		}
+	}
+	else
+	{
+		ini_write_real(Section, "CurrentTreasure", global.CurrentTreasure);
+		ini_write_real(Section, "CurrentSpell", global.CurrentSpell);
+	}
 	ini_write_string(Section, "PlayerSpawn", global.PlayerSpawn);
 	ini_write_real(Section, "Defense", global.Defense);
 	ini_write_real(Section, "Power", global.Power);

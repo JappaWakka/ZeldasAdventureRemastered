@@ -16,6 +16,8 @@ function SaveGame_Delete()
 			ini_write_string(Section, "PlayerSpawn", "Spawn_Overworld");
 			ini_write_real(Section, "CurrentRubies", 0);
 			ini_write_real(Section, "CurrentKeys", 0);
+			ini_write_real(Section, "CurrentTreasure", -1);
+			ini_write_real(Section, "CurrentSpell", -1);
 			ini_write_string(Section, "InventoryTreasures", "");
 			ini_write_string(Section, "InventorySpells", "");
 			ini_write_string(Section, "InventoryCelestialSigns", "");

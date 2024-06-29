@@ -1,6 +1,6 @@
 if IsPlayerOnSameTile() = true
 {
-	if Item_FindIndex(Spells.Calm,1) = -1 
+	if Item_FindIndex(Treasures.MagicShield,0) = -1 
 	{
 		if global.CameraIsPanning = false
 		{
@@ -25,12 +25,13 @@ if IsPlayerOnSameTile() = true
 			else
 			{
 				ItemCost = instance_create_layer(x,y,"Items_AboveForeground",Entity_ItemCost)
-				ItemCost.Price = 100
+				ItemCost.Price = 500
 			}
 			
 			
 			if IsMenuVisible() = false
-			and global.CurrentDialogue_Asset = Dialog_None and variable_instance_exists(id, "ItemCost")
+			and global.CurrentDialogue_Asset = Dialog_None
+			and variable_instance_exists(id, "ItemCost")
 			{
 				if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 				{
@@ -41,10 +42,9 @@ if IsPlayerOnSameTile() = true
 								RemoveRubies(ItemCost.Price);
 								global.CurrentItem[1] = -1
 								audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
-								Item_Add(Spells.Calm,1)
-								Audio_StopMusic()
-								global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_PurchaseCalmSpell
-								global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_LotharTheInnKeeper,global.CurrentDialogue_Asset,500,false)
+								Item_Add(Treasures.MagicShield,0)
+								global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
+								global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
 								
 								instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
 								visible = false
@@ -63,8 +63,8 @@ if IsPlayerOnSameTile() = true
 							audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 							Item_Add(Spells.Calm,1)
 							
-							global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_PurchaseCalmSpell
-							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_LotharTheInnKeeper,global.CurrentDialogue_Asset,500,false)
+							global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
+							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
 							
 							instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
 							visible = false
@@ -95,7 +95,7 @@ else
 	{
 		instance_destroy(ItemCost)
 	}
-	if Item_FindIndex(Spells.Calm,1) <> -1 
+	if Item_FindIndex(Treasures.MagicShield,0) <> -1 
 	{
 		instance_destroy()
 	}

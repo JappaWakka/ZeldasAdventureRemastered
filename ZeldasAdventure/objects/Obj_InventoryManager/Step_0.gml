@@ -33,6 +33,14 @@ if input_check_pressed("inventory")
 				InventoryIndex = 0
 			}
 		}
+		if SelectedIndex[0] < ScrollOffsetX_Treasure or SelectedIndex[0] > ScrollOffsetX_Treasure + 5
+		{
+			ScrollOffsetX_Treasure = clamp(SelectedIndex[0],0, global.InventorySlots_Max[0] - 7)
+		}
+		if SelectedIndex[1] < ScrollOffsetX_Spells or SelectedIndex[1] > ScrollOffsetX_Spells + 5
+		{
+			ScrollOffsetX_Spells = clamp(SelectedIndex[1],0,global.InventorySlots_Max[1] - 7)
+		}
 	}
 }
 
@@ -87,7 +95,21 @@ if Alpha == 255
 				{
 					var ItemValue = Item_FindValue(SelectedIndex[InventoryIndex],InventoryIndex)
 					var ItemIndex = Item_FindIndex(ItemValue,InventoryIndex)
-					global.CurrentItem = [InventoryIndex,ItemIndex]
+					if global.RemasteredMode = false
+					{
+						global.CurrentItem = [InventoryIndex,ItemIndex]
+					}
+					else
+					{
+						if InventoryIndex = 1
+						{
+							global.CurrentSpell = ItemIndex
+						}
+						else
+						{
+							global.CurrentTreasure = ItemIndex
+						}
+					}
 				}
 			}
 		}
@@ -201,8 +223,8 @@ if Alpha = 255
 			}
 			else if InventoryIndex = 0
 			{
-					InventoryIndex = 1
-					SelectedIndex[1] = ScrollOffsetX_Spells + (SelectedIndex[0] - ScrollOffsetX_Treasure)
+				InventoryIndex = 1
+				SelectedIndex[1] = ScrollOffsetX_Spells + (SelectedIndex[0] - ScrollOffsetX_Treasure)
 			}
 		}
 		

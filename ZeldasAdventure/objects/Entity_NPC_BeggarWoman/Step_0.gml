@@ -7,11 +7,11 @@ if IsPlayerOnSameTile() = true
 		{
 			if Register_Registered("PaidBeggarWoman") = false
 			{
-				if HasSpoken = false
+				if Register_Registered("BeggarWoman_Intro") = false
 				{
 					global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					HasSpoken = true
+					Register_Add("BeggarWoman_Intro",true)
 				}
 			}
 			if IsMenuVisible() = false and audio_is_playing(global.CurrentDialogue_ID) = false

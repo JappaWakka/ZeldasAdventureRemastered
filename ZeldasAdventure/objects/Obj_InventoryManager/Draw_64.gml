@@ -39,7 +39,14 @@ if OpeningClosing = true
 		OpeningClosing = false;
 	}
 };
-draw_sprite_ext(Sprite_Inventory_Background,0,0,0,1,1,0,c_white,Alpha);
+if global.RemasteredMode = false
+{
+	draw_sprite_ext(Sprite_Inventory_Background_Original,0,0,0,1,1,0,c_white,Alpha);
+}
+else	
+{
+	draw_sprite_ext(Sprite_Inventory_Background_Remastered,0,0,0,1,1,0,c_white,Alpha);
+}
 
 //Draw Keys
 if Alpha = 255
@@ -221,6 +228,31 @@ if global.RemasteredMode = false
 			c_white,
 			Alpha);
 		}
+	}
+}
+else
+{
+	if global.CurrentTreasure <> -1
+	{
+		draw_sprite_ext(
+		Sprite_Inventory_Treasure,
+		Item_FindValue(global.CurrentTreasure,0), //ImageIndex
+		319,
+		120,
+		1,1,0,
+		c_white,
+		Alpha);
+	}
+	if global.CurrentSpell <> -1
+	{
+		draw_sprite_ext(
+		Sprite_Inventory_Spells,
+		Item_FindValue(global.CurrentSpell,1),
+		319,
+		178,
+		1,1,0,
+		c_white,
+		Alpha);
 	}
 }
 //Draw cursor

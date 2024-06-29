@@ -3,9 +3,7 @@ if IsPlayerOnSameTile() = true
 {
 	if global.CameraIsPanning = false
 	{
-		visible = true
-		image_speed = d(ImageSpeed)
-		if HasSpoken = false
+		if Register_Registered("LotharTheInnKeeper_Intro") = false
 		{
 			if Item_FindIndex(Spells.Calm,1) = -1
 			{
@@ -17,7 +15,7 @@ if IsPlayerOnSameTile() = true
 			}
 			Audio_StopMusic()
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			HasSpoken = true
+			Register_Add("LotharTheInnKeeper_Intro",true)
 		}
 	}
 			
@@ -59,11 +57,6 @@ if IsPlayerOnSameTile() = true
 		{
 			global.SwitchTracks = true
 		}
+		Animating = true
 	}
-}
-else
-{
-	image_speed = 0
-	image_index = 0
-	visible = false
 }

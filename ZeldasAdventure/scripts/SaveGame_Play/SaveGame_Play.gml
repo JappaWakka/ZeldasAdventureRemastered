@@ -67,6 +67,19 @@ function SaveGame_Play(){
 				}	
 			}
 		}
+		global.CurrentTreasure = ini_read_real(Section, "CurrentTreasure", -1);
+		global.CurrentSpell = ini_read_real(Section, "CurrentSpell", -1);
+		if global.RemasteredMode = false 
+		{
+			if ini_read_real(Section, "CurrentSpell", -1) <> -1
+			{
+				global.CurrentItem = [1,ini_read_real(Section, "CurrentSpell", -1)]
+			}
+			else if ini_read_real(Section, "CurrentTreasure", -1) <> -1 && Item_FindIndex(Spells.Wand, 1) = -1
+			{
+				global.CurrentItem = [0,ini_read_real(Section, "CurrentTreasure", -1)]
+			}
+		}
 		global.CurrentHealth = ini_read_real(Section, "CurrentHealth", 60);
 		global.MaxHealth = ini_read_real(Section, "MaxHealth", 60);
 		global.Power = ini_read_real(Section, "Power", 30);

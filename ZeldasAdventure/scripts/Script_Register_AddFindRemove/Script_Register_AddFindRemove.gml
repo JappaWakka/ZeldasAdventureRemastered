@@ -1,15 +1,26 @@
 //Register Commands
-function Register_Add(RegisterName)
+function Register_Add(RegisterName, Temporary = false)
 {
-		
 	if Register_FindIndex(RegisterName) <> -1
 	{
 		return false
 	}
-		
-	//Add the item to the specified Inventory list
-	ds_list_add(global.Register,RegisterName)
-	return true;
+	else
+	{
+		if Temporary = false
+		{
+			//Add the item to the regular Register list
+			ds_list_add(global.Register,RegisterName)
+			return true;
+		}
+		else
+		{
+				
+			//Add the item to the temporary Register list
+			ds_list_add(global.TempRegister,RegisterName)
+			return true;
+		}
+	}
 }
 
 function Register_Registered(RegisterName)
@@ -27,7 +38,18 @@ function Register_Registered(RegisterName)
 
 function Register_FindIndex(RegisterName)
 {
-	return ds_list_find_index(global.Register,RegisterName)
+	if ds_list_find_index(global.Register, RegisterName) <> -1
+	{
+		return ds_list_find_index(global.Register, RegisterName)
+	}
+	else if ds_list_find_index(global.TempRegister, RegisterName) <> -1
+	{
+		return ds_list_find_index(global.TempRegister, RegisterName)
+	}
+	else
+	{
+		return -1
+	}
 }
 
 function Register_FindValue(RegisterIndex)
@@ -35,7 +57,7 @@ function Register_FindValue(RegisterIndex)
 	return ds_list_find_value(global.Register, RegisterIndex)
 }
 
-function Register_Remove(RegisterName)
+function Register_Remove(RegisterName, TempRegister = false)
 {
 	var RegisterIndex = Register_FindIndex(RegisterName)
 	if RegisterIndex == -1
@@ -44,7 +66,14 @@ function Register_Remove(RegisterName)
 	}
 	else
 	{
-		ds_list_delete(global.Register,RegisterIndex)
+		if TempRegister = false
+		{
+			ds_list_delete(global.Register,RegisterIndex)
+		}
+		else
+		{
+			ds_list_delete(global.TempRegister,RegisterIndex)
+		}
 		return true
 	}
 }
