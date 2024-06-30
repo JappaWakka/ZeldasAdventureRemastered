@@ -14,7 +14,10 @@
     "path": "sprites/Hitbox_ItemCost/Hitbox_ItemCost.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Parent_BuyableItem",
+    "path": "objects/Parent_BuyableItem/Parent_BuyableItem.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

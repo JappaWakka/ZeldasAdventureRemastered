@@ -19,6 +19,21 @@ function Subtitle_ForestOfOgham_02_OghamMerchant_PlentyToBuy(AudioPosition)
 		break;
 	}
 }
+function Subtitle_ForestOfOgham_02_OghamMerchant_NothingToSell(AudioPosition)
+{
+	switch global.CurrentLanguage
+	{
+	case "en":
+		if AudioPosition >= 0.000 and AudioPosition <= 3.059 {return "Merchant: I'm sorry, Princess, I've got nothing to sell today!"}
+		else return ""		
+		break;
+		
+	case "nl":
+		if AudioPosition >= 0.000 and AudioPosition <= 3.059 {return "Koopman: Het spijt me, prinses, ik heb vandaag niets te koop!"}
+		else return ""		
+		break;
+	}
+}
 function Subtitle_ForestOfOgham_02_OghamMerchant_WisePurchase(AudioPosition)
 {
 	switch global.CurrentLanguage

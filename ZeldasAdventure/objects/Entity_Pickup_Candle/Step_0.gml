@@ -1,6 +1,6 @@
 if IsPlayerOnSameTile() = true
 {
-	if Item_FindIndex(Treasures.MagicShield,0) = -1 
+	if Item_FindIndex(Treasures.Candle,0) = -1 
 	{
 		if global.CameraIsPanning = false
 		{
@@ -26,7 +26,7 @@ if IsPlayerOnSameTile() = true
 			else
 			{
 				ItemCost = instance_create_layer(x,y,"ItemCosts",Entity_ItemCost)
-				ItemCost.Price = 500
+				ItemCost.Price = 100
 			}
 			
 			
@@ -45,16 +45,19 @@ if IsPlayerOnSameTile() = true
 									RemoveRubies(ItemCost.Price);
 									global.CurrentItem[1] = -1
 									audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
-									Item_Add(Treasures.MagicShield,0)
-									if Register_Registered("OghamMerchant_WisePurchase") = false
+									Item_Add(Treasures.Candle,0)
+									
+									if global.CurrentTile.x = 5 && global.CurrentTile.y = 25 //Forest of Ogham
 									{
-										global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
-										global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
-										Register_Add("OghamMerchant_WisePurchase",true)
+										if Register_Registered("OghamMerchant_WisePurchase") = false
+										{
+											global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
+											global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
+											Register_Add("OghamMerchant_WisePurchase",true)
+										}
 									}
 									instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
 									visible = false
-									
 								}
 								else
 								{
@@ -75,9 +78,15 @@ if IsPlayerOnSameTile() = true
 							audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 							Item_Add(Spells.Calm,1)
 							
-							global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
-							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
-							
+							if global.CurrentTile.x = 5 && global.CurrentTile.y = 25 //Forest of Ogham
+							{
+								if Register_Registered("OghamMerchant_WisePurchase") = false
+								{
+									global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
+									global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
+									Register_Add("OghamMerchant_WisePurchase",true)
+								}
+							}
 							instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
 							visible = false
 						}
@@ -107,7 +116,7 @@ else
 	{
 		instance_destroy(ItemCost)
 	}
-	if Item_FindIndex(Treasures.MagicShield,0) <> -1 
+	if Item_FindIndex(Treasures.Candle,0) <> -1 
 	{
 		instance_destroy()
 	}

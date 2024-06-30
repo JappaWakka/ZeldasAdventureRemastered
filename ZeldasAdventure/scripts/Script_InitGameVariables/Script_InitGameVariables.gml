@@ -14,7 +14,7 @@ function InitGameVariables()
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
 	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
 	
-	global.AddCutItems = true; //Include items that were cut from the original game
+	global.AddCutItems = false; //Include items that were cut from the original game
 	global.CurrentSaveGame = 0;
 	global.FadeSpeed = 12;
 	global.FadeProgress = 2; //0 = Fade Out, 1 = Fade In, 2 = Finished, 3 = Warp

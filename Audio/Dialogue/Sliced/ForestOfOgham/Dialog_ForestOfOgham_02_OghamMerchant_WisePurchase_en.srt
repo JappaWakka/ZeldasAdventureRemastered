@@ -1,4 +1,4 @@
 ﻿1
 00:00:00,001 --> 00:00:02,846
-Forest Merchant: That was a wise purchase, young princess!
+Merchant: That was a wise purchase, young princess!
 
