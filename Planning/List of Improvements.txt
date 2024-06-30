@@ -1,0 +1,24 @@
+* Make boomerang actual boomerang
+* Dash button w/ golden boots
+* Better map, with delineation between regions and markers for NPCs, shops, and dungeon entrances
+* Restoring some unused content like the lost woods aspect to the Shrine of Destiny
+
+REGULAR OR UNIVERSAL CHANGES
+x No load screens or delay between tiles
+x Adding subtitles and additional localizations
+
+REMASTER MODE CHANGES
+x Buy items w/o equipping rupees
+x Dedicated treasure and spell buttons
+* Certain items that you just use in location X no longer need to be equipped, instead activating if you use your wand while they're in your inventory [remastered??]
+* Item descriptions, hopefully helping clear up some of the more arcane puzzles (maybe a dedicated menu?)
+
+NOT GONNA IMPLEMENT
+- Certain items bound to dedicated items/less menu swapping
+- Shoulder button spell swapping
+
+
+
+x = planned / working on / done
+- = won't do
+* = maybe

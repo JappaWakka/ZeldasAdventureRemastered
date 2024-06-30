@@ -43,7 +43,6 @@ if IsPlayerOnSameTile() = true
 								if global.CurrentRubies >= ItemCost.Price
 								{
 									RemoveRubies(ItemCost.Price);
-									global.CurrentItem[1] = -1
 									audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 									Item_Add(Treasures.MagicShield,0)
 									if Register_Registered("OghamMerchant_WisePurchase") = false
@@ -68,10 +67,9 @@ if IsPlayerOnSameTile() = true
 				{
 					if input_check_pressed("action1") = true
 					{
-						if Item_FindValue(global.CurrentTreasure,0) = Treasures.Rubies and global.CurrentRubies >= ItemCost.Price and PlayerInBuyRange = true
+						if global.CurrentRubies >= ItemCost.Price and PlayerInBuyRange = true
 						{
 							RemoveRubies(ItemCost.Price);
-							global.CurrentTreasure = -1
 							audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 							Item_Add(Spells.Calm,1)
 							

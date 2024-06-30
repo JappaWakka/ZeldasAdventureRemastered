@@ -29,7 +29,7 @@ if global.RemasteredMode = false and IsAttacking = false and global.PlayerIsDead
 		{
 			if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentItem[1] <> -1 and global.CurrentRubies >= CastCost(global.CurrentItem[1])
 			{
-				// Melee damage and sprite change (happens also when using other spells)
+				// Melee damage and sprite change (also happens when using other spells)
 				UseSpell_Any();
 				
 				// Use Spell - Wand
@@ -113,7 +113,11 @@ if global.RemasteredMode = true and IsAttacking = false and global.PlayerIsDead 
 {
 	if input_check_pressed("action1") = true
 	{
-		switch Item_FindValue(global.CurrentTreasure,0)
+		//Always use Rubies first
+		if UseTreasure_Rubies() = false
+		{
+			//If Rubies have not been used, use the currently equipped Treasure
+			switch Item_FindValue(global.CurrentTreasure,0)
 			{
 				case Treasures.EmptyPitcher:
 					UseTreasure_EmptyPitcher()
@@ -127,19 +131,17 @@ if global.RemasteredMode = true and IsAttacking = false and global.PlayerIsDead 
 				case Treasures.Candle:
 					UseTreasure_Candle()
 					break;
-				case Treasures.Rubies:
-					UseTreasure_Rubies();
-					break;
 				default:
 					audio_play_sound_relative(SFX_Use_Error,100,false);
 					break;
 			}
+		}
 	}
 	if input_check_pressed("action2") = true
 	{
 		if Item_FindIndex(Spells.Wand, 1) <> -1 and global.CurrentSpell <> -1 and global.CurrentRubies >= CastCost(global.CurrentSpell)
 		{
-			// Melee damage and sprite change (happens also when using other spells)
+			// Melee damage and sprite change (also happens when using other spells)
 			UseSpell_Any();
 						
 			// Use Spell - Wand

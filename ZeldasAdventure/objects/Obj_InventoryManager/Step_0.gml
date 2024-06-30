@@ -116,16 +116,19 @@ if Alpha == 255
 	}
 }
 //If no rubies, remove the item
-if global.CurrentRubies == 0
+if global.RemasteredMode = false
 {
-	Item_Remove(Treasures.Rubies,0)
-}
-else
-{
-	//If there are rubies, add the item back
-	if Item_FindIndex(Treasures.Rubies,0) = -1
+	if global.CurrentRubies == 0
 	{
-		Item_Add(Treasures.Rubies,0)
+		Item_Remove(Treasures.Rubies,0)
+	}
+	else
+	{
+		//If there are rubies, add the item back
+		if Item_FindIndex(Treasures.Rubies,0) = -1
+		{
+			Item_Add(Treasures.Rubies,0)
+		}
 	}
 }
 if Alpha = 255

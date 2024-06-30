@@ -8,7 +8,14 @@ function UseTreasure_Rubies()
 		//If you already have the Firestorm Spell
 		if Item_FindIndex(Spells.Firestorm,1) <> -1
 		{
-			audio_play_sound_relative(SFX_Use_Error,100,false);
+			if global.RemasteredMode = true
+			{
+				return false
+			}
+			else
+			{
+				audio_play_sound_relative(SFX_Use_Error,100,false);
+			}
 		}
 	}
 	//Mobilin's Head Inn
@@ -21,16 +28,33 @@ function UseTreasure_Rubies()
 		}
 		else
 		{
+			var PlayerInBuyRange = false
 			if instance_number(Parent_BuyableItem) > 0
 			{
-				if Entity_Pickup_Calm.PlayerInBuyRange = false
+				for (var i = 0; i < instance_number(Parent_BuyableItem); ++i;)
+				{
+				    var BuyableItem = instance_find(Parent_BuyableItem,i);
+					if BuyableItem.PlayerInBuyRange = true
+					{
+						PlayerInBuyRange = true
+						break
+					}
+				}
+			}
+			if PlayerInBuyRange = false
+			{
+				if global.RemasteredMode = true
+				{
+					return false
+				}
+				else
 				{
 					audio_play_sound_relative(SFX_Use_Error,100,false);
 				}
 			}
 			else
 			{
-				audio_play_sound_relative(SFX_Use_Error,100,false);
+				return true
 			}
 		}
 	}
@@ -59,13 +83,31 @@ function UseTreasure_Rubies()
 			}
 			if PlayerInBuyRange = false
 			{
-				audio_play_sound_relative(SFX_Use_Error,100,false);
+				if global.RemasteredMode = true
+				{
+					return false
+				}
+				else
+				{
+					audio_play_sound_relative(SFX_Use_Error,100,false);
+				}
+			}
+			else
+			{
+				return true
 			}
 		}
 	}
 	else
 	{
-		audio_play_sound_relative(SFX_Use_Error,100,false);
+		if global.RemasteredMode = true
+		{
+			return false
+		}
+		else
+		{
+			audio_play_sound_relative(SFX_Use_Error,100,false);
+		}
 	}
 
 }

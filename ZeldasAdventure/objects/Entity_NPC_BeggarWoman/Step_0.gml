@@ -21,21 +21,21 @@ if IsPlayerOnSameTile() = true
 					if global.RemasteredMode = false and Entity_Player.IsAttacking = false
 					{
 						if input_check_pressed("action1") = true or input_check_pressed("action2") = true
+						{
+							if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasures.Rubies and global.CurrentRubies >= 5
 							{
-								if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasures.Rubies and global.CurrentRubies >= 5
-								{
-									RemoveRubies(5);
-									global.CurrentItem[1] = -1
-									Register_Add("PaidBeggarWoman")
-								}
-								
+								RemoveRubies(5);
+								global.CurrentItem[1] = -1
+								Register_Add("PaidBeggarWoman")
 							}
+							
+						}
 					}
 					if global.RemasteredMode = true and Entity_Player.IsAttacking = false
 					{
 						if input_check_pressed("action1") = true
 						{
-							if Item_FindValue(global.CurrentTreasure,0) = Treasures.Rubies and global.CurrentRubies >= 5
+							if global.CurrentRubies >= 5
 							{
 								RemoveRubies(5);
 								global.CurrentTreasure = -1
@@ -47,11 +47,11 @@ if IsPlayerOnSameTile() = true
 				else
 				{
 					if instance_exists(Entity_Pickup_Firestorm) = false
-						{
-							instance_create_layer(3606,5232,"Items_AboveForeground",Entity_Pickup_Firestorm)
-							global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
-							global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-						}
+					{
+						instance_create_layer(3606,5232,"Items_AboveForeground",Entity_Pickup_Firestorm)
+						global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
+						global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
+					}
 				}
 			}
 		}
