@@ -15,7 +15,7 @@
     "path": "audiogroups/AudioGroup_Dialogue",
   },
   "soundFile": "Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees.ogg",
-  "duration": 14.570952,
+  "duration": 13.973492,
   "parent": {
     "name": "PlainOfAndor",
     "path": "folders/Sounds/Dialogue/PlainOfAndor.yy",
