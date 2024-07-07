@@ -29,8 +29,15 @@
 	
 	Subtitle_PlainOfAndor_20_GlebbTheThirsty_YouMonster
 	{
+	//english
 		"Glebb the Thirsty: You monster!"
 		"How dare you assault a weak, old woman?!"
 		"You will lose a life for this!"
+		
+	//nederlands
+		"Glebb de Dorstige: Jij monster!"
+		"Hoe durf je een zwakke, oude vrouw aan te vallen?!"
+		"Hiervoor verlies je een leven!"
+		
 	}
 #endregion

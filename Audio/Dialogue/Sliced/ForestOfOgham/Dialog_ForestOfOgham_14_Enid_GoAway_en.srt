@@ -1,0 +1,8 @@
+﻿1
+00:00:00,001 --> 00:00:03,793
+Enid: Go away! I have nothing for you.
+
+2
+00:00:03,818 --> 00:00:05,893
+I have nothing to say to you.
+

@@ -1,5 +1,5 @@
 //If the player is on the same tile
-if IsPlayerOnSameTile() = true && global.CameraIsPanning = false
+if IsPlayerOnSameTile() = true
 {
 	//Activate
 	visible = true;

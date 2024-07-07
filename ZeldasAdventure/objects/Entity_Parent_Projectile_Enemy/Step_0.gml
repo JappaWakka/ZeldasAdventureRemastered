@@ -1,10 +1,20 @@
 //If the player is on the same tile
-if IsPlayerOnSameTile() = true && global.CameraIsPanning = false
+if IsPlayerOnSameTile() = true
 {
-	//Activate
-	visible = true;
-	speed = ProjectileSpeed
-	image_speed = 1
+	if global.CameraIsFading = false
+	{
+		//Activate
+		visible = true;
+		speed = ProjectileSpeed
+		image_speed = 1
+	}
+	else
+	{
+		//Activate
+		visible = false;
+		speed = 0
+		image_speed = 0
+	}
 }
 else
 {

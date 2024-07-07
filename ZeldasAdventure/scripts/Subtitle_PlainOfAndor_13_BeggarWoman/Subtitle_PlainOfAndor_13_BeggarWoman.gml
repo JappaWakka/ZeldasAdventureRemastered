@@ -37,3 +37,21 @@ function Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees(AudioPosition)
 		break;
 	}
 }
+
+function Subtitle_PlainOfAndor_13_BeggarWoman_Charity(AudioPosition)
+{
+	switch global.CurrentLanguage
+	{
+	case "en":
+		if AudioPosition >= 0.000 and AudioPosition <= 4.313 {return "Beggar: You must learn charity before you may become a true princess!"}
+		else if AudioPosition >= 4.947 and AudioPosition <= 8.460 {return "May you never see the red willow by the cave!"}
+		else return ""		
+		break;
+		
+	case "nl":
+		if AudioPosition >= 0.000 and AudioPosition <= 4.313 {return "Bedelaar: Je moet liefdadigheid leren voordat je een echte prinses kunt worden!"}
+		else if AudioPosition >= 4.947 and AudioPosition <= 8.460 {return "Moge je nooit de rode wilg bij de grot zien!"}
+		else return ""		
+		break;
+	}
+}

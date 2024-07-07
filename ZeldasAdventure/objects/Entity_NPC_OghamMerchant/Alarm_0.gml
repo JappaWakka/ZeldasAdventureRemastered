@@ -1,13 +1,13 @@
 ///@description Do the animation again
 if EnableAnimationAlarm = true
 {
-	if sprite_index = OghamMerchant_Showing
+	if sprite_index = Sprite_NPC_OghamMerchant_Showing
 	{
-		sprite_index = OghamMerchant_Fiddling
+		sprite_index = Sprite_NPC_OghamMerchant_Fiddling
 	}
 	else
 	{
-		sprite_index = OghamMerchant_Showing
+		sprite_index = Sprite_NPC_OghamMerchant_Showing
 	}
 	Animating = true
 }

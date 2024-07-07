@@ -34,7 +34,7 @@ if OpeningClosing = true
 				Entity_Parent_NPC.image_speed = Entity_Parent_NPC.ImageSpeed;
 				Entity_Parent_NPC.visible = true;
 			}
-			instance_activate_layer("Enemies");
+			instance_activate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y *tileHeight, tileWidth, tileHeight,true);
 		}
 		OpeningClosing = false;
 	}

@@ -1,4 +1,4 @@
-if IsPlayerOnSameTile() = true && global.CameraIsPanning = false
+if IsPlayerOnSameTile() = true
 {
 	visible = true
 }

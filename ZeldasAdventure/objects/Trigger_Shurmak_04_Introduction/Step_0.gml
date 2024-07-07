@@ -1,19 +1,16 @@
 if IsPlayerOnSameTile() = true
 {
-	if global.CameraIsPanning = false
+	if Register_Registered("Shurmak_Introduction") = false
 	{
-		if Register_Registered("Shurmak_Introduction") = false
+		if global.CurrentDialogue_Asset = Dialog_None
 		{
-			if global.CurrentDialogue_Asset = Dialog_None
-			{
-				global.CurrentDialogue_Asset = Dialog_VisionHenge_04_Shurmak_Introduction
-				global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-				Register_Add("Shurmak_Introduction")
-			}
-			
+			global.CurrentDialogue_Asset = Dialog_VisionHenge_04_Shurmak_Introduction
+			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
+			Register_Add("Shurmak_Introduction")
 		}
 		
 	}
+	
 	if global.CurrentDialogue_Asset != Dialog_None
 	{
 		if IsMenuVisible() = false

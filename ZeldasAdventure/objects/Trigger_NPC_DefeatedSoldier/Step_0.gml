@@ -1,18 +1,15 @@
 if IsPlayerOnSameTile() = true
 {
-	if global.CameraIsPanning = false
+	if Register_Registered("DefeatedSoldier") = false
 	{
-		if Register_Registered("DefeatedSoldier") = false
+		if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 		{
-			if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
-			{
-				global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_DefeatedSoldier
-				Audio_StopMusic()
-				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_DefeatedSoldier, global.CurrentDialogue_Asset,500,false)
-				Register_Add("DefeatedSoldier")
-			}
-			
+			global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_DefeatedSoldier
+			Audio_StopMusic()
+			global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_DefeatedSoldier, global.CurrentDialogue_Asset,500,false)
+			Register_Add("DefeatedSoldier")
 		}
+		
 	}
 	if global.CurrentDialogue_Asset != Dialog_None
 	{

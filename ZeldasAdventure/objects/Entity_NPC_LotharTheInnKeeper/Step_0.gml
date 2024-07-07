@@ -1,22 +1,19 @@
 
 if IsPlayerOnSameTile() = true
 {
-	if global.CameraIsPanning = false
+	if Register_Registered("LotharTheInnKeeper_Intro") = false
 	{
-		if Register_Registered("LotharTheInnKeeper_Intro") = false
+		if Item_FindIndex(Spells.Calm,1) = -1
 		{
-			if Item_FindIndex(Spells.Calm,1) = -1
-			{
-				global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_BeforeBuy
-			}
-			else
-			{
-				global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_AfterBuy
-			}
-			Audio_StopMusic()
-			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			Register_Add("LotharTheInnKeeper_Intro",true)
+			global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_BeforeBuy
 		}
+		else
+		{
+			global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_AfterBuy
+		}
+		Audio_StopMusic()
+		global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
+		Register_Add("LotharTheInnKeeper_Intro",true)
 	}
 			
 	

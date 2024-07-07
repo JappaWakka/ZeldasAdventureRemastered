@@ -23,7 +23,12 @@
 	
 	Subtitle_PlainOfAndor_13_BeggarWoman_Charity
 	{
+	//en
 		"Beggar: You must learn charity before you may become a true princess!"
+		"May you never see the red willow by the cave!"
+	//nl
+		"Bedelaar: Je moet liefdadigheid leren voordat je een echte prinses kunt worden!"
+		"Moge je nooit de rode wilg bij de grot zien!"
 	}
 	
 	Subtitle_PlainOfAndor_13_BeggarWoman_RuetheDay
@@ -32,8 +37,4 @@
 		"You will rue the day you drove me off with your wand!"
 	}
 	
-	Subtitle_PlainOfAndor_13_BeggarWoman_RedWillow
-	{
-		"Beggar: May you never see the red willow by the cave!"
-	}
 #endregion

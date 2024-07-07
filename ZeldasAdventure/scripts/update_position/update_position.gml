@@ -14,6 +14,13 @@ function update_position(argument0, argument1) {
 	var y_target = y+lengthdir_y(_speed, _direction);
 	
 	var FreeToMoveCurrent = true
+	
+	////Solid Objects
+	if place_meeting(x_target, y_target, Parent_Solid)
+	{
+		FreeToMoveCurrent = false
+	}
+		
 	////Red Boots Water
 	if Item_FindIndex(Treasures.RedBoots,0) = -1
 	{
@@ -22,6 +29,7 @@ function update_position(argument0, argument1) {
 			FreeToMoveCurrent = false
 		}
 	}
+	
 	////Ladder Hole
 	if Register_Registered("PlacedLadder") = false
 	{
@@ -30,12 +38,7 @@ function update_position(argument0, argument1) {
 			FreeToMoveCurrent = false
 		}
 	}
-	////Solid Objects
-	if place_meeting(x_target, y_target, Parent_Solid)
-	{
-		FreeToMoveCurrent = false
-	}
-	
+		
 	if FreeToMoveCurrent = true {
 		// Move if we are not colliding.
 	    x = x_target;
@@ -73,6 +76,12 @@ function update_position(argument0, argument1) {
 				// we exit from this script.
 				var FreeToMoveNew = true
 				
+				////Solid Objects
+				if place_meeting(x_target, y_target, Parent_Solid)
+				{
+					FreeToMoveNew = false
+				}
+				
 				////Red Boots Water
 				if Item_FindIndex(Treasures.RedBoots,0) = -1
 				{
@@ -81,19 +90,16 @@ function update_position(argument0, argument1) {
 						FreeToMoveNew = false
 					}
 				}
+				
 				////Ladder Hole
 				if Register_Registered("PlacedLadder") = false
 				{
 					if place_meeting(x_target, y_target, UseItem_ShrineOfEarth_02_Ladder)
 					{
-						FreeToMoveCurrent = false
+						FreeToMoveNew = false
 					}
 				}
-				////Solid Objects
-				if place_meeting(x_target, y_target, Parent_Solid)
-				{
-					FreeToMoveNew = false
-				}
+				
 	            if FreeToMoveNew = true {
 	                x = x_target;
 	                y = y_target;  

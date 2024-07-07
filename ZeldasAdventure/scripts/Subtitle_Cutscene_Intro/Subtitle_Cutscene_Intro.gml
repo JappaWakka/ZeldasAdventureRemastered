@@ -28,7 +28,7 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 		else if VideoPosition >= 75.857 and VideoPosition <= 78.456 {return "Er zou een moedige krijger gevonden moeten worden"}
 		else if VideoPosition >= 78.487 and VideoPosition <= 80.971 {return "om de strijd aan te gaan met dat kwaadaardige monster."}
 		else if VideoPosition >= 94.425 and VideoPosition <= 98.958 {return "En zo vond ik deze kampioen van kracht en moed."}
-		else if VideoPosition >= 99.197 and VideoPosition <= 104.934 {return "U bent het, Prinses Zelda. Met deze magische ketting, ga voort"}
+		else if VideoPosition >= 99.197 and VideoPosition <= 104.934 {return "U bent het, prinses Zelda. Met deze magische ketting, ga voort"}
 		else if VideoPosition >= 104.959 and VideoPosition <= 109.320 {return "en met elk Teken dat u vindt zult u ook meer kennis opdoen."}
 		else if VideoPosition >= 109.834 and VideoPosition <= 113.337 {return "Vind uw magische toverstaf, gebruik hem verstandig"}
 		else if VideoPosition >= 113.362 and VideoPosition <= 116.300 {return "en luister naar de bondgenoten die u tegenkomt tijdens uw reis."}

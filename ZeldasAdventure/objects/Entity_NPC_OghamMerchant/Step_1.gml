@@ -1,18 +1,15 @@
 ///@description Default NPC Step Event
 if IsPlayerOnSameTile() = true
 {
-	if global.CameraIsPanning = false
+	visible = true
+	if Animating = true
 	{
-		visible = true
-		if Animating = true
-		{
-			image_speed = d(ImageSpeed)
-		}
-		else
-		{
-			image_index = 0
-			image_speed = 0
-		}
+		image_speed = d(ImageSpeed)
+	}
+	else
+	{
+		image_index = 0
+		image_speed = 0
 	}
 	
 }
@@ -22,5 +19,5 @@ else
 	image_speed = 0
 	image_index = 0
 	visible = false
-	sprite_index = OghamMerchant_Showing
+	sprite_index = Sprite_NPC_OghamMerchant_Showing
 }

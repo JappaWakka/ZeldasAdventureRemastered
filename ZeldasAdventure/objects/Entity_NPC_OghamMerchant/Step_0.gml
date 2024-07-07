@@ -1,25 +1,21 @@
 
 if IsPlayerOnSameTile() = true
 {
-	if global.CameraIsPanning = false
+	if Register_Registered("OghamMerchant_Intro") = false
 	{
-		if Register_Registered("OghamMerchant_Intro") = false
+		if global.RemasteredMode = true && Item_FindIndex(Treasures.MagicShield,0) <> -1 && Item_FindIndex(Treasures.Candle,0) <> -1
 		{
-			if Item_FindIndex(Treasures.MagicShield,0) <> -1 && Item_FindIndex(Treasures.Candle,0) <> -1
-			{
-				global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_NothingToSell
-				global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			}
-			else
-			{
-				global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_PlentyToBuy
-				global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			}
-			
-			Register_Add("OghamMerchant_Intro",true)
+			global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_NothingToSell
+			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 		}
-	}
-			
+		else
+		{
+			global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_PlentyToBuy
+			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
+		}
+		
+		Register_Add("OghamMerchant_Intro",true)
+	}			
 	
 	if global.CurrentDialogue_Asset != Dialog_None
 	{

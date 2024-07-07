@@ -1,3 +1,4 @@
+
 //Screen Fading
 if global.FadeProgress = 0 //Fade-Out
 {

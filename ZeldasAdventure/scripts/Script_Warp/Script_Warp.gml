@@ -9,6 +9,7 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		}
 		global.FadeProgress = 0;
 		global.FadeSpeed = FadeSpeed;
+		global.CameraIsPanning = true;
 		return false;
 	}
 	
@@ -47,6 +48,8 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		instance_activate_region(TileX * tileWidth, TileY * tileHeight, tileWidth, tileHeight, true)
 		instance_activate_object(Entity_Parent_Player)
 		global.SwitchTracks = true;
+		
+		global.CameraIsPanning = false;
 		
 		return true;
 	}

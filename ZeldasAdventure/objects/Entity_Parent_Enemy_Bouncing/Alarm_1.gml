@@ -1,5 +1,5 @@
 ///@description Play Enemy Sound
-if IsPlayerOnSameTile_Enemy() = true && global.CameraIsPanning = false
+if IsPlayerOnSameTile_Enemy() = true
 {
 	if global.EnemySoundPlaying = false
 	{

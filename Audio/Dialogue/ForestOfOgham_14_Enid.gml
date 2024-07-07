@@ -6,8 +6,8 @@
 	Subtitle_ForestOfOgham_14_Enid_TrustNoOneWithHair
 	{
 		"Enid: Hear me whisper: Trust no one with hair! Huh huh huh!"
-		"Don't even trust me! Hah hah! I've stolen one of your lives!"
-		"Hee hee hee hee hee!"
+		"Don't even trust me! Hah hah!"
+		"I've stolen one of your lives! Hee hee hee hee hee!"
 	}
 #endregion
 	
@@ -18,6 +18,6 @@
 	}
 	Subtitle_ForestOfOgham_14_Enid_GoAway
 	{
-		"Go away! I have nothing for you, I have nothing to say to you."
+		"Enid: Go away! I have nothing for you, I have nothing to say to you."
 	}
 #endregion

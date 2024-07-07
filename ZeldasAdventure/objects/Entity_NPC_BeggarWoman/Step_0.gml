@@ -1,7 +1,7 @@
 
 if IsPlayerOnSameTile() = true
 {
-	if Item_FindIndex(Spells.Firestorm,1) = -1 
+	if Item_FindIndex(Spells.Firestorm,1) = -1
 	{
 		if global.CameraIsPanning = false
 		{
@@ -75,6 +75,10 @@ if IsPlayerOnSameTile() = true
 			{
 				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRupees(AudioPosition)
 			}
+			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_Charity
+			{
+				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_Charity(AudioPosition)
+			}
 		}
 		else
 		{
@@ -85,10 +89,20 @@ if IsPlayerOnSameTile() = true
 			global.Subtitle = ""
 		}
 	}
+	else
+	{
+		if sprite_index = Sprite_NPC_BeggarWoman_Angry
+		{
+			sprite_index = Sprite_NPC_BeggarWoman_Begging
+			EnableAnimationAlarm = true
+			Animating = false
+			alarm[0] = irandom_range(AnimAlarm_Min,AnimAlarm_Max)
+		}
+	}
 }
 else
 {
-	if Item_FindIndex(Spells.Firestorm,1) <> -1 
+	if Item_FindIndex(Spells.Firestorm,1) <> -1
 	{
 		instance_destroy()
 	}

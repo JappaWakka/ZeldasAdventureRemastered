@@ -37,3 +37,23 @@ function Subtitle_PlainOfAndor_20_GlebbTheThirsty_AfterFill(AudioPosition)
 		break;
 	}
 }
+
+function Subtitle_PlainOfAndor_20_GlebbTheThirsty_YouMonster(AudioPosition)
+{
+	switch global.CurrentLanguage
+	{
+	case "en":
+		if AudioPosition >= 0.000 and AudioPosition <= 1.726 {return "Glebb the Thirsty: You monster!"}
+		else if AudioPosition >= 1.900 and AudioPosition <= 4.433 {return "How dare you assault a weak, old woman?!"}
+		else if AudioPosition >= 4.793 and AudioPosition <= 7.493 {return "You will lose a life for this!"}
+		else return ""
+		break;
+		
+	case "nl":
+		if AudioPosition >= 0.000 and AudioPosition <= 1.726 {return "Glebb de Dorstige: Jij monster!!"}
+		else if AudioPosition >= 1.900 and AudioPosition <= 4.433 {return "Hoe durf je een zwakke, oude vrouw aan te vallen?!"}
+		else if AudioPosition >= 4.793 and AudioPosition <= 7.493 {return "Hiervoor verlies je een leven!"}
+		else return ""
+		break;
+	}
+}

@@ -30,6 +30,8 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Entity_Hitbox_Spell_Wand","path":"objects/Entity_Hitbox_Spell_Wand/Entity_Hitbox_Spell_Wand.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [

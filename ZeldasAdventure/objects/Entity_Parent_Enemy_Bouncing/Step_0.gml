@@ -1,5 +1,5 @@
 //If the player is on the same tile
-if IsPlayerOnSameTile_Enemy() = true && global.CameraIsPanning = false
+if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 {
 	//Activate
 	visible = true;
@@ -81,7 +81,7 @@ else
 {
 	//Deactivate
 	visible = false
-	if IsMenuVisible = false
+	if IsMenuVisible = false && global.CameraIsFading = false
 	{
 		x = OriginX;
 		y = OriginY;

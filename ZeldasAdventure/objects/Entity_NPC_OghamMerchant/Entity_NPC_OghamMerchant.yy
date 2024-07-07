@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Entity_NPC_OghamMerchant",
   "spriteId": {
-    "name": "OghamMerchant_Showing",
-    "path": "sprites/OghamMerchant_Showing/OghamMerchant_Showing.yy",
+    "name": "Sprite_NPC_OghamMerchant_Showing",
+    "path": "sprites/Sprite_NPC_OghamMerchant_Showing/Sprite_NPC_OghamMerchant_Showing.yy",
   },
   "solid": false,
   "visible": true,
