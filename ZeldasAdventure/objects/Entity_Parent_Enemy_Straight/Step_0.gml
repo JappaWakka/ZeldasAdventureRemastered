@@ -24,6 +24,12 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 	{
 		if DamageDelay = 0 && ImmuneToWand = false
 		{
+			///Set return position
+			if ReturnToPoint = true and ReturnPointPosition[0] = -1 and ReturnPointPosition[1] = -1
+			{
+				ReturnPointPosition = [x,y]
+			}
+			
 			///Reduce HitPoints, play damage sound
 			HitPoints -= GetPower() - Defense
 			audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
@@ -49,6 +55,12 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 		{
 			if DamageDelay = 0
 			{
+				///Set return position
+				if ReturnToPoint = true
+				{
+					ReturnPointPosition = [x,y]
+				}
+				
 				///Reduce HitPoints, play damage sound
 				if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
 				{
@@ -137,7 +149,7 @@ if DamageDelay > 0
 {
 	DamageDelay -=1
 }
-if EnemyState != EnemyStates.Damaged
+if EnemyState != EnemyStates.Damaged and EnemyState != EnemyStates.Idle
 {
 	image_speed = speed
 }
@@ -158,6 +170,36 @@ if HitPoints <= 0
 				if global.DeathAmountForTrigger.BoomerangSpell = 0
 				{
 					Script_Trigger_BoomerangSpell() //Spawn Boomerang Spell Pickup
+				}
+				break
+			case "TektiteAmbush" :
+				if global.DeathAmountForTrigger.TektiteAmbush > 0
+				{
+					global.DeathAmountForTrigger.TektiteAmbush -= 1
+				}
+				if global.DeathAmountForTrigger.TektiteAmbush = 0
+				{
+					Script_Trigger_TektiteAmbush() //Spawn a bunch of Tektites
+				}
+				break
+			case "CompassEarthTreasure" :
+				if global.DeathAmountForTrigger.CompassEarthTreasure > 0
+				{
+					global.DeathAmountForTrigger.CompassEarthTreasure -= 1
+				}
+				if global.DeathAmountForTrigger.CompassEarthTreasure = 0
+				{
+					Script_Trigger_CompassEarthTreasure() //Spawn Compass_Earth Treasure Pickup
+				}
+				break
+			case "UnderworldMapEarthTreasure" :
+				if global.DeathAmountForTrigger.UnderworldMapEarthTreasure > 0
+				{
+					global.DeathAmountForTrigger.UnderworldMapEarthTreasure -= 1
+				}
+				if global.DeathAmountForTrigger.UnderworldMapEarthTreasure = 0
+				{
+					Script_Trigger_UnderworldMapEarthTreasure() //Spawn UnderworldMap_Earth Treasure Pickup
 				}
 				break
 	}

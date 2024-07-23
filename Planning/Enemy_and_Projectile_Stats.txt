@@ -46,8 +46,9 @@ enemy.crockarock.projectile always has the stats:
 	 [damage=76] on cells a7, a8, c7, c8, d7, s707
 enemy.crystalShard always has the stats:
 	 [damage=54] on cells s305, s306, s319
-enemy.deeler has different stats on different cells:
+enemy.squibber always has the stats:
 	 [health=60, damage=57, defense=20] on cells b8, e9, h10, i10
+enemy.deeler always has the stats:
 	 [health=60, damage=40, defense=0] on cells f7, g29, g30, g31, h10, j10, m10, m13, n13, o12
 enemy.dragonfly has different stats on different cells:
 	 [health=1, damage=0, defense=0] on cells gl4
@@ -188,11 +189,10 @@ enemy.swampZola.green always has the stats:
 	 [health=60, damage=50, defense=20] on cells j11, l12, n12, r17, r18, s16, t15, t16
 enemy.swampZola.green.projectile always has the stats:
 	 [damage=55] on cells j11, l12, n12, r17, r18, t15
-enemy.tektite has different stats on different cells:
+enemy.tektite.stronger always has the stats:
 	 [health=60, damage=51, defense=5] on cells j16, k15, k16, l16, m14, m15, r5, r8, v10, v12, v9, x9
+enemy.tektite.weaker always has the stats:
 	 [health=60, damage=40, defense=0] on cells q10, s101a, s103, s104, s116
-	 [health=(Not Spawned), damage=51, defense=5] on cells s7
-	 [damage=40] on cells s118
 enemy.tinyFish always has the stats:
 	 [damage=55] on cells p14
 enemy.tornado always has the stats:
