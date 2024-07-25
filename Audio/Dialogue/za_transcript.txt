@@ -24,11 +24,11 @@
 		"Llort: You've been taking my things. Put them back! Don't touch anything!"
 	}
 	
-	Subtitle_ShrineOfEarth_07_SouthSardak_NoThreat
+	Subtitle_ShrineOfEarth_07_RedSardak_NoThreat
 	{
 		"South Sardak: Hey dee hee, hoo dee bee! You're no threat to us down here!"
 	}
-	Subtitle_ShrineOfEarth_07_SouthSardak_FailedMission
+	Subtitle_ShrineOfEarth_07_RedSardak_FailedMission
 	{
 		"South Sardak: I've failed in my mission! Llort, this enemy is coming!"
 	}
@@ -36,19 +36,19 @@
 	{
 		"Treasure Chest: Oh! Oh! What do we have here!? A human person coming close! Wow, what a great event! Hoo Hoo!"
 	}
-	Subtitle_ShrineOfEarth_12_MiddleSardak_ThoughtIWasAlone
+	Subtitle_ShrineOfEarth_12_BlueSardak_ThoughtIWasAlone
 	{
 		"Middle Sardak: Huh? I... I thought I was alone here! Llort, an enemy is in your cave!"
 	}
-	Subtitle_ShrineOfEarth_12_MiddleSardak_CouldntStopHer
+	Subtitle_ShrineOfEarth_12_BlueSardak_CouldntStopHer
 	{
 		"Middle Sardak: Llort, I couldn't stop her! Get ready to fight!"
 	}
-	Subtitle_ShrineOfEarth_20_NorthernSardak_EnemyOfMyBoss
+	Subtitle_ShrineOfEarth_20_YellowSardak_EnemyOfMyBoss
 	{
 		"Northern Sardak: Hey! Who goes there!? Aren't you an enemy of my boss Llort? You can't come in here."
 	}
-	Subtitle_ShrineOfEarth_20_NorthernSardak_ShesComing
+	Subtitle_ShrineOfEarth_20_YellowSardak_ShesComing
 	{
 		"Northern Sardak: Hey, Llort! Watch out! She's coming!"
 	}
