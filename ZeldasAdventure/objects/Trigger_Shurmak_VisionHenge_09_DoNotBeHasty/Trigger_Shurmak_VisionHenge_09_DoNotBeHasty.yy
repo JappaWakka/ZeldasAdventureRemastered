@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Trigger_Shurmak_09_DoNotBeHasty",
+  "name": "Trigger_Shurmak_VisionHenge_09_DoNotBeHasty",
   "spriteId": {
     "name": "Sprite_Cursor",
     "path": "sprites/Sprite_Cursor/Sprite_Cursor.yy",
