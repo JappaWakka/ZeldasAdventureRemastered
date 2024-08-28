@@ -15,7 +15,7 @@ class npc_merchant_unknownActor179:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_candle:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -34,7 +34,7 @@ class item_treasure_candle:
 # Actor description 2
 # Used for actors: []
 class item_treasure_goldKey:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -50,7 +50,7 @@ class item_treasure_goldKey:
 # Actor description 3
 # Used for actors: [2]
 class item_treasure_lifePotion:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):

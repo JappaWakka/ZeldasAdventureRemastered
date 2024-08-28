@@ -6,23 +6,23 @@ class env_switch:
 	def onHitOrIteractIntercept(self):
 		if save[LOCALS + 0] == 0:
 			setSpriteGroup(1) # Usually the sprite for RIGHT
-			op27b(actor=cast[1])
-			op27b(actor=cast[2])
-			op27a(actor=cast[3])
-			op27a(actor=cast[4])
-			op27a(actor=cast[5])
-			op27a(actor=cast[6])
-			op27a(actor=cast[7])
+			hide(actor=cast[1])
+			hide(actor=cast[2])
+			show(actor=cast[3])
+			show(actor=cast[4])
+			show(actor=cast[5])
+			show(actor=cast[6])
+			show(actor=cast[7])
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
 		else:
 			setSpriteGroup(0) # Usually the sprite for UP
-			op27a(actor=cast[1])
-			op27a(actor=cast[2])
-			op27b(actor=cast[3])
-			op27b(actor=cast[4])
-			op27b(actor=cast[5])
-			op27b(actor=cast[6])
-			op27b(actor=cast[7])
+			show(actor=cast[1])
+			show(actor=cast[2])
+			hide(actor=cast[3])
+			hide(actor=cast[4])
+			hide(actor=cast[5])
+			hide(actor=cast[6])
+			hide(actor=cast[7])
 			save[LOCALS + 0] = 0 # 0x0, b'\x00\x00'
 		
 	def onLoad_maybe(self):
@@ -57,11 +57,11 @@ class Cell:
 		save[CELL_LEFT + 1] = 12595 # 0x3133, b'13'
 		save[CELL_LEFT + 2] = 115 # 0x73, b'\x00s'
 		save[RESPAWN_CELL_ID_maybe] = 14 # 0xe, b'\x00\x0e'
-		op27b(actor=cast[3])
-		op27b(actor=cast[4])
-		op27b(actor=cast[5])
-		op27b(actor=cast[6])
-		op27b(actor=cast[7])
+		hide(actor=cast[3])
+		hide(actor=cast[4])
+		hide(actor=cast[5])
+		hide(actor=cast[6])
+		hide(actor=cast[7])
 		
 	def onTouchTrigger(self):
 		if save[LOCALS + 0] == 1:

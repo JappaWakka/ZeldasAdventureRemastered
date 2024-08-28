@@ -20,7 +20,7 @@ class npc_hoodedWoman:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_goldenBoots:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[GoldenBoots] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

@@ -21,7 +21,7 @@ class enemy_rope:
 # Actor description 2
 # Used for actors: [7]
 class item_weapon_pyros:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Pyros] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

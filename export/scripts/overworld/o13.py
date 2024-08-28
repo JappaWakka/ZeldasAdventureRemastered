@@ -2,7 +2,7 @@
 
 # Actor description 0
 # Used for actors: [0, 1, 2]
-class npc_molluska:
+class enemy_molluska:
 	def onLoad_maybe(self):
 		spawnAndAnimate(actor=self)
 		

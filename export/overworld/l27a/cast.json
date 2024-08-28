@@ -1,1 +1,932 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 118, "y": 218}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 1, "spawnCoords": {"x": 69, "y": 120}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 48, "y": 48}, "groupCount": 2, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 27, "y": 20}, {"x": 27, "y": 24}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 5, "unk_0x18": [{"x": 47, "y": -7}, {"x": 46, "y": 20}, {"x": 46, "y": 50}], "damageSamplePoints_maybe": [{"x": 6, "y": 12}, {"x": 39, "y": 37}, {"x": 39, "y": 1}, {"x": -1, "y": 42}, {"x": 50, "y": 23}, {"x": -4, "y": 25}, {"x": 23, "y": 45}, {"x": 23, "y": 6}], "unknownFieldFromSpriteTree": 5497016}, {"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 5, "unk_0x18": [{"x": 46, "y": -4}, {"x": 48, "y": 22}, {"x": 46, "y": 45}], "damageSamplePoints_maybe": [{"x": 47, "y": 24}, {"x": -3, "y": 28}, {"x": 25, "y": 46}, {"x": 23, "y": 2}, {"x": 8, "y": 15}, {"x": 8, "y": 48}, {"x": 37, "y": 34}, {"x": 35, "y": 4}], "unknownFieldFromSpriteTree": 5500412}], "unknownFieldFromSpriteTree": 5497000, "commonName": "npc.toobar"}, {"size": {"x": 48, "y": 55}, "groupCount": 3, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 31, "y": 18}, {"x": 31, "y": 26}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 50, "y": -1}, {"x": 51, "y": 19}, {"x": 50, "y": 48}], "damageSamplePoints_maybe": [{"x": 23, "y": 50}, {"x": 42, "y": 53}, {"x": 48, "y": 35}, {"x": 40, "y": 14}, {"x": 27, "y": -2}, {"x": 16, "y": 3}, {"x": 18, "y": 26}], "unknownFieldFromSpriteTree": 5504108}, {"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 54, "y": 7}, {"x": 53, "y": 28}, {"x": 53, "y": 45}], "damageSamplePoints_maybe": [{"x": -1, "y": 25}, {"x": 52, "y": 28}, {"x": 47, "y": 11}, {"x": 23, "y": 10}, {"x": 8, "y": 15}, {"x": 9, "y": 39}, {"x": 25, "y": 43}, {"x": 45, "y": 44}], "unknownFieldFromSpriteTree": 5507244}, {"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 50, "y": -1}, {"x": 50, "y": 24}, {"x": 49, "y": 48}], "damageSamplePoints_maybe": [{"x": 26, "y": 52}, {"x": 35, "y": -3}, {"x": 49, "y": 7}, {"x": 44, "y": 30}, {"x": 14, "y": 39}, {"x": 17, "y": 18}, {"x": 20, "y": 1}], "unknownFieldFromSpriteTree": 5511280}], "unknownFieldFromSpriteTree": 5504088, "commonName": "npc.pickpocket"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 118,
+        "y": 218
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 218,
+          "y": 118
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "setGroup(1)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          }
+        ]
+      }
+    },
+    {
+      "descIndex": 1,
+      "spawnCoords": {
+        "x": 69,
+        "y": 120
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 120,
+          "y": 69
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "setGroup(1)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          }
+        ]
+      }
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 48,
+        "y": 48
+      },
+      "groupCount": 2,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 20,
+          "y": 27
+        },
+        {
+          "x": 24,
+          "y": 27
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 5,
+          "treeHeightSamples": [
+            {
+              "x": -7,
+              "y": 47
+            },
+            {
+              "x": 20,
+              "y": 46
+            },
+            {
+              "x": 50,
+              "y": 46
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 12,
+              "y": 6
+            },
+            {
+              "x": 37,
+              "y": 39
+            },
+            {
+              "x": 1,
+              "y": 39
+            },
+            {
+              "x": 42,
+              "y": -1
+            },
+            {
+              "x": 23,
+              "y": 50
+            },
+            {
+              "x": 25,
+              "y": -4
+            },
+            {
+              "x": 45,
+              "y": 23
+            },
+            {
+              "x": 6,
+              "y": 23
+            }
+          ],
+          "unusedSpritePointer": 5497016
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 5,
+          "treeHeightSamples": [
+            {
+              "x": -4,
+              "y": 46
+            },
+            {
+              "x": 22,
+              "y": 48
+            },
+            {
+              "x": 45,
+              "y": 46
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 24,
+              "y": 47
+            },
+            {
+              "x": 28,
+              "y": -3
+            },
+            {
+              "x": 46,
+              "y": 25
+            },
+            {
+              "x": 2,
+              "y": 23
+            },
+            {
+              "x": 15,
+              "y": 8
+            },
+            {
+              "x": 48,
+              "y": 8
+            },
+            {
+              "x": 34,
+              "y": 37
+            },
+            {
+              "x": 4,
+              "y": 35
+            }
+          ],
+          "unusedSpritePointer": 5500412
+        }
+      ],
+      "unusedSpritePointer": 5497000,
+      "commonName": "npc.toobar"
+    },
+    {
+      "size": {
+        "x": 48,
+        "y": 55
+      },
+      "groupCount": 3,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 18,
+          "y": 31
+        },
+        {
+          "x": 26,
+          "y": 31
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": -1,
+              "y": 50
+            },
+            {
+              "x": 19,
+              "y": 51
+            },
+            {
+              "x": 48,
+              "y": 50
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 50,
+              "y": 23
+            },
+            {
+              "x": 53,
+              "y": 42
+            },
+            {
+              "x": 35,
+              "y": 48
+            },
+            {
+              "x": 14,
+              "y": 40
+            },
+            {
+              "x": -2,
+              "y": 27
+            },
+            {
+              "x": 3,
+              "y": 16
+            },
+            {
+              "x": 26,
+              "y": 18
+            }
+          ],
+          "unusedSpritePointer": 5504108
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": 7,
+              "y": 54
+            },
+            {
+              "x": 28,
+              "y": 53
+            },
+            {
+              "x": 45,
+              "y": 53
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 25,
+              "y": -1
+            },
+            {
+              "x": 28,
+              "y": 52
+            },
+            {
+              "x": 11,
+              "y": 47
+            },
+            {
+              "x": 10,
+              "y": 23
+            },
+            {
+              "x": 15,
+              "y": 8
+            },
+            {
+              "x": 39,
+              "y": 9
+            },
+            {
+              "x": 43,
+              "y": 25
+            },
+            {
+              "x": 44,
+              "y": 45
+            }
+          ],
+          "unusedSpritePointer": 5507244
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": -1,
+              "y": 50
+            },
+            {
+              "x": 24,
+              "y": 50
+            },
+            {
+              "x": 48,
+              "y": 49
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 52,
+              "y": 26
+            },
+            {
+              "x": -3,
+              "y": 35
+            },
+            {
+              "x": 7,
+              "y": 49
+            },
+            {
+              "x": 30,
+              "y": 44
+            },
+            {
+              "x": 39,
+              "y": 14
+            },
+            {
+              "x": 18,
+              "y": 17
+            },
+            {
+              "x": 1,
+              "y": 20
+            }
+          ],
+          "unusedSpritePointer": 5511280
+        }
+      ],
+      "unusedSpritePointer": 5504088,
+      "commonName": "npc.pickpocket"
+    }
+  ]
+}

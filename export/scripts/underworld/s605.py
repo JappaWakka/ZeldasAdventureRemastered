@@ -18,7 +18,7 @@ class npc_thirstyChild:
 # Actor description 1
 # Used for actors: [1]
 class item_weapon_goldNecklace:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[GoldNecklace] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class env_teleportPixel:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])
 		
 	def onLoad_maybe(self):
@@ -12,7 +12,7 @@ class env_teleportPixel:
 # Actor description 1
 # Used for actors: [1]
 class env_teleportPixel:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 3])
 		
 	def onLoad_maybe(self):

@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [3]
 class env_door:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 3])
 		
 	def onLoad_maybe(self):
@@ -13,7 +13,7 @@ class env_door:
 # Actor description 1
 # Used for actors: [4]
 class env_passage:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])
 		
 	def onLoad_maybe(self):

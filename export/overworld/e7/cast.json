@@ -1,1 +1,425 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 92, "y": 166}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 1, "spawnCoords": {"x": 105, "y": 222}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType3", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 64, "y": 56}, "groupCount": 2, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 35, "y": 26}, {"x": 34, "y": 32}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 6, "unk_0x18": [{"x": 44, "y": 8}, {"x": 45, "y": 30}, {"x": 44, "y": 53}], "damageSamplePoints_maybe": [{"x": 23, "y": 63}, {"x": 37, "y": 56}, {"x": 48, "y": 42}, {"x": 50, "y": 21}, {"x": 39, "y": 8}, {"x": 27, "y": -2}], "unknownFieldFromSpriteTree": 5497016}, {"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 5, "unk_0x18": [{"x": 44, "y": 6}, {"x": 44, "y": 27}, {"x": 43, "y": 55}], "damageSamplePoints_maybe": [{"x": 32, "y": 56}, {"x": 46, "y": 51}, {"x": 52, "y": 30}, {"x": 46, "y": 12}, {"x": 32, "y": 2}], "unknownFieldFromSpriteTree": 5500236}], "unknownFieldFromSpriteTree": 5497000, "commonName": "npc.unknown20"}, {"size": {"x": 40, "y": 42}, "groupCount": 2, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 200, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 32, "y": 18}, {"x": 32, "y": 22}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 48, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 41, "y": 7}, {"x": 41, "y": 20}, {"x": 42, "y": 33}], "damageSamplePoints_maybe": [{"x": 32, "y": 42}, {"x": 32, "y": -4}, {"x": 46, "y": 9}, {"x": 46, "y": 30}, {"x": 18, "y": 30}, {"x": 5, "y": 25}, {"x": 5, "y": 10}, {"x": 19, "y": 5}], "unknownFieldFromSpriteTree": 5503204}, {"animationFrameOrder": [], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 43, "y": -5}, {"x": 43, "y": 19}, {"x": 42, "y": 43}], "damageSamplePoints_maybe": [{"x": 31, "y": 46}, {"x": 31, "y": -7}, {"x": 47, "y": 2}, {"x": 48, "y": 30}, {"x": 15, "y": 31}, {"x": -2, "y": 27}, {"x": -2, "y": 10}, {"x": 18, "y": 4}], "unknownFieldFromSpriteTree": 5503728}], "unknownFieldFromSpriteTree": 5503188, "commonName": "item.treasure.lifePotion"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 92,
+        "y": 166
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 166,
+          "y": 92
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "setGroup(0)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          }
+        ]
+      }
+    },
+    {
+      "descIndex": 1,
+      "spawnCoords": {
+        "x": 105,
+        "y": 222
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "AnimationActionsOnly",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 64,
+        "y": 56
+      },
+      "groupCount": 2,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 26,
+          "y": 35
+        },
+        {
+          "x": 32,
+          "y": 34
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 6,
+          "treeHeightSamples": [
+            {
+              "x": 8,
+              "y": 44
+            },
+            {
+              "x": 30,
+              "y": 45
+            },
+            {
+              "x": 53,
+              "y": 44
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 63,
+              "y": 23
+            },
+            {
+              "x": 56,
+              "y": 37
+            },
+            {
+              "x": 42,
+              "y": 48
+            },
+            {
+              "x": 21,
+              "y": 50
+            },
+            {
+              "x": 8,
+              "y": 39
+            },
+            {
+              "x": -2,
+              "y": 27
+            }
+          ],
+          "unusedSpritePointer": 5497016
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 5,
+          "treeHeightSamples": [
+            {
+              "x": 6,
+              "y": 44
+            },
+            {
+              "x": 27,
+              "y": 44
+            },
+            {
+              "x": 55,
+              "y": 43
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 56,
+              "y": 32
+            },
+            {
+              "x": 51,
+              "y": 46
+            },
+            {
+              "x": 30,
+              "y": 52
+            },
+            {
+              "x": 12,
+              "y": 46
+            },
+            {
+              "x": 2,
+              "y": 32
+            }
+          ],
+          "unusedSpritePointer": 5500236
+        }
+      ],
+      "unusedSpritePointer": 5497000,
+      "commonName": "npc.unknown20"
+    },
+    {
+      "size": {
+        "x": 40,
+        "y": 42
+      },
+      "groupCount": 2,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 200,
+      "collisionSamplePoints": [
+        {
+          "x": 18,
+          "y": 32
+        },
+        {
+          "x": 22,
+          "y": 32
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Allow(48)",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 7,
+              "y": 41
+            },
+            {
+              "x": 20,
+              "y": 41
+            },
+            {
+              "x": 33,
+              "y": 42
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 42,
+              "y": 32
+            },
+            {
+              "x": -4,
+              "y": 32
+            },
+            {
+              "x": 9,
+              "y": 46
+            },
+            {
+              "x": 30,
+              "y": 46
+            },
+            {
+              "x": 30,
+              "y": 18
+            },
+            {
+              "x": 25,
+              "y": 5
+            },
+            {
+              "x": 10,
+              "y": 5
+            },
+            {
+              "x": 5,
+              "y": 19
+            }
+          ],
+          "unusedSpritePointer": 5503204
+        },
+        {
+          "animationFrameOrder": [],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": -5,
+              "y": 43
+            },
+            {
+              "x": 19,
+              "y": 43
+            },
+            {
+              "x": 43,
+              "y": 42
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 46,
+              "y": 31
+            },
+            {
+              "x": -7,
+              "y": 31
+            },
+            {
+              "x": 2,
+              "y": 47
+            },
+            {
+              "x": 30,
+              "y": 48
+            },
+            {
+              "x": 31,
+              "y": 15
+            },
+            {
+              "x": 27,
+              "y": -2
+            },
+            {
+              "x": 10,
+              "y": -2
+            },
+            {
+              "x": 4,
+              "y": 18
+            }
+          ],
+          "unusedSpritePointer": 5503728
+        }
+      ],
+      "unusedSpritePointer": 5503188,
+      "commonName": "item.treasure.lifePotion"
+    }
+  ]
+}

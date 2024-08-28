@@ -15,7 +15,7 @@ class enemy_wizzrobe:
 # Actor description 2
 # Used for actors: [2]
 class item_compass_s2:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Compass2] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

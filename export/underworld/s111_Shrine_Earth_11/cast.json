@@ -1,1 +1,1029 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 0, "y": 0}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 80, "y": 49}, "groupCount": 1, "maxHealth_maybe": 60, "useCostOrDefense": 10, "baseDamageOrPurchasePrice_maybe": 45, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 34, "y": 34}, {"x": 35, "y": 42}], "unk_0x24": 4, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 2, "unk_0x18": [{"x": 40, "y": 39}, {"x": 39, "y": 6}, {"x": 40, "y": 78}], "damageSamplePoints_maybe": [{"x": 32, "y": 69}, {"x": 11, "y": 55}, {"x": 11, "y": 20}, {"x": 30, "y": 8}, {"x": 37, "y": 36}, {"x": 16, "y": 38}, {"x": 29, "y": 54}, {"x": 28, "y": 28}], "unknownFieldFromSpriteTree": 5390676}], "unknownFieldFromSpriteTree": 5390664, "commonName": "enemy.keese"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 0,
+        "y": 0
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 2,
+          "y": 104
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "setGroup(0)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 2,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 2,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 4,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 4,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 4,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 4,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -4,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 4,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 2,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 2,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 2,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 2,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -8
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -4,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -4,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 4,
+              "y": 4
+            },
+            "command": "InvalidOp15(15)"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -4,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -4,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -8
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          }
+        ]
+      }
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 80,
+        "y": 49
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 60,
+      "useCostOrDefense": 10,
+      "baseDamageOrPurchasePrice_maybe": 45,
+      "collisionSamplePoints": [
+        {
+          "x": 34,
+          "y": 34
+        },
+        {
+          "x": 42,
+          "y": 35
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Random",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 2,
+          "treeHeightSamples": [
+            {
+              "x": 39,
+              "y": 40
+            },
+            {
+              "x": 6,
+              "y": 39
+            },
+            {
+              "x": 78,
+              "y": 40
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 69,
+              "y": 32
+            },
+            {
+              "x": 55,
+              "y": 11
+            },
+            {
+              "x": 20,
+              "y": 11
+            },
+            {
+              "x": 8,
+              "y": 30
+            },
+            {
+              "x": 36,
+              "y": 37
+            },
+            {
+              "x": 38,
+              "y": 16
+            },
+            {
+              "x": 54,
+              "y": 29
+            },
+            {
+              "x": 28,
+              "y": 28
+            }
+          ],
+          "unusedSpritePointer": 5390676
+        }
+      ],
+      "unusedSpritePointer": 5390664,
+      "commonName": "enemy.keese"
+    }
+  ]
+}

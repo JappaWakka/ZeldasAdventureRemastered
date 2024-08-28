@@ -1,1 +1,697 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 0, "y": 0}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 1, "spawnCoords": {"x": 0, "y": 0}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 2, "spawnCoords": {"x": 132, "y": 100}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType3", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 3, "spawnCoords": {"x": 154, "y": 174}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType3", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 72, "y": 70}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 46, "y": 30}, {"x": 46, "y": 38}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 5, "unk_0x18": [{"x": 53, "y": 72}, {"x": 54, "y": 36}, {"x": 52, "y": -2}], "damageSamplePoints_maybe": [{"x": 38, "y": 78}, {"x": 57, "y": 64}, {"x": 57, "y": 34}, {"x": 56, "y": 1}, {"x": 39, "y": -8}], "unknownFieldFromSpriteTree": 5491636}], "unknownFieldFromSpriteTree": 5491624, "commonName": "npc.ericAndIan"}, {"size": {"x": 60, "y": 53}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 43, "y": 28}, {"x": 43, "y": 38}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 50, "y": 13}, {"x": 50, "y": 31}, {"x": 50, "y": 50}], "damageSamplePoints_maybe": [{"x": 2, "y": 29}, {"x": 52, "y": 34}, {"x": 36, "y": 48}, {"x": 20, "y": 45}, {"x": 11, "y": 15}, {"x": 29, "y": 16}, {"x": 42, "y": 22}], "unknownFieldFromSpriteTree": 5497144}], "unknownFieldFromSpriteTree": 5497132, "commonName": "npc.yvonne"}, {"size": {"x": 32, "y": 32}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 28, "y": 10}, {"x": 27, "y": 18}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 28, "y": -3}, {"x": 28, "y": 16}, {"x": 28, "y": 31}], "damageSamplePoints_maybe": [{"x": 4, "y": 33}, {"x": 19, "y": 33}, {"x": 29, "y": 21}, {"x": 28, "y": 5}, {"x": 17, "y": -4}, {"x": 4, "y": -1}, {"x": 0, "y": 15}], "unknownFieldFromSpriteTree": 5502824}], "unknownFieldFromSpriteTree": 5502812, "commonName": "item.treasure.harp"}, {"size": {"x": 32, "y": 32}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 15, "y": 10}, {"x": 15, "y": 18}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 30, "y": -3}, {"x": 29, "y": 18}, {"x": 28, "y": 36}], "damageSamplePoints_maybe": [{"x": -3, "y": 32}, {"x": 32, "y": -1}, {"x": 11, "y": 26}, {"x": 22, "y": 15}, {"x": 18, "y": 4}, {"x": 6, "y": 16}], "unknownFieldFromSpriteTree": 5503544}], "unknownFieldFromSpriteTree": 5503532, "commonName": "item.treasure.flute"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 0,
+        "y": 0
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 276,
+          "y": 127
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "setGroup(0)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          }
+        ]
+      }
+    },
+    {
+      "descIndex": 1,
+      "spawnCoords": {
+        "x": 0,
+        "y": 0
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 122,
+          "y": 100
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "setGroup(0)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          }
+        ]
+      }
+    },
+    {
+      "descIndex": 2,
+      "spawnCoords": {
+        "x": 132,
+        "y": 100
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "AnimationActionsOnly",
+      "animation": null
+    },
+    {
+      "descIndex": 3,
+      "spawnCoords": {
+        "x": 154,
+        "y": 174
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "AnimationActionsOnly",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 72,
+        "y": 70
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 30,
+          "y": 46
+        },
+        {
+          "x": 38,
+          "y": 46
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 5,
+          "treeHeightSamples": [
+            {
+              "x": 72,
+              "y": 53
+            },
+            {
+              "x": 36,
+              "y": 54
+            },
+            {
+              "x": -2,
+              "y": 52
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 78,
+              "y": 38
+            },
+            {
+              "x": 64,
+              "y": 57
+            },
+            {
+              "x": 34,
+              "y": 57
+            },
+            {
+              "x": 1,
+              "y": 56
+            },
+            {
+              "x": -8,
+              "y": 39
+            }
+          ],
+          "unusedSpritePointer": 5491636
+        }
+      ],
+      "unusedSpritePointer": 5491624,
+      "commonName": "npc.ericAndIan"
+    },
+    {
+      "size": {
+        "x": 60,
+        "y": 53
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 28,
+          "y": 43
+        },
+        {
+          "x": 38,
+          "y": 43
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": 13,
+              "y": 50
+            },
+            {
+              "x": 31,
+              "y": 50
+            },
+            {
+              "x": 50,
+              "y": 50
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 29,
+              "y": 2
+            },
+            {
+              "x": 34,
+              "y": 52
+            },
+            {
+              "x": 48,
+              "y": 36
+            },
+            {
+              "x": 45,
+              "y": 20
+            },
+            {
+              "x": 15,
+              "y": 11
+            },
+            {
+              "x": 16,
+              "y": 29
+            },
+            {
+              "x": 22,
+              "y": 42
+            }
+          ],
+          "unusedSpritePointer": 5497144
+        }
+      ],
+      "unusedSpritePointer": 5497132,
+      "commonName": "npc.yvonne"
+    },
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 10,
+          "y": 28
+        },
+        {
+          "x": 18,
+          "y": 27
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": -3,
+              "y": 28
+            },
+            {
+              "x": 16,
+              "y": 28
+            },
+            {
+              "x": 31,
+              "y": 28
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 33,
+              "y": 4
+            },
+            {
+              "x": 33,
+              "y": 19
+            },
+            {
+              "x": 21,
+              "y": 29
+            },
+            {
+              "x": 5,
+              "y": 28
+            },
+            {
+              "x": -4,
+              "y": 17
+            },
+            {
+              "x": -1,
+              "y": 4
+            },
+            {
+              "x": 15,
+              "y": 0
+            }
+          ],
+          "unusedSpritePointer": 5502824
+        }
+      ],
+      "unusedSpritePointer": 5502812,
+      "commonName": "item.treasure.harp"
+    },
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 10,
+          "y": 15
+        },
+        {
+          "x": 18,
+          "y": 15
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": -3,
+              "y": 30
+            },
+            {
+              "x": 18,
+              "y": 29
+            },
+            {
+              "x": 36,
+              "y": 28
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 32,
+              "y": -3
+            },
+            {
+              "x": -1,
+              "y": 32
+            },
+            {
+              "x": 26,
+              "y": 11
+            },
+            {
+              "x": 15,
+              "y": 22
+            },
+            {
+              "x": 4,
+              "y": 18
+            },
+            {
+              "x": 16,
+              "y": 6
+            }
+          ],
+          "unusedSpritePointer": 5503544
+        }
+      ],
+      "unusedSpritePointer": 5503532,
+      "commonName": "item.treasure.flute"
+    }
+  ]
+}

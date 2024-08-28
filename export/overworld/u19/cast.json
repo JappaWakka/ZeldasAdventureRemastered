@@ -1,1 +1,93 @@
-{"actors": [], "descriptions": [{"size": {"x": 32, "y": 32}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 18, "y": 10}, {"x": 16, "y": 20}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 28, "y": -3}, {"x": 29, "y": 14}, {"x": 28, "y": 34}], "damageSamplePoints_maybe": [{"x": 30, "y": 35}, {"x": -1, "y": -3}, {"x": 2, "y": 13}, {"x": 13, "y": -2}, {"x": 19, "y": 11}, {"x": 27, "y": 20}, {"x": 20, "y": 26}, {"x": 11, "y": 19}], "unknownFieldFromSpriteTree": 5491460}], "unknownFieldFromSpriteTree": 5491448, "commonName": "item.weapon.trident"}]}
+{
+  "actors": [],
+  "descriptions": [
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 10,
+          "y": 18
+        },
+        {
+          "x": 20,
+          "y": 16
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": -3,
+              "y": 28
+            },
+            {
+              "x": 14,
+              "y": 29
+            },
+            {
+              "x": 34,
+              "y": 28
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 35,
+              "y": 30
+            },
+            {
+              "x": -3,
+              "y": -1
+            },
+            {
+              "x": 13,
+              "y": 2
+            },
+            {
+              "x": -2,
+              "y": 13
+            },
+            {
+              "x": 11,
+              "y": 19
+            },
+            {
+              "x": 20,
+              "y": 27
+            },
+            {
+              "x": 26,
+              "y": 20
+            },
+            {
+              "x": 19,
+              "y": 11
+            }
+          ],
+          "unusedSpritePointer": 5491460
+        }
+      ],
+      "unusedSpritePointer": 5491448,
+      "commonName": "item.weapon.trident"
+    }
+  ]
+}

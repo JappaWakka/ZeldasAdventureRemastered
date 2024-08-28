@@ -19,7 +19,7 @@ class enemy_guard:
 # Actor description 1
 # Used for actors: [1]
 class item_weapon_broadsword:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Broadsword] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_unknownActor323:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 0] == 0:
 			rupees -= 25
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'

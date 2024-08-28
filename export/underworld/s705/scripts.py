@@ -16,7 +16,7 @@ class enemy_lavaLizard:
 # Actor description 2
 # Used for actors: [4]
 class item_map_s7:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Map7] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

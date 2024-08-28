@@ -3,9 +3,9 @@
 # Actor description 0
 # Used for actors: [0]
 class env_celestialSign:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[SIGN_S2] = 1 # 0x1, b'\x00\x01'
-		setUnkCallback_teleportToShrineExit(shrine=0)
+		exitShrineAndPlayMovie(shrine=1)
 		
 	def onLoad_maybe(self):
 		if save[SIGN_S2] == 0:

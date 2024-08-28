@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_unknownActor170:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 0] == 0:
 			playVoiceLine(source=self, soundId=1)
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
@@ -18,7 +18,7 @@ class npc_unknownActor170:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_bouquet:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -37,7 +37,7 @@ class item_treasure_bouquet:
 # Actor description 2
 # Used for actors: [2]
 class item_treasure_redBow:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -56,7 +56,7 @@ class item_treasure_redBow:
 # Actor description 3
 # Used for actors: [3]
 class item_treasure_saltcellar:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[Saltcellar] == 0:
 			registerAsTreasureListener(actor=self)
 		

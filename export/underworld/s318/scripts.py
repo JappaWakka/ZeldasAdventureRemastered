@@ -47,7 +47,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 12601 # 0x3139, b'19'
 		save[CELL_LEFT + 2] = 115 # 0x73, b'\x00s'
 		save[RESPAWN_CELL_ID_maybe] = 18 # 0x12, b'\x00\x12'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 	def onTouchTrigger(self):
 		if save[148] == 3:

@@ -15,7 +15,7 @@ class npc_blacksmith:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_candle:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -34,7 +34,7 @@ class item_treasure_candle:
 # Actor description 2
 # Used for actors: [2]
 class item_treasure_diamond:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[Diamond] == 2:
 			save[Diamond] = 1 # 0x1, b'\x00\x01'
 			rupees += 1000

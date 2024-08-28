@@ -17,7 +17,7 @@ class enemy_goriya:
 # Actor description 2
 # Used for actors: [2]
 class item_treasure_dagger:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Knife] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -28,7 +28,7 @@ class item_treasure_dagger:
 # Actor description 3
 # Used for actors: [3]
 class env_rippedTentWall:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 1])
 		
 	def onItemInteractOrSoundFileDone(self):

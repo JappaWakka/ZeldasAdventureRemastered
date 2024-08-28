@@ -26,7 +26,7 @@ class npc_madameKriggle:
 # Actor description 1
 # Used for actors: [1]
 class item_weapon_turquoiseRing:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -46,7 +46,7 @@ class item_weapon_turquoiseRing:
 # Actor description 2
 # Used for actors: [2]
 class item_weapon_jadeAmulet:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[JadeAmulet] == 0:
 			registerAsTreasureListener(actor=self)
 		
@@ -66,7 +66,7 @@ class item_weapon_jadeAmulet:
 # Actor description 3
 # Used for actors: [3]
 class item_weapon_ringsOfFire:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):

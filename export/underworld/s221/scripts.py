@@ -2,7 +2,7 @@
 
 # Actor description 0
 # Used for actors: [0, 1, 2]
-class npc_molluska:
+class enemy_molluska:
 	def onDeathOrRaftRideFinished(self):
 		if save[LOCALS + 0] == 2:
 			nop

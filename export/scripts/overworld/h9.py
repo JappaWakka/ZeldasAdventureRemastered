@@ -15,7 +15,7 @@ class npc_friendlyGoblin:
 # Actor description 1
 # Used for actors: [1]
 class item_weapon_joust:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Joust] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

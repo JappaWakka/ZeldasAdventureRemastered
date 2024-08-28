@@ -22,7 +22,7 @@ class npc_beggar:
 # Actor description 1
 # Used for actors: [1]
 class env_teleportPixel:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])
 		
 	def onLoad_maybe(self):
@@ -31,7 +31,7 @@ class env_teleportPixel:
 # Actor description 2
 # Used for actors: [2]
 class item_weapon_firestorm:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Firestorm] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -62,7 +62,7 @@ class Cell:
 			player.x = 104
 			player.y = 144
 		
-	def onRespawn_maybe(self):
+	def onLeave(self):
 		save[INSIDE_MOBLIN_INN] = 0 # 0x0, b'\x00\x00'
 		
 	def onTouchTrigger(self):

@@ -16,7 +16,7 @@ class enemy_loccasin:
 # Actor description 1
 # Used for actors: [3]
 class item_weapon_bowAndArrow:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[BowAndArrow] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -42,7 +42,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 0 # 0x0, b'\x00\x00'
 		save[CELL_LEFT + 2] = 0 # 0x0, b'\x00\x00'
 		save[RESPAWN_CELL_ID_maybe] = 4 # 0x4, b'\x00\x04'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 # Local variables
 local0 = 0 # 0x0, b'\x00\x00'

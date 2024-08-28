@@ -26,7 +26,7 @@ class enemy_jack:
 # Actor description 2
 # Used for actors: [3]
 class item_compass_s4:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Compass4] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

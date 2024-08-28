@@ -23,7 +23,7 @@ class npc_sirramBew:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_vialOfAcid:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[VialOfAcid] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

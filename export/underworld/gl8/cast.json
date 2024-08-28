@@ -1,1 +1,1630 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 1, "y": 140}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 2, "spawnCoords": {"x": 26, "y": 40}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 140, "y": 110}, "groupCount": 3, "maxHealth_maybe": 0, "useCostOrDefense": 40, "baseDamageOrPurchasePrice_maybe": 82, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 90, "y": 50}, {"x": 89, "y": 64}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 3, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "Boss", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 3, 3, 2, 1], "unk_0x12": 0, "frameDelay": 2, "unk_0x18": [{"x": 97, "y": 10}, {"x": 97, "y": 71}, {"x": 91, "y": 136}], "damageSamplePoints_maybe": [{"x": 33, "y": 33}, {"x": 50, "y": 42}, {"x": 76, "y": 38}, {"x": 83, "y": 60}, {"x": 81, "y": 90}, {"x": 65, "y": 109}, {"x": 56, "y": 90}, {"x": 32, "y": 93}], "unknownFieldFromSpriteTree": 5517276}, {"animationFrameOrder": [3, 2, 1, 0], "unk_0x12": 0, "frameDelay": 2, "unk_0x18": [{"x": 96, "y": 12}, {"x": 97, "y": 67}, {"x": 91, "y": 137}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5535176}, {"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 0, "y": 0}, {"x": 0, "y": 0}, {"x": 0, "y": 0}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5543608}], "unknownFieldFromSpriteTree": 5517256, "commonName": "enemy.ganon"}, {"size": {"x": 32, "y": 32}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 102, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 16, "y": 10}, {"x": 16, "y": 21}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "Hazzard", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 1, 2], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 29, "y": -2}, {"x": 30, "y": 14}, {"x": 29, "y": 31}], "damageSamplePoints_maybe": [{"x": 8, "y": 4}, {"x": 16, "y": 0}, {"x": 25, "y": 5}, {"x": 29, "y": 16}, {"x": 25, "y": 25}, {"x": 18, "y": 30}, {"x": 9, "y": 29}, {"x": 5, "y": 24}], "unknownFieldFromSpriteTree": 5543640}], "unknownFieldFromSpriteTree": 5543628, "commonName": "enemy.ganon.projectile"}, {"size": {"x": 52, "y": 52}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 0, "y": 0}, {"x": 0, "y": 0}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 3, 2], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 45, "y": 0}, {"x": 47, "y": 25}, {"x": 46, "y": 48}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5544796}], "unknownFieldFromSpriteTree": 5544784, "commonName": "enemy.ganonFairy"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 1,
+        "y": 140
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 2,
+      "spawnCoords": {
+        "x": 26,
+        "y": 40
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 40,
+          "y": 26
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "setGroup(0)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "triggerAndDespawn()"
+          }
+        ]
+      }
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 140,
+        "y": 110
+      },
+      "groupCount": 3,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 40,
+      "baseDamageOrPurchasePrice_maybe": 82,
+      "collisionSamplePoints": [
+        {
+          "x": 50,
+          "y": 90
+        },
+        {
+          "x": 64,
+          "y": 89
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 3,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Boss",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            3,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 2,
+          "treeHeightSamples": [
+            {
+              "x": 10,
+              "y": 97
+            },
+            {
+              "x": 71,
+              "y": 97
+            },
+            {
+              "x": 136,
+              "y": 91
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 33,
+              "y": 33
+            },
+            {
+              "x": 42,
+              "y": 50
+            },
+            {
+              "x": 38,
+              "y": 76
+            },
+            {
+              "x": 60,
+              "y": 83
+            },
+            {
+              "x": 90,
+              "y": 81
+            },
+            {
+              "x": 109,
+              "y": 65
+            },
+            {
+              "x": 90,
+              "y": 56
+            },
+            {
+              "x": 93,
+              "y": 32
+            }
+          ],
+          "unusedSpritePointer": 5517276
+        },
+        {
+          "animationFrameOrder": [
+            3,
+            2,
+            1,
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 2,
+          "treeHeightSamples": [
+            {
+              "x": 12,
+              "y": 96
+            },
+            {
+              "x": 67,
+              "y": 97
+            },
+            {
+              "x": 137,
+              "y": 91
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5535176
+        },
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5543608
+        }
+      ],
+      "unusedSpritePointer": 5517256,
+      "commonName": "enemy.ganon"
+    },
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 102,
+      "collisionSamplePoints": [
+        {
+          "x": 10,
+          "y": 16
+        },
+        {
+          "x": 21,
+          "y": 16
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Hazzard",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1,
+            2
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": -2,
+              "y": 29
+            },
+            {
+              "x": 14,
+              "y": 30
+            },
+            {
+              "x": 31,
+              "y": 29
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 4,
+              "y": 8
+            },
+            {
+              "x": 0,
+              "y": 16
+            },
+            {
+              "x": 5,
+              "y": 25
+            },
+            {
+              "x": 16,
+              "y": 29
+            },
+            {
+              "x": 25,
+              "y": 25
+            },
+            {
+              "x": 30,
+              "y": 18
+            },
+            {
+              "x": 29,
+              "y": 9
+            },
+            {
+              "x": 24,
+              "y": 5
+            }
+          ],
+          "unusedSpritePointer": 5543640
+        }
+      ],
+      "unusedSpritePointer": 5543628,
+      "commonName": "enemy.ganon.projectile"
+    },
+    {
+      "size": {
+        "x": 52,
+        "y": 52
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 45
+            },
+            {
+              "x": 25,
+              "y": 47
+            },
+            {
+              "x": 48,
+              "y": 46
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5544796
+        }
+      ],
+      "unusedSpritePointer": 5544784,
+      "commonName": "enemy.ganonFairy"
+    }
+  ]
+}

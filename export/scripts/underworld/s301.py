@@ -7,7 +7,7 @@ class npc_unknownActor166:
 		if save[LOCALS + 3] == 1:
 			allowPlayerInputs = True
 		
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 3] == 0:
 			teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])
 		

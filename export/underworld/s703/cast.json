@@ -1,1 +1,563 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 59, "y": 170}, "health": 30, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 56, "y": 50}, "groupCount": 4, "maxHealth_maybe": 60, "useCostOrDefense": 30, "baseDamageOrPurchasePrice_maybe": 81, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 41, "y": 22}, {"x": 41, "y": 28}], "unk_0x24": 4, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 1, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 50, "y": 10}, {"x": 50, "y": 29}, {"x": 49, "y": 48}], "damageSamplePoints_maybe": [{"x": 2, "y": 25}, {"x": 53, "y": 28}, {"x": 27, "y": 43}, {"x": 28, "y": 10}, {"x": 12, "y": 14}, {"x": 10, "y": 41}, {"x": 43, "y": 37}, {"x": 42, "y": 13}], "unknownFieldFromSpriteTree": 5491536}, {"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 43, "y": 8}, {"x": 43, "y": 23}, {"x": 43, "y": 39}], "damageSamplePoints_maybe": [{"x": 1, "y": 20}, {"x": 44, "y": 24}, {"x": 23, "y": 44}, {"x": 23, "y": 7}, {"x": 7, "y": 7}, {"x": 11, "y": 34}, {"x": 36, "y": 38}, {"x": 36, "y": 14}], "unknownFieldFromSpriteTree": 5496480}, {"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 43, "y": 10}, {"x": 42, "y": 27}, {"x": 41, "y": 45}], "damageSamplePoints_maybe": [{"x": -5, "y": 28}, {"x": 46, "y": 28}, {"x": 23, "y": 44}, {"x": 22, "y": 12}, {"x": 6, "y": 18}, {"x": 6, "y": 38}, {"x": 36, "y": 42}, {"x": 39, "y": 19}], "unknownFieldFromSpriteTree": 5501260}, {"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 45, "y": 13}, {"x": 44, "y": 31}, {"x": 43, "y": 50}], "damageSamplePoints_maybe": [{"x": -2, "y": 34}, {"x": 45, "y": 32}, {"x": 26, "y": 50}, {"x": 25, "y": 14}, {"x": 10, "y": 23}, {"x": 8, "y": 46}, {"x": 37, "y": 45}, {"x": 39, "y": 22}], "unknownFieldFromSpriteTree": 5506920}], "unknownFieldFromSpriteTree": 5491512, "commonName": "enemy.spearThrower"}, {"size": {"x": 21, "y": 18}, "groupCount": 4, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 80, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 21, "y": 26}, {"x": 21, "y": 17}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 48, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 45, "y": 15}, {"x": 45, "y": 21}, {"x": 45, "y": 27}], "damageSamplePoints_maybe": [{"x": -2, "y": 21}, {"x": 44, "y": 22}, {"x": 12, "y": 25}, {"x": 24, "y": 25}, {"x": 34, "y": 26}, {"x": 35, "y": 18}, {"x": 24, "y": 18}, {"x": 11, "y": 18}], "unknownFieldFromSpriteTree": 5511724}, {"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 27, "y": -2}, {"x": 28, "y": 20}, {"x": 29, "y": 43}], "damageSamplePoints_maybe": [{"x": 21, "y": 45}, {"x": 21, "y": -4}, {"x": 18, "y": 9}, {"x": 18, "y": 21}, {"x": 18, "y": 33}, {"x": 24, "y": 33}, {"x": 24, "y": 22}, {"x": 24, "y": 8}], "unknownFieldFromSpriteTree": 5512096}, {"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 45, "y": 13}, {"x": 45, "y": 22}, {"x": 46, "y": 30}], "damageSamplePoints_maybe": [{"x": -2, "y": 21}, {"x": 45, "y": 21}, {"x": 12, "y": 25}, {"x": 24, "y": 25}, {"x": 35, "y": 26}, {"x": 35, "y": 18}, {"x": 23, "y": 17}, {"x": 10, "y": 18}], "unknownFieldFromSpriteTree": 5512232}, {"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 27, "y": -1}, {"x": 28, "y": 23}, {"x": 27, "y": 46}], "damageSamplePoints_maybe": [{"x": 22, "y": -4}, {"x": 21, "y": 45}, {"x": 19, "y": 32}, {"x": 20, "y": 18}, {"x": 19, "y": 6}, {"x": 24, "y": 8}, {"x": 24, "y": 21}, {"x": 24, "y": 34}], "unknownFieldFromSpriteTree": 5512604}], "unknownFieldFromSpriteTree": 5511700, "commonName": "enemy.spearThrower.projectile"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 59,
+        "y": 170
+      },
+      "health": 30,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 56,
+        "y": 50
+      },
+      "groupCount": 4,
+      "maxHealth_maybe": 60,
+      "useCostOrDefense": 30,
+      "baseDamageOrPurchasePrice_maybe": 81,
+      "collisionSamplePoints": [
+        {
+          "x": 22,
+          "y": 41
+        },
+        {
+          "x": 28,
+          "y": 41
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Allow(1)",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Random",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 10,
+              "y": 50
+            },
+            {
+              "x": 29,
+              "y": 50
+            },
+            {
+              "x": 48,
+              "y": 49
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 25,
+              "y": 2
+            },
+            {
+              "x": 28,
+              "y": 53
+            },
+            {
+              "x": 43,
+              "y": 27
+            },
+            {
+              "x": 10,
+              "y": 28
+            },
+            {
+              "x": 14,
+              "y": 12
+            },
+            {
+              "x": 41,
+              "y": 10
+            },
+            {
+              "x": 37,
+              "y": 43
+            },
+            {
+              "x": 13,
+              "y": 42
+            }
+          ],
+          "unusedSpritePointer": 5491536
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 8,
+              "y": 43
+            },
+            {
+              "x": 23,
+              "y": 43
+            },
+            {
+              "x": 39,
+              "y": 43
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 20,
+              "y": 1
+            },
+            {
+              "x": 24,
+              "y": 44
+            },
+            {
+              "x": 44,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 23
+            },
+            {
+              "x": 7,
+              "y": 7
+            },
+            {
+              "x": 34,
+              "y": 11
+            },
+            {
+              "x": 38,
+              "y": 36
+            },
+            {
+              "x": 14,
+              "y": 36
+            }
+          ],
+          "unusedSpritePointer": 5496480
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 10,
+              "y": 43
+            },
+            {
+              "x": 27,
+              "y": 42
+            },
+            {
+              "x": 45,
+              "y": 41
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 28,
+              "y": -5
+            },
+            {
+              "x": 28,
+              "y": 46
+            },
+            {
+              "x": 44,
+              "y": 23
+            },
+            {
+              "x": 12,
+              "y": 22
+            },
+            {
+              "x": 18,
+              "y": 6
+            },
+            {
+              "x": 38,
+              "y": 6
+            },
+            {
+              "x": 42,
+              "y": 36
+            },
+            {
+              "x": 19,
+              "y": 39
+            }
+          ],
+          "unusedSpritePointer": 5501260
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 13,
+              "y": 45
+            },
+            {
+              "x": 31,
+              "y": 44
+            },
+            {
+              "x": 50,
+              "y": 43
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 34,
+              "y": -2
+            },
+            {
+              "x": 32,
+              "y": 45
+            },
+            {
+              "x": 50,
+              "y": 26
+            },
+            {
+              "x": 14,
+              "y": 25
+            },
+            {
+              "x": 23,
+              "y": 10
+            },
+            {
+              "x": 46,
+              "y": 8
+            },
+            {
+              "x": 45,
+              "y": 37
+            },
+            {
+              "x": 22,
+              "y": 39
+            }
+          ],
+          "unusedSpritePointer": 5506920
+        }
+      ],
+      "unusedSpritePointer": 5491512,
+      "commonName": "enemy.spearThrower"
+    },
+    {
+      "size": {
+        "x": 21,
+        "y": 18
+      },
+      "groupCount": 4,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 80,
+      "collisionSamplePoints": [
+        {
+          "x": 26,
+          "y": 21
+        },
+        {
+          "x": 17,
+          "y": 21
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Allow(48)",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 15,
+              "y": 45
+            },
+            {
+              "x": 21,
+              "y": 45
+            },
+            {
+              "x": 27,
+              "y": 45
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 21,
+              "y": -2
+            },
+            {
+              "x": 22,
+              "y": 44
+            },
+            {
+              "x": 25,
+              "y": 12
+            },
+            {
+              "x": 25,
+              "y": 24
+            },
+            {
+              "x": 26,
+              "y": 34
+            },
+            {
+              "x": 18,
+              "y": 35
+            },
+            {
+              "x": 18,
+              "y": 24
+            },
+            {
+              "x": 18,
+              "y": 11
+            }
+          ],
+          "unusedSpritePointer": 5511724
+        },
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": -2,
+              "y": 27
+            },
+            {
+              "x": 20,
+              "y": 28
+            },
+            {
+              "x": 43,
+              "y": 29
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 45,
+              "y": 21
+            },
+            {
+              "x": -4,
+              "y": 21
+            },
+            {
+              "x": 9,
+              "y": 18
+            },
+            {
+              "x": 21,
+              "y": 18
+            },
+            {
+              "x": 33,
+              "y": 18
+            },
+            {
+              "x": 33,
+              "y": 24
+            },
+            {
+              "x": 22,
+              "y": 24
+            },
+            {
+              "x": 8,
+              "y": 24
+            }
+          ],
+          "unusedSpritePointer": 5512096
+        },
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 13,
+              "y": 45
+            },
+            {
+              "x": 22,
+              "y": 45
+            },
+            {
+              "x": 30,
+              "y": 46
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 21,
+              "y": -2
+            },
+            {
+              "x": 21,
+              "y": 45
+            },
+            {
+              "x": 25,
+              "y": 12
+            },
+            {
+              "x": 25,
+              "y": 24
+            },
+            {
+              "x": 26,
+              "y": 35
+            },
+            {
+              "x": 18,
+              "y": 35
+            },
+            {
+              "x": 17,
+              "y": 23
+            },
+            {
+              "x": 18,
+              "y": 10
+            }
+          ],
+          "unusedSpritePointer": 5512232
+        },
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": -1,
+              "y": 27
+            },
+            {
+              "x": 23,
+              "y": 28
+            },
+            {
+              "x": 46,
+              "y": 27
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": -4,
+              "y": 22
+            },
+            {
+              "x": 45,
+              "y": 21
+            },
+            {
+              "x": 32,
+              "y": 19
+            },
+            {
+              "x": 18,
+              "y": 20
+            },
+            {
+              "x": 6,
+              "y": 19
+            },
+            {
+              "x": 8,
+              "y": 24
+            },
+            {
+              "x": 21,
+              "y": 24
+            },
+            {
+              "x": 34,
+              "y": 24
+            }
+          ],
+          "unusedSpritePointer": 5512604
+        }
+      ],
+      "unusedSpritePointer": 5511700,
+      "commonName": "enemy.spearThrower.projectile"
+    }
+  ]
+}

@@ -10,14 +10,14 @@ class npc_merchant_unknownActor189:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_alligatorBoots:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[AlligatorShoes] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
 # Actor description 2
 # Used for actors: [2]
 class item_treasure_deepFriedOctorokLegs:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -34,7 +34,7 @@ class item_treasure_deepFriedOctorokLegs:
 # Actor description 3
 # Used for actors: [3]
 class item_treasure_repellent:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):

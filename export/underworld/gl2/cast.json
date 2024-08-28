@@ -1,1 +1,1082 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 6, "y": 112}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 2, "spawnCoords": {"x": 58, "y": 136}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 160, "y": 125}, "groupCount": 3, "maxHealth_maybe": 70, "useCostOrDefense": 24, "baseDamageOrPurchasePrice_maybe": 55, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 0, "y": 0}, {"x": 0, "y": 0}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 3, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "Boss", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 93, "y": 71}, {"x": 93, "y": 95}, {"x": 90, "y": 123}], "damageSamplePoints_maybe": [{"x": 23, "y": 76}, {"x": 37, "y": 69}, {"x": 54, "y": 72}, {"x": 82, "y": 75}, {"x": 91, "y": 103}, {"x": 75, "y": 111}, {"x": 57, "y": 114}, {"x": 31, "y": 122}], "unknownFieldFromSpriteTree": 5508480}, {"animationFrameOrder": [0, 1, 2, 3, 4, 5], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 98, "y": 28}, {"x": 98, "y": 82}, {"x": 97, "y": 132}], "damageSamplePoints_maybe": [{"x": 39, "y": 57}, {"x": 65, "y": 61}, {"x": 90, "y": 73}, {"x": 94, "y": 100}, {"x": 69, "y": 113}, {"x": 41, "y": 115}, {"x": 29, "y": 108}, {"x": 78, "y": 68}], "unknownFieldFromSpriteTree": 5511652}, {"animationFrameOrder": [0, 1, 2, 3, 4, 5], "unk_0x12": 0, "frameDelay": 2, "unk_0x18": [{"x": 123, "y": 2}, {"x": 122, "y": 87}, {"x": 120, "y": 162}], "damageSamplePoints_maybe": [{"x": 92, "y": 147}, {"x": 79, "y": 23}, {"x": 95, "y": 39}, {"x": 110, "y": 55}, {"x": 116, "y": 87}, {"x": 95, "y": 85}, {"x": 108, "y": 122}], "unknownFieldFromSpriteTree": 5527152}], "unknownFieldFromSpriteTree": 5508460, "commonName": "enemy.pasquinade"}, {"size": {"x": 28, "y": 28}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 82, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 12, "y": 6}, {"x": 13, "y": 22}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "Hazzard", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3], "unk_0x12": 0, "frameDelay": 2, "unk_0x18": [{"x": 25, "y": 1}, {"x": 28, "y": 14}, {"x": 27, "y": 28}], "damageSamplePoints_maybe": [{"x": 4, "y": 1}, {"x": 11, "y": -3}, {"x": 24, "y": 1}, {"x": 28, "y": 12}, {"x": 25, "y": 26}, {"x": 17, "y": 30}, {"x": 5, "y": 30}, {"x": -2, "y": 14}], "unknownFieldFromSpriteTree": 5547896}], "unknownFieldFromSpriteTree": 5547884, "commonName": "enemy.pasquinade.projectile"}, {"size": {"x": 52, "y": 52}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 0, "y": 0}, {"x": 0, "y": 0}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 3, 2], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 45, "y": 0}, {"x": 47, "y": 25}, {"x": 46, "y": 48}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5550900}], "unknownFieldFromSpriteTree": 5550888, "commonName": "enemy.ganonFairy"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 6,
+        "y": 112
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 2,
+      "spawnCoords": {
+        "x": 58,
+        "y": 136
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 136,
+          "y": 58
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "setGroup(0)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -4
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "triggerAndDespawn()"
+          }
+        ]
+      }
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 160,
+        "y": 125
+      },
+      "groupCount": 3,
+      "maxHealth_maybe": 70,
+      "useCostOrDefense": 24,
+      "baseDamageOrPurchasePrice_maybe": 55,
+      "collisionSamplePoints": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 3,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Boss",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 71,
+              "y": 93
+            },
+            {
+              "x": 95,
+              "y": 93
+            },
+            {
+              "x": 123,
+              "y": 90
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 76,
+              "y": 23
+            },
+            {
+              "x": 69,
+              "y": 37
+            },
+            {
+              "x": 72,
+              "y": 54
+            },
+            {
+              "x": 75,
+              "y": 82
+            },
+            {
+              "x": 103,
+              "y": 91
+            },
+            {
+              "x": 111,
+              "y": 75
+            },
+            {
+              "x": 114,
+              "y": 57
+            },
+            {
+              "x": 122,
+              "y": 31
+            }
+          ],
+          "unusedSpritePointer": 5508480
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 28,
+              "y": 98
+            },
+            {
+              "x": 82,
+              "y": 98
+            },
+            {
+              "x": 132,
+              "y": 97
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 57,
+              "y": 39
+            },
+            {
+              "x": 61,
+              "y": 65
+            },
+            {
+              "x": 73,
+              "y": 90
+            },
+            {
+              "x": 100,
+              "y": 94
+            },
+            {
+              "x": 113,
+              "y": 69
+            },
+            {
+              "x": 115,
+              "y": 41
+            },
+            {
+              "x": 108,
+              "y": 29
+            },
+            {
+              "x": 68,
+              "y": 78
+            }
+          ],
+          "unusedSpritePointer": 5511652
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 2,
+          "treeHeightSamples": [
+            {
+              "x": 2,
+              "y": 123
+            },
+            {
+              "x": 87,
+              "y": 122
+            },
+            {
+              "x": 162,
+              "y": 120
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 147,
+              "y": 92
+            },
+            {
+              "x": 23,
+              "y": 79
+            },
+            {
+              "x": 39,
+              "y": 95
+            },
+            {
+              "x": 55,
+              "y": 110
+            },
+            {
+              "x": 87,
+              "y": 116
+            },
+            {
+              "x": 85,
+              "y": 95
+            },
+            {
+              "x": 122,
+              "y": 108
+            }
+          ],
+          "unusedSpritePointer": 5527152
+        }
+      ],
+      "unusedSpritePointer": 5508460,
+      "commonName": "enemy.pasquinade"
+    },
+    {
+      "size": {
+        "x": 28,
+        "y": 28
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 82,
+      "collisionSamplePoints": [
+        {
+          "x": 6,
+          "y": 12
+        },
+        {
+          "x": 22,
+          "y": 13
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Hazzard",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 2,
+          "treeHeightSamples": [
+            {
+              "x": 1,
+              "y": 25
+            },
+            {
+              "x": 14,
+              "y": 28
+            },
+            {
+              "x": 28,
+              "y": 27
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 1,
+              "y": 4
+            },
+            {
+              "x": -3,
+              "y": 11
+            },
+            {
+              "x": 1,
+              "y": 24
+            },
+            {
+              "x": 12,
+              "y": 28
+            },
+            {
+              "x": 26,
+              "y": 25
+            },
+            {
+              "x": 30,
+              "y": 17
+            },
+            {
+              "x": 30,
+              "y": 5
+            },
+            {
+              "x": 14,
+              "y": -2
+            }
+          ],
+          "unusedSpritePointer": 5547896
+        }
+      ],
+      "unusedSpritePointer": 5547884,
+      "commonName": "enemy.pasquinade.projectile"
+    },
+    {
+      "size": {
+        "x": 52,
+        "y": 52
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 45
+            },
+            {
+              "x": 25,
+              "y": 47
+            },
+            {
+              "x": 48,
+              "y": 46
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5550900
+        }
+      ],
+      "unusedSpritePointer": 5550888,
+      "commonName": "enemy.ganonFairy"
+    }
+  ]
+}

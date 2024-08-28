@@ -11,7 +11,7 @@ class npc_unknown20:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_lifePotion:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):

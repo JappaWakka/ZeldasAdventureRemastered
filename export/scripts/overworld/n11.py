@@ -31,14 +31,14 @@ class npc_horse:
 # Actor description 2
 # Used for actors: []
 class item_treasure_blackKey:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[KEY_COUNT] += 1
 		showSparklesAndDespawn(actor=self)
 		
 # Actor description 3
 # Used for actors: [3]
 class item_treasure_feather:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Feather] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

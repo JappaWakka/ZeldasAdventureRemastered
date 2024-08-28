@@ -3,7 +3,7 @@
 # Actor description 1
 # Used for actors: [3]
 class env_block_blue:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 1] == 0:
 			spawnAndAnimate(actor=cast[0])
 			spawnAndAnimate(actor=cast[1])
@@ -16,7 +16,7 @@ class env_block_blue:
 # Actor description 2
 # Used for actors: [4]
 class env_block_blue:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 0] == 0 and save[LOCALS + 2] == 0:
 			despawn(actor=cast[5])
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
@@ -63,7 +63,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 0 # 0x0, b'\x00\x00'
 		save[CELL_LEFT + 2] = 0 # 0x0, b'\x00\x00'
 		save[RESPAWN_CELL_ID_maybe] = 16 # 0x10, b'\x00\x10'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 	def onTouchTrigger(self):
 		if save[LOCALS + 0] == 1:

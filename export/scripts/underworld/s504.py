@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class item_treasure_plank:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Plank] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

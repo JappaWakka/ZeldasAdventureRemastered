@@ -1,1 +1,409 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 52, "y": 86}, "health": 999, "unk_0x24": 0, "direction": "UP", "animationType": "ImmobleNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 2, "spawnCoords": {"x": 56, "y": 284}, "health": 999, "unk_0x24": 0, "direction": "UP", "animationType": "ImmobleNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 1, "spawnCoords": {"x": 116, "y": 176}, "health": 999, "unk_0x24": 0, "direction": "UP", "animationType": "ImmobleNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 3, "spawnCoords": {"x": 130, "y": 340}, "health": 99, "unk_0x24": 0, "direction": "UP", "animationType": "ImmobleNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 32, "y": 32}, "groupCount": 2, "maxHealth_maybe": 999, "useCostOrDefense": 999, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 29, "y": 8}, {"x": 28, "y": 18}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "ZeldaWeakness_99_maybe", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 30, "y": 0}, {"x": 32, "y": 14}, {"x": 31, "y": 29}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5552504}, {"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 31, "y": 0}, {"x": 31, "y": 15}, {"x": 31, "y": 29}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5553288}], "unknownFieldFromSpriteTree": 5552488, "commonName": "env.switch"}, {"size": {"x": 32, "y": 32}, "groupCount": 2, "maxHealth_maybe": 999, "useCostOrDefense": 999, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 29, "y": 8}, {"x": 28, "y": 18}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "ZeldaWeakness_99_maybe", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 30, "y": 0}, {"x": 32, "y": 14}, {"x": 31, "y": 29}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5554088}, {"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 31, "y": 0}, {"x": 31, "y": 15}, {"x": 31, "y": 29}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5554872}], "unknownFieldFromSpriteTree": 5554072, "commonName": "env.switch"}, {"size": {"x": 32, "y": 32}, "groupCount": 2, "maxHealth_maybe": 999, "useCostOrDefense": 999, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 29, "y": 8}, {"x": 28, "y": 18}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "ZeldaWeakness_99_maybe", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 30, "y": 0}, {"x": 32, "y": 14}, {"x": 31, "y": 29}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5555672}, {"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 31, "y": 0}, {"x": 31, "y": 15}, {"x": 31, "y": 29}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5556456}], "unknownFieldFromSpriteTree": 5555656, "commonName": "env.switch"}, {"size": {"x": 40, "y": 40}, "groupCount": 1, "maxHealth_maybe": 99, "useCostOrDefense": 99, "baseDamageOrPurchasePrice_maybe": 58, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 36, "y": 14}, {"x": 36, "y": 26}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "Hazzard", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4, 5, 6, 7, 6, 5, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 35, "y": 0}, {"x": 37, "y": 20}, {"x": 36, "y": 40}], "damageSamplePoints_maybe": [{"x": 15, "y": 13}, {"x": 15, "y": 33}, {"x": 19, "y": 14}, {"x": 19, "y": 22}, {"x": 9, "y": 19}, {"x": 17, "y": 24}, {"x": 19, "y": 24}, {"x": 22, "y": 19}], "unknownFieldFromSpriteTree": 5557252}], "unknownFieldFromSpriteTree": 5557240, "commonName": "enemy.floorSpikes"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 52,
+        "y": 86
+      },
+      "health": 999,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "Immobile",
+      "animation": null
+    },
+    {
+      "descIndex": 2,
+      "spawnCoords": {
+        "x": 56,
+        "y": 284
+      },
+      "health": 999,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "Immobile",
+      "animation": null
+    },
+    {
+      "descIndex": 1,
+      "spawnCoords": {
+        "x": 116,
+        "y": 176
+      },
+      "health": 999,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "Immobile",
+      "animation": null
+    },
+    {
+      "descIndex": 3,
+      "spawnCoords": {
+        "x": 130,
+        "y": 340
+      },
+      "health": 99,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "Immobile",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 2,
+      "maxHealth_maybe": 999,
+      "useCostOrDefense": 999,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 8,
+          "y": 29
+        },
+        {
+          "x": 18,
+          "y": 28
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Nothing",
+      "weakToSpell": "ZeldaWeakness_99_maybe",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 14,
+              "y": 32
+            },
+            {
+              "x": 29,
+              "y": 31
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5552504
+        },
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 31
+            },
+            {
+              "x": 15,
+              "y": 31
+            },
+            {
+              "x": 29,
+              "y": 31
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5553288
+        }
+      ],
+      "unusedSpritePointer": 5552488,
+      "commonName": "env.switch"
+    },
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 2,
+      "maxHealth_maybe": 999,
+      "useCostOrDefense": 999,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 8,
+          "y": 29
+        },
+        {
+          "x": 18,
+          "y": 28
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Nothing",
+      "weakToSpell": "ZeldaWeakness_99_maybe",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 14,
+              "y": 32
+            },
+            {
+              "x": 29,
+              "y": 31
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5554088
+        },
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 31
+            },
+            {
+              "x": 15,
+              "y": 31
+            },
+            {
+              "x": 29,
+              "y": 31
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5554872
+        }
+      ],
+      "unusedSpritePointer": 5554072,
+      "commonName": "env.switch"
+    },
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 2,
+      "maxHealth_maybe": 999,
+      "useCostOrDefense": 999,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 8,
+          "y": 29
+        },
+        {
+          "x": 18,
+          "y": 28
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Nothing",
+      "weakToSpell": "ZeldaWeakness_99_maybe",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 14,
+              "y": 32
+            },
+            {
+              "x": 29,
+              "y": 31
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5555672
+        },
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 31
+            },
+            {
+              "x": 15,
+              "y": 31
+            },
+            {
+              "x": 29,
+              "y": 31
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5556456
+        }
+      ],
+      "unusedSpritePointer": 5555656,
+      "commonName": "env.switch"
+    },
+    {
+      "size": {
+        "x": 40,
+        "y": 40
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 99,
+      "useCostOrDefense": 99,
+      "baseDamageOrPurchasePrice_maybe": 58,
+      "collisionSamplePoints": [
+        {
+          "x": 14,
+          "y": 36
+        },
+        {
+          "x": 26,
+          "y": 36
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Hazzard",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 35
+            },
+            {
+              "x": 20,
+              "y": 37
+            },
+            {
+              "x": 40,
+              "y": 36
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 13,
+              "y": 15
+            },
+            {
+              "x": 33,
+              "y": 15
+            },
+            {
+              "x": 14,
+              "y": 19
+            },
+            {
+              "x": 22,
+              "y": 19
+            },
+            {
+              "x": 19,
+              "y": 9
+            },
+            {
+              "x": 24,
+              "y": 17
+            },
+            {
+              "x": 24,
+              "y": 19
+            },
+            {
+              "x": 19,
+              "y": 22
+            }
+          ],
+          "unusedSpritePointer": 5557252
+        }
+      ],
+      "unusedSpritePointer": 5557240,
+      "commonName": "enemy.floorSpikes"
+    }
+  ]
+}

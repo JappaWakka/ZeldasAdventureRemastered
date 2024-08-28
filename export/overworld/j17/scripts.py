@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_ghostFarmer:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 0] == 0:
 			playVoiceLine(source=self, soundId=0)
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
@@ -18,7 +18,7 @@ class npc_ghostFarmer:
 # Actor description 1
 # Used for actors: [1]
 class npc_ghostFarmer:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 1] == 0:
 			playVoiceLine(source=self, soundId=2)
 			save[LOCALS + 1] = 1 # 0x1, b'\x00\x01'
@@ -30,7 +30,7 @@ class npc_ghostFarmer:
 # Actor description 2
 # Used for actors: [2]
 class npc_ghostFarmer:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 2] == 0:
 			playVoiceLine(source=self, soundId=2)
 			save[LOCALS + 2] = 1 # 0x1, b'\x00\x01'

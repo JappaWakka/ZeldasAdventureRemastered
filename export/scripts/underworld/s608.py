@@ -7,20 +7,20 @@ class env_switch:
 		if save[LOCALS + 0] == 0:
 			setSpriteGroup(1) # Usually the sprite for RIGHT
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
-			op27a(actor=cast[3])
-			op27a(actor=cast[4])
+			show(actor=cast[3])
+			show(actor=cast[4])
 		else:
 			setSpriteGroup(0) # Usually the sprite for UP
 			save[LOCALS + 0] = 0 # 0x0, b'\x00\x00'
-			op27b(actor=cast[3])
-			op27b(actor=cast[4])
+			hide(actor=cast[3])
+			hide(actor=cast[4])
 		
 	def onLoad_maybe(self):
 		spawnAndAnimate(actor=self)
 		spawnAndAnimate(actor=cast[3])
 		spawnAndAnimate(actor=cast[4])
-		op27b(actor=cast[3])
-		op27b(actor=cast[4])
+		hide(actor=cast[3])
+		hide(actor=cast[4])
 		
 # Actor description 1
 # Used for actors: [1]
@@ -52,7 +52,7 @@ class enemy_floorSpikes:
 # Actor description 4
 # Used for actors: [5]
 class item_weapon_roarStick:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[RoarStick] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

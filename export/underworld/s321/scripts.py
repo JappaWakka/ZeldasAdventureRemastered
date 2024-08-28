@@ -56,7 +56,7 @@ class Cell:
 		save[RESPAWN_TO_UNDERWORLD_VERSION] = 1 # 0x1, b'\x00\x01'
 		
 		if save[Rug] == 0:
-			disableIcePhysics()
+			enableIcePhysics()
 		
 	def onTouchTrigger(self):
 		if save[AVIANA_DEFEATED] == 0:

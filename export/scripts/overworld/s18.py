@@ -3,11 +3,11 @@
 # Actor description 0
 # Used for actors: [0]
 class item_treasure_heartContainer:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		showSparklesAndDespawn(actor=self)
 		player.maxHealth += ONE_HEART, healToFull()
 		save[HEART_CONTAINER_S18] = 1 # 0x1, b'\x00\x01'
-		playSoundEffect(source=self, soundId=3)
+		playSoundEffect(source=(INVALID), soundId=3)
 		
 	def onLoad_maybe(self):
 		if save[HEART_CONTAINER_S18] == 0:

@@ -2,7 +2,7 @@
 
 # Actor description 0
 # Used for actors: [0, 1, 2]
-class npc_molluska:
+class enemy_molluska:
 	def onDeathOrRaftRideFinished(self):
 		save[149] += 1
 		
@@ -16,7 +16,7 @@ class npc_molluska:
 # Actor description 2
 # Used for actors: [3]
 class item_treasure_blackKey:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[119] = 1 # 0x1, b'\x00\x01'
 		save[KEY_COUNT] += 1
 		showSparklesAndDespawn(actor=self)

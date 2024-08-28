@@ -14,7 +14,7 @@ class npc_purpleStallOwner:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_admitTicket:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):

@@ -1,1 +1,321 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 129, "y": 130}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 0, "spawnCoords": {"x": 81, "y": 214}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 0, "spawnCoords": {"x": 145, "y": 250}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 40, "y": 31}, "groupCount": 4, "maxHealth_maybe": 60, "useCostOrDefense": 10, "baseDamageOrPurchasePrice_maybe": 57, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 25, "y": 18}, {"x": 25, "y": 26}], "unk_0x24": 4, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 2, 1], "unk_0x12": 0, "frameDelay": 1, "unk_0x18": [{"x": 29, "y": 11}, {"x": 29, "y": 24}, {"x": 28, "y": 37}], "damageSamplePoints_maybe": [{"x": 3, "y": 24}, {"x": 27, "y": 25}, {"x": 17, "y": 39}, {"x": 15, "y": 9}, {"x": 7, "y": 15}, {"x": 8, "y": 36}, {"x": 24, "y": 33}, {"x": 24, "y": 13}], "unknownFieldFromSpriteTree": 5491488}, {"animationFrameOrder": [0, 1, 2, 3, 2, 1], "unk_0x12": 0, "frameDelay": 1, "unk_0x18": [{"x": 26, "y": 0}, {"x": 25, "y": 22}, {"x": 24, "y": 40}], "damageSamplePoints_maybe": [{"x": 17, "y": 40}, {"x": 14, "y": -2}, {"x": 7, "y": 28}, {"x": 2, "y": 10}, {"x": 24, "y": 28}, {"x": 24, "y": 9}], "unknownFieldFromSpriteTree": 5493352}, {"animationFrameOrder": [0, 1, 2, 3, 2, 1], "unk_0x12": 0, "frameDelay": 1, "unk_0x18": [{"x": 30, "y": 10}, {"x": 30, "y": 25}, {"x": 30, "y": 38}], "damageSamplePoints_maybe": [{"x": 1, "y": 24}, {"x": 30, "y": 25}, {"x": 16, "y": 39}, {"x": 16, "y": 9}, {"x": 4, "y": 36}, {"x": 5, "y": 10}, {"x": 25, "y": 36}, {"x": 27, "y": 11}], "unknownFieldFromSpriteTree": 5495432}, {"animationFrameOrder": [0, 1, 2, 3, 2, 1], "unk_0x12": 0, "frameDelay": 1, "unk_0x18": [{"x": 25, "y": -2}, {"x": 26, "y": 18}, {"x": 25, "y": 35}], "damageSamplePoints_maybe": [{"x": 19, "y": 38}, {"x": 25, "y": 26}, {"x": 25, "y": 9}, {"x": 17, "y": -1}, {"x": 8, "y": 7}, {"x": 1, "y": 23}, {"x": 6, "y": 37}], "unknownFieldFromSpriteTree": 5497788}], "unknownFieldFromSpriteTree": 5491464, "commonName": "enemy.tumbleSkull"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 129,
+        "y": 130
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 81,
+        "y": 214
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 145,
+        "y": 250
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 40,
+        "y": 31
+      },
+      "groupCount": 4,
+      "maxHealth_maybe": 60,
+      "useCostOrDefense": 10,
+      "baseDamageOrPurchasePrice_maybe": 57,
+      "collisionSamplePoints": [
+        {
+          "x": 18,
+          "y": 25
+        },
+        {
+          "x": 26,
+          "y": 25
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Random",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 1,
+          "treeHeightSamples": [
+            {
+              "x": 11,
+              "y": 29
+            },
+            {
+              "x": 24,
+              "y": 29
+            },
+            {
+              "x": 37,
+              "y": 28
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 24,
+              "y": 3
+            },
+            {
+              "x": 25,
+              "y": 27
+            },
+            {
+              "x": 39,
+              "y": 17
+            },
+            {
+              "x": 9,
+              "y": 15
+            },
+            {
+              "x": 15,
+              "y": 7
+            },
+            {
+              "x": 36,
+              "y": 8
+            },
+            {
+              "x": 33,
+              "y": 24
+            },
+            {
+              "x": 13,
+              "y": 24
+            }
+          ],
+          "unusedSpritePointer": 5491488
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 1,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 26
+            },
+            {
+              "x": 22,
+              "y": 25
+            },
+            {
+              "x": 40,
+              "y": 24
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 40,
+              "y": 17
+            },
+            {
+              "x": -2,
+              "y": 14
+            },
+            {
+              "x": 28,
+              "y": 7
+            },
+            {
+              "x": 10,
+              "y": 2
+            },
+            {
+              "x": 28,
+              "y": 24
+            },
+            {
+              "x": 9,
+              "y": 24
+            }
+          ],
+          "unusedSpritePointer": 5493352
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 1,
+          "treeHeightSamples": [
+            {
+              "x": 10,
+              "y": 30
+            },
+            {
+              "x": 25,
+              "y": 30
+            },
+            {
+              "x": 38,
+              "y": 30
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 24,
+              "y": 1
+            },
+            {
+              "x": 25,
+              "y": 30
+            },
+            {
+              "x": 39,
+              "y": 16
+            },
+            {
+              "x": 9,
+              "y": 16
+            },
+            {
+              "x": 36,
+              "y": 4
+            },
+            {
+              "x": 10,
+              "y": 5
+            },
+            {
+              "x": 36,
+              "y": 25
+            },
+            {
+              "x": 11,
+              "y": 27
+            }
+          ],
+          "unusedSpritePointer": 5495432
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 1,
+          "treeHeightSamples": [
+            {
+              "x": -2,
+              "y": 25
+            },
+            {
+              "x": 18,
+              "y": 26
+            },
+            {
+              "x": 35,
+              "y": 25
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 38,
+              "y": 19
+            },
+            {
+              "x": 26,
+              "y": 25
+            },
+            {
+              "x": 9,
+              "y": 25
+            },
+            {
+              "x": -1,
+              "y": 17
+            },
+            {
+              "x": 7,
+              "y": 8
+            },
+            {
+              "x": 23,
+              "y": 1
+            },
+            {
+              "x": 37,
+              "y": 6
+            }
+          ],
+          "unusedSpritePointer": 5497788
+        }
+      ],
+      "unusedSpritePointer": 5491464,
+      "commonName": "enemy.tumbleSkull"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ class enemy_tektite:
 # Actor description 1
 # Used for actors: [2]
 class item_treasure_raft:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Raft] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

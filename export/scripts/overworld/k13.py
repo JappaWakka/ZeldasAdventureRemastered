@@ -30,7 +30,7 @@ class npc_shopkeeperDog:
 # Actor description 2
 # Used for actors: [2]
 class env_teleportPixel:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])
 		
 	def onLoad_maybe(self):
@@ -39,7 +39,7 @@ class env_teleportPixel:
 # Actor description 3
 # Used for actors: [3]
 class env_teleportPixel:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 3])
 		
 	def onLoad_maybe(self):
@@ -48,7 +48,7 @@ class env_teleportPixel:
 # Actor description 4
 # Used for actors: [4]
 class item_weapon_shortAxe:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[ShortAxe] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		save[Bone] = 0 # 0x0, b'\x00\x00'

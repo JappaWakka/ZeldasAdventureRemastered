@@ -24,7 +24,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 14592 # 0x3900, b'9\x00'
 		save[CELL_LEFT + 2] = 115 # 0x73, b'\x00s'
 		
-	def onRespawn_maybe(self):
+	def onLeave(self):
 		save[LOCALS + 0] = 0 # 0x0, b'\x00\x00'
 		
 	def onTouchTrigger(self):

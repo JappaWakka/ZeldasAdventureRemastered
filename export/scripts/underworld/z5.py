@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_unknownActor166:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])
 		
 	def onLoad_maybe(self):

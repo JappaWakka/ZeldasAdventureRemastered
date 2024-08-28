@@ -10,7 +10,7 @@ class enemy_swampZola_green:
 # Actor description 2
 # Used for actors: []
 class enemy_blob:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		loseOneHeart()
 		
 class Cell:

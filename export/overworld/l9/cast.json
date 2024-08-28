@@ -1,1 +1,110 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 81, "y": 178}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 64, "y": 54}, "groupCount": 1, "maxHealth_maybe": 60, "useCostOrDefense": 5, "baseDamageOrPurchasePrice_maybe": 45, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 33, "y": 28}, {"x": 34, "y": 38}], "unk_0x24": 4, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 43, "y": 8}, {"x": 44, "y": 33}, {"x": 43, "y": 59}], "damageSamplePoints_maybe": [{"x": 48, "y": 34}, {"x": 39, "y": 56}, {"x": 17, "y": 56}, {"x": 1, "y": 38}, {"x": 4, "y": 15}, {"x": 21, "y": 8}, {"x": 43, "y": 14}], "unknownFieldFromSpriteTree": 5491572}], "unknownFieldFromSpriteTree": 5491560, "commonName": "enemy.mimicMole"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 81,
+        "y": 178
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 64,
+        "y": 54
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 60,
+      "useCostOrDefense": 5,
+      "baseDamageOrPurchasePrice_maybe": 45,
+      "collisionSamplePoints": [
+        {
+          "x": 28,
+          "y": 33
+        },
+        {
+          "x": 38,
+          "y": 34
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Random",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 8,
+              "y": 43
+            },
+            {
+              "x": 33,
+              "y": 44
+            },
+            {
+              "x": 59,
+              "y": 43
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 34,
+              "y": 48
+            },
+            {
+              "x": 56,
+              "y": 39
+            },
+            {
+              "x": 56,
+              "y": 17
+            },
+            {
+              "x": 38,
+              "y": 1
+            },
+            {
+              "x": 15,
+              "y": 4
+            },
+            {
+              "x": 8,
+              "y": 21
+            },
+            {
+              "x": 14,
+              "y": 43
+            }
+          ],
+          "unusedSpritePointer": 5491572
+        }
+      ],
+      "unusedSpritePointer": 5491560,
+      "commonName": "enemy.mimicMole"
+    }
+  ]
+}

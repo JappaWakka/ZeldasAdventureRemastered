@@ -43,7 +43,7 @@ class Cell:
 		save[CELL_LEFT + 2] = 0 # 0x0, b'\x00\x00'
 		save[RESPAWN_CELL_ID_maybe] = 20 # 0x14, b'\x00\x14'
 		save[RESPAWN_TO_UNDERWORLD_VERSION] = 0 # 0x0, b'\x00\x00'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 		if save[AVIANA_DEFEATED] == 0 and save[ENTERED_BY_RESPAWN_HARP_OR_COMPASS] == 0:
 			playVoiceLine(source=self, soundId=0)

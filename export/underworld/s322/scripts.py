@@ -3,9 +3,9 @@
 # Actor description 0
 # Used for actors: [0]
 class env_celestialSign:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[SIGN_S4] = 1 # 0x1, b'\x00\x01'
-		setUnkCallback_teleportToShrineExit(shrine=2)
+		exitShrineAndPlayMovie(shrine=3)
 		
 	def onLoad_maybe(self):
 		if save[SIGN_S4] == 0:
@@ -30,7 +30,7 @@ class Cell:
 		save[CELL_LEFT + 2] = 0 # 0x0, b'\x00\x00'
 		save[RESPAWN_CELL_ID_maybe] = 22 # 0x16, b'\x00\x16'
 		save[RESPAWN_TO_UNDERWORLD_VERSION] = 0 # 0x0, b'\x00\x00'
-		disableIcePhysics()
+		enableIcePhysics()
 		player.x = 154
 		player.y = 144
 		setSpriteGroup(0) # Usually the sprite for UP

@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_talkingMushroom:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 1] == 0:
 			save[LOCALS + 1] = 1 # 0x1, b'\x00\x01'
 			playVoiceLine(source=self, soundId=0)
@@ -14,7 +14,7 @@ class npc_talkingMushroom:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_silverTrumpet:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[SilverTrumpet] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

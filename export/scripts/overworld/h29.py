@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_hag:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 0] == 0 and save[LOCALS + 1] == 0:
 			playVoiceLine(source=self, soundId=1)
 			loseOneHeart()
@@ -52,7 +52,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 12857 # 0x3239, b'29'
 		save[CELL_LEFT + 2] = 115 # 0x73, b'\x00s'
 		
-	def onRespawn_maybe(self):
+	def onLeave(self):
 		save[LOCALS + 0] = 0 # 0x0, b'\x00\x00'
 		
 	def onTouchTrigger(self):

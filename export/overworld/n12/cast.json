@@ -1,1 +1,773 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 0, "y": 0}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 0, "spawnCoords": {"x": 0, "y": 0}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 88, "y": 71}, "groupCount": 4, "maxHealth_maybe": 60, "useCostOrDefense": 20, "baseDamageOrPurchasePrice_maybe": 50, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 42, "y": 40}, {"x": 43, "y": 48}], "unk_0x24": 4, "bonusDamage": 0, "unk_0x2b": 3, "unk_0x2c": 0, "unk_0x2a": 1, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 51, "y": 9}, {"x": 51, "y": 44}, {"x": 50, "y": 74}], "damageSamplePoints_maybe": [{"x": 29, "y": 77}, {"x": 46, "y": 70}, {"x": 51, "y": 46}, {"x": 50, "y": 22}, {"x": 33, "y": 11}, {"x": 20, "y": 25}, {"x": 13, "y": 42}, {"x": 12, "y": 64}], "unknownFieldFromSpriteTree": 5553184}, {"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 48, "y": 8}, {"x": 47, "y": 35}, {"x": 46, "y": 65}], "damageSamplePoints_maybe": [{"x": 34, "y": 66}, {"x": 18, "y": 49}, {"x": 18, "y": 23}, {"x": 32, "y": 12}, {"x": 45, "y": 18}, {"x": 48, "y": 40}, {"x": 41, "y": 60}], "unknownFieldFromSpriteTree": 5559260}, {"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 59, "y": 17}, {"x": 61, "y": 50}, {"x": 61, "y": 83}], "damageSamplePoints_maybe": [{"x": 51, "y": 45}, {"x": 46, "y": 63}, {"x": 29, "y": 76}, {"x": 13, "y": 62}, {"x": 12, "y": 40}, {"x": 22, "y": 22}, {"x": 36, "y": 14}, {"x": 49, "y": 27}], "unknownFieldFromSpriteTree": 5562980}, {"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 46, "y": 22}, {"x": 46, "y": 49}, {"x": 45, "y": 75}], "damageSamplePoints_maybe": [{"x": 31, "y": 74}, {"x": 17, "y": 62}, {"x": 15, "y": 42}, {"x": 24, "y": 25}, {"x": 39, "y": 25}, {"x": 50, "y": 40}, {"x": 47, "y": 63}], "unknownFieldFromSpriteTree": 5569056}], "unknownFieldFromSpriteTree": 5553160, "commonName": "enemy.swampZola.green"}, {"size": {"x": 24, "y": 25}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 55, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 12, "y": 9}, {"x": 12, "y": 15}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3], "unk_0x12": 0, "frameDelay": 2, "unk_0x18": [{"x": 26, "y": -1}, {"x": 27, "y": 13}, {"x": 26, "y": 28}], "damageSamplePoints_maybe": [{"x": 3, "y": 10}, {"x": 20, "y": 11}, {"x": 12, "y": 21}, {"x": 11, "y": 3}, {"x": 7, "y": 3}, {"x": 6, "y": 17}, {"x": 17, "y": 18}, {"x": 18, "y": 2}], "unknownFieldFromSpriteTree": 5572788}], "unknownFieldFromSpriteTree": 5572776, "commonName": "enemy.swampZola.green.projectile"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 0,
+        "y": 0
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 238,
+          "y": 45
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "setGroup(2)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "shootProjectile()"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          }
+        ]
+      }
+    },
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 0,
+        "y": 0
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 64,
+          "y": 69
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "setGroup(1)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "shootProjectile()"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          }
+        ]
+      }
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 88,
+        "y": 71
+      },
+      "groupCount": 4,
+      "maxHealth_maybe": 60,
+      "useCostOrDefense": 20,
+      "baseDamageOrPurchasePrice_maybe": 50,
+      "collisionSamplePoints": [
+        {
+          "x": 40,
+          "y": 42
+        },
+        {
+          "x": 48,
+          "y": 43
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 3,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Allow(1)",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Random",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 9,
+              "y": 51
+            },
+            {
+              "x": 44,
+              "y": 51
+            },
+            {
+              "x": 74,
+              "y": 50
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 77,
+              "y": 29
+            },
+            {
+              "x": 70,
+              "y": 46
+            },
+            {
+              "x": 46,
+              "y": 51
+            },
+            {
+              "x": 22,
+              "y": 50
+            },
+            {
+              "x": 11,
+              "y": 33
+            },
+            {
+              "x": 25,
+              "y": 20
+            },
+            {
+              "x": 42,
+              "y": 13
+            },
+            {
+              "x": 64,
+              "y": 12
+            }
+          ],
+          "unusedSpritePointer": 5553184
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 8,
+              "y": 48
+            },
+            {
+              "x": 35,
+              "y": 47
+            },
+            {
+              "x": 65,
+              "y": 46
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 66,
+              "y": 34
+            },
+            {
+              "x": 49,
+              "y": 18
+            },
+            {
+              "x": 23,
+              "y": 18
+            },
+            {
+              "x": 12,
+              "y": 32
+            },
+            {
+              "x": 18,
+              "y": 45
+            },
+            {
+              "x": 40,
+              "y": 48
+            },
+            {
+              "x": 60,
+              "y": 41
+            }
+          ],
+          "unusedSpritePointer": 5559260
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 17,
+              "y": 59
+            },
+            {
+              "x": 50,
+              "y": 61
+            },
+            {
+              "x": 83,
+              "y": 61
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 45,
+              "y": 51
+            },
+            {
+              "x": 63,
+              "y": 46
+            },
+            {
+              "x": 76,
+              "y": 29
+            },
+            {
+              "x": 62,
+              "y": 13
+            },
+            {
+              "x": 40,
+              "y": 12
+            },
+            {
+              "x": 22,
+              "y": 22
+            },
+            {
+              "x": 14,
+              "y": 36
+            },
+            {
+              "x": 27,
+              "y": 49
+            }
+          ],
+          "unusedSpritePointer": 5562980
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 22,
+              "y": 46
+            },
+            {
+              "x": 49,
+              "y": 46
+            },
+            {
+              "x": 75,
+              "y": 45
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 74,
+              "y": 31
+            },
+            {
+              "x": 62,
+              "y": 17
+            },
+            {
+              "x": 42,
+              "y": 15
+            },
+            {
+              "x": 25,
+              "y": 24
+            },
+            {
+              "x": 25,
+              "y": 39
+            },
+            {
+              "x": 40,
+              "y": 50
+            },
+            {
+              "x": 63,
+              "y": 47
+            }
+          ],
+          "unusedSpritePointer": 5569056
+        }
+      ],
+      "unusedSpritePointer": 5553160,
+      "commonName": "enemy.swampZola.green"
+    },
+    {
+      "size": {
+        "x": 24,
+        "y": 25
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 55,
+      "collisionSamplePoints": [
+        {
+          "x": 9,
+          "y": 12
+        },
+        {
+          "x": 15,
+          "y": 12
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 2,
+          "treeHeightSamples": [
+            {
+              "x": -1,
+              "y": 26
+            },
+            {
+              "x": 13,
+              "y": 27
+            },
+            {
+              "x": 28,
+              "y": 26
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 10,
+              "y": 3
+            },
+            {
+              "x": 11,
+              "y": 20
+            },
+            {
+              "x": 21,
+              "y": 12
+            },
+            {
+              "x": 3,
+              "y": 11
+            },
+            {
+              "x": 3,
+              "y": 7
+            },
+            {
+              "x": 17,
+              "y": 6
+            },
+            {
+              "x": 18,
+              "y": 17
+            },
+            {
+              "x": 2,
+              "y": 18
+            }
+          ],
+          "unusedSpritePointer": 5572788
+        }
+      ],
+      "unusedSpritePointer": 5572776,
+      "commonName": "enemy.swampZola.green.projectile"
+    }
+  ]
+}

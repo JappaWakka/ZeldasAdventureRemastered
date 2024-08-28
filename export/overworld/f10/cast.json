@@ -1,1 +1,106 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 188, "y": 102}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType3", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 32, "y": 32}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 27, "y": 4}, {"x": 26, "y": 20}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 2, 3, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 29, "y": -2}, {"x": 30, "y": 16}, {"x": 29, "y": 33}], "damageSamplePoints_maybe": [{"x": 8, "y": 1}, {"x": 20, "y": 0}, {"x": 26, "y": 4}, {"x": 25, "y": 26}, {"x": 17, "y": 30}, {"x": 8, "y": 29}], "unknownFieldFromSpriteTree": 5496916}], "unknownFieldFromSpriteTree": 5496904, "commonName": "item.treasure.heartContainer"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 188,
+        "y": 102
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "AnimationActionsOnly",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 4,
+          "y": 27
+        },
+        {
+          "x": 20,
+          "y": 26
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": -2,
+              "y": 29
+            },
+            {
+              "x": 16,
+              "y": 30
+            },
+            {
+              "x": 33,
+              "y": 29
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 1,
+              "y": 8
+            },
+            {
+              "x": 0,
+              "y": 20
+            },
+            {
+              "x": 4,
+              "y": 26
+            },
+            {
+              "x": 26,
+              "y": 25
+            },
+            {
+              "x": 30,
+              "y": 17
+            },
+            {
+              "x": 29,
+              "y": 8
+            }
+          ],
+          "unusedSpritePointer": 5496916
+        }
+      ],
+      "unusedSpritePointer": 5496904,
+      "commonName": "item.treasure.heartContainer"
+    }
+  ]
+}

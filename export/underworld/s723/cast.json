@@ -1,1 +1,262 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 34, "y": 56}, "health": 50, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 1, "spawnCoords": {"x": 6, "y": 132}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "ImmobleNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 2, "spawnCoords": {"x": 91, "y": 338}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "ImmobleNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 140, "y": 93}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 38, "baseDamageOrPurchasePrice_maybe": 76, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 50, "y": 54}, {"x": 49, "y": 74}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 3, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "Boss", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 85, "y": 12}, {"x": 86, "y": 54}, {"x": 85, "y": 121}], "damageSamplePoints_maybe": [{"x": 37, "y": 19}, {"x": 28, "y": 85}, {"x": 56, "y": 105}, {"x": 66, "y": 53}, {"x": 54, "y": 52}, {"x": 55, "y": 29}, {"x": 28, "y": 60}, {"x": 47, "y": 90}], "unknownFieldFromSpriteTree": 5504116}], "unknownFieldFromSpriteTree": 5504104, "commonName": "enemy.warbane"}, {"size": {"x": 108, "y": 32}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 0, "y": 0}, {"x": 0, "y": 0}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType6", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 32, "y": -4}, {"x": 37, "y": 44}, {"x": 39, "y": 108}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5517296}], "unknownFieldFromSpriteTree": 5517284, "commonName": "env.barrier.s7.top"}, {"size": {"x": 28, "y": 63}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 0, "y": 0}, {"x": 0, "y": 0}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType6", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 65, "y": -9}, {"x": 64, "y": 12}, {"x": 65, "y": 31}], "damageSamplePoints_maybe": [], "unknownFieldFromSpriteTree": 5519328}], "unknownFieldFromSpriteTree": 5519316, "commonName": "env.barrier.s7.right"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 34,
+        "y": 56
+      },
+      "health": 50,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 1,
+      "spawnCoords": {
+        "x": 6,
+        "y": 132
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "Immobile",
+      "animation": null
+    },
+    {
+      "descIndex": 2,
+      "spawnCoords": {
+        "x": 91,
+        "y": 338
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "Immobile",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 140,
+        "y": 93
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 38,
+      "baseDamageOrPurchasePrice_maybe": 76,
+      "collisionSamplePoints": [
+        {
+          "x": 54,
+          "y": 50
+        },
+        {
+          "x": 74,
+          "y": 49
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 3,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Boss",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 12,
+              "y": 85
+            },
+            {
+              "x": 54,
+              "y": 86
+            },
+            {
+              "x": 121,
+              "y": 85
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 19,
+              "y": 37
+            },
+            {
+              "x": 85,
+              "y": 28
+            },
+            {
+              "x": 105,
+              "y": 56
+            },
+            {
+              "x": 53,
+              "y": 66
+            },
+            {
+              "x": 52,
+              "y": 54
+            },
+            {
+              "x": 29,
+              "y": 55
+            },
+            {
+              "x": 60,
+              "y": 28
+            },
+            {
+              "x": 90,
+              "y": 47
+            }
+          ],
+          "unusedSpritePointer": 5504116
+        }
+      ],
+      "unusedSpritePointer": 5504104,
+      "commonName": "enemy.warbane"
+    },
+    {
+      "size": {
+        "x": 108,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "UnknownType6",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": -4,
+              "y": 32
+            },
+            {
+              "x": 44,
+              "y": 37
+            },
+            {
+              "x": 108,
+              "y": 39
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5517296
+        }
+      ],
+      "unusedSpritePointer": 5517284,
+      "commonName": "env.barrier.s7.top"
+    },
+    {
+      "size": {
+        "x": 28,
+        "y": 63
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "UnknownType6",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": -9,
+              "y": 65
+            },
+            {
+              "x": 12,
+              "y": 64
+            },
+            {
+              "x": 31,
+              "y": 65
+            }
+          ],
+          "damageSamplePoints_maybe": [],
+          "unusedSpritePointer": 5519328
+        }
+      ],
+      "unusedSpritePointer": 5519316,
+      "commonName": "env.barrier.s7.right"
+    }
+  ]
+}

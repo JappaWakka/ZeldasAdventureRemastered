@@ -19,7 +19,7 @@ class npc_shopkeeperAndKnave_unknownActor72:
 # Actor description 1
 # Used for actors: [1]
 class npc_shopkeeperAndKnave_unknownActor73:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		playVoiceLine(source=self, soundId=5)
 		
 	def onItemInteractOrSoundFileDone(self):
@@ -31,7 +31,7 @@ class npc_shopkeeperAndKnave_unknownActor73:
 # Actor description 2
 # Used for actors: [2]
 class item_treasure_bone:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):

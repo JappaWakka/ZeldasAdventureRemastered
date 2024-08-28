@@ -1,1 +1,315 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 96, "y": 240}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 48, "y": 48}, "groupCount": 3, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 43, "y": 14}, {"x": 43, "y": 22}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 5, "unk_0x18": [{"x": 44, "y": 0}, {"x": 44, "y": 17}, {"x": 45, "y": 38}], "damageSamplePoints_maybe": [{"x": 44, "y": 19}, {"x": -2, "y": 15}, {"x": 12, "y": 35}, {"x": 27, "y": 37}, {"x": 34, "y": 9}, {"x": 12, "y": 1}], "unknownFieldFromSpriteTree": 5491244}, {"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 5, "unk_0x18": [{"x": 47, "y": 5}, {"x": 46, "y": 26}, {"x": 45, "y": 45}], "damageSamplePoints_maybe": [{"x": 47, "y": 24}, {"x": 1, "y": 26}, {"x": 13, "y": 43}, {"x": 23, "y": 46}, {"x": 35, "y": 44}, {"x": 39, "y": 11}, {"x": 28, "y": 5}, {"x": 17, "y": 6}], "unknownFieldFromSpriteTree": 5494236}, {"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 5, "unk_0x18": [{"x": 46, "y": 3}, {"x": 45, "y": 25}, {"x": 45, "y": 49}], "damageSamplePoints_maybe": [{"x": 12, "y": 42}, {"x": 28, "y": 43}, {"x": 44, "y": 33}, {"x": 40, "y": 15}, {"x": 20, "y": 14}, {"x": 0, "y": 19}], "unknownFieldFromSpriteTree": 5497644}], "unknownFieldFromSpriteTree": 5491224, "commonName": "npc.livingFarmer"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 96,
+        "y": 240
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 240,
+          "y": 96
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "setGroup(1)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 0
+            },
+            "command": "stopMovement(random(0, 128))"
+          }
+        ]
+      }
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 48,
+        "y": 48
+      },
+      "groupCount": 3,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 14,
+          "y": 43
+        },
+        {
+          "x": 22,
+          "y": 43
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 5,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 44
+            },
+            {
+              "x": 17,
+              "y": 44
+            },
+            {
+              "x": 38,
+              "y": 45
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 19,
+              "y": 44
+            },
+            {
+              "x": 15,
+              "y": -2
+            },
+            {
+              "x": 35,
+              "y": 12
+            },
+            {
+              "x": 37,
+              "y": 27
+            },
+            {
+              "x": 9,
+              "y": 34
+            },
+            {
+              "x": 1,
+              "y": 12
+            }
+          ],
+          "unusedSpritePointer": 5491244
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 5,
+          "treeHeightSamples": [
+            {
+              "x": 5,
+              "y": 47
+            },
+            {
+              "x": 26,
+              "y": 46
+            },
+            {
+              "x": 45,
+              "y": 45
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 24,
+              "y": 47
+            },
+            {
+              "x": 26,
+              "y": 1
+            },
+            {
+              "x": 43,
+              "y": 13
+            },
+            {
+              "x": 46,
+              "y": 23
+            },
+            {
+              "x": 44,
+              "y": 35
+            },
+            {
+              "x": 11,
+              "y": 39
+            },
+            {
+              "x": 5,
+              "y": 28
+            },
+            {
+              "x": 6,
+              "y": 17
+            }
+          ],
+          "unusedSpritePointer": 5494236
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 5,
+          "treeHeightSamples": [
+            {
+              "x": 3,
+              "y": 46
+            },
+            {
+              "x": 25,
+              "y": 45
+            },
+            {
+              "x": 49,
+              "y": 45
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 42,
+              "y": 12
+            },
+            {
+              "x": 43,
+              "y": 28
+            },
+            {
+              "x": 33,
+              "y": 44
+            },
+            {
+              "x": 15,
+              "y": 40
+            },
+            {
+              "x": 14,
+              "y": 20
+            },
+            {
+              "x": 19,
+              "y": 0
+            }
+          ],
+          "unusedSpritePointer": 5497644
+        }
+      ],
+      "unusedSpritePointer": 5491224,
+      "commonName": "npc.livingFarmer"
+    }
+  ]
+}

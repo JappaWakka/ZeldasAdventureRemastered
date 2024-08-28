@@ -17,7 +17,7 @@ class npc_quarryMiner:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_coal:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Coal] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

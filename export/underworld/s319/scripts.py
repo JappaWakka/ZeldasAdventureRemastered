@@ -22,7 +22,7 @@ class env_switch_floatingSkull:
 # Actor description 2
 # Used for actors: [2]
 class env_unknownActor275:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		loseOneHeart()
 		
 	def onLoad_maybe(self):
@@ -31,7 +31,7 @@ class env_unknownActor275:
 # Actor description 3
 # Used for actors: []
 class enemy_crystalShard:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		loseOneHeart()
 		
 class Cell:
@@ -52,7 +52,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 12848 # 0x3230, b'20'
 		save[CELL_LEFT + 2] = 102 # 0x66, b'\x00f'
 		save[RESPAWN_CELL_ID_maybe] = 19 # 0x13, b'\x00\x13'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 	def onTouchTrigger(self):
 		if save[140] == 1:

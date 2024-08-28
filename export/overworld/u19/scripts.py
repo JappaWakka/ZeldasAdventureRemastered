@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: []
 class item_weapon_trident:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Trident] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

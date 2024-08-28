@@ -4,7 +4,7 @@
 # Used for actors: [0]
 class enemy_ganon:
 	def onDeathOrRaftRideFinished(self):
-		setUnkCallback_teleportToShrineExit(shrine=7)
+		exitShrineAndPlayMovie(shrine=8)
 		
 # Actor description 2
 # Used for actors: [1]

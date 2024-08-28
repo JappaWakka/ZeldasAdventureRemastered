@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class item_treasure_ladder:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Ladder] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

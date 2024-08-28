@@ -9,7 +9,7 @@ class enemy_octorok:
 # Actor description 1
 # Used for actors: [1, 2]
 class enemy_blob:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		loseOneHeart()
 		
 class Cell:

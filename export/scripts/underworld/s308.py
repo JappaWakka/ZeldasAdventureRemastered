@@ -16,7 +16,7 @@ class enemy_patra:
 # Actor description 1
 # Used for actors: [3]
 class item_compass_s3:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Compass3] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -47,7 +47,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 12343 # 0x3037, b'07'
 		save[CELL_LEFT + 2] = 102 # 0x66, b'\x00f'
 		save[RESPAWN_CELL_ID_maybe] = 8 # 0x8, b'\x00\x08'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 # Local variables
 local0 = 0 # 0x0, b'\x00\x00'

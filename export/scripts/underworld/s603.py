@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_unknownActor323:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 0] == 0:
 			rupees -= 25
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
@@ -14,7 +14,7 @@ class npc_unknownActor323:
 # Actor description 1
 # Used for actors: [1]
 class npc_stallOwner2:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 1] == 0 and save[LOCALS + 4] == 0:
 			playVoiceLine(source=self, soundId=0)
 			save[LOCALS + 1] = 1 # 0x1, b'\x00\x01'
@@ -29,7 +29,7 @@ class npc_stallOwner2:
 # Actor description 2
 # Used for actors: [2]
 class npc_unknownActor325:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 3] == 0 and save[LOCALS + 4] == 0:
 			playVoiceLine(source=self, soundId=3)
 			save[LOCALS + 4] = 1 # 0x1, b'\x00\x01'
@@ -47,7 +47,7 @@ class npc_unknownActor325:
 # Actor description 3
 # Used for actors: [3]
 class item_compass_s6:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Compass6] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

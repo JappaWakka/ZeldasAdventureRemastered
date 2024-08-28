@@ -17,7 +17,7 @@ class enemy_vapora:
 # Actor description 2
 # Used for actors: [1]
 class item_treasure_rug:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Rug] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -52,7 +52,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 0 # 0x0, b'\x00\x00'
 		save[CELL_LEFT + 2] = 0 # 0x0, b'\x00\x00'
 		save[RESPAWN_CELL_ID_maybe] = 14 # 0xe, b'\x00\x0e'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 	def onTouchTrigger(self):
 		if save[VAPORA_DEFEATED] == 1:

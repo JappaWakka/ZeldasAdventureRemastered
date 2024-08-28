@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_ericAndIan:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 5] == 0 and save[LOCALS + 7] == 0:
 			save[LOCALS + 5] = 1 # 0x1, b'\x00\x01'
 			playVoiceLine(source=self, soundId=0)
@@ -26,7 +26,7 @@ class npc_ericAndIan:
 # Actor description 1
 # Used for actors: [1]
 class npc_yvonne:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 6] == 0 and save[LOCALS + 7] == 0:
 			save[LOCALS + 6] = 1 # 0x1, b'\x00\x01'
 			playVoiceLine(source=self, soundId=3)
@@ -48,7 +48,7 @@ class npc_yvonne:
 # Actor description 3
 # Used for actors: [3]
 class item_treasure_flute:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Flute] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

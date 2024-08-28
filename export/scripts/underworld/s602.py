@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0, 1]
 class env_block_white:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[Map6] == 0 and save[LOCALS + 0] == 0:
 			op12_0x2cd0(actor=cast[2])
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
@@ -14,7 +14,7 @@ class env_block_white:
 # Actor description 1
 # Used for actors: [2]
 class item_map_s6:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Map6] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

@@ -9,7 +9,7 @@ class enemy_wallSpike:
 # Actor description 1
 # Used for actors: [4]
 class item_compass_s5:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Compass5] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

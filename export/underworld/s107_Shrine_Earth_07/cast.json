@@ -1,1 +1,295 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 108, "y": 258}, "health": 280, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 60, "y": 48}, "groupCount": 4, "maxHealth_maybe": 280, "useCostOrDefense": 30, "baseDamageOrPurchasePrice_maybe": 50, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 42, "y": 26}, {"x": 42, "y": 34}], "unk_0x24": 4, "bonusDamage": 70, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "JadeRing", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 49, "y": 8}, {"x": 49, "y": 32}, {"x": 48, "y": 58}], "damageSamplePoints_maybe": [{"x": 49, "y": 28}, {"x": 0, "y": 28}, {"x": 22, "y": 52}, {"x": 25, "y": 11}, {"x": 14, "y": 15}, {"x": 37, "y": 15}, {"x": 34, "y": 41}, {"x": 11, "y": 43}], "unknownFieldFromSpriteTree": 5491776}, {"animationFrameOrder": [0, 1, 2, 3, 4], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 49, "y": 3}, {"x": 49, "y": 24}, {"x": 49, "y": 46}], "damageSamplePoints_maybe": [{"x": 47, "y": 20}, {"x": 8, "y": 22}, {"x": 29, "y": 32}, {"x": 28, "y": 5}, {"x": 14, "y": 9}, {"x": 15, "y": 36}, {"x": 43, "y": 34}, {"x": 40, "y": 14}], "unknownFieldFromSpriteTree": 5498756}, {"animationFrameOrder": [0, 1, 2, 3, 4], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 46, "y": 7}, {"x": 46, "y": 30}, {"x": 44, "y": 55}], "damageSamplePoints_maybe": [{"x": 43, "y": 31}, {"x": 0, "y": 31}, {"x": 19, "y": 52}, {"x": 23, "y": 9}, {"x": 8, "y": 17}, {"x": 8, "y": 45}, {"x": 33, "y": 44}, {"x": 37, "y": 17}], "unknownFieldFromSpriteTree": 5503536}, {"animationFrameOrder": [0, 1, 2, 3, 4], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 49, "y": 16}, {"x": 48, "y": 38}, {"x": 47, "y": 60}], "damageSamplePoints_maybe": [{"x": 46, "y": 41}, {"x": 8, "y": 41}, {"x": 27, "y": 52}, {"x": 28, "y": 22}, {"x": 14, "y": 26}, {"x": 15, "y": 49}, {"x": 38, "y": 48}, {"x": 41, "y": 26}], "unknownFieldFromSpriteTree": 5510200}], "unknownFieldFromSpriteTree": 5491752, "commonName": "enemy.sardak.red"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 108,
+        "y": 258
+      },
+      "health": 280,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 60,
+        "y": 48
+      },
+      "groupCount": 4,
+      "maxHealth_maybe": 280,
+      "useCostOrDefense": 30,
+      "baseDamageOrPurchasePrice_maybe": 50,
+      "collisionSamplePoints": [
+        {
+          "x": 26,
+          "y": 42
+        },
+        {
+          "x": 34,
+          "y": 42
+        }
+      ],
+      "bonusDamage": 70,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Random",
+      "weakToSpell": "JadeRing",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 8,
+              "y": 49
+            },
+            {
+              "x": 32,
+              "y": 49
+            },
+            {
+              "x": 58,
+              "y": 48
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 28,
+              "y": 49
+            },
+            {
+              "x": 28,
+              "y": 0
+            },
+            {
+              "x": 52,
+              "y": 22
+            },
+            {
+              "x": 11,
+              "y": 25
+            },
+            {
+              "x": 15,
+              "y": 14
+            },
+            {
+              "x": 15,
+              "y": 37
+            },
+            {
+              "x": 41,
+              "y": 34
+            },
+            {
+              "x": 43,
+              "y": 11
+            }
+          ],
+          "unusedSpritePointer": 5491776
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 3,
+              "y": 49
+            },
+            {
+              "x": 24,
+              "y": 49
+            },
+            {
+              "x": 46,
+              "y": 49
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 20,
+              "y": 47
+            },
+            {
+              "x": 22,
+              "y": 8
+            },
+            {
+              "x": 32,
+              "y": 29
+            },
+            {
+              "x": 5,
+              "y": 28
+            },
+            {
+              "x": 9,
+              "y": 14
+            },
+            {
+              "x": 36,
+              "y": 15
+            },
+            {
+              "x": 34,
+              "y": 43
+            },
+            {
+              "x": 14,
+              "y": 40
+            }
+          ],
+          "unusedSpritePointer": 5498756
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 7,
+              "y": 46
+            },
+            {
+              "x": 30,
+              "y": 46
+            },
+            {
+              "x": 55,
+              "y": 44
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 31,
+              "y": 43
+            },
+            {
+              "x": 31,
+              "y": 0
+            },
+            {
+              "x": 52,
+              "y": 19
+            },
+            {
+              "x": 9,
+              "y": 23
+            },
+            {
+              "x": 17,
+              "y": 8
+            },
+            {
+              "x": 45,
+              "y": 8
+            },
+            {
+              "x": 44,
+              "y": 33
+            },
+            {
+              "x": 17,
+              "y": 37
+            }
+          ],
+          "unusedSpritePointer": 5503536
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 16,
+              "y": 49
+            },
+            {
+              "x": 38,
+              "y": 48
+            },
+            {
+              "x": 60,
+              "y": 47
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 41,
+              "y": 46
+            },
+            {
+              "x": 41,
+              "y": 8
+            },
+            {
+              "x": 52,
+              "y": 27
+            },
+            {
+              "x": 22,
+              "y": 28
+            },
+            {
+              "x": 26,
+              "y": 14
+            },
+            {
+              "x": 49,
+              "y": 15
+            },
+            {
+              "x": 48,
+              "y": 38
+            },
+            {
+              "x": 26,
+              "y": 41
+            }
+          ],
+          "unusedSpritePointer": 5510200
+        }
+      ],
+      "unusedSpritePointer": 5491752,
+      "commonName": "enemy.sardak.red"
+    }
+  ]
+}

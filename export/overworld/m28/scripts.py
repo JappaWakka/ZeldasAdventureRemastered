@@ -33,7 +33,7 @@ class Cell:
 		save[CELL_LEFT + 2] = 115 # 0x73, b'\x00s'
 		setLocationOnMap(m27)
 		
-	def onRespawn_maybe(self):
+	def onLeave(self):
 		save[RAFT_JOURNEY_STATE] = 0 # 0x0, b'\x00\x00'
 		
 # Local variables

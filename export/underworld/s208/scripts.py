@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0, 1, 2, 3, 4, 5, 6]
 class env_bridge_movingRock:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])
 		
 	def onLoad_maybe(self):

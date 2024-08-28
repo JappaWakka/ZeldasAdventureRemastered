@@ -2,7 +2,7 @@
 
 # Actor description 0
 # Used for actors: [0, 1, 2, 3]
-class enemy_tumbleWeed:
+class enemy_tumbleBot:
 	def onLoad_maybe(self):
 		spawnAndAnimate(actor=self)
 		

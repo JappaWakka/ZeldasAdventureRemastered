@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0, 1, 2, 3]
 class env_unknownActor275:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		loseOneHeart()
 		
 	def onLoad_maybe(self):
@@ -12,7 +12,7 @@ class env_unknownActor275:
 # Actor description 1
 # Used for actors: []
 class enemy_crystalShard:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		loseOneHeart()
 		
 class Cell:
@@ -33,7 +33,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 12340 # 0x3034, b'04'
 		save[CELL_LEFT + 2] = 115 # 0x73, b'\x00s'
 		save[RESPAWN_CELL_ID_maybe] = 5 # 0x5, b'\x00\x05'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 # No local variables
 

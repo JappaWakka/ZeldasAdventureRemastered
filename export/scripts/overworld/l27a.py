@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_toobar:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 1] == 0:
 			playVoiceLine(source=self, soundId=0)
 			save[LOCALS + 1] = 1 # 0x1, b'\x00\x01'
@@ -23,7 +23,7 @@ class npc_toobar:
 # Actor description 1
 # Used for actors: [1]
 class npc_pickpocket:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 2] == 0:
 			rupees -= 25
 			save[LOCALS + 2] = 1 # 0x1, b'\x00\x01'

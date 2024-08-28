@@ -18,7 +18,7 @@ class enemy_vire:
 # Actor description 1
 # Used for actors: [1]
 class item_map_s2:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Map2] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -29,7 +29,7 @@ class item_map_s2:
 # Actor description 2
 # Used for actors: [2]
 class env_unknownActor254:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])
 		
 	def onLoad_maybe(self):

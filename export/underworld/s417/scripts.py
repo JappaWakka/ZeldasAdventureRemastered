@@ -24,7 +24,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 0 # 0x0, b'\x00\x00'
 		save[CELL_LEFT + 2] = 0 # 0x0, b'\x00\x00'
 		save[RESPAWN_CELL_ID_maybe] = 17 # 0x11, b'\x00\x11'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 	def onTouchTrigger(self):
 		teleportPlayerTo(cellName=(char*) &save[LOCALS + 0])

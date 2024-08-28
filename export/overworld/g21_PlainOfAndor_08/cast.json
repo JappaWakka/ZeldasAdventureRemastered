@@ -1,1 +1,224 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 77, "y": 110}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 0, "spawnCoords": {"x": 89, "y": 212}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 0, "spawnCoords": {"x": 97, "y": 140}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 44, "y": 55}, "groupCount": 1, "maxHealth_maybe": 60, "useCostOrDefense": 10, "baseDamageOrPurchasePrice_maybe": 44, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 44, "y": 16}, {"x": 44, "y": 26}], "unk_0x24": 4, "bonusDamage": 0, "unk_0x2b": 2, "unk_0x2c": 0, "unk_0x2a": 1, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 2, "unk_0x18": [{"x": 49, "y": -2}, {"x": 50, "y": 20}, {"x": 48, "y": 45}], "damageSamplePoints_maybe": [{"x": 2, "y": 18}, {"x": 50, "y": 22}, {"x": 41, "y": 43}, {"x": 19, "y": 41}, {"x": 21, "y": 0}, {"x": 43, "y": 3}, {"x": 6, "y": 35}, {"x": 9, "y": 0}], "unknownFieldFromSpriteTree": 5497012}], "unknownFieldFromSpriteTree": 5497000, "commonName": "enemy.peahat"}, {"size": {"x": 20, "y": 20}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 46, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 6, "y": 5}, {"x": 12, "y": 14}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "Hazzard", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 16, "y": 0}, {"x": 16, "y": 9}, {"x": 15, "y": 18}], "damageSamplePoints_maybe": [{"x": 2, "y": 7}, {"x": 7, "y": 2}, {"x": 14, "y": 8}, {"x": 9, "y": 17}], "unknownFieldFromSpriteTree": 5502444}], "unknownFieldFromSpriteTree": 5502432, "commonName": "enemy.peahat.projectile"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 77,
+        "y": 110
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 89,
+        "y": 212
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 97,
+        "y": 140
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 44,
+        "y": 55
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 60,
+      "useCostOrDefense": 10,
+      "baseDamageOrPurchasePrice_maybe": 44,
+      "collisionSamplePoints": [
+        {
+          "x": 16,
+          "y": 44
+        },
+        {
+          "x": 26,
+          "y": 44
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 2,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Allow(1)",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Random",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 2,
+          "treeHeightSamples": [
+            {
+              "x": -2,
+              "y": 49
+            },
+            {
+              "x": 20,
+              "y": 50
+            },
+            {
+              "x": 45,
+              "y": 48
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 18,
+              "y": 2
+            },
+            {
+              "x": 22,
+              "y": 50
+            },
+            {
+              "x": 43,
+              "y": 41
+            },
+            {
+              "x": 41,
+              "y": 19
+            },
+            {
+              "x": 0,
+              "y": 21
+            },
+            {
+              "x": 3,
+              "y": 43
+            },
+            {
+              "x": 35,
+              "y": 6
+            },
+            {
+              "x": 0,
+              "y": 9
+            }
+          ],
+          "unusedSpritePointer": 5497012
+        }
+      ],
+      "unusedSpritePointer": 5497000,
+      "commonName": "enemy.peahat"
+    },
+    {
+      "size": {
+        "x": 20,
+        "y": 20
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 46,
+      "collisionSamplePoints": [
+        {
+          "x": 5,
+          "y": 6
+        },
+        {
+          "x": 14,
+          "y": 12
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Hazzard",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 16
+            },
+            {
+              "x": 9,
+              "y": 16
+            },
+            {
+              "x": 18,
+              "y": 15
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 7,
+              "y": 2
+            },
+            {
+              "x": 2,
+              "y": 7
+            },
+            {
+              "x": 8,
+              "y": 14
+            },
+            {
+              "x": 17,
+              "y": 9
+            }
+          ],
+          "unusedSpritePointer": 5502444
+        }
+      ],
+      "unusedSpritePointer": 5502432,
+      "commonName": "enemy.peahat.projectile"
+    }
+  ]
+}

@@ -1,1 +1,1081 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 115, "y": 116}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "MobileNpc_maybe", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 1, "spawnCoords": {"x": 80, "y": 164}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType3", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 92, "y": 75}, "groupCount": 4, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 50, "y": 46}, {"x": 50, "y": 52}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 3, 4, 3, 2, 1], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 56, "y": 28}, {"x": 56, "y": 49}, {"x": 55, "y": 69}], "damageSamplePoints_maybe": [{"x": 11, "y": 46}, {"x": 55, "y": 48}, {"x": 32, "y": 67}, {"x": 33, "y": 27}, {"x": 22, "y": 35}, {"x": 21, "y": 59}, {"x": 44, "y": 59}, {"x": 42, "y": 35}], "unknownFieldFromSpriteTree": 5496896}, {"animationFrameOrder": [0, 1, 2, 3, 4], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 55, "y": 25}, {"x": 54, "y": 47}, {"x": 54, "y": 71}], "damageSamplePoints_maybe": [{"x": 11, "y": 42}, {"x": 57, "y": 48}, {"x": 42, "y": 30}, {"x": 25, "y": 29}, {"x": 24, "y": 57}, {"x": 38, "y": 63}, {"x": 45, "y": 70}], "unknownFieldFromSpriteTree": 5502024}, {"animationFrameOrder": [0, 1, 2, 3, 4], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 63, "y": 36}, {"x": 64, "y": 51}, {"x": 63, "y": 69}], "damageSamplePoints_maybe": [{"x": 10, "y": 50}, {"x": 57, "y": 50}, {"x": 44, "y": 37}, {"x": 26, "y": 37}, {"x": 22, "y": 63}, {"x": 40, "y": 69}, {"x": 51, "y": 64}], "unknownFieldFromSpriteTree": 5507076}, {"animationFrameOrder": [0, 1, 2, 3, 4], "unk_0x12": 0, "frameDelay": 4, "unk_0x18": [{"x": 57, "y": 21}, {"x": 56, "y": 42}, {"x": 54, "y": 61}], "damageSamplePoints_maybe": [{"x": 15, "y": 48}, {"x": 56, "y": 44}, {"x": 49, "y": 61}, {"x": 32, "y": 59}, {"x": 21, "y": 59}, {"x": 23, "y": 34}, {"x": 38, "y": 30}, {"x": 47, "y": 21}], "unknownFieldFromSpriteTree": 5512536}], "unknownFieldFromSpriteTree": 5496872, "commonName": "enemy.guard"}, {"size": {"x": 32, "y": 32}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 16, "y": 10}, {"x": 15, "y": 16}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 0, "unk_0x18": [{"x": 29, "y": -5}, {"x": 30, "y": 11}, {"x": 31, "y": 33}], "damageSamplePoints_maybe": [{"x": -3, "y": -2}, {"x": 31, "y": 32}, {"x": 19, "y": 27}, {"x": 7, "y": 13}, {"x": 12, "y": 4}, {"x": 23, "y": 14}], "unknownFieldFromSpriteTree": 5517600}], "unknownFieldFromSpriteTree": 5517588, "commonName": "item.weapon.broadsword"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 115,
+        "y": 116
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType1",
+      "animation": {
+        "vectorUnkCoord_maybeStart": {
+          "x": 116,
+          "y": 115
+        },
+        "error": false,
+        "commands": [
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "setGroup(3)"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 6
+            },
+            "command": "setGroup(2)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 6
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 6
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 6
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 6
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 6
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": 6
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "setGroup(3)"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": -2,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "setGroup(0)"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 0,
+              "y": -2
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "setGroup(1)"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -6
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": -6
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          },
+          {
+            "coords": {
+              "x": 6,
+              "y": 0
+            },
+            "command": "nop"
+          }
+        ]
+      }
+    },
+    {
+      "descIndex": 1,
+      "spawnCoords": {
+        "x": 80,
+        "y": 164
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "AnimationActionsOnly",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 92,
+        "y": 75
+      },
+      "groupCount": 4,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 46,
+          "y": 50
+        },
+        {
+          "x": 52,
+          "y": 50
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            3,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": 28,
+              "y": 56
+            },
+            {
+              "x": 49,
+              "y": 56
+            },
+            {
+              "x": 69,
+              "y": 55
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 46,
+              "y": 11
+            },
+            {
+              "x": 48,
+              "y": 55
+            },
+            {
+              "x": 67,
+              "y": 32
+            },
+            {
+              "x": 27,
+              "y": 33
+            },
+            {
+              "x": 35,
+              "y": 22
+            },
+            {
+              "x": 59,
+              "y": 21
+            },
+            {
+              "x": 59,
+              "y": 44
+            },
+            {
+              "x": 35,
+              "y": 42
+            }
+          ],
+          "unusedSpritePointer": 5496896
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": 25,
+              "y": 55
+            },
+            {
+              "x": 47,
+              "y": 54
+            },
+            {
+              "x": 71,
+              "y": 54
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 42,
+              "y": 11
+            },
+            {
+              "x": 48,
+              "y": 57
+            },
+            {
+              "x": 30,
+              "y": 42
+            },
+            {
+              "x": 29,
+              "y": 25
+            },
+            {
+              "x": 57,
+              "y": 24
+            },
+            {
+              "x": 63,
+              "y": 38
+            },
+            {
+              "x": 70,
+              "y": 45
+            }
+          ],
+          "unusedSpritePointer": 5502024
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": 36,
+              "y": 63
+            },
+            {
+              "x": 51,
+              "y": 64
+            },
+            {
+              "x": 69,
+              "y": 63
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 50,
+              "y": 10
+            },
+            {
+              "x": 50,
+              "y": 57
+            },
+            {
+              "x": 37,
+              "y": 44
+            },
+            {
+              "x": 37,
+              "y": 26
+            },
+            {
+              "x": 63,
+              "y": 22
+            },
+            {
+              "x": 69,
+              "y": 40
+            },
+            {
+              "x": 64,
+              "y": 51
+            }
+          ],
+          "unusedSpritePointer": 5507076
+        },
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 4,
+          "treeHeightSamples": [
+            {
+              "x": 21,
+              "y": 57
+            },
+            {
+              "x": 42,
+              "y": 56
+            },
+            {
+              "x": 61,
+              "y": 54
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 48,
+              "y": 15
+            },
+            {
+              "x": 44,
+              "y": 56
+            },
+            {
+              "x": 61,
+              "y": 49
+            },
+            {
+              "x": 59,
+              "y": 32
+            },
+            {
+              "x": 59,
+              "y": 21
+            },
+            {
+              "x": 34,
+              "y": 23
+            },
+            {
+              "x": 30,
+              "y": 38
+            },
+            {
+              "x": 21,
+              "y": 47
+            }
+          ],
+          "unusedSpritePointer": 5512536
+        }
+      ],
+      "unusedSpritePointer": 5496872,
+      "commonName": "enemy.guard"
+    },
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 10,
+          "y": 16
+        },
+        {
+          "x": 16,
+          "y": 15
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": -5,
+              "y": 29
+            },
+            {
+              "x": 11,
+              "y": 30
+            },
+            {
+              "x": 33,
+              "y": 31
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": -2,
+              "y": -3
+            },
+            {
+              "x": 32,
+              "y": 31
+            },
+            {
+              "x": 27,
+              "y": 19
+            },
+            {
+              "x": 13,
+              "y": 7
+            },
+            {
+              "x": 4,
+              "y": 12
+            },
+            {
+              "x": 14,
+              "y": 23
+            }
+          ],
+          "unusedSpritePointer": 5517600
+        }
+      ],
+      "unusedSpritePointer": 5517588,
+      "commonName": "item.weapon.broadsword"
+    }
+  ]
+}

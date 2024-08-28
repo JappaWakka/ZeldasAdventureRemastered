@@ -15,7 +15,7 @@ class enemy_keese:
 # Actor description 1
 # Used for actors: [3]
 class item_compass_s1:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Compass1] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

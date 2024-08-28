@@ -2,7 +2,7 @@
 
 # Actor description 0
 # Used for actors: [0, 1, 2]
-class npc_golem:
+class enemy_golem:
 	def onLoad_maybe(self):
 		spawnAndAnimate(actor=self)
 		

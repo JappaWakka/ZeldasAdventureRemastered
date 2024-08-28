@@ -25,7 +25,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 12338 # 0x3032, b'02'
 		save[CELL_LEFT + 2] = 102 # 0x66, b'\x00f'
 		save[RESPAWN_CELL_ID_maybe] = 3 # 0x3, b'\x00\x03'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 # No local variables
 

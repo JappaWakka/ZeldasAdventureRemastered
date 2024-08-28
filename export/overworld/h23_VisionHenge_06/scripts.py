@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class item_weapon_wand:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Wand] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

@@ -1,0 +1,107 @@
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 148,
+        "y": 74
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "AnimationActionsOnly",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 14,
+          "y": 32
+        },
+        {
+          "x": 20,
+          "y": 32
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "EmptyWaterBottle",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 0,
+          "treeHeightSamples": [
+            {
+              "x": 4,
+              "y": 33
+            },
+            {
+              "x": 16,
+              "y": 33
+            },
+            {
+              "x": 30,
+              "y": 33
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 15,
+              "y": 0
+            },
+            {
+              "x": 25,
+              "y": 6
+            },
+            {
+              "x": 27,
+              "y": 20
+            },
+            {
+              "x": 20,
+              "y": 32
+            },
+            {
+              "x": 11,
+              "y": 33
+            },
+            {
+              "x": 6,
+              "y": 23
+            },
+            {
+              "x": 6,
+              "y": 7
+            }
+          ],
+          "unusedSpritePointer": 5491764
+        }
+      ],
+      "unusedSpritePointer": 5491752,
+      "commonName": "item.treasure.fullWaterBottle"
+    }
+  ]
+}

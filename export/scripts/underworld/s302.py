@@ -16,7 +16,7 @@ class enemy_tornado:
 # Actor description 1
 # Used for actors: [3]
 class item_map_s3:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Map3] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -38,7 +38,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 0 # 0x0, b'\x00\x00'
 		save[CELL_LEFT + 2] = 0 # 0x0, b'\x00\x00'
 		save[RESPAWN_CELL_ID_maybe] = 2 # 0x2, b'\x00\x02'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 # Local variables
 local0 = 0 # 0x0, b'\x00\x00'

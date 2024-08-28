@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_gwynla:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 0] == 0 and save[LOCALS + 3] == 0:
 			playVoiceLine(source=self, soundId=0)
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
@@ -26,7 +26,7 @@ class npc_gwynla:
 # Actor description 1
 # Used for actors: [1]
 class npc_lonlyn:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 1] == 0 and save[LOCALS + 3] == 0:
 			playVoiceLine(source=self, soundId=3)
 			save[LOCALS + 1] = 1 # 0x1, b'\x00\x01'
@@ -43,7 +43,7 @@ class npc_lonlyn:
 # Actor description 2
 # Used for actors: [2]
 class item_weapon_noise:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Noise] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

@@ -18,7 +18,7 @@ class npc_glebb:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_emptyWaterBottle:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[EmptyWaterBottle] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -29,7 +29,7 @@ class item_treasure_emptyWaterBottle:
 # Actor description 2
 # Used for actors: [2]
 class item_treasure_vialOfWinds:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[VialOfWinds] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

@@ -12,17 +12,17 @@ class env_switch:
 	def onHitOrIteractIntercept(self):
 		if save[LOCALS + 0] == 0:
 			setSpriteGroup(1) # Usually the sprite for RIGHT
-			op27b(actor=cast[0])
-			op27b(actor=cast[1])
-			op27b(actor=cast[2])
-			op27b(actor=cast[3])
+			hide(actor=cast[0])
+			hide(actor=cast[1])
+			hide(actor=cast[2])
+			hide(actor=cast[3])
 			save[LOCALS + 0] = 1 # 0x1, b'\x00\x01'
 		else:
 			setSpriteGroup(0) # Usually the sprite for UP
-			op27a(actor=cast[0])
-			op27a(actor=cast[1])
-			op27a(actor=cast[2])
-			op27a(actor=cast[3])
+			show(actor=cast[0])
+			show(actor=cast[1])
+			show(actor=cast[2])
+			show(actor=cast[3])
 			save[LOCALS + 0] = 0 # 0x0, b'\x00\x00'
 		
 	def onLoad_maybe(self):

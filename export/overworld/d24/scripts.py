@@ -16,7 +16,7 @@ class enemy_goriya:
 # Actor description 2
 # Used for actors: [1]
 class item_weapon_boomerang:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Boomerang] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

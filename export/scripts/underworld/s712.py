@@ -19,7 +19,7 @@ class enemy_warbane:
 # Actor description 1
 # Used for actors: [1]
 class item_weapon_hammer:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		showSparklesAndDespawn(actor=self)
 		save[Hammer] = 1 # 0x1, b'\x00\x01'
 		

@@ -29,7 +29,7 @@ class npc_merchant_unknownActor181:
 # Actor description 1
 # Used for actors: [1]
 class item_map_s4:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Map4] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		

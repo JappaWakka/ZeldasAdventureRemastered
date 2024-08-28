@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0, 1, 2, 3]
 class env_unknownActor275:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		loseOneHeart()
 		
 	def onLoad_maybe(self):
@@ -12,7 +12,7 @@ class env_unknownActor275:
 # Actor description 1
 # Used for actors: []
 class enemy_crystalShard:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		loseOneHeart()
 		
 class Cell:
@@ -38,7 +38,7 @@ class Cell:
 		save[CELL_LEFT + 1] = 12341 # 0x3035, b'05'
 		save[CELL_LEFT + 2] = 115 # 0x73, b'\x00s'
 		save[RESPAWN_CELL_ID_maybe] = 6 # 0x6, b'\x00\x06'
-		disableIcePhysics()
+		enableIcePhysics()
 		
 		if save[AVIANA_DEFEATED] == 0:
 			playVoiceLine(source=self, soundId=0)

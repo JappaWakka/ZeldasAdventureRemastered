@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_moblinHeadInn_unknownActor58:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 3] == 0 and save[LOCALS + 9] == 0:
 			playVoiceLine(source=self, soundId=5)
 			save[LOCALS + 3] = 1 # 0x1, b'\x00\x01'
@@ -18,7 +18,7 @@ class npc_moblinHeadInn_unknownActor58:
 # Actor description 1
 # Used for actors: [1]
 class npc_moblinHeadInn_unknownActor59:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 4] == 0 and save[LOCALS + 9] == 0:
 			playVoiceLine(source=self, soundId=11)
 			save[LOCALS + 9] = 1 # 0x1, b'\x00\x01'
@@ -33,7 +33,7 @@ class npc_moblinHeadInn_unknownActor59:
 # Actor description 2
 # Used for actors: [2]
 class npc_tiredTraveler:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 7] == 1 and save[Calm] == 0 and save[LOCALS + 9] == 0:
 			playVoiceLine(source=self, soundId=9)
 			save[LOCALS + 9] = 1 # 0x1, b'\x00\x01'
@@ -51,7 +51,7 @@ class npc_tiredTraveler:
 # Actor description 3
 # Used for actors: [3]
 class item_treasure_candle:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -64,7 +64,7 @@ class item_treasure_candle:
 # Actor description 4
 # Used for actors: [4]
 class npc_krebb:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 6] == 1 and save[Dagger] == 0 and save[LOCALS + 9] == 0:
 			playVoiceLine(source=self, soundId=1)
 			save[LOCALS + 6] = 2 # 0x2, b'\x00\x02'
@@ -89,7 +89,7 @@ class npc_krebb:
 # Actor description 5
 # Used for actors: [5]
 class item_weapon_dagger:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		save[Dagger] = 1 # 0x1, b'\x00\x01'
 		showSparklesAndDespawn(actor=self)
 		
@@ -100,7 +100,7 @@ class item_weapon_dagger:
 # Actor description 6
 # Used for actors: [6]
 class item_weapon_calm:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):

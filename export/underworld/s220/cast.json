@@ -1,1 +1,333 @@
-{"actors": [{"descIndex": 0, "spawnCoords": {"x": 91, "y": 62}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 0, "spawnCoords": {"x": 163, "y": 278}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 0, "spawnCoords": {"x": 79, "y": 158}, "health": 60, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType2", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}, {"descIndex": 2, "spawnCoords": {"x": 128, "y": 170}, "health": 0, "unk_0x24": 0, "direction": "UP", "animationType": "UnknownType3", "unk_0x28": 0, "unk_0x30": 0, "unk_0x31": 0, "unk_0x32": 0, "unk_0x34": 0, "unk_0x35": 0}], "descriptions": [{"size": {"x": 56, "y": 42}, "groupCount": 1, "maxHealth_maybe": 60, "useCostOrDefense": 15, "baseDamageOrPurchasePrice_maybe": 51, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 26, "y": 26}, {"x": 26, "y": 34}], "unk_0x24": 4, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 49, "type_maybe": "UnknownType1_CanDamage", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0, 1, 2, 1], "unk_0x12": 0, "frameDelay": 3, "unk_0x18": [{"x": 40, "y": 0}, {"x": 39, "y": 29}, {"x": 40, "y": 57}], "damageSamplePoints_maybe": [{"x": 32, "y": 30}, {"x": 18, "y": 47}, {"x": 2, "y": 38}, {"x": 1, "y": 20}, {"x": 8, "y": 8}, {"x": 20, "y": 12}, {"x": 28, "y": 17}, {"x": 28, "y": 39}], "unknownFieldFromSpriteTree": 5490964}], "unknownFieldFromSpriteTree": 5490952, "commonName": "npc.molluska"}, {"size": {"x": 12, "y": 13}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 50, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 6, "y": 5}, {"x": 6, "y": 9}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 48, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 2, "unk_0x18": [{"x": 11, "y": -3}, {"x": 12, "y": 6}, {"x": 12, "y": 14}], "damageSamplePoints_maybe": [{"x": 0, "y": 6}, {"x": 13, "y": 6}, {"x": 6, "y": 13}, {"x": 6, "y": -1}, {"x": 2, "y": 1}, {"x": 2, "y": 12}, {"x": 9, "y": 12}, {"x": 11, "y": 2}], "unknownFieldFromSpriteTree": 5494204}], "unknownFieldFromSpriteTree": 5494192, "commonName": "npc.molluska.projectile"}, {"size": {"x": 32, "y": 32}, "groupCount": 1, "maxHealth_maybe": 0, "useCostOrDefense": 0, "baseDamageOrPurchasePrice_maybe": 0, "unk_0x14": 0, "unk_0x15": 0, "collisionSamplePoints": [{"x": 16, "y": 10}, {"x": 17, "y": 18}], "unk_0x24": 0, "bonusDamage": 0, "unk_0x2b": 0, "unk_0x2c": 0, "unk_0x2a": 0, "type_maybe": "UnknownType0", "weakToSpell": "None", "interactsWithItem": "NoneOrVialOfAcid", "groups": [{"animationFrameOrder": [0], "unk_0x12": 0, "frameDelay": 7, "unk_0x18": [{"x": 32, "y": -5}, {"x": 31, "y": 18}, {"x": 30, "y": 38}], "damageSamplePoints_maybe": [{"x": 3, "y": 30}, {"x": 31, "y": 0}, {"x": 23, "y": 13}, {"x": 16, "y": 22}, {"x": 0, "y": 17}, {"x": 15, "y": 6}], "unknownFieldFromSpriteTree": 5494384}], "unknownFieldFromSpriteTree": 5494372, "commonName": "item.treasure.blackKey"}]}
+{
+  "actors": [
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 91,
+        "y": 62
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 163,
+        "y": 278
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 0,
+      "spawnCoords": {
+        "x": 79,
+        "y": 158
+      },
+      "health": 60,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "UnknownType2",
+      "animation": null
+    },
+    {
+      "descIndex": 2,
+      "spawnCoords": {
+        "x": 128,
+        "y": 170
+      },
+      "health": 0,
+      "unk_0x24": 0,
+      "unk_0x28": 0,
+      "unk_0x30": 0,
+      "unk_0x32": 0,
+      "unk_0x34": 0,
+      "unk_0x35": 0,
+      "direction": "UP",
+      "animationType": "AnimationActionsOnly",
+      "animation": null
+    }
+  ],
+  "descriptions": [
+    {
+      "size": {
+        "x": 56,
+        "y": 42
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 60,
+      "useCostOrDefense": 15,
+      "baseDamageOrPurchasePrice_maybe": 51,
+      "collisionSamplePoints": [
+        {
+          "x": 26,
+          "y": 26
+        },
+        {
+          "x": 34,
+          "y": 26
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Allow(49)",
+      "type_maybe": "EnemyOrSwitch",
+      "lootDropped": "Random",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 3,
+          "treeHeightSamples": [
+            {
+              "x": 0,
+              "y": 40
+            },
+            {
+              "x": 29,
+              "y": 39
+            },
+            {
+              "x": 57,
+              "y": 40
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 30,
+              "y": 32
+            },
+            {
+              "x": 47,
+              "y": 18
+            },
+            {
+              "x": 38,
+              "y": 2
+            },
+            {
+              "x": 20,
+              "y": 1
+            },
+            {
+              "x": 8,
+              "y": 8
+            },
+            {
+              "x": 12,
+              "y": 20
+            },
+            {
+              "x": 17,
+              "y": 28
+            },
+            {
+              "x": 39,
+              "y": 28
+            }
+          ],
+          "unusedSpritePointer": 5490964
+        }
+      ],
+      "unusedSpritePointer": 5490952,
+      "commonName": "enemy.molluska"
+    },
+    {
+      "size": {
+        "x": 12,
+        "y": 13
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 50,
+      "collisionSamplePoints": [
+        {
+          "x": 5,
+          "y": 6
+        },
+        {
+          "x": 9,
+          "y": 6
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Allow(48)",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 2,
+          "treeHeightSamples": [
+            {
+              "x": -3,
+              "y": 11
+            },
+            {
+              "x": 6,
+              "y": 12
+            },
+            {
+              "x": 14,
+              "y": 12
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 6,
+              "y": 0
+            },
+            {
+              "x": 6,
+              "y": 13
+            },
+            {
+              "x": 13,
+              "y": 6
+            },
+            {
+              "x": -1,
+              "y": 6
+            },
+            {
+              "x": 1,
+              "y": 2
+            },
+            {
+              "x": 12,
+              "y": 2
+            },
+            {
+              "x": 12,
+              "y": 9
+            },
+            {
+              "x": 2,
+              "y": 11
+            }
+          ],
+          "unusedSpritePointer": 5494204
+        }
+      ],
+      "unusedSpritePointer": 5494192,
+      "commonName": "enemy.molluska.projectile"
+    },
+    {
+      "size": {
+        "x": 32,
+        "y": 32
+      },
+      "groupCount": 1,
+      "maxHealth_maybe": 0,
+      "useCostOrDefense": 0,
+      "baseDamageOrPurchasePrice_maybe": 0,
+      "collisionSamplePoints": [
+        {
+          "x": 10,
+          "y": 16
+        },
+        {
+          "x": 18,
+          "y": 17
+        }
+      ],
+      "bonusDamage": 0,
+      "unk_0x2b": 0,
+      "unk_0x2c": 0,
+      "canUseProjectiles": "Deny",
+      "type_maybe": "Normal",
+      "lootDropped": "Nothing",
+      "weakToSpell": "None",
+      "interactsWithItem": "NoneOrVialOfAcid",
+      "groups": [
+        {
+          "animationFrameOrder": [
+            0
+          ],
+          "unk_0x12": 0,
+          "frameDelay": 7,
+          "treeHeightSamples": [
+            {
+              "x": -5,
+              "y": 32
+            },
+            {
+              "x": 18,
+              "y": 31
+            },
+            {
+              "x": 38,
+              "y": 30
+            }
+          ],
+          "damageSamplePoints_maybe": [
+            {
+              "x": 30,
+              "y": 3
+            },
+            {
+              "x": 0,
+              "y": 31
+            },
+            {
+              "x": 13,
+              "y": 23
+            },
+            {
+              "x": 22,
+              "y": 16
+            },
+            {
+              "x": 17,
+              "y": 0
+            },
+            {
+              "x": 6,
+              "y": 15
+            }
+          ],
+          "unusedSpritePointer": 5494384
+        }
+      ],
+      "unusedSpritePointer": 5494372,
+      "commonName": "item.treasure.blackKey"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 # Actor description 0
 # Used for actors: [0]
 class npc_townMerchant:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		if save[LOCALS + 1] == 0:
 			playVoiceLine(source=self, soundId=6)
 			save[LOCALS + 1] = 1 # 0x1, b'\x00\x01'
@@ -26,7 +26,7 @@ class npc_townMerchant:
 # Actor description 1
 # Used for actors: [1]
 class item_treasure_candle:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
@@ -45,7 +45,7 @@ class item_treasure_candle:
 # Actor description 2
 # Used for actors: [2]
 class item_treasure_lifePotion:
-	def onTouch(self):
+	def onTouchOrPushBlockStoppedMoving(self):
 		registerAsTreasureListener(actor=self)
 		
 	def onPurchaseOrAnimationComplete(self):
