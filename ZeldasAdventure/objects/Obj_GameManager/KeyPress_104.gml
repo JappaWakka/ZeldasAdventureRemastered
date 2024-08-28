@@ -1,10 +1,12 @@
 /// @description Set Player Speed to 2
-// You can write your code in this editor
-if Entity_Parent_Player.SpeedMultiplier != 2
+if room = Room_Overworld
 {
-	Entity_Parent_Player.SpeedMultiplier = 2
-}
-else
-{
-	Entity_Parent_Player.SpeedMultiplier = 1
+	if Entity_Parent_Player.SpeedMultiplier != 2
+	{
+		Entity_Parent_Player.SpeedMultiplier = 2
+	}
+	else
+	{
+		Entity_Parent_Player.SpeedMultiplier = 1
+	}
 }

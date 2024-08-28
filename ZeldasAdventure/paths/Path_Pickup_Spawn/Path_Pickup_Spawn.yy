@@ -26,7 +26,7 @@
     {"speed":100.0,"x":0.0,"y":-4.0,},
   ],
   "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+    "name": "Pickups & Items",
+    "path": "folders/Paths/Pickups & Items.yy",
   },
 }

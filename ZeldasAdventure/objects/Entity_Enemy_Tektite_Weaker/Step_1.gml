@@ -114,6 +114,7 @@ else
 		{
 			EnemyState = EnemyStates.Idle
 			speed = global.EnemySpeeds.Still
+			image_speed = 0
 		}
 	}
 }

@@ -1,6 +1,6 @@
 /// @description Add ALL items
 
-if global.DebugMode = true
+if global.DebugMode = true and room = Room_Overworld
 {
 	for (var i = 0; i < global.InventorySlots_Max[0]; i+=1)
 	{

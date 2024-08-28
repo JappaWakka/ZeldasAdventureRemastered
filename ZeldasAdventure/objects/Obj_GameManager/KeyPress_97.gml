@@ -1,5 +1,5 @@
 /// @description Decrease HP (DebugMode)
-if global.DebugMode = true
+if global.DebugMode = true and room = Room_Overworld
 {
 	DecreaseHP()
 }

@@ -41,6 +41,10 @@ function Camera_Pan()
 		{
 			
 			//Deactivate old tile, activate new tile
+			if instance_exists(Entity_Parent_Enemy_Keese) = true
+			{
+				Entity_Parent_Enemy_Keese.HasStarted = false
+			}
 			instance_destroy(Entity_Pickup_ItemDrops)
 			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)
 			instance_activate_object(Entity_Parent_Player)

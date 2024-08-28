@@ -1,23 +1,18 @@
 //If the player is on the same tile
 if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 {
+	//Play sound
+	if Script_AggroRange() = true
+	{
+		if global.EnemySoundPlaying = false
+		{
+				global.EnemySound = audio_play_sound_relative(EnemySoundName,1000,false)
+				global.EnemySoundPlaying = true
+		}
+	}
 	//Activate
 	visible = true;
-	if alarm_get(0) = -1
-	{
-		if EnemyState = EnemyStates.Move
-		{
-			alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
-		}
-	}
-	//Attack
-	if alarm_get(2) = -1
-	{
-		if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
-		{
-			alarm_set(2, random_range(0, 3 * FrameRate));
-		}
-	}
+	
 	//Player's Attack Damage
 	//Melee
 	if collision_circle(x,y,HitRadius,Entity_Hitbox_Spell_Wand,true,true)
@@ -27,9 +22,9 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			///Set return position
 			if ReturnToPoint = true and ReturnPointPosition[0] = -1 and ReturnPointPosition[1] = -1
 			{
-				ReturnPointPosition = [x,y]
+				ReturnPointPosition = CurrentCoordinates
 			}
-			
+			HasStarted = false;
 			///Reduce HitPoints, play damage sound
 			HitPoints -= GetPower() - Defense
 			audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
@@ -56,10 +51,11 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			if DamageDelay = 0
 			{
 				///Set return position
-				if ReturnToPoint = true
+				if ReturnToPoint = true and ReturnPointPosition[0] = -1 and ReturnPointPosition[1] = -1
 				{
-					ReturnPointPosition = [x,y]
+					ReturnPointPosition = CurrentCoordinates
 				}
+				HasStarted = false;
 				
 				///Reduce HitPoints, play damage sound
 				if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
@@ -83,6 +79,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			}
 		}
 	}
+	
 }
 else
 {
@@ -90,11 +87,8 @@ else
 	visible = false
 	if IsMenuVisible() = false && global.CameraIsFading = false
 	{
-		if path_index != -1
-		{
-			path_speed = 0
-			path_end()
-		}
+		HasStarted = false;
+		FrameIndex = 0;
 		x = OriginX;
 		y = OriginY;
 		image_index = 0;
@@ -113,7 +107,6 @@ if timerDuration = 0 and timerIndex > 0
 	{
 		timerIndex = 0
 		EnemyState = EnemyStates.Move
-		ChangeDirection = true
 	}
 	timerDuration = 4
 }
@@ -129,21 +122,13 @@ if DistanceLeftToKnockBack <= 0 && EnemyState = EnemyStates.Damaged
 	speed = 0
 }
 
-if EnemyState = EnemyStates.Attack
-{
-	speed = global.EnemySpeeds.Still
-}
 //Don't move outside of the current tile
 if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
 y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
 x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
 y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
 {
-	if EnemyState != EnemyStates.Damaged
-	{
-		ChangeDirection = true;
-	}
-	else
+	if EnemyState = EnemyStates.Damaged
 	{
 		speed = global.EnemySpeeds.Still
 		DistanceLeftToKnockBack = 0
@@ -154,11 +139,7 @@ if DamageDelay > 0
 {
 	DamageDelay -=1
 }
-if EnemyState != EnemyStates.Damaged
-{
-	image_speed = speed
-}
-else
+if EnemyState = EnemyStates.Damaged
 {
 	image_speed = 0
 }
