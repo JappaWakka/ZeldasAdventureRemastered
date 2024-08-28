@@ -41,10 +41,6 @@ function Camera_Pan()
 		{
 			
 			//Deactivate old tile, activate new tile
-			if instance_exists(Entity_Parent_Enemy_Keese) = true
-			{
-				Entity_Parent_Enemy_Keese.HasStarted = false
-			}
 			instance_destroy(Entity_Pickup_ItemDrops)
 			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)
 			instance_activate_object(Entity_Parent_Player)
@@ -92,6 +88,21 @@ function Camera_Pan()
 				}
 				else
 				{
+					if instance_exists(Entity_Parent_Enemy_Keese) = true
+					{
+						with Entity_Parent_Enemy_Keese
+						{
+							var randomDelay = random_range(StartDelayMin,StartDelayMax)
+							if randomDelay = 0
+							{
+								alarm_set(0, 1);
+							}
+							else
+							{
+								alarm_set(0, random_range(StartDelayMin,StartDelayMax));
+							}
+						}
+					}
 					if audio_is_playing(SFX_Zelda_Death) = false
 					{
 						global.SwitchTracks = true;
@@ -136,6 +147,21 @@ function Camera_Pan()
 				}
 				if global.FadeProgress = 2
 				{
+					if instance_exists(Entity_Parent_Enemy_Keese) = true
+					{
+						with Entity_Parent_Enemy_Keese
+						{
+							var randomDelay = random_range(StartDelayMin,StartDelayMax)
+							if randomDelay = 0
+							{
+								alarm_set(0, 1);
+							}
+							else
+							{
+								alarm_set(0, random_range(StartDelayMin,StartDelayMax));
+							}
+						}
+					}
 					global.CameraIsPanning = false
 				}
 			}

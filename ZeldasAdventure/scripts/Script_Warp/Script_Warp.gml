@@ -53,6 +53,24 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		
 		return true;
 	}
+	if global.FadeProgress = 2
+	{
+		if instance_exists(Entity_Parent_Enemy_Keese) = true
+		{
+			with Entity_Parent_Enemy_Keese
+			{
+				var randomDelay = random_range(StartDelayMin,StartDelayMax)
+				if randomDelay = 0
+				{
+					alarm_set(0, 1);
+				}
+				else
+				{
+					alarm_set(0, random_range(StartDelayMin,StartDelayMax));
+				}
+			}
+		}
+	}
 }
 
 global.WarpLocations =

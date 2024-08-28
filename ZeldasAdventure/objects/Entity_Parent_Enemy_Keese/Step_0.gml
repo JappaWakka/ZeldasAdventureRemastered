@@ -22,9 +22,16 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			///Set return position
 			if ReturnToPoint = true and ReturnPointPosition[0] = -1 and ReturnPointPosition[1] = -1
 			{
-				ReturnPointPosition = CurrentCoordinates
+				if CanContinue = true
+				{
+					ReturnPointPosition = CurrentCoordinates;
+					CanContinue = false;
+				}
+				else
+				{
+					ReturnPointPosition = [x,y];
+				}
 			}
-			HasStarted = false;
 			///Reduce HitPoints, play damage sound
 			HitPoints -= GetPower() - Defense
 			audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
@@ -53,9 +60,16 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 				///Set return position
 				if ReturnToPoint = true and ReturnPointPosition[0] = -1 and ReturnPointPosition[1] = -1
 				{
-					ReturnPointPosition = CurrentCoordinates
-				}
-				HasStarted = false;
+					if CanContinue = true
+					{
+						ReturnPointPosition = CurrentCoordinates;
+						CanContinue = false;
+					}
+					else
+					{
+						ReturnPointPosition = [x,y];
+					}
+				}				
 				
 				///Reduce HitPoints, play damage sound
 				if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
@@ -87,7 +101,7 @@ else
 	visible = false
 	if IsMenuVisible() = false && global.CameraIsFading = false
 	{
-		HasStarted = false;
+		CanContinue = false;
 		FrameIndex = 0;
 		x = OriginX;
 		y = OriginY;
