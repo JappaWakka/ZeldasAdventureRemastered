@@ -69,6 +69,11 @@ if room = Room_Overworld
 				break;
 		}
 	}
+	if global.CompassWarp != ""
+	{
+		WarpToLocation(global.CompassWarp)
+	}
+	
 	//Update Alarms
 
 	//Change Ruby amount & Play Ruby sound

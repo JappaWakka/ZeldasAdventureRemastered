@@ -6,8 +6,8 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 	{
 		if global.EnemySoundPlaying = false
 		{
-				global.EnemySound = audio_play_sound_relative(EnemySoundName,1000,false)
-				global.EnemySoundPlaying = true
+			global.EnemySound = audio_play_sound_relative(EnemySoundName,1000,false)
+			global.EnemySoundPlaying = true
 		}
 	}
 	//Activate
@@ -162,46 +162,16 @@ if HitPoints <= 0
 {
 	switch TriggerScriptName
 	{
-			case "BoomerangSpell" :
-				if global.DeathAmountForTrigger.BoomerangSpell > 0
-				{
-					global.DeathAmountForTrigger.BoomerangSpell -= 1
-				}
-				if global.DeathAmountForTrigger.BoomerangSpell = 0
-				{
-					Script_Trigger_BoomerangSpell() //Spawn Boomerang Spell Pickup
-				}
-				break
-			case "TektiteAmbush" :
-				if global.DeathAmountForTrigger.TektiteAmbush > 0
-				{
-					global.DeathAmountForTrigger.TektiteAmbush -= 1
-				}
-				if global.DeathAmountForTrigger.TektiteAmbush = 0
-				{
-					Script_Trigger_TektiteAmbush() //Spawn a bunch of Tektites
-				}
-				break
-			case "CompassEarthTreasure" :
-				if global.DeathAmountForTrigger.CompassEarthTreasure > 0
-				{
-					global.DeathAmountForTrigger.CompassEarthTreasure -= 1
-				}
-				if global.DeathAmountForTrigger.CompassEarthTreasure = 0
-				{
-					Script_Trigger_CompassEarthTreasure() //Spawn Compass_Earth Treasure Pickup
-				}
-				break
-			case "UnderworldMapEarthTreasure" :
-				if global.DeathAmountForTrigger.UnderworldMapEarthTreasure > 0
-				{
-					global.DeathAmountForTrigger.UnderworldMapEarthTreasure -= 1
-				}
-				if global.DeathAmountForTrigger.UnderworldMapEarthTreasure = 0
-				{
-					Script_Trigger_UnderworldMapEarthTreasure() //Spawn UnderworldMap_Earth Treasure Pickup
-				}
-				break
+		case "CompassEarthTreasure" :
+			if global.DeathAmountForTrigger.CompassEarthTreasure > 0
+			{
+				global.DeathAmountForTrigger.CompassEarthTreasure -= 1
+			}
+			if global.DeathAmountForTrigger.CompassEarthTreasure = 0
+			{
+				Script_Trigger_CompassEarthTreasure() //Spawn Compass_Earth Treasure Pickup
+			}
+			break
 	}
 	
 	instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Particle_EnemyDefeat)

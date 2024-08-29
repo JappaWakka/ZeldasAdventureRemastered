@@ -372,8 +372,8 @@ function WorldMap_Tiles_Init()
 		[Maps.Shrine1		,9		,32		,299		,MapTileType.Large			,12		,12		],	//299
 		[Maps.Shrine1		,10		,32		,300		,MapTileType.Large			,14		,12		],	//300
 		[Maps.Shrine1		,9		,33		,301		,MapTileType.Large			,12		,14		],	//301
-		[Maps.Shrine1		,9		,34		,303		,MapTileType.Large			,12		,16		],	//302
-		[Maps.Shrine1		,11		,34		,302		,MapTileType.Large			,16		,16		],	//303
+		[Maps.Shrine1		,9		,34		,302		,MapTileType.Large			,12		,16		],	//302
+		[Maps.Shrine1		,11		,34		,303		,MapTileType.Large			,16		,16		],	//303
 		[Maps.Shrine1		,6		,35		,304		,MapTileType.Large			,6		,18		],	//304
 		[Maps.Shrine1		,7		,35		,305		,MapTileType.Large			,8		,18		],	//305
 		[Maps.Shrine1		,8		,35		,306		,MapTileType.Large			,10		,18		],	//306

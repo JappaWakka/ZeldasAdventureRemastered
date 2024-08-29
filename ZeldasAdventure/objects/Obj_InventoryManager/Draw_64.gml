@@ -22,7 +22,8 @@ if OpeningClosing = true
 				Entity_Parent_NPC.image_speed = 0;
 				Entity_Parent_NPC.visible = false;
 			}
-			instance_deactivate_layer("Enemies");
+			instance_deactivate_layer("Enemies_BelowForeground");
+			instance_deactivate_layer("Enemies_AboveForeground");
 		}
 		else
 		{

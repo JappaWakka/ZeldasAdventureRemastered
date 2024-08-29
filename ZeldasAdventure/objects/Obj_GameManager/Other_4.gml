@@ -17,5 +17,6 @@ if room = Room_Overworld
 	instance_deactivate_layer("Items_BelowForeground")
 	instance_deactivate_layer("NPCs_AbovePlayer")
 	instance_deactivate_layer("NPCs_BelowPlayer")
-	instance_deactivate_layer("Enemies")
+	instance_deactivate_layer("Enemies_BelowForeground")
+	instance_deactivate_layer("Enemies_AboveForeground");
 }

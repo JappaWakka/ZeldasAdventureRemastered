@@ -59,30 +59,67 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 				var CoordinateIndex = floor(FrameIndex / 4)
 				EnemyState = EnemyStates.Move
 				speed = global.EnemySpeeds.Still
+				SpeedModifier = [1,1]
+				if abs(CurrentPath[CoordinateIndex][0]) > 4
+				{
+					SpeedModifier[0] = abs(CurrentPath[CoordinateIndex][0]) / 4
+				}
+				if abs(CurrentPath[CoordinateIndex][1]) > 4
+				{
+					SpeedModifier[1] = abs(CurrentPath[CoordinateIndex][1]) / 4
+				}
 				if CoordinateIndex <= array_length(CurrentPath)-1
 				{
 					if CurrentPath[CoordinateIndex][0] != 0 or CurrentPath[CoordinateIndex][1] !=0
 					{
 						if x < CurrentCoordinates[0]
 						{
-							x += global.EnemySpeeds.Slow
+							if x + SpeedModifier[0] > CurrentCoordinates[0]
+							{
+								x = CurrentCoordinates[0]
+							}
+							else
+							{
+								x += SpeedModifier[0] * global.EnemySpeeds.Slow
+							}
+							
 						}
 						else if x > CurrentCoordinates[0]
 						{
-							x -= global.EnemySpeeds.Slow
+							if x - SpeedModifier[0] < CurrentCoordinates[0]
+							{
+								x = CurrentCoordinates[0]
+							}
+							else
+							{
+								x -= SpeedModifier[0] * global.EnemySpeeds.Slow
+							}
 						}
 						
 						if y < CurrentCoordinates[1]
 						{
-							y += global.EnemySpeeds.Slow
+							if y + SpeedModifier[1] > CurrentCoordinates[1]
+							{
+								y = CurrentCoordinates[1]
+							}
+							else
+							{
+								y += SpeedModifier[1] * global.EnemySpeeds.Slow
+							}
 						}
 						else if y > CurrentCoordinates[1]
 						{
-							y -= global.EnemySpeeds.Slow
+							if y - SpeedModifier[1] < CurrentCoordinates[1]
+							{
+								y = CurrentCoordinates[1]
+							}
+							else
+							{
+								y -= SpeedModifier[1] * global.EnemySpeeds.Slow
+							}
 						}
 					}
 					//Increase Current Frame
-					var CoordinateIndex = floor(FrameIndex / 4)
 					if EnemyState = EnemyStates.Move
 					{
 						FrameIndex +=1

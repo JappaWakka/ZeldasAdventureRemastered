@@ -92,14 +92,28 @@ function Camera_Pan()
 					{
 						with Entity_Parent_Enemy_Keese
 						{
-							var randomDelay = random_range(StartDelayMin,StartDelayMax)
-							if randomDelay = 0
+							var CoordinateIndex = floor(FrameIndex / 4)
+							if CurrentPath[CoordinateIndex][2] = "wait"
 							{
-								alarm_set(0, 1);
+								var randomDelay = random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4])
+								
+								image_speed = 0
+								CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+								CanContinue = false
+								EnemyState = EnemyStates.Idle
+								FrameIndex = 4
+								if randomDelay = 0
+								{
+									alarm_set(0,4)
+								}
+								else
+								{
+									alarm_set(0, randomDelay);
+								}
 							}
 							else
 							{
-								alarm_set(0, random_range(StartDelayMin,StartDelayMax));
+								alarm_set(0, 1);
 							}
 						}
 					}
@@ -121,7 +135,7 @@ function Camera_Pan()
 					ResetCandleDarkness = true
 					instance_activate_object(Parent_UseItem_Candle)
 				}
-					else
+				else
 				{
 					ResetCandleDarkness = false
 				}
@@ -151,23 +165,49 @@ function Camera_Pan()
 					{
 						with Entity_Parent_Enemy_Keese
 						{
-							var randomDelay = random_range(StartDelayMin,StartDelayMax)
-							if randomDelay = 0
+							var CoordinateIndex = floor(FrameIndex / 4)
+							if CurrentPath[CoordinateIndex][2] = "wait"
 							{
-								alarm_set(0, 1);
+								var randomDelay = random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4])
+									
+									image_speed = 0
+									CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+									CanContinue = false
+									EnemyState = EnemyStates.Idle
+									FrameIndex = 4
+									if randomDelay = 0
+									{
+										alarm_set(0,4)
+									}
+									else
+									{
+										alarm_set(0, randomDelay);
+									}
 							}
 							else
 							{
-								alarm_set(0, random_range(StartDelayMin,StartDelayMax));
+								alarm_set(0, 1);
 							}
 						}
 					}
-					global.CameraIsPanning = false
+					if audio_is_playing(SFX_Zelda_Death) = false
+					{
+						global.SwitchTracks = true;
+					}
+					global.CameraIsPanning = false;
+					
 				}
 			}
 		}
 		else
 		{
+			if global.FadeBeforePan = true
+			{
+				if global.FadeProgress = 2
+				{
+					global.CameraIsPanning = false;
+				}
+			}
 			//Reset global.CandleUsed after panning
 			if ResetCandleDarkness = true && global.CandleUsed = true
 			{

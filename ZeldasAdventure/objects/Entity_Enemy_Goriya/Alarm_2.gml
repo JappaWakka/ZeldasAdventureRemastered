@@ -1,7 +1,7 @@
 /// @description Create Projectile
 if EnemyState != EnemyStates.Attack
 {
-	var Boomerang = instance_create_layer(x,y,"Enemies",Entity_Projectile_Enemy_Goriya)
+	var Boomerang = instance_create_layer(x,y,"Enemies_BelowForeground",Entity_Projectile_Enemy_Goriya)
 	Boomerang.direction = direction
 	EnemyState = EnemyStates.Attack
 	

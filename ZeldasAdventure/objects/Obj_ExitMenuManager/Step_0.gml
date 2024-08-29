@@ -1,97 +1,101 @@
-if QuitToMainMenu = false and OpeningClosing == false
+if global.CameraIsPanning = false
 {
-	if Alpha = 255
+	if QuitToMainMenu = false and OpeningClosing == false
 	{
-		var CurrentGrid = ds_Menu_Exit;
-		var GridHeight = ds_grid_height(CurrentGrid);
-		if input_check_pressed("action1") = true or input_check_pressed("accept")
+		if Alpha = 255
 		{
-			audio_play_sound(Settings_Accept,1000,false)
-			script_execute(CurrentGrid[# 1, CurrentEntry])
-		}
-		var OptionChange = input_check_pressed("down") - input_check_pressed("up");
-		if OptionChange !=0
-		{
-			CurrentEntry += OptionChange;
-			if (CurrentEntry > GridHeight - 1)
+			var CurrentGrid = ds_Menu_Exit;
+			var GridHeight = ds_grid_height(CurrentGrid);
+			if input_check_pressed("action1") = true or input_check_pressed("accept")
 			{
-				CurrentEntry = 0;
+				audio_play_sound(Settings_Accept,1000,false)
+				script_execute(CurrentGrid[# 1, CurrentEntry])
 			}
-			if (CurrentEntry < 0)
+			var OptionChange = input_check_pressed("down") - input_check_pressed("up");
+			if OptionChange !=0
 			{
-				CurrentEntry = GridHeight - 1;
-			}
-		}
-		if input_check_pressed("action2") or input_check_pressed("menu")
-		{
-			if global.FadeAlpha == 0 && OpeningClosing == false
-			{
-				global.FadeProgress = 0;
-				global.FadeSpeed = 16;
-				OpeningClosing = true;
-			}
-		}
-		if input_check_pressed("inventory")
-		{
-			if global.FadeAlpha == 0 && OpeningClosing == false
-			{
-				global.FadeProgress = 0;
-				global.FadeSpeed = 16;
-				OpeningClosing = true;
-				if Obj_InventoryManager.Alpha = 255
+				CurrentEntry += OptionChange;
+				if (CurrentEntry > GridHeight - 1)
 				{
-					Obj_InventoryManager.OpeningClosing = true;
+					CurrentEntry = 0;
+				}
+				if (CurrentEntry < 0)
+				{
+					CurrentEntry = GridHeight - 1;
+				}
+			}
+			if input_check_pressed("action2") or input_check_pressed("menu")
+			{
+				if global.FadeAlpha == 0 && OpeningClosing == false
+				{
+					global.FadeProgress = 0;
+					global.FadeSpeed = 16;
+					OpeningClosing = true;
+				}
+			}
+			if input_check_pressed("inventory")
+			{
+				if global.FadeAlpha == 0 && OpeningClosing == false
+				{
+					global.FadeProgress = 0;
+					global.FadeSpeed = 16;
+					OpeningClosing = true;
+					if Obj_InventoryManager.Alpha = 255
+					{
+						Obj_InventoryManager.OpeningClosing = true;
+					}
+				}
+			}
+		}
+		else
+		{
+			if input_check_pressed("menu")
+			{
+				if global.FadeAlpha == 0 && OpeningClosing == false
+				{
+					global.FadeProgress = 0;
+					OpeningClosing = true;
 				}
 			}
 		}
 	}
 	else
 	{
-		if input_check_pressed("menu")
+		if global.FadeProgress > 0
 		{
-			if global.FadeAlpha == 0 && OpeningClosing == false
+			if Alpha = 0
 			{
-				global.FadeProgress = 0;
-				OpeningClosing = true;
-			}
-		}
-	}
-}
-else
-{
-	if global.FadeProgress > 0
-	{
-		if Alpha = 0
-		{
-			Alpha = 255;
-			if Obj_InventoryManager.Alpha = 0
-			{
-				instance_deactivate_object(Entity_Parent_Player)
-				if object_exists(Entity_Parent_NPC) = true
+				Alpha = 255;
+				if Obj_InventoryManager.Alpha = 0
 				{
-					Entity_Parent_NPC.speed = 0;
-					Entity_Parent_NPC.image_speed = 0;
-					Entity_Parent_NPC.visible = false;
+					instance_deactivate_object(Entity_Parent_Player)
+					if object_exists(Entity_Parent_NPC) = true
+					{
+						Entity_Parent_NPC.speed = 0;
+						Entity_Parent_NPC.image_speed = 0;
+						Entity_Parent_NPC.visible = false;
+					}
+					instance_deactivate_layer("Enemies_BelowForeground");
+					instance_deactivate_layer("Enemies_AboveForeground");
 				}
-				instance_deactivate_layer("Enemies");
 			}
-		}
-		else
-		{
-			Alpha = 0;
-			if Obj_InventoryManager.Alpha = 0
+			else
 			{
-				instance_activate_object(Entity_Parent_Player)
-				if object_exists(Entity_Parent_NPC) = true
+				Alpha = 0;
+				if Obj_InventoryManager.Alpha = 0
 				{
-					Entity_Parent_NPC.speed = Entity_Parent_NPC.DefaultSpeed;
-					Entity_Parent_NPC.image_speed = Entity_Parent_NPC.ImageSpeed;
-					Entity_Parent_NPC.visible = true;
+					instance_activate_object(Entity_Parent_Player)
+					if object_exists(Entity_Parent_NPC) = true
+					{
+						Entity_Parent_NPC.speed = Entity_Parent_NPC.DefaultSpeed;
+						Entity_Parent_NPC.image_speed = Entity_Parent_NPC.ImageSpeed;
+						Entity_Parent_NPC.visible = true;
+					}
+					instance_activate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y *tileHeight, tileWidth, tileHeight,true);
 				}
-				instance_activate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y *tileHeight, tileWidth, tileHeight,true);
 			}
+			global.FadeSpeed = 12;
+			OpeningClosing = false;
 		}
-		global.FadeSpeed = 12;
-		OpeningClosing = false;
 	}
 }

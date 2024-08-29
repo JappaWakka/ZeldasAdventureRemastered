@@ -59,16 +59,34 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		{
 			with Entity_Parent_Enemy_Keese
 			{
-				var randomDelay = random_range(StartDelayMin,StartDelayMax)
-				if randomDelay = 0
+				var CoordinateIndex = floor(FrameIndex / 4)
+				if CurrentPath[CoordinateIndex][2] = "wait"
 				{
-					alarm_set(0, 1);
+					var randomDelay = random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4])
+					
+					image_speed = 0
+					CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+					CanContinue = false
+					EnemyState = EnemyStates.Idle
+					FrameIndex = 4
+					if randomDelay = 0
+					{
+						alarm_set(0,4)
+					}
+					else
+					{
+						alarm_set(0, randomDelay);
+					}
 				}
 				else
 				{
-					alarm_set(0, random_range(StartDelayMin,StartDelayMax));
+					alarm_set(0, 1);
 				}
 			}
+		}
+		if global.CompassWarp != ""
+		{
+			global.CompassWarp = ""
 		}
 	}
 }

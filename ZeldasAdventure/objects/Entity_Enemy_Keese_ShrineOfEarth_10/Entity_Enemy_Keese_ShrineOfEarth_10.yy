@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Enemy_ShrineOfEarth_10_Keese_01",
+  "name": "Entity_Enemy_Keese_ShrineOfEarth_10",
   "spriteId": {
     "name": "Sprite_Enemy_Keese",
     "path": "sprites/Sprite_Enemy_Keese/Sprite_Enemy_Keese.yy",
