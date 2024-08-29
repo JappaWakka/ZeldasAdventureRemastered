@@ -23,7 +23,12 @@ if xdir != 0 and ydir != 0
 {
 	DiagonalSpeedMultiplier = 1.41
 }
-move(Acceleration, MoveDirection, MaxSpeed * SpeedMultiplier * DiagonalSpeedMultiplier, MoveDistance);
+var GoldenBootsMultiplier = 1
+if global.RemasteredMode = true and global.CurrentTreasure = Treasures.GoldenBoots
+{
+	GoldenBootsMultiplier = 1.5
+}
+move(Acceleration, MoveDirection, MaxSpeed * SpeedMultiplier * GoldenBootsMultiplier * DiagonalSpeedMultiplier, MoveDistance);
 
 if xdir != 0 or ydir != 0
 {

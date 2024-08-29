@@ -72,7 +72,7 @@ enum Treasures
 	RedRibbon,
 	Rubies,
 	VialOfWind,
-	YellowBoots,
+	GoldenBoots,
 	Ladder,
 	Bone,
 	BlackOrb,
