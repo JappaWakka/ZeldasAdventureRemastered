@@ -10,14 +10,14 @@ if PageIndex = Menu_Page.Main
 	else if HasPressedPlay = true
 	{
 		if global.FadeProgress = 1
-		{			
+		{
 			room_goto(Room_Overworld);
 		}
 	}
 	else if HasPressedTutorial = true
 	{
 		if global.FadeProgress = 1
-		{			
+		{
 			room_goto(Room_Cutscene_Tutorial);
 		}
 	}

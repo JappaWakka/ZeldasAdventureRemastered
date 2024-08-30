@@ -57,6 +57,13 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			if CanContinue = true
 			{
 				var CoordinateIndex = floor(FrameIndex / 4)
+				if CoordinateIndex > array_length(CurrentPath) - 1
+				{
+					FrameIndex = 0
+					x = OriginX
+					y = OriginY
+					CoordinateIndex = floor(FrameIndex / 4)
+				}
 				EnemyState = EnemyStates.Move
 				speed = global.EnemySpeeds.Still
 				SpeedModifier = [1,1]

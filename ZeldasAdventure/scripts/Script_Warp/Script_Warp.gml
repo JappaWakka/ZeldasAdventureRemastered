@@ -103,7 +103,8 @@ global.WarpLocations =
 	//Forest of Ogham
 	ForestOfOgham_TektiteCave_Inside : {TileX:7,TileY:31,PlayerX:38,PlayerY:128},
 	ForestOfOgham_TektiteCave_Outside : {TileX:6,TileY:31,PlayerX:300,PlayerY:162},
-	ForestOfOgham_ShrineOfEarth : {TileX:6,TileY:31,PlayerX:266,PlayerY:74},
+	ForestOfOgham_ShrineOfEarth_Exit : {TileX:6,TileY:31,PlayerX:266,PlayerY:74},
+	ForestOfOgham_ShrineOfEarth_Warp : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
 	
 	//Shrines
 	ShrineOfEarth_Spawn_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
@@ -207,12 +208,20 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_22_to_21.PlayerY
 			)
 			break;
-		case "ShrineOfEarth_Outside":
+		case "ShrineOfEarth_Outside_Exit":
 			WarpTo(
-			global.WarpLocations.ForestOfOgham_ShrineOfEarth.TileX,
-			global.WarpLocations.ForestOfOgham_ShrineOfEarth.TileY,
-			global.WarpLocations.ForestOfOgham_ShrineOfEarth.PlayerX,
-			global.WarpLocations.ForestOfOgham_ShrineOfEarth.PlayerY
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.TileX,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.TileY,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.PlayerX,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_Outside_Warp":
+			WarpTo(
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.TileX,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.TileY,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerX,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerY
 			)
 			break;
 		case "Spawn_ShrineOfIllusion":

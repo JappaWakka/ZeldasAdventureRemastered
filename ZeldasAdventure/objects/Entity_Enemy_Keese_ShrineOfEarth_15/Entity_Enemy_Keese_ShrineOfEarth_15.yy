@@ -1,17 +1,23 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Pickup_CelestialSign_01_Earth",
+  "name": "Entity_Enemy_Keese_ShrineOfEarth_15",
   "spriteId": {
-    "name": "Sprite_Pickup_CelestialSign",
-    "path": "sprites/Sprite_Pickup_CelestialSign/Sprite_Pickup_CelestialSign.yy",
+    "name": "Sprite_Enemy_Keese",
+    "path": "sprites/Sprite_Enemy_Keese/Sprite_Enemy_Keese.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "Enemy_Collision_Solid",
+    "path": "sprites/Enemy_Collision_Solid/Enemy_Collision_Solid.yy",
+  },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Entity_Parent_Enemy_Keese",
+    "path": "objects/Entity_Parent_Enemy_Keese/Entity_Parent_Enemy_Keese.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,14 +31,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Entity_Player","path":"objects/Entity_Player/Entity_Player.yy",},},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Other",
-    "path": "folders/Objects/Entities/Pickups/Other.yy",
+    "name": "Keese",
+    "path": "folders/Objects/Entities/Enemies/Keese.yy",
   },
 }

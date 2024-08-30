@@ -1,0 +1,1 @@
+CanPlayEnemySound = true

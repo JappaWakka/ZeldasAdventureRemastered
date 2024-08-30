@@ -73,6 +73,18 @@ if room = Room_Overworld
 	{
 		WarpToLocation(global.CompassWarp)
 	}
+	if global.StartCutscene != ""
+	{
+		if global.FadeProgress = 1
+		{
+			switch global.StartCutscene
+			{
+				case "Shrine_Earth":
+					room_goto(Room_Cutscene_Shrine_Earth);
+					break;
+			}
+		}
+	}
 	
 	//Update Alarms
 
