@@ -14,7 +14,7 @@ return audio_play_sound_at(argument0, -median(-1, argument3, 1), 0, 0, 1, 0, 0, 
 
 }
 
-function audio_play_sound_relative(soundid, priority, loops = false){
+function audio_play_sound_relative(soundid, priority, loops = false, xPos = x){
 ///audio_play_sound_pan(soundid, priority, loops, pan)
 /***************************************************
   Simple audio panning.
@@ -24,7 +24,7 @@ function audio_play_sound_relative(soundid, priority, loops = false){
   argument 3 - pan (-1 - left to 1 - right)
   returns: sound index
  ***************************************************/
-var RelativeX = x - global.CurrentTile.x * tileWidth;
+var RelativeX = xPos - global.CurrentTile.x * tileWidth;
 var CenterX = tileWidth / 2
 var AudioX = RelativeX / CenterX - 1
 	

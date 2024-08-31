@@ -154,7 +154,7 @@ function InitGameVariables()
 		Enemy : 1.4 + d(0.4)
 	}
 	
-	global.EnemySound = -1; //The currently playing enemy sound
+	global.EnemySound = [-1,-1]; //The currently playing enemy sound
 	
 	enum EnemyStates
 	{

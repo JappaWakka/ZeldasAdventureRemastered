@@ -11,9 +11,12 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 		}
 	}
 	//Play enemy sound
-	if alarm_get(1) = -1
+	if Script_AggroRange() = true
 	{
-		alarm_set(1, random_range(2*FrameRate,6*FrameRate));
+		if global.EnemySoundPlaying = false
+		{
+			global.EnemySound = [EnemySoundName,x]
+		}
 	}
 	//Attack
 	if alarm_get(2) = -1

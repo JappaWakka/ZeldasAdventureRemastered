@@ -4,12 +4,9 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 	//Play sound
 	if Script_AggroRange() = true
 	{
-		if global.EnemySoundPlaying = false and CanPlayEnemySound = true
+		if global.EnemySoundPlaying = false
 		{
-			global.EnemySound = audio_play_sound_relative(EnemySoundName,1000,false)
-			global.EnemySoundPlaying = true
-			CanPlayEnemySound = false
-			alarm_set(1,random_range(2 * FrameRate,4 * FrameRate))
+			global.EnemySound = [EnemySoundName,x]
 		}
 	}
 	//Activate

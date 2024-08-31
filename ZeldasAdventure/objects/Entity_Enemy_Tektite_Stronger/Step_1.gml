@@ -6,8 +6,7 @@ if EnemyState != EnemyStates.Damaged
 		{
 			if global.EnemySoundPlaying = false
 			{
-				global.EnemySound = audio_play_sound_relative(EnemySoundName,1000,false)
-				global.EnemySoundPlaying = true
+				global.EnemySound = [EnemySoundName,x]
 			}
 		}
 		speed = AggroSpeed

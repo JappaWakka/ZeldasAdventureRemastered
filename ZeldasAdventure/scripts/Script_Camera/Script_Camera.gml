@@ -39,6 +39,11 @@ function Camera_Pan()
 				
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
+			//Make the enemy sounds happen sooner when switching tiles
+			if alarm[0] > 1 * FrameRate
+			{
+				alarm_set(0,random_range(0.25 * FrameRate,1 * FrameRate))
+			}
 			
 			//Deactivate old tile, activate new tile
 			instance_destroy(Entity_Pickup_ItemDrops)
