@@ -12,9 +12,34 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 	//Activate
 	visible = true;
 	
-	//Player's Attack Damage
+	//Deal Damage to Player
+	if collision_circle(x,y,HitRadius_Attack,Entity_Player,true,true)
+	{
+		with Entity_Player
+		{
+			if DamageDelay = 0
+			{
+				DecreaseHP(other.Power - GetDefense())
+				audio_play_sound_relative(SFX_Zelda_Damage,1000,false)
+				
+				if PlayerDeath_Start() = false // Check if player is dead, if not start damage animation
+				{
+					DamageDelay = 1 * FrameRate
+					if timeline_index = -1
+					{
+						timeline_index = Damage_Player;
+						timeline_position = 0;
+						timeline_running = true;
+					}
+				}
+				
+			}
+		}
+	}
+	
+	//Receive Damage from Player
 	//Melee
-	if collision_circle(x,y,HitRadius,Entity_Hitbox_Spell_Wand,true,true)
+	if collision_circle(x,y,HitRadius_Defense,Entity_Hitbox_Spell_Wand,true,true)
 	{
 		if DamageDelay = 0 && ImmuneToWand = false
 		{
@@ -47,7 +72,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 		var HitProjectile = -1
 		for (var i = 0; i < instance_number(Entity_Parent_Projectile_Player); ++i;)
 		{
-			if collision_circle(x,y,HitRadius,Entity_Parent_Projectile_Player,true,true)
+			if collision_circle(x,y,HitRadius_Defense,Entity_Parent_Projectile_Player,true,true)
 		    {
 				HitProjectile = instance_find(Entity_Parent_Projectile_Player,i);
 			}

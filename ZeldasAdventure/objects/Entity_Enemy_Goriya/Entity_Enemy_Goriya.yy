@@ -33,7 +33,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":2,"eventType":2,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [
@@ -43,9 +43,10 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"EnemyState","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"EnemyStates.Move",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"EnemySoundName","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"SFX_Enemy_Goriya",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"10",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"HitRadius","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"16",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"HitRadius_Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"16",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ImmuneToWand","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"0",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"DropsItemOnDefeat","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"HitRadius_Attack","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"22",},
   ],
   "parent": {
     "name": "Enemies",

@@ -1,4 +1,4 @@
-/// @description (Re)Start Path & Set Coordinates
+/// @description Do Actions
 if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 {
 	if ReturnPointPosition[0] != -1 or ReturnPointPosition[1] != -1 or EnemyState = EnemyStates.Damaged
@@ -24,7 +24,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
 			CanContinue = false
 			EnemyState = EnemyStates.Idle
-			FrameIndex = 4
+			FrameIndex += 4
 			if randomDelay = 0
 			{
 				alarm_set(0,4)

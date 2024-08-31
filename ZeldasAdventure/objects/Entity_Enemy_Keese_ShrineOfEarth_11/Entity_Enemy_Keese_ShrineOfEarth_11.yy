@@ -1,0 +1,42 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Entity_Enemy_Keese_ShrineOfEarth_11",
+  "spriteId": {
+    "name": "Sprite_Enemy_Keese",
+    "path": "sprites/Sprite_Enemy_Keese/Sprite_Enemy_Keese.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": {
+    "name": "Enemy_Collision_Solid",
+    "path": "sprites/Enemy_Collision_Solid/Enemy_Collision_Solid.yy",
+  },
+  "persistent": false,
+  "parentObjectId": {
+    "name": "Entity_Parent_Enemy_Keese",
+    "path": "objects/Entity_Parent_Enemy_Keese/Entity_Parent_Enemy_Keese.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
+  "properties": [],
+  "overriddenProperties": [],
+  "parent": {
+    "name": "Keese",
+    "path": "folders/Objects/Entities/Enemies/Keese.yy",
+  },
+}

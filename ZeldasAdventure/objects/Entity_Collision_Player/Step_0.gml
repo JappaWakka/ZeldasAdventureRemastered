@@ -3,7 +3,7 @@
 var xdir = 0
 var ydir = 0
 
-if global.CameraIsPanning = false and Entity_Player.IsAttacking = false and IsMenuVisible() = false
+if global.CameraIsPanning = false and Entity_Player.IsAttacking = false and IsMenuVisible() = false and global.FadeProgress = 2
 {
 	xdir = input_check("right") - input_check("left");
 	ydir = input_check("down") - input_check("up");

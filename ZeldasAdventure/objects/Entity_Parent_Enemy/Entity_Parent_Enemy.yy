@@ -31,7 +31,8 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"EnemySoundName","varType":5,"value":"SFX_Enemy_Tumblebot","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"TriggerScriptName","varType":2,"value":"\"\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"WeakToSpell","varType":4,"value":"-1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"HitRadius","varType":0,"value":"8","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"HitRadius_Defense","varType":0,"value":"8","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"HitRadius_Attack","varType":0,"value":"8","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"KnockbackDistance","varType":6,"value":"global.KnockbackDistances.Large","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "global.KnockbackDistances.None",
         "global.KnockbackDistances.Small",

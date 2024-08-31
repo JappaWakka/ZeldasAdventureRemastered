@@ -42,7 +42,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"EnemyState","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"EnemyStates.Move",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"EnemySoundName","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"SFX_Enemy_Tumblebot",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"0",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"HitRadius","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"8",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"HitRadius_Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"8",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"HitRadius_Attack","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"10",},
   ],
   "parent": {
     "name": "Enemies",
