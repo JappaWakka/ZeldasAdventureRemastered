@@ -1118,6 +1118,7 @@
     {"id":{"name":"VisionHenge_04_Above","path":"sprites/VisionHenge_04_Above/VisionHenge_04_Above.yy",},"order":9,},
     {"id":{"name":"Solid_PlainOfAndor_10","path":"objects/Solid_PlainOfAndor_10/Solid_PlainOfAndor_10.yy",},"order":12,},
     {"id":{"name":"input_binding_get","path":"scripts/input_binding_get/input_binding_get.yy",},"order":2,},
+    {"id":{"name":"Subtitle_Cutscene_Shrine_Earth","path":"scripts/Subtitle_Cutscene_Shrine_Earth/Subtitle_Cutscene_Shrine_Earth.yy",},"order":2,},
     {"id":{"name":"input_profile_set","path":"scripts/input_profile_set/input_profile_set.yy",},"order":7,},
     {"id":{"name":"Overworld_534_Below","path":"sprites/Overworld_534_Below/Overworld_534_Below.yy",},"order":272,},
     {"id":{"name":"Music_Shrine_Earth_Ambient","path":"sounds/Music_Shrine_Earth_Ambient/Music_Shrine_Earth_Ambient.yy",},"order":0,},

@@ -28,6 +28,9 @@ if (webm_exists(CurrentVideo))
 			case Room_Cutscene_Tutorial:
 				global.Subtitle = Subtitle_Cutscene_Tutorial(VideoPosition)
 				break;
+			case Room_Cutscene_Shrine_Earth:
+				global.Subtitle = Subtitle_Cutscene_Shrine_Earth(VideoPosition)
+				break;
 			default:
 				global.Subtitle = ""
 				break;
