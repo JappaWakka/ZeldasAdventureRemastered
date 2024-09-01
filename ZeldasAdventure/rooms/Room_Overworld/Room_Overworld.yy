@@ -147,6 +147,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1375E98A","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_OghamMerchant","path":"objects/Entity_NPC_OghamMerchant/Entity_NPC_OghamMerchant.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2088.0,"y":6124.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4CEA09BA","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_Campfire","path":"objects/Entity_NPC_Campfire/Entity_NPC_Campfire.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2964.0,"y":6890.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5191C416","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_Enid","path":"objects/Entity_NPC_Enid/Entity_NPC_Enid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3008.0,"y":6890.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_308262C2","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_TreasureChest","path":"objects/Entity_NPC_TreasureChest/Entity_NPC_TreasureChest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4064.0,"y":9272.0,},
       ],"visible":true,"depth":101200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"SpecialCollisions","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_465A723E","properties":[],"isDnd":false,"objectId":{"name":"UseItem_PlainOfAndor_01_RedBoots","path":"objects/UseItem_PlainOfAndor_01_RedBoots/UseItem_PlainOfAndor_01_RedBoots.yy",},"inheritCode":false,"hasCreationCode":false,"colour":2147483647,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1536.0,"y":4560.0,},
@@ -1155,6 +1156,7 @@
     {"name":"inst_22C4D712","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_43A74169","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_72363B6E","path":"rooms/Room_Overworld/Room_Overworld.yy",},
+    {"name":"inst_308262C2","path":"rooms/Room_Overworld/Room_Overworld.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

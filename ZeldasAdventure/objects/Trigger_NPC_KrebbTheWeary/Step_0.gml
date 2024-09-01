@@ -7,7 +7,7 @@ if IsPlayerOnSameTile() = true
 			global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary_Dagger
 			Audio_StopMusic()
 			global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_KrebbTheWeary, global.CurrentDialogue_Asset,500,false)
-			Register_Add("KrebbTheWeary")
+			Register_Add("KrebbTheWeary",true)
 		}
 		
 	}
@@ -53,5 +53,5 @@ if IsPlayerOnSameTile() = true
 }
 else if instance_exists(Entity_Pickup_Dagger) = false and Item_FindIndex(Spells.Dagger,1) = -1
 {
-	Register_Remove("KrebbTheWeary")
+	Register_Remove("KrebbTheWeary",true)
 }
