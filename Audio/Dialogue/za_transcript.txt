@@ -26,11 +26,11 @@
 	
 	Subtitle_ShrineOfEarth_07_RedSardak_NoThreat
 	{
-		"South Sardak: Hey dee hee, hoo dee bee! You're no threat to us down here!"
+		"Red Sardak: Hey dee hee, hoo dee bee! You're no threat to us down here!"
 	}
 	Subtitle_ShrineOfEarth_07_RedSardak_FailedMission
 	{
-		"South Sardak: I've failed in my mission! Llort, this enemy is coming!"
+		"Red Sardak: I've failed in my mission! Llort, this enemy is coming!"
 	}
 	Subtitle_ShrineOfEarth_08_TreasureChest_WhatDoWeHaveHere
 	{
@@ -38,19 +38,19 @@
 	}
 	Subtitle_ShrineOfEarth_12_BlueSardak_ThoughtIWasAlone
 	{
-		"Middle Sardak: Huh? I... I thought I was alone here! Llort, an enemy is in your cave!"
+		"Blue Sardak: Huh? I... I thought I was alone here! Llort, an enemy is in your cave!"
 	}
 	Subtitle_ShrineOfEarth_12_BlueSardak_CouldntStopHer
 	{
-		"Middle Sardak: Llort, I couldn't stop her! Get ready to fight!"
+		"Blue Sardak: Llort, I couldn't stop her! Get ready to fight!"
 	}
 	Subtitle_ShrineOfEarth_20_YellowSardak_EnemyOfMyBoss
 	{
-		"Northern Sardak: Hey! Who goes there!? Aren't you an enemy of my boss Llort? You can't come in here."
+		"Yellow Sardak: Hey! Who goes there!? Aren't you an enemy of my boss Llort? You can't come in here."
 	}
 	Subtitle_ShrineOfEarth_20_YellowSardak_ShesComing
 	{
-		"Northern Sardak: Hey, Llort! Watch out! She's coming!"
+		"Yellow Sardak: Hey, Llort! Watch out! She's coming!"
 	}
 #endregion
 
