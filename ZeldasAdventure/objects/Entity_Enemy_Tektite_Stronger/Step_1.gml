@@ -23,7 +23,7 @@ if ChangeDirection = true
 	{
 		if Script_AggroRange() = true
 		{
-			if random_range(1,101) <= MoveToPlayerChance
+			if round(random_range(0,100)) <= MoveToPlayerChance
 			{
 				if Entity_Player.x < self.x
 				{
@@ -58,6 +58,6 @@ if ChangeDirection = true
 	{
 		speed =  global.EnemySpeeds.Still
 	}
-	alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
+	alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
 	ChangeDirection = false;
 }

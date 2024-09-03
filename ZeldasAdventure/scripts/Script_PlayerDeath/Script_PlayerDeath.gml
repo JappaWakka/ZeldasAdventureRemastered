@@ -44,6 +44,7 @@ function PlayerDeath_Animation()
 		{
 			global.HasResetEnemies = true
 			room_goto(Room_Overworld)
+			Register_ClearTempRegister()
 		}
 	}
 	if global.FadeProgress = 2

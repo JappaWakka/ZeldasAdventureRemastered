@@ -93,7 +93,7 @@ if room = Room_Overworld
 			EnemySound = audio_play_sound_relative(global.EnemySound[0],1000,false,global.EnemySound[1])
 			global.EnemySoundPlaying = true
 			global.EnemySound = [-1,-1]
-			alarm_set(0,random_range(2 * FrameRate,3.5 * FrameRate))
+			alarm_set(0, round(random_range(2 * FrameRate,3.5 * FrameRate)))
 		}
 	}
 	//Update Alarms

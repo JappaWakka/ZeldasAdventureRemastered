@@ -4,8 +4,8 @@ function IsPlayerOnSameTile()
 {
 	var PlayerTile =
 	{
-		x : global.CurrentTile.x,
-		y : global.CurrentTile.y
+		x : global.CurrentTile.x * tileWidth,
+		y : global.CurrentTile.y * tileWidth
 	}
 	if instance_number(Entity_Parent_Player) > 0
 	{
@@ -16,8 +16,8 @@ function IsPlayerOnSameTile()
 		}
 	}
 	
-	if x >= PlayerTile.x && x <= PlayerTile.x + tileWidth &&
-	y >= PlayerTile.y && y <= PlayerTile.y + tileHeight &&
+	if x >= PlayerTile.x && x < PlayerTile.x + tileWidth &&
+	y >= PlayerTile.y && y < PlayerTile.y + tileHeight &&
 	global.CameraIsPanning = false
 	{
 		return true
@@ -32,8 +32,8 @@ function IsPlayerOnSameTile_Enemy()
 {
 	var PlayerTile =
 	{
-		x : global.CurrentTile.x,
-		y : global.CurrentTile.y
+		x : global.CurrentTile.x * tileWidth,
+		y : global.CurrentTile.y * tileWidth
 	}
 	if instance_number(Entity_Parent_Player) > 0
 	{
@@ -44,8 +44,8 @@ function IsPlayerOnSameTile_Enemy()
 		}
 	}
 	
-	if OriginX >= PlayerTile.x && OriginX <= PlayerTile.x + tileWidth &&
-	OriginY >= PlayerTile.y  && OriginY <= PlayerTile.y + tileHeight &&
+	if OriginX >= PlayerTile.x && OriginX < PlayerTile.x + tileWidth &&
+	OriginY >= PlayerTile.y  && OriginY < PlayerTile.y + tileHeight &&
 	global.CameraIsPanning = false
 	{
 		return true

@@ -7,7 +7,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 	{
 		if EnemyState = EnemyStates.Move
 		{
-			alarm_set(0, random_range(ChangeDelay_Min,ChangeDelay_Max));
+			alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
 		}
 	}
 	//Attack
@@ -15,7 +15,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 	{
 		if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
 		{
-			alarm_set(1, random_range(0, 3 * FrameRate));
+			alarm_set(1, round(random_range(0, 3 * FrameRate)));
 		}
 	}
 	//Deal Damage to Player
@@ -47,7 +47,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 	//Melee
 	if collision_circle(x,y,HitRadius_Defense,Entity_Hitbox_Spell_Wand,true,true)
 	{
-		if DamageDelay = 0 && ImmuneToWand = false
+		if DamageDelay = 0
 		{
 			///Set return position
 			if ReturnToPoint = true and ReturnPointPosition[0] = -1 and ReturnPointPosition[1] = -1
@@ -55,12 +55,22 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 				ReturnPointPosition = [x,y]
 			}
 			
-			///Reduce HitPoints, play damage sound
-			HitPoints -= GetPower() - Defense
-			audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
-			EnemyState = EnemyStates.Damaged
-			StartDamageAnimation = true
-			HitFromDirection = Entity_Player.Facing
+			var ReceivedDamage = GetPower() - Defense
+			if ReceivedDamage > 0
+			{
+				///Reduce HitPoints, play damage sound
+				HitPoints -= ReceivedDamage
+				audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
+				EnemyState = EnemyStates.Damaged
+				StartDamageAnimation = true
+				HitFromDirection = Entity_Player.Facing
+			}
+			else
+			{
+				audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
+				EnemyState = EnemyStates.Damaged
+				StartImmuneAnimation = true
+			}
 			///Reset DamageDelay
 			DamageDelay = 1 * FrameRate
 		}
@@ -86,19 +96,33 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 					ReturnPointPosition = [x,y]
 				}
 				
-				///Reduce HitPoints, play damage sound
+				var ReceivedDamage
+				
 				if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
 				{
-					HitPoints -= HitProjectile.Power + HitProjectile.BonusDamageIfWeak
+					ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power) + HitProjectile.BonusDamageIfWeak
 				}
 				else
 				{
-					HitPoints -= HitProjectile.Power - Defense
+					ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power)
 				}
-				audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
-				EnemyState = EnemyStates.Damaged
-				StartDamageAnimation = true
-				HitFromDirection = HitProjectile.direction
+				
+				if ReceivedDamage > 0
+				{
+					
+					///Reduce HitPoints, play damage sound
+					HitPoints -= ReceivedDamage
+					audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
+					EnemyState = EnemyStates.Damaged
+					StartDamageAnimation = true
+					HitFromDirection = HitProjectile.direction
+				}
+				else
+				{
+					audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
+					EnemyState = EnemyStates.Damaged
+					StartImmuneAnimation = true
+				}
 				if HitProjectile.DestroyOnEnemyImpact = true
 				{
 					instance_destroy(HitProjectile)
@@ -220,6 +244,16 @@ if HitPoints <= 0
 			if global.DeathAmountForTrigger.UnderworldMapEarthTreasure = 0
 			{
 				Script_Trigger_UnderworldMapEarthTreasure() //Spawn UnderworldMap_Earth Treasure Pickup
+			}
+			break
+		case "EarthSardakBarrier" :
+			if global.DeathAmountForTrigger.EarthSardakBarrier > 0
+			{
+				global.DeathAmountForTrigger.EarthSardakBarrier -= 1
+			}
+			if global.DeathAmountForTrigger.EarthSardakBarrier = 0
+			{
+				Script_Trigger_EarthSardakBarrier() //Spawn UnderworldMap_Earth Treasure Pickup
 			}
 			break
 	}

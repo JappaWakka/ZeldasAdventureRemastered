@@ -5,7 +5,7 @@ if IsPlayerOnSameTile() = true
 		instance_destroy()
 	}
 	
-	if Register_Registered("Shurmak_EvilsOfGreed") = false
+	if Register_Registered("Shurmak_EvilsOfGreed") = false and global.FadeAlpha = 0
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{

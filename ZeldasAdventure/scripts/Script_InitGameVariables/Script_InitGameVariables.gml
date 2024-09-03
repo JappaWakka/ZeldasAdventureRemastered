@@ -13,6 +13,7 @@ function InitGameVariables()
 	WorldMap_Tiles_Init()
 	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
 	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
+	global.ColorBlue = [0.06274509803921569,0.06274509803921569,0.9098039215686274,1.0]
 	
 	global.CompassWarp = ""
 	global.StartCutscene = ""
@@ -139,7 +140,8 @@ function InitGameVariables()
 		BoomerangSpell : 1,
 		TektiteAmbush : 1,
 		UnderworldMapEarthTreasure : 2,
-		CompassEarthTreasure : 3
+		CompassEarthTreasure : 3,
+		EarthSardakBarrier : 3
 	}
 	global.EnemySpeeds =
 	{
@@ -151,8 +153,8 @@ function InitGameVariables()
 	
 	global.ProjectileSpeeds =
 	{
-		Player : 1.5 + d(0.4),
-		Enemy : 1.4 + d(0.4)
+		Player : PlayerBaseSpeed + d(0.4),
+		Enemy : global.EnemySpeeds.Medium + d(0.4)
 	}
 	
 	global.EnemySound = [-1,-1]; //The currently playing enemy sound

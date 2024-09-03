@@ -42,7 +42,7 @@ function Camera_Pan()
 			//Make the enemy sounds happen sooner when switching tiles
 			if alarm[0] > 1 * FrameRate
 			{
-				alarm_set(0,random_range(0.25 * FrameRate,1 * FrameRate))
+				alarm_set(0, round(random_range(0.25 * FrameRate,1 * FrameRate)))
 			}
 			
 			//Deactivate old tile, activate new tile
@@ -100,7 +100,7 @@ function Camera_Pan()
 							var CoordinateIndex = floor(FrameIndex / 4)
 							if CurrentPath[CoordinateIndex][2] = "wait"
 							{
-								var randomDelay = random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4])
+								var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
 								
 								image_speed = 0
 								CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
@@ -188,7 +188,7 @@ function Camera_Pan()
 							var CoordinateIndex = floor(FrameIndex / 4)
 							if CurrentPath[CoordinateIndex][2] = "wait"
 							{
-								var randomDelay = random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4])
+								var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
 								
 								image_speed = 0
 								CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]

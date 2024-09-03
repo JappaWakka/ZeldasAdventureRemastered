@@ -4,6 +4,15 @@ if StartDamageAnimation = true
 	timerIndex = 1
 	DistanceLeftToKnockBack = KnockbackDistance
 	StartDamageAnimation = false
+	DamageOrImmune = "Damage"
+}
+if StartImmuneAnimation = true
+{
+	timerDuration = 4
+	timerIndex = 1
+	DistanceLeftToKnockBack = 0
+	DamageOrImmune = "Immune"
+	StartImmuneAnimation = false
 }
 switch timerIndex
 {
@@ -23,7 +32,14 @@ switch timerIndex
 	{
 		shader_set(Shader_ColorOverlay);
 		shader_set_uniform_f(_uniMix, 1);
-		shader_set_uniform_f_array(_uniColor, global.ColorYellow);
+		if DamageOrImmune = "Damage"
+		{
+			shader_set_uniform_f_array(_uniColor, global.ColorYellow);
+		}
+		else
+		{
+			shader_set_uniform_f_array(_uniColor, global.ColorBlue);
+		}
 		draw_self();
 		shader_reset();
 		break;
@@ -37,7 +53,14 @@ switch timerIndex
 	{
 		shader_set(Shader_ColorOverlay);
 		shader_set_uniform_f(_uniMix, 1);
-		shader_set_uniform_f_array(_uniColor, global.ColorRed);
+		if DamageOrImmune = "Damage"
+		{
+			shader_set_uniform_f_array(_uniColor, global.ColorRed);
+		}
+		else
+		{
+			shader_set_uniform_f_array(_uniColor, global.ColorBlue);
+		}
 		draw_self();
 		shader_reset();
 		break;

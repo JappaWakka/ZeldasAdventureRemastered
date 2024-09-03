@@ -77,3 +77,7 @@ function Register_Remove(RegisterName, TempRegister = false)
 		return true
 	}
 }
+function Register_ClearTempRegister()
+{
+	ds_list_clear(global.TempRegister)
+}
