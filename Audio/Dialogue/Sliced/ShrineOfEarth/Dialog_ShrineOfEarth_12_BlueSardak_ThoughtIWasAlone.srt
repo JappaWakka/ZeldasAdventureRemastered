@@ -1,0 +1,8 @@
+﻿1
+00:00:00,060 --> 00:00:02,967
+Blue Sardak: Huh? I... I thought I was alone here!
+
+2
+00:00:03,213 --> 00:00:06,086
+Llort, an enemy is in your cave!
+

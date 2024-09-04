@@ -11,9 +11,9 @@ function InitGameVariables()
 	#macro FrameRate 60
 	Init_SpawnPoints_TileMap()
 	WorldMap_Tiles_Init()
-	global.ColorYellow = [0.9098039215686274,0.9098039215686274,0.06274509803921569,1.0]
-	global.ColorRed = [0.9098039215686274,0.06274509803921569,0.06274509803921569,1.0]
-	global.ColorBlue = [0.06274509803921569,0.06274509803921569,0.9098039215686274,1.0]
+	global.ColorYellow = [0.91, 0.91, 0.06, 1.00]
+	global.ColorRed = [0.91, 0.06, 0.06, 1.00]
+	global.ColorBlue = [0.06, 0.06, 0.91, 1.00]
 	
 	global.CompassWarp = ""
 	global.StartCutscene = ""
@@ -140,8 +140,7 @@ function InitGameVariables()
 		BoomerangSpell : 1,
 		TektiteAmbush : 1,
 		UnderworldMapEarthTreasure : 2,
-		CompassEarthTreasure : 3,
-		EarthSardakBarrier : 3
+		CompassEarthTreasure : 3
 	}
 	global.EnemySpeeds =
 	{

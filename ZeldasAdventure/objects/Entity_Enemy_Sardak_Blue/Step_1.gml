@@ -1,4 +1,4 @@
-if Register_Registered("Llort_Defeated") = true
+if Register_Registered("BlueSardakDefeated") = true
 {
 	instance_destroy()
 }

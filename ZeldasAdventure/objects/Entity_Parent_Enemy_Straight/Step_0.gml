@@ -247,14 +247,14 @@ if HitPoints <= 0
 			}
 			break
 		case "EarthSardakBarrier" :
-			if global.DeathAmountForTrigger.EarthSardakBarrier > 0
-			{
-				global.DeathAmountForTrigger.EarthSardakBarrier -= 1
-			}
-			if global.DeathAmountForTrigger.EarthSardakBarrier = 0
-			{
-				Script_Trigger_EarthSardakBarrier() //Spawn UnderworldMap_Earth Treasure Pickup
-			}
+			var Color = "None"
+			if id = Entity_Enemy_Sardak_Red
+			{ Color = "Red" }
+			else if id = Entity_Enemy_Sardak_Blue
+			{ Color = "Blue" }
+			else if id = Entity_Enemy_Sardak_Yellow
+			{ Color = "Yellow" }
+			Script_Trigger_EarthSardakBarrier(Color) //Spawn UnderworldMap_Earth Treasure Pickup
 			break
 	}
 	

@@ -21,8 +21,8 @@
   "width": 382,
   "height": 240,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "TextureGroup_Maps",
+    "path": "texturegroups/TextureGroup_Maps",
   },
   "swatchColours": null,
   "gridX": 0,
