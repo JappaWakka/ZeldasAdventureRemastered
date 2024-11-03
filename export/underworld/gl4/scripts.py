@@ -58,11 +58,13 @@ class Cell:
 		setSpriteGroup(0) # Usually the sprite for UP
 		save[RESPAWN_CELL_ID_maybe] = 4 # 0x4, b'\x00\x04'
 		
+
 # Local variables
 local0 = 26476 # 0x676c, b'gl'
 local1 = 13568 # 0x3500, b'5\x00'
 local2 = 102 # 0x66, b'\x00f'
 local3 = 0 # 0x0, b'\x00\x00'
+
 # Extra script data
 extraData = [
 	[[b'TRIGCELL1\x00', b'TRIGCELL2\x00', b'TRIGCELL3\x00', b'FLYDEAD\x00']],

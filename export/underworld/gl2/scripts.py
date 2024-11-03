@@ -37,11 +37,61 @@ class Cell:
 		setSpriteGroup(0) # Usually the sprite for UP
 		save[RESPAWN_CELL_ID_maybe] = 2 # 0x2, b'\x00\x02'
 		
+
 # Local variables
 local0 = 26476 # 0x676c, b'gl'
 local1 = 13056 # 0x3300, b'3\x00'
 local2 = 102 # 0x66, b'\x00f'
+
 # Extra script data
 extraData = [
 	[[b'TRIGCELL1\x00', b'TRIGCELL2\x00', b'TRIGCELL3\x00']],
 ]
+
+# Boss AI
+def bossAI():
+	SetStartPosition(x=96, y=36)
+	while True:
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=0, y=112)
+		SetAnimationGroup(group=2)
+		MoveToGoal(x=220, y=102)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=4, y=64)
+		MoveToGoal(x=220, y=4)
+		MoveToGoal(x=100, y=58)
+		SetIsInvulnerable(invulnerable=True)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=2)
+		SetAnimationGroup(group=1)
+		UseAttack()
+		PlaySound(index=0)
+		SetIsInvulnerable(invulnerable=False)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=46, y=114)
+		MoveToGoal(x=124, y=26)
+		MoveToGoal(x=22, y=66)
+		SetIsInvulnerable(invulnerable=True)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=2)
+		SetAnimationGroup(group=1)
+		UseAttack()
+		PlaySound(index=0)
+		SetIsInvulnerable(invulnerable=False)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=106, y=114)
+		MoveToGoal(x=4, y=26)
+		MoveToGoal(x=166, y=66)
+		SetIsInvulnerable(invulnerable=True)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=2)
+		SetAnimationGroup(group=1)
+		UseAttack()
+		PlaySound(index=0)
+		SetIsInvulnerable(invulnerable=False)
+		AnimateInPlace(frames=4)
+		WasteOneFrame() # It takes one frame to reset the loop counter.

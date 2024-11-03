@@ -37,11 +37,32 @@ class Cell:
 		setSpriteGroup(0) # Usually the sprite for UP
 		save[RESPAWN_CELL_ID_maybe] = 7 # 0x7, b'\x00\x07'
 		
+
 # Local variables
 local0 = 26476 # 0x676c, b'gl'
 local1 = 14336 # 0x3800, b'8\x00'
 local2 = 102 # 0x66, b'\x00f'
+
 # Extra script data
 extraData = [
 	[[b'TRIGCELL1\x00', b'TRIGCELL2\x00', b'TRIGCELL3\x00']],
 ]
+
+# Boss AI
+def bossAI():
+	SetStartPosition(x=208, y=40)
+	while True:
+		MoveToGoal(x=4, y=4)
+		MoveToGoal(x=56, y=62)
+		MoveToGoal(x=92, y=2)
+		MoveToGoal(x=146, y=86)
+		MoveToGoal(x=200, y=2)
+		MoveToGoal(x=2, y=146)
+		MoveToGoal(x=242, y=2)
+		MoveToGoal(x=188, y=2)
+		UseAttack()
+		MoveToGoal(x=2, y=2)
+		MoveToGoal(x=242, y=146)
+		MoveToGoal(x=56, y=2)
+		UseAttack()
+		WasteOneFrame() # It takes one frame to reset the loop counter.

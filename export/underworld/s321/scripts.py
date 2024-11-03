@@ -64,9 +64,52 @@ class Cell:
 		else:
 			returnValue = 1
 		
+
 # No local variables
 
 # Extra script data
 extraData = [
 	[[]],
 ]
+
+# Boss AI
+def bossAI():
+	SetStartPosition(x=112, y=4)
+	while True:
+		SetAnimationGroup(group=0)
+		SetIsInvulnerable(invulnerable=False)
+		MoveToGoal(x=4, y=4)
+		MoveToGoal(x=112, y=52)
+		MoveToGoal(x=224, y=4)
+		MoveToGoal(x=128, y=40)
+		SetAnimationGroup(group=1)
+		PlaySound(index=0)
+		MoveToGoal(x=4, y=112)
+		MoveToGoal(x=68, y=64)
+		SetAnimationGroup(group=0)
+		PlaySound(index=0)
+		MoveToGoal(x=68, y=64)
+		SetAnimationGroup(group=1)
+		PlaySound(index=0)
+		MoveToGoal(x=120, y=112)
+		SetAnimationGroup(group=0)
+		PlaySound(index=0)
+		MoveToGoal(x=148, y=60)
+		SetAnimationGroup(group=1)
+		PlaySound(index=0)
+		MoveToGoal(x=224, y=116)
+		SetAnimationGroup(group=0)
+		PlaySound(index=0)
+		MoveToGoal(x=104, y=48)
+		SetIsInvulnerable(invulnerable=True)
+		PlaySound(index=0)
+		UseAttack()
+		SetIsInvulnerable(invulnerable=False)
+		MoveToGoal(x=28, y=4)
+		MoveToGoal(x=116, y=56)
+		StepNormalAI_extremelyComplicated(frames=4, unusualHighByte=2) # unusualHighByte: The code only checks for zero or nonzero. This script considers anything that isn't 0 or 1 (i.e. true or false) to be "unusual".
+		MoveToGoal(x=188, y=4)
+		MoveToGoal(x=40, y=108)
+		MoveToGoal(x=20, y=4)
+		MoveToGoal(x=212, y=100)
+		WasteOneFrame() # It takes one frame to reset the loop counter.

@@ -62,9 +62,72 @@ class Cell:
 		else:
 			returnValue = 1
 		
+
 # No local variables
 
 # Extra script data
 extraData = [
 	[[]],
 ]
+
+# Boss AI
+def bossAI():
+	SetStartPosition(x=104, y=44)
+	while True:
+		SetAnimationGroup(group=0)
+		MoveToGoal(x=194, y=68)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=194, y=120)
+		SetAnimationGroup(group=2)
+		PlaySound(index=0)
+		MoveToGoal(x=194, y=140)
+		SetAnimationGroup(group=3)
+		MoveToGoal(x=194, y=132)
+		SetAnimationGroup(group=4)
+		MoveToGoal(x=50, y=70)
+		SetAnimationGroup(group=3)
+		SetAnimationGroup(group=2)
+		SetAnimationGroup(group=1)
+		SetAnimationGroup(group=0)
+		MoveToGoal(x=140, y=48)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=140, y=60)
+		SetAnimationGroup(group=2)
+		PlaySound(index=0)
+		MoveToGoal(x=176, y=140)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=176, y=148)
+		SetAnimationGroup(group=0)
+		MoveToGoal(x=240, y=100)
+		SetAnimationGroup(group=0)
+		SetAnimationGroup(group=1)
+		SetAnimationGroup(group=2)
+		SetAnimationGroup(group=3)
+		SetAnimationGroup(group=4)
+		MoveToGoal(x=40, y=36)
+		SetAnimationGroup(group=3)
+		MoveToGoal(x=40, y=48)
+		SetAnimationGroup(group=2)
+		PlaySound(index=0)
+		MoveToGoal(x=12, y=136)
+		SetAnimationGroup(group=1)
+		SetAnimationGroup(group=0)
+		MoveToGoal(x=232, y=84)
+		SetAnimationGroup(group=1)
+		SetAnimationGroup(group=2)
+		SetAnimationGroup(group=3)
+		SetAnimationGroup(group=4)
+		MoveToGoal(x=24, y=36)
+		SetAnimationGroup(group=3)
+		SetAnimationGroup(group=2)
+		SetAnimationGroup(group=1)
+		SetAnimationGroup(group=0)
+		MoveToGoal(x=220, y=36)
+		SetAnimationGroup(group=1)
+		SetAnimationGroup(group=2)
+		SetAnimationGroup(group=3)
+		SetAnimationGroup(group=4)
+		MoveToGoal(x=16, y=80)
+		SetAnimationGroup(group=3)
+		SetAnimationGroup(group=2)
+		WasteOneFrame() # It takes one frame to reset the loop counter.

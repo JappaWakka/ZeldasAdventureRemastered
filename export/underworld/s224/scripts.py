@@ -62,9 +62,80 @@ class Cell:
 		else:
 			returnValue = 1
 		
+
 # No local variables
 
 # Extra script data
 extraData = [
 	[[]],
 ]
+
+# Boss AI
+def bossAI():
+	SetStartPosition(x=96, y=36)
+	while True:
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=0, y=32)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=2)
+		MoveToGoal(x=180, y=72)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=100, y=64)
+		SetIsInvulnerable(invulnerable=True)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=2)
+		SetAnimationGroup(group=1)
+		PlaySound(index=0)
+		UseAttack()
+		SetIsInvulnerable(invulnerable=False)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=0, y=12)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=100, y=64)
+		SetIsInvulnerable(invulnerable=True)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=2)
+		SetAnimationGroup(group=1)
+		PlaySound(index=0)
+		UseAttack()
+		SetIsInvulnerable(invulnerable=False)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=212, y=92)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=100, y=64)
+		SetIsInvulnerable(invulnerable=True)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=2)
+		SetAnimationGroup(group=1)
+		PlaySound(index=0)
+		UseAttack()
+		SetIsInvulnerable(invulnerable=False)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=200, y=12)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=100, y=64)
+		SetIsInvulnerable(invulnerable=True)
+		SetAnimationGroup(group=0)
+		AnimateInPlace(frames=2)
+		SetAnimationGroup(group=1)
+		PlaySound(index=0)
+		UseAttack()
+		SetIsInvulnerable(invulnerable=False)
+		AnimateInPlace(frames=4)
+		SetAnimationGroup(group=1)
+		MoveToGoal(x=0, y=92)
+		WasteOneFrame() # It takes one frame to reset the loop counter.

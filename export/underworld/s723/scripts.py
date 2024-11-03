@@ -62,9 +62,28 @@ class Cell:
 		else:
 			returnValue = 1
 		
+
 # No local variables
 
 # Extra script data
 extraData = [
 	[[]],
 ]
+
+# Boss AI
+def bossAI():
+	SetStartPosition(x=208, y=40)
+	while True:
+		MoveToGoal(x=80, y=32)
+		PlaySound(index=0)
+		MoveToGoal(x=116, y=14)
+		MoveToGoal(x=240, y=68)
+		MoveToGoal(x=48, y=24)
+		PlaySound(index=0)
+		MoveToGoal(x=226, y=126)
+		MoveToGoal(x=58, y=112)
+		MoveToGoal(x=58, y=112)
+		PlaySound(index=0)
+		MoveToGoal(x=44, y=64)
+		MoveToGoal(x=198, y=130)
+		WasteOneFrame() # It takes one frame to reset the loop counter.

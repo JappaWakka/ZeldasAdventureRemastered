@@ -7,5 +7,5 @@ class Cell:
 	def cellType5(self):
 		spawnAndAnimate(actor=self)
 		
-# No local variables
 
+# No local variables

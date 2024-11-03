@@ -62,9 +62,53 @@ class Cell:
 		else:
 			returnValue = 0
 		
+
 # No local variables
 
 # Extra script data
 extraData = [
 	[[]],
 ]
+
+# Boss AI
+def bossAI():
+	SetStartPosition(x=208, y=40)
+	while True:
+		SetAnimationGroup(group=0)
+		SetIsInvulnerable(invulnerable=True)
+		AnimateInPlace(frames=6)
+		MoveToGoal(x=166, y=76)
+		SetIsInvulnerable(invulnerable=True)
+		PlaySound(index=0)
+		UseAttack()
+		AnimateInPlace(frames=6)
+		SetIsInvulnerable(invulnerable=False)
+		MoveToGoal(x=76, y=40)
+		AnimateInPlace(frames=6)
+		MoveToGoal(x=124, y=128)
+		SetIsInvulnerable(invulnerable=True)
+		PlaySound(index=0)
+		UseAttack()
+		AnimateInPlace(frames=6)
+		SetIsInvulnerable(invulnerable=False)
+		MoveToGoal(x=124, y=40)
+		AnimateInPlace(frames=6)
+		MoveToGoal(x=200, y=128)
+		SetIsInvulnerable(invulnerable=True)
+		PlaySound(index=0)
+		UseAttack()
+		AnimateInPlace(frames=6)
+		SetIsInvulnerable(invulnerable=False)
+		MoveToGoal(x=58, y=104)
+		AnimateInPlace(frames=6)
+		MoveToGoal(x=130, y=68)
+		SetIsInvulnerable(invulnerable=True)
+		PlaySound(index=0)
+		UseAttack()
+		AnimateInPlace(frames=6)
+		SetIsInvulnerable(invulnerable=False)
+		MoveToGoal(x=58, y=68)
+		AnimateInPlace(frames=6)
+		MoveToGoal(x=178, y=44)
+		AnimateInPlace(frames=6)
+		WasteOneFrame() # It takes one frame to reset the loop counter.
