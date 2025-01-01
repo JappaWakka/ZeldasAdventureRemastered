@@ -20,7 +20,7 @@ else
 #region SpriteChanges & Direction
 
 #region Action - Using Spells & Treasures
-if global.RemasteredMode = false and IsAttacking = false and global.PlayerIsDead = false
+if global.CanControlPlayer = true and global.RemasteredMode = false and IsAttacking = false and global.PlayerIsDead = false
 {
 	if input_check_pressed("action1") = true or input_check_pressed("action2") = true
 	{
@@ -37,7 +37,7 @@ if global.RemasteredMode = false and IsAttacking = false and global.PlayerIsDead
 	}
 }
 
-if global.RemasteredMode = true and IsAttacking = false and global.PlayerIsDead = false
+if global.CanControlPlayer = true and global.RemasteredMode = true and IsAttacking = false and global.PlayerIsDead = false
 {
 	if input_check_pressed("action1") = true
 	{

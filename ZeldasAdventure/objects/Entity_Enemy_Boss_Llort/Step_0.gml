@@ -1,14 +1,6 @@
 //If the player is on the same tile
 if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 {
-	//Play sound
-	if Script_AggroRange() = true
-	{
-		if global.EnemySoundPlaying = false
-		{
-			global.EnemySound = [EnemySoundName,x]
-		}
-	}
 	//Activate
 	visible = true;
 	
@@ -37,94 +29,22 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 		}
 	}
 	
-	//Receive Damage from Player
-	//Melee
-	if collision_circle(x,y,HitRadius_Defense,Entity_Hitbox_Spell_Wand,true,true)
+	if IsInvincible = false
 	{
-		if DamageDelay = 0
-		{
-			///Set return position
-			if ReturnToPoint = true and ReturnPointPosition[0] = -1 and ReturnPointPosition[1] = -1
-			{
-				if CanContinue = true
-				{
-					ReturnPointPosition = CurrentCoordinates;
-					CanContinue = false;
-				}
-				else
-				{
-					ReturnPointPosition = [x,y];
-				}
-			}
-			var ReceivedDamage = GetPower() - Defense
-			if ReceivedDamage > 0
-			{
-				///Reduce HitPoints, play damage sound
-				HitPoints -= ReceivedDamage
-				audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
-				EnemyState = EnemyStates.Damaged
-				StartDamageAnimation = true
-				HitFromDirection = Entity_Player.Facing			
-			}
-			else
-			{
-				audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
-				EnemyState = EnemyStates.Damaged
-				StartImmuneAnimation = true
-			}
-			///Reset DamageDelay
-			DamageDelay = 1 * FrameRate
-		}
-	}
-	//Spell
-	if instance_number(Entity_Parent_Projectile_Player) > 0
-	{
-		var HitProjectile = -1
-		for (var i = 0; i < instance_number(Entity_Parent_Projectile_Player); ++i;)
-		{
-			if collision_circle(x,y,HitRadius_Defense,Entity_Parent_Projectile_Player,true,true)
-		    {
-				HitProjectile = instance_find(Entity_Parent_Projectile_Player,i);
-			}
-		}
-		if HitProjectile != -1
+		//Receive Damage from Player
+		//Melee
+		if collision_circle(x,y,HitRadius_Defense,Entity_Hitbox_Spell_Wand,true,true)
 		{
 			if DamageDelay = 0
 			{
-				///Set return position
-				if ReturnToPoint = true and ReturnPointPosition[0] = -1 and ReturnPointPosition[1] = -1
-				{
-					if CanContinue = true
-					{
-						ReturnPointPosition = CurrentCoordinates;
-						CanContinue = false;
-					}
-					else
-					{
-						ReturnPointPosition = [x,y];
-					}
-				}				
-				
-				///Reduce HitPoints, play damage sound
-				var ReceivedDamage
-				
-				if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
-				{
-					ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power) + HitProjectile.BonusDamageIfWeak
-				}
-				else
-				{
-					ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power)
-				}
-				
+				var ReceivedDamage = GetPower() - Defense
 				if ReceivedDamage > 0
 				{
 					///Reduce HitPoints, play damage sound
-					HitPoints -= ReceivedDamage
 					audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
+					HitPoints -= ReceivedDamage
 					EnemyState = EnemyStates.Damaged
 					StartDamageAnimation = true
-					HitFromDirection = HitProjectile.direction
 				}
 				else
 				{
@@ -132,13 +52,80 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 					EnemyState = EnemyStates.Damaged
 					StartImmuneAnimation = true
 				}
-				
+				///Reset DamageDelay
+				DamageDelay = 1 * FrameRate
+			}
+		}
+		//Spell
+		if instance_number(Entity_Parent_Projectile_Player) > 0
+		{
+			var HitProjectile = -1
+			for (var i = 0; i < instance_number(Entity_Parent_Projectile_Player); ++i;)
+			{
+				if collision_circle(x,y,HitRadius_Defense,Entity_Parent_Projectile_Player,true,true)
+			    {
+					HitProjectile = instance_find(Entity_Parent_Projectile_Player,i);
+				}
+			}
+			if HitProjectile != -1
+			{
+				if DamageDelay = 0
+				{
+					///Reduce HitPoints, play damage sound
+					var ReceivedDamage
+					
+					if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
+					{
+						ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power) + HitProjectile.BonusDamageIfWeak
+					}
+					else
+					{
+						ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power)
+					}
+					
+					if ReceivedDamage > 0
+					{
+						///Reduce HitPoints, play damage sound
+						HitPoints -= ReceivedDamage
+						audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
+						EnemyState = EnemyStates.Damaged
+						StartDamageAnimation = true
+					}
+					else
+					{
+						audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
+						EnemyState = EnemyStates.Damaged
+						StartImmuneAnimation = true
+					}
+					
+					if HitProjectile.DestroyOnEnemyImpact = true
+					{
+						instance_destroy(HitProjectile)
+					}
+					///Reset DamageDelay
+					DamageDelay = 1 * FrameRate
+				}
+			}
+		}
+	}
+	else
+	{
+		if instance_number(Entity_Parent_Projectile_Player) > 0
+		{
+			var HitProjectile = -1
+			for (var i = 0; i < instance_number(Entity_Parent_Projectile_Player); ++i;)
+			{
+				if collision_circle(x,y,HitRadius_Defense,Entity_Parent_Projectile_Player,true,true)
+			    {
+					HitProjectile = instance_find(Entity_Parent_Projectile_Player,i);
+				}
+			}
+			if HitProjectile != -1
+			{
 				if HitProjectile.DestroyOnEnemyImpact = true
 				{
 					instance_destroy(HitProjectile)
 				}
-				///Reset DamageDelay
-				DamageDelay = 1 * FrameRate
 			}
 		}
 	}
@@ -173,15 +160,8 @@ if timerDuration = 0 and timerIndex > 0
 	}
 	timerDuration = 4
 }
-if timerIndex >= 1 or DistanceLeftToKnockBack > 0
+if EnemyState = EnemyStates.Damaged
 {
-	direction = HitFromDirection
-	speed = d(4)
-	DistanceLeftToKnockBack -= speed
-}
-if DistanceLeftToKnockBack <= 0 && EnemyState = EnemyStates.Damaged
-{
-	DistanceLeftToKnockBack = 0
 	speed = 0
 }
 
@@ -209,25 +189,8 @@ if EnemyState = EnemyStates.Damaged
 
 if HitPoints <= 0
 {
-	switch TriggerScriptName
-	{
-		case "CompassEarthTreasure" :
-			if global.DeathAmountForTrigger.CompassEarthTreasure > 0
-			{
-				global.DeathAmountForTrigger.CompassEarthTreasure -= 1
-			}
-			if global.DeathAmountForTrigger.CompassEarthTreasure = 0
-			{
-				Script_Trigger_CompassEarthTreasure() //Spawn Compass_Earth Treasure Pickup
-			}
-			break
-	}
-	
+		
 	instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Particle_EnemyDefeat)
-	if DropsItemOnDefeat = true
-	{
-		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops)
-	}
 	instance_destroy();
 	
 }

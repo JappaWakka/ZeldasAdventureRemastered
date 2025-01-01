@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Warp_ShrineOfEarth_21_to_22",
   "spriteId": {
-    "name": "Shrine_Earth_21_Warp",
-    "path": "sprites/Shrine_Earth_21_Warp/Shrine_Earth_21_Warp.yy",
+    "name": "Shrine_Earth_21_Warp_22",
+    "path": "sprites/Shrine_Earth_21_Warp_22/Shrine_Earth_21_Warp_22.yy",
   },
   "solid": false,
   "visible": false,

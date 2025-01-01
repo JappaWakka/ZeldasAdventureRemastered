@@ -21,7 +21,7 @@
 	}
 	Subtitle_ShrineOfEarth_21_Llort_TakingMyThings
 	{
-		"Llort: You've been taking my things. Put them back! Don't touch anything!"
+		"Llort: You've been taking my things. Put them back! Don't touch anything! Those are my gems!"
 	}
 	
 	Subtitle_ShrineOfEarth_07_RedSardak_NoThreat

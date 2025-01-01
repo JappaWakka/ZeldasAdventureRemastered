@@ -113,6 +113,8 @@ global.WarpLocations =
 	ShrineOfEarth_11_to_09 : {TileX:11,TileY:38,PlayerX:288,PlayerY:24},
 	ShrineOfEarth_13_to_14 : {TileX:9,TileY:34,PlayerX:360,PlayerY:136},
 	ShrineOfEarth_14_to_13 : {TileX:11,TileY:34,PlayerX:24,PlayerY:136},
+	ShrineOfEarth_20_to_21 : {TileX:12,TileY:30,PlayerX:184,PlayerY:204},
+	ShrineOfEarth_21_to_20 : {TileX:12,TileY:31,PlayerX:184,PlayerY:32},
 	ShrineOfEarth_21_to_22 : {TileX:12,TileY:29,PlayerX:176,PlayerY:208},
 	ShrineOfEarth_22_to_21 : {TileX:12,TileY:30,PlayerX:188,PlayerY:28},
 
@@ -190,6 +192,22 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_14_to_13.TileY,
 			global.WarpLocations.ShrineOfEarth_14_to_13.PlayerX,
 			global.WarpLocations.ShrineOfEarth_14_to_13.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_20_to_21":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_20_to_21.TileX,
+			global.WarpLocations.ShrineOfEarth_20_to_21.TileY,
+			global.WarpLocations.ShrineOfEarth_20_to_21.PlayerX,
+			global.WarpLocations.ShrineOfEarth_20_to_21.PlayerY
+			)
+			break;
+		case "ShrineOfEarth_21_to_20":
+			WarpTo(
+			global.WarpLocations.ShrineOfEarth_21_to_20.TileX,
+			global.WarpLocations.ShrineOfEarth_21_to_20.TileY,
+			global.WarpLocations.ShrineOfEarth_21_to_20.PlayerX,
+			global.WarpLocations.ShrineOfEarth_21_to_20.PlayerY
 			)
 			break;
 		case "ShrineOfEarth_21_to_22":

@@ -33,7 +33,8 @@ function InitGameVariables()
 		Nederlands : "nl"
 	}
 	global.Subtitle = "";
-	global.CanUseSpell = true
+	global.CanControlPlayer = true;
+	global.CanUseSpell = true;
 	global.CurrentItem = [-1,-1]
 	global.CurrentTreasure = -1;
 	global.CurrentSpell = -1;

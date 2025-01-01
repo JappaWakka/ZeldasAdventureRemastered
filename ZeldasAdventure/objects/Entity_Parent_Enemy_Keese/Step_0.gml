@@ -64,7 +64,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 				audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
 				EnemyState = EnemyStates.Damaged
 				StartDamageAnimation = true
-				HitFromDirection = Entity_Player.Facing			
+				HitFromDirection = Entity_Player.Facing
 			}
 			else
 			{

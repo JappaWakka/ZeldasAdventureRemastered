@@ -3,7 +3,7 @@
 var xdir = 0
 var ydir = 0
 
-if global.CameraIsPanning = false and Entity_Player.IsAttacking = false and IsMenuVisible() = false and global.FadeProgress = 2
+if global.CanControlPlayer = true and global.CameraIsPanning = false and Entity_Player.IsAttacking = false and IsMenuVisible() = false and global.FadeProgress = 2
 {
 	xdir = input_check("right") - input_check("left");
 	ydir = input_check("down") - input_check("up");
@@ -44,7 +44,7 @@ else
 #region SpriteChanges & Direction
 
 Entity_Player.AnimSpeed = d(SpeedMultiplier)
-if global.CameraIsPanning = false and IsMenuVisible() = false and global.FadeProgress = 2
+if global.CanControlPlayer = true and global.CameraIsPanning = false and IsMenuVisible() = false and global.FadeProgress = 2
 {
 	if Entity_Player.IsAttacking = false and global.PlayerIsDead = false
 	{

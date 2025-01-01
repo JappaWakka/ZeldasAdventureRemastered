@@ -248,11 +248,11 @@ if HitPoints <= 0
 			break
 		case "EarthSardakBarrier" :
 			var Color = "None"
-			if id = Entity_Enemy_Sardak_Red
+			if object_get_name(object_index) = "Entity_Enemy_Sardak_Red"
 			{ Color = "Red" }
-			else if id = Entity_Enemy_Sardak_Blue
+			else if object_get_name(object_index) = "Entity_Enemy_Sardak_Blue"
 			{ Color = "Blue" }
-			else if id = Entity_Enemy_Sardak_Yellow
+			else if object_get_name(object_index) = "Entity_Enemy_Sardak_Yellow"
 			{ Color = "Yellow" }
 			Script_Trigger_EarthSardakBarrier(Color) //Spawn UnderworldMap_Earth Treasure Pickup
 			break

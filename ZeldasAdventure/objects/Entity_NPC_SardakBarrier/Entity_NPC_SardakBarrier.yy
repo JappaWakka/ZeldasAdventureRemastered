@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Entity_Parent_NPC",
-    "path": "objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",
+    "name": "Entity_Parent_NPC_Solid",
+    "path": "objects/Entity_Parent_NPC_Solid/Entity_Parent_NPC_Solid.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -34,8 +34,8 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ImageSpeed","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"value":"1",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"EnableAnimationAlarm","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"value":"False",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ImageSpeed","path":"objects/Entity_Parent_NPC_Solid/Entity_Parent_NPC_Solid.yy",},"objectId":{"name":"Entity_Parent_NPC_Solid","path":"objects/Entity_Parent_NPC_Solid/Entity_Parent_NPC_Solid.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"EnableAnimationAlarm","path":"objects/Entity_Parent_NPC_Solid/Entity_Parent_NPC_Solid.yy",},"objectId":{"name":"Entity_Parent_NPC_Solid","path":"objects/Entity_Parent_NPC_Solid/Entity_Parent_NPC_Solid.yy",},"value":"False",},
   ],
   "parent": {
     "name": "ShrineOfEarth",

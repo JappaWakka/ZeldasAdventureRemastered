@@ -15,7 +15,7 @@ if IsPlayerOnSameTile() = true
 		}
 		
 	}
-	if Register_Registered("RedSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Red) = false
+	if Register_Registered("RedSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Red) = false and global.CurrentDialogue_Asset = Dialog_None
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
