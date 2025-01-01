@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Power","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"40",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileSpeed","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"d(global.ProjectileSpeeds.Enemy * 1.5 + 0.2)",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileSpeed","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"global.ProjectileSpeeds.Enemy * 1.5 + 0.2",},
   ],
   "parent": {
     "name": "Projectiles_Enemy",
