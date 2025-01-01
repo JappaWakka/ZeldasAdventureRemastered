@@ -12,6 +12,9 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			case 2:
 				CanContinue = script_execute(CurrentPattern[StepIndex][0],CurrentPattern[StepIndex][1],CurrentPattern[StepIndex][2]);
 				break;
+			//case 3:
+			//	CanContinue = script_execute(CurrentPattern[StepIndex][0],CurrentPattern[StepIndex][1],CurrentPattern[StepIndex][2],CurrentPattern[StepIndex][3]);
+			//	break;
 		}
 		if CanContinue = true
 		{

@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"input_mouse_moved","path":"scripts/input_mouse_moved/input_mouse_moved.yy",},"order":8,},
     {"id":{"name":"SFX_Enemy_Llort","path":"sounds/SFX_Enemy_Llort/SFX_Enemy_Llort.yy",},"order":46,},
+    {"id":{"name":"Entity_Projectile_Boss_Llort1","path":"objects/Entity_Projectile_Boss_Llort1/Entity_Projectile_Boss_Llort1.yy",},"order":4,},
     {"id":{"name":"Sprite_Pickup_Wand","path":"sprites/Sprite_Pickup_Wand/Sprite_Pickup_Wand.yy",},"order":0,},
     {"id":{"name":"Shrine_Fire_05_Below","path":"sprites/Shrine_Fire_05_Below/Shrine_Fire_05_Below.yy",},"order":4,},
     {"id":{"name":"EastForest_04_Below","path":"sprites/EastForest_04_Below/EastForest_04_Below.yy",},"order":3,},
@@ -289,6 +290,7 @@
     {"id":{"name":"Shrine_Water_26_Below","path":"sprites/Shrine_Water_26_Below/Shrine_Water_26_Below.yy",},"order":25,},
     {"id":{"name":"Sprite_Pickup_CrystalHeart","path":"sprites/Sprite_Pickup_CrystalHeart/Sprite_Pickup_CrystalHeart.yy",},"order":0,},
     {"id":{"name":"GanonsGauntlet_05_Agwanda_Below","path":"sprites/GanonsGauntlet_05_Agwanda_Below/GanonsGauntlet_05_Agwanda_Below.yy",},"order":4,},
+    {"id":{"name":"Entity_Projectile_Boss_Llort2","path":"objects/Entity_Projectile_Boss_Llort2/Entity_Projectile_Boss_Llort2.yy",},"order":6,},
     {"id":{"name":"Shrine_Earth_22","path":"sprites/Shrine_Earth_22/Shrine_Earth_22.yy",},"order":352,},
     {"id":{"name":"Script_IsPlayerOnSameTile","path":"scripts/Script_IsPlayerOnSameTile/Script_IsPlayerOnSameTile.yy",},"order":21,},
     {"id":{"name":"Overworld_070_Below","path":"sprites/Overworld_070_Below/Overworld_070_Below.yy",},"order":44,},

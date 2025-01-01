@@ -38,6 +38,7 @@ function BossAI_SetSpriteIndex(BossIndex,SpriteIndex)
 	if Sprite <> -1
 	{
 		sprite_index = Sprite
+		image_index = 0
 	}
 	return true
 }
@@ -64,11 +65,12 @@ function BossAI_MoveToGoal(MoveToX,MoveToY)
 	if MoveToGoal[0] <> MoveToX and MoveToGoal[1] <> MoveToY
 	{
 		MoveToGoal = [MoveToX + tileWidth * global.CurrentTile.x,MoveToY + tileHeight * global.CurrentTile.y]
-		MoveSpeed = choose(global.EnemySpeeds.Slow,global.EnemySpeeds.Medium,global.EnemySpeeds.Fast)
+		MoveSpeed = choose(global.EnemySpeeds.Slow, global.EnemySpeeds.Medium, global.EnemySpeeds.Fast)
 	}
 	
 	if EnemyState != EnemyStates.Damaged
 	{
+		EnemyState = EnemyStates.Move
 		image_speed = MoveSpeed
 		
 		if MoveToGoal[0] <> x or MoveToGoal[1] <> y
@@ -122,7 +124,7 @@ function BossAI_AnimateInPlace(TimeInCdiFrames)
 {
 	if Delay = -1
 	{
-		Delay = TimeInCdiFrames * 4
+		Delay = TimeInCdiFrames
 	}
 	
 	if EnemyState != EnemyStates.Damaged
@@ -133,6 +135,7 @@ function BossAI_AnimateInPlace(TimeInCdiFrames)
 			Delay -=1
 		}
 	}
+		
 	if image_index = image_number -1
 	{
 		image_speed = 0
@@ -154,7 +157,7 @@ function BossAI_Wait(TimeInCdiFrames)
 {
 	if Delay = -1
 	{
-		Delay = TimeInCdiFrames * 4
+		Delay = TimeInCdiFrames
 	}
 	
 	if EnemyState != EnemyStates.Damaged
@@ -179,8 +182,33 @@ function BossAI_Wait(TimeInCdiFrames)
 
 function BossAI_UseAttack(BossIndex)
 {
-	//implement attacks
-	return true
+	switch BossIndex
+	{
+		case BossIndexes.Llort1:
+			
+			if image_index = image_number -1
+			{
+				return true
+			}
+			else
+			{
+				image_speed = 1
+			}
+			if image_index = 2
+			{
+				BossAI_PlaySound(BossIndex)
+				var xOffset = -16
+				var yOffset = 32
+				var Projectile_1 = instance_create_layer(x+xOffset,y+yOffset,"Temporary_AbovePlayer",Entity_Projectile_Boss_Llort1)
+				Projectile_1.direction = global.Directions.South - 45
+				var Projectile_2 = instance_create_layer(x+xOffset,y+yOffset,"Temporary_AbovePlayer",Entity_Projectile_Boss_Llort1)
+				Projectile_2.direction = global.Directions.South + 45
+				EnemyState = EnemyStates.Attack
+			}
+			
+			break
+	}
+	return false
 }
 
 function BossAI_SetPattern(BossIndex)
@@ -194,29 +222,20 @@ function BossAI_SetPattern(BossIndex)
 				[BossAI_MoveToGoal,100,82],
 				[BossAI_SetSpriteIndex,BossIndex,1],
 				[BossAI_SetIsInvincible,true],
-				[BossAI_AnimateInPlace,2],
 				[BossAI_UseAttack,BossIndex],
-				[BossAI_PlaySound,BossIndex],
-				[BossAI_AnimateInPlace,4],
 				[BossAI_SetSpriteIndex,BossIndex,0],
 				[BossAI_SetIsInvincible,false],
 				[BossAI_MoveToGoal,204,122],
 				[BossAI_MoveToGoal,288,82],
 				[BossAI_SetSpriteIndex,BossIndex,1],
 				[BossAI_SetIsInvincible,true],
-				[BossAI_AnimateInPlace,2],
 				[BossAI_UseAttack,BossIndex],
-				[BossAI_PlaySound,BossIndex],
-				[BossAI_AnimateInPlace,4],
 				[BossAI_SetSpriteIndex,BossIndex,0],
 				[BossAI_SetIsInvincible,false],
 				[BossAI_MoveToGoal,204,142],
 				[BossAI_SetSpriteIndex,BossIndex,1],
 				[BossAI_SetIsInvincible,true],
-				[BossAI_AnimateInPlace,2],
 				[BossAI_UseAttack,BossIndex],
-				[BossAI_PlaySound,BossIndex],
-				[BossAI_AnimateInPlace,4],
 				[BossAI_SetSpriteIndex,BossIndex,0],
 				[BossAI_SetIsInvincible,false],
 				[BossAI_MoveToGoal,300,154],
@@ -224,10 +243,7 @@ function BossAI_SetPattern(BossIndex)
 				[BossAI_MoveToGoal,204,82],
 				[BossAI_SetSpriteIndex,BossIndex,1],
 				[BossAI_SetIsInvincible,true],
-				[BossAI_AnimateInPlace,2],
 				[BossAI_UseAttack,BossIndex],
-				[BossAI_PlaySound,BossIndex],
-				[BossAI_AnimateInPlace,4],
 				[BossAI_SetSpriteIndex,BossIndex,0],
 				[BossAI_SetIsInvincible,false],
 				[BossAI_MoveToGoal,204,92],
