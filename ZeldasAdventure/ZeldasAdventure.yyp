@@ -96,7 +96,7 @@
     {"id":{"name":"MysteryIsland_01_Below","path":"sprites/MysteryIsland_01_Below/MysteryIsland_01_Below.yy",},"order":0,},
     {"id":{"name":"Script_PlayerDeath","path":"scripts/Script_PlayerDeath/Script_PlayerDeath.yy",},"order":5,},
     {"id":{"name":"Shrine_Earth_19_Below","path":"sprites/Shrine_Earth_19_Below/Shrine_Earth_19_Below.yy",},"order":19,},
-    {"id":{"name":"Script_AggroRange","path":"scripts/Script_AggroRange/Script_AggroRange.yy",},"order":14,},
+    {"id":{"name":"Script_EnemyBehavior","path":"scripts/Script_EnemyBehavior/Script_EnemyBehavior.yy",},"order":14,},
     {"id":{"name":"Overworld_510_Below","path":"sprites/Overworld_510_Below/Overworld_510_Below.yy",},"order":260,},
     {"id":{"name":"Overworld_204_Below","path":"sprites/Overworld_204_Below/Overworld_204_Below.yy",},"order":111,},
     {"id":{"name":"__input_string_contains","path":"scripts/__input_string_contains/__input_string_contains.yy",},"order":23,},

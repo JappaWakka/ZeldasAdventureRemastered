@@ -15,8 +15,13 @@ if IsPlayerOnSameTile() = true
 		}
 		
 	}
-	if Register_Registered("BlueSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Blue) = false and global.CurrentDialogue_Asset = Dialog_None
+	if Register_Registered("BlueSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Blue) = false
 	{
+		if global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_12_BlueSardak_ThoughtIWasAlone
+		{
+			audio_stop_sound(global.CurrentDialogue_ID)
+			global.CurrentDialogue_Asset = Dialog_None
+		}
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_12_BlueSardak_CouldntStopHer

@@ -60,12 +60,26 @@ function BossAI_PlaySound(BossIndex)
 	return true
 }
 
+function BossAI_SpeedRange(xPos,yPos,xGoal,yGoal)
+{
+	var Distance = 0
+	Distance = point_distance(xPos,yPos,xGoal,yGoal)
+	if Distance > 120
+		{return global.EnemySpeeds.Fast}
+	if Distance <= 120 and Distance > 60
+		{return global.EnemySpeeds.Medium}
+	if Distance <= 60
+		{return global.EnemySpeeds.Slow}
+	
+	return global.EnemySpeeds.Medium	
+}
+
 function BossAI_MoveToGoal(MoveToX,MoveToY)
 {
-	if MoveToGoal[0] <> MoveToX and MoveToGoal[1] <> MoveToY
+	if MoveToGoal[0] <> MoveToX + tileWidth * global.CurrentTile.x and MoveToGoal[1] <> MoveToY + tileHeight * global.CurrentTile.y
 	{
 		MoveToGoal = [MoveToX + tileWidth * global.CurrentTile.x,MoveToY + tileHeight * global.CurrentTile.y]
-		MoveSpeed = choose(global.EnemySpeeds.Slow, global.EnemySpeeds.Medium, global.EnemySpeeds.Fast)
+		MoveSpeed = BossAI_SpeedRange(x,y,MoveToGoal[0],MoveToGoal[1])
 	}
 	
 	if EnemyState != EnemyStates.Damaged
@@ -78,10 +92,18 @@ function BossAI_MoveToGoal(MoveToX,MoveToY)
 			if MoveToGoal[0] > x + 0.6
 			{
 				x += MoveSpeed
+				if MoveToGoal[0] <= x + 0.6
+				{
+					x = MoveToGoal[0]
+				}
 			}
-			else if  MoveToGoal[0] < x - 0.6
+			else if MoveToGoal[0] < x - 0.6
 			{
 				x -= MoveSpeed
+				if MoveToGoal[0] >= x - 0.6
+				{
+					x = MoveToGoal[0]
+				}
 			}
 			else
 			{
@@ -91,10 +113,18 @@ function BossAI_MoveToGoal(MoveToX,MoveToY)
 			if MoveToGoal[1] > y + 0.6
 			{
 				y += MoveSpeed
+				if MoveToGoal[1] <= y + 0.6
+				{
+					y = MoveToGoal[1]
+				}
 			}
-			else if  MoveToGoal[1] < y - 0.6
+			else if MoveToGoal[1] < y - 0.6
 			{
 				y -= MoveSpeed
+				if MoveToGoal[1] >= y - 0.6
+				{
+					y = MoveToGoal[1]
+				}
 			}
 			else
 			{
@@ -106,6 +136,7 @@ function BossAI_MoveToGoal(MoveToX,MoveToY)
 	if x = MoveToGoal[0] and y = MoveToGoal[1]
 	{
 		image_speed = 0
+		MoveToGoal = [-1,-1]
 		return true
 	}
 	else

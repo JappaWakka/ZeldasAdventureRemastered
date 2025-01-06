@@ -137,6 +137,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"PlayerAndNPCParent","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_615ADB07","properties":[],"isDnd":false,"objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EE3794E_1","properties":[],"isDnd":false,"objectId":{"name":"Entity_Player","path":"objects/Entity_Player/Entity_Player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":2496.0,"y":5408.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_18E4D08C","properties":[],"isDnd":false,"objectId":{"name":"Entity_Parent_NPC_Solid","path":"objects/Entity_Parent_NPC_Solid/Entity_Parent_NPC_Solid.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":0.0,},
       ],"visible":true,"depth":100900,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"ItemCosts","instances":[],"visible":true,"depth":101000,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Items_BelowForeground","instances":[
@@ -1189,6 +1190,7 @@
     {"name":"inst_2929BA54","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_73A60497","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_3EB72E83","path":"rooms/Room_Overworld/Room_Overworld.yy",},
+    {"name":"inst_18E4D08C","path":"rooms/Room_Overworld/Room_Overworld.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

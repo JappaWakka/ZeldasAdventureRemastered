@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Entity_Parent_NPC_Solid",
-  "spriteId": null,
+  "spriteId": {
+    "name": "Sprite_HUD_Heart",
+    "path": "sprites/Sprite_HUD_Heart/Sprite_HUD_Heart.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

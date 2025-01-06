@@ -26,38 +26,7 @@ if ReturnToPoint = false
 	{
 		if EnemyState != EnemyStates.Damaged
 		{
-			if Script_AggroRange() = true
-			{
-				if round(random_range(0,100)) <= MoveToPlayerChance
-				{
-					if Entity_Player.x < self.x
-					{
-						if Entity_Player.y < self.y
-						{
-							direction = choose(global.Directions.West,global.Directions.North);
-						}
-						else
-						{
-							direction = choose(global.Directions.West,global.Directions.South);
-						}
-					}
-					else
-					{
-						if Entity_Player.y < self.y
-						{
-							direction = choose(global.Directions.East,global.Directions.North);
-						}
-						else
-						{
-							direction = choose(global.Directions.East,global.Directions.South);
-						}
-					}
-				}
-			}
-			else
-			{
-				direction = choose(global.Directions.North,global.Directions.West,global.Directions.East,global.Directions.South);
-			}
+			EnemyChangeDirection_Straight()
 		}
 		else
 		{

@@ -23,6 +23,6 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 		if StepIndex > array_length(CurrentPattern) - 1
 		{
 			StepIndex = 0
-		}	
+		}
 	}
 }

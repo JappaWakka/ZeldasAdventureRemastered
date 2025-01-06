@@ -15,15 +15,20 @@ if IsPlayerOnSameTile() = true
 		}
 		
 	}
-	if Register_Registered("YellowSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Yellow) = false and global.CurrentDialogue_Asset = Dialog_None
+	if Register_Registered("YellowSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Yellow) = false
 	{
+		
+		if global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_20_YellowSardak_EnemyOfMyBoss
+		{
+			audio_stop_sound(global.CurrentDialogue_ID)
+			global.CurrentDialogue_Asset = Dialog_None
+		}
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_20_YellowSardak_ShesComing
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
 			Register_Add("YellowSardak_Outro",true)
 		}
-		
 	}
 		
 	if global.CurrentDialogue_Asset != Dialog_None
