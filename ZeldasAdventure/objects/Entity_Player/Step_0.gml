@@ -41,11 +41,11 @@ if global.CanControlPlayer = true and global.RemasteredMode = true and IsAttacki
 {
 	if input_check_pressed("action1") = true
 	{
-		UseItem_Treasure()
+		UseItem_Spell()
 	}
 	if input_check_pressed("action2") = true
 	{
-		UseItem_Spell()
+		UseItem_Treasure()
 	}
 }
 

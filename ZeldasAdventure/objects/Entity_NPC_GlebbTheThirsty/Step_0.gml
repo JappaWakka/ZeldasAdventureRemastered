@@ -49,7 +49,7 @@ if IsPlayerOnSameTile() = true
 						}
 						if global.RemasteredMode = true and Entity_Player.IsAttacking = false
 						{
-							if input_check_pressed("action1") = true
+							if input_check_pressed("action2") = true
 							{
 								if Item_FindValue(global.CurrentTreasure,0) = Treasures.FullPitcher
 								{
