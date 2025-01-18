@@ -155,3 +155,34 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 		break;
 	}
 }
+
+function UI_SettingsMenu_Tooltip(MenuIndex,TextIndex)
+{
+	switch global.CurrentLanguage
+	{
+		case "en":
+			switch MenuIndex
+			{
+				case 2: //Settings - Game
+				if TextIndex = 2
+				{
+					return "Action 1 = Use Weapon, Action 2 = Use Treasure, Restored cut content, Action Button 2 replaces Ruby item etc."
+				}
+				break
+			}
+			return ""
+			break;
+		case "nl":
+			switch MenuIndex
+			{
+				case 2: //Settings - Game
+				if TextIndex = 2
+				{
+					return "Actie 1 = Gebruik Wapen, Actie 2 = Gebruik Schat, Herstelde ongebruikte inhoud, Actieknop 2 vervangt Robijn voorwerp etc."
+				}
+				break
+			}
+			return ""
+			break;
+	}
+}

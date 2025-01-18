@@ -1,0 +1,27 @@
+{
+  "resourceType": "GMTimeline",
+  "resourceVersion": "1.0",
+  "name": "Timeline_Death_Boss",
+  "momentList": [
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":0,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":8,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":8,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":12,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":12,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":19,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":19,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":30,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":30,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":45,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":45,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":53,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":53,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":62,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":62,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":70,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":70,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":79,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":79,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":86,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":86,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":92,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":92,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":96,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":96,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":105,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":105,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":110,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":110,"eventType":0,"collisionObjectId":null,},},
+    {"resourceType":"GMMoment","resourceVersion":"1.0","name":"","moment":114,"evnt":{"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":114,"eventType":0,"collisionObjectId":null,},},
+  ],
+  "parent": {
+    "name": "Timelines",
+    "path": "folders/Timelines.yy",
+  },
+}

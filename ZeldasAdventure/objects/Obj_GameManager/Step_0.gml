@@ -80,6 +80,7 @@ if room = Room_Overworld
 			switch global.StartCutscene
 			{
 				case "Shrine_Earth":
+					Audio_StopMusic()
 					room_goto(Room_Cutscene_Shrine_Earth);
 					break;
 			}

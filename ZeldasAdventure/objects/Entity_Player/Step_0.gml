@@ -4,14 +4,14 @@ y = Entity_Collision_Player.y
 
 if IsMenuVisible() = true
 {
-	if timeline_index = Damage_Player
+	if timeline_index = Timeline_Damage_Player
 	{
 		timeline_running = false
 	}
 }
 else
 {
-	if timeline_index = Damage_Player
+	if timeline_index = Timeline_Damage_Player
 	{
 		timeline_running = true
 	}

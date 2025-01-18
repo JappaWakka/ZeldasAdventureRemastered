@@ -65,7 +65,7 @@ function UseItem_Spell()
 	}
 	if Item_FindIndex(Spells.Wand, 1) <> -1 and SpellItem <> -1 and global.CurrentRubies >= CastCost(SpellItem)
 	{
-		// Melee damage and sprite change (also happens when using other spells)
+		// Sprite change & Melee damage if not in Remastered Mode (also happens when using other spells)
 		UseSpell_Any();
 					
 		// Use Spell

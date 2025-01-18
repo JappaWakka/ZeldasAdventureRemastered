@@ -1,3 +1,3 @@
 /// @description Destroy when not picked up
-instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
-instance_destroy();
+timeline_index = Timeline_ItemDrop_Disappear
+timeline_running = true

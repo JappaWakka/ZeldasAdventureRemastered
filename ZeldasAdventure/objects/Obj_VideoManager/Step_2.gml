@@ -21,6 +21,7 @@ if input_check_pressed("action1") or input_check_pressed("action2") or input_che
 					VideoManager_Stop()
 					audio_play_sound(Settings_Accept,1000,false)
 					SkipHintAlpha = 0
+					global.StartCutscene = ""
 					global.PlayerSpawn = "ShrineOfEarth_Outside_Warp"
 					global.FadeProgress = 1
 					global.FadeAlpha = 255

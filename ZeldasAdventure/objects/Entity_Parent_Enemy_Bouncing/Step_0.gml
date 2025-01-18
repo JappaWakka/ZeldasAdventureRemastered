@@ -26,68 +26,49 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			alarm_set(1, round(random_range(0, 3 * FrameRate)));
 		}
 	}
-	//Player Damage
-	//Melee
-	if collision_circle(x,y,HitRadius_Defense,Entity_Hitbox_Spell_Wand,true,true)
+	
+	//Deal Damage to Player
+	if collision_circle(x,y,HitRadius_Attack,Entity_Player,true,true) and EnemyState != EnemyStates.Damaged
 	{
-		if DamageDelay = 0
-		{
-			var ReceivedDamage = GetPower() - Defense
-			if ReceivedDamage > 0
-			{
-				///Reduce HitPoints, play damage sound
-				HitPoints -= ReceivedDamage
-				audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
-				EnemyState = EnemyStates.Damaged
-				StartDamageAnimation = true
-				HitFromDirection = Entity_Player.Facing
-			}
-			else
-			{
-				audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
-				EnemyState = EnemyStates.Damaged
-				StartImmuneAnimation = true
-			}
-			///Reset DamageDelay
-			DamageDelay = 1 * FrameRate
-		}
-	}
-	//Spell
-	if instance_number(Entity_Parent_Projectile_Player) > 0
-	{
-		var HitProjectile = -1
-		for (var i = 0; i < instance_number(Entity_Parent_Projectile_Player); ++i;)
-		{
-			if collision_circle(x,y,HitRadius_Defense,Entity_Parent_Projectile_Player,true,true)
-		    {
-				HitProjectile = instance_find(Entity_Parent_Projectile_Player,i);
-			}
-		}
-		if HitProjectile != -1
+		with Entity_Player
 		{
 			if DamageDelay = 0
 			{
-				///Reduce HitPoints, play damage sound
-				var ReceivedDamage
+				DecreaseHP(other.Power - GetDefense())
+				audio_play_sound_relative(SFX_Zelda_Damage,1000,false)
 				
-				if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
+				if PlayerDeath_Start() = false // Check if player is dead, if not start damage animation
 				{
-					ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power) + HitProjectile.BonusDamageIfWeak
-				}
-				else
-				{
-					ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power)
+					DamageDelay = 1 * FrameRate
+					if timeline_index = -1
+					{
+						timeline_index = Timeline_Damage_Player;
+						timeline_position = 0;
+						timeline_running = true;
+					}
 				}
 				
+			}
+		}
+	}
+	
+	if EnemyState != EnemyStates.Damaged
+	{
+		//Receive Damage from Player
+		//Melee
+		if collision_circle(x,y,HitRadius_Defense,Entity_Hitbox_Spell_Wand,true,true)
+		{
+			if DamageDelay = 0
+			{
+				var ReceivedDamage = GetPower() - Defense
 				if ReceivedDamage > 0
 				{
-					
 					///Reduce HitPoints, play damage sound
 					HitPoints -= ReceivedDamage
 					audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
 					EnemyState = EnemyStates.Damaged
 					StartDamageAnimation = true
-					HitFromDirection = HitProjectile.direction
+					HitFromDirection = Entity_Player.Facing
 				}
 				else
 				{
@@ -95,13 +76,61 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 					EnemyState = EnemyStates.Damaged
 					StartImmuneAnimation = true
 				}
-				
-				if HitProjectile.DestroyOnEnemyImpact = true
-				{
-					instance_destroy(HitProjectile)
-				}
 				///Reset DamageDelay
 				DamageDelay = 1 * FrameRate
+			}
+		}
+		//Spell
+		if instance_number(Entity_Parent_Projectile_Player) > 0
+		{
+			var HitProjectile = -1
+			for (var i = 0; i < instance_number(Entity_Parent_Projectile_Player); ++i;)
+			{
+				if collision_circle(x,y,HitRadius_Defense,Entity_Parent_Projectile_Player,true,true)
+			    {
+					HitProjectile = instance_find(Entity_Parent_Projectile_Player,i);
+				}
+			}
+			if HitProjectile != -1
+			{
+				if DamageDelay = 0
+				{
+					///Reduce HitPoints, play damage sound
+					var ReceivedDamage
+					
+					if WeakToSpell != -1 and HitProjectile.SpellUsed = WeakToSpell
+					{
+						ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power) + HitProjectile.BonusDamageIfWeak
+					}
+					else
+					{
+						ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power)
+					}
+					
+					if ReceivedDamage > 0
+					{
+						
+						///Reduce HitPoints, play damage sound
+						HitPoints -= ReceivedDamage
+						audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
+						EnemyState = EnemyStates.Damaged
+						StartDamageAnimation = true
+						HitFromDirection = HitProjectile.direction
+					}
+					else
+					{
+						audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
+						EnemyState = EnemyStates.Damaged
+						StartImmuneAnimation = true
+					}
+					
+					if HitProjectile.DestroyOnEnemyImpact = true
+					{
+						instance_destroy(HitProjectile)
+					}
+					///Reset DamageDelay
+					DamageDelay = 1 * FrameRate
+				}
 			}
 		}
 	}

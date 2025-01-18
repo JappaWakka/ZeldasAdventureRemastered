@@ -252,7 +252,7 @@ else if PageIndex = 5 //Name Input Menu
 		draw_set_halign(fa_left)
 	
 }
-else //SettingMenu
+else //SettingsMenu
 {
 	var CurrentGrid = Menu_Pages[PageIndex];
 	var GridHeight = ds_grid_height(CurrentGrid);
@@ -293,7 +293,6 @@ else //SettingMenu
 		}
 		
 		draw_text_color(LeftTextX, LeftTextY, UI_SettingsMenu_Text(PageIndex,ElementIndexLeft),DrawColor,DrawColor,DrawColor,DrawColor,1);
-		
 		ElementIndexLeft++;
 	}
 	
@@ -493,12 +492,21 @@ else //SettingMenu
 					{
 						DrawColor = c_black;
 					}
-					draw_text_color(RightTextX, RightTextY, StringValue ,DrawColor,DrawColor,DrawColor,DrawColor,1);
+					draw_text_color(RightTextX, RightTextY, StringValue,DrawColor,DrawColor,DrawColor,DrawColor,1);
 					
 					break;
 			}
 			ElementIndexRight++;
 	}
+	//Draw Tooltip
+	var TooltipText = UI_SettingsMenu_Tooltip(PageIndex,Menu_CurrentEntry[PageIndex])
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_bottom);
 	
-	draw_set_valign(fa_top);
+	DrawColor = make_color_rgb(141,48,18);
+	draw_set_font(Font_Subtitles);
+	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 32, string(TooltipText),32, ViewWidth * global.WindowScale * 0.65, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
+	
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);	
 }

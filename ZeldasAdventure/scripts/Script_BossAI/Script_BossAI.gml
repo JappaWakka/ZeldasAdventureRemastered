@@ -64,11 +64,11 @@ function BossAI_SpeedRange(xPos,yPos,xGoal,yGoal)
 {
 	var Distance = 0
 	Distance = point_distance(xPos,yPos,xGoal,yGoal)
-	if Distance > 120
+	if Distance > 150
 		{return global.EnemySpeeds.Fast}
-	if Distance <= 120 and Distance > 60
+	if Distance <= 150 and Distance > 100
 		{return global.EnemySpeeds.Medium}
-	if Distance <= 60
+	if Distance <= 100
 		{return global.EnemySpeeds.Slow}
 	
 	return global.EnemySpeeds.Medium	
