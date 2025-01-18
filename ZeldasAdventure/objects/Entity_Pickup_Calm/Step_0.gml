@@ -90,12 +90,12 @@ if IsPlayerOnSameTile() = true
 else
 {   
 	visible = false
-	if variable_instance_exists(id, "ItemCost")
-	{
-		instance_destroy(ItemCost)
-	}
 	if Item_FindIndex(Spells.Calm,1) <> -1 
 	{
+		if variable_instance_exists(id, "ItemCost")
+		{
+			instance_destroy(ItemCost)
+		}
 		instance_destroy()
 	}
 }

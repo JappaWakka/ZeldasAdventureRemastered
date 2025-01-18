@@ -1,5 +1,5 @@
 
-if IsPlayerOnSameTile() = true
+if IsPlayerOnSameTile() = true and global.CameraIsFading = false
 {
 	if Register_Registered("LotharTheInnKeeper_Intro") = false
 	{

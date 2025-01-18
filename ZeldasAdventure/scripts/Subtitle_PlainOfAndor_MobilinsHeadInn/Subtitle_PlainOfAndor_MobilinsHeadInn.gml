@@ -117,7 +117,7 @@
 		{
 		case "en":
 			if AudioPosition >= 0.000 and AudioPosition <= 3.007 {return "Krebb the Weary: Why spend a whole lifetime being defeated like me?"}
-			else if AudioPosition >= 3.032 and AudioPosition <= 6.940 {return "Get it over with quick. Go home, give up."}
+			else if AudioPosition >= 3.032 and AudioPosition <= 6.940 {return "Get it over with. Quit, go home, give up."}
 			else if AudioPosition >= 7.207 and AudioPosition <= 11.207 {return "You're patient. I can see you're not one to surrender."}
 			else if AudioPosition >= 11.400 and AudioPosition <= 13.413 {return "All right, take this dagger from me."}
 			else if AudioPosition >= 13.673 and AudioPosition <= 16.566 {return "It may do you more service than it ever did me."}
@@ -126,10 +126,10 @@
 			
 		case "nl":
 			if AudioPosition >= 0.000 and AudioPosition <= 3.007 {return "Krebb de Vermoeide: Waarom een heel leven lang verslagen worden zoals ik?"}
-			else if AudioPosition >= 3.032 and AudioPosition <= 6.940 {return "Maak er snel een eind aan. Ga naar huis, geef het op."}
+			else if AudioPosition >= 3.032 and AudioPosition <= 6.940 {return "Maak er een einde aan. Stop, ga naar huis, geef het op."}
 			else if AudioPosition >= 7.207 and AudioPosition <= 11.207 {return "Je bent geduldig. Ik zie dat je je niet zomaar overgeeft."}
 			else if AudioPosition >= 11.400 and AudioPosition <= 13.413 {return "Oké, neem deze dolk van me af."}
-			else if AudioPosition >= 13.673 and AudioPosition <= 16.566 {return "Het zal je vast meer helpen dan het mij ooit heeft gedaan."}
+			else if AudioPosition >= 13.673 and AudioPosition <= 16.566 {return "Die zal je vast meer helpen dan het mij ooit heeft gedaan."}
 			else return ""		
 			break;
 		}

@@ -15,7 +15,7 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Shrine_Earth_Boss.ogg",
-  "duration": 41.838375,
+  "duration": 41.73428,
   "parent": {
     "name": "Shrines",
     "path": "folders/Sounds/Music/Shrines.yy",
