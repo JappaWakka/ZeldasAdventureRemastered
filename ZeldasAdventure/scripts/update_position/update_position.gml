@@ -22,13 +22,22 @@ function update_position(argument0, argument1) {
 	}
 		
 	////Red Boots Water
-	if Item_FindIndex(Treasures.RedBoots,0) = -1
+	
+	//Temp Disable Red Boots
+	if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
 	{
-		if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
-		{
-			FreeToMoveCurrent = false
-		}
+		FreeToMoveCurrent = false
 	}
+	
+	//if Item_FindIndex(Treasures.RedBoots,0) = -1
+	//{
+	//	if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
+	//	{
+	//		FreeToMoveCurrent = false
+	//	}
+	//}
+	
+	
 	
 	////Ladder Hole
 	if Register_Registered("PlacedLadder") = false
@@ -83,13 +92,20 @@ function update_position(argument0, argument1) {
 				}
 				
 				////Red Boots Water
-				if Item_FindIndex(Treasures.RedBoots,0) = -1
+				
+				//Temp Disable Red Boots
+				if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
 				{
-					if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
-					{
-						FreeToMoveNew = false
-					}
+					FreeToMoveNew = false
 				}
+				
+				//if Item_FindIndex(Treasures.RedBoots,0) = -1
+				//{
+				//	if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
+				//	{
+				//		FreeToMoveNew = false
+				//	}
+				//}
 				
 				////Ladder Hole
 				if Register_Registered("PlacedLadder") = false
