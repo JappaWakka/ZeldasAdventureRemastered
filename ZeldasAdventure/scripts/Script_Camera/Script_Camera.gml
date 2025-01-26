@@ -28,8 +28,8 @@ function Camera_Pan()
 		}
 		var Desired =
 		{
-			x : (Entity_Collision_Player.x / 384 - frac(Entity_Collision_Player.x / 384)) * 384,
-			y : (Entity_Collision_Player.y / 240 - frac(Entity_Collision_Player.y / 240)) * 240,
+			x : (Entity_Collision_Player.x / tileWidth - frac(Entity_Collision_Player.x / tileWidth)) * tileWidth,
+			y : (Entity_Collision_Player.y / tileHeight - frac(Entity_Collision_Player.y / tileHeight)) * tileHeight,
 		}
 		var PanTo =
 		{
@@ -39,12 +39,7 @@ function Camera_Pan()
 				
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
-			//Make the enemy sounds happen sooner when switching tiles
-			if alarm[0] > 1 * FrameRate
-			{
-				alarm_set(0, round(random_range(0.25 * FrameRate,1 * FrameRate)))
-			}
-			
+						
 			//Deactivate old tile, activate new tile
 			instance_destroy(Entity_Pickup_ItemDrops)
 			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)

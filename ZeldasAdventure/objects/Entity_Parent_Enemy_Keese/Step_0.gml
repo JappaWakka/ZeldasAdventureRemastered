@@ -1,12 +1,28 @@
 //If the player is on the same tile
 if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 {
+	if alarm[1] = -1
+	{
+		alarm_set(1, round(random_range(2 * FrameRate,3.5 * FrameRate)))
+	}
 	//Play sound
-	if Script_AggroRange() = true
+	if Script_AggroRange() = true and CanMakeSound = true
 	{
 		if global.EnemySoundPlaying = false
 		{
-			global.EnemySound = [EnemySoundName,x]
+			if global.EnemySound[0] != -1 and global.EnemySound[1] != -1
+			{
+				global.EnemySound = [EnemySoundName,x]
+				CanMakeSound = false
+			}
+			else
+			{
+				if irandom_range(0,100) <= 50
+				{
+					global.EnemySound = [EnemySoundName,x]
+					CanMakeSound = false
+				}
+			}
 		}
 	}
 	//Activate
@@ -215,11 +231,11 @@ if HitPoints <= 0
 	switch TriggerScriptName
 	{
 		case "CompassEarthTreasure" :
-			if global.DeathAmountForTrigger.CompassEarthTreasure > 0
+			if global.DeathAmountForTrigger.CompassEarthTreasure[1] > 0
 			{
-				global.DeathAmountForTrigger.CompassEarthTreasure -= 1
+				global.DeathAmountForTrigger.CompassEarthTreasure[1] -= 1
 			}
-			if global.DeathAmountForTrigger.CompassEarthTreasure = 0
+			if global.DeathAmountForTrigger.CompassEarthTreasure[1] = 0
 			{
 				Script_Trigger_CompassEarthTreasure() //Spawn Compass_Earth Treasure Pickup
 			}

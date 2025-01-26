@@ -94,9 +94,22 @@ if room = Room_Overworld
 			EnemySound = audio_play_sound_relative(global.EnemySound[0],1000,false,global.EnemySound[1])
 			global.EnemySoundPlaying = true
 			global.EnemySound = [-1,-1]
-			alarm_set(0, round(random_range(2 * FrameRate,3.5 * FrameRate)))
 		}
 	}
+	//Allow other sounds to play
+	if EnemySound <> -1
+	{
+		if audio_is_playing(EnemySound) = false
+		{
+			EnemySound = -1
+			global.EnemySoundPlaying = false
+		}
+	}
+	else
+	{
+		global.EnemySoundPlaying = false
+	}
+	
 	//Update Alarms
 
 	//Change Ruby amount & Play Ruby sound

@@ -14,6 +14,8 @@ function PlayerDeath_Start()
 		global.PlayerIsDead = true
 		global.HasResetEnemies = false
 		
+		ResetDeathAmountForTriggers()
+		
 		return true
 	}
 	else

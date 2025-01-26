@@ -283,7 +283,7 @@ else if PageIndex = Menu_Page.NameInput //Name Input Menu
 		}
 	}
 }
-else //SettingMenu
+else //SettingsMenu
 {
 	if IsFading == false
 	{
@@ -361,7 +361,8 @@ else //SettingMenu
 							{
 								input_binding_set_safe(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],new_binding,,,"keyboard_and_mouse")
 								if input_binding_get(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],,,"keyboard_and_mouse")  != new_binding
-								{									
+								{
+									SavedSettings = false
 									audio_play_sound(Settings_ChangeValue,1000,false)
 								}
 							}
@@ -454,6 +455,7 @@ else //SettingMenu
 						{
 							Settings_Update()
 						}
+						SavedSettings = false
 						//Return to Main Menu
 						global.FadeSpeed = 16;
 						global.FadeProgress = 0;

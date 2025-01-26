@@ -220,31 +220,31 @@ if HitPoints <= 0
 	switch TriggerScriptName
 	{
 		case "BoomerangSpell" :
-			if global.DeathAmountForTrigger.BoomerangSpell > 0
+			if global.DeathAmountForTrigger.BoomerangSpell[1] > 0
 			{
-				global.DeathAmountForTrigger.BoomerangSpell -= 1
+				global.DeathAmountForTrigger.BoomerangSpell[1] -= 1
 			}
-			if global.DeathAmountForTrigger.BoomerangSpell = 0
+			if global.DeathAmountForTrigger.BoomerangSpell[1] = 0
 			{
 				Script_Trigger_BoomerangSpell() //Spawn Boomerang Spell Pickup
 			}
 			break
 		case "TektiteAmbush" :
-			if global.DeathAmountForTrigger.TektiteAmbush > 0
+			if global.DeathAmountForTrigger.TektiteAmbush[1] > 0
 			{
-				global.DeathAmountForTrigger.TektiteAmbush -= 1
+				global.DeathAmountForTrigger.TektiteAmbush[1] -= 1
 			}
-			if global.DeathAmountForTrigger.TektiteAmbush = 0
+			if global.DeathAmountForTrigger.TektiteAmbush[1] = 0
 			{
 				Script_Trigger_TektiteAmbush() //Spawn a bunch of Tektites
 			}
 			break
 		case "UnderworldMapEarthTreasure" :
-			if global.DeathAmountForTrigger.UnderworldMapEarthTreasure > 0
+			if global.DeathAmountForTrigger.UnderworldMapEarthTreasure[1] > 0
 			{
-				global.DeathAmountForTrigger.UnderworldMapEarthTreasure -= 1
+				global.DeathAmountForTrigger.UnderworldMapEarthTreasure[1] -= 1
 			}
-			if global.DeathAmountForTrigger.UnderworldMapEarthTreasure = 0
+			if global.DeathAmountForTrigger.UnderworldMapEarthTreasure[1] = 0
 			{
 				Script_Trigger_UnderworldMapEarthTreasure() //Spawn UnderworldMap_Earth Treasure Pickup
 			}

@@ -5,7 +5,7 @@ function IsPlayerOnSameTile()
 	var PlayerTile =
 	{
 		x : global.CurrentTile.x * tileWidth,
-		y : global.CurrentTile.y * tileWidth
+		y : global.CurrentTile.y * tileHeight
 	}
 	if instance_number(Entity_Parent_Player) > 0
 	{
@@ -16,8 +16,8 @@ function IsPlayerOnSameTile()
 		}
 	}
 	
-	if x >= PlayerTile.x && x < PlayerTile.x + tileWidth &&
-	y >= PlayerTile.y && y < PlayerTile.y + tileHeight &&
+	if x >= PlayerTile.x and x < PlayerTile.x + tileWidth and
+	y >= PlayerTile.y and y < PlayerTile.y + tileHeight and
 	global.CameraIsPanning = false
 	{
 		return true

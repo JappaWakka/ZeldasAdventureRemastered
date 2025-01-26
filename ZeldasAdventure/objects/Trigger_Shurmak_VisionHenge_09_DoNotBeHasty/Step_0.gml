@@ -1,5 +1,5 @@
 if IsPlayerOnSameTile() = true
-{
+{	
 	if Item_FindIndex(Spells.Wand,1) <> -1
 	{
 		if Register_Registered("Shurmak_DoNotBeHasty") = true

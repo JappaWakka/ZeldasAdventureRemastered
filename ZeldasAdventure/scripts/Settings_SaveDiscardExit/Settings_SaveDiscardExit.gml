@@ -65,6 +65,7 @@ function Settings_Discard()
 	{
 		window_set_size(ViewWidth * global.WindowScale,ViewHeight * global.WindowScale);
 	}
+	audio_play_sound(Menu_NameInput_Backspace,1000,false)
 }
 
 function Settings_Update()

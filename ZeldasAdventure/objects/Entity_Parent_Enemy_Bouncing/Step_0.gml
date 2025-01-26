@@ -15,7 +15,17 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 	{
 		if global.EnemySoundPlaying = false
 		{
-			global.EnemySound = [EnemySoundName,x]
+			if global.EnemySound[0] != -1 and global.EnemySound[1] != -1
+			{
+				global.EnemySound = [EnemySoundName,x]
+			}
+			else
+			{
+				if irandom_range(0,100) <= 50
+				{
+					global.EnemySound = [EnemySoundName,x]
+				}
+			}
 		}
 	}
 	//Attack
@@ -214,11 +224,11 @@ if HitPoints <= 0
 	switch TriggerScriptName
 	{
 			case "BoomerangSpell" :
-				if global.DeathAmountForTrigger.BoomerangSpell > 0
+				if global.DeathAmountForTrigger.BoomerangSpell[1] > 0
 				{
-					global.DeathAmountForTrigger.BoomerangSpell -= 1
+					global.DeathAmountForTrigger.BoomerangSpell[1] -= 1
 				}
-				if global.DeathAmountForTrigger.BoomerangSpell = 0
+				if global.DeathAmountForTrigger.BoomerangSpell[1] = 0
 				{
 					Script_Trigger_BoomerangSpell() //Spawn Boomerang Spell Pickup
 				}

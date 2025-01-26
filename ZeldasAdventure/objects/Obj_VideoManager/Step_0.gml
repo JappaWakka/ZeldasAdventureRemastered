@@ -50,19 +50,19 @@ if (webm_exists(CurrentVideo))
 				global.FadeProgress = 1
 				global.FadeAlpha = 255
 				room_goto(Room_MainMenu)
-				
+				break;
 			case Room_Cutscene_Tutorial:
 				global.FadeProgress = 1
 				global.FadeAlpha = 255
 				room_goto(Room_MainMenu)
-				
+				break;
 			case Room_Cutscene_Shrine_Earth:
 				global.StartCutscene = ""
 				global.PlayerSpawn = "ShrineOfEarth_Outside_Warp"
 				global.FadeProgress = 1
 				global.FadeAlpha = 255
 				room_goto(Room_Overworld);
-			
+				break;
 		}
 		
 	}

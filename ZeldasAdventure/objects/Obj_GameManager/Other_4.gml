@@ -15,4 +15,5 @@ if room = Room_Overworld
 	instance_deactivate_layer("NPCs_BelowPlayer")
 	instance_deactivate_layer("Enemies_BelowForeground")
 	instance_deactivate_layer("Enemies_AboveForeground");
+	instance_deactivate_layer("TileDialogueTriggers")
 }

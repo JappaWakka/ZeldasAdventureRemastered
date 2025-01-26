@@ -6,7 +6,17 @@ if EnemyState != EnemyStates.Damaged
 		{
 			if global.EnemySoundPlaying = false
 			{
-				global.EnemySound = [EnemySoundName,x]
+				if global.EnemySound[0] != -1 and global.EnemySound[1] != -1
+				{
+					global.EnemySound = [EnemySoundName,x]
+				}
+				else
+				{
+					if irandom_range(0,100) <= 50
+					{
+						global.EnemySound = [EnemySoundName,x]
+					}
+				}
 			}
 		}
 		speed = AggroSpeed
