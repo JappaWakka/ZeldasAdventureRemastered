@@ -11,7 +11,7 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 		else if VideoPosition >= 75.857 and VideoPosition <= 80.911 {return "A brave warrior would have to be found to face this evil monster."}
 		else if VideoPosition >= 94.425 and VideoPosition <= 98.958 {return "Gaspra: And so I found this champion of strength and courage!"}
 		else if VideoPosition >= 99.197 and VideoPosition <= 104.934 {return "It is you, Princess Zelda! With this magic pendant, go forth"}
-		else if VideoPosition >= 104.959 and VideoPosition <= 109.320 {return "and with each sign you gather, so too will you gain knowledge."}
+		else if VideoPosition >= 104.959 and VideoPosition <= 109.320 {return "and with each Sign you gather, so too will you gain knowledge."}
 		else if VideoPosition >= 109.834 and VideoPosition <= 111.716 {return "Find your magic wand."}
 		else if VideoPosition >= 112.081 and VideoPosition <= 116.300 {return "Use it wisely and listen to your allies along the way!"}
 		else if VideoPosition >= 116.814 and VideoPosition <= 123.070 {return "Go now, my Princess. Restore the Celestial Signs and rescue Link!"}
