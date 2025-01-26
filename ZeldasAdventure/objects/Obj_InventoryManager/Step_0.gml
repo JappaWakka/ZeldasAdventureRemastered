@@ -133,6 +133,13 @@ if global.CameraIsPanning = false
 			}
 		}
 	}
+	else
+	{
+		if Item_FindIndex(Treasures.Rubies,0) != -1
+		{
+			Item_Remove(Treasures.Rubies,0)
+		}
+	}
 	if Alpha = 255
 	{
 		if IsOtherMenuThanInventoryVisible() = false and OpeningClosing = false
