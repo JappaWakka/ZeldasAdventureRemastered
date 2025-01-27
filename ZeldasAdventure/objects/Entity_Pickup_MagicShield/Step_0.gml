@@ -69,7 +69,7 @@ if IsPlayerOnSameTile() = true
 					{
 						RemoveRubies(ItemCost.Price);
 						audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
-						Item_Add(Spells.Calm,1)
+						Item_Add(Treasures.MagicShield,0)
 						
 						global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)

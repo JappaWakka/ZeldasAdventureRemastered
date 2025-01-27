@@ -72,7 +72,7 @@ if IsPlayerOnSameTile() = true
 					{
 						RemoveRubies(ItemCost.Price);
 						audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
-						Item_Add(Spells.Calm,1)
+						Item_Add(Treasures.Candle,0)
 						
 						if global.CurrentTile.x = 5 && global.CurrentTile.y = 25 //Forest of Ogham
 						{
