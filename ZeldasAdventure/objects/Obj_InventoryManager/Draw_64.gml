@@ -49,10 +49,11 @@ else
 	draw_sprite_ext(Sprite_Inventory_Background_Remastered,0,0,0,1,1,0,c_white,Alpha);
 }
 
-//Draw Keys
+
 if Alpha = 255
 {
-	draw_set_font(Font_KeyNumber());
+	//Draw Keys
+	draw_set_font(global.Font_KeyNumber);
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
@@ -62,11 +63,8 @@ if Alpha = 255
 		KeysY = 100
 	}
 	draw_text(333,KeysY,global.CurrentKeys)
-}
 
-//Draw inventory labels
-if Alpha = 255
-{
+	//Draw inventory labels
 	draw_set_font(Font_Small);
 	draw_set_color(c_black);
 	draw_set_halign(fa_center);
@@ -83,10 +81,8 @@ if Alpha = 255
 	//Reset Font Properties
 	draw_set_color(c_white)
 	draw_set_halign(fa_left)
-}
-//Draw buttons
-if Alpha = 255
-{
+	
+	//Draw buttons
 	if InventoryIndex = 2
 	{
 		draw_sprite(Sprite_Inventory_Button_Map,0,39,35)
@@ -110,11 +106,8 @@ if Alpha = 255
 	//Reset Font Properties
 	draw_set_color(c_white)
 	draw_set_halign(fa_left)
-}
-
-//Draw Scroll Indicators
-if Alpha = 255
-{
+	
+	//Draw Scroll Indicators
 	if Scrolled[0] = -1
 	{
 		if Scrolled[1] = 0
@@ -138,197 +131,205 @@ if Alpha = 255
 		}
 	}
 	
-}
-
-//Draw Celestial Signs
-for (var i = 0; i < ds_list_size(InventoryList(2)); i += 1)
-{
-	if Item_FindValue(i,2) != -1
+	//Draw Celestial Signs
+	for (var i = 0; i < ds_list_size(InventoryList(2)); i += 1)
 	{
-		draw_sprite_ext(
-		Sprite_Inventory_CelestialSigns,
-		Item_FindValue(i,2), //ImageIndex
-		153, 28, //position x,y
-		1,1, //scale x,y
-		0, //rotation
-		c_white, //color
-		Alpha);
+		if Item_FindValue(i,2) != -1
+		{
+			draw_sprite_ext(
+			Sprite_Inventory_CelestialSigns,
+			Item_FindValue(i,2), //ImageIndex
+			153, 28, //position x,y
+			1,1, //scale x,y
+			0, //rotation
+			c_white, //color
+			Alpha);
+		}
 	}
-}
-
-//Draw Treasure Items
-var TreasureSurface = surface_create(218,34);
-surface_set_target(TreasureSurface);
-
-for (var i = 0; i < ds_list_size(InventoryList(0)); i += 1)
-{
-	if Item_FindValue(i,0) != -1
+	
+	//Draw Treasure Items
+	var TreasureSurface = surface_create(218,34);
+	surface_set_target(TreasureSurface);
+	draw_clear_alpha(c_black,0)
+	for (var i = 0; i < ds_list_size(InventoryList(0)); i += 1)
 	{
-		draw_sprite_ext(
-		Sprite_Inventory_Treasure,
-		Item_FindValue(i,0), //ImageIndex
-		TreasureOffsetX, 0, //position x,y
-		1,1, //scale x,y
-		0, //rotation
-		c_white, //color
-		Alpha);
-		
-		TreasureOffsetX += 32 + INVENTORY_SEPARATOR;
-	}
-}
-surface_reset_target();
-draw_surface(TreasureSurface,55 + INVENTORY_SEPARATOR,TreasurePositionY)
-
-//Draw Spell Items
-var SpellsSurface = surface_create(218,34);
-surface_set_target(SpellsSurface);
-
-for (var i = 0; i < ds_list_size(InventoryList(1)); i += 1)
-{
-	if Item_FindValue(i,1) != -1
-	{
-		draw_sprite_ext(
-		Sprite_Inventory_Spells,
-		Item_FindValue(i,1), //ImageIndex
-		SpellsOffsetX, 0, //position x,y
-		1,1, //scale x,y
-		0, //rotation
-		c_white, //color
-		Alpha);
-			
-		SpellsOffsetX += 32 + INVENTORY_SEPARATOR;
-	}
-}
-surface_reset_target();
-draw_surface(SpellsSurface,55 + INVENTORY_SEPARATOR,SpellsPositionY)
-
-//Draw CurrentItem(s)
-if global.RemasteredMode = false
-{
-	if global.CurrentItem <> -1 && global.CurrentItem[1] <> -1
-	{
-		if global.CurrentItem[0] = 0
+		if Item_FindValue(i,0) != -1
 		{
 			draw_sprite_ext(
 			Sprite_Inventory_Treasure,
-			Item_FindValue(global.CurrentItem[1],0), //ImageIndex
-			319,
-			146,
-			1,1,0,
-			c_white,
+			Item_FindValue(i,0), //ImageIndex
+			TreasureOffsetX, 0, //position x,y
+			1,1, //scale x,y
+			0, //rotation
+			c_white, //color
 			Alpha);
+			
+			TreasureOffsetX += 32 + INVENTORY_SEPARATOR;
 		}
-		else
+	}
+	surface_reset_target();
+	draw_surface(TreasureSurface,55 + INVENTORY_SEPARATOR,TreasurePositionY)
+	if surface_exists(TreasureSurface)
+	{
+		surface_free(TreasureSurface)
+	}
+	
+	//Draw Spell Items
+	var SpellsSurface = surface_create(218,34);
+	surface_set_target(SpellsSurface);
+	draw_clear_alpha(c_black,0)
+	for (var i = 0; i < ds_list_size(InventoryList(1)); i += 1)
+	{
+		if Item_FindValue(i,1) != -1
 		{
 			draw_sprite_ext(
 			Sprite_Inventory_Spells,
-			Item_FindValue(global.CurrentItem[1],1),
+			Item_FindValue(i,1), //ImageIndex
+			SpellsOffsetX, 0, //position x,y
+			1,1, //scale x,y
+			0, //rotation
+			c_white, //color
+			Alpha);
+				
+			SpellsOffsetX += 32 + INVENTORY_SEPARATOR;
+		}
+	}
+	surface_reset_target();
+	draw_surface(SpellsSurface,55 + INVENTORY_SEPARATOR,SpellsPositionY)
+	if surface_exists(SpellsSurface)
+	{
+		surface_free(SpellsSurface)
+	}
+	//Draw CurrentItem(s)
+	if global.RemasteredMode = false
+	{
+		if global.CurrentItem <> -1 && global.CurrentItem[1] <> -1
+		{
+			if global.CurrentItem[0] = 0
+			{
+				draw_sprite_ext(
+				Sprite_Inventory_Treasure,
+				Item_FindValue(global.CurrentItem[1],0), //ImageIndex
+				319,
+				146,
+				1,1,0,
+				c_white,
+				Alpha);
+			}
+			else
+			{
+				draw_sprite_ext(
+				Sprite_Inventory_Spells,
+				Item_FindValue(global.CurrentItem[1],1),
+				319,
+				146,
+				1,1,0,
+				c_white,
+				Alpha);
+			}
+		}
+	}
+	else
+	{
+		if global.CurrentTreasure <> -1
+		{
+			draw_sprite_ext(
+			Sprite_Inventory_Treasure,
+			Item_FindValue(global.CurrentTreasure,0), //ImageIndex
 			319,
-			146,
+			120,
+			1,1,0,
+			c_white,
+			Alpha);
+		}
+		if global.CurrentSpell <> -1
+		{
+			draw_sprite_ext(
+			Sprite_Inventory_Spells,
+			Item_FindValue(global.CurrentSpell,1),
+			319,
+			178,
 			1,1,0,
 			c_white,
 			Alpha);
 		}
 	}
-}
-else
-{
-	if global.CurrentTreasure <> -1
+	
+
+	//Draw cursor
+	var CursorPositionX = 0
+	if InventoryIndex = 0
+	{
+		if ds_list_size(InventoryList(0)) = 0
+		{
+			CursorPositionX = 55 + INVENTORY_SEPARATOR
+		}
+		else
+		{
+		CursorPositionX =
+			clamp(
+			TreasurePositionX
+				+ (32 + INVENTORY_SEPARATOR) * SelectedIndex[0]
+				- (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Treasure,
+			0,
+			TreasureOffsetX + 55 + INVENTORY_SEPARATOR - (32 + INVENTORY_SEPARATOR)
+			);
+		}
+		draw_sprite_ext(
+			Sprite_Cursor,
+			0,
+			CursorPositionX + 24,
+			TreasurePositionY + 24,
+			1,1,0,
+			c_white,
+			Alpha);
+	}
+	else if InventoryIndex = 1
+	{
+		if ds_list_size(InventoryList(1)) = 0
+		{
+			CursorPositionX = 55 + INVENTORY_SEPARATOR
+		}
+		else
+		{
+		CursorPositionX =
+			clamp(
+			SpellsPositionX
+			+ (32 + INVENTORY_SEPARATOR) * SelectedIndex[1]
+			- (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Spells,
+			0,
+			SpellsOffsetX + 55 + INVENTORY_SEPARATOR - (32 + INVENTORY_SEPARATOR)
+			);
+		}
+		draw_sprite_ext(
+			Sprite_Cursor,
+			0,
+			CursorPositionX + 24,
+			SpellsPositionY + 24,
+			1,1,0,
+			c_white,
+			Alpha);
+	}
+	else if InventoryIndex = 2
 	{
 		draw_sprite_ext(
-		Sprite_Inventory_Treasure,
-		Item_FindValue(global.CurrentTreasure,0), //ImageIndex
-		319,
-		120,
-		1,1,0,
-		c_white,
-		Alpha);
+			Sprite_Cursor,
+			0,
+			96,
+			64,
+			1,1,0,
+			c_white,
+			Alpha);
 	}
-	if global.CurrentSpell <> -1
+	else if InventoryIndex = 3
 	{
 		draw_sprite_ext(
-		Sprite_Inventory_Spells,
-		Item_FindValue(global.CurrentSpell,1),
-		319,
-		178,
-		1,1,0,
-		c_white,
-		Alpha);
+			Sprite_Cursor,
+			0,
+			320,
+			64,
+			1,1,0,
+			c_white,
+			Alpha);
 	}
-}
-//Draw cursor
-var CursorPositionX = 0
-if InventoryIndex = 0
-{
-	if ds_list_size(InventoryList(0)) = 0
-	{
-		CursorPositionX = 55 + INVENTORY_SEPARATOR
-	}
-	else
-	{
-	CursorPositionX =
-		clamp(
-		TreasurePositionX
-			+ (32 + INVENTORY_SEPARATOR) * SelectedIndex[0]
-			- (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Treasure,
-		0,
-		TreasureOffsetX + 55 + INVENTORY_SEPARATOR - (32 + INVENTORY_SEPARATOR)
-		);
-	}
-	draw_sprite_ext(
-		Sprite_Cursor,
-		0,
-		CursorPositionX + 24,
-		TreasurePositionY + 24,
-		1,1,0,
-		c_white,
-		Alpha);
-}
-else if InventoryIndex = 1
-{
-	if ds_list_size(InventoryList(1)) = 0
-	{
-		CursorPositionX = 55 + INVENTORY_SEPARATOR
-	}
-	else
-	{
-	CursorPositionX =
-		clamp(
-		SpellsPositionX
-		+ (32 + INVENTORY_SEPARATOR) * SelectedIndex[1]
-		- (32 + INVENTORY_SEPARATOR) * ScrollOffsetX_Spells,
-		0,
-		SpellsOffsetX + 55 + INVENTORY_SEPARATOR - (32 + INVENTORY_SEPARATOR)
-		);
-	}
-	draw_sprite_ext(
-		Sprite_Cursor,
-		0,
-		CursorPositionX + 24,
-		SpellsPositionY + 24,
-		1,1,0,
-		c_white,
-		Alpha);
-}
-else if InventoryIndex = 2
-{
-	draw_sprite_ext(
-		Sprite_Cursor,
-		0,
-		96,
-		64,
-		1,1,0,
-		c_white,
-		Alpha);
-}
-else if InventoryIndex = 3
-{
-	draw_sprite_ext(
-		Sprite_Cursor,
-		0,
-		320,
-		64,
-		1,1,0,
-		c_white,
-		Alpha);
 }

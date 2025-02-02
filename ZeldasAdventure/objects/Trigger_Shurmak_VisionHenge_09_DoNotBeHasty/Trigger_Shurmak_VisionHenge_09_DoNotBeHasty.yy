@@ -11,7 +11,10 @@
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Parent_DialogueTrigger",
+    "path": "objects/Parent_DialogueTrigger/Parent_DialogueTrigger.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

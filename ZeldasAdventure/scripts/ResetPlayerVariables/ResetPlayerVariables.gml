@@ -9,15 +9,17 @@ function ResetPlayerVariables(){
 	
 	global.CurrentRubies = 0;
 	global.CurrentKeys = 0;
-	global.Inventory = {Treasures : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
-	global.Register = ds_list_create()
-	global.TempRegister = ds_list_create()
+	ds_list_clear(global.Inventory.Treasures)
+	ds_list_clear(global.Inventory.Spells)
+	ds_list_clear(global.Inventory.CelestialSigns)
+	ds_list_clear(global.Register)
+	ds_list_clear(global.TempRegister)
 	
 	global.CurrentHealth = 60;
 	global.MaxHealth = 60;
 	global.Power = 30;
 	global.Defense = 30;
-	global.VisitedTiles = ds_list_create()
+	ds_list_clear(global.VisitedTiles)
 	
 	global.CurrentItem = [-1,-1]
 	global.CurrentTreasure = -1;

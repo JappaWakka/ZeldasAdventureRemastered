@@ -11,6 +11,7 @@ function InitGameVariables()
 	#macro FrameRate 60
 	Init_SpawnPoints_TileMap()
 	WorldMap_Tiles_Init()
+	Font_CreateFonts()
 	global.ColorYellow = [0.91, 0.91, 0.06, 1.00]
 	global.ColorRed = [0.91, 0.06, 0.06, 1.00]
 	global.ColorBlue = [0.06, 0.06, 0.91, 1.00]
@@ -87,6 +88,7 @@ function InitGameVariables()
 	global.CurrentKeys = 0;
 	global.Inventory = {Treasures : ds_list_create(), Spells : ds_list_create(), CelestialSigns : ds_list_create()}
 	global.Register = ds_list_create()
+	global.TempRegister = ds_list_create()
 	
 	global.CurrentHealth = 60;
 	global.MaxHealth = 60;

@@ -22,7 +22,7 @@ function Draw_HUD_Rubies()
 		LeadingZeroes = "00"
 	}
 	
-	var RubyFont = Font_Rubies_Overworld()
+	var RubyFont = global.Font_RubiesOverworld
 	var Rubystring = LeadingZeroes + string(_CurrentRubies)
 	
 	draw_set_halign(fa_left);
@@ -31,4 +31,5 @@ function Draw_HUD_Rubies()
 	draw_sprite(Sprite_HUD_Ruby_Icon,0,RubyOffset.x - 14, RubyOffset.y)
 	draw_set_font(RubyFont)
 	draw_text(RubyOffset.x,RubyOffset.y,Rubystring)
+	delete RubyOffset
 }
