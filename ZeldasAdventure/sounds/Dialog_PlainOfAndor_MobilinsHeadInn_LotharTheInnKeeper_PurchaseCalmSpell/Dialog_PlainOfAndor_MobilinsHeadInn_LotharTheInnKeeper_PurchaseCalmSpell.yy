@@ -15,7 +15,7 @@
     "path": "audiogroups/AudioGroup_Dialogue",
   },
   "soundFile": "Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_PurchaseCalmSpell.ogg",
-  "duration": 12.170317,
+  "duration": 10.807196,
   "parent": {
     "name": "PlainOfAndor",
     "path": "folders/Sounds/Dialogue/PlainOfAndor.yy",
