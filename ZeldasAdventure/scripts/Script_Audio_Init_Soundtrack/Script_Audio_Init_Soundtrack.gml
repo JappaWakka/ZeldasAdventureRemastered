@@ -25,7 +25,7 @@ function Audio_Init_Soundtrack()
 		Marsh_Ocean : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Ocean : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Plain : {Asset : Music_Plain, IntroLength : 1.755, LoopLength : 19.797},
-		Plain_Stream : {Asset : Music_Plain_Stream, IntroLength : 1.751, LoopLength : 20.053},
+		Plain_Stream : {Asset : Music_Plain_Stream, IntroLength : 1.764, LoopLength : 19.989},
 		Sirram : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Twinkle_Normal : {Asset : Music_Twinkle_Normal, IntroLength : 1.774, LoopLength : 20.053},
 		Twinkle_Dad : {Asset : Music_Twinkle_Dad, IntroLength : 1.753, LoopLength : 20.053},
