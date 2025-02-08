@@ -4,6 +4,7 @@ This is a remaster of Zelda's Adventure, originally for the Philips CD-i, develo
 Includes a Classic Mode and a Remastered Mode. The latter includes various QoL changes as well as restored cut content!
 
 Downloads page: https://jappawakka.itch.io/zeldas-adventure-remastered
+
 The source code can be compiled using GameMaker Studio LTS (2022)
 
 ![A Remaster by JappaWakka](https://github.com/user-attachments/assets/72741c04-680c-46c6-a7c0-011bf282b8e2)
