@@ -30,7 +30,7 @@ function Subtitle_Cutscene_Tutorial(VideoPosition)
 		else if VideoPosition >= 98.688  and VideoPosition <= 104.361 {return "To select an object or a weapon on the inventory screen, press Action Button 2."}
 		else if VideoPosition >= 105.297 and VideoPosition <= 107.365 {return "Once in the inventory screen"}
 		else if VideoPosition >= 107.438 and VideoPosition <= 110.371 {return "you can access useful items and weapons"}
-		else if VideoPosition >= 110.416 and VideoPosition <= 114.936 {return "by selecting an object with your cursor and the pressing Action Button 1."}
+		else if VideoPosition >= 110.416 and VideoPosition <= 114.936 {return "by selecting an object with your cursor and then pressing Action Button 1."}
 		else if VideoPosition >= 115.706 and VideoPosition <= 119.660 {return "Treasures and weapons can be scrolled by pressing the left window button"}
 		else if VideoPosition >= 119.685 and VideoPosition <= 123.766 {return "to move left, and by pressing the right window button to move right."}
 		else if VideoPosition >= 124.601 and VideoPosition <= 129.218 {return "The weapon in use appears in the window in the lower right of the inventory screen."}
