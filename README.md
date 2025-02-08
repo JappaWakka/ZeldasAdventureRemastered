@@ -5,7 +5,7 @@ Includes a Classic Mode and a Remastered Mode. The latter includes various QoL c
 
 Downloads page: https://jappawakka.itch.io/zeldas-adventure-remastered
 
-The source code can be compiled using GameMaker Studio LTS (2022)
+The source code (found in the "ZeldasAdventure" folder in the root of this repository) can be compiled using GameMaker Studio LTS (2022)
 
 ![A Remaster by JappaWakka](https://github.com/user-attachments/assets/72741c04-680c-46c6-a7c0-011bf282b8e2)
 ![Settings menu with rebindable controls!](https://github.com/user-attachments/assets/835992be-0269-4818-8401-63f0e513e0df)
