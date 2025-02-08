@@ -26,7 +26,7 @@ if IsPlayerOnSameTile() = true
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_12_BlueSardak_CouldntStopHer
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("BlueSardak_Outro",true)
+			Register_Add("BlueSardak_Outro")
 		}
 		
 	}

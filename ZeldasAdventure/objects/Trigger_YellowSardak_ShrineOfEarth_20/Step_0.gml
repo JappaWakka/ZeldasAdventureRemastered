@@ -27,7 +27,7 @@ if IsPlayerOnSameTile() = true
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_20_YellowSardak_ShesComing
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("YellowSardak_Outro",true)
+			Register_Add("YellowSardak_Outro")
 		}
 	}
 		
