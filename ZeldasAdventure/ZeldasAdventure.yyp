@@ -1575,6 +1575,7 @@
     {"id":{"name":"input_accessibility_global_toggle_get","path":"scripts/input_accessibility_global_toggle_get/input_accessibility_global_toggle_get.yy",},"order":2,},
     {"id":{"name":"Overworld_382_Below","path":"sprites/Overworld_382_Below/Overworld_382_Below.yy",},"order":198,},
     {"id":{"name":"Overworld_164_Below","path":"sprites/Overworld_164_Below/Overworld_164_Below.yy",},"order":91,},
+    {"id":{"name":"Warp_SeacoastPlainShortcut_Enter_West","path":"objects/Warp_SeacoastPlainShortcut_Enter_West/Warp_SeacoastPlainShortcut_Enter_West.yy",},"order":4,},
     {"id":{"name":"Overworld_374_Solid","path":"sprites/Overworld_374_Solid/Overworld_374_Solid.yy",},"order":9,},
     {"id":{"name":"EastForest_02_Below","path":"sprites/EastForest_02_Below/EastForest_02_Below.yy",},"order":1,},
     {"id":{"name":"Script_Fonts","path":"scripts/Script_Fonts/Script_Fonts.yy",},"order":0,},
