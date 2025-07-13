@@ -1,14 +1,17 @@
 // Feather disable all
 function __input_define_gamepad_types()
 {
-    __input_global().__simple_type_lookup = {};
-    with(__input_global().__simple_type_lookup)
+    __INPUT_GLOBAL_STATIC_LOCAL
+    
+    _global.__simple_type_lookup = {};
+    with(_global.__simple_type_lookup)
     {
         //Xbox
         #macro INPUT_GAMEPAD_TYPE_XBOX_ONE "xbox one"
         XBoxOneController      = INPUT_GAMEPAD_TYPE_XBOX_ONE;
         CommunityXBoxOne       = INPUT_GAMEPAD_TYPE_XBOX_ONE;
         SteamControllerNeptune = INPUT_GAMEPAD_TYPE_XBOX_ONE;
+        CommunitySteamDeck     = INPUT_GAMEPAD_TYPE_XBOX_ONE;
         CommunityLuna          = INPUT_GAMEPAD_TYPE_XBOX_ONE;
         CommunityStadia        = INPUT_GAMEPAD_TYPE_XBOX_ONE;
         AppleController        = INPUT_GAMEPAD_TYPE_XBOX_ONE;
@@ -21,12 +24,12 @@ function __input_define_gamepad_types()
         MobileTouch        = INPUT_GAMEPAD_TYPE_XBOX_360;
         
         //Default for XInput and Xbox-like gamepads
-        CommunityLikeXBox   = INPUT_GAMEPAD_TYPE_XBOX_ONE;
+        CommunityLikeXBox = INPUT_GAMEPAD_TYPE_XBOX_ONE;
         
         //PlayStation
         #macro INPUT_GAMEPAD_TYPE_PS5 "ps5"
         PS5Controller = INPUT_GAMEPAD_TYPE_PS5;
-        CommunityPS5 = INPUT_GAMEPAD_TYPE_PS5;
+        CommunityPS5  = INPUT_GAMEPAD_TYPE_PS5;
         
         #macro INPUT_GAMEPAD_TYPE_PS4 "ps4"
         PS4Controller       = INPUT_GAMEPAD_TYPE_PS4;
@@ -47,6 +50,7 @@ function __input_define_gamepad_types()
         CommunityLikeSwitch       = INPUT_GAMEPAD_TYPE_SWITCH;
         Community8BitDo           = INPUT_GAMEPAD_TYPE_SWITCH;
         HIDWiiClassic             = INPUT_GAMEPAD_TYPE_SWITCH;
+        HIDSuperFamicomNSO        = INPUT_GAMEPAD_TYPE_SWITCH;
         CommunitySNES             = INPUT_GAMEPAD_TYPE_SWITCH;
         CommunitySuperFamicom     = INPUT_GAMEPAD_TYPE_SWITCH;
         
@@ -116,9 +120,13 @@ function __input_define_gamepad_types()
         
         //#macro INPUT_GAMEPAD_TYPE_SUPER_FAMICOM "super famicom"
         //CommunitySuperFamicom = INPUT_GAMEPAD_TYPE_SUPER_FAMICOM;
+        //HIDSuperFamicomNSO    = INPUT_GAMEPAD_TYPE_SUPER_FAMICOM;
         
         //#macro INPUT_GAMEPAD_TYPE_NEOGEO "neogeo"
         //CommunityNeoGeo = INPUT_GAMEPAD_TYPE_NEOGEO;
+        
+        //#macro INPUT_GAMEPAD_TYPE_NEOGEO_MINI "neogeo mini"
+        //CommunityNeoGeoMini = INPUT_GAMEPAD_TYPE_NEOGEO_MINI;
         
         #endregion
     }

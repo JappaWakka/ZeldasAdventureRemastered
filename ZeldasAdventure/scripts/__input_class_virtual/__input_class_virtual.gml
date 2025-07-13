@@ -35,8 +35,6 @@ function __input_class_virtual() constructor
     __verb_down    = undefined;
     __max_distance = 1;
     
-    __4dir = false;
-    
     __threshold_min = INPUT_VIRTUAL_BUTTON_MIN_THRESHOLD;
     __threshold_max = INPUT_VIRTUAL_BUTTON_MAX_THRESHOLD;
     
@@ -46,6 +44,7 @@ function __input_class_virtual() constructor
     __follow           = false;
     __record_history   = false;
     __first_touch_only = false;
+    __momentary        = false;
     
     //State
     //These variables should be cleared by .__clear_state()
@@ -166,26 +165,26 @@ function __input_class_virtual() constructor
     static get_position = function()
     {
         static _struct = {
-            left:   undefined,
-            top:    undefined,
-            right:  undefined,
-            bottom: undefined,
-            width:  undefined,
-            height: undefined,
-            x:      undefined,
-            y:      undefined,
-            radius: undefined,
+            __left:   undefined,
+            __top:    undefined,
+            __right:  undefined,
+            __bottom: undefined,
+            __width:  undefined,
+            __height: undefined,
+            __x:      undefined,
+            __y:      undefined,
+            __radius: undefined,
         };
         
-        _struct.left   = __left;
-        _struct.top    = __top;
-        _struct.right  = __right;
-        _struct.bottom = __bottom;
-        _struct.width  = __width;
-        _struct.height = __height;
-        _struct.x      = __x;
-        _struct.y      = __y;
-        _struct.radius = __radius;
+        _struct.__left   = __left;
+        _struct.__top    = __top;
+        _struct.__right  = __right;
+        _struct.__bottom = __bottom;
+        _struct.__width  = __width;
+        _struct.__height = __height;
+        _struct.__x      = __x;
+        _struct.__y      = __y;
+        _struct.__radius = __radius;
         
         return _struct;
     }
@@ -281,18 +280,18 @@ function __input_class_virtual() constructor
     static get_verbs = function()
     {
         static _struct = {
-            click: undefined,
-            left:  undefined,
-            right: undefined,
-            up:    undefined,
-            down:  undefined,
+            __click: undefined,
+            __left:  undefined,
+            __right: undefined,
+            __up:    undefined,
+            __down:  undefined,
         };
         
-        _struct.click = __verb_click;
-        _struct.left  = __verb_left;
-        _struct.right = __verb_right;
-        _struct.up    = __verb_up;
-        _struct.down  = __verb_down;
+        _struct.__click = __verb_click;
+        _struct.__left  = __verb_left;
+        _struct.__right = __verb_right;
+        _struct.__up    = __verb_up;
+        _struct.__down  = __verb_down;
         
         return _struct;
     }
@@ -310,12 +309,12 @@ function __input_class_virtual() constructor
     static get_threshold = function()
     {
         static _struct = {
-            mini: undefined,
-            maxi: undefined,
+            __mini: undefined,
+            __maxi: undefined,
         };
         
-        _struct.mini = __threshold_min;
-        _struct.maxi = __threshold_max;
+        _struct.__mini = __threshold_min;
+        _struct.__maxi = __threshold_max;
         
         return _struct;
     }
@@ -406,6 +405,18 @@ function __input_class_virtual() constructor
     static get_reference_point = function()
     {
         return __reference;
+    }
+    
+    static momentary = function(_state)
+    {
+        __momentary = _state;
+        
+        return self;
+    }
+    
+    static get_momentary = function()
+    {
+        return __momentary;
     }
     
     #endregion
@@ -770,7 +781,7 @@ function __input_class_virtual() constructor
         }
         else
         {
-            var _sustain = device_mouse_check_button(__touch_device, mb_left);          
+            var _sustain = __momentary? (__capture_frame == __global.__frame) : device_mouse_check_button(__touch_device, mb_left);          
             
             //Guard iOS dropping a sustained hold on SystemGestureGate timeout
             if (__INPUT_ON_IOS)

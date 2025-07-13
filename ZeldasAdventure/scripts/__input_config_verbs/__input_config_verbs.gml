@@ -7,7 +7,7 @@
 //The struct return by this script contains the names of each default profile.
 //Default profiles then contain the names of verbs. Each verb should be given a binding that is
 //appropriate for the profile. You can create bindings by calling one of the input_binding_*()
-//functions, such as input_binding_key() for keyboard keys and input_binding_mouse() for
+//functions, such as input_binding_key() for keyboard keys and input_binding_mouse_button() for
 //mouse buttons
 
 function __input_config_verbs()
@@ -44,16 +44,18 @@ function __input_config_verbs()
         
         touch:
         {
+			
             up:    input_binding_virtual_button(),
             down:  input_binding_virtual_button(),
             left:  input_binding_virtual_button(),
             right: input_binding_virtual_button(),
             
-            action1:  input_binding_virtual_button(),
-            action2:  input_binding_virtual_button(),
-            inventory:  input_binding_virtual_button(),
-            map: input_binding_virtual_button(),
+            action1:  input_binding_virtual_button(), //A Button
+            action2:  input_binding_virtual_button(), //B Button
+            inventory:  input_binding_virtual_button(), //X Button
+            map:  input_binding_virtual_button(), //Y Button
             menu: input_binding_virtual_button(),
+			
         }
     };
 }

@@ -10,39 +10,36 @@ function __input_system_tick()
 
     #region Touch
     
-    if (INPUT_PS_TOUCHPAD_ALLOWED && __INPUT_ON_PS)
-    {
-        //Use first touch (of 2) on active PlayStation gamepad
-        var _gamepad = _global.__players[0].__source_get_gamepad();
-        if (_gamepad >= 0 && _gamepad < 4)
-        {
-            _global.__pointer_index = _gamepad * 2;
-            _global.__pointer_pressed  = gamepad_button_check_pressed(_gamepad,  gp_select);
-            _global.__pointer_released = gamepad_button_check_released(_gamepad, gp_select);
-        }
-    }
-
     if (__INPUT_TOUCH_SUPPORT && INPUT_MOBILE_MOUSE)
     {
         var _touch_index = undefined;
         var _touch_press_index = _global.__pointer_pressed_index;
 
-        //Track contact duration per index
+        //Track touch time per pointer
         var _i = 0;
         repeat(INPUT_MAX_TOUCHPOINTS)
-        {
-            if (!device_mouse_check_button(_i, mb_left))
+        {            
+            var _held = device_mouse_check_button(_i, mb_left);
+            
+            //Guard iOS dropping a sustained hold on SystemGestureGate timeout
+            if (__INPUT_ON_IOS)
             {
-                _global.__pointer_durations[_i] = 0;
+                if (!_held && (_global.__pointer_held_time[_i] >= 0) && (_global.__current_time - _global.__pointer_held_time[_i] > 20))
+                {
+                    if (not _global.__pointer_held_buffer[_i]) _held = true;
+                    _global.__pointer_held_buffer[_i] = !_global.__pointer_held_buffer[_i];
+                }
+            }
+            
+            //Find recent touch
+            if (not _held)
+            {
+                _global.__pointer_held_time[_i] = -1;
             }
             else
             {
-                //Get recent active touch
-                _global.__pointer_durations[_i] += delta_time;
-                if ((_touch_index == undefined) || (_global.__pointer_durations[_i] < _global.__pointer_durations[_touch_index]))
-                {
-                    _touch_index = _i;
-                }
+                if (_global.__pointer_held_time[_i] < 0) _global.__pointer_held_time[_i] = _global.__current_time;
+                if ((_touch_index == undefined) || (_global.__pointer_held_time[_i] > _global.__pointer_held_time[_touch_index])) _touch_index = _i;
             }
 
             _i++;
@@ -97,7 +94,7 @@ function __input_system_tick()
     
     #region Application state
     
-    if (INPUT_ON_PC && !INPUT_ON_WEB)
+    if (INPUT_ON_PC || INPUT_ON_WEB)
     {
         if (os_is_paused())
         {
@@ -125,8 +122,8 @@ function __input_system_tick()
             }
             else if ((keyboard_key != vk_nokey) 
                  ||  (mouse_button != mb_none)
-                 ||  (__INPUT_ON_WINDOWS && window_has_focus())
-                 ||  (__INPUT_ON_MACOS   && _global.__pointer_moved))
+                 ||  (_global.__use_native_focus && window_has_focus())
+                 ||  (__INPUT_ON_MACOS && !INPUT_ON_WEB && _global.__pointer_moved))
             {
                 //Regained focus
                 _global.__window_focus = true;
@@ -140,11 +137,17 @@ function __input_system_tick()
                 
                 __input_player_apply_trigger_effects(all);
             }
+            else if not (_global.__use_native_focus)
+            {
+                //Reevaluate native focus support
+                if (window_has_focus() == false) _global.__use_native_focus = true;
+            }
         }
     }
-
-    _global.__game_input_allowed = INPUT_ALLOW_OUT_OF_FOCUS || _global.__window_focus;
     
+    var _game_input_allowed_previous = _global.__game_input_allowed;
+    
+    _global.__game_input_allowed = INPUT_ALLOW_OUT_OF_FOCUS || _global.__window_focus;    
     _global.__overlay_focus = false;
     
     if (_global.__using_steamworks)
@@ -167,6 +170,23 @@ function __input_system_tick()
             if (_global.__gamepad_tester_data.__block_input)
             {
                 _global.__game_input_allowed = false;
+            }
+        }
+    }
+    
+    //Set Windows IME availability based on focus loss and regain
+    //see https://github.com/YoYoGames/GameMaker-Bugs/issues/5524
+    if (__INPUT_ON_WINDOWS)
+    {
+        if (_global.__game_input_allowed != _game_input_allowed_previous)
+        {
+            if (_global.__game_input_allowed)
+            {
+                keyboard_virtual_hide();
+            }
+            else
+            {
+                keyboard_virtual_show(kbv_type_default, kbv_returnkey_default, kbv_autocapitalize_none, false);
             }
         }
     }
@@ -209,12 +229,15 @@ function __input_system_tick()
         }
     }
     
-    if (INPUT_ALLOW_OUT_OF_FOCUS || !_global.__overlay_focus)
+    if (INPUT_ALLOW_OUT_OF_FOCUS || !(INPUT_DEFAULT_DEBUG_OVERLAY_BLOCKS_INPUT && _global.__overlay_focus))
     {
         if (_global.__mouse_capture && !_global.__mouse_capture_blocked)
         {
             if (_global.__window_focus)
             {
+                var _window_width = window_get_width();
+                var _window_height = window_get_height();
+                
                 if (_global.__frame - _global.__mouse_capture_frame > 10)
                 {
                     if (__INPUT_ON_WINDOWS)
@@ -230,8 +253,8 @@ function __input_system_tick()
                 
                     //Only bother updating each coordinate space if we've moved far enough in device space
                     //This presumes that we don't get better than 1px resolution in device space
-                    if ((abs(_pointer_x - window_get_width()/2)  >= 1)
-                    ||  (abs(_pointer_y - window_get_height()/2) >= 1))
+                    if ((abs(_pointer_x - _window_width/2)  >= 1)
+                    ||  (abs(_pointer_y - _window_height/2) >= 1))
                     {
                         var _m = 0;
                         repeat(INPUT_COORD_SPACE.__SIZE)
@@ -267,8 +290,8 @@ function __input_system_tick()
                                 break;
                             
                                 case INPUT_COORD_SPACE.DEVICE:
-                                    var _old_x = window_get_width()/2;
-                                    var _old_y = window_get_height()/2;
+                                    var _old_x = _window_width/2;
+                                    var _old_y = _window_height/2;
                                 
                                     if (__INPUT_ON_WINDOWS)
                                     {
@@ -301,7 +324,7 @@ function __input_system_tick()
                 }
             
                 //Recenter mouse cursor
-                window_mouse_set(window_get_width()/2, window_get_height()/2);
+                window_mouse_set(_window_width/2, _window_height/2);
             }
         }
         else if (_global.__window_focus || INPUT_ALLOW_OUT_OF_FOCUS || __INPUT_ON_MACOS)
@@ -408,7 +431,7 @@ function __input_system_tick()
                     //Meta release sticks every key pressed during hold
                     //This is "the nuclear option", but the problem is severe
                     var _i = 8;
-                    var _len = 255 - _i;
+                    var _len = 0xFF - _i;
                     repeat(_len)
                     {
                         keyboard_key_release(_i);
@@ -465,56 +488,75 @@ function __input_system_tick()
     
     if (_global.__gamepad_allowed && (_global.__frame > __INPUT_GAMEPADS_TICK_PREDELAY))
     {
-        //Expand dynamic device count
-        var _device_change = max(0, gamepad_get_device_count() - array_length(_global.__gamepads));
-        repeat(_device_change) array_push(_global.__gamepads, undefined);
-        
-        _device_change = max(0, gamepad_get_device_count() - array_length(INPUT_GAMEPAD));
-        repeat(_device_change)
+        //Android gamepad enumeration (enables USB hotplugging)
+        if (_global.__allow_gamepad_enumerate)
         {
-            array_push(INPUT_GAMEPAD, new __input_class_source(__INPUT_SOURCE.GAMEPAD, array_length(INPUT_GAMEPAD)));
-            
-            if ((_global.__source_mode == INPUT_SOURCE_MODE.MIXED) || (_global.__source_mode == INPUT_SOURCE_MODE.MULTIDEVICE))
+            if (_global.__current_time - _global.__enumeration_time > INPUT_ANDROID_GAMEPAD_ENUMERATION_INTERVAL)
             {
-                _global.__players[0].__source_add(INPUT_GAMEPAD[array_length(INPUT_GAMEPAD)-1]);
+                _global.__enumeration_time = _global.__current_time;
+                gamepad_enumerate();
+            }
+        }
+        
+        //Expand dynamic device count
+        if (__INPUT_ON_LINUX || __INPUT_ON_ANDROID)
+        {
+            var _g = array_length(_global.__gamepads);
+            var _change = max(0, gamepad_get_device_count() - _g);
+            repeat(_change)
+            {
+                _global.__gamepads[_g] = undefined;
+                array_push(INPUT_GAMEPAD, new __input_class_source(__INPUT_SOURCE.GAMEPAD, array_length(INPUT_GAMEPAD)));
+            
+                if ((_global.__source_mode == INPUT_SOURCE_MODE.MIXED) || (_global.__source_mode == INPUT_SOURCE_MODE.MULTIDEVICE))
+                {
+                    _global.__players[0].__source_add(INPUT_GAMEPAD[array_length(INPUT_GAMEPAD)-1]);
+                }
+            
+                ++_g;
             }
         }
         
         var _g = 0;
         repeat(array_length(_global.__gamepads))
         {
+            var _connected = gamepad_is_connected(_g);
+            _global.__gamepad_connections_native[_g] = _connected;
+            _global.__gamepad_connections_internal[_g] = false;
+            
             var _gamepad = _global.__gamepads[_g];
             if (is_struct(_gamepad))
             {
-                var _connected = gamepad_is_connected(_g);
                 if (_connected)
                 {
-                    with (_gamepad)
+                    with(_gamepad)
                     {
-                        if ((os_type == os_switch) && (description != gamepad_get_description(_g)))
+                        if ((os_type == os_switch) && (__description != gamepad_get_description(_g)))
                         {
                             //When Switch L+R assignment is used to pair two gamepads we won't see a normal disconnection/reconnection
                             //Instead we have to check for changes in the description to see if state has changed
-                            discover();
+                            __discover();
                         }
                         else
                         {
                             if (_steam_handles_changed) 
                             {
-                                virtual_set();
-                                led_set();
+                                __virtual_set();
+                                __led_set();
                             }
                         }
                     }
                 }
                 
-                var _sustain_connection = _gamepad.tick(_connected);
+                var _sustain_connection = _gamepad.__tick(_connected);
+                _global.__gamepad_connections_internal[_g] = _sustain_connection;
+                
                 if not (_sustain_connection)
                 {
                     //Remove our gamepad handler
                     if (!__INPUT_SILENT) __input_trace("Gamepad ", _g, " disconnected");
                         
-                    gamepad_set_vibration(_global.__gamepads[_g].index, 0, 0);
+                    gamepad_set_vibration(_global.__gamepads[_g].__index, 0, 0);
                     _global.__gamepads[@ _g] = undefined;
                         
                     //Also report gamepad changes for any active players
@@ -536,7 +578,7 @@ function __input_system_tick()
             }
             else
             {
-                if (gamepad_is_connected(_g))
+                if (_global.__gamepad_connections_native[_g])
                 {
                     __input_trace("Gamepad ", _g, " connected");
                     if (!__INPUT_SILENT) __input_trace("New gamepad = \"", gamepad_get_description(_g), "\", GUID=\"", gamepad_get_guid(_g), "\", buttons = ", gamepad_button_count(_g), ", axes = ", gamepad_axis_count(_g), ", hats = ", gamepad_hat_count(_g));
@@ -616,7 +658,7 @@ function __input_system_tick()
     var _p = 0;
     repeat(INPUT_MAX_PLAYERS)
     {
-        _global.__players[_p].tick();
+        _global.__players[_p].__tick();
         ++_p;
     }
     
@@ -628,9 +670,9 @@ function __input_system_tick()
     
     var _any_players_changed = false;
     
-    var _connection_array    = _global.__players_status.new_connections;
-    var _disconnection_array = _global.__players_status.new_disconnections;
-    var _status_array        = _global.__players_status.players;
+    var _connection_array    = _global.__players_status.__new_connections;
+    var _disconnection_array = _global.__players_status.__new_disconnections;
+    var _status_array        = _global.__players_status.__players;
     
     array_resize(_connection_array,    0);
     array_resize(_disconnection_array, 0);
@@ -646,7 +688,7 @@ function __input_system_tick()
             {
                 _any_players_changed = true;
                 _status_array[@ _p] = INPUT_STATUS.NEWLY_CONNECTED;
-                array_push(_global.__players_status.new_connections, _p);
+                array_push(_global.__players_status.__new_connections, _p);
             }
             else
             {
@@ -659,7 +701,7 @@ function __input_system_tick()
             {
                 _any_players_changed = true;
                 _status_array[@ _p] = INPUT_STATUS.NEWLY_DISCONNECTED;
-                array_push(_global.__players_status.new_disconnections, _p);
+                array_push(_global.__players_status.__new_disconnections, _p);
             }
             else
             {
@@ -670,7 +712,7 @@ function __input_system_tick()
         ++_p;
     }
     
-    _global.__players_status.any_changed = _any_players_changed;
+    _global.__players_status.__any_changed = _any_players_changed;
     
     #endregion
     
@@ -680,14 +722,14 @@ function __input_system_tick()
     
     var _any_gamepads_changed = false;
     
-    var _connection_array    = _global.__gamepads_status.new_connections;
-    var _disconnection_array = _global.__gamepads_status.new_disconnections;
-    var _status_array        = _global.__gamepads_status.gamepads;
+    var _connection_array    = _global.__gamepads_status.__new_connections;
+    var _disconnection_array = _global.__gamepads_status.__new_disconnections;
+    var _status_array        = _global.__gamepads_status.__gamepads;
     
     array_resize(_connection_array,    0);
     array_resize(_disconnection_array, 0);
     
-    var _device_count = gamepad_get_device_count();
+    var _device_count = array_length(_global.__gamepad_connections_native);
     if (array_length(_status_array) != _device_count)
     {
         //Resize the gamepad status array if the total device count has changed
@@ -732,7 +774,7 @@ function __input_system_tick()
         ++_g;
     }
     
-    _global.__gamepads_status.any_changed = _any_gamepads_changed;
+    _global.__gamepads_status.__any_changed = _any_gamepads_changed;
     
     #endregion
     

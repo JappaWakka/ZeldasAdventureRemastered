@@ -9,20 +9,10 @@
 
 function input_xy(_verb_l, _verb_r, _verb_u, _verb_d, _player_index = 0, _most_recent = INPUT_DEFAULT_2D_MOST_RECENT)
 {
-    if (__INPUT_2D_CHECKER_STATIC_RESULT)
-    {
-        static _result = {
-            x: 0,
-            y: 0,
-        };
-    }
-    else
-    {
-        var _result = {
-            x: 0,
-            y: 0,
-        };
-    }
+    static _result = {
+        x: 0,
+        y: 0,
+    };
     
     if (!is_struct(_player_index))
     {
@@ -52,27 +42,27 @@ function input_xy(_verb_l, _verb_r, _verb_u, _verb_d, _player_index = 0, _most_r
     if (!is_struct(_verb_struct_d)) __input_error("Down verb not recognised (", _verb_d, ")");
     
     //If any of the verbs have been consumed then set their value to 0, otherwise use the raw value from the binding
-    var _value_l = _verb_struct_l.__inactive? 0.0 : _verb_struct_l.raw;
-    var _value_r = _verb_struct_r.__inactive? 0.0 : _verb_struct_r.raw;
-    var _value_u = _verb_struct_u.__inactive? 0.0 : _verb_struct_u.raw;
-    var _value_d = _verb_struct_d.__inactive? 0.0 : _verb_struct_d.raw;
+    var _value_l = _verb_struct_l.__inactive? 0.0 : _verb_struct_l.__raw;
+    var _value_r = _verb_struct_r.__inactive? 0.0 : _verb_struct_r.__raw;
+    var _value_u = _verb_struct_u.__inactive? 0.0 : _verb_struct_u.__raw;
+    var _value_d = _verb_struct_d.__inactive? 0.0 : _verb_struct_d.__raw;
     
     //Check to see if any the verbs are non-analogue (and are being pressed)
     var _any_non_analogue = false;
     
-    if (((_value_l > 0.0) && !_verb_struct_l.raw_analogue)
-    ||  ((_value_r > 0.0) && !_verb_struct_r.raw_analogue)
-    ||  ((_value_u > 0.0) && !_verb_struct_u.raw_analogue)
-    ||  ((_value_d > 0.0) && !_verb_struct_d.raw_analogue))
+    if (((_value_l > 0.0) && !_verb_struct_l.__raw_analogue)
+    ||  ((_value_r > 0.0) && !_verb_struct_r.__raw_analogue)
+    ||  ((_value_u > 0.0) && !_verb_struct_u.__raw_analogue)
+    ||  ((_value_d > 0.0) && !_verb_struct_d.__raw_analogue))
     {
         _any_non_analogue = true;
         
         //If we *do* have some non-analogue buttons pressed, then find all the analogue values and set them to zero
         //This means that if the player presses on the dpad whilst also using an analogue stick we ignore the thumbstick and use the dpad input instead
-        if (_verb_struct_u.raw_analogue) _value_u = 0.0;
-        if (_verb_struct_d.raw_analogue) _value_d = 0.0;
-        if (_verb_struct_l.raw_analogue) _value_l = 0.0;
-        if (_verb_struct_r.raw_analogue) _value_r = 0.0;
+        if (_verb_struct_u.__raw_analogue) _value_u = 0.0;
+        if (_verb_struct_d.__raw_analogue) _value_d = 0.0;
+        if (_verb_struct_l.__raw_analogue) _value_l = 0.0;
+        if (_verb_struct_r.__raw_analogue) _value_r = 0.0;
     }
     
     //Calculate the actual raw x/y values
@@ -81,8 +71,8 @@ function input_xy(_verb_l, _verb_r, _verb_u, _verb_d, _player_index = 0, _most_r
     
     if (_most_recent)
     {
-        if ((_value_l > 0.0) && (_value_r > 0.0)) { _dx = ((_verb_struct_l.press_time > _verb_struct_r.press_time)? -_value_l : _value_r); }
-        if ((_value_u > 0.0) && (_value_d > 0.0)) { _dy = ((_verb_struct_u.press_time > _verb_struct_d.press_time)? -_value_u : _value_d); }
+        if ((_value_l > 0.0) && (_value_r > 0.0)) { _dx = ((_verb_struct_l.__press_time > _verb_struct_r.__press_time)? -_value_l : _value_r); }
+        if ((_value_u > 0.0) && (_value_d > 0.0)) { _dy = ((_verb_struct_u.__press_time > _verb_struct_d.__press_time)? -_value_u : _value_d); }
     }
     
     //Calculate the displacement
@@ -117,10 +107,10 @@ function input_xy(_verb_l, _verb_r, _verb_u, _verb_d, _player_index = 0, _most_r
     var _min_threshold = 0.0;
     var _max_threshold = 0.0;
     
-    if (_value_l > 0.0) { _active_count++;   _min_threshold += _verb_struct_l.min_threshold;   _max_threshold += _verb_struct_l.max_threshold; }
-    if (_value_r > 0.0) { _active_count++;   _min_threshold += _verb_struct_r.min_threshold;   _max_threshold += _verb_struct_r.max_threshold; }
-    if (_value_u > 0.0) { _active_count++;   _min_threshold += _verb_struct_u.min_threshold;   _max_threshold += _verb_struct_u.max_threshold; }
-    if (_value_d > 0.0) { _active_count++;   _min_threshold += _verb_struct_d.min_threshold;   _max_threshold += _verb_struct_d.max_threshold; }
+    if (_value_l > 0.0) { _active_count++;   _min_threshold += _verb_struct_l.__min_threshold;   _max_threshold += _verb_struct_l.__max_threshold; }
+    if (_value_r > 0.0) { _active_count++;   _min_threshold += _verb_struct_r.__min_threshold;   _max_threshold += _verb_struct_r.__max_threshold; }
+    if (_value_u > 0.0) { _active_count++;   _min_threshold += _verb_struct_u.__min_threshold;   _max_threshold += _verb_struct_u.__max_threshold; }
+    if (_value_d > 0.0) { _active_count++;   _min_threshold += _verb_struct_d.__min_threshold;   _max_threshold += _verb_struct_d.__max_threshold; }
     
     //Catch an edge case
     if (_active_count <= 0.0)
@@ -135,8 +125,8 @@ function input_xy(_verb_l, _verb_r, _verb_u, _verb_d, _player_index = 0, _most_r
     
     //Apply the min/max thresholds for fully analogue input
     var _coeff = clamp((_d - _min_threshold) / (_max_threshold - _min_threshold), 0.0, 1.0);
-    _dx *= _coeff;
-    _dy *= _coeff;
+    _dx = (_dx/_d)*_coeff;
+    _dy = (_dy/_d)*_coeff;
     
     if (INPUT_2D_XY_AXIS_BIAS > 0)
     {
@@ -151,20 +141,6 @@ function input_xy(_verb_l, _verb_r, _verb_u, _verb_d, _player_index = 0, _most_r
         var _distance = point_distance(0, 0, _dx, _dy);
         _dx = lengthdir_x(_distance, _direction);
         _dy = lengthdir_y(_distance, _direction);
-        
-        /*
-        //Implementation from https://github.com/Minimuino/thumbstick-deadzones/blob/master/README.md
-        //It is not consistent in magnitude around the circle making it unsuitable for our use case
-        
-        var _abs_dx = abs(_dx);
-        var _abs_dy = abs(_dy);
-        
-        var _dead_x = _min_threshold*abs(_abs_dy); //Base our deadzone on where the opposite axis is
-        var _dead_y = _min_threshold*abs(_abs_dx);
-        
-        _dx = sign(_dx) * max(0, (_abs_dx - _dead_x) / (1 -  _dead_x));
-        _dy = sign(_dy) * max(0, (_abs_dy - _dead_y) / (1 -  _dead_y));
-        */
     }
     
     //Spit out the answer!
