@@ -86,7 +86,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "ForestOfFindo",
-    "path": "folders/Sprites/Maps/Overworld/ForestOfFindo.yy",
+    "name": "Shortcuts",
+    "path": "folders/Sprites/Maps/Overworld/Shortcuts.yy",
   },
 }

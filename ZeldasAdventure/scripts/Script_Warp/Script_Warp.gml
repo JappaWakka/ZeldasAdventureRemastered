@@ -108,6 +108,10 @@ global.WarpLocations =
 	
 	//Shortcuts
 	SeacoastPlainShortcut_Inside_West : {TileX:12,TileY:20,PlayerX:64,PlayerY:144},
+	SeacoastPlainShortcut_Inside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112},
+	SeacoastPlainShortcut_Outside_West : {TileX:9,TileY:20,PlayerX:320,PlayerY:124},
+	//SeacoastPlainShortcut_Outside_East : {TileX:14,TileY:21,PlayerX:248,PlayerY:112}, //working
+	SeacoastPlainShortcut_Outside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112}, //not working
 	
 	//Shrines
 	ShrineOfEarth_Spawn_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
@@ -203,7 +207,7 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerY
 			)
 			break;
-		
+			
 		//Shorcuts
 		case "SeacoastPlainShortcut_Inside_West":
 			WarpTo(
@@ -212,8 +216,32 @@ function WarpToLocation(Name)
 			global.WarpLocations.SeacoastPlainShortcut_Inside_West.PlayerX,
 			global.WarpLocations.SeacoastPlainShortcut_Inside_West.PlayerY
 			)
-			break;			
-		
+			break;
+		case "SeacoastPlainShortcut_Inside_East":
+			WarpTo(
+			global.WarpLocations.SeacoastPlainShortcut_Inside_East.TileX,
+			global.WarpLocations.SeacoastPlainShortcut_Inside_East.TileY,
+			global.WarpLocations.SeacoastPlainShortcut_Inside_East.PlayerX,
+			global.WarpLocations.SeacoastPlainShortcut_Inside_East.PlayerY
+			)
+			break;
+		case "SeacoastPlainShortcut_Outside_West":
+			WarpTo(
+			global.WarpLocations.SeacoastPlainShortcut_Outside_West.TileX,
+			global.WarpLocations.SeacoastPlainShortcut_Outside_West.TileY,
+			global.WarpLocations.SeacoastPlainShortcut_Outside_West.PlayerX,
+			global.WarpLocations.SeacoastPlainShortcut_Outside_West.PlayerY
+			)
+			break;
+		case "SeacoastPlainShortcut_Outside_East":
+			WarpTo(
+			global.WarpLocations.SeacoastPlainShortcut_Outside_East.TileX,
+			global.WarpLocations.SeacoastPlainShortcut_Outside_East.TileY,
+			global.WarpLocations.SeacoastPlainShortcut_Outside_East.PlayerX,
+			global.WarpLocations.SeacoastPlainShortcut_Outside_East.PlayerY
+			)
+			break;
+			
 		//Shrine of Earth
 		case "Spawn_ShrineOfEarth":
 			WarpTo(
