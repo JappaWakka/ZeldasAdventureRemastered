@@ -7,6 +7,8 @@ Downloads page: https://jappawakka.itch.io/zeldas-adventure-remastered
 
 The source code (found in the "ZeldasAdventure" folder in the root of this repository) can be compiled using GameMaker Studio LTS (2022)
 
+Credits can be found [here](https://github.com/JappaWakka/ZeldasAdventureRemastered/blob/main/CREDITS.md)!
+
 ![A Remaster by JappaWakka](https://github.com/user-attachments/assets/72741c04-680c-46c6-a7c0-011bf282b8e2)
 ![Settings menu with rebindable controls!](https://github.com/user-attachments/assets/835992be-0269-4818-8401-63f0e513e0df)
 ![Seperate Weapon & Treasure slots!](https://github.com/user-attachments/assets/ec40b837-e059-4107-8940-ab8c3e57028d)
