@@ -9,6 +9,7 @@ Inspired by **Link: The Faces of Evil Remastered & Zelda: The Wand of Gamelon Re
 * **Background Music & Ambience** dumped by Glutko/MundyC
 * **Sound Effects** dumped by JappaWakka
 * **Various Scripts & Game Data** dumped by Phlosion
+* **English Transcription** by Nameless_Joe (aka Ninty_Joe)
 * **NL/Dutch Translation** by JappaWakka
 
 ## GameMaker Extensions
