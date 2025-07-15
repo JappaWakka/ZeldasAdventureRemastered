@@ -1,4 +1,6 @@
 time between frames			sprite fps
+5							3
+4							5
 3							7
 2							10
 1							12

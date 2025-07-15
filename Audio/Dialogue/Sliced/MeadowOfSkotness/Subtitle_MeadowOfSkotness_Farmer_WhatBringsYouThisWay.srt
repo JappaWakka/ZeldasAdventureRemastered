@@ -1,0 +1,13 @@
+﻿1
+00:00:00,007 --> 00:00:01,413
+Farmer: It's good to see ya!
+
+2
+00:00:01,880 --> 00:00:03,480
+What brings you this way?
+
+3
+00:00:03,933 --> 00:00:06,367
+'scuse me, but I got
+to get back to plowin'.
+

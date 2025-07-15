@@ -1,0 +1,13 @@
+﻿1
+00:00:00,001 --> 00:00:01,686
+Farmer: Hello there, Miss!
+
+2
+00:00:01,807 --> 00:00:03,747
+Watch how you go out in the meadows...
+
+3
+00:00:03,873 --> 00:00:07,000
+they're full of Leevers and
+Tektites this time of year!
+
