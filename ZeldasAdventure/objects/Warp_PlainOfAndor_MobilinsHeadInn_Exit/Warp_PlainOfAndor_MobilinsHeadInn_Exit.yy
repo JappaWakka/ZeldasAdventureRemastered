@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Overworld",
-    "path": "folders/Objects/Warps/Overworld.yy",
+    "name": "PlainOfAndor",
+    "path": "folders/Objects/Warps/Overworld/PlainOfAndor.yy",
   },
 }

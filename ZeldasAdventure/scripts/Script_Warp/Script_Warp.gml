@@ -105,6 +105,16 @@ global.WarpLocations =
 	ForestOfOgham_TektiteCave_Outside : {TileX:6,TileY:31,PlayerX:300,PlayerY:162},
 	ForestOfOgham_ShrineOfEarth_Exit : {TileX:6,TileY:31,PlayerX:266,PlayerY:74},
 	ForestOfOgham_ShrineOfEarth_Warp : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+		
+	//GreatWimbich
+	GreatWimbich_GeneralStore_Inside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	GreatWimbich_GeneralStore_Outside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	GreatWimbich_MagicStore_Inside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	GreatWimbich_MagicStore_Outside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	GreatWimbich_Blacksmith_Inside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	GreatWimbich_Blacksmith_Outside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	GreatWimbich_TwinFatherHouse_Inside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	GreatWimbich_TwinFatherHouse_Outside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
 	
 	//Shortcuts
 	SeacoastPlainShortcut_Inside_West : {TileX:12,TileY:20,PlayerX:64,PlayerY:144},
@@ -205,6 +215,73 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.TileY,
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerX,
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerY
+			)
+			break;
+			
+		
+		//Great Wimbich
+		case "GeneralStore_Inside":
+			WarpTo(
+			global.WarpLocations.GreatWimbich_GeneralStore_Inside.TileX,
+			global.WarpLocations.GreatWimbich_GeneralStore_Inside.TileY,
+			global.WarpLocations.GreatWimbich_GeneralStore_Inside.PlayerX,
+			global.WarpLocations.GreatWimbich_GeneralStore_Inside.PlayerY
+			)
+			break;
+		case "GeneralStore_Outside":
+			WarpTo(
+			global.WarpLocations.GreatWimbich_GeneralStore_Outside.TileX,
+			global.WarpLocations.GreatWimbich_GeneralStore_Outside.TileY,
+			global.WarpLocations.GreatWimbich_GeneralStore_Outside.PlayerX,
+			global.WarpLocations.GreatWimbich_GeneralStore_Outside.PlayerY
+			)
+			break;
+		case "MagicStore_Inside":
+			WarpTo(
+			global.WarpLocations.GreatWimbich_MagicStore_Inside.TileX,
+			global.WarpLocations.GreatWimbich_MagicStore_Inside.TileY,
+			global.WarpLocations.GreatWimbich_MagicStore_Inside.PlayerX,
+			global.WarpLocations.GreatWimbich_MagicStore_Inside.PlayerY
+			)
+			break;
+		case "MagicStore_Outside":
+			WarpTo(
+			global.WarpLocations.GreatWimbich_MagicStore_Outside.TileX,
+			global.WarpLocations.GreatWimbich_MagicStore_Outside.TileY,
+			global.WarpLocations.GreatWimbich_MagicStore_Outside.PlayerX,
+			global.WarpLocations.GreatWimbich_MagicStore_Outside.PlayerY
+			)
+			break;
+		case "Blacksmith_Inside":
+			WarpTo(
+			global.WarpLocations.GreatWimbich_Blacksmith_Inside.TileX,
+			global.WarpLocations.GreatWimbich_Blacksmith_Inside.TileY,
+			global.WarpLocations.GreatWimbich_Blacksmith_Inside.PlayerX,
+			global.WarpLocations.GreatWimbich_Blacksmith_Inside.PlayerY
+			)
+			break;
+		case "Blacksmith_Outside":
+			WarpTo(
+			global.WarpLocations.GreatWimbich_Blacksmith_Outside.TileX,
+			global.WarpLocations.GreatWimbich_Blacksmith_Outside.TileY,
+			global.WarpLocations.GreatWimbich_Blacksmith_Outside.PlayerX,
+			global.WarpLocations.GreatWimbich_Blacksmith_Outside.PlayerY
+			)
+			break;
+		case "TwinFatherHouse_Inside":
+			WarpTo(
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.TileX,
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.TileY,
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.PlayerX,
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.PlayerY
+			)
+			break;
+		case "TwinFatherHouse_Outside":
+			WarpTo(
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.TileX,
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.TileY,
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.PlayerX,
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.PlayerY
 			)
 			break;
 			
