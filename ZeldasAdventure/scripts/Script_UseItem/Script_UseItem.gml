@@ -36,6 +36,9 @@ function UseItem_Treasure()
 			case Treasures.Candle:
 				UseTreasure_Candle()
 				break;
+			case Treasures.LifePotion:
+				UseTreasure_LifePotion()
+				break;
 			case Treasures.Compass_Earth:
 				UseTreasure_Compass_Earth();
 				break;

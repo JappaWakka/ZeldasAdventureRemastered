@@ -55,7 +55,7 @@ enum Treasures
 	Knife,
 	Harp,
 	Ticket2,
-	Potion,
+	LifePotion,
 	UnderworldMap_Earth,
 	UnderworldMap_Illusion,
 	UnderworldMap_Air,

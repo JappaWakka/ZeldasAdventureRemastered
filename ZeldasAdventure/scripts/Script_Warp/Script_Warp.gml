@@ -107,14 +107,14 @@ global.WarpLocations =
 	ForestOfOgham_ShrineOfEarth_Warp : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
 		
 	//GreatWimbich
-	GreatWimbich_GeneralStore_Inside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
-	GreatWimbich_GeneralStore_Outside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
-	GreatWimbich_MagicStore_Inside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
-	GreatWimbich_MagicStore_Outside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
-	GreatWimbich_Blacksmith_Inside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
-	GreatWimbich_Blacksmith_Outside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
-	GreatWimbich_TwinFatherHouse_Inside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
-	GreatWimbich_TwinFatherHouse_Outside : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	GreatWimbich_GeneralStore_Inside : {TileX:7,TileY:11,PlayerX:204,PlayerY:200},
+	GreatWimbich_GeneralStore_Outside : {TileX:10,TileY:12,PlayerX:62,PlayerY:156},
+	GreatWimbich_MagicStore_Inside : {TileX:8,TileY:11,PlayerX:124,PlayerY:200},
+	GreatWimbich_MagicStore_Outside : {TileX:10,TileY:12,PlayerX:276,PlayerY:160},
+	GreatWimbich_Blacksmith_Inside : {TileX:9,TileY:11,PlayerX:156,PlayerY:200},
+	GreatWimbich_Blacksmith_Outside : {TileX:11,TileY:12,PlayerX:128,PlayerY:148},
+	GreatWimbich_TwinFatherHouse_Inside : {TileX:9,TileY:12,PlayerX:204,PlayerY:196},
+	GreatWimbich_TwinFatherHouse_Outside : {TileX:11,TileY:13,PlayerX:248,PlayerY:172},
 	
 	//Shortcuts
 	SeacoastPlainShortcut_Inside_West : {TileX:12,TileY:20,PlayerX:64,PlayerY:144},

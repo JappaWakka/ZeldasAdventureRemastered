@@ -128,12 +128,13 @@ if room = Room_Overworld
 	{
 		if global.CurrentHealth < global.MaxHealth
 		{
-			run_alarm(FillHeartsAlarm)
+			run_alarms(FillHeartsAlarms)
 		}
 		else
 		{
 			DoFillHearts = false
-			FillHeartsAlarm.restart()
+			FillHeartsAlarms[0].restart()
+			FillHeartsAlarms[1].restart()
 		}
 	}
 

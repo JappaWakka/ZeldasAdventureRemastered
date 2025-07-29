@@ -44,3 +44,19 @@ function FillHP()
 		Obj_GameManager.DoFillHearts = true
 	}
 }
+function PlayOriginalHeartFillSound()
+{
+	if room = Room_Overworld and global.RemasteredMode = false
+	{
+		if global.CurrentHealth < global.MaxHealth
+		{
+			if audio_is_playing(SFX_Use_Error) = false
+			{
+				if global.CameraIsPanning = false and IsMenuVisible() = false
+				{
+					audio_play_sound_relative_toplayer(SFX_Use_Error,999,false)
+				}
+			}
+		}
+	}
+}
