@@ -1,237 +1,631 @@
 enemy.agwanda has different stats on different cells:
-	 [health=50, damage=86, defense=30] on cells gl5
-	 [health=0, damage=0, defense=0] on cells s516
-	 [health=110, damage=86, defense=28] on cells s525
+	[damage=86, defense=30, health=30] on cells gl5
+	[damage=0, health=0] on cells s516
+	[damage=86, defense=28, health=28] on cells s525
 enemy.agwanda.projectile has different stats on different cells:
-	 [damage=90] on cells gl5
-	 [damage=66] on cells s525
+	[damage=90, health=(Not Spawned, or Projectile)] on cells gl5
+	[damage=66, health=(Not Spawned, or Projectile)] on cells s525
 enemy.alligatorMan has different stats on different cells:
-	 [health=60, damage=45, defense=10] on cells r20
-	 [health=60, damage=57, defense=20] on cells s16, t16, u14, v15, v18, w15
+	[damage=45, defense=10, health=10, loot=Random] on cells r20
+	[damage=57, defense=20, health=20, loot=Random] on cells s16, t16, u14, v15, v18, w15
 enemy.alligatorMan.projectile always has the stats:
-	 [damage=55] on cells s16, t16
+	[damage=55, health=(Not Spawned, or Projectile)] on cells s16, t16
 enemy.archer always has the stats:
-	 [health=280, damage=72, defense=40, weakness=GoldNecklace, bonusDamage=70] on cells s722
+	[damage=72, defense=40, health=40, weakness=GoldNecklace, bonusDamage=70, loot=Random] on cells s722
 enemy.archer.projectile always has the stats:
-	 [damage=80] on cells s722
+	[damage=80, health=(Not Spawned, or Projectile)] on cells s722
 enemy.aviana has different stats on different cells:
-	 [health=60, damage=60, defense=24, weakness=Feather, bonusDamage=0] on cells gl3
-	 [health=770, damage=60, defense=24, weakness=Feather, bonusDamage=0] on cells s321
+	[damage=60, defense=24, health=24, weakness=Feather, bonusDamage=0] on cells gl3
+	[damage=60, defense=24, health=24, weakness=Feather, bonusDamage=0] on cells s321
 enemy.aviana.projectile has different stats on different cells:
-	 [damage=80] on cells gl3
-	 [damage=60] on cells s321
+	[damage=80, health=(Not Spawned, or Projectile)] on cells gl3
+	[damage=60, health=(Not Spawned, or Projectile)] on cells s321
 enemy.axeMan always has the stats:
-	 [health=12, damage=67, defense=36] on cells x14, x15, x16, y16, z15
+	[damage=67, defense=36, health=36, loot=Random] on cells x14, x15, x16, y16, z15
 enemy.bagoBago has different stats on different cells:
-	 [health=12, damage=50, defense=10] on cells c8
-	 [health=60, damage=50, defense=10] on cells o14, p14, q14
-	 [health=60, damage=40, defense=0] on cells p13
+	[damage=50, defense=10, health=10, loot=Random] on cells c8
+	[damage=50, defense=10, health=10] on cells o14, p14
+	[damage=40, health=0, loot=Random] on cells p13
+	[damage=50, defense=10, health=10, loot=Random] on cells q14
 enemy.bagoBago.projectile always has the stats:
-	 [damage=55] on cells c8, o14, q14
+	[damage=55, health=(Not Spawned, or Projectile)] on cells c8, o14, q14
 enemy.blob has different stats on different cells:
-	 [damage=0] on cells r17, t15
-	 [health=0, damage=0, defense=0] on cells t14, u15
+	[damage=0, health=(Not Spawned, or Projectile)] on cells r17, t15
+	[damage=0, health=0] on cells t14, u15
 enemy.bolla always has the stats:
-	 [health=30, damage=81, defense=30] on cells s720
+	[damage=81, defense=30, health=30, loot=Random] on cells s720
 enemy.bolla.projectile always has the stats:
-	 [damage=85] on cells s720
+	[damage=85, health=(Not Spawned, or Projectile)] on cells s720
 enemy.cactus always has the stats:
-	 [health=60, damage=57, defense=10] on cells v7, w9, x8
+	[damage=57, defense=10, health=10, loot=Random] on cells v7, w9, x8
 enemy.cactus.projectile always has the stats:
-	 [damage=55] on cells v7, w9, x8
+	[damage=55, health=(Not Spawned, or Projectile)] on cells v7, w9, x8
 enemy.crockarock has different stats on different cells:
-	 [health=12, damage=72, defense=38] on cells a7, a8, c8, d7
-	 [health=60, damage=72, defense=38] on cells c7
+	[damage=72, defense=38, health=38, loot=Random] on cells a7, a8, c8, d7
+	[damage=72, defense=38, health=38, loot=Random] on cells c7
 enemy.crockarock.projectile always has the stats:
-	 [damage=76] on cells a7, a8, c7, c8, d7, s707
+	[damage=76, health=(Not Spawned, or Projectile)] on cells a7, a8, c7, c8, d7, s707
 enemy.crystalShard always has the stats:
-	 [damage=54] on cells s305, s306, s319
-enemy.squibber always has the stats:
-	 [health=60, damage=57, defense=20] on cells b8, e9, h10, i10
-enemy.deeler always has the stats:
-	 [health=60, damage=40, defense=0] on cells f7, g29, g30, g31, h10, j10, m10, m13, n13, o12
+	[damage=54, health=(Not Spawned, or Projectile)] on cells s305, s306, s319
+enemy.deeler has different stats on different cells:
+	[damage=57, defense=20, health=20, loot=Random] on cells b8, e9, h10, i10
+	[damage=40, health=0, loot=Random] on cells f7, g29, g30, g31, h10, j10, m10, m13, n13, o12
 enemy.dragonfly has different stats on different cells:
-	 [health=1, damage=0, defense=0] on cells gl4
-	 [health=60, damage=50, defense=10] on cells s312, s313, s317
+	[damage=0, health=0, loot=Heart] on cells gl4
+	[damage=50, defense=10, health=10, loot=Random] on cells s312, s313, s317
 enemy.floorSpikes has different stats on different cells:
-	 [health=99, damage=58, defense=99] on cells l8, s5, s219, s420, s607, s608, s612, s614, s622, s626
-	 [health=999, damage=40, defense=999] on cells q15
+	[damage=58, defense=99, health=99] on cells l8, s5, s219, s420, s607, s608, s612, s614, s622, s626
+	[damage=40, defense=999, health=999] on cells q15
 enemy.floorSpikes.blue has different stats on different cells:
-	 [health=0, damage=58, defense=0] on cells s316
-	 [health=0, damage=0, defense=0] on cells s318, s508, s513
+	[damage=58, health=0] on cells s316
+	[damage=0, health=0] on cells s318, s508, s513
 enemy.floorSpikes.white always has the stats:
-	 [health=99, damage=58, defense=99] on cells s406, s407, s421, s609, s618, s722
+	[damage=58, defense=99, health=99] on cells s406, s407, s421, s609, s618, s722
 enemy.ganon always has the stats:
-	 [health=60, damage=82, defense=40] on cells gl8
+	[damage=82, defense=40, health=40] on cells gl8
 enemy.ganon.projectile always has the stats:
-	 [damage=102] on cells gl8
+	[damage=102, health=(Not Spawned, or Projectile)] on cells gl8
 enemy.ganonFairy has different stats on different cells:
-	 [health=0, damage=0, defense=0] on cells gl1, gl2, gl3, gl5, gl8
-	 [health=50, damage=0, defense=0] on cells gl7
+	[damage=0, health=0] on cells gl1, gl2, gl3, gl5, gl8
+	[damage=0, health=0] on cells gl7
 enemy.giantSquid has different stats on different cells:
-	 [health=12, damage=81, defense=34] on cells s20, s517, s523
-	 [health=60, damage=50, defense=15] on cells s515
+	[damage=81, defense=34, health=34, loot=Random] on cells s20, s517, s523
+	[damage=50, defense=15, health=15, loot=Random] on cells s515
 enemy.gibdo always has the stats:
-	 [health=60, damage=73, defense=30] on cells s415, s406, s407, s411, s412
+	[damage=73, defense=30, health=30, loot=Random] on cells s415, s406, s407, s411, s412
 enemy.golem always has the stats:
-	 [health=60, damage=58, defense=20] on cells m25, n18, o10, o23, o9, p10, p9, q17, z4, z6
+	[damage=58, defense=20, health=20, loot=Random] on cells m25, n18, o10, o23, o9, p10, p9, q17, z4, z6
 enemy.golem.projectile always has the stats:
-	 [damage=50] on cells m25, n18, o10, o23, o9, p10, p9, q17, z4, z6
+	[damage=50, health=(Not Spawned, or Projectile)] on cells m25, n18, o10, o23, o9, p10, p9, q17, z4, z6
 enemy.goriya always has the stats:
-	 [health=60, damage=45, defense=10, weakness=None, bonusDamage=5] on cells d24, e21, e23, e24, i23, l19, m19, n17, o16, w5, y6, z3, s215, s216
+	[damage=45, defense=10, health=10, weakness=None, bonusDamage=5, loot=Random] on cells d24, e21, e23, e24, i23, l19, m19, n17, o16, w5, y6, z3, s215, s216
 enemy.goriya.projectile always has the stats:
-	 [damage=40] on cells d24, e21, e23, e24, i23, l19, m19, o16, w5, y6, z3, s215, s216
+	[damage=40, health=(Not Spawned, or Projectile)] on cells d24, e21, e23, e24, i23, l19, m19, n17, o16, w5, y6, z3, s215, s216
 enemy.greenBird always has the stats:
-	 [health=60, damage=62, defense=30] on cells k28, o22, o24, p21
+	[damage=62, defense=30, health=30, loot=Random] on cells k28, o22, o24, p21
 enemy.guard always has the stats:
-	 [health=0, damage=0, defense=0] on cells p8, z17
+	[damage=0, health=0] on cells p8, z17
 enemy.ironKnuckle has different stats on different cells:
-	 [health=60, damage=58, defense=32] on cells s613, s615, s617, s625
-	 [health=60, damage=75, defense=32] on cells s626
+	[damage=58, defense=32, health=32, loot=Random] on cells s613, s615, s617, s625
+	[damage=75, defense=32, health=32, loot=Random] on cells s626
 enemy.jack always has the stats:
-	 [health=99, damage=48, defense=99] on cells s406, s407, s421
+	[damage=48, defense=99, health=99] on cells s406, s407, s421
 enemy.jackaroo always has the stats:
-	 [health=60, damage=51, defense=5] on cells s202, s223
+	[damage=51, defense=5, health=5, loot=Random] on cells s202, s223
 enemy.kannis always has the stats:
-	 [health=8, damage=96, defense=40] on cells s716, s717, s718
+	[damage=96, defense=40, health=40, loot=Random] on cells s716, s717, s718
 enemy.keese always has the stats:
-	 [health=60, damage=45, defense=10] on cells s105, s106, s110, s111, s115, s315
+	[damage=45, defense=10, health=10, loot=Random] on cells s105, s106, s110, s111, s115, s315
 enemy.kelpi always has the stats:
-	 [health=280, damage=69, defense=34, weakness=TurquoiseRing, bonusDamage=70] on cells s508, s513, s521
+	[damage=69, defense=34, health=34, weakness=TurquoiseRing, bonusDamage=70, loot=Random] on cells s508, s513, s521
 enemy.knight.blue always has the stats:
-	 [health=280, damage=73, defense=35, weakness=Broadsword, bonusDamage=70] on cells s620
+	[damage=73, defense=35, health=35, weakness=Broadsword, bonusDamage=70] on cells s620
 enemy.knight.green always has the stats:
-	 [health=280, damage=73, defense=35, weakness=Broadsword, bonusDamage=70] on cells s621
+	[damage=73, defense=35, health=35, weakness=Broadsword, bonusDamage=70] on cells s621
 enemy.knight.red always has the stats:
-	 [health=280, damage=73, defense=35, weakness=Joust, bonusDamage=70] on cells s612
+	[damage=73, defense=35, health=35, weakness=Joust, bonusDamage=70] on cells s612
 enemy.lanmola always has the stats:
-	 [health=60, damage=68, defense=20] on cells aa16, p16, q16, q18, q19, q20, v20
+	[damage=68, defense=20, health=20, loot=Random] on cells aa16, p16, q16, q18, q19, q20, v20
 enemy.lavaLizard always has the stats:
-	 [health=18, damage=81, defense=36] on cells s705, s706
+	[damage=81, defense=36, health=36, loot=Random] on cells s705, s706
 enemy.lavaLizard.projectile always has the stats:
-	 [damage=0] on cells s705, s706
+	[damage=0, health=(Not Spawned, or Projectile)] on cells s705, s706
 enemy.leever always has the stats:
-	 [health=60, damage=40, defense=0] on cells d8, e8, h27, h28, i26, k17, k18, l18, m16
+	[damage=40, health=0, loot=Random] on cells d8, e8, h27, h28, i26, k17, k18, l18, m16
 enemy.llort has different stats on different cells:
-	 [health=60, damage=60, defense=24] on cells gl1, s118
-	 [health=60, damage=50, defense=24] on cells s121
+	[damage=60, defense=24, health=24] on cells gl1, s118
+	[damage=50, defense=24, health=24] on cells s121
 enemy.llort.projectile has different stats on different cells:
-	 [damage=82] on cells gl1
-	 [damage=40] on cells s121
+	[damage=82, health=(Not Spawned, or Projectile)] on cells gl1
+	[damage=40, health=(Not Spawned, or Projectile)] on cells s121
 enemy.loccasin has different stats on different cells:
-	 [health=60, damage=57, defense=20] on cells s304
-	 [health=20, damage=48, defense=30] on cells s709, s711
+	[damage=57, defense=20, health=20, loot=Random] on cells s304
+	[damage=48, defense=30, health=30, loot=Random] on cells s709, s711
 enemy.lowder always has the stats:
-	 [health=60, damage=57, defense=10] on cells ac17, m18, o17, v12, v8, w12, x6, x7, y15, y4, y6, z16, z2
+	[damage=57, defense=10, health=10, loot=Random] on cells ac17, m18, o17, v12, v8, w12, x6, x7, y15, y4, y6, z16, z2
 enemy.malmord has different stats on different cells:
-	 [health=1, damage=80, defense=0] on cells gl4
-	 [health=90, damage=60, defense=24] on cells s422
+	[damage=80, health=0] on cells gl4
+	[damage=60, defense=24, health=24] on cells s422
 enemy.mimicMole always has the stats:
-	 [health=60, damage=45, defense=5] on cells l9, m8, m9
+	[damage=45, defense=5, health=5, loot=Random] on cells l9, m8, m9
 enemy.moblin always has the stats:
-	 [health=60, damage=50, defense=15] on cells f27, g27, g28, h26, j20, j21, k19, l10, m10, m12, n8, o12, q8, r7, s7, t8
+	[damage=50, defense=15, health=15, loot=Random] on cells f27, g27, g28, h26, j20, j21, k19, l10, m10, m12, n8, o12, q8, r7, s7, t8
 enemy.moby has different stats on different cells:
-	 [health=60, damage=45, defense=0] on cells g26, j25, j26, l18, m17, n16, q9, r6, s8
-	 [damage=45] on cells s7
+	[damage=45, health=0, loot=Random] on cells g26, j25, j26, l18, m17, n16, q9, r6, s8
+	[damage=45, health=(Not Spawned, or Projectile), loot=Random] on cells s7
 enemy.molluska has different stats on different cells:
-	 [health=60, damage=50, defense=15] on cells o13
-	 [health=60, damage=51, defense=15] on cells y17, s220, s221
+	[damage=50, defense=15, health=15, loot=Random] on cells o13
+	[damage=51, defense=15, health=15, loot=Random] on cells y17, s220, s221
+enemy.molluska.projectile always has the stats:
+	[damage=50, health=(Not Spawned, or Projectile)] on cells o13, y17, s220, s221
 enemy.octorok always has the stats:
-	 [health=60, damage=61, defense=23] on cells l11, m13, t14, u15, w16, s510, s511
+	[damage=61, defense=23, health=23, loot=Random] on cells l11, m13, t14, u15, w16, s510, s511
 enemy.pasquinade has different stats on different cells:
-	 [health=60, damage=55, defense=24] on cells gl2
-	 [health=0, damage=0, defense=0] on cells s217
-	 [health=70, damage=55, defense=24] on cells s224
+	[damage=55, defense=24, health=24] on cells gl2
+	[damage=0, health=0] on cells s217
+	[damage=55, defense=24, health=24] on cells s224
 enemy.pasquinade.projectile has different stats on different cells:
-	 [damage=82] on cells gl2
-	 [damage=42] on cells s224
+	[damage=82, health=(Not Spawned, or Projectile)] on cells gl2
+	[damage=42, health=(Not Spawned, or Projectile)] on cells s224
 enemy.patra always has the stats:
-	 [health=30, damage=37, defense=5] on cells s214, s212, s213, s308, s309
+	[damage=37, defense=5, health=5, loot=Random] on cells s214, s212, s213, s308, s309
 enemy.peahat always has the stats:
-	 [health=60, damage=44, defense=10] on cells e22, f20, f9, g21, i20, j23, k10, m11, n10, n15
+	[damage=44, defense=10, health=10, loot=Random] on cells e22, f20, f9, g21, i20, j23, k10, m11, n10, n15
 enemy.peahat.projectile always has the stats:
-	 [damage=46] on cells e22, f20, f9, g21, i20, j23, k10, m11, n10, n15
+	[damage=46, health=(Not Spawned, or Projectile)] on cells e22, f20, f9, g21, i20, j23, k10, m11, n10, n15
 enemy.polsVoice always has the stats:
-	 [health=280, damage=51, defense=31, weakness=Noise, bonusDamage=70] on cells s207, s402, s404
+	[damage=51, defense=31, health=31, weakness=Noise, bonusDamage=70, loot=Random] on cells s207, s402, s404
 enemy.purpleBird always has the stats:
-	 [health=60, damage=52, defense=20] on cells w5, w7, x5, y3, y6
+	[damage=52, defense=20, health=20, loot=Random] on cells w5, w7, x5, y3, y6
 enemy.purpleFish always has the stats:
-	 [health=60, damage=62, defense=35] on cells s522
+	[damage=62, defense=35, health=35, loot=Random] on cells s522
 enemy.romraven has different stats on different cells:
-	 [health=30, damage=50, defense=15] on cells s418
-	 [health=0, damage=40, defense=34] on cells s421
-	 [health=30, damage=45, defense=0] on cells s710, s715
+	[damage=50, defense=15, health=15] on cells s418
+	[damage=40, defense=34, health=34] on cells s421
+	[damage=45, health=0, loot=Random] on cells s710
+	[damage=45, health=0] on cells s715
 enemy.rope always has the stats:
-	 [health=5, damage=57, defense=500] on cells j15
+	[damage=57, defense=500, health=500] on cells j15
 enemy.sardak.blue always has the stats:
-	 [health=80, damage=50, defense=30, weakness=JadeRing, bonusDamage=70] on cells s112
+	[damage=50, defense=30, health=30, weakness=JadeRing, bonusDamage=70, loot=Random] on cells s112
 enemy.sardak.red always has the stats:
-	 [health=280, damage=50, defense=30, weakness=JadeRing, bonusDamage=70] on cells s107
+	[damage=50, defense=30, health=30, weakness=JadeRing, bonusDamage=70, loot=Random] on cells s107
 enemy.sardak.yellow always has the stats:
-	 [health=280, damage=50, defense=30, weakness=JadeRing, bonusDamage=70] on cells s120
+	[damage=50, defense=30, health=30, weakness=JadeRing, bonusDamage=70, loot=Random] on cells s120
 enemy.sardak.yellow.projectile always has the stats:
-	 [health=(Not Spawned), damage=40, defense=30] on cells s120
+	[damage=40, defense=30, health=(Not Spawned, or Projectile)] on cells s120
 enemy.seaMonster always has the stats:
-	 [health=60, damage=58, defense=30] on cells o28
+	[damage=58, defense=30, health=30] on cells o28
 enemy.spearThrower always has the stats:
-	 [health=30, damage=81, defense=30] on cells s703, s704
+	[damage=81, defense=30, health=30, loot=Random] on cells s703, s704
 enemy.spearThrower.projectile always has the stats:
-	 [damage=80] on cells s703, s704
+	[damage=80, health=(Not Spawned, or Projectile)] on cells s703, s704
 enemy.spikedBlock always has the stats:
-	 [health=99, damage=58, defense=99] on cells s403, s408, s414, s607
+	[damage=58, defense=99, health=99] on cells s403, s408, s414, s607
 enemy.stalfos always has the stats:
-	 [health=60, damage=51, defense=15] on cells s203, s218, s219
+	[damage=51, defense=15, health=15, loot=Random] on cells s203, s218, s219
 enemy.swampZola.blue always has the stats:
-	 [health=60, damage=62, defense=30] on cells m26, n25, o25, p22, v19
+	[damage=62, defense=30, health=30] on cells m26, n25, o25, p22, v19
 enemy.swampZola.blue.projectile always has the stats:
-	 [damage=60] on cells m26, n25, o25, p22, v19
-enemy.swampZola.green always has the stats:
-	 [health=60, damage=50, defense=20] on cells j11, l12, n12, r17, r18, s16, t15, t16
+	[damage=60, health=(Not Spawned, or Projectile)] on cells m26, n25, o25, p22, v19
+enemy.swampZola.green has different stats on different cells:
+	[damage=50, defense=20, health=20] on cells j11
+	[damage=50, defense=20, health=20, loot=Random] on cells l12, n12, r17, r18, s16, t15, t16
 enemy.swampZola.green.projectile always has the stats:
-	 [damage=55] on cells j11, l12, n12, r17, r18, t15
-enemy.tektite.stronger always has the stats:
-	 [health=60, damage=51, defense=5] on cells j16, k15, k16, l16, m14, m15, r5, r8, v10, v12, v9, x9
-enemy.tektite.weaker always has the stats:
-	 [health=60, damage=40, defense=0] on cells q10, s101a, s103, s104, s116
+	[damage=55, health=(Not Spawned, or Projectile)] on cells j11, l12, n12, r17, r18, t15
+enemy.tektite has different stats on different cells:
+	[damage=51, defense=5, health=5, loot=Random] on cells j16, k15, k16, l16, m14, m15, r5, r8, v10, v12, v9, x9
+	[damage=40, health=0, loot=Random] on cells q10, s101a, s103, s104, s116
+	[damage=51, defense=5, health=(Not Spawned, or Projectile), loot=Random] on cells s7
+	[damage=40, health=(Not Spawned, or Projectile), loot=Random] on cells s118
 enemy.tinyFish always has the stats:
-	 [damage=55] on cells p14
+	[damage=55, health=(Not Spawned, or Projectile)] on cells p14
 enemy.tornado always has the stats:
-	 [health=280, damage=52, defense=32, weakness=Calm, bonusDamage=72] on cells s302, s303
+	[damage=52, defense=32, health=32, weakness=Calm, bonusDamage=72, loot=Random] on cells s302, s303
 enemy.tumbleBot always has the stats:
-	 [health=60, damage=40, defense=0] on cells f21, f25, g25, h20, h21, h25, i21, i22, i24, i25, n14, o15, p11, p13, q13, r15
+	[damage=40, health=0, loot=Random] on cells f21, f25, g25, h20, h21, h25, i21, i22, i24, i25, n14, o15, p11, p13, q13, r15
 enemy.tumbleHead always has the stats:
-	 [damage=40] on cells r15
+	[damage=40, health=(Not Spawned, or Projectile), loot=Random] on cells r15
 enemy.tumbleSkull always has the stats:
-	 [health=60, damage=57, defense=10] on cells s310, s311
+	[damage=57, defense=10, health=10, loot=Random] on cells s310, s311
 enemy.turtle always has the stats:
-	 [health=60, damage=62, defense=35] on cells s519, s520
+	[damage=62, defense=35, health=35, loot=Random] on cells s519, s520
 enemy.ursore always has the stats:
-	 [health=130, damage=80, defense=34] on cells s628
+	[damage=80, defense=34, health=34] on cells s628
 enemy.vapora always has the stats:
-	 [health=60, damage=57, defense=25] on cells s307, s314
+	[damage=57, defense=25, health=25, loot=Random] on cells s307, s314
 enemy.vapora.projectile always has the stats:
-	 [damage=52] on cells s307, s314
+	[damage=52, health=(Not Spawned, or Projectile)] on cells s307, s314
 enemy.vire always has the stats:
-	 [health=60, damage=51, defense=15] on cells s204, s206
+	[damage=51, defense=15, health=15] on cells s204, s206
 enemy.volta always has the stats:
-	 [health=60, damage=52, defense=10] on cells s316, s318, s320
+	[damage=52, defense=10, health=10, loot=Random] on cells s316, s318, s320
 enemy.wallSpike always has the stats:
-	 [health=99, damage=60, defense=99] on cells s502, s503, s509, s514
+	[damage=60, defense=99, health=99] on cells s502, s503, s509, s514
 enemy.wallmaster always has the stats:
-	 [health=0, damage=0, defense=0] on cells s222
+	[damage=0, health=0] on cells s222
 enemy.warbane has different stats on different cells:
-	 [health=50, damage=86, defense=34] on cells gl7
-	 [health=0, damage=0, defense=0] on cells s712, s721
-	 [health=50, damage=76, defense=38] on cells s723
+	[damage=86, defense=34, health=34] on cells gl7
+	[damage=0, health=0] on cells s712, s721
+	[damage=76, defense=38, health=38] on cells s723
 enemy.warbane.projectile always has the stats:
-	 [damage=82] on cells gl7
+	[damage=82, health=(Not Spawned, or Projectile)] on cells gl7
 enemy.wizzrobe always has the stats:
-	 [health=280, damage=45, defense=35, weakness=Dagger, bonusDamage=70] on cells s209, s210, s211, s416, s417, s419
+	[damage=45, defense=35, health=35, weakness=Dagger, bonusDamage=70, loot=Random] on cells s209, s210, s211, s416, s417, s419
 enemy.wizzrobe.projectile always has the stats:
-	 [damage=52] on cells s209, s210, s211, s416, s417, s419
+	[damage=52, health=(Not Spawned, or Projectile)] on cells s209, s210, s211, s416, s417, s419
 enemy.zol always has the stats:
-	 [health=60, damage=54, defense=30] on cells s503, s506, s509
-npc.goriya.projectile always has the stats:
-	 [damage=40] on cells n17
-npc.molluska.projectile always has the stats:
-	 [damage=50] on cells o13, y17, s220, s221
+	[damage=54, defense=30, health=30, loot=Random] on cells s503, s506, s509
+env.archery.unknownActor331 always has the stats:
+	[damage=0, defense=500, health=500, weakness=ZeldaWeakness_99_maybe, bonusDamage=0] on cells s606
+env.archeryTarget always has the stats:
+	[damage=0, defense=100, health=100, weakness=BowAndArrow, bonusDamage=0] on cells s606
+env.barrier.s2.bottom always has the stats:
+	[damage=0, health=0] on cells s224
+env.barrier.s2.left always has the stats:
+	[damage=0, health=0] on cells s207
+env.barrier.s2.right always has the stats:
+	[damage=0, health=0] on cells s214, s207
+env.barrier.s2.top always has the stats:
+	[damage=0, health=0] on cells s224
+env.barrier.s3.bottom always has the stats:
+	[damage=60, defense=24, health=24] on cells s321
+env.barrier.s3.top always has the stats:
+	[damage=60, defense=24, health=24] on cells s321
+env.barrier.s4.left always has the stats:
+	[damage=60, defense=24, health=24] on cells s422
+env.barrier.s4.right always has the stats:
+	[damage=60, defense=24, health=24] on cells s422
+env.barrier.s5.left always has the stats:
+	[damage=0, health=0] on cells s525
+env.barrier.s5.right always has the stats:
+	[damage=0, health=0] on cells s525
+env.barrier.s6.left always has the stats:
+	[damage=0, health=0] on cells s628
+env.barrier.s6.right always has the stats:
+	[damage=0, health=0] on cells s628
+env.barrier.s7.right always has the stats:
+	[damage=0, health=0] on cells s723
+env.barrier.s7.top always has the stats:
+	[damage=0, health=0] on cells s723
+env.block.blue always has the stats:
+	[damage=0, health=0] on cells s313, s316
+env.block.white always has the stats:
+	[damage=0, health=0] on cells s602, s616
+env.bridge.ladder always has the stats:
+	[damage=0, health=0] on cells s102
+env.bridge.movingRock always has the stats:
+	[damage=0, health=0] on cells s208
+env.bridge.plank always has the stats:
+	[damage=0, health=0] on cells s505
+env.bridge.unknownActor111 always has the stats:
+	[damage=0, health=0] on cells m25a
+env.celestialSign always has the stats:
+	[damage=0, health=0] on cells s122, s225, s322, s423, s526, s629, s724
+env.door always has the stats:
+	[damage=0, health=0] on cells s203
+env.ironBars.bottom always has the stats:
+	[damage=0, health=0] on cells s121
+env.ironBars.top always has the stats:
+	[damage=0, health=0] on cells s121
+env.laserWall has different stats on different cells:
+	[damage=50, defense=900, health=900] on cells ab17
+	[damage=40, defense=900, health=900] on cells s120, s314
+env.passage always has the stats:
+	[damage=0, health=0] on cells s203
+env.pit always has the stats:
+	[damage=0, health=0] on cells s201
+env.raft has different stats on different cells:
+	[damage=0, health=0, weakness=DeveloperMistake_VialOfWinds, bonusDamage=0] on cells l28
+	[damage=0, health=0, weakness=DeveloperMistake_Raft, bonusDamage=0] on cells m28, n28, o28, p28, q28, s516, s520, s521, s522, s523, s524
+	[damage=0, health=0] on cells s517, s519
+env.redBootsEffect always has the stats:
+	[damage=0, health=0] on cells s17, t17, t18, u18
+env.rippedTentWall always has the stats:
+	[damage=0, health=0] on cells s215
+env.switch always has the stats:
+	[damage=0, defense=999, health=999, weakness=ZeldaWeakness_99_maybe, bonusDamage=0] on cells m25a, s403, s420, s421, s607, s608, s614
+env.switch.floatingSkull always has the stats:
+	[damage=0, defense=80, health=80, weakness=BowAndArrow, bonusDamage=0] on cells s319
+env.tallFire always has the stats:
+	[damage=64, defense=99, health=99] on cells b7, j15, s706, s711, s718, s720
+env.teleportPixel always has the stats:
+	[damage=0, health=0] on cells g32, j22, k13, v16
+env.torch always has the stats:
+	[damage=0, health=0] on cells s115, s116, s118, s119
+env.unknownActor254 always has the stats:
+	[damage=0, health=0] on cells s206
+env.unknownActor275 always has the stats:
+	[damage=0, health=0] on cells s305, s306, s319, s707
+env.unknownActor288 always has the stats:
+	[damage=0, health=0] on cells s319
+env.waterSpout always has the stats:
+	[damage=0, health=0] on cells t18
+item.compass.s1 always has the stats:
+	[damage=0, health=0] on cells s105
+item.compass.s2 always has the stats:
+	[damage=0, health=0] on cells s209
+item.compass.s3 always has the stats:
+	[damage=0, health=0] on cells s308
+item.compass.s4 always has the stats:
+	[damage=0, health=0] on cells s406
+item.compass.s5 always has the stats:
+	[damage=0, health=0] on cells s514
+item.compass.s6 always has the stats:
+	[damage=0, health=0] on cells s603
+item.compass.s7 always has the stats:
+	[damage=0, health=0] on cells s704
+item.map.s1 always has the stats:
+	[damage=0, health=0] on cells s104
+item.map.s2 always has the stats:
+	[damage=0, health=0] on cells s206
+item.map.s3 always has the stats:
+	[damage=0, health=0] on cells s302
+item.map.s4 always has the stats:
+	[damage=0, health=0] on cells u16
+item.map.s5 always has the stats:
+	[damage=0, health=0] on cells s503
+item.map.s6 always has the stats:
+	[damage=0, health=0] on cells s602
+item.map.s7 always has the stats:
+	[damage=0, health=0] on cells s705
+item.treasure.admitTicket always has the stats:
+	[damage=20, health=0] on cells s609
+item.treasure.alligatorBoots always has the stats:
+	[damage=0, health=0] on cells v14
+item.treasure.blackKey has different stats on different cells:
+	[damage=0, health=(Not Spawned, or Projectile)] on cells n11
+	[damage=0, health=0] on cells s220
+item.treasure.blackOrb always has the stats:
+	[damage=0, health=0] on cells s214, s213
+item.treasure.bone always has the stats:
+	[damage=20, health=0] on cells k13a
+item.treasure.bouquet always has the stats:
+	[damage=20, health=0] on cells s601
+item.treasure.candle has different stats on different cells:
+	[damage=100, health=0] on cells f26, k14, l13a, t20
+	[damage=0, health=0] on cells j22a
+item.treasure.coal always has the stats:
+	[damage=0, health=0] on cells aa15
+item.treasure.dagger always has the stats:
+	[damage=0, health=0] on cells s215
+item.treasure.deepFriedOctorokLegs always has the stats:
+	[damage=300, health=0] on cells v14
+item.treasure.diamond always has the stats:
+	[damage=0, health=0] on cells l13a
+item.treasure.emptyWaterBottle always has the stats:
+	[damage=0, health=0] on cells j24
+item.treasure.feather always has the stats:
+	[damage=0, health=0] on cells n11
+item.treasure.fishingNet always has the stats:
+	[damage=0, health=0] on cells u20
+item.treasure.flute always has the stats:
+	[damage=0, health=0] on cells l14
+item.treasure.fullWaterBottle always has the stats:
+	[damage=0, health=0] on cells e20
+item.treasure.goldKey always has the stats:
+	[damage=100, health=(Not Spawned, or Projectile)] on cells f26, t20
+item.treasure.goldenBoots always has the stats:
+	[damage=0, health=0] on cells v16
+item.treasure.goldenKey always has the stats:
+	[damage=0, health=0] on cells s204
+item.treasure.harp always has the stats:
+	[damage=0, health=0] on cells j21a, l14
+item.treasure.heartContainer always has the stats:
+	[damage=0, health=0] on cells f10, m25a, o11a, s18
+item.treasure.ladder always has the stats:
+	[damage=0, health=0] on cells f28
+item.treasure.lifePotion always has the stats:
+	[damage=200, health=0] on cells e7, k14, p12, t20
+item.treasure.magicShield always has the stats:
+	[damage=500, health=0] on cells f26
+item.treasure.plank always has the stats:
+	[damage=0, health=0] on cells s504
+item.treasure.raft always has the stats:
+	[damage=0, health=0] on cells k15
+item.treasure.redBoots always has the stats:
+	[damage=0, health=0] on cells s116
+item.treasure.redBow always has the stats:
+	[damage=50, health=0] on cells s601
+item.treasure.repellent always has the stats:
+	[damage=100, health=0] on cells v14
+item.treasure.rug always has the stats:
+	[damage=0, health=0] on cells s314
+item.treasure.saltcellar always has the stats:
+	[damage=10, health=0] on cells s601
+item.treasure.silverTrumpet always has the stats:
+	[damage=0, health=0] on cells k20
+item.treasure.squareTicket always has the stats:
+	[damage=20, health=0] on cells s618
+item.treasure.vialOfAcid always has the stats:
+	[damage=0, health=0] on cells v16a
+item.treasure.vialOfWinds always has the stats:
+	[damage=0, health=0] on cells j24
+item.weapon.boomerang always has the stats:
+	[damage=45, defense=10, health=10, loot=Random] on cells d24
+item.weapon.bowAndArrow always has the stats:
+	[damage=0, health=0] on cells y14, s304
+item.weapon.broadsword always has the stats:
+	[damage=0, health=0] on cells p8
+item.weapon.calm always has the stats:
+	[damage=100, health=0] on cells j22a
+item.weapon.dagger always has the stats:
+	[damage=0, health=0] on cells j22a
+item.weapon.firestorm always has the stats:
+	[damage=0, health=0] on cells j22
+item.weapon.goldNecklace always has the stats:
+	[damage=0, health=0] on cells s605
+item.weapon.hammer always has the stats:
+	[damage=0, health=0] on cells s712
+item.weapon.hourglass always has the stats:
+	[damage=0, health=0] on cells p20a
+item.weapon.jadeAmulet always has the stats:
+	[damage=100, health=0] on cells k13b
+item.weapon.jadeRing always has the stats:
+	[damage=0, health=0] on cells s108
+item.weapon.joust always has the stats:
+	[damage=0, health=0] on cells h9
+item.weapon.leatherBook always has the stats:
+	[damage=0, health=0] on cells p15
+item.weapon.noise always has the stats:
+	[damage=0, health=0] on cells r9
+item.weapon.opalAmulet always has the stats:
+	[damage=0, health=0] on cells p15
+item.weapon.pyros always has the stats:
+	[damage=0, health=0] on cells j15
+item.weapon.ringsOfFire always has the stats:
+	[damage=150, health=0] on cells k13b
+item.weapon.roarStick always has the stats:
+	[damage=0, health=0] on cells s608
+item.weapon.shortAxe always has the stats:
+	[damage=0, health=0] on cells k13
+item.weapon.trident always has the stats:
+	[damage=0, health=(Not Spawned, or Projectile)] on cells u19
+item.weapon.turquoiseRing always has the stats:
+	[damage=20, health=0] on cells k13b
+item.weapon.wand always has the stats:
+	[damage=0, health=0] on cells h23
+npc.archeryMinigameOwner always has the stats:
+	[damage=0, health=0] on cells s606
+npc.beggar always has the stats:
+	[damage=0, defense=500, health=500] on cells j22
+npc.bitterbeck always has the stats:
+	[damage=40, health=0, loot=Random] on cells y5
+npc.blacksmith always has the stats:
+	[damage=0, health=0] on cells k14, l13a
+npc.dressyWoman always has the stats:
+	[damage=0, health=0] on cells l15
+npc.ericAndIan always has the stats:
+	[damage=0, health=0] on cells l14
+npc.faust always has the stats:
+	[damage=40, health=0, loot=Random] on cells u18
+npc.friendlyGoblin always has the stats:
+	[damage=0, health=0] on cells h9
+npc.ghostDog always has the stats:
+	[damage=63, defense=30, health=30, loot=Random] on cells s6
+npc.ghostFarmer always has the stats:
+	[damage=0, health=0] on cells j17
+npc.glebb always has the stats:
+	[damage=0, health=0] on cells j24
+npc.goblin.unknownActor35 always has the stats:
+	[damage=0, health=0] on cells g9
+npc.greatFairy always has the stats:
+	[damage=0, health=0] on cells ac18, n9, w8
+npc.greatFairy.sparkles always has the stats:
+	[damage=0, health=0] on cells ac18, n9, w8
+npc.greenKnightSpectator always has the stats:
+	[damage=0, health=0] on cells s622
+npc.gwynla always has the stats:
+	[damage=0, health=0] on cells r9
+npc.hag always has the stats:
+	[damage=0, health=0] on cells h29
+npc.hag.campfire always has the stats:
+	[damage=0, health=0] on cells h29
+npc.hoodedWoman always has the stats:
+	[damage=40, health=0, loot=Random] on cells v16
+npc.horse always has the stats:
+	[damage=0, health=0] on cells n11
+npc.houseKeeper always has the stats:
+	[damage=40, health=0, loot=Random] on cells w10
+npc.krebb always has the stats:
+	[damage=0, health=0] on cells j22a
+npc.kronThePegleg always has the stats:
+	[damage=0, health=0] on cells p12
+npc.livingFarmer always has the stats:
+	[damage=0, health=0] on cells l17
+npc.lonlyn always has the stats:
+	[damage=0, health=0] on cells r9
+npc.lounger always has the stats:
+	[damage=0, health=0] on cells k13
+npc.madameKriggle always has the stats:
+	[damage=0, health=0] on cells k13b
+npc.merchant.unknownActor168 always has the stats:
+	[damage=63, defense=30, health=30, loot=Random] on cells s6
+npc.merchant.unknownActor179 always has the stats:
+	[damage=0, health=0] on cells t20
+npc.merchant.unknownActor181 always has the stats:
+	[damage=40, health=0, loot=Random] on cells u16
+npc.merchant.unknownActor189 always has the stats:
+	[damage=40, health=0, loot=Random] on cells v14
+npc.moblinHeadInn.unknownActor58 always has the stats:
+	[damage=0, health=0] on cells j22a
+npc.moblinHeadInn.unknownActor59 always has the stats:
+	[damage=0, health=0] on cells j22a
+npc.mystic always has the stats:
+	[damage=0, health=0] on cells v11
+npc.oldSailor always has the stats:
+	[damage=0, health=0] on cells p20a
+npc.pickpocket always has the stats:
+	[damage=0, health=0] on cells l27a
+npc.purpleStallOwner always has the stats:
+	[damage=0, health=0] on cells s609
+npc.quarryMiner always has the stats:
+	[damage=0, health=0] on cells aa15
+npc.randomCapeGuy always has the stats:
+	[damage=0, health=0] on cells l13
+npc.rebel.left always has the stats:
+	[damage=0, health=0] on cells z13
+npc.rebel.right always has the stats:
+	[damage=0, health=0] on cells z13
+npc.sailor always has the stats:
+	[damage=0, health=0] on cells l27, l28
+npc.sailor2 always has the stats:
+	[damage=0, health=0] on cells l28
+npc.shopkeeperAndKnave.unknownActor72 always has the stats:
+	[damage=0, health=0] on cells k13a
+npc.shopkeeperAndKnave.unknownActor73 always has the stats:
+	[damage=0, health=0] on cells k13a
+npc.shopkeeperDog always has the stats:
+	[damage=0, health=0] on cells k13
+npc.shurmak always has the stats:
+	[damage=0, health=0] on cells p15
+npc.sirramBew always has the stats:
+	[damage=40, health=0, loot=Random] on cells v16a
+npc.skaterDude always has the stats:
+	[damage=0, defense=900, health=900] on cells g11
+npc.sleepingMan always has the stats:
+	[damage=0, health=0] on cells n17, x11
+npc.stallOwner2 always has the stats:
+	[damage=0, health=0] on cells s603
+npc.talkingChest always has the stats:
+	[damage=0, health=0] on cells s108
+npc.talkingMushroom always has the stats:
+	[damage=0, health=0] on cells k20
+npc.thabul always has the stats:
+	[damage=40, health=0, loot=Random] on cells v5
+npc.thirstyChild always has the stats:
+	[damage=0, health=0] on cells s605
+npc.tiredTraveler always has the stats:
+	[damage=0, health=0] on cells j22a
+npc.toobar always has the stats:
+	[damage=0, health=0] on cells l27a
+npc.townMerchant always has the stats:
+	[damage=0, health=0] on cells k14
+npc.unknown20 always has the stats:
+	[damage=0, health=0] on cells e7
+npc.unknownActor102 always has the stats:
+	[damage=0, health=0] on cells l27
+npc.unknownActor116 always has the stats:
+	[damage=0, health=0] on cells m27
+npc.unknownActor118 always has the stats:
+	[damage=0, health=0] on cells n11
+npc.unknownActor142 always has the stats:
+	[damage=0, health=0] on cells p20a
+npc.unknownActor148 always has the stats:
+	[damage=0, health=0] on cells r10
+npc.unknownActor149 always has the stats:
+	[damage=0, health=0] on cells r10
+npc.unknownActor166 always has the stats:
+	[damage=0, health=0] on cells s301, z5
+npc.unknownActor170 always has the stats:
+	[damage=0, health=0] on cells s601
+npc.unknownActor210 always has the stats:
+	[damage=40, health=0, loot=Random] on cells z1
+npc.unknownActor24 always has the stats:
+	[damage=0, health=0] on cells f26
+npc.unknownActor323 always has the stats:
+	[damage=0, health=0] on cells s603, s604, s619
+npc.unknownActor325 always has the stats:
+	[damage=0, health=0] on cells s603
+npc.unknownActor336 always has the stats:
+	[damage=0, health=0] on cells s611
+npc.unknownActor96 always has the stats:
+	[damage=0, health=0] on cells l14a
+npc.waiter always has the stats:
+	[damage=0, health=0] on cells n11a
+npc.whiteSteedLodge.unknownActor122 always has the stats:
+	[damage=0, health=0] on cells n11a
+npc.whiteSteedLodge.unknownActor124 always has the stats:
+	[damage=0, health=0] on cells n11a
+npc.whiteSteedLodge.unknownActor125 always has the stats:
+	[damage=0, health=0] on cells n11a
+npc.wimbich.unknownActor89 always has the stats:
+	[damage=0, health=0] on cells l13
+npc.yalzan always has the stats:
+	[damage=0, health=0] on cells q15
+npc.yellowStallOwner always has the stats:
+	[damage=0, health=0] on cells s618
+npc.yvonne always has the stats:
+	[damage=0, health=0] on cells l14
+npc.zeldaSliding always has the stats:
+	[damage=0, health=0] on cells s202

@@ -18,7 +18,7 @@
   "VTile": false,
   "For3D": false,
   "DynamicTexturePage": false,
-  "width": 382,
+  "width": 384,
   "height": 240,
   "textureGroupId": {
     "name": "TextureGroup_Maps",
