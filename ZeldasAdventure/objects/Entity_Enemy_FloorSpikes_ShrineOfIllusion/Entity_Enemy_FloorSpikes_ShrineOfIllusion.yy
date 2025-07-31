@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Enemy_FloorSpikes",
+  "name": "Entity_Enemy_FloorSpikes_ShrineOfIllusion",
   "spriteId": {
     "name": "Sprite_Enemy_FloorSpikes",
     "path": "sprites/Sprite_Enemy_FloorSpikes/Sprite_Enemy_FloorSpikes.yy",
@@ -33,6 +33,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [

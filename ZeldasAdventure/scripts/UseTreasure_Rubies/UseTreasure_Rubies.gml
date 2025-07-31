@@ -98,6 +98,22 @@ function UseTreasure_Rubies()
 			}
 		}
 	}
+	//Donora Plain Gate
+	else if global.CurrentTile.x = 16 && global.CurrentTile.y = 14
+	{
+		//If you already have the Firestorm Spell
+		if Register_Registered("DonoraGateFeePaid") = true
+		{
+			if global.RemasteredMode = true
+			{
+				return false
+			}
+			else
+			{
+				audio_play_sound_relative(SFX_Use_Error,100,false);
+			}
+		}
+	}
 	else
 	{
 		if global.RemasteredMode = true

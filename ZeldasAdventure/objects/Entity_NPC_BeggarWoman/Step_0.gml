@@ -25,7 +25,6 @@ if IsPlayerOnSameTile() = true
 							if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasures.Rubies and global.CurrentRubies >= 5
 							{
 								RemoveRubies(5);
-								global.CurrentItem[1] = -1
 								Register_Add("PaidBeggarWoman")
 							}
 							
@@ -38,7 +37,6 @@ if IsPlayerOnSameTile() = true
 							if global.CurrentRubies >= 5
 							{
 								RemoveRubies(5);
-								global.CurrentTreasure = -1
 								Register_Add("PaidBeggarWoman")
 							}
 						}
