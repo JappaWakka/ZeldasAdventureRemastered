@@ -81,21 +81,3 @@ if global.PlayerIsDead = true
 {
 	PlayerDeath_Animation()
 }
-
-if global.FluteUsed = true && audio_is_playing(SFX_Use_Flute) = false
-{
-	global.CanControlPlayer = true
-	global.FluteUsed = false
-	if global.CurrentTile.x = 9 && global.CurrentTile.y = 14 && instance_exists(Entity_Enemy_Snake) = true
-	{
-		instance_create_layer(3632,3460,"Enemies_BelowForeground",Entity_Enemy_TallFire)
-		instance_create_layer(3652,3468,"Enemies_BelowForeground",Entity_Enemy_TallFire)
-		instance_create_layer(3676,3472,"Enemies_BelowForeground",Entity_Enemy_TallFire)
-		instance_create_layer(3700,3468,"Enemies_BelowForeground",Entity_Enemy_TallFire)
-		instance_create_layer(3720,3472,"Enemies_BelowForeground",Entity_Enemy_TallFire)
-		instance_create_layer(3740,3468,"Enemies_BelowForeground",Entity_Enemy_TallFire)
-		instance_destroy(Entity_Enemy_Snake)
-		
-		Script_Trigger_PyrosSpell()
-	}
-}

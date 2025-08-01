@@ -55,9 +55,9 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 	}
 	if global.FadeProgress = 2
 	{
-		if instance_exists(Entity_Parent_Enemy_Keese) = true
+		if instance_exists(Entity_Parent_Enemy_Path) = true
 		{
-			with Entity_Parent_Enemy_Keese
+			with Entity_Parent_Enemy_Path
 			{
 				var CoordinateIndex = floor(FrameIndex / 4)
 				if CurrentPath[CoordinateIndex][2] = "wait"

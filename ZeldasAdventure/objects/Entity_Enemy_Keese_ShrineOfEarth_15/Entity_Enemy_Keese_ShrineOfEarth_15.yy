@@ -15,8 +15,8 @@
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "Entity_Parent_Enemy_Keese",
-    "path": "objects/Entity_Parent_Enemy_Keese/Entity_Parent_Enemy_Keese.yy",
+    "name": "Entity_Parent_Enemy_Path",
+    "path": "objects/Entity_Parent_Enemy_Path/Entity_Parent_Enemy_Path.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

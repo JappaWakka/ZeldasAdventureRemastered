@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Parent_Enemy_Keese",
+  "name": "Entity_Parent_Enemy_Path",
   "spriteId": null,
   "solid": false,
   "visible": true,

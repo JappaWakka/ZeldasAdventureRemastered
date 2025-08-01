@@ -42,6 +42,12 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			CanContinue = true
 			alarm_set(0,4)
 		}
+		else if CurrentPath[CoordinateIndex][2] = "setsprite"
+		{
+			sprite_index = CurrentPath[CoordinateIndex][3]
+			CanContinue = true
+			alarm_set(0,4)
+		}
 	}
 }
 else

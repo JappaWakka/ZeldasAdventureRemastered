@@ -1,23 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Enemy_Keese_ShrineOfEarth_06",
+  "name": "Entity_Pickup_Raft",
   "spriteId": {
-    "name": "Sprite_Enemy_Keese",
-    "path": "sprites/Sprite_Enemy_Keese/Sprite_Enemy_Keese.yy",
+    "name": "Sprite_Pickup_Raft",
+    "path": "sprites/Sprite_Pickup_Raft/Sprite_Pickup_Raft.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": {
-    "name": "Enemy_Collision_Solid",
-    "path": "sprites/Enemy_Collision_Solid/Enemy_Collision_Solid.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Entity_Parent_Enemy_Path",
-    "path": "objects/Entity_Parent_Enemy_Path/Entity_Parent_Enemy_Path.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -31,12 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Entity_Player","path":"objects/Entity_Player/Entity_Player.yy",},},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Keese",
-    "path": "folders/Objects/Entities/Enemies/Keese.yy",
+    "name": "Treasure",
+    "path": "folders/Objects/Entities/Pickups/Treasure.yy",
   },
 }
