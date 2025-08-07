@@ -6,7 +6,15 @@ var ydir = 0
 if global.CanControlPlayer = true and global.CameraIsPanning = false and Entity_Player.IsAttacking = false and IsMenuVisible() = false and global.FadeProgress = 2
 {
 	xdir = input_check("right") - input_check("left");
+	if xdir = 0
+	{
+		xdir = input_check("joyright") - input_check("joyleft");
+	}
 	ydir = input_check("down") - input_check("up");
+	if ydir = 0
+	{
+		ydir = input_check("joydown") - input_check("joyup");
+	}
 }
 else
 {
@@ -51,25 +59,25 @@ if global.CanControlPlayer = true and global.CameraIsPanning = false and IsMenuV
 {
 	if Entity_Player.IsAttacking = false and global.PlayerIsDead = false
 	{
-		if(input_check("right") = true and input_check("left") = false)
+		if(input_check("right") = true and input_check("left") = false) or (input_check("joyright") = true and input_check("joyleft") = false)
 		{
 			Entity_Player.image_speed = Entity_Player.AnimSpeed;
 			Entity_Player.sprite_index = Zelda_Move_East;
 			Entity_Player.Facing = global.Directions.East
 		}
-		else if(input_check("left") = true and input_check("right") = false)
+		else if(input_check("left") = true and input_check("right") = false) or (input_check("joyleft") = true and input_check("joyright") = false)
 		{
 			Entity_Player.image_speed = Entity_Player.AnimSpeed;
 			Entity_Player.sprite_index = Zelda_Move_West;
 			Entity_Player.Facing = global.Directions.West
 		}
-		else if(input_check("down") = true and input_check("up") = false)
+		else if(input_check("down") = true and input_check("up") = false) or (input_check("joydown") = true and input_check("joyup") = false)
 		{
 			Entity_Player.image_speed = Entity_Player.AnimSpeed;
 			Entity_Player.sprite_index = Zelda_Move_South;
 			Entity_Player.Facing = global.Directions.South
 		}
-		else if(input_check("up") = true and input_check("down") = false)
+		else if(input_check("up") = true and input_check("down") = false) or (input_check("joyup") = true and input_check("joydown") = false)
 		{
 			Entity_Player.image_speed = Entity_Player.AnimSpeed;
 			Entity_Player.sprite_index = Zelda_Move_North;

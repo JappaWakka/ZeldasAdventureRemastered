@@ -326,7 +326,8 @@ function __input_class_player() constructor
                 }
                 else
                 {
-                    __input_error("Player ", __index, " data is missing verb \"", _verb_name, "\"");
+					file_delete(global.KeyBindingsFileName)
+                    __input_error("Player ", __index, " data is missing verb \"", _verb_name, "\". Keybindings will be reset. Please restart the game.");
                 }
             }
             

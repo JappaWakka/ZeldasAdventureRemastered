@@ -42,8 +42,19 @@ if PageIndex = Menu_Page.Main
 					break;
 			}
 		}
+		
 		var OptionChangeX = input_check_pressed("right") - input_check_pressed("left");
+		if OptionChangeX = 0
+		{
+			OptionChangeX = input_check_pressed("joyright") - input_check_pressed("joyleft");
+		}
+		
 		var OptionChangeY = input_check_pressed("down") - input_check_pressed("up");
+		if OptionChangeY = 0
+		{
+			OptionChangeY = input_check_pressed("joydown") - input_check_pressed("joyup");
+		}
+		
 		if OptionChangeX !=0
 		{
 			switch Menu_CurrentEntry[PageIndex]
@@ -188,8 +199,19 @@ else if PageIndex = Menu_Page.NameInput //Name Input Menu
 			//All entries in this menu are ScriptRunners
 			script_execute(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],CurrentGrid[# 0, Menu_CurrentEntry[PageIndex]])
 		}
+		
 		var OptionChangeX = input_check_pressed("right") - input_check_pressed("left");
+		if OptionChangeX = 0
+		{
+			OptionChangeX = input_check_pressed("joyright") - input_check_pressed("joyleft");
+		}
+		
 		var OptionChangeY = input_check_pressed("down") - input_check_pressed("up");
+		if OptionChangeY = 0
+		{
+			OptionChangeY = input_check_pressed("joydown") - input_check_pressed("joyup");
+		}
+		
 		if OptionChangeX !=0
 		{
 			if Menu_CurrentEntry[PageIndex] != 27
@@ -294,7 +316,13 @@ else //SettingsMenu
 			switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 			{
 				case Menu_ElementType.Shift:
+				
 					var OptionChange = input_check_pressed("right") - input_check_pressed("left");
+					if OptionChange = 0
+					{
+						OptionChange = input_check_pressed("joyright") - input_check_pressed("joyleft");
+					}
+					
 					if OptionChange !=0
 					{
 						audio_play_sound(Settings_ChangeValue,1000,false)
@@ -309,6 +337,10 @@ else //SettingsMenu
 					break;
 				case Menu_ElementType.Slider:
 					var OptionChange = input_check("right") - input_check("left");
+					if OptionChange = 0
+					{
+						OptionChange = input_check("joyright") - input_check("joyleft");
+					}
 					var CurrentArray = CurrentGrid[# 4, Menu_CurrentEntry[PageIndex]]
 					
 					if OptionChange !=0
@@ -338,6 +370,10 @@ else //SettingsMenu
 					break;
 				case Menu_ElementType.Toggle:
 					var OptionChange = input_check_pressed("right") - input_check_pressed("left");
+					if OptionChange = 0
+					{
+						OptionChange = input_check_pressed("joyright") - input_check_pressed("joyleft");
+					}
 					if OptionChange !=0
 					{
 						audio_play_sound(Settings_ChangeValue,1000,false)

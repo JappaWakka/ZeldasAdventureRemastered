@@ -26,6 +26,11 @@ function __input_config_verbs()
             map:  input_binding_key(ord("V")),
             menu:  input_binding_key(vk_escape),
 			accept: input_binding_key(vk_enter),
+			
+			joyleft: undefined,
+			joyright: undefined,
+			joyup: undefined,
+			joydown: undefined,
         },
         
         gamepad:
@@ -40,6 +45,11 @@ function __input_config_verbs()
             inventory:  input_binding_gamepad_button(gp_face3), //X Button
             map:  input_binding_gamepad_button(gp_face4), //Y Button
             menu: input_binding_gamepad_button(gp_start),
+			
+			joyleft: input_binding_gamepad_axis(gp_axislh,true),
+			joyright: input_binding_gamepad_axis(gp_axislh,false),
+			joyup: input_binding_gamepad_axis(gp_axislv,true),
+			joydown: input_binding_gamepad_axis(gp_axislv,false),
         },
         
         touch:
@@ -56,6 +66,10 @@ function __input_config_verbs()
             map:  input_binding_virtual_button(), //Y Button
             menu: input_binding_virtual_button(),
 			
+			joyleft: undefined,
+			joyright: undefined,
+			joyup: undefined,
+			joydown: undefined,
         }
     };
 }

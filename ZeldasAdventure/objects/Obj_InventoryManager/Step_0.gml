@@ -144,7 +144,7 @@ if global.CameraIsPanning = false
 	{
 		if IsOtherMenuThanInventoryVisible() = false and OpeningClosing = false
 		{
-			if mouse_wheel_down() = true or input_check_pressed("right") = true
+			if mouse_wheel_down() = true or input_check_pressed("right") = true or input_check_pressed("joyright") = true
 			{
 				if InventoryIndex = 0
 				{
@@ -185,7 +185,7 @@ if global.CameraIsPanning = false
 			}
 				
 			
-			if mouse_wheel_up() = true or input_check_pressed("left") = true
+			if mouse_wheel_up() = true or input_check_pressed("left") = true or input_check_pressed("joyleft") = true
 			{
 				if InventoryIndex = 0
 				{
@@ -227,7 +227,7 @@ if global.CameraIsPanning = false
 				}
 			}
 			 
-			if input_check_pressed("down") = true
+			if input_check_pressed("down") = true or input_check_pressed("joydown") = true
 			{
 				if InventoryIndex = 2 or InventoryIndex = 3 //Map Menu or Save Menu buttons
 				{
@@ -240,7 +240,7 @@ if global.CameraIsPanning = false
 				}
 			}
 			
-			if input_check_pressed("up") = true
+			if input_check_pressed("up") = true or input_check_pressed("joyup") = true
 			{
 				if InventoryIndex = 1
 				{
