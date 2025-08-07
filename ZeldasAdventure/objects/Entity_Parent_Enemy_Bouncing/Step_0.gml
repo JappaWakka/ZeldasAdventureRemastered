@@ -68,7 +68,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 		//Melee
 		if collision_circle(x,y,HitRadius_Defense,Entity_Hitbox_Spell_Wand,true,true)
 		{
-			if DamageDelay = 0
+			if timerIndex = 0
 			{
 				var ReceivedDamage = GetPower() - Defense
 				if ReceivedDamage > 0
@@ -86,8 +86,6 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 					EnemyState = EnemyStates.Damaged
 					StartImmuneAnimation = true
 				}
-				///Reset DamageDelay
-				DamageDelay = 1 * FrameRate
 			}
 		}
 		//Spell
@@ -103,7 +101,7 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 			}
 			if HitProjectile != -1
 			{
-				if DamageDelay = 0
+				if timerIndex = 0
 				{
 					///Reduce HitPoints, play damage sound
 					var ReceivedDamage
@@ -138,8 +136,6 @@ if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
 					{
 						instance_destroy(HitProjectile)
 					}
-					///Reset DamageDelay
-					DamageDelay = 1 * FrameRate
 				}
 			}
 		}
