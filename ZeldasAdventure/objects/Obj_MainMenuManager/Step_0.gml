@@ -389,15 +389,23 @@ else //SettingsMenu
 				case Menu_ElementType.Input:
 					if input_binding_scan_in_progress() = false
 					{
+						if ConfigDevice = 1
+						{
+							input_binding_scan_params_set([gp_axislh,gp_axislv,gp_axisrh,gp_axisrv],[gp_face1,gp_face2,gp_face3,gp_face4,gp_shoulderl,gp_shoulderlb,gp_shoulderr,gp_shoulderrb,gp_select,gp_start,gp_stickl,gp_stickr,gp_padu,gp_padd,gp_padl,gp_padr],INPUT_GAMEPAD)
+						}
+						else
+						{
+							input_binding_scan_params_clear()
+						}
 						input_binding_scan_start(
 						function(new_binding)
 						{
 							var CurrentGrid = Menu_Pages[PageIndex];
 							if ConfigDevice = 0
 							{
-								input_binding_set_safe(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],new_binding,,,"keyboard_and_mouse")
 								if input_binding_get(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],,,"keyboard_and_mouse")  != new_binding
 								{
+									input_binding_set_safe(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],new_binding,,,"keyboard_and_mouse")
 									SavedSettings = false
 									audio_play_sound(Settings_ChangeValue,1000,false)
 								}
@@ -407,7 +415,8 @@ else //SettingsMenu
 								if input_binding_get(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],,,"gamepad")  != new_binding
 								{
 									input_binding_set_safe(CurrentGrid[# 2, Menu_CurrentEntry[PageIndex]],new_binding,,,"gamepad")
-									audio_play_sound(Settings_ChangeValue,1000,false)
+									SavedSettings = false
+									audio_play_sound(Settings_ChangeValue,1000,false)									
 								}
 							}
 							CanChangeControls = false
@@ -416,6 +425,7 @@ else //SettingsMenu
 						}
 						,function()
 						{
+							audio_play_sound(SFX_Use_Error,1000,false)
 							CanChangeControls = false
 							alarm[0] = 5
 							IsInputting = false
@@ -434,6 +444,10 @@ else //SettingsMenu
 			}
 			
 			var OptionChange = input_check_pressed("down") - input_check_pressed("up");
+			if OptionChange = 0
+			{
+				OptionChange = input_check_pressed("joydown") - input_check_pressed("joyup");
+			}
 			if OptionChange !=0 and CanChangeControls = true
 			{
 				Menu_CurrentEntry[PageIndex] += OptionChange;
