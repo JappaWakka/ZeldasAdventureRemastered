@@ -37,11 +37,11 @@ if global.CameraIsPanning = false
 			}
 			if SelectedIndex[0] < ScrollOffsetX_Treasure or SelectedIndex[0] > ScrollOffsetX_Treasure + 5
 			{
-				ScrollOffsetX_Treasure = clamp(SelectedIndex[0],0, global.InventorySlots_Max[0] - 7)
+				ScrollOffsetX_Treasure = clamp(SelectedIndex[0],0, global.InventorySlots_Max[0] - 6)
 			}
 			if SelectedIndex[1] < ScrollOffsetX_Spells or SelectedIndex[1] > ScrollOffsetX_Spells + 5
 			{
-				ScrollOffsetX_Spells = clamp(SelectedIndex[1],0,global.InventorySlots_Max[1] - 7)
+				ScrollOffsetX_Spells = clamp(SelectedIndex[1],0,global.InventorySlots_Max[1] - 6)
 			}
 		}
 	}

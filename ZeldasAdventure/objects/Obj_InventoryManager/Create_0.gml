@@ -32,8 +32,18 @@ if SelectedIndex[1] == -1
 {
 	SelectedIndex[1] = 0
 }
-ScrollOffsetX_Treasure = clamp(SelectedIndex[0],0, global.InventorySlots_Max[0] - 7)
-ScrollOffsetX_Spells = clamp(SelectedIndex[1],0,global.InventorySlots_Max[1] - 7)
 
+ScrollOffsetX_Treasure = clamp(SelectedIndex[0],0, global.InventorySlots_Max[0] - 6)
+ScrollOffsetX_Spells = clamp(SelectedIndex[1],0,global.InventorySlots_Max[1] - 6)
+
+if ScrollOffsetX_Treasure + 5 > ds_list_size(InventoryList(0))
+{
+	ScrollOffsetX_Treasure = clamp(ScrollOffsetX_Treasure,0,clamp(ds_list_size(InventoryList(0)) - 5,0,global.InventorySlots_Max[0] - 6))
+}
+if ScrollOffsetX_Spells + 5 > ds_list_size(InventoryList(1))
+{
+	ScrollOffsetX_Spells = clamp(ScrollOffsetX_Spells,0,clamp(ds_list_size(InventoryList(1)) - 5,0,global.InventorySlots_Max[1] - 6))
+}
+	
 Alpha = 0
 OpeningClosing = false
