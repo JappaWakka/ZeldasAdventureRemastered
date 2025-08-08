@@ -79,6 +79,10 @@ function Camera_Pan()
 				camera_set_view_pos(view,Current.x + PanTo.x,Current.y + PanTo.y);
 				if ((Desired.x != Current.x + PanTo.x) or (Desired.y != Current.y + PanTo.y))
 				{
+					if global.RemasteredMode = true
+					{
+						SetEnemyCannotTouchEdge = true
+					}
 					global.CameraIsPanning = true;
 					if audio_is_playing(global.CurrentDialogue_ID)
 					{
@@ -88,6 +92,14 @@ function Camera_Pan()
 				}
 				else
 				{
+					
+					if SetEnemyCannotTouchEdge = true
+					{
+						global.EnemyCannotTouchEdge = true
+						alarm_set(0,75)
+						SetEnemyCannotTouchEdge = false
+					}
+					
 					if instance_exists(Entity_Parent_Enemy_Path) = true
 					{
 						with Entity_Parent_Enemy_Path
@@ -147,6 +159,10 @@ function Camera_Pan()
 				}
 				if global.FadeProgress = 3
 				{
+					if global.RemasteredMode = true
+					{
+						SetEnemyCannotTouchEdge = true
+					}
 					if audio_is_playing(global.CurrentDialogue_ID)
 					{
 						audio_stop_sound(global.CurrentDialogue_ID)
@@ -161,6 +177,13 @@ function Camera_Pan()
 				}
 				if global.FadeProgress = 2
 				{
+					
+					if SetEnemyCannotTouchEdge = true
+					{
+						global.EnemyCannotTouchEdge = true
+						alarm_set(0,75)
+						SetEnemyCannotTouchEdge = false
+					}
 					if audio_is_playing(SFX_Zelda_Death) = false
 					{
 						global.SwitchTracks = true;

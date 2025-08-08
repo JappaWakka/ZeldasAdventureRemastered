@@ -182,19 +182,41 @@ if EnemyState = EnemyStates.Attack
 	speed = global.EnemySpeeds.Still
 }
 //Don't move outside of the current tile
-if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
-y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
-x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
-y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
+if global.EnemyCannotTouchEdge = false
 {
-	if EnemyState != EnemyStates.Damaged
+	if x + 24 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
+	y + 24 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
+	x - 24 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
+	y - 24 <= global.CurrentTile.y * tileHeight && vspeed < 0
 	{
-		ChangeDirection = true;
+		if EnemyState != EnemyStates.Damaged
+		{
+			ChangeDirection = true;
+		}
+		else
+		{
+			speed = global.EnemySpeeds.Still
+			DistanceLeftToKnockBack = 0
+		}
 	}
-	else
+}
+else
+{
+	
+	if x + 52 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
+	y + 52 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
+	x - 52 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
+	y - 52 <= global.CurrentTile.y * tileHeight && vspeed < 0
 	{
-		speed = global.EnemySpeeds.Still
-		DistanceLeftToKnockBack = 0
+		if EnemyState != EnemyStates.Damaged
+		{
+			ChangeDirection = true;
+		}
+		else
+		{
+			speed = global.EnemySpeeds.Still
+			DistanceLeftToKnockBack = 0
+		}
 	}
 }
 

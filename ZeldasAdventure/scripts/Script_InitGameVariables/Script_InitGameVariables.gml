@@ -16,6 +16,7 @@ function InitGameVariables()
 	global.ColorRed = [0.91, 0.06, 0.06, 1.00]
 	global.ColorBlue = [0.06, 0.06, 0.91, 1.00]
 	
+	global.EnemyCannotTouchEdge = false
 	global.CompassWarp = ""
 	global.StartCutscene = ""
 	global.AddCutItems = false; //Include items that were cut from the original game
