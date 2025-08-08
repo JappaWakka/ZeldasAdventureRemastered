@@ -24,6 +24,7 @@ if OpeningClosing = true
 			}
 			instance_deactivate_layer("Enemies_BelowForeground");
 			instance_deactivate_layer("Enemies_AboveForeground");
+			instance_deactivate_layer("TemporaryProgressionBlocker_Spikes");
 		}
 		else
 		{

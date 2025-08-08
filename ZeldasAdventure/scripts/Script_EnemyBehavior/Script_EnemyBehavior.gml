@@ -1,41 +1,44 @@
 function Script_AggroRange()
 {
-	if Entity_Player.x < self.x
+	if IsMenuVisible() = false && global.CameraIsFading = false
 	{
-		if self.x - Entity_Player.x <= 120
+		if Entity_Player.x < self.x
 		{
-			if Entity_Player.y < self.y
+			if self.x - Entity_Player.x <= 120
 			{
-				if self.y - Entity_Player.y <= 80
+				if Entity_Player.y < self.y
 				{
-					return true;
+					if self.y - Entity_Player.y <= 80
+					{
+						return true;
+					}
 				}
-			}
-			else
-			{
-				if Entity_Player.y - self.y <= 80
+				else
 				{
-					return true;
+					if Entity_Player.y - self.y <= 80
+					{
+						return true;
+					}
 				}
 			}
 		}
-	}
-	else
-	{
-		if Entity_Player.x - self.x <= 120
+		else
 		{
-			if Entity_Player.y < self.y
+			if Entity_Player.x - self.x <= 120
 			{
-				if self.y - Entity_Player.y <= 80
+				if Entity_Player.y < self.y
 				{
-					return true;
+					if self.y - Entity_Player.y <= 80
+					{
+						return true;
+					}
 				}
-			}
-			else
-			{
-				if Entity_Player.y - self.y <= 80
+				else
 				{
-					return true;
+					if Entity_Player.y - self.y <= 80
+					{
+						return true;
+					}
 				}
 			}
 		}
