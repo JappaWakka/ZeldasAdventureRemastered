@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ShrineOfEarth",
-    "path": "folders/Objects/Entities/DialogueTriggers/ShrineOfEarth.yy",
+    "path": "folders/Objects/DialogueTriggers/ShrineOfEarth.yy",
   },
 }

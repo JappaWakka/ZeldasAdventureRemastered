@@ -26,6 +26,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "DialogueTriggers",
-    "path": "folders/Objects/Entities/DialogueTriggers.yy",
+    "path": "folders/Objects/DialogueTriggers.yy",
   },
 }

@@ -36,6 +36,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MeadowOfSkotness",
-    "path": "folders/Objects/Entities/DialogueTriggers/MeadowOfSkotness.yy",
+    "path": "folders/Objects/DialogueTriggers/MeadowOfSkotness.yy",
   },
 }

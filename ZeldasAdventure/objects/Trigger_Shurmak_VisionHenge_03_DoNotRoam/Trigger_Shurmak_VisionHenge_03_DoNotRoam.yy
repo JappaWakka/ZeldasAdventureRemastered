@@ -35,6 +35,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "VisionHenge",
-    "path": "folders/Objects/Entities/DialogueTriggers/VisionHenge.yy",
+    "path": "folders/Objects/DialogueTriggers/VisionHenge.yy",
   },
 }

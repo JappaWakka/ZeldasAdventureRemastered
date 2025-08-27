@@ -1,0 +1,12 @@
+﻿1
+00:00:00,021 --> 00:00:02,241
+Zelda, it's been fun visiting with you...
+
+2
+00:00:02,348 --> 00:00:04,501
+but I have nothing more to say now.
+
+3
+00:00:04,648 --> 00:00:06,434
+Come back and see me again, okay?
+

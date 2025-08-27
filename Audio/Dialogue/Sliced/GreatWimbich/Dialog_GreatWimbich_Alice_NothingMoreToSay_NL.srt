@@ -1,0 +1,12 @@
+﻿1
+00:00:00,021 --> 00:00:02,241
+Zelda, het was leuk om met je te praten...
+
+2
+00:00:02,348 --> 00:00:04,501
+maar ik heb je niets meer te zeggen.
+
+3
+00:00:04,648 --> 00:00:06,434
+Kom nog eens langs, oké?
+

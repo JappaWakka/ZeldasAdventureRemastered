@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ForestOfFindo",
-    "path": "folders/Objects/Entities/DialogueTriggers/ForestOfFindo.yy",
+    "path": "folders/Objects/DialogueTriggers/ForestOfFindo.yy",
   },
 }

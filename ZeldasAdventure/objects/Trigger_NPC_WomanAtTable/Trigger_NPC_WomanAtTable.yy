@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "PlainOfAndor",
-    "path": "folders/Objects/Entities/DialogueTriggers/PlainOfAndor.yy",
+    "path": "folders/Objects/DialogueTriggers/PlainOfAndor.yy",
   },
 }
