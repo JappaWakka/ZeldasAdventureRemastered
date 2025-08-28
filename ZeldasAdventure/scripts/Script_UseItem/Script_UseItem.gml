@@ -92,6 +92,9 @@ function UseItem_Spell()
 			case Spells.Dagger:
 				UseSpell_Dagger()
 				break;
+			case Spells.Pyros:
+				UseSpell_Pyros()
+				break;
 		}
 			
 		if global.CanUseSpell = true
