@@ -41,25 +41,21 @@ function Subtitle_GreatWimbich_Alice_PeculiarLittleTown(AudioPosition)
 }
 
 
-function Subtitle_GreatWimbich_Alice_WatchOut(AudioPosition)
+function Subtitle_GreatWimbich_Alice_IfYaLikeMusic(AudioPosition)
 {
 	switch global.CurrentLanguage
 	{
 	case "en":
-		if AudioPosition >= 0.000 and AudioPosition <=3.100 {return "Alice: Watch out for that crotchety Rowell the Angry, though."}
-		else if AudioPosition >= 3.264 and AudioPosition <= 6.804 {return "He's always a-fuming with anger, and he'll really bend your ear."}
-		else if AudioPosition >= 7.005 and AudioPosition <= 10.245 {return "Now, if ya like music, follow your ear to Yvonne..."}
-		else if AudioPosition >= 10.270 and AudioPosition <= 12.769 {return "the musician down Skotness Road right here."}
-		else if AudioPosition >= 13.120 and AudioPosition <= 17.167 {return "If ya get tired in ya wanderings, this is a great place to settle down."}
+		if AudioPosition >= 0.000 and AudioPosition <= 3.183 {return "Alice: Now, if ya like music, follow your ear to Yvonne..."}
+		else if AudioPosition >= 3.208 and AudioPosition <= 5.765 {return "the musician down Skotness Road right here."}
+		else if AudioPosition >= 5.920 and AudioPosition <= 9.967 {return "If ya get tired in ya wanderings, this is a great place to settle down."}
 		else return ""		
 		break;
 		
 	case "nl":
-		if AudioPosition >= 0.000 and AudioPosition <=3.100 {return "Alice: Pas wel op voor die chagrijnige Rowell de Boze."}
-		else if AudioPosition >= 3.264 and AudioPosition <= 6.804 {return "Hij is altijd nijdig en zal je echt de oren van je hoofd praten."}
-		else if AudioPosition >= 7.005 and AudioPosition <= 10.245 {return "Maar als je van muziek houdt, volg dan je oren naar Yvonne..."}
-		else if AudioPosition >= 10.270 and AudioPosition <= 12.769 {return "de muzikante hier verderop de Skotnessweg."}
-		else if AudioPosition >= 13.120 and AudioPosition <= 17.167 {return "Als je tijdens je reizen uitgeput raakt, is dit een geweldige plek om bij te komen."}
+		if AudioPosition >= 0.000 and AudioPosition <= 3.183 {return "Alice: Maar als je van muziek houdt, volg dan je oren naar Yvonne..."}
+		else if AudioPosition >= 3.208 and AudioPosition <= 5.765 {return "de muzikante hier verderop de Skotnessweg."}
+		else if AudioPosition >= 5.920 and AudioPosition <= 9.967 {return "Als je tijdens je reizen uitgeput raakt, is dit een geweldige plek om bij te komen."}
 		else return ""		
 		break;
 	}

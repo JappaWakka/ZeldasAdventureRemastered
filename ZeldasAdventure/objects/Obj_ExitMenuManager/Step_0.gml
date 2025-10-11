@@ -71,13 +71,16 @@ if global.CameraIsPanning = false
 					instance_deactivate_object(Entity_Parent_Player)
 					if object_exists(Entity_Parent_NPC) = true
 					{
-						Entity_Parent_NPC.speed = 0;
-						Entity_Parent_NPC.image_speed = 0;
-						Entity_Parent_NPC.visible = false;
+						with(Entity_Parent_NPC)
+						{
+							image_speed = 0;
+							visible = false;
+						}
 					}
 					instance_deactivate_layer("Enemies_BelowForeground");
 					instance_deactivate_layer("Enemies_AboveForeground");
 					instance_deactivate_layer("TemporaryProgressionBlocker_Spikes");
+					instance_deactivate_object(Entity_Parent_NPC_Path);
 				}
 			}
 			else
@@ -88,11 +91,14 @@ if global.CameraIsPanning = false
 					instance_activate_object(Entity_Parent_Player)
 					if object_exists(Entity_Parent_NPC) = true
 					{
-						Entity_Parent_NPC.speed = Entity_Parent_NPC.DefaultSpeed;
-						Entity_Parent_NPC.image_speed = Entity_Parent_NPC.ImageSpeed;
-						Entity_Parent_NPC.visible = true;
+						with(Entity_Parent_NPC)
+						{
+							image_speed = ImageSpeed;
+							visible = true;
+						}
 					}
 					instance_activate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y *tileHeight, tileWidth, tileHeight,true);
+					instance_activate_object(Entity_Parent_NPC_Path);
 				}
 			}
 			global.FadeSpeed = 12;

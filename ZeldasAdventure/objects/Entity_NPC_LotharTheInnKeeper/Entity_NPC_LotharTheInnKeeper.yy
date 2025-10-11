@@ -33,7 +33,6 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ImageSpeed","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"value":"1",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"EnableAnimationAlarm","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"value":"False",},
   ],
   "parent": {

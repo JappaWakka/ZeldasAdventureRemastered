@@ -129,6 +129,35 @@ function Camera_Pan()
 							}
 						}
 					}
+					if instance_exists(Entity_Parent_NPC_Path) = true
+					{
+						with Entity_Parent_NPC_Path
+						{
+							var CoordinateIndex = floor(FrameIndex / 4)
+							if CurrentPath[CoordinateIndex][2] = "wait"
+							{
+								var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+								
+								image_speed = 0
+								CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+								CanContinue = false
+								EnemyState = NPCStates.Idle
+								FrameIndex = 4
+								if randomDelay = 0
+								{
+									alarm_set(1,4)
+								}
+								else
+								{
+									alarm_set(1, randomDelay);
+								}
+							}
+							else
+							{
+								alarm_set(1, 1);
+							}
+						}
+					}
 					if audio_is_playing(SFX_Zelda_Death) = false
 					{
 						global.SwitchTracks = true;
@@ -225,6 +254,35 @@ function Camera_Pan()
 							else
 							{
 								alarm_set(0, 1);
+							}
+						}
+						if instance_exists(Entity_Parent_NPC_Path) = true
+						{
+							with Entity_Parent_NPC_Path
+							{
+								var CoordinateIndex = floor(FrameIndex / 4)
+								if CurrentPath[CoordinateIndex][2] = "wait"
+								{
+									var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+									
+									image_speed = 0
+									CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+									CanContinue = false
+									EnemyState = NPCStates.Idle
+									FrameIndex = 4
+									if randomDelay = 0
+									{
+										alarm_set(1,4)
+									}
+									else
+									{
+										alarm_set(1, randomDelay);
+									}
+								}
+								else
+								{
+									alarm_set(1, 1);
+								}
 							}
 						}
 					}

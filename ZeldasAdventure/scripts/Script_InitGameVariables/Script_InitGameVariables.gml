@@ -171,6 +171,14 @@ function InitGameVariables()
 		Damaged
 	};
 	
+	enum NPCStates
+	{
+		Idle,
+		Wait,
+		Move,
+		StopPath,
+	};
+	
 	global.KnockbackDistances =
 	{
 		None: 0,

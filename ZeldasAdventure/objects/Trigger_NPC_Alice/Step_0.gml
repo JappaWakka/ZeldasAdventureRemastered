@@ -35,7 +35,7 @@ if IsPlayerOnSameTile() = true
 			{
 				if global.CurrentDialogue_Asset = Dialog_None
 				{
-					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_WatchOut
+					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_IfYaLikeMusic
 					global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
 				}
 			}
@@ -88,9 +88,9 @@ if IsPlayerOnSameTile() = true
 			{
 				global.Subtitle = Subtitle_GreatWimbich_Alice_PeculiarLittleTown(AudioPosition)
 			}
-			if global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_WatchOut
+			if global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_IfYaLikeMusic
 			{
-				global.Subtitle = Subtitle_GreatWimbich_Alice_WatchOut(AudioPosition)
+				global.Subtitle = Subtitle_GreatWimbich_Alice_IfYaLikeMusic(AudioPosition)
 			}
 			if global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_NothingMoreToSay
 			{

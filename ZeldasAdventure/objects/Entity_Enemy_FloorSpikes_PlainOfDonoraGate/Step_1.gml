@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if Register_Registered("DonoraGateFeePaid") = false
 {
-	if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
+	if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 	{
 		var GateFee = 10
 		if Register_Registered("DonoraGateAttacked")

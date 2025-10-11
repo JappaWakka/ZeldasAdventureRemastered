@@ -31,9 +31,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ImageSpeed","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"value":"1",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "MeadowOfSkotness",
     "path": "folders/Objects/Entities/NPCs/MeadowOfSkotness.yy",

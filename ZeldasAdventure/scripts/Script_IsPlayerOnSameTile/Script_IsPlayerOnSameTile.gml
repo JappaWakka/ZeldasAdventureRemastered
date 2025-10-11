@@ -28,7 +28,7 @@ function IsPlayerOnSameTile()
 	}
 }
 
-function IsPlayerOnSameTile_Enemy()
+function IsPlayerOnSameTile_EnemyOrNPC()
 {
 	var PlayerTile =
 	{

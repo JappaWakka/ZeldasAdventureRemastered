@@ -84,6 +84,35 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 				}
 			}
 		}
+		if instance_exists(Entity_Parent_NPC_Path) = true
+		{
+			with Entity_Parent_NPC_Path
+			{
+				var CoordinateIndex = floor(FrameIndex / 4)
+				if CurrentPath[CoordinateIndex][2] = "wait"
+				{
+					var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+					
+					image_speed = 0
+					CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+					CanContinue = false
+					EnemyState = NPCStates.Idle
+					FrameIndex = 4
+					if randomDelay = 0
+					{
+						alarm_set(1,4)
+					}
+					else
+					{
+						alarm_set(1, randomDelay);
+					}
+				}
+				else
+				{
+					alarm_set(1, 1);
+				}
+			}
+		}
 		if global.CompassWarp != ""
 		{
 			global.CompassWarp = ""
@@ -108,13 +137,13 @@ global.WarpLocations =
 		
 	//GreatWimbich
 	GreatWimbich_GeneralStore_Inside : {TileX:7,TileY:11,PlayerX:204,PlayerY:200},
-	GreatWimbich_GeneralStore_Outside : {TileX:10,TileY:12,PlayerX:62,PlayerY:156},
+	GreatWimbich_GeneralStore_Outside : {TileX:10,TileY:12,PlayerX:62,PlayerY:160},
 	GreatWimbich_MagicStore_Inside : {TileX:8,TileY:11,PlayerX:124,PlayerY:200},
 	GreatWimbich_MagicStore_Outside : {TileX:10,TileY:12,PlayerX:276,PlayerY:160},
 	GreatWimbich_Blacksmith_Inside : {TileX:9,TileY:11,PlayerX:156,PlayerY:200},
-	GreatWimbich_Blacksmith_Outside : {TileX:11,TileY:12,PlayerX:128,PlayerY:148},
+	GreatWimbich_Blacksmith_Outside : {TileX:11,TileY:12,PlayerX:128,PlayerY:152},
 	GreatWimbich_TwinFatherHouse_Inside : {TileX:9,TileY:12,PlayerX:204,PlayerY:196},
-	GreatWimbich_TwinFatherHouse_Outside : {TileX:11,TileY:13,PlayerX:248,PlayerY:172},
+	GreatWimbich_TwinFatherHouse_Outside : {TileX:11,TileY:13,PlayerX:248,PlayerY:176},
 	
 	//Shortcuts
 	SeacoastPlainShortcut_Inside_West : {TileX:12,TileY:20,PlayerX:64,PlayerY:144},

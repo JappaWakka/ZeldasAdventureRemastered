@@ -1,5 +1,5 @@
 //If the player is on the same tile
-if IsPlayerOnSameTile_Enemy() = true && global.CameraIsFading = false
+if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 {
 	//Activate
 	visible = true;
