@@ -5,4 +5,4 @@ image_index = 0
 visible = false
 Animating = false
 
-NPCPath_GreatWimbich_03_WalkingMan1()
+NPCPath_GreatWimbich_02_WalkingWoman()

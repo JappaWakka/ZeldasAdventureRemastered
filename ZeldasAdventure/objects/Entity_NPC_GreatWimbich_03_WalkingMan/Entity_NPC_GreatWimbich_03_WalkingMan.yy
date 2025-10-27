@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_NPC_WalkingMan1",
+  "name": "Entity_NPC_GreatWimbich_03_WalkingMan",
   "spriteId": {
     "name": "Sprite_NPC_WalkingMan1_East",
     "path": "sprites/Sprite_NPC_WalkingMan1_East/Sprite_NPC_WalkingMan1_East.yy",
