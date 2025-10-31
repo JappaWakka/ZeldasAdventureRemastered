@@ -15,7 +15,7 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 		else if VideoPosition >= 109.834 and VideoPosition <= 111.716 {return "Find your magic wand."}
 		else if VideoPosition >= 112.081 and VideoPosition <= 116.300 {return "Use it wisely and listen to your allies along the way!"}
 		else if VideoPosition >= 116.814 and VideoPosition <= 123.070 {return "Go now, my Princess. Restore the Celestial Signs and rescue Link!"}
-		else return ""		
+		else return ""
 		break;
 		
 	case "nl":

@@ -1,0 +1,24 @@
+﻿1
+00:00:00,008 --> 00:00:02,349
+Vader van de tweelingen: Hallo, Zelda! Welkom in mijn huis.
+
+2
+00:00:02,374 --> 00:00:06,282
+Ik ben de vader van de tweelingen, en zelfs ik weet niet welke tweeling welke is.
+
+3
+00:00:06,774 --> 00:00:09,100
+Maar het is leuk dat je langskomt.
+
+4
+00:00:09,125 --> 00:00:11,282
+Mijn naam is Zelda en jij bent vast de vader.
+
+5
+00:00:11,307 --> 00:00:14,506
+Nee, wacht! Dat kan niet kloppen, je bent net binnengekomen.
+
+6
+00:00:14,531 --> 00:00:16,039
+Jij bent vast Zelda!
+

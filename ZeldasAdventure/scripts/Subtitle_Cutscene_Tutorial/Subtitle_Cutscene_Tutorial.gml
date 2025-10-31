@@ -87,7 +87,7 @@ function Subtitle_Cutscene_Tutorial(VideoPosition)
 		else if VideoPosition >= 317.231 and VideoPosition <= 319.038 {return "and press Action Button 1."}
 		else if VideoPosition >= 319.329 and VideoPosition <= 322.149 {return "That is all I will reveal for now."}
 		else if VideoPosition >= 322.663 and VideoPosition <= 325.263 {return "The rest is up to you to discover."}
-		else return ""		
+		else return ""
 		break;
 		
 	case "nl":
@@ -180,7 +180,7 @@ function Subtitle_Cutscene_Tutorial(VideoPosition)
 		else if VideoPosition >= 317.231 and VideoPosition <= 319.038 {return "en druk je op Actieknop 1."}
 		else if VideoPosition >= 319.329 and VideoPosition <= 322.149 {return "Dat is alles wat ik voor nu zal onthullen."}
 		else if VideoPosition >= 322.663 and VideoPosition <= 325.263 {return "De rest is aan jou om te ontdekken."}
-		else return ""		
+		else return ""
 		break;
 	}
 }

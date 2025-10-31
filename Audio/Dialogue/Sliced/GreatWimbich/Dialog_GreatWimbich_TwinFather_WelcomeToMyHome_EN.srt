@@ -1,0 +1,24 @@
+﻿1
+00:00:00,008 --> 00:00:02,349
+Twins' Father: Hello, Zelda! Welcome to my home!
+
+2
+00:00:02,374 --> 00:00:06,282
+I'm the twins' father, and even I don't know which twin is which.
+
+3
+00:00:06,774 --> 00:00:09,100
+Still, it is good of you to come and visit.
+
+4
+00:00:09,125 --> 00:00:11,282
+My name is Zelda and you must be the father.
+
+5
+00:00:11,307 --> 00:00:14,506
+No, wait! That can't be true, you just came in.
+
+6
+00:00:14,531 --> 00:00:16,039
+You must be Zelda!
+

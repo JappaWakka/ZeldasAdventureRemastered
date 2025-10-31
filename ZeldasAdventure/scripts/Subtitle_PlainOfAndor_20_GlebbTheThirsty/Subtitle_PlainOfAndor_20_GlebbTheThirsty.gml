@@ -6,7 +6,7 @@ function Subtitle_PlainOfAndor_20_GlebbTheThirsty_BeforeFill(AudioPosition)
 		if AudioPosition >= 0.000 and AudioPosition <= 3.406 {return "Glebb the Thirsty: Young princess, please attend me."}
 		else if AudioPosition >= 3.773 and AudioPosition <= 7.506 {return "A traveler of kind intentions has found me at last!"}
 		else if AudioPosition >= 7.773 and AudioPosition <= 11.106 {return "I am collapsed with thirst and dryness."}
-		else return ""		
+		else return ""
 		break;
 		
 	case "nl":
