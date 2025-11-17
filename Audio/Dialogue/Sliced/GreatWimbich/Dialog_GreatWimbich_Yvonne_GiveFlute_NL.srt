@@ -1,0 +1,32 @@
+﻿1
+00:00:00,053 --> 00:00:02,393
+Yvonne: Hallo, Zelda. Mijn naam is Yvonne.
+
+2
+00:00:02,527 --> 00:00:04,633
+Je ziet er uit als een mede-muziekliefhebber.
+
+3
+00:00:04,700 --> 00:00:07,380
+Muziek kan zelfs een woest beest kalmeren.
+
+4
+00:00:07,405 --> 00:00:10,515
+Ik heb vernomen dat Shurmak je met haar vriendschap heeft vereerd.
+
+5
+00:00:10,551 --> 00:00:13,465
+Ze heeft mij ooit geholpen, dus nu zal ik ook jou helpen.
+
+6
+00:00:13,753 --> 00:00:14,820
+Luister hier eens naar!
+
+7
+00:00:15,473 --> 00:00:18,473
+*Een fluit wordt bespeeld*
+
+8
+00:00:18,498 --> 00:00:24,393
+Heh heh! De fluit kan worden gebruikt om het woeste gesis van een slang te kalmeren.
+

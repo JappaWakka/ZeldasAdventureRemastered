@@ -1,0 +1,32 @@
+﻿1
+00:00:00,053 --> 00:00:02,393
+Yvonne: Hello, Zelda. My name is Yvonne.
+
+2
+00:00:02,527 --> 00:00:04,633
+You look like a music lover, too.
+
+3
+00:00:04,700 --> 00:00:07,380
+Music can soothe a savage beast.
+
+4
+00:00:07,405 --> 00:00:10,515
+I believe Shurmak has graced you with her friendship.
+
+5
+00:00:10,551 --> 00:00:13,465
+She helped me once, so I am going to help you.
+
+6
+00:00:13,753 --> 00:00:14,820
+Listen to this!
+
+7
+00:00:15,473 --> 00:00:18,473
+*A flute is being played*
+
+8
+00:00:18,498 --> 00:00:24,393
+Heh heh! The flute can be used to calm the savage hiss of a snake.
+

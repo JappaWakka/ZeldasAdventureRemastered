@@ -31,8 +31,8 @@
 			break;
 			
 		case "nl":
-			if AudioPosition >= 0.000 and AudioPosition <= 3.813 {return "Lothar de Herbergier: Welkom bij de Herberg \"De Kop van de Mobilin\", mijn prinses!"}
-			else if AudioPosition >= 3.838 and AudioPosition <= 8.787 {return "U ziet er uitgedroogd uit, neem een kopje Andor-cider van het huis."}
+			if AudioPosition >= 0.000 and AudioPosition <= 3.813 {return "Lothar de Herbergier: Welkom bij de Kop van de Mobilin Herberg, mijn prinses!"}
+			else if AudioPosition >= 3.838 and AudioPosition <= 8.787 {return "U ziet er droog uit, neem een kopje Andor cider van het huis."}
 			else return ""
 			break;
 		}

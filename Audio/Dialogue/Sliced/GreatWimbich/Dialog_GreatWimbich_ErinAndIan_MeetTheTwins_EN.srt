@@ -1,0 +1,12 @@
+﻿1
+00:00:00,227 --> 00:00:03,333
+Twins (Eric & Ian): Hello, Zelda. I'm Eric and this is Ian.
+
+2
+00:00:03,800 --> 00:00:07,166
+Oh, what do you mean? I'm Eric, I've always been.
+
+3
+00:00:07,260 --> 00:00:09,273
+No you're not, I'm Eric!
+

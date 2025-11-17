@@ -1,0 +1,12 @@
+﻿1
+00:00:00,227 --> 00:00:03,333
+Tweeling (Eric & Ian): Hallo, Zelda. Ik ben Eric en dit is Ian.
+
+2
+00:00:03,800 --> 00:00:07,166
+Wat bedoel je? Ik ben Eric, dat ben ik altijd geweest.
+
+3
+00:00:07,260 --> 00:00:09,273
+Nee, dat ben je niet, ik ben Eric!
+

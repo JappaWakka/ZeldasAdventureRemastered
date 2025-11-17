@@ -4,56 +4,68 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.FadeAlpha = 0
 		{
-			if AliceDialogue = 0
+			if HasTalked = false
 			{
-				if Register_Registered("Alice_Dialogue") = true and place_meeting(x,y,Entity_Player)
+				if AliceDialogue = 0
 				{
-					if global.CurrentDialogue_Asset = Dialog_None
+					if Register_Registered("Alice_Dialogue") = false
 					{
-						global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_RealNice
-						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
+						if place_meeting(x,y,Entity_Player)
+						{
+							if global.CurrentDialogue_Asset = Dialog_None
+							{
+								global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_MyGoodness
+								global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
+								HasTalked = true
+							}
+						}
+					}
+					else
+					{
+						if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player) and Register_Registered("Alice_TempDialogue") = false
+						{
+							global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_RealNice
+							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
+							HasTalked = true
+							AliceDialogue = 4
+						}
 					}
 				}
-				else
+				if Register_Registered("Alice_Dialogue") = false
 				{
-					if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
+					if AliceDialogue = 1
 					{
-						global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_MyGoodness
-						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
+						if global.CurrentDialogue_Asset = Dialog_None
+						{
+							global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_PeculiarLittleTown
+							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
+							HasTalked = true
+						}
+					}
+					if AliceDialogue = 2
+					{
+						if global.CurrentDialogue_Asset = Dialog_None
+						{
+							global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_IfYaLikeMusic
+							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
+							HasTalked = true
+						}
+					}
+					if AliceDialogue = 3
+					{
+						if global.CurrentDialogue_Asset = Dialog_None
+						{
+							global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_NothingMoreToSay
+							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
+							HasTalked = true
+						}
 					}
 				}
 			}
-			if AliceDialogue = 1
+			if place_meeting(x,y,Entity_Player) = false
 			{
-				if global.CurrentDialogue_Asset = Dialog_None
-				{
-					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_PeculiarLittleTown
-					global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
-				}
-			}
-			if AliceDialogue = 2
-			{
-				if global.CurrentDialogue_Asset = Dialog_None
-				{
-					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_IfYaLikeMusic
-					global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
-				}
-			}
-			if AliceDialogue = 3
-			{
-				if global.CurrentDialogue_Asset = Dialog_None
-				{
-					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_NothingMoreToSay
-					global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
-				}
-			}
-			if AliceDialogue = 4
-			{
-				if global.CurrentDialogue_Asset = Dialog_None
-				{
-					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_RealNice
-					global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
-				}
+				AliceDialogue = 0
+				HasTalked = false
 			}
 		}
 	}
@@ -66,6 +78,7 @@ if IsPlayerOnSameTile() = true
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_PeculiarLittleTown
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
 				Register_Add("Alice_Dialogue")
+				HasTalked = true
 			}
 		}
 	}
@@ -115,37 +128,54 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.RemasteredMode = true and global.FadeAlpha = 0
 		{
-			switch AliceDialogue
+			if HasTalked = true
 			{
-				case 0:
-					AliceDialogue = 1
-					break
-				case 1:
-					AliceDialogue = 2
-					break
-				case 2:
-					AliceDialogue = 3
-					break
-				case 3:
-					AliceDialogue = 4
-					break
-				case 4:
-					Register_Add("Alice_Dialogue")
+				if Register_Registered("Alice_TempDialogue") = false
+				{
+					switch AliceDialogue
+					{
+						case 0:
+							AliceDialogue = 1
+							HasTalked = false
+							break
+						case 1:
+							AliceDialogue = 2
+							HasTalked = false
+							break
+						case 2:
+							AliceDialogue = 3
+							HasTalked = false
+							break
+						case 3:
+							Register_Add("Alice_Dialogue")
+							break
+						case 4:
+							Register_Add("Alice_TempDialogue",true)
+							instance_destroy()
+							break
+					}
+				}
+				else
+				{
 					instance_destroy()
-					break
-			}
-			if Register_Registered("Alice_Dialogue") = true and global.FadeAlpha = 0
-			{
-				instance_destroy()
+				}
 			}
 			
 		}
 		else
 		{
-			if Register_Registered("Alice_Dialogue") = true and global.FadeAlpha = 0
+			if HasTalked = true
 			{
-				instance_destroy()
+				if Register_Registered("Alice_Dialogue") = true and global.FadeAlpha = 0
+				{
+					instance_destroy()
+				}
 			}
 		}
 	}
+}
+else
+{
+	HasTalked = false
+	AliceDialogue = 0
 }
