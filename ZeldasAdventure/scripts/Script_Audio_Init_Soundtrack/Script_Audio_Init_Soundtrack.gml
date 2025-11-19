@@ -28,7 +28,7 @@ function Audio_Init_Soundtrack()
 		Plain_Stream : {Asset : Music_Plain_Stream, IntroLength : 1.764, LoopLength : 19.989},
 		Sirram : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Twinkle_Normal : {Asset : Music_Twinkle_Normal, IntroLength : 1.774, LoopLength : 20.053},
-		Twinkle_Dad : {Asset : Music_Twinkle_Dad, IntroLength : 1.753, LoopLength : 20.053},
+		Twinkle_Dad : {Asset : Music_Twinkle_Dad, IntroLength : 2.593, LoopLength : 20.056},
 		Shrine_Earth_Ambient : {Asset : Music_Shrine_Earth_Ambient, IntroLength : 2.232, LoopLength : 39.467},
 		Shrine_Earth_Boss : {Asset : Music_Shrine_Earth_Boss, IntroLength : 1.751, LoopLength : 19.992},
 		Shrine_Earth_Regular : {Asset : Music_Shrine_Earth_Regular, IntroLength : 1.751, LoopLength : 332.011},

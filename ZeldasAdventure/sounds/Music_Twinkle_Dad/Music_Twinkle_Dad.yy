@@ -15,7 +15,7 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Twinkle_Dad.ogg",
-  "duration": 41.859062,
+  "duration": 84.58206,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

@@ -24,16 +24,16 @@ function Subtitle_GreatWimbich_Alice_PeculiarLittleTown(AudioPosition)
 	{
 	case "en":
 		if AudioPosition >= 0.000 and AudioPosition <=2.867 {return "Alice: Great Wimbich is such a peculiar little town."}
-		else if AudioPosition >= 3.074 and AudioPosition <= 6.408 {return "The shops out on Upper Street have anything you could wish for..."}
-		else if AudioPosition >= 6.503 and AudioPosition <= 8.236 {return "and if you can't find it there..."}
+		else if AudioPosition >= 3.074 and AudioPosition <= 6.408 {return "The shops out on Upper Street have anything you could wish for"}
+		else if AudioPosition >= 6.503 and AudioPosition <= 8.236 {return "and if you can't find it there"}
 		else if AudioPosition >= 8.261 and AudioPosition <= 11.049 {return "you're sure to stumble across it in the market square."}
 		else return ""
 		break;
 		
 	case "nl":
 		if AudioPosition >= 0.000 and AudioPosition <=2.867 {return "Alice: Great Wimbich is zo'n eigenaardig dorpje."}
-		else if AudioPosition >= 3.074 and AudioPosition <= 6.408 {return "De winkels in de Bovenstraat hebben alles wat je maar kunt wensen..."}
-		else if AudioPosition >= 6.503 and AudioPosition <= 8.236 {return "en als je het daar niet kunt vinden..."}
+		else if AudioPosition >= 3.074 and AudioPosition <= 6.408 {return "De winkels in de Bovenstraat hebben alles wat je maar kunt wensen"}
+		else if AudioPosition >= 6.503 and AudioPosition <= 8.236 {return "en als je het daar niet kunt vinden"}
 		else if AudioPosition >= 8.261 and AudioPosition <= 11.049 {return "kom je het vast en zeker tegen op het marktplein."}
 		else return ""
 		break;
@@ -46,14 +46,14 @@ function Subtitle_GreatWimbich_Alice_IfYaLikeMusic(AudioPosition)
 	switch global.CurrentLanguage
 	{
 	case "en":
-		if AudioPosition >= 0.000 and AudioPosition <= 3.183 {return "Alice: Now, if ya like music, follow your ear to Yvonne..."}
+		if AudioPosition >= 0.000 and AudioPosition <= 3.183 {return "Alice: Now, if ya like music, follow your ear to Yvonne"}
 		else if AudioPosition >= 3.208 and AudioPosition <= 5.765 {return "the musician down Skotness Road right here."}
 		else if AudioPosition >= 5.920 and AudioPosition <= 9.967 {return "If ya get tired in ya wanderings, this is a great place to settle down."}
 		else return ""
 		break;
 		
 	case "nl":
-		if AudioPosition >= 0.000 and AudioPosition <= 3.183 {return "Alice: Maar als je van muziek houdt, volg dan je oren naar Yvonne..."}
+		if AudioPosition >= 0.000 and AudioPosition <= 3.183 {return "Alice: Maar als je van muziek houdt, volg dan je oren naar Yvonne"}
 		else if AudioPosition >= 3.208 and AudioPosition <= 5.765 {return "de muzikante hier verderop de Skotnessweg."}
 		else if AudioPosition >= 5.920 and AudioPosition <= 9.967 {return "Als je tijdens je reizen uitgeput raakt, is dit een geweldige plek om bij te komen."}
 		else return ""
@@ -66,14 +66,14 @@ function Subtitle_GreatWimbich_Alice_NothingMoreToSay(AudioPosition)
 	switch global.CurrentLanguage
 	{
 	case "en":
-		if AudioPosition >= 0.000 and AudioPosition <=2.241 {return "Alice: Zelda, it's been fun visiting with you..."}
+		if AudioPosition >= 0.000 and AudioPosition <=2.241 {return "Alice: Zelda, it's been fun visiting with you"}
 		else if AudioPosition >= 2.348 and AudioPosition <= 4.501 {return "but I have nothing more to say now."}
 		else if AudioPosition >= 4.648 and AudioPosition <= 6.434 {return "Come back and see me again, okay?"}
 		else return ""
 		break;
 		
 	case "nl":
-		if AudioPosition >= 0.000 and AudioPosition <=2.241 {return "Alice: Zelda, het was leuk om met je te praten..."}
+		if AudioPosition >= 0.000 and AudioPosition <=2.241 {return "Alice: Zelda, het was leuk om met je te praten"}
 		else if AudioPosition >= 2.348 and AudioPosition <= 4.501 {return "maar ik heb je niets meer te zeggen."}
 		else if AudioPosition >= 4.648 and AudioPosition <= 6.434 {return "Kom nog eens langs, oké?"}
 		else return ""
@@ -92,7 +92,7 @@ function Subtitle_GreatWimbich_Alice_RealNice(AudioPosition)
 		break;
 		
 	case "nl":
-		if AudioPosition >= 0.000 and AudioPosition <=2.241 {return "Alice: Ja, Zelda, in deze buurt is het echt heel mooi."}
+		if AudioPosition >= 0.000 and AudioPosition <=2.241 {return "Alice: Ja, Zelda, het is echt heel mooi in deze omgeving."}
 		else return ""
 		break;
 	}
