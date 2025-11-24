@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "MeadowOfSkotness_07_Solid",
+  "name": "GreatWimbich_10_Collision_GhostFarmhand",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 383,
-  "bbox_top": 0,
-  "bbox_bottom": 239,
+  "bbox_left": 232,
+  "bbox_right": 284,
+  "bbox_top": 59,
+  "bbox_bottom": 110,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"86bd8410-090a-4a83-aad8-a51fbe1498f5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2519f676-4106-458e-8c13-01e85e457e4d",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "MeadowOfSkotness_07_Solid",
+    "name": "GreatWimbich_10_Collision_GhostFarmhand",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"025ded8e-534a-4fec-94ba-ad3f0db5151f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"86bd8410-090a-4a83-aad8-a51fbe1498f5","path":"sprites/MeadowOfSkotness_07_Solid/MeadowOfSkotness_07_Solid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"67a962d2-0c6e-4256-8222-118770d1a05f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2519f676-4106-458e-8c13-01e85e457e4d","path":"sprites/GreatWimbich_10_Collision_GhostFarmhand/GreatWimbich_10_Collision_GhostFarmhand.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,11 +64,11 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b6e1ae18-b8ef-47f4-8680-de2b9453dc72","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0a219727-85a1-4853-8dfe-9bcf7b9e840a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "MeadowOfSkotness",
-    "path": "folders/Sprites/Maps/Overworld/MeadowOfSkotness.yy",
+    "name": "GreatWimbich",
+    "path": "folders/Sprites/Maps/Overworld/GreatWimbich.yy",
   },
 }
