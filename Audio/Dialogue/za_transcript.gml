@@ -18,7 +18,7 @@
 "Knave: [laughter] We may joke to pass the time, Princess, but we are all troubled about the future of Tolemac. You must seek out the tablets and save us! [laughter]"
 "Smithy: Who goes there!? Oh, it's a young girl. Don't touch anything! People steal me blind; I know you all hate me! What did I ever do to any of you!? I give an honest bargain and I grind the coal into rubies. I stay open late and work my fingers to the bone. Do any of you appreciate it? No!"
 "Ghost Farmer: Far away, one of Ganon's allies lives in a world of water. The entrance is hidden, and you may never find it if you fear the touch of falling water. You can cross any fjord in Skotness River with the Red Boots."
-"Ghost Farmer: Stay back! This splendid farm is all mine. Isn’t it wonderful? I have worked this land for three-hundred years."
+"Ghost Farmer: Stay back! This splendid farm is all mine. Isn't it wonderful? I have worked this land for three-hundred years."
 "Waldensop: Good morn, lady. A noble person such as yourself on foot-fend? If it's rest you seek, you'll get precious little comfort in this thieves' den, I'll tell you."
 "Waldensop: Be careful if you go inside, milady! Some people in these parts would rob you same as look at you, they would."
 "Waldensop: I would like to give you a feather as a sign of my affection. This will take you to new heights!"

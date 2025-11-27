@@ -5,7 +5,7 @@ function Subtitle_GreatWimbich_GhostFarmer_StayBack(AudioPosition)
 	case "en":
 		if AudioPosition >= 0.000 and AudioPosition <= 1.808 {return "Ghost Farmer: Stay back!"}
 		else if AudioPosition >= 1.832 and AudioPosition <= 4.106 {return "This splendid farm is all mine."}
-		else if AudioPosition >= 4.131 and AudioPosition <= 6.044 {return "Isn’t it wonderful?"}
+		else if AudioPosition >= 4.131 and AudioPosition <= 6.044 {return "Isn't it wonderful?"}
 		else if AudioPosition >= 6.507 and AudioPosition <= 10.453 {return "I have worked this land for three-hundred years."}
 		else return ""
 		break;
