@@ -16,7 +16,7 @@
   "AntiAlias": 1,
   "first": 0,
   "last": 0,
-  "sampleText": "abcdef ABCDEF\r\n0123456789 .,<>\"'&!?\r\nthe quick brown fox jumps over the lazy dog\r\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\r\nDefault character: ▯ (9647)\r\n",
+  "sampleText": "abcdef ABCDEF\r\n0123456789 .,<>\"'&!?\r\nthe quick brown fox jumps over the lazy dog\r\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\r\nDefault character: ▯ (9647)",
   "includeTTF": true,
   "TTFName": "${project_dir}\\fonts\\Font_Regular\\Herculanum LT W01 Bold.ttf",
   "textureGroupId": {
@@ -25,7 +25,7 @@
   },
   "ascenderOffset": 0,
   "ascender": 13,
-  "lineHeight": 17,
+  "lineHeight": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":5,"h":17,"character":32,"shift":5,"offset":0,},
     "33": {"x":40,"y":97,"w":3,"h":17,"character":33,"shift":6,"offset":2,},

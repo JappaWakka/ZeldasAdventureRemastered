@@ -4,14 +4,8 @@ function UseTreasure_LifePotion()
 	{
 		FillHP()
 		Item_Remove(Treasures.LifePotion,0);
-		if global.RemasteredMode = true
-		{
-			global.CurrentTreasure = -1
-		}
-		else
-		{
-			global.CurrentItem[1] = -1
-		}
+		global.CurrentItem[1] = -1
+		
 	}
 	else
 	{
@@ -21,14 +15,7 @@ function UseTreasure_LifePotion()
 			audio_play_sound_relative_toplayer(SFX_FillHearts,999,false)
 			
 			Item_Remove(Treasures.LifePotion,0);
-			if global.RemasteredMode = true
-			{
-				global.CurrentTreasure = -1
-			}
-			else
-			{
-				global.CurrentItem[1] = -1
-			}
+			global.CurrentTreasure = -1
 		}
 		else
 		{

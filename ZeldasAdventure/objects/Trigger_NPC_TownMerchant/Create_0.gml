@@ -1,0 +1,1 @@
+HasTalked = false

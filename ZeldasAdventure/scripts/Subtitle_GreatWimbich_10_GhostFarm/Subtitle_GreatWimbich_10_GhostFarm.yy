@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Subtitle_GreatWimbich_04",
+  "name": "Subtitle_GreatWimbich_10_GhostFarm",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

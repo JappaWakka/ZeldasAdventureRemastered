@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "GreatWimbich_03_Solid",
+  "name": "GreatWimbich_03_Collision_TownMerchant",
   "bboxMode": 0,
   "collisionKind": 0,
   "type": 0,
@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 383,
-  "bbox_top": 0,
-  "bbox_bottom": 239,
+  "bbox_left": 215,
+  "bbox_right": 288,
+  "bbox_top": 135,
+  "bbox_bottom": 207,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7a52f3c2-9f99-408b-bf56-8fd713d9aee2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ff47ed6-a8b8-4120-9f45-58d29e55717b",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "GreatWimbich_03_Solid",
+    "name": "GreatWimbich_03_Collision_TownMerchant",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -45,7 +45,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cc98c7b5-c747-480b-a3ff-16b3e98b027a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a52f3c2-9f99-408b-bf56-8fd713d9aee2","path":"sprites/GreatWimbich_03_Solid/GreatWimbich_03_Solid.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"da6aa990-82a3-4d97-afed-4c38f1b9d638","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2ff47ed6-a8b8-4120-9f45-58d29e55717b","path":"sprites/GreatWimbich_03_Collision_TownMerchant/GreatWimbich_03_Collision_TownMerchant.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,7 +64,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3e268c9f-836a-439a-9616-0cef70714b0e","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"41c84d5f-776b-4627-aa68-dff423cc4ff0","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
