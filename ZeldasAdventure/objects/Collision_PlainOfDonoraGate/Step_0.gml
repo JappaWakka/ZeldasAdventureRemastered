@@ -13,8 +13,8 @@ if Register_Registered("DonoraGateFeePaid") = false
 			{
 				if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasures.Rubies and global.CurrentRubies >= GateFee
 				{
-					RemoveRubies(GateFee);
-					Register_Add("DonoraGateFeePaid")
+					//Temporarily Block Progress// RemoveRubies(GateFee);
+					//Temporarily Block Progress// Register_Add("DonoraGateFeePaid")
 				}
 				
 			}
@@ -25,8 +25,8 @@ if Register_Registered("DonoraGateFeePaid") = false
 			{
 				if global.CurrentRubies >= GateFee
 				{
-					RemoveRubies(GateFee);
-					Register_Add("DonoraGateFeePaid")
+					//Temporarily Block Progress// RemoveRubies(GateFee);
+					//Temporarily Block Progress// Register_Add("DonoraGateFeePaid")
 				}
 			}
 		}
