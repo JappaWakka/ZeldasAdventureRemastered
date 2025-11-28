@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "PlainOfAndor",
-    "path": "folders/Objects/SpecialCollisions/NPCs/PlainOfAndor.yy",
+    "name": "PlainOfDonora",
+    "path": "folders/Objects/SpecialCollisions/NPCsAndBlockades/PlainOfDonora.yy",
   },
 }

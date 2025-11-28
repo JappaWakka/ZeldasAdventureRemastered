@@ -35,6 +35,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ForestOfOgham",
-    "path": "folders/Objects/SpecialCollisions/NPCs/ForestOfOgham.yy",
+    "path": "folders/Objects/SpecialCollisions/NPCsAndBlockades/ForestOfOgham.yy",
   },
 }
