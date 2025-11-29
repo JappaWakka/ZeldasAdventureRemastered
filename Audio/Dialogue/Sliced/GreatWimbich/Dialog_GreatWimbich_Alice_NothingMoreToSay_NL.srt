@@ -1,6 +1,6 @@
 ﻿1
 00:00:00,021 --> 00:00:02,241
-Zelda, het was leuk om met je te praten...
+Zelda, het was leuk om met je te praten
 
 2
 00:00:02,348 --> 00:00:04,501

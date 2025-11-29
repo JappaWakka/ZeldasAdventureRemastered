@@ -52,7 +52,7 @@
 		case "nl":
 			if AudioPosition >= 0.000 and AudioPosition <= 2.620 {return "Lothar de Herbergier: Dat is wijsheid die uw jaren te boven gaat."}
 			else if AudioPosition >= 2.873 and AudioPosition <= 7.286 {return "De Kalmte-spreuk zal u helpen wanneer u hem het meest nodig heeft, gebruik hem goed."}
-			else if AudioPosition >= 7.387 and AudioPosition <= 10.840 {return "En let goed op uzelf op de eenzame Vlakte van Andor."}
+			else if AudioPosition >= 7.387 and AudioPosition <= 10.840 {return "En let goed op uzelf op de eenzame Andorvlakte."}
 			else return ""
 			break;
 		}

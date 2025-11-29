@@ -61,7 +61,7 @@ function Subtitle_GreatWimbich_TwinFather_VaguelyFamiliar(AudioPosition)
 		break;
 		
 	case "nl":
-		if AudioPosition >= 0.000 and AudioPosition <= 2.730 {return "Vader van de Tweeling: Je komt me vaag bekend voor, maar eh..."}
+		if AudioPosition >= 0.000 and AudioPosition <= 2.730 {return "Vader van de Tweeling: Je... komt me vaag bekend voor, maar eh..."}
 		else if AudioPosition >= 2.755 and AudioPosition <= 4.286 {return "het is echt tijd voor mijn dutje."}
 		else if AudioPosition >= 4.611 and AudioPosition <= 6.635 {return "Ben je Eric of Ian?"}
 		else return ""

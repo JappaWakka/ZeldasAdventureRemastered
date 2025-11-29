@@ -61,7 +61,7 @@ function Subtitle_GreatWimbich_GhostFarmer_WaterShrine_Classic(AudioPosition) //
 		if AudioPosition >= 0.000 and AudioPosition <= 6.173 {return "Spookknecht: Hier ver vandaan leeft een bondgenoot van Ganon in een wereld van water."}
 		else if AudioPosition >= 6.473 and AudioPosition <= 9.333 {return "De ingang is verborgen en je zult hem nooit vinden"}
 		else if AudioPosition >= 9.358 and AudioPosition <= 12.053 {return "als je bang bent voor stromend water."}
-		else if AudioPosition >= 13.087 and AudioPosition <= 18.700 {return "Met de rode laarzen kun je elke fjord in de Skotness-rivier oversteken."}
+		else if AudioPosition >= 13.087 and AudioPosition <= 18.700 {return "Met de rode laarzen kun je elke fjord in de Skotnessrivier oversteken."}
 		else return ""
 		break;
 	}

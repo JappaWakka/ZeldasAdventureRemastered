@@ -4,15 +4,15 @@ function Subtitle_MeadowOfSkotness_Farmer_HelloThereMiss(AudioPosition)
 	{
 	case "en":
 		if AudioPosition >= 0.000 and AudioPosition <=1.686 {return "Farmer: Hello there, Miss!"}
-		else if AudioPosition >= 1.807 and AudioPosition <= 3.747 {return "Watch how you go out in the meadows..."}
-		else if AudioPosition >= 3.873 and AudioPosition <= 7.000 {return "they're full of Leevers and Tektites this time of year!"}
+		else if AudioPosition >= 1.807 and AudioPosition <= 3.747 {return "Watch how you go out in the meadows!"}
+		else if AudioPosition >= 3.873 and AudioPosition <= 7.000 {return "They're full of Leevers and Tektites this time of year!"}
 		else return ""
 		break;
 		
 	case "nl":
 		if AudioPosition >= 0.000 and AudioPosition <=1.686 {return "Boer: Hallo daar, jongedame!"}
-		else if AudioPosition >= 1.807 and AudioPosition <= 3.747 {return "Pas op als je de weiden in gaat..."}
-		else if AudioPosition >= 3.873 and AudioPosition <= 7.000 {return "ze zitten vol met Leevers en Tektites rond deze tijd van het jaar!"}
+		else if AudioPosition >= 1.807 and AudioPosition <= 3.747 {return "Pas op als je de weiden in gaat!"}
+		else if AudioPosition >= 3.873 and AudioPosition <= 7.000 {return "Ze zitten vol met Leevers en Tektites rond deze tijd van het jaar!"}
 		else return ""
 		break;
 	}

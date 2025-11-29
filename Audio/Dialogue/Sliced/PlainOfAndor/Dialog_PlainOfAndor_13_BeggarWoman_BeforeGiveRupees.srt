@@ -1,6 +1,6 @@
 ﻿1
 00:00:00,120 --> 00:00:01,769
-Beggar Woman: Oh, fair princess...
+Beggar Woman: Oh, fair princess
 
 2
 00:00:01,794 --> 00:00:06,870
@@ -10,7 +10,7 @@ from Great Wimbich in the north!
 3
 00:00:07,309 --> 00:00:10,626
 I ask only enough for a single
-meal for my children...
+meal for my children
 
 4
 00:00:10,651 --> 00:00:13,830

@@ -1,6 +1,6 @@
 ﻿1
 00:00:00,021 --> 00:00:02,241
-Zelda, it's been fun visiting with you...
+Zelda, it's been fun visiting with you
 
 2
 00:00:02,348 --> 00:00:04,501

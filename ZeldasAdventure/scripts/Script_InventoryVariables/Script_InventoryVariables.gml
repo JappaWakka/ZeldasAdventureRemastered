@@ -88,7 +88,7 @@ enum Treasures
 	RawSteak,
 	GoldTrumpet,
 	FishingNet,
-	WhiteOrbs,
+	WhiteOrb,
 	Scroll,
 	WoodenSpoon,
 	SilverTrumpet
