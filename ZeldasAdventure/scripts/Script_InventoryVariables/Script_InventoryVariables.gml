@@ -68,7 +68,7 @@ enum Treasures
 	Bell,
 	Raft,
 	RedBoots,
-	Repellant,
+	Repellent,
 	RedRibbon,
 	Rubies,
 	VialOfWind,
