@@ -51,12 +51,16 @@ if global.CurrentLanguage = "nl"
 {
 	LanguageIndex = 1
 }
+else if global.CurrentLanguage = "fr"
+{
+	LanguageIndex = 2
+}
 ds_Menu_Game = CreateMenuPage(
 ["Window Mode",			Menu_ElementType.Toggle,			ChangeWindowMode,				real(global.Fullscreen),				["Window","Full"]	],
 ["Resolution",			Menu_ElementType.Shift,				ChangeResolution,				global.WindowScale - 1,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
 ["Remastered Mode",		Menu_ElementType.Toggle,			ChangeRemasteredModeEnabled,	real(global.RemasteredMode),			["Off","On"]				],
 ["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			real(global.ShowSubtitles),				["Off","On"]				],
-["Language",			Menu_ElementType.Shift,				ChangeLanguage,					LanguageIndex,							["English","Nederlands"]	],
+["Language",			Menu_ElementType.Shift,				ChangeLanguage,					LanguageIndex,							["English","Nederlands","Français"]	],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings				]
 );
 
@@ -74,8 +78,8 @@ ds_Menu_Controls = CreateMenuPage(
 ["Right",				Menu_ElementType.Input,				"right"					],
 ["Up",					Menu_ElementType.Input,				"up"					],
 ["Down",				Menu_ElementType.Input,				"down"					],
-["Action 1 (Accept)",	Menu_ElementType.Input,				"action1"				],
-["Action 2 (Cancel)",	Menu_ElementType.Input,				"action2"				],
+["Action 1/Accept",		Menu_ElementType.Input,				"action1"				],
+["Action 2/Cancel",		Menu_ElementType.Input,				"action2"				],
 ["Inventory",			Menu_ElementType.Input,				"inventory"				],
 ["Map",					Menu_ElementType.Input,				"map"					],
 ["Menu",				Menu_ElementType.Input,				"menu"					],

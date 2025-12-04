@@ -182,6 +182,94 @@ function Subtitle_Cutscene_Tutorial(VideoPosition)
 		else if VideoPosition >= 322.663 and VideoPosition <= 325.263 {return "De rest is aan jou om te ontdekken."}
 		else return ""
 		break;
+		
+	case "fr":
+		if VideoPosition >=		 02.260  and VideoPosition <= 06.580  {return "Bienvenue dans les aventures de Zelda, un jeu de rôle d'action et aventure."}
+		else if VideoPosition >= 07.379  and VideoPosition <= 12.053  {return "En tant que joueur, vous incarnez notre héroïne, la princesse Zelda."}
+		else if VideoPosition >= 12.719  and VideoPosition <= 17.673  {return "Pour jouer au jeu avec succès, vous devez explorer le grand territoire de Tolemac."}
+		else if VideoPosition >= 18.267  and VideoPosition <= 20.993  {return "Pour contrôler les déplacements de Zelda autour de Tolemac"}
+		else if VideoPosition >= 21.266  and VideoPosition <= 26.426  {return "déplacez la manette à gauche, à droite, en haut, en bas et en diagonale."}
+		else if VideoPosition >= 27.307  and VideoPosition <= 29.293  {return "L'astronome de la cour Gaspra"}
+		else if VideoPosition >= 29.333  and VideoPosition <= 33.413  {return "présentera l'histoire de Zelda et décrira comment sa quête a commencé."}
+		else if VideoPosition >= 33.751  and VideoPosition <= 36.665  {return "Il réapparaîtra également chaque fois"}
+		else if VideoPosition >= 36.746  and VideoPosition <= 40.320  {return "que Zelda a réussi à terminer un sanctuaire souterrain"}
+		else if VideoPosition >= 40.573  and VideoPosition <= 44.361  {return "et a récupéré l'un des sept précieux Signes Célestes."}
+		else if VideoPosition >= 45.166  and VideoPosition <= 48.859  {return "Un autre mentor et guide pour Zelda, c'est moi, Shurmak."}
+		else if VideoPosition >= 49.107  and VideoPosition <= 52.254  {return "Tout au long du jeu, j'aide Zelda à s'orienter et je la guide."}
+		else if VideoPosition >= 53.039  and VideoPosition <= 57.426  {return "En explorant, Zelda rencontrera de nombreux ennemis qui habitent cette région."}
+		else if VideoPosition >= 57.700  and VideoPosition <= 61.474  {return "Elle doit les vaincre en utilisant son habileté et sa rapidité."}
+		else if VideoPosition >= 61.970  and VideoPosition <= 63.977  {return "Zelda les attaque avec sa baguette magique."}
+		else if VideoPosition >= 64.396  and VideoPosition <= 68.230  {return "Vous utilisez la baguette en appuyant sur le bouton Action 1."}
+		else if VideoPosition >= 69.057  and VideoPosition <= 73.526  {return "Si Zelda réussit à vaincre ses ennemis, elle sera récompensée."}
+		else if VideoPosition >= 73.776  and VideoPosition <= 76.129  {return "Ils laisseront tomber aléatoirement des rubis et des cœurs..."}
+		else if VideoPosition >= 76.154  and VideoPosition <= 79.843  {return "cela augmentera respectivement sa monnaie et ses unités de vie."}
+		else if VideoPosition >= 80.639  and VideoPosition <= 83.159  {return "Les rubis, qui constituent la monnaie de Tolemac"}
+		else if VideoPosition >= 83.500  and VideoPosition <= 85.288  {return "peut être utilisé pour acheter des objets utiles"}
+		else if VideoPosition >= 85.312  and VideoPosition <= 88.867  {return "et sont indiqués dans le coin supérieur gauche de l'écran."}
+		else if VideoPosition >= 89.516  and VideoPosition <= 94.176  {return "Les coeurs sont les unités de vie qui donnent à Zelda la force de combattre tout au long du jeu."}
+		else if VideoPosition >= 94.602  and VideoPosition <= 98.068  {return "Ils sont représentés dans le coin supérieur droit de l'écran de jeu."}
+		else if VideoPosition >= 98.688  and VideoPosition <= 104.361 {return "Pour sélectionner un objet ou une arme dans l'écran de l'inventaire, appuyez sur le bouton Action 2."}
+		else if VideoPosition >= 105.297 and VideoPosition <= 107.365 {return "Une fois dans l'écran de l'inventaire"}
+		else if VideoPosition >= 107.438 and VideoPosition <= 110.371 {return "vous pouvez accéder à des objets utiles et des armes"}
+		else if VideoPosition >= 110.416 and VideoPosition <= 114.936 {return "en sélectionnant un objet avec votre curseur et en appuyant sur le bouton Action 1."}
+		else if VideoPosition >= 115.706 and VideoPosition <= 119.660 {return "Les trésors et les armes peuvent être parcourus en appuyant sur le bouton gauche de la fenêtre."}
+		else if VideoPosition >= 119.685 and VideoPosition <= 123.766 {return "pour se déplacer vers la gauche, et en appuyant sur le bouton de la fenêtre droite pour se déplacer vers la droite."}
+		else if VideoPosition >= 124.601 and VideoPosition <= 129.218 {return "L'arme utilisée apparaît dans la fenêtre en bas à droite de l'écran de l'inventaire."}
+		else if VideoPosition >= 129.977 and VideoPosition <= 133.584 {return "Si vous sélectionnez un objet utile parmi la sélection de trésors"}
+		else if VideoPosition >= 133.859 and VideoPosition <= 138.067 {return "L'objet apparaîtra dans la même fenêtre où la sélection des armes est apparue."}
+		else if VideoPosition >= 138.289 and VideoPosition <= 142.688 {return "Zelda ne peut utiliser qu'un seul objet ou une seule arme à la fois."}
+		else if VideoPosition >= 143.514 and VideoPosition <= 147.267 {return "Au cours de ses voyages, Zelda trouvera de nombreuses portes verrouillées."}
+		else if VideoPosition >= 147.664 and VideoPosition <= 151.750 {return "Elle doit avoir une clé en sa possession pour passer par ces entrées verrouillées."}
+		else if VideoPosition >= 152.096 and VideoPosition <= 156.029 {return "Le nombre de clés en possession de Zelda apparaîtra dans la petite fenêtre"}
+		else if VideoPosition >= 156.188 and VideoPosition <= 158.968 {return "en haut à droite de l'écran de l'inventaire."}
+		else if VideoPosition >= 159.411 and VideoPosition <= 161.331 {return "Pour vous aider à naviguer dans Tolemac"}
+		else if VideoPosition >= 161.610 and VideoPosition <= 165.510 {return "une carte est disponible en déplaçant votre joystick vers le bouton de la carte"}
+		else if VideoPosition >= 165.630 and VideoPosition <= 168.337 {return "et ensuite en appuyant sur votre bouton Action 1."}
+		else if VideoPosition >= 169.269 and VideoPosition <= 170.750 {return "Il existe deux types de cartes:"}
+		else if VideoPosition >= 171.089 and VideoPosition <= 174.862 {return "Un pour le monde supérieur et un pour chacun des mondes souterrains."}
+		else if VideoPosition >= 175.210 and VideoPosition <= 179.330 {return "La carte du monde vous indiquera où vous vous trouvez et où vous avez voyagé."}
+		else if VideoPosition >= 180.105 and VideoPosition <= 184.666 {return "Les cartes de chacun des mondes souterrains révéleront où vous vous trouvez..."}
+		else if VideoPosition >= 184.727 and VideoPosition <= 188.753 {return "où vous avez voyagé et où vous devez vous rendre pour accomplir votre quête."}
+		else if VideoPosition >= 189.522 and VideoPosition <= 193.776 {return "Pour revenir au jeu, appuyez sur le bouton Action 2."}
+		else if VideoPosition >= 194.168 and VideoPosition <= 196.215 {return "Quand vous êtes prêt à quitter le jeu..."}
+		else if VideoPosition >= 196.240 and VideoPosition <= 200.449 {return "déplacez votre curseur sur le bouton Quitter et appuyez sur le bouton Action 1."}
+		else if VideoPosition >= 201.489 and VideoPosition <= 205.329 {return "Vous arriverez ensuite à l'écran Sauvegarder, Continuer et Quitter."}
+		else if VideoPosition >= 205.730 and VideoPosition <= 207.770 {return "Pour activer l’un de ces boutons"}
+		else if VideoPosition >= 207.795 and VideoPosition <= 212.203 {return "vous devez déplacer le curseur vers le bouton et appuyer sur le bouton Action 1."}
+		else if VideoPosition >= 213.597 and VideoPosition <= 217.964 {return "Si vous enregistrez et quittez, vous arriverez à l'écran de sélection du joueur"}
+		else if VideoPosition >= 218.015 and VideoPosition <= 221.533 {return "où vous avez l'option de rejouer ou de quitter le jeu."}
+		else if VideoPosition >= 222.307 and VideoPosition <= 224.050 {return "Quand vous reviendrez jouer à nouveau"}
+		else if VideoPosition >= 224.237 and VideoPosition <= 227.724 {return "vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant votre nom."}
+		else if VideoPosition >= 228.658 and VideoPosition <= 231.885 {return "Vous retournerez ensuite au premier écran de jeu."}
+		else if VideoPosition >= 231.960 and VideoPosition <= 235.506 {return "avec tous les objets et armes encore dans l'inventaire."}
+		else if VideoPosition >= 236.393 and VideoPosition <= 241.430 {return "Si vous quittez sans sauvegarder, vous arriverez à l’écran de sélection du joueur"}
+		else if VideoPosition >= 241.483 and VideoPosition <= 245.096 {return "où vous avez l'option de rejouer ou de quitter le jeu."}
+		else if VideoPosition >= 246.025 and VideoPosition <= 247.872 {return "Lorsque vous revenez au jeu..."}
+		else if VideoPosition >= 247.897 and VideoPosition <= 250.790 {return "vous ne pourrez pas revenir à votre partie précédente."}
+		else if VideoPosition >= 250.848 and VideoPosition <= 255.809 {return "Cependant, votre statut sera celui de la dernière partie que vous avez sauvegardée."}
+		else if VideoPosition >= 256.586 and VideoPosition <= 258.319 {return "Si vous choisissez Retour au Jeu"}
+		else if VideoPosition >= 258.383 and VideoPosition <= 262.463 {return "vous arriverez à l'écran de l'inventaire où vous appuyez sur le bouton Action 2"}
+		else if VideoPosition >= 262.563 and VideoPosition <= 264.616 {return "ce qui vous ramène ensuite au jeu."}
+		else if VideoPosition >= 265.036 and VideoPosition <= 269.103 {return "Avant chaque partie, vous devez choisir un nom pour votre héros ou héroïne."}
+		else if VideoPosition >= 269.633 and VideoPosition <= 273.506 {return "Vous pouvez choisir le bouton de création en déplaçant le curseur sur le bouton"}
+		else if VideoPosition >= 273.682 and VideoPosition <= 276.015 {return "et en appuyant sur le bouton Action 1."}
+		else if VideoPosition >= 276.954 and VideoPosition <= 279.364 {return "Cela vous amène à l'écran de saisie du nom"}
+		else if VideoPosition >= 279.388 and VideoPosition <= 281.814 {return "où vous tapez votre nom sur le clavier"}
+		else if VideoPosition >= 281.869 and VideoPosition <= 285.489 {return "en sélectionnant les lettres souhaitées avec le bouton Action 1"}
+		else if VideoPosition >= 285.533 and VideoPosition <= 288.142 {return "et ensuite en déplaçant votre curseur vers le bouton Terminé"}
+		else if VideoPosition >= 288.196 and VideoPosition <= 290.896 {return "et en appuyant à nouveau sur le bouton Action 1."}
+		else if VideoPosition >= 292.042 and VideoPosition <= 294.875 {return "Cela vous ramène à l'écran de sélection du joueur."}
+		else if VideoPosition >= 295.266 and VideoPosition <= 298.145 {return "Ici, vous appuyez sur Jouer en sélectionnant le bouton Jouer"}
+		else if VideoPosition >= 298.259 and VideoPosition <= 300.446 {return "et en appuyant sur le bouton Action 1."}
+		else if VideoPosition >= 300.964 and VideoPosition <= 303.064 {return "Vous commencerez alors le jeu."}
+		else if VideoPosition >= 303.600 and VideoPosition <= 307.580 {return "Pour supprimer le nom d'un joueur, placez le curseur sur le bouton Supprimer"}
+		else if VideoPosition >= 307.682 and VideoPosition <= 312.295 {return "et appuyez sur le bouton Action 1 pendant trois secondes."}
+		else if VideoPosition >= 313.397 and VideoPosition <= 317.170 {return "Pour quitter le jeu, placez le curseur sur le bouton Quitter"}
+		else if VideoPosition >= 317.231 and VideoPosition <= 319.038 {return "et appuyez sur le bouton Action 1."}
+		else if VideoPosition >= 319.329 and VideoPosition <= 322.149 {return "C'est tout ce que je révélerai pour l'instant."}
+		else if VideoPosition >= 322.663 and VideoPosition <= 325.263 {return "Le reste, c'est à vous de le découvrir."}
+		else return ""
+		break;
 	}
 }
 

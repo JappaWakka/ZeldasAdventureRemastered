@@ -12,7 +12,10 @@ function ChangeLanguage(LanguageIndex){
 			global.CurrentLanguage = global.Languages.English;
 			break;
 		case 1 : //Nederlands
-			global.CurrentLanguage = global.Languages.Nederlands;
+			global.CurrentLanguage = global.Languages.Dutch;
+			break;
+		case 2 : //Français
+			global.CurrentLanguage = global.Languages.French;
 			break;
 	}
 	if oldSetting <> global.CurrentLanguage

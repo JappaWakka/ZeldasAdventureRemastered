@@ -32,7 +32,8 @@ function InitGameVariables()
 	global.DesiredRubies = 0;
 	global.Languages = {
 		English : "en",
-		Nederlands : "nl"
+		Dutch : "nl"
+		French : "fr"
 	}
 	global.Subtitle = "";
 	global.CanControlPlayer = true;
@@ -112,7 +113,7 @@ function InitGameVariables()
 			global.CurrentLanguage = global.Languages.English;
 			break;
 		case "nl" :
-			global.CurrentLanguage = global.Languages.Nederlands;
+			global.CurrentLanguage = global.Languages.Dutch;
 			break;
 	}
 	global.VolumeMaster = ini_read_real("Options", "VolumeMaster", 1);

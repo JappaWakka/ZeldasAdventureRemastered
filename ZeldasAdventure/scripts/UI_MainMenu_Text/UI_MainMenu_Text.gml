@@ -19,6 +19,7 @@ function UI_MainMenu_Text(TextIndex)
 		else if TextIndex = 5 {return "SETTINGS"}
 		else if TextIndex = 6 {return "TUTORIAL"}
 		else if TextIndex = 7 {return "Exit"}
+		else if TextIndex = 8 {return "EMPTY"}
 		break;
 		
 	case "nl":
@@ -38,6 +39,7 @@ function UI_MainMenu_Text(TextIndex)
 		else if TextIndex = 5 {return "OPTIES"}
 		else if TextIndex = 6 {return "UITLEG"}
 		else if TextIndex = 7 {return "Stop"}
+		else if TextIndex = 8 {return "LEEG"}
 		break;
 	}
 }

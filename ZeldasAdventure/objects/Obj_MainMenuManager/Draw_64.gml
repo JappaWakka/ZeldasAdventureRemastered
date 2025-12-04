@@ -38,7 +38,7 @@ if PageIndex = 0 //Main Menu
 		}
 		else
 		{
-			PlayerName = "EMPTY"
+			PlayerName = UI_MainMenu_Text(8)
 		}
 		
 		draw_text_color(99, SaveNameY,PlayerName,GradientColor0,GradientColor0,GradientColor1,GradientColor1,1);
@@ -440,46 +440,46 @@ else //SettingsMenu
 								StringValue = "start"
 								break;
 							case "gamepad dpad left":
-								StringValue = "d-pad left"
+								StringValue = "d-pad " & UI_SettingsMenu_Text(4,11)
 								break;
 							case "gamepad dpad right":
-								StringValue = "d-pad right"
+								StringValue = "d-pad " & UI_SettingsMenu_Text(4,12)
 								break;
 							case "gamepad dpad up":
-								StringValue = "d-pad up"
+								StringValue = "d-pad " & UI_SettingsMenu_Text(4,13)
 								break;
 							case "gamepad dpad down":
-								StringValue = "d-pad down"
+								StringValue = "d-pad " & UI_SettingsMenu_Text(4,14)
 								break;
 							case "gamepad thumbstick l left":
-								StringValue = "stick l left"
+								StringValue = "stick l " & UI_SettingsMenu_Text(4,11)
 								break;
 							case "gamepad thumbstick l right":
-								StringValue = "stick l right"
+								StringValue = "stick l " & UI_SettingsMenu_Text(4,12)
 								break;
 							case "gamepad thumbstick l up":
-								StringValue = "stick l up"
+								StringValue = "stick l " & UI_SettingsMenu_Text(4,13)
 								break;
 							case "gamepad thumbstick l down":
-								StringValue = "stick l down"
+								StringValue = "stick l " & UI_SettingsMenu_Text(4,14)
 								break;
 							case "gamepad thumbstick l click":
-								StringValue = "stick l click"
+								StringValue = "stick l " & UI_SettingsMenu_Text(4,15)
 								break;
 							case "gamepad thumbstick r left":
-								StringValue = "stick r left"
+								StringValue = "stick r " & UI_SettingsMenu_Text(4,11)
 								break;
 							case "gamepad thumbstick r right":
-								StringValue = "stick r right"
+								StringValue = "stick r " & UI_SettingsMenu_Text(4,12)
 								break;
 							case "gamepad thumbstick r up":
-								StringValue = "stick r up"
+								StringValue = "stick r " & UI_SettingsMenu_Text(4,13)
 								break;
 							case "gamepad thumbstick r down":
-								StringValue = "stick r down"
+								StringValue = "stick r " & UI_SettingsMenu_Text(4,14)
 								break;
 							case "gamepad thumbstick r click":
-								StringValue = "stick r click"
+								StringValue = "stick r " & UI_SettingsMenu_Text(4,15)
 								break;
 						}
 					}

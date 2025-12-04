@@ -47,6 +47,7 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 					if OptionIndex = -1 {return "Language"}
 					if OptionIndex = 0 {return "English"}
 					if OptionIndex = 1 {return "Nederlands"}
+					if OptionIndex = 2 {return "Français"}
 				}
 				else if TextIndex = 5 {return "Back"}
 				break;
@@ -74,6 +75,11 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 				if TextIndex = 8 {return "Map"}
 				if TextIndex = 9 {return "Menu"}
 				if TextIndex = 10 {return "Back"}
+				if TextIndex = 11 {return "left"}
+				if TextIndex = 12 {return "right"}
+				if TextIndex = 13 {return "up"}
+				if TextIndex = 14 {return "down"}
+				if TextIndex = 15 {return "click"}
 				break;
 		}
 	break;
@@ -150,6 +156,11 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 				if TextIndex = 8 {return "Kaart"}
 				if TextIndex = 9 {return "Menu"}
 				if TextIndex = 10 {return "Terug"}
+				if TextIndex = 11 {return "links"}
+				if TextIndex = 12 {return "rechts"}
+				if TextIndex = 13 {return "omhoog"}
+				if TextIndex = 14 {return "omlaag"}
+				if TextIndex = 15 {return "klik"}
 				break;
 		}
 		break;
