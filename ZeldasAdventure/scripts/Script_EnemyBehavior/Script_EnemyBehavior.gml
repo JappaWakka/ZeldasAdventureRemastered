@@ -10,6 +10,8 @@ function Script_AggroRange()
 				{
 					if self.y - Entity_Player.y <= 80
 					{
+						ChangeDelay_Min = 0.5 * FrameRate
+						ChangeDelay_Max = 1 * FrameRate
 						return true;
 					}
 				}
@@ -17,6 +19,8 @@ function Script_AggroRange()
 				{
 					if Entity_Player.y - self.y <= 80
 					{
+						ChangeDelay_Min = 0.5 * FrameRate
+						ChangeDelay_Max = 1 * FrameRate
 						return true;
 					}
 				}
@@ -30,6 +34,8 @@ function Script_AggroRange()
 				{
 					if self.y - Entity_Player.y <= 80
 					{
+						ChangeDelay_Min = 0.5 * FrameRate
+						ChangeDelay_Max = 1 * FrameRate
 						return true;
 					}
 				}
@@ -37,12 +43,16 @@ function Script_AggroRange()
 				{
 					if Entity_Player.y - self.y <= 80
 					{
+						ChangeDelay_Min = 0.5 * FrameRate
+						ChangeDelay_Max = 1 * FrameRate
 						return true;
 					}
 				}
 			}
 		}
 	}
+	ChangeDelay_Min = 1 * FrameRate
+	ChangeDelay_Max = 2 * FrameRate
 	return false;
 }
 
@@ -77,27 +87,34 @@ function EnemyChangeDirection_Straight()
 			}
 			var _startdirection = direction
 			
-			var x_target = x+lengthdir_x(speed * 1.5, _direction);
-			var y_target = y+lengthdir_y(speed * 1.5, _direction);
-			
+			var x_target = x+lengthdir_x(speed * 2, _direction);
+			var y_target = y+lengthdir_y(speed * 2, _direction);
+					
 			var FreeToMove = false
-			if place_meeting(x_target, y_target, Parent_Solid) = false and place_meeting(x_target, y_target, Parent_UseItem_RedBoots) = false
+			var _otherdirection = _direction
+			
+			if place_meeting(x_target, y_target, Parent_Solid) = false and place_meeting(x_target, y_target, Parent_UseItem_RedBoots) = false and place_meeting(x_target, y_target, Parent_ProjectilesCanPass) = false
 			{
 				FreeToMove = true
 			}
-			
-			while FreeToMove = false and _direction != _startdirection
-			{	
-				if place_meeting(x_target, y_target, Parent_Solid) = false and place_meeting(x_target, y_target, Parent_UseItem_RedBoots) = false
-				{
-					FreeToMove = true
-				}
-				else
-				{
-					_direction += 90
-					if _direction >=360
+			else
+			{
+				while FreeToMove = false and _otherdirection != _startdirection
+				{					
+					x_target = x+lengthdir_x(speed * 2, _otherdirection);
+					y_target = y+lengthdir_y(speed * 2, _otherdirection);
+					if place_meeting(x_target, y_target, Parent_Solid) = false and place_meeting(x_target, y_target, Parent_UseItem_RedBoots) = false and place_meeting(x_target, y_target, Parent_ProjectilesCanPass) = false
 					{
-						_direction = 0
+						_direction = _otherdirection
+						FreeToMove = true
+					}
+					else
+					{
+						_otherdirection += 90
+						if _otherdirection >=360
+						{
+							_otherdirection = 0
+						}
 					}
 				}
 			}
@@ -108,27 +125,34 @@ function EnemyChangeDirection_Straight()
 	{
 		var _startdirection = direction
 		var _direction = choose(global.Directions.North,global.Directions.West,global.Directions.East,global.Directions.South);
-		var x_target = x+lengthdir_x(speed * 1.5, _direction);
-		var y_target = y+lengthdir_y(speed * 1.5, _direction);
+		var x_target = x+lengthdir_x(speed * 2, _direction);
+		var y_target = y+lengthdir_y(speed * 2, _direction);
 		
 		var FreeToMove = false
-		if place_meeting(x_target, y_target, Parent_Solid) = false and place_meeting(x_target, y_target, Parent_UseItem_RedBoots) = false
+		var _otherdirection = _direction
+		
+		if place_meeting(x_target, y_target, Parent_Solid) = false and place_meeting(x_target, y_target, Parent_UseItem_RedBoots) = false and place_meeting(x_target, y_target, Parent_ProjectilesCanPass) = false
 		{
 			FreeToMove = true
 		}
-		
-		while FreeToMove = false and _direction != _startdirection
-		{	
-			if place_meeting(x_target, y_target, Parent_Solid) = false and place_meeting(x_target, y_target, Parent_UseItem_RedBoots) = false
-			{
-				FreeToMove = true
-			}
-			else
-			{
-				_direction += 90
-				if _direction >=360
+		else
+		{
+			while FreeToMove = false and _otherdirection != _startdirection
+			{					
+				x_target = x+lengthdir_x(speed * 2, _otherdirection);
+				y_target = y+lengthdir_y(speed * 2, _otherdirection);
+				if place_meeting(x_target, y_target, Parent_Solid) = false and place_meeting(x_target, y_target, Parent_UseItem_RedBoots) = false and place_meeting(x_target, y_target, Parent_ProjectilesCanPass) = false
 				{
-					_direction = 0
+					_direction = _otherdirection
+					FreeToMove = true
+				}
+				else
+				{
+					_otherdirection += 90
+					if _otherdirection >=360
+					{
+						_otherdirection = 0
+					}
 				}
 			}
 		}

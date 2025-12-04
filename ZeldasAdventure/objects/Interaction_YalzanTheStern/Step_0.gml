@@ -1,8 +1,8 @@
-if IsPlayerOnSameTile = false
+if IsPlayerOnSameTile() = false
 {
 	if Register_Registered("DonoraGateAttacked") = true
 	{
-		instance_destroy()
+		Register_Remove("DonoraGateAttacked")
 	}
 }
 else
@@ -13,7 +13,7 @@ else
 		{
 			//Temporarily Block Progress// global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_20Rubies
 			//Temporarily Block Progress// global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_YalzanTheStern,global.CurrentDialogue_Asset,500,false)
-			//Temporarily Block Progress// Register_Add("DonoraGateAttacked")
+			//Temporarily Block Progress// Register_Add("DonoraGateAttacked",true)
 		}
 	}
 }

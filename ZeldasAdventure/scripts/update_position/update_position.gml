@@ -20,6 +20,12 @@ function update_position(argument0, argument1) {
 	{
 		FreeToMoveCurrent = false
 	}
+	
+	////Objects that only Projectiles can pass through
+	if place_meeting(x_target, y_target, Parent_ProjectilesCanPass)
+	{
+		FreeToMoveCurrent = false
+	}
 		
 	////Red Boots Water
 	
@@ -87,6 +93,12 @@ function update_position(argument0, argument1) {
 				
 				////Solid Objects
 				if place_meeting(x_target, y_target, Parent_Solid)
+				{
+					FreeToMoveNew = false
+				}
+				
+				////Objects that only Projectiles can pass through
+				if place_meeting(x_target, y_target, Parent_ProjectilesCanPass)
 				{
 					FreeToMoveNew = false
 				}

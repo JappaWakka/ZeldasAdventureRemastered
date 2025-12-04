@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Entity_NPC_YalzanTheStern",
-  "spriteId": null,
+  "spriteId": {
+    "name": "Sprite_NPC_YalzanTheStern",
+    "path": "sprites/Sprite_NPC_YalzanTheStern/Sprite_NPC_YalzanTheStern.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

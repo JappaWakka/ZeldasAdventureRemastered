@@ -10,8 +10,8 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": {
-    "name": "Enemy_Collision_Solid",
-    "path": "sprites/Enemy_Collision_Solid/Enemy_Collision_Solid.yy",
+    "name": "Enemy_Collision_Solid_48px",
+    "path": "sprites/Enemy_Collision_Solid_48px/Enemy_Collision_Solid_48px.yy",
   },
   "persistent": false,
   "parentObjectId": {

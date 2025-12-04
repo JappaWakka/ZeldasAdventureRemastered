@@ -1,0 +1,43 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Entity_Projectile_Enemy_Bounder_Bright",
+  "spriteId": {
+    "name": "Sprite_Projectile_Bounder_Bright_East",
+    "path": "sprites/Sprite_Projectile_Bounder_Bright_East/Sprite_Projectile_Bounder_Bright_East.yy",
+  },
+  "solid": false,
+  "visible": true,
+  "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
+  "parentObjectId": {
+    "name": "Entity_Parent_Projectile_Enemy",
+    "path": "objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",
+  },
+  "physicsObject": false,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsGroup": 1,
+  "physicsDensity": 0.5,
+  "physicsRestitution": 0.1,
+  "physicsLinearDamping": 0.1,
+  "physicsAngularDamping": 0.1,
+  "physicsFriction": 0.2,
+  "physicsStartAwake": true,
+  "physicsKinematic": false,
+  "physicsShapePoints": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
+  ],
+  "properties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileSpeed","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"global.ProjectileSpeeds.Enemy + d(0.1)",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileDirection","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"\"Straight\"",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Power","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"55",},
+  ],
+  "parent": {
+    "name": "Projectiles_Enemy",
+    "path": "folders/Objects/Entities/Projectiles_Enemy.yy",
+  },
+}

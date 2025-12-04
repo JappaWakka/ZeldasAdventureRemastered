@@ -32,7 +32,7 @@ function InitGameVariables()
 	global.DesiredRubies = 0;
 	global.Languages = {
 		English : "en",
-		Dutch : "nl"
+		Dutch : "nl",
 		French : "fr"
 	}
 	global.Subtitle = "";

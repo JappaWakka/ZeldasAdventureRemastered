@@ -7,8 +7,8 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": {
-    "name": "Enemy_Collision_Solid",
-    "path": "sprites/Enemy_Collision_Solid/Enemy_Collision_Solid.yy",
+    "name": "Enemy_Collision_Solid_64px",
+    "path": "sprites/Enemy_Collision_Solid_64px/Enemy_Collision_Solid_64px.yy",
   },
   "persistent": false,
   "parentObjectId": {

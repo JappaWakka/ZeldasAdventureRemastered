@@ -22,13 +22,15 @@ enemy.aviana.projectile has different stats on different cells:
 	[damage=60, health=(Not Spawned, or Projectile)] on cells s321
 enemy.axeMan always has the stats:
 	[damage=67, defense=36, health=36, loot=Random] on cells x14, x15, x16, y16, z15
-enemy.bagoBago has different stats on different cells:
+enemy.bounder has different stats on different cells:
 	[damage=50, defense=10, health=10, loot=Random] on cells c8
 	[damage=50, defense=10, health=10] on cells o14, p14
 	[damage=40, health=0, loot=Random] on cells p13
 	[damage=50, defense=10, health=10, loot=Random] on cells q14
-enemy.bagoBago.projectile always has the stats:
+enemy.bounder.projectile.bright always has the stats:
 	[damage=55, health=(Not Spawned, or Projectile)] on cells c8, o14, q14
+enemy.bounder.projectile.dark always has the stats:
+	[damage=55, health=(Not Spawned, or Projectile)] on cells p14
 enemy.blob has different stats on different cells:
 	[damage=0, health=(Not Spawned, or Projectile)] on cells r17, t15
 	[damage=0, health=0] on cells t14, u15
@@ -198,8 +200,6 @@ enemy.tektite has different stats on different cells:
 	[damage=40, health=0, loot=Random] on cells q10, s101a, s103, s104, s116
 	[damage=51, defense=5, health=(Not Spawned, or Projectile), loot=Random] on cells s7
 	[damage=40, health=(Not Spawned, or Projectile), loot=Random] on cells s118
-enemy.tinyFish always has the stats:
-	[damage=55, health=(Not Spawned, or Projectile)] on cells p14
 enemy.tornado always has the stats:
 	[damage=52, defense=32, health=32, weakness=Calm, bonusDamage=72, loot=Random] on cells s302, s303
 enemy.tumbleBot always has the stats:

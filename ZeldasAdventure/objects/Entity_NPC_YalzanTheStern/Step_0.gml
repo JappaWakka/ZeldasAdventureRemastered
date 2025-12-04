@@ -5,7 +5,7 @@ if Register_Registered("DonoraGateFeePaid") = false
 		if HasTalked = false
 		{
 			//Temporarily Block Progress// global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_20Rubies
-			//Temporarily Block Progress// global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_YalzanTheStern,global.CurrentDialogue_Asset,500,false)
+			//Temporarily Block Progress// global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false,x)
 			//Temporarily Block Progress// Register_Add("DonoraGateAttacked")
 		}
 		var GateFee = 10
