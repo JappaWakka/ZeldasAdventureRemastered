@@ -11,5 +11,10 @@ function UI_NameEntryMenu_Text(TextIndex)
 		if TextIndex = 0 {return "VOER UW NAAM IN"}
 		else if TextIndex = 1 {return "Klaar"}
 		break;
+		
+	case "fr":
+		if TextIndex = 0 {return "ENTRE UN NOM"}
+		else if TextIndex = 1 {return "Fait"}
+		break;
 	}
 }

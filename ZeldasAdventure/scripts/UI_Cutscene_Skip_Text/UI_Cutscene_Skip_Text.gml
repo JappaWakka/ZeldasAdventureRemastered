@@ -9,5 +9,9 @@ function UI_Cutscene_Skip_Text()
 	case "nl":
 		return "Druk nogmaals om over te slaan"
 		break;
+		
+	case "fr":
+		return "Appuie pour passer"
+		break;
 	}
 }

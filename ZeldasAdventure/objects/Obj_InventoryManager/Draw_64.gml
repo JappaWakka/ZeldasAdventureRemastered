@@ -107,8 +107,17 @@ if Alpha = 255
 	draw_text(76,46,UI_Inventory_Text(2)) // Make it extra thick
 	
 	//Draw Exit Button Text
-	draw_text(304,46,UI_Inventory_Text(3))
-	draw_text(304,46,UI_Inventory_Text(3)) // Make it extra thick
+	if global.CurrentLanguage = "fr"
+	{
+		draw_set_font(Font_Fancy_Smaller)
+		draw_text(304,48,UI_Inventory_Text(3))
+		draw_text(304,48,UI_Inventory_Text(3)) // Make it extra thick
+	}
+	else
+	{
+		draw_text(304,46,UI_Inventory_Text(3))
+		draw_text(304,46,UI_Inventory_Text(3)) // Make it extra thick
+	}
 	
 	//Reset Font Properties
 	draw_set_color(c_white)

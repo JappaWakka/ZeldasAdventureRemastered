@@ -25,5 +25,17 @@ function UI_WorldMap_Text(TextIndex)
 		else if TextIndex = 7 {return "Vuurtempel"}
 		else if TextIndex = 8 {return "Ganon's Uitdaging"}
 		break;
+		
+	case "fr":
+		if TextIndex = 0 {return "Tolemac"}
+		else if TextIndex = 1 {return "Temple de la Terre"}
+		else if TextIndex = 2 {return "Temple de l’Illusion"}
+		else if TextIndex = 3 {return "Temple de l’Air"}
+		else if TextIndex = 4 {return "Temple du Destin"}
+		else if TextIndex = 5 {return "Temple de l’Eau"}
+		else if TextIndex = 6 {return "Temple de la Force"}
+		else if TextIndex = 7 {return "Temple du Feu"}
+		else if TextIndex = 8 {return "Gantelet de Ganon"}
+		break;
 	}
 }

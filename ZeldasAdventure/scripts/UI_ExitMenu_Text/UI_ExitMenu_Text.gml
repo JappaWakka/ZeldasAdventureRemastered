@@ -13,5 +13,11 @@ function UI_ExitMenu_Text(TextIndex)
 		else if TextIndex = 1 {return "Stop Zonder Opslag"}
 		else if TextIndex = 2 {return "Terug Naar Spel"}
 		break;
+	
+	case "fr":
+		if TextIndex = 0 {return "Sauver & Quitter"}
+		else if TextIndex = 1 {return "Quitter Sans Sauver"}
+		else if TextIndex = 2 {return "Continuer"}
+		break;
 	}
 }

@@ -41,5 +41,26 @@ function UI_MainMenu_Text(TextIndex)
 		else if TextIndex = 7 {return "Stop"}
 		else if TextIndex = 8 {return "LEEG"}
 		break;
+	
+	case "fr":
+		if TextIndex = 3 {return "JOUER"}
+		else if TextIndex = 4
+		{
+			switch ConfirmDelete
+			{
+				case 0:
+					return "SUPPRIMER"
+				case 1:
+					return "SUR ?"
+				case 2:
+					return "SUPPRIMÉ"
+			}
+		}
+		else if TextIndex = 5 {return "PARAMÈTRES"}
+		else if TextIndex = 6 {return "TUTORIEL"}
+		else if TextIndex = 7 {return "Quitter"}
+		else if TextIndex = 8 {return "VIDE"}
+		break;
+		
 	}
 }

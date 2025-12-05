@@ -41,7 +41,7 @@ ds_Menu_Settings = CreateMenuPage(
 ["Game",				Menu_ElementType.PageTransfer,		Menu_Page.Game			],
 ["Audio Volume",		Menu_ElementType.PageTransfer,		Menu_Page.Audio			],
 ["Controls",			Menu_ElementType.PageTransfer,		Menu_Page.Controls		],
-["Reset Controls",		Menu_ElementType.ScriptRunner,		Controls_Reset			],
+["Reset Settings",		Menu_ElementType.ScriptRunner,		ResetSettings			],
 ["Save Settings",		Menu_ElementType.ScriptRunner,		Settings_Save			],
 ["Back",				Menu_ElementType.ScriptRunner,		Settings_ExitToMain		]
 );

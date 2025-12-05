@@ -135,16 +135,34 @@ if PageIndex = 0 //Main Menu
 				draw_text(90,180,UI_MainMenu_Text(4))
 				
 				//Settings
-				draw_text(194,180,UI_MainMenu_Text(5))
+				if global.CurrentLanguage = "fr"
+				{
+					draw_set_font(Font_Menu_Smaller)
+					draw_text(194,181,UI_MainMenu_Text(5))
+					draw_set_font(Font_Menu)
+				}
+				else
+				{
+					draw_text(194,180,UI_MainMenu_Text(5))
+				}
 				
 				//Tutorial
 				draw_text(296,180,UI_MainMenu_Text(6))
 				
 			//Fancy Font
 				//Exit
-				draw_set_font(Font_Fancy)
-				draw_text(298,138,UI_MainMenu_Text(7))
-				draw_text(298,138,UI_MainMenu_Text(7)) // Make it extra thick
+				if global.CurrentLanguage = "fr"
+				{
+					draw_set_font(Font_Fancy_Small)
+					draw_text(298,139,UI_MainMenu_Text(7))
+					draw_text(298,139,UI_MainMenu_Text(7)) // Make it extra thick
+				}
+				else
+				{
+					draw_set_font(Font_Fancy)
+					draw_text(298,138,UI_MainMenu_Text(7))
+					draw_text(298,138,UI_MainMenu_Text(7)) // Make it extra thick
+				}
 		
 		//Reset Font Properties
 		draw_set_color(c_white)
@@ -244,6 +262,7 @@ else if PageIndex = 5 //Name Input Menu
 	
 	//Draw Done Button Text
 		draw_set_font(Font_Fancy)
+		draw_set_color(make_color_rgb(55,23,16))
 		draw_text(314,50,UI_NameEntryMenu_Text(1))
 		draw_text(314,50,UI_NameEntryMenu_Text(1)) // Make it extra thick
 	
@@ -405,6 +424,31 @@ else //SettingsMenu
 					
 					var StringValue = input_binding_get_name(CurrentBinding);
 					
+					if ConfigDevice = 0
+					{
+						switch input_binding_get_name(CurrentBinding)
+						{
+							case "escape":
+								StringValue =  UI_SettingsMenu_Text(4,16)
+								break;
+							case "enter":
+								StringValue =  UI_SettingsMenu_Text(4,16)
+								break;
+							case "arrow up":
+								StringValue = string_concat(UI_SettingsMenu_Text(4,18)," ",UI_SettingsMenu_Text(4,11))
+								break;
+							case "arrow down":
+								StringValue = string_concat(UI_SettingsMenu_Text(4,18)," ",UI_SettingsMenu_Text(4,12))
+								break;
+							case "arrow left":
+								StringValue = string_concat(UI_SettingsMenu_Text(4,18)," ",UI_SettingsMenu_Text(4,13))
+								break;
+							case "arrow right":
+								StringValue = string_concat(UI_SettingsMenu_Text(4,18)," ",UI_SettingsMenu_Text(4,14))
+								break;
+						}
+					}
+					
 					if ConfigDevice = 1
 					{
 						switch input_binding_get_name(CurrentBinding)
@@ -440,47 +484,47 @@ else //SettingsMenu
 								StringValue = "start"
 								break;
 							case "gamepad dpad left":
-								StringValue = "d-pad " & UI_SettingsMenu_Text(4,11)
+								StringValue = string_concat("d-pad ",UI_SettingsMenu_Text(4,11))
 								break;
 							case "gamepad dpad right":
-								StringValue = "d-pad " & UI_SettingsMenu_Text(4,12)
+								StringValue = string_concat("d-pad ",UI_SettingsMenu_Text(4,12))
 								break;
 							case "gamepad dpad up":
-								StringValue = "d-pad " & UI_SettingsMenu_Text(4,13)
+								StringValue = string_concat("d-pad ",UI_SettingsMenu_Text(4,13))
 								break;
 							case "gamepad dpad down":
-								StringValue = "d-pad " & UI_SettingsMenu_Text(4,14)
+								StringValue = string_concat("d-pad ",UI_SettingsMenu_Text(4,14))
 								break;
 							case "gamepad thumbstick l left":
-								StringValue = "stick l " & UI_SettingsMenu_Text(4,11)
+								StringValue = string_concat("stick l ",UI_SettingsMenu_Text(4,11))
 								break;
 							case "gamepad thumbstick l right":
-								StringValue = "stick l " & UI_SettingsMenu_Text(4,12)
+								StringValue = string_concat("stick l ",UI_SettingsMenu_Text(4,12))
 								break;
 							case "gamepad thumbstick l up":
-								StringValue = "stick l " & UI_SettingsMenu_Text(4,13)
+								StringValue = string_concat("stick l ",UI_SettingsMenu_Text(4,13))
 								break;
 							case "gamepad thumbstick l down":
-								StringValue = "stick l " & UI_SettingsMenu_Text(4,14)
+								StringValue = string_concat("stick l ",UI_SettingsMenu_Text(4,14))
 								break;
 							case "gamepad thumbstick l click":
-								StringValue = "stick l " & UI_SettingsMenu_Text(4,15)
+								StringValue = string_concat("stick l ",UI_SettingsMenu_Text(4,15))
 								break;
 							case "gamepad thumbstick r left":
-								StringValue = "stick r " & UI_SettingsMenu_Text(4,11)
+								StringValue = string_concat("stick r ",UI_SettingsMenu_Text(4,11))
 								break;
 							case "gamepad thumbstick r right":
-								StringValue = "stick r " & UI_SettingsMenu_Text(4,12)
+								StringValue = string_concat("stick r ",UI_SettingsMenu_Text(4,12))
 								break;
 							case "gamepad thumbstick r up":
-								StringValue = "stick r " & UI_SettingsMenu_Text(4,13)
+								StringValue = string_concat("stick r ",UI_SettingsMenu_Text(4,13))
 								break;
 							case "gamepad thumbstick r down":
-								StringValue = "stick r " & UI_SettingsMenu_Text(4,14)
+								StringValue = string_concat("stick r ",UI_SettingsMenu_Text(4,14))
 								break;
 							case "gamepad thumbstick r click":
-								StringValue = "stick r " & UI_SettingsMenu_Text(4,15)
-								break;
+								StringValue = string_concat("stick r ",UI_SettingsMenu_Text(4,15))
+								break;								
 						}
 					}
 					

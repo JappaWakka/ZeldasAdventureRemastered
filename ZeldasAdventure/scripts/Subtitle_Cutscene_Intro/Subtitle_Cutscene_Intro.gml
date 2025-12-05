@@ -37,18 +37,18 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 		break;
 	
 	case "fr":
-		if VideoPosition >= 37.361 and VideoPosition <= 39.505 {return "Gaspra: Il n'y aura plusde visionnement ce soir."}
-		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Gaspra: Ah, le parchemin de Shurmak..."}
+		if VideoPosition >= 37.361 and VideoPosition <= 39.505 {return "Gaspra : Il n'y aura plusde visionnement ce soir."}
+		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Gaspra : Ah, le parchemin de Shurmak..."}
 		else if VideoPosition >= 59.781 and VideoPosition <= 62.485 {return "porteur de tristes nouvelles il y a de nombreuses années."}
 		else if VideoPosition >= 65.156 and VideoPosition <= 70.599 {return "C'est ainsi que Ganon, le Seigneur des Ténèbres, s'empara de Tolemac."}
-		else if VideoPosition >= 70.885 and VideoPosition <= 75.130 {return "Il avait volé les précieux signes célestes et capturé Link!"}
+		else if VideoPosition >= 70.885 and VideoPosition <= 75.130 {return "Il avait volé les précieux signes célestes et capturé Link !"}
 		else if VideoPosition >= 75.857 and VideoPosition <= 80.911 {return "Il faudrait trouver une guerrière courageuse pour affronter ce monstre maléfique."}
-		else if VideoPosition >= 94.425 and VideoPosition <= 98.958 {return "Gaspra: Et j'ai donc trouvé cette championne de force et de courage."}
+		else if VideoPosition >= 94.425 and VideoPosition <= 98.958 {return "Gaspra : Et j'ai donc trouvé cette championne de force et de courage."}
 		else if VideoPosition >= 99.197 and VideoPosition <= 104.934 {return "C'est vous, princesse Zelda. Avec ce pendentif magique, allez de l'avant..."}
 		else if VideoPosition >= 104.959 and VideoPosition <= 109.320 {return "et avec chaque signe que vous recueillerez, vous gagnerez aussi en connaissance."}
 		else if VideoPosition >= 109.834 and VideoPosition <= 111.716 {return "Trouvez votre baguette magique."}
-		else if VideoPosition >= 112.081 and VideoPosition <= 116.300 {return "Utilisez-la à bon escient et écoutez vos alliés tout au long du chemin!"}
-		else if VideoPosition >= 116.814 and VideoPosition <= 123.070 {return "Allez-y maintenant, ma princesse. Restaurez les signes céleste et sauvez Link!"}
+		else if VideoPosition >= 112.081 and VideoPosition <= 116.300 {return "Utilisez-la à bon escient et écoutez vos alliés tout au long du chemin !"}
+		else if VideoPosition >= 116.814 and VideoPosition <= 123.070 {return "Allez-y maintenant, ma princesse. Restaurez les signes céleste et sauvez Link !"}
 		else return ""
 		break;
 	

@@ -15,5 +15,12 @@ function UI_Inventory_Text(TextIndex)
 		else if TextIndex = 2 {return "Kaart"}
 		else if TextIndex = 3 {return "Stop"}
 		break;
+		
+	case "fr":
+		if TextIndex = 0 {return "ARMES"}
+		else if TextIndex = 1 {return "TRÉSORS"}
+		else if TextIndex = 2 {return "Carte"}
+		else if TextIndex = 3 {return "Quitter"}
+		break;
 	}
 }

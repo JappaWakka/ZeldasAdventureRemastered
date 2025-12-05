@@ -105,7 +105,7 @@ function InitGameVariables()
 	global.WindowScale = ini_read_real("Options", "WindowScale", 3);
 	global.Fullscreen = bool(ini_read_real("Options", "Fullscreen", 0));
 	global.ShowSubtitles = bool(ini_read_real("Options", "ShowSubtitles", 1));
-	global.RemasteredMode = bool(ini_read_real("Options", "RemasteredMode", 0));
+	global.RemasteredMode = bool(ini_read_real("Options", "RemasteredMode", 1));
 	var Language = ini_read_string("Options", "CurrentLanguage", "en");
 	switch Language
 	{
@@ -114,6 +114,9 @@ function InitGameVariables()
 			break;
 		case "nl" :
 			global.CurrentLanguage = global.Languages.Dutch;
+			break;
+		case "fr" :
+			global.CurrentLanguage = global.Languages.French;
 			break;
 	}
 	global.VolumeMaster = ini_read_real("Options", "VolumeMaster", 1);

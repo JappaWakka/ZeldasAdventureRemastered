@@ -110,8 +110,21 @@ function ChangeWindowMode(Value){
 	}
 }
 
-function Controls_Reset()
+function ResetSettings()
 {
+	global.WindowScale = 3;
+	global.Fullscreen = 0;
+	global.ShowSubtitles = 1;
+	global.RemasteredMode = 1;
+	global.CurrentLanguage = global.Languages.English;
+	global.VolumeMaster = 1;
+	global.VolumeMusic = 1;
+	global.VolumeSoundFX = 1;
+	global.VolumeDialogue = 1;
+	audio_group_set_gain(AudioGroup_Music,global.VolumeMusic * global.VolumeMaster,0);
+	audio_group_set_gain(AudioGroup_SoundFX,global.VolumeSoundFX * global.VolumeMaster,0);
+	audio_group_set_gain(AudioGroup_Dialogue,global.VolumeDialogue * global.VolumeMaster,0);
+	
 	input_profile_reset_bindings("keyboard_and_mouse")
 	input_profile_reset_bindings("gamepad")
 	SavedSettings = false
