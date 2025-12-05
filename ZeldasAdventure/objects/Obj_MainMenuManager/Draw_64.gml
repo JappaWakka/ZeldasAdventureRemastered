@@ -548,8 +548,34 @@ else //SettingsMenu
 	draw_set_valign(fa_bottom);
 	
 	DrawColor = make_color_rgb(141,48,18);
-	draw_set_font(Font_Subtitles);
-	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 32, string(TooltipText),32, ViewWidth * global.WindowScale * 0.65, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
+	var ToolTipFont = Font_Subtitles_1x
+	switch global.WindowScale
+	{
+		case 1:
+			ToolTipFont = Font_Subtitles_1x
+			break;
+		case 2:
+			ToolTipFont = Font_Subtitles_2x
+			break;
+		case 3:
+			ToolTipFont = Font_Subtitles_3x
+			break;
+		case 4:
+			ToolTipFont = Font_Subtitles_4x
+			break;
+		case 5:
+			ToolTipFont = Font_Subtitles_5x
+			break;
+		case 6:
+			ToolTipFont = Font_Subtitles_6x
+			break;
+		default:
+			ToolTipFont = Font_Subtitles_6x
+			break;			
+	}
+	
+	draw_set_font(ToolTipFont);
+	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 32, string(TooltipText), 12 * global.WindowScale, ViewWidth * global.WindowScale * 0.65, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
 	
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);	

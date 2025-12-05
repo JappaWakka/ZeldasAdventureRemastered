@@ -15,8 +15,8 @@ function UI_ExitMenu_Text(TextIndex)
 		break;
 	
 	case "fr":
-		if TextIndex = 0 {return "Sauver & Quitter"}
-		else if TextIndex = 1 {return "Quitter Sans Sauver"}
+		if TextIndex = 0 {return "Sauvegarder & Quitter"}
+		else if TextIndex = 1 {return "Quitter Sans Sauvegarder"}
 		else if TextIndex = 2 {return "Continuer"}
 		break;
 	}

@@ -45,6 +45,10 @@ function Settings_Discard()
 	{
 		LanguageIndex = 1
 	}
+	if global.CurrentLanguage = "fr"
+	{
+		LanguageIndex = 2
+	}
 	
 	CurrentGrid[# 3, 4]  = LanguageIndex
 	

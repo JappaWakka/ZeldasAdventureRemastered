@@ -49,7 +49,11 @@ if OpeningClosing = true
 		OpeningClosing = false;
 	}
 };
-var BackgroundIndex = global.CurrentMap
+if BackgroundIndex = -1
+{
+	BackgroundIndex = global.CurrentMap
+	TitleIndex = global.CurrentMap
+}
 if BackgroundIndex = Maps.Gauntlet
 {
 	BackgroundIndex = Maps.Overworld;
@@ -60,13 +64,39 @@ draw_sprite_ext(WorldMap_Background,BackgroundIndex,0,0,1,1,0,c_white,Alpha);
 //Draw Map Title
 if Alpha = 255
 {
-	draw_set_font(Font_WorldMap);
+	draw_set_font(Font_WorldMap_Title);
 	draw_set_color(make_color_rgb(55,23,16));
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-	draw_text_ext(85,55,UI_WorldMap_Text(global.CurrentMap),12,45)
-	draw_text_ext(85,55,UI_WorldMap_Text(global.CurrentMap),12,45) // Make it extra thick
+	draw_text_ext(86,55,UI_WorldMap_Title_Text(TitleIndex),12,47)
+	draw_text_ext(86,55,UI_WorldMap_Title_Text(TitleIndex),12,47) // Make it extra thick
+	
+	//Reset Font Properties
+	draw_set_color(c_white);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+}
+
+//Draw Compass
+if Alpha = 255
+{
+	draw_set_font(Font_WorldMap_Compass);
+	draw_set_color(c_black);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_top);
+	
+	//North
+	draw_text(319,44,UI_WorldMap_Compass_Text(global.Directions.North))
+	
+	//West
+	draw_text(288,71,UI_WorldMap_Compass_Text(global.Directions.West))
+	
+	//East
+	draw_text(346,71,UI_WorldMap_Compass_Text(global.Directions.East))
+	
+	//South
+	draw_text(319,99,UI_WorldMap_Compass_Text(global.Directions.South))
 	
 	//Reset Font Properties
 	draw_set_color(c_white);
@@ -80,10 +110,10 @@ if Alpha = 255
 	{
 		var CompassItem = -1
 		var UnderworldMapItem = -1
-		switch global.CurrentMap
+		switch TitleIndex
 		{
 			case Maps.Overworld:
-				if global.WorldMap_Tiles[i][0] = global.CurrentMap and WorldMap_HasVisitedTile(global.WorldMap_Tiles[i][3]) = true
+				if global.WorldMap_Tiles[i][0] = TitleIndex and WorldMap_HasVisitedTile(global.WorldMap_Tiles[i][3]) = true
 				{
 					if WorldMap_GetCurrentTileID() = global.WorldMap_Tiles[i][3]
 					{
@@ -120,7 +150,7 @@ if Alpha = 255
 		}
 		if CompassItem != -1 and UnderworldMapItem != -1
 		{
-			if global.WorldMap_Tiles[i][0] = global.CurrentMap
+			if global.WorldMap_Tiles[i][0] = TitleIndex
 			{
 				if WorldMap_GetCurrentTileID() = global.WorldMap_Tiles[i][3]
 				{

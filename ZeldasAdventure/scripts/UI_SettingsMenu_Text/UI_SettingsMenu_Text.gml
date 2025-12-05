@@ -223,7 +223,7 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 			case 3: //Settings - Audio
 				if TextIndex = 0 {return "Général"}
 				if TextIndex = 1 {return "Musique"}
-				if TextIndex = 2 {return "SoundFX"}
+				if TextIndex = 2 {return "Effets Sonores"}
 				if TextIndex = 3 {return "Dialogue"}
 				if TextIndex = 4 {return "Retour"}
 				break;
@@ -235,7 +235,7 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 					if OptionIndex = 1 {return "Manette"}
 				}
 				if TextIndex = 1 {return "Gauche"}
-				if TextIndex = 2 {return "Droit"}
+				if TextIndex = 2 {return "Droite"}
 				if TextIndex = 3 {return "Haut"}
 				if TextIndex = 4 {return "Bas"}
 				if TextIndex = 5 {return "Action 1/Valider"}
@@ -245,7 +245,7 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 				if TextIndex = 9 {return "Menu"}
 				if TextIndex = 10 {return "Retour"}
 				if TextIndex = 11 {return "gauche"}
-				if TextIndex = 12 {return "droit"}
+				if TextIndex = 12 {return "droite"}
 				if TextIndex = 13 {return "haut"}
 				if TextIndex = 14 {return "bas"}
 				if TextIndex = 15 {return "clic"}

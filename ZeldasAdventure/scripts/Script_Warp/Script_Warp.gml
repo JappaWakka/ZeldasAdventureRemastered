@@ -38,10 +38,18 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		{
 			WorldMap_Add_VisitedTile(global.CurrentTile.x,global.CurrentTile.y)
 			global.CurrentMap = WorldMap_GetMapID(WorldMap_GetCurrentTileID())
+			if instance_exists(Obj_WorldMapManager)
+			{
+				Obj_WorldMapManager.BackgroundIndex = -1
+			}
 		}
 		else
 		{
 			global.CurrentMap = Maps.Overworld
+			if instance_exists(Obj_WorldMapManager)
+			{
+				Obj_WorldMapManager.BackgroundIndex = -1
+			}
 		}
 		camera_set_view_pos(view,global.CurrentTile.x * tileWidth,global.CurrentTile.y * tileHeight);
 		instance_deactivate_region(PrevousTileX * tileWidth, PrevousTileY * tileHeight, tileWidth, tileHeight,true,true)

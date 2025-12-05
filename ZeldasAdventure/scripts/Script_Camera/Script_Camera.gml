@@ -67,10 +67,18 @@ function Camera_Pan()
 			{
 				WorldMap_Add_VisitedTile(global.CurrentTile.x,global.CurrentTile.y)
 				global.CurrentMap = WorldMap_GetMapID(WorldMap_GetCurrentTileID())
+				if instance_exists(Obj_WorldMapManager)
+				{
+					Obj_WorldMapManager.BackgroundIndex = -1
+				}
 			}
 			else
 			{
 				global.CurrentMap = Maps.Overworld
+				if instance_exists(Obj_WorldMapManager)
+				{
+					Obj_WorldMapManager.BackgroundIndex = -1
+				}
 			}
 			
 			//Do camera panning (and fading if necessary)
