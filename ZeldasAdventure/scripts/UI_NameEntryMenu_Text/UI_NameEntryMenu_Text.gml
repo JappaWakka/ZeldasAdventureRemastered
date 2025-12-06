@@ -14,7 +14,7 @@ function UI_NameEntryMenu_Text(TextIndex)
 		
 	case "fr":
 		if TextIndex = 0 {return "ENTRE UN NOM"}
-		else if TextIndex = 1 {return "Fait"}
+		else if TextIndex = 1 {return "OK"}
 		break;
 	}
 }

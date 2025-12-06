@@ -1,5 +1,5 @@
 //Yvonne
-function Subtitle_GreatWimbich_Yvonne_GiveFlute(AudioPosition)
+function Subtitle_GreatWimbich_Yvonne_Giveflute(AudioPosition)
 {
 	switch global.CurrentLanguage
 	{
@@ -10,8 +10,8 @@ function Subtitle_GreatWimbich_Yvonne_GiveFlute(AudioPosition)
 		else if AudioPosition >= 7.405 and AudioPosition <= 10.515 {return "I believe Shurmak has graced you with her friendship."}
 		else if AudioPosition >= 10.551 and AudioPosition <= 13.465 {return "She helped me once, so I am going to help you."}
 		else if AudioPosition >= 13.753 and AudioPosition <= 14.820 {return "Listen to this!"}
-		else if AudioPosition >= 15.473 and AudioPosition <= 18.473 {return "*Yvonne plays the Flute*"}
-		else if AudioPosition >= 18.498 and AudioPosition <= 24.393 {return "Heh heh! The Flute can be used to calm the savage hiss of a snake."}
+		else if AudioPosition >= 15.473 and AudioPosition <= 18.473 {return "*Yvonne plays the flute*"}
+		else if AudioPosition >= 18.498 and AudioPosition <= 24.393 {return "Heh heh! The flute can be used to calm the savage hiss of a snake."}
 		else return ""
 		break;
 		
@@ -22,8 +22,8 @@ function Subtitle_GreatWimbich_Yvonne_GiveFlute(AudioPosition)
 		else if AudioPosition >= 7.405 and AudioPosition <= 10.515 {return "Ik heb vernomen dat Shurmak je met haar vriendschap heeft vereerd."}
 		else if AudioPosition >= 10.551 and AudioPosition <= 13.465 {return "Ze heeft mij ooit geholpen, dus nu zal ik ook jou helpen."}
 		else if AudioPosition >= 13.753 and AudioPosition <= 14.820 {return "Luister hier eens naar!"}
-		else if AudioPosition >= 15.473 and AudioPosition <= 18.473 {return "*Yvonne bespeelt de Fluit*"}
-		else if AudioPosition >= 18.498 and AudioPosition <= 24.393 {return "Hihi! De Fluit kan worden gebruikt om het woeste gesis van een slang te kalmeren."}
+		else if AudioPosition >= 15.473 and AudioPosition <= 18.473 {return "*Yvonne bespeelt de fluit*"}
+		else if AudioPosition >= 18.498 and AudioPosition <= 24.393 {return "Hihi! De fluit kan worden gebruikt om het woeste gesis van een slang te kalmeren."}
 		else return ""
 		break;
 	
@@ -34,8 +34,8 @@ function Subtitle_GreatWimbich_Yvonne_GiveFlute(AudioPosition)
 		else if AudioPosition >= 7.405 and AudioPosition <= 10.515 {return "I believe Shurmak has graced you with her friendship."}
 		else if AudioPosition >= 10.551 and AudioPosition <= 13.465 {return "She helped me once, so I am going to help you."}
 		else if AudioPosition >= 13.753 and AudioPosition <= 14.820 {return "Listen to this!"}
-		else if AudioPosition >= 15.473 and AudioPosition <= 18.473 {return "*Yvonne plays the Flute*"}
-		else if AudioPosition >= 18.498 and AudioPosition <= 24.393 {return "Heh heh! The Flute can be used to calm the savage hiss of a snake."}
+		else if AudioPosition >= 15.473 and AudioPosition <= 18.473 {return "*Yvonne plays the flute*"}
+		else if AudioPosition >= 18.498 and AudioPosition <= 24.393 {return "Heh heh! The flute can be used to calm the savage hiss of a snake."}
 		else return ""
 		break;
 	}

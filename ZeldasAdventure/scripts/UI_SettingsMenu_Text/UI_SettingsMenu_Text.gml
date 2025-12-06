@@ -208,8 +208,8 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 				if TextIndex = 3 
 				{
 					if OptionIndex = -1 {return "Sous-titres"}
-					if OptionIndex = 0 {return "Sans"}
-					if OptionIndex = 1 {return "Avec"}
+					if OptionIndex = 0 {return "Non"}
+					if OptionIndex = 1 {return "Oui"}
 				}
 				if TextIndex = 4
 				{

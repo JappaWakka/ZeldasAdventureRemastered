@@ -54,10 +54,6 @@ if BackgroundIndex = -1
 	BackgroundIndex = global.CurrentMap
 	TitleIndex = global.CurrentMap
 }
-if BackgroundIndex = Maps.Gauntlet
-{
-	BackgroundIndex = Maps.Overworld;
-}
 	
 draw_sprite_ext(WorldMap_Background,BackgroundIndex,0,0,1,1,0,c_white,Alpha);
 
@@ -69,8 +65,16 @@ if Alpha = 255
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-	draw_text_ext(86,55,UI_WorldMap_Title_Text(TitleIndex),12,47)
-	draw_text_ext(86,55,UI_WorldMap_Title_Text(TitleIndex),12,47) // Make it extra thick
+	if TitleIndex = Maps.Gauntlet and global.CurrentLanguage = global.Languages.French
+	{
+		draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,51)
+		draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,51) // Make it extra thick
+	}
+	else
+	{
+		draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,60)
+		draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,60) // Make it extra thick
+	}
 	
 	//Reset Font Properties
 	draw_set_color(c_white);
