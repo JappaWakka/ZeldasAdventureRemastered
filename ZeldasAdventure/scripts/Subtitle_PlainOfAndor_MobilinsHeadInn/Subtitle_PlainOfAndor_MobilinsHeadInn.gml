@@ -12,8 +12,8 @@
 			break;
 			
 		case "nl":
-			if AudioPosition >= 0.000 and AudioPosition <= 3.813 {return "Lothar de Herbergier: Welkom bij de Kop van de Mobilin-herberg, mijn prinses!"}
-			else if AudioPosition >= 3.838 and AudioPosition <= 8.787 {return "U ziet er droog uit, neem een kopje Andor cider van het huis."}
+			if AudioPosition >= 0.000 and AudioPosition <= 3.813 {return "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, prinses!"}
+			else if AudioPosition >= 3.838 and AudioPosition <= 8.787 {return "U ziet er uitgedroogd uit, neem een kopje Andor cider van het huis."}
 			else if AudioPosition >= 9.106 and AudioPosition <= 13.753 {return "Ik heb een kalmte-spreuk te koop, maar hij kost u 100 robijnen."}
 			else return ""
 			break;
@@ -38,8 +38,8 @@
 			break;
 			
 		case "nl":
-			if AudioPosition >= 0.000 and AudioPosition <= 3.813 {return "Lothar de Herbergier: Welkom bij de Kop van de Mobilin Herberg, mijn prinses!"}
-			else if AudioPosition >= 3.838 and AudioPosition <= 8.787 {return "U ziet er droog uit, neem een kopje Andor cider van het huis."}
+			if AudioPosition >= 0.000 and AudioPosition <= 3.813 {return "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, prinses!"}
+			else if AudioPosition >= 3.838 and AudioPosition <= 8.787 {return "U ziet er uitgedroogd uit, neem een kopje Andor cider van het huis."}
 			else return ""
 			break;
 			
