@@ -1,0 +1,223 @@
+//Comments like this technically violate the JSON standard, but the game will filter them out automatically when loading the file
+//This is useful in case you need to add notes or instructions to your translator for specific lines.
+//Note: This only works with double slash comments, not slash star comment star slash.
+{
+    "Meta": {
+        "LanguageNameNative": "English", //The name of the language, in your game's native language
+        "LanguageNameLocal": "English" //The name of the language, in that language
+    },
+    "UI": {
+		"MainMenu": {
+			"PlayButton": "PLAY",
+			"DeleteButton": "DELETE",
+			"DeleteYouSure": "YOU SURE?",
+			"DeleteDeleted": "DELETED",
+			"SettingsButton": "SETTINGS",
+			"TutorialButton": "TUTORIAL",
+			"ExitButton": "Exit",
+			"EmptySaveFile": "EMPTY"
+		},
+		"NameEntryMenu": {
+			"PlayButton": "ENTER THY NAME",
+			"DeleteButton": "Done"
+		},
+		"SettingsMenu": {
+			"Back": "Back"
+			"MainSubMenu": {
+				"Game": "Game",
+				"AudioVolume": "Audio Volume",
+				"Controls": "Controls",
+				"ResetSettings": "Reset Settings",
+				"SaveSettings": "Save Settings"
+			},
+			"GameSubmenu": {
+				"ToggleOff": "Off",
+				"ToggleOn": "On",
+				"WindowMode": "Window Mode",
+				"Window": "Window",
+				"Full": "Full",
+				"Resolution": "Resolution",
+				"RemasteredMode": "Remastered Mode",
+				"RemasteredModeHint": "Action 1 = Use Weapon, Action 2 = Use Treasure, Restored cut content, Action Button 2 replaces Ruby item etc.",
+				"Subtitles": "Subtitles",
+				"Language": "Language"
+			},
+			"AudioSubmenu": {
+				"MasterVolume": "Master",
+				"MusicVolume": "Music",
+				"SoundFXVolume": "SoundFX",
+				"DialogueVolume": "Dialogue"
+			},
+			"ControlsSubmenu": {
+				"DeviceToConfig": "Device to Config",
+				"Keys": "Keys",
+				"Gamepad": "Gamepad",
+				"BindingNames": {
+					"Left": "Left",
+					"Right": "Right",
+					"Up": "Up",
+					"Down": "Down",
+					"Action1": "Action 1/Accept",
+					"Action2": "Action 2/Cancel",
+					"Inventory": "Inventory",
+					"Map": "Map",
+					"Menu": "Menu"
+				},
+				"InputNames": {
+					"Left": "left",
+					"Right": "right",
+					"Up": "up",
+					"Down": "down",
+					"Escape": "escape",
+					"Enter": "enter",
+					"Arrow": "arrow",
+					"StickClick": "click"
+				}
+			}
+		},
+		"InventoryMenu": {
+			"TreasuresCategory": "TREASURES",
+			"WeaponsCategory": "WEAPONS",
+			"MapButton": "Map",
+			"ExitButton": "Exit"
+		},
+		"MapMenu": {
+			"LocationTitles": {
+				"Tolemac": "Tolemac",
+				"ShrineOfEarth": "Shrine of Earth",
+				"ShrineOfIllusion": "Shrine of Illusion",
+				"ShrineOfAir": "Shrine of Air",
+				"ShrineOfDestiny": "Shrine of Destiny",
+				"ShrineOfWater": "Shrine of Water",
+				"ShrineOfStrength": "Shrine of Strength",
+				"ShrineOfFire": "Shrine of Fire",
+				"GanonsGauntlet": "Ganon's Gauntlet"
+			},
+			"CompassDirections": {
+				"North": "N",
+				"West": "W",
+				"East": "E",
+				"South": "S"
+		},
+		"ExitMenu": {
+			"SaveAndQuit": "Save & Quit",
+			"QuitWithoutSave": "Quit Without Save",
+			"ReturnToGame": "Return To Game"
+		},
+		"SkipCutsceneHint": "Press again to skip"
+    },
+    "Subtitles": {
+		"Cutscenes": {
+			"Intro": {
+				"line01": "Gaspra: There'll be no more viewing tonight.",
+				"line02": "Ah, the Scroll of Shurmak...",
+				"line03": "bearer of sad news these many years ago.",
+				"line04": "And so it was that Ganon, Lord of Darkness, had taken over Tolemac.",
+				"line05": "He had stolen the treasured Celestial Signs and captured Link!",
+				"line06": "A brave warrior would have to be found to face this evil monster.",
+				"line07": "And so I found this champion of strength and courage.",
+				"line08": "It is you, Princess Zelda! With this magic pendant, go forth...",
+				"line09": "and with each Sign you gather, so too will you gain knowledge.",
+				"line10": "Find your magic wand.",
+				"line11": "Use it wisely and listen to your allies along the way!",
+				"line12": "Go now, my Princess. Restore the Celestial Signs and rescue Link!"
+			},
+			"Tutorial": {
+				"line01": "Welcome to Zelda's Adventure, an action-adventure role-playing game.",
+				"line02": "As a player, you will adopt the personality of our heroine Princess Zelda.",
+				"line03": "To play the game succesfully, you must explore the great land of Tolemac.",
+				"line04": "To control Zelda's movement around Tolemac",
+				"line05": "move the controller left, right, up, down and diagonally.",
+				"line06": "The court astronomer Gaspra",
+				"line07": "will introduce the story of Zelda and describe how her quest came about.",
+				"line08": "He will also reappear every time",
+				"line09": "Zelda has succesfully completed an underworld shrine",
+				"line10": "and collected one of seven treasured Celestial Signs.",
+				"line11": "Another mentor and guide to Zelda is me, Shurmak.",
+				"line12": "Throughout the game I help orient Zelda and guide her.",
+				"line13": "While exploring, Zelda will encounter many enemies that inhabit this land.",
+				"line14": "She must defeat them by using skill and speed.",
+				"line15": "Zelda attacks them with her wand.",
+				"line16": "You employ the wand by pressing Action Button 1.",
+				"line17": "If Zelda is succesful at defeating her enemies, she will be rewarded.",
+				"line18": "They will randomly drop rubies and hearts",
+				"line19": "that will increase her currency and life units respectively.",
+				"line20": "Rubies which are the currency of Tolemac",
+				"line21": "can be used to buy useful items",
+				"line22": "and are indicated on the top-left corner of the screen.",
+				"line23": "Hearts are the life units that give Zelda strength to fight throughout the game.",
+				"line24": "They are represented on the upper-right corner of the play screen.",
+				"line25": "To select an object or a weapon on the inventory screen, press Action Button 2.",
+				"line26": "Once in the inventory screen",
+				"line27": "you can access useful items and weapons",
+				"line28": "by selecting an object with your cursor and then pressing Action Button 1.",
+				"line29": "Treasures and weapons can be scrolled by pressing the left window button",
+				"line30": "to move left, and by pressing the right window button to move right.",
+				"line31": "The weapon in use appears in the window in the lower right of the inventory screen.",
+				"line32": "If you select a useful item from the treasures selection",
+				"line33": "the item will appear in the same window where the weapon selection appeared.",
+				"line34": "Zelda can use only one item or weapon at a time.",
+				"line35": "In Zelda's travels she will find many locked doors.",
+				"line36": "She must have a key in her possession to pass through these locked entrances.",
+				"line37": "The number of keys in Zelda's possession will appear in the small window",
+				"line38": "in the upper right of the inventory screen.",
+				"line39": "To help navigate through Tolemac",
+				"line40": "a map is available by moving your joystick to the map button",
+				"line41": "and then pressing your Action Button 1.",
+				"line42": "There are two types of maps:",
+				"line43": "One for the overworld and one for each of the underworlds.",
+				"line44": "The map for the overworld will reveal where you are and where you have traveled.",
+				"line45": "The maps for each of the underworlds will reveal where you are",
+				"line46": "where you have traveled, and where you need to go to complete your quest.",
+				"line47": "To return to gameplay, press Action Button 2.",
+				"line48": "When you are ready to exit game",
+				"line49": "move your cursor to exit button and press Action Button 1.",
+				"line50": "You will then arrive at the save, continue and quit screen.",
+				"line51": "To activate any of these buttons",
+				"line52": "you must move the cursor to the button and press Action Button 1.",
+				"line53": "If you save and quit, you will arrive at the player select screen",
+				"line54": "where you have to option to play again or exit game.",
+				"line55": "When you come back to play again",
+				"line56": "you can restart where you left off by selecting your name.",
+				"line57": "You will then return to the first screen of gameplay",
+				"line58": "with all items and weapons still in the inventory.",
+				"line59": "If you quit without save, you will arrive at the player select screen",
+				"line60": "where you have to option to play again or exit game.",
+				"line61": "When you return to gameplay",
+				"line62": "you will not be able to return to your previous game.",
+				"line63": "However, your status will be fled the last game you saved.",
+				"line64": "If you choose Return to Game",
+				"line65": "you will arrive at the inventory screen where you press Action Button 2",
+				"line66": "which then returns you to gameplay.",
+				"line67": "Before each game, you must select a name for your hero or heroine.",
+				"line68": "You can choose the create button by moving the cursor onto the button",
+				"line69": "and pressing Action Button 1.",
+				"line70": "This takes you to the enter name screen",
+				"line71": "where you type in your name on the keyboard",
+				"line72": "by selecting the desired letters with Action Button 1",
+				"line73": "and then moving your cursor to the done button",
+				"line74": "and pressing Action Button 1 again.",
+				"line75": "This takes you back to the player select screen.",
+				"line76": "Here you press play by selecting the play button",
+				"line77": "and pressing Action Button 1.",
+				"line78": "You will then begin the game.",
+				"line79": "To delete a player's name, place the cursor on the delete button",
+				"line80": "and press Action Button 1 for a three second duration.",
+				"line81": "To exit game, place the cursor on the exit button",
+				"line82": "and press Action Button 1.",
+				"line83": "That is all I will reveal for now.",
+				"line84": "The rest is up to you to discover."
+			},
+			"ShrineOfEarth": {
+				"line01": "Gaspra: Congratulations, Zelda. You've prevailed.",
+				"line02": "Hurry now. You must travel to a place of festival.",
+				"line03": "Rumor tells it is found in the great forest to the north.",
+				"line04": "And remember: all is not what it seems."
+			}
+		},
+		"Dialogue": {
+		
+		}
+		
+    }
+}

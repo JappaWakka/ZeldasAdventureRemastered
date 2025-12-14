@@ -7,7 +7,7 @@ function Settings_Save()
 		ini_write_real("Options",	"Fullscreen",		real(global.Fullscreen));
 		ini_write_real("Options",	"ShowSubtitles",	real(global.ShowSubtitles));
 		ini_write_real("Options",	"RemasteredMode",	real(global.RemasteredMode));
-		ini_write_string("Options",	"CurrentLanguage",	global.CurrentLanguage);
+		ini_write_real("Options",	"CurrentLanguage",	global.CurrentLanguage);
 		ini_write_real("Options",	"VolumeMaster",		global.VolumeMaster);
 		ini_write_real("Options",	 "VolumeMusic",		global.VolumeMusic);
 		ini_write_real("Options",	 "VolumeSoundFX",	global.VolumeSoundFX);
@@ -40,17 +40,7 @@ function Settings_Discard()
 	CurrentGrid[# 3, 1] = global.WindowScale - 1
 	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
 	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
-	var LanguageIndex = 0
-	if global.CurrentLanguage = "nl"
-	{
-		LanguageIndex = 1
-	}
-	if global.CurrentLanguage = "fr"
-	{
-		LanguageIndex = 2
-	}
-	
-	CurrentGrid[# 3, 4]  = LanguageIndex
+	CurrentGrid[# 3, 4]  = global.CurrentLanguage
 	
 	//Reset Audio Menu (3)
 	CurrentGrid = Menu_Pages[3]

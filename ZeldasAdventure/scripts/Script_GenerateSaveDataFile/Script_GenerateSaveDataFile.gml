@@ -32,11 +32,18 @@ function GenerateSaveDataFile()
 		ini_write_real("Options",	"Fullscreen",		0);
 		ini_write_real("Options",	"ShowSubtitles",	1);
 		ini_write_real("Options",	"RemasteredMode",	0);
-		ini_write_string("Options",	"CurrentLanguage",	"en");
+		ini_write_real("Options",	"CurrentLanguage",	0);
 		ini_write_real("Options",	"VolumeMaster",		1);
 		ini_write_real("Options",	 "VolumeMusic",		1);
 		ini_write_real("Options",	 "VolumeSoundFX",	1);
 		ini_write_real("Options",	 "VolumeDialogue",	1);
+	}
+	else
+	{
+		if is_numeric(ini_read_string("Options", "CurrentLanguage", "0")) = false
+		{
+			ini_write_real("Options",	"CurrentLanguage",	0)
+		}		
 	}
 	ini_close()
 	

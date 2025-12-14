@@ -4,12 +4,12 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 	{
 	case "en":
 		if VideoPosition >= 37.361 and VideoPosition <= 39.505 {return "Gaspra: There'll be no more viewing tonight."}
-		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Gaspra: Ah, the Scroll of Shurmak"}
+		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Ah, the Scroll of Shurmak..."}
 		else if VideoPosition >= 59.781 and VideoPosition <= 62.485 {return "bearer of sad news these many years ago."}
 		else if VideoPosition >= 65.156 and VideoPosition <= 70.599 {return "And so it was that Ganon, Lord of Darkness, had taken over Tolemac."}
 		else if VideoPosition >= 70.885 and VideoPosition <= 75.130 {return "He had stolen the treasured Celestial Signs and captured Link!"}
 		else if VideoPosition >= 75.857 and VideoPosition <= 80.911 {return "A brave warrior would have to be found to face this evil monster."}
-		else if VideoPosition >= 94.425 and VideoPosition <= 98.958 {return "Gaspra: And so I found this champion of strength and courage."}
+		else if VideoPosition >= 94.425 and VideoPosition <= 98.958 {return "And so I found this champion of strength and courage."}
 		else if VideoPosition >= 99.197 and VideoPosition <= 104.934 {return "It is you, Princess Zelda! With this magic pendant, go forth..."}
 		else if VideoPosition >= 104.959 and VideoPosition <= 109.320 {return "and with each Sign you gather, so too will you gain knowledge."}
 		else if VideoPosition >= 109.834 and VideoPosition <= 111.716 {return "Find your magic wand."}
@@ -20,7 +20,7 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 		
 	case "nl":
 		if VideoPosition >= 37.361 and VideoPosition <= 39.505 {return "Gaspra: Er komt van sterrenkijken niets meer vannacht."}
-		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Gaspra: Ah, de Rol van Shurmak..."}
+		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Ah, de Rol van Shurmak..."}
 		else if VideoPosition >= 59.781 and VideoPosition <= 62.485 {return "brenger van droevig nieuws al die jaren geleden."}
 		else if VideoPosition >= 65.156 and VideoPosition <= 67.412 {return "En zo gebeurde het dat Ganon..."}
 		else if VideoPosition >= 67.436 and VideoPosition <= 70.599 {return "Heer van de Duisternis, erin slaagde Tolemac over te nemen."}
@@ -38,12 +38,12 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 	
 	case "fr":
 		if VideoPosition >= 37.361 and VideoPosition <= 39.505 {return "Gaspra : Il n'y aura plusde visionnement ce soir."}
-		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Gaspra : Ah, le parchemin de Shurmak..."}
+		else if VideoPosition >= 56.667 and VideoPosition <= 59.756 {return "Ah, le parchemin de Shurmak..."}
 		else if VideoPosition >= 59.781 and VideoPosition <= 62.485 {return "porteur de tristes nouvelles il y a de nombreuses années."}
 		else if VideoPosition >= 65.156 and VideoPosition <= 70.599 {return "C'est ainsi que Ganon, le Seigneur des Ténèbres, s'empara de Tolemac."}
 		else if VideoPosition >= 70.885 and VideoPosition <= 75.130 {return "Il avait volé les précieux signes célestes et capturé Link !"}
 		else if VideoPosition >= 75.857 and VideoPosition <= 80.911 {return "Il faudrait trouver une guerrière courageuse pour affronter ce monstre maléfique."}
-		else if VideoPosition >= 94.425 and VideoPosition <= 98.958 {return "Gaspra : Et j'ai donc trouvé cette championne de force et de courage."}
+		else if VideoPosition >= 94.425 and VideoPosition <= 98.958 {return "Et j'ai donc trouvé cette championne de force et de courage."}
 		else if VideoPosition >= 99.197 and VideoPosition <= 104.934 {return "C'est vous, princesse Zelda. Avec ce pendentif magique, allez de l'avant..."}
 		else if VideoPosition >= 104.959 and VideoPosition <= 109.320 {return "et avec chaque signe que vous recueillerez, vous gagnerez aussi en connaissance."}
 		else if VideoPosition >= 109.834 and VideoPosition <= 111.716 {return "Trouvez votre baguette magique."}

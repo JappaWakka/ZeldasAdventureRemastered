@@ -30,11 +30,6 @@ function InitGameVariables()
 	global.CameraPanSpeed = {x: 12, y: 8};
 	global.CandleUsed = false;
 	global.DesiredRubies = 0;
-	global.Languages = {
-		English : "en",
-		Dutch : "nl",
-		French : "fr"
-	}
 	global.Subtitle = "";
 	global.CanControlPlayer = true;
 	global.CanUseSpell = true;
@@ -106,19 +101,7 @@ function InitGameVariables()
 	global.Fullscreen = bool(ini_read_real("Options", "Fullscreen", 0));
 	global.ShowSubtitles = bool(ini_read_real("Options", "ShowSubtitles", 1));
 	global.RemasteredMode = bool(ini_read_real("Options", "RemasteredMode", 1));
-	var Language = ini_read_string("Options", "CurrentLanguage", "en");
-	switch Language
-	{
-		case "en" :
-			global.CurrentLanguage = global.Languages.English;
-			break;
-		case "nl" :
-			global.CurrentLanguage = global.Languages.Dutch;
-			break;
-		case "fr" :
-			global.CurrentLanguage = global.Languages.French;
-			break;
-	}
+	global.CurrentLanguage =  ini_read_real("Options", "CurrentLanguage", 0);
 	global.VolumeMaster = ini_read_real("Options", "VolumeMaster", 1);
 	global.VolumeMusic = ini_read_real("Options", "VolumeMusic", 1);
 	global.VolumeSoundFX = ini_read_real("Options", "VolumeSoundFX", 1);

@@ -1,0 +1,223 @@
+//Comments like this technically violate the JSON standard, but the game will filter them out automatically when loading the file
+//This is useful in case you need to add notes or instructions to your translator for specific lines.
+//Note: This only works with double slash comments, not slash star comment star slash.
+{
+    "Meta": {
+        "LanguageNameNative": "French", //The name of the language, in your game's native language
+        "LanguageNameLocal": "Français" //The name of the language, in that language
+    },
+    "UI": {
+		"MainMenu": {
+			"PlayButton": "JOUER",
+			"DeleteButton": "SUPPRIMER",
+			"DeleteYouSure": "SUR ?",
+			"DeleteDeleted": "SUPPRIMÉ",
+			"SettingsButton": "PARAMÈTRES",
+			"TutorialButton": "TUTORIEL",
+			"ExitButton": "Quitter",
+			"EmptySaveFile": "VIDE"
+		},
+		"NameEntryMenu": {
+			"PlayButton": "ENTRE UN NOM",
+			"DeleteButton": "OK"
+		},
+		"SettingsMenu": {
+			"Back": "Retour"
+			"MainSubMenu": {
+				"Game": "Jeu",
+				"Audio Volume": "Volume",
+				"Controls": "Contrôles",
+				"Reset Settings": "Réinitiliser",
+				"Save Settings": "Sauvegarder"
+			},
+			"GameSubmenu": {
+				"ToggleOff": "Non",
+				"ToggleOn": "Oui",
+				"WindowMode": "Écran Mode",
+				"Window": "Fenêtré",
+				"Full": "Plein",
+				"Resolution": "Résolution",
+				"RemasteredMode": "Mode Remastérisé",
+				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor, Fonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
+				"Subtitles": "Sous-titres",
+				"Language": "Langue"
+			},
+			"AudioSubmenu": {
+				"MasterVolume": "Général",
+				"MusicVolume": "Musique",
+				"SoundFXVolume": "Effets Sonores",
+				"DialogueVolume": "Dialogue"
+			},
+			"ControlsSubmenu": {
+				"DeviceToConfig": "Contrôleur",
+				"Keys": "Clavier",
+				"Gamepad": "Manette",
+				"BindingNames": {
+					"Left": "Gauche",
+					"Right": "Droite",
+					"Up": "Haut",
+					"Down": "Bas",
+					"Action1": "Action 1/Valider",
+					"Action2": "Action 2/Annuler",
+					"Inventory": "Inventaire",
+					"Map": "Carte",
+					"Menu": "Menu"
+				},
+				"InputNames": {
+					"Left": "gauche",
+					"Right": "droite",
+					"Up": "haut",
+					"Down": "bas",
+					"Escape": "échap",
+					"Enter": "entrée",
+					"Arrow": "flèche",
+					"StickClick": "clic"
+				}
+			}
+		},
+		"InventoryMenu": {
+			"TreasuresCategory": "ARMES",
+			"WeaponsCategory": "TRÉSORS",
+			"MapButton": "Carte",
+			"ExitButton": "Quitter"
+		},
+		"MapMenu": {
+			"LocationTitles": {
+				"Tolemac": "Tolemac",
+				"ShrineOfEarth": "Sanctuaire de la Terre",
+				"ShrineOfIllusion": "Sanctuaire de l'Illusion",
+				"ShrineOfAir": "Sanctuaire de l’Air",
+				"ShrineOfDestiny": "Sanctuaire du Destin",
+				"ShrineOfWater": "Sanctuaire de l'Eau",
+				"ShrineOfStrength": "Sanctuaire de la Force",
+				"ShrineOfFire": "Sanctuaire du Feu",
+				"GanonsGauntlet": "Gantelet de Ganon"
+			},
+			"CompassDirections": {
+				"North": "N",
+				"West": "O",
+				"East": "E",
+				"South": "S"
+		},
+		"ExitMenu": {
+			"SaveAndQuit": "Sauvegarder & Quitter",
+			"QuitWithoutSave": "Quitter Sans Sauvegarder",
+			"ReturnToGame": "Continuer"
+		},
+		"SkipCutsceneHint": "Appuie pour passer"
+    },
+    "Subtitles": {
+		"Cutscenes": {
+			"Intro": {
+				"line01": "Gaspra : Il n'y aura plusde visionnement ce soir.",
+				"line02": "Ah, le parchemin de Shurmak...",
+				"line03": "porteur de tristes nouvelles il y a de nombreuses années.",
+				"line04": "C'est ainsi que Ganon, le Seigneur des Ténèbres, s'empara de Tolemac.",
+				"line05": "Il avait volé les précieux signes célestes et capturé Link !",
+				"line06": "Il faudrait trouver une guerrière courageuse pour affronter ce monstre maléfique.",
+				"line07": "Et j'ai donc trouvé cette championne de force et de courage.",
+				"line08": "C'est vous, princesse Zelda. Avec ce pendentif magique, allez de l'avant...",
+				"line09": "et avec chaque signe que vous recueillerez, vous gagnerez aussi en connaissance.",
+				"line10": "Trouvez votre baguette magique.",
+				"line11": "Utilisez-la à bon escient et écoutez vos alliés tout au long du chemin !",
+				"line12": "Allez-y maintenant, ma princesse. Restaurez les signes céleste et sauvez Link !"
+			},
+			"Tutorial": {
+				"line01": "Bienvenue dans les aventures de Zelda, un jeu de rôle d'action et aventure.",
+				"line02": "En tant que joueur, vous incarnez notre héroïne, la princesse Zelda.",
+				"line03": "Pour jouer au jeu avec succès, vous devez explorer le grand territoire de Tolemac.",
+				"line04": "Pour contrôler les déplacements de Zelda autour de Tolemac",
+				"line05": "déplacez la manette à gauche, à droite, en haut, en bas et en diagonale.",
+				"line06": "L'astronome de la cour Gaspra",
+				"line07": "présentera l'histoire de Zelda et décrira comment sa quête a commencé.",
+				"line08": "Il réapparaîtra également chaque fois",
+				"line09": "que Zelda a réussi à terminer un sanctuaire souterrain",
+				"line10": "et a récupéré l'un des sept précieux Signes Célestes.",
+				"line11": "Un autre mentor et guide pour Zelda, c'est moi, Shurmak.",
+				"line12": "Tout au long du jeu, j'aide Zelda à s'orienter et je la guide.",
+				"line13": "En explorant, Zelda rencontrera de nombreux ennemis qui habitent cette région.",
+				"line14": "Elle doit les vaincre en utilisant son habileté et sa rapidité.",
+				"line15": "Zelda les attaque avec sa baguette magique.",
+				"line16": "Vous utilisez la baguette en appuyant sur le bouton Action 1.",
+				"line17": "Si Zelda réussit à vaincre ses ennemis, elle sera récompensée.",
+				"line18": "Ils laisseront tomber aléatoirement des rubis et des cœurs...",
+				"line19": "cela augmentera respectivement sa monnaie et ses unités de vie.",
+				"line20": "Les rubis, qui constituent la monnaie de Tolemac",
+				"line21": "peut être utilisé pour acheter des objets utiles",
+				"line22": "et sont indiqués dans le coin supérieur gauche de l'écran.",
+				"line23": "Les coeurs sont les unités de vie qui donnent à Zelda la force de combattre tout au long du jeu.",
+				"line24": "Ils sont représentés dans le coin supérieur droit de l'écran de jeu.",
+				"line25": "Pour sélectionner un objet ou une arme dans l'écran de l'inventaire, appuyez sur le bouton Action 2.",
+				"line26": "Une fois dans l'écran de l'inventaire",
+				"line27": "vous pouvez accéder à des objets utiles et des armes",
+				"line28": "en sélectionnant un objet avec votre curseur et en appuyant sur le bouton Action 1.",
+				"line29": "Les trésors et les armes peuvent être parcourus en appuyant sur le bouton gauche de la fenêtre.",
+				"line30": "pour se déplacer vers la gauche, et en appuyant sur le bouton de la fenêtre droite pour se déplacer vers la droite.",
+				"line31": "L'arme utilisée apparaît dans la fenêtre en bas à droite de l'écran de l'inventaire.",
+				"line32": "Si vous sélectionnez un objet utile parmi la sélection de trésors",
+				"line33": "L'objet apparaîtra dans la même fenêtre où la sélection des armes est apparue.",
+				"line34": "Zelda ne peut utiliser qu'un seul objet ou une seule arme à la fois.",
+				"line35": "Au cours de ses voyages, Zelda trouvera de nombreuses portes verrouillées.",
+				"line36": "Elle doit avoir une clé en sa possession pour passer par ces entrées verrouillées.",
+				"line37": "Le nombre de clés en possession de Zelda apparaîtra dans la petite fenêtre",
+				"line38": "en haut à droite de l'écran de l'inventaire.",
+				"line39": "Pour vous aider à naviguer dans Tolemac",
+				"line40": "une carte est disponible en déplaçant votre joystick vers le bouton de la carte",
+				"line41": "et ensuite en appuyant sur votre bouton Action 1.",
+				"line42": "Il existe deux types de cartes:",
+				"line43": "Un pour le monde supérieur et un pour chacun des mondes souterrains.",
+				"line44": "La carte du monde vous indiquera où vous vous trouvez et où vous avez voyagé.",
+				"line45": "Les cartes de chacun des mondes souterrains révéleront où vous vous trouvez...",
+				"line46": "où vous avez voyagé et où vous devez vous rendre pour accomplir votre quête.",
+				"line47": "Pour revenir au jeu, appuyez sur le bouton Action 2.",
+				"line48": "Quand vous êtes prêt à quitter le jeu...",
+				"line49": "déplacez votre curseur sur le bouton Quitter et appuyez sur le bouton Action 1.",
+				"line50": "Vous arriverez ensuite à l'écran Sauvegarder, Continuer et Quitter.",
+				"line51": "Pour activer l’un de ces boutons",
+				"line52": "vous devez déplacer le curseur vers le bouton et appuyer sur le bouton Action 1.",
+				"line53": "Si vous enregistrez et quittez, vous arriverez à l'écran de sélection du joueur",
+				"line54": "où vous avez l'option de rejouer ou de quitter le jeu.",
+				"line55": "Quand vous reviendrez jouer à nouveau",
+				"line56": "vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant votre nom.",
+				"line57": "Vous retournerez ensuite au premier écran de jeu.",
+				"line58": "avec tous les objets et armes encore dans l'inventaire.",
+				"line59": "Si vous quittez sans sauvegarder, vous arriverez à l’écran de sélection du joueur",
+				"line60": "où vous avez l'option de rejouer ou de quitter le jeu.",
+				"line61": "Lorsque vous revenez au jeu...",
+				"line62": "vous ne pourrez pas revenir à votre partie précédente.",
+				"line63": "Cependant, votre statut sera celui de la dernière partie que vous avez sauvegardée.",
+				"line64": "Si vous choisissez Retour au Jeu",
+				"line65": "vous arriverez à l'écran de l'inventaire où vous appuyez sur le bouton Action 2",
+				"line66": "ce qui vous ramène ensuite au jeu.",
+				"line67": "Avant chaque partie, vous devez choisir un nom pour votre héros ou héroïne.",
+				"line68": "Vous pouvez choisir le bouton de création en déplaçant le curseur sur le bouton",
+				"line69": "et en appuyant sur le bouton Action 1.",
+				"line70": "Cela vous amène à l'écran de saisie du nom",
+				"line71": "où vous tapez votre nom sur le clavier",
+				"line72": "en sélectionnant les lettres souhaitées avec le bouton Action 1",
+				"line73": "et ensuite en déplaçant votre curseur vers le bouton Terminé",
+				"line74": "et en appuyant à nouveau sur le bouton Action 1.",
+				"line75": "Cela vous ramène à l'écran de sélection du joueur.",
+				"line76": "Ici, vous appuyez sur Jouer en sélectionnant le bouton Jouer",
+				"line77": "et en appuyant sur le bouton Action 1.",
+				"line78": "Vous commencerez alors le jeu.",
+				"line79": "Pour supprimer le nom d'un joueur, placez le curseur sur le bouton Supprimer",
+				"line80": "et appuyez sur le bouton Action 1 pendant trois secondes.",
+				"line81": "Pour quitter le jeu, placez le curseur sur le bouton Quitter",
+				"line82": "et appuyez sur le bouton Action 1.",
+				"line83": "C'est tout ce que je révélerai pour l'instant.",
+				"line84": "Le reste, c'est à vous de le découvrir."
+			},
+			"ShrineOfEarth": {
+				"line01": "Gaspra : Félicitations, Zelda. Vous avez triomphé !",
+				"line02": "Dépêchez-vous. Vous devez vous rendre à un festival.",
+				"line03": "La rumeur dit qu'il se trouve dans la grande forêt au nord.",
+				"line04": "Et rappelez-vous, tout n'est pas ce qu'il paraît."
+			}
+		},
+		"Dialogue": {
+		
+		}
+		
+    }
+}

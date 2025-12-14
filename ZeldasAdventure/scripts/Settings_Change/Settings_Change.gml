@@ -6,18 +6,7 @@ function ChangeConfigDevice(Value){
 
 function ChangeLanguage(LanguageIndex){
 	var oldSetting = global.CurrentLanguage
-	switch LanguageIndex
-	{
-		case 0 : //English
-			global.CurrentLanguage = global.Languages.English;
-			break;
-		case 1 : //Nederlands
-			global.CurrentLanguage = global.Languages.Dutch;
-			break;
-		case 2 : //Français
-			global.CurrentLanguage = global.Languages.French;
-			break;
-	}
+	set_language(LanguageIndex)
 	if oldSetting <> global.CurrentLanguage
 	{
 		SavedSettings = false
@@ -116,7 +105,7 @@ function ResetSettings()
 	global.Fullscreen = 0;
 	global.ShowSubtitles = 1;
 	global.RemasteredMode = 1;
-	global.CurrentLanguage = global.Languages.English;
+	global.CurrentLanguage = 0;
 	global.VolumeMaster = 1;
 	global.VolumeMusic = 1;
 	global.VolumeSoundFX = 1;

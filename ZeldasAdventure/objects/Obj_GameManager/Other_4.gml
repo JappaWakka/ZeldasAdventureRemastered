@@ -5,7 +5,7 @@ if room = Room_Overworld or room = Room_MainMenu
 	global.FadeAlpha = 255
 }
 
-/// Deactivate all instancess on specific layers
+/// Deactivate all instances on specific layers
 if room = Room_Overworld
 {
 	instance_deactivate_layer("Items_AboveForeground")
