@@ -1,8 +1,8 @@
 function Subtitle_GreatWimbich_TownMerchant_ForThirtySuns(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.301 {return "Town Merchant: For thirty suns my husband and I"}
 		else if AudioPosition >= 2.326 and AudioPosition <= 5.313 {return "ran the great locksmith forge for Warbane."}
 		else if AudioPosition >= 5.786 and AudioPosition <= 8.899 {return "Then Ganon came and pressed Warbane into service"}
@@ -16,7 +16,7 @@ function Subtitle_GreatWimbich_TownMerchant_ForThirtySuns(AudioPosition)
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.301 {return "Dorpshandelaar: Dertig zonnen lang hebben mijn man en ik"}
 		else if AudioPosition >= 2.326 and AudioPosition <= 5.313 {return "de grote slotenmakersmederij voor Warbane gerund."}
 		else if AudioPosition >= 5.786 and AudioPosition <= 8.899 {return "Toen kwam Ganon en dwong Warbane om voor zijn"}
@@ -30,7 +30,7 @@ function Subtitle_GreatWimbich_TownMerchant_ForThirtySuns(AudioPosition)
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.301 {return "Town Merchant: For thirty suns my husband and I"}
 		else if AudioPosition >= 2.326 and AudioPosition <= 5.313 {return "ran the great locksmith forge for Warbane."}
 		else if AudioPosition >= 5.786 and AudioPosition <= 8.899 {return "Then Ganon came and pressed Warbane into service"}
@@ -49,21 +49,21 @@ function Subtitle_GreatWimbich_TownMerchant_ForThirtySuns(AudioPosition)
 
 function Subtitle_GreatWimbich_TownMerchant_KindaTiredToday(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.595 {return "I'm kinda... tired today."}
 		else if AudioPosition >= 2.619 and AudioPosition <= 5.607 {return "Everything's turning to... mud."}
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.595 {return "Ik ben een beetje... moe vandaag."}
 		else if AudioPosition >= 2.619 and AudioPosition <= 5.607 {return "Alles lijkt een beetje... modderig."}
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.595 {return "I'm kinda... tired today."}
 		else if AudioPosition >= 2.619 and AudioPosition <= 5.607 {return "Everything's turning to... mud."}
 		else return ""

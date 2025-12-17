@@ -1,8 +1,8 @@
 function Subtitle_GreatWimbich_TwinFather_WelcomeToMyHome(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <=2.349 {return "Twins' Father: Hello, Zelda! Welcome to my home!"}
 		else if AudioPosition >= 2.374 and AudioPosition <= 6.282 {return "I'm the twins' father, and even I don't know which twin is which."}
 		else if AudioPosition >= 6.774 and AudioPosition <= 9.100 {return "Still, it is good of you to come and visit."}
@@ -12,7 +12,7 @@ function Subtitle_GreatWimbich_TwinFather_WelcomeToMyHome(AudioPosition)
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <=2.349 {return "Vader van de Tweeling: Hallo, Zelda! Welkom in mijn huis."}
 		else if AudioPosition >= 2.374 and AudioPosition <= 6.282 {return "Ik ben de vader van de tweeling, en zelfs ik weet niet welke tweeling welke is."}
 		else if AudioPosition >= 6.774 and AudioPosition <= 9.100 {return "Maar het is leuk dat je langskomt."}
@@ -22,7 +22,7 @@ function Subtitle_GreatWimbich_TwinFather_WelcomeToMyHome(AudioPosition)
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <=2.349 {return "Twins' Father: Hello, Zelda! Welcome to my home!"}
 		else if AudioPosition >= 2.374 and AudioPosition <= 6.282 {return "I'm the twins' father, and even I don't know which twin is which."}
 		else if AudioPosition >= 6.774 and AudioPosition <= 9.100 {return "Still, it is good of you to come and visit."}
@@ -36,9 +36,9 @@ function Subtitle_GreatWimbich_TwinFather_WelcomeToMyHome(AudioPosition)
 
 function Subtitle_GreatWimbich_TwinFather_CoalAndRubies(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <=2.460 {return "I do know this for sure, because I used to be"}
 		else if AudioPosition >= 2.485 and AudioPosition <= 4.841 {return "a miner over on the Plain of Hobel:"}
 		else if AudioPosition >= 4.866 and AudioPosition <= 7.746 {return "Coal and Rubies are the same substance."}
@@ -47,7 +47,7 @@ function Subtitle_GreatWimbich_TwinFather_CoalAndRubies(AudioPosition)
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <=2.460 {return "Ik weet dit zeker, want ik was vroeger"}
 		else if AudioPosition >= 2.485 and AudioPosition <= 4.841 {return "mijnwerker op de Vlakte van Hobel:"}
 		else if AudioPosition >= 4.866 and AudioPosition <= 7.746 {return "Steenkool en Robijnen zijn dezelfde substantie."}
@@ -56,7 +56,7 @@ function Subtitle_GreatWimbich_TwinFather_CoalAndRubies(AudioPosition)
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <=2.460 {return "I do know this for sure, because I used to be"}
 		else if AudioPosition >= 2.485 and AudioPosition <= 4.841 {return "a miner over on the Plain of Hobel:"}
 		else if AudioPosition >= 4.866 and AudioPosition <= 7.746 {return "Coal and Rubies are the same substance."}
@@ -70,23 +70,23 @@ function Subtitle_GreatWimbich_TwinFather_CoalAndRubies(AudioPosition)
 
 function Subtitle_GreatWimbich_TwinFather_VaguelyFamiliar(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.730 {return "Twins' Father: You seem... vaguely familiar, but, um..."}
 		else if AudioPosition >= 2.755 and AudioPosition <= 4.286 {return "i-it's really time for my nap."}
 		else if AudioPosition >= 4.611 and AudioPosition <= 6.635 {return "Are you Eric or- or Ian?"}
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.730 {return "Vader van de Tweeling: Je... komt me vaag bekend voor, maar eh..."}
 		else if AudioPosition >= 2.755 and AudioPosition <= 4.286 {return "het is echt tijd voor mijn dutje."}
 		else if AudioPosition >= 4.611 and AudioPosition <= 6.635 {return "Ben je Eric of Ian?"}
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.730 {return "Twins' Father: You seem... vaguely familiar, but, um..."}
 		else if AudioPosition >= 2.755 and AudioPosition <= 4.286 {return "i-it's really time for my nap."}
 		else if AudioPosition >= 4.611 and AudioPosition <= 6.635 {return "Are you Eric or- or Ian?"}

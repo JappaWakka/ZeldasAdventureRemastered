@@ -1,8 +1,8 @@
 function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		switch MenuIndex
 		{
 			case 1: //Settings - Main
@@ -87,7 +87,7 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 		}
 	break;
 		
-	case "nl":
+	case "dutch":
 		switch MenuIndex
 		{
 			case 1: //Settings - Main
@@ -171,7 +171,7 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 		}
 		break;
 		
-	case "fr":
+	case "french":
 		switch MenuIndex
 		{
 			case 1: //Settings - Main
@@ -260,9 +260,9 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 
 function UI_SettingsMenu_Tooltip(MenuIndex,TextIndex)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-		case "en":
+		case "english":
 			switch MenuIndex
 			{
 				case 2: //Settings - Game
@@ -275,7 +275,7 @@ function UI_SettingsMenu_Tooltip(MenuIndex,TextIndex)
 			return ""
 			break;
 			
-		case "nl":
+		case "dutch":
 			switch MenuIndex
 			{
 				case 2: //Settings - Game
@@ -288,7 +288,7 @@ function UI_SettingsMenu_Tooltip(MenuIndex,TextIndex)
 			return ""
 			break;
 			
-		case "fr":
+		case "french":
 			switch MenuIndex
 			{
 				case 2: //Settings - Game

@@ -1,8 +1,8 @@
 function Subtitle_GreatWimbich_GhostFarmer_StayBack(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 1.808 {return "Ghost Farmer: Stay back!"}
 		else if AudioPosition >= 1.832 and AudioPosition <= 4.106 {return "This splendid farm is all mine."}
 		else if AudioPosition >= 4.131 and AudioPosition <= 6.044 {return "Isn't it wonderful?"}
@@ -10,7 +10,7 @@ function Subtitle_GreatWimbich_GhostFarmer_StayBack(AudioPosition)
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 1.808 {return "Spookboer: Blijf daar!"}
 		else if AudioPosition >= 1.832 and AudioPosition <= 4.106 {return "Deze schitterende boerderij is helemaal van mij."}
 		else if AudioPosition >= 4.131 and AudioPosition <= 6.044 {return "Is het niet prachtig?"}
@@ -18,7 +18,7 @@ function Subtitle_GreatWimbich_GhostFarmer_StayBack(AudioPosition)
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 1.808 {return "Ghost Farmer: Stay back!"}
 		else if AudioPosition >= 1.832 and AudioPosition <= 4.106 {return "This splendid farm is all mine."}
 		else if AudioPosition >= 4.131 and AudioPosition <= 6.044 {return "Isn't it wonderful?"}
@@ -30,9 +30,9 @@ function Subtitle_GreatWimbich_GhostFarmer_StayBack(AudioPosition)
 
 function Subtitle_GreatWimbich_GhostFarmer_StillHere(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 3.160 {return "No? You're still here?"}
 		else if AudioPosition >= 3.660 and AudioPosition <= 7.127 {return "Alright, I admit it, my farm is in ruins."}
 		else if AudioPosition >= 7.587 and AudioPosition <= 11.200 {return "Ganon and his cruel friends took all my crops and tools."}
@@ -41,7 +41,7 @@ function Subtitle_GreatWimbich_GhostFarmer_StillHere(AudioPosition)
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 3.160 {return "Nee? Ben je er nog steeds?"}
 		else if AudioPosition >= 3.660 and AudioPosition <= 7.127 {return "Oké, ik geef het toe, mijn boerderij is een puinhoop."}
 		else if AudioPosition >= 7.587 and AudioPosition <= 11.200 {return "Ganon en zijn wrede vrienden hebben al mijn gewassen en gereedschap meegenomen."}
@@ -50,7 +50,7 @@ function Subtitle_GreatWimbich_GhostFarmer_StillHere(AudioPosition)
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 3.160 {return "No? You're still here?"}
 		else if AudioPosition >= 3.660 and AudioPosition <= 7.127 {return "Alright, I admit it, my farm is in ruins."}
 		else if AudioPosition >= 7.587 and AudioPosition <= 11.200 {return "Ganon and his cruel friends took all my crops and tools."}
@@ -64,9 +64,9 @@ function Subtitle_GreatWimbich_GhostFarmer_StillHere(AudioPosition)
 
 function Subtitle_GreatWimbich_GhostFarmer_WaterShrine_Classic(AudioPosition) //Ghost Farmhand
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 6.173 {return "Ghost Farmhand: Far away, one of Ganon's allies lives in a world of water."}
 		else if AudioPosition >= 6.473 and AudioPosition <= 9.333 {return "The entrance is hidden, and you may never find it"}
 		else if AudioPosition >= 9.358 and AudioPosition <= 12.053 {return "if you fear the touch of falling water."}
@@ -74,7 +74,7 @@ function Subtitle_GreatWimbich_GhostFarmer_WaterShrine_Classic(AudioPosition) //
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 6.173 {return "Spookknecht: Hier ver vandaan leeft een bondgenoot van Ganon in een wereld van water."}
 		else if AudioPosition >= 6.473 and AudioPosition <= 9.333 {return "De ingang is verborgen en je zult hem nooit vinden"}
 		else if AudioPosition >= 9.358 and AudioPosition <= 12.053 {return "als je bang bent voor stromend water."}
@@ -82,7 +82,7 @@ function Subtitle_GreatWimbich_GhostFarmer_WaterShrine_Classic(AudioPosition) //
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 6.173 {return "Ghost Farmhand: Far away, one of Ganon's allies lives in a world of water."}
 		else if AudioPosition >= 6.473 and AudioPosition <= 9.333 {return "The entrance is hidden, and you may never find it"}
 		else if AudioPosition >= 9.358 and AudioPosition <= 12.053 {return "if you fear the touch of falling water."}
@@ -94,23 +94,23 @@ function Subtitle_GreatWimbich_GhostFarmer_WaterShrine_Classic(AudioPosition) //
 
 function Subtitle_GreatWimbich_GhostFarmer_WaterShrine_Remastered(AudioPosition) //Ghost Farmer
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 6.173 {return "Ghost Farmer: Far away, one of Ganon's allies lives in a world of water."}
 		else if AudioPosition >= 6.473 and AudioPosition <= 9.333 {return "The entrance is hidden, and you may never find it"}
 		else if AudioPosition >= 9.358 and AudioPosition <= 12.053 {return "if you fear the touch of falling water."}
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 6.173 {return "Spookboer: Hier ver vandaan leeft een bondgenoot van Ganon in een wereld van water."}
 		else if AudioPosition >= 6.473 and AudioPosition <= 9.333 {return "De ingang is verborgen en je zult hem nooit vinden"}
 		else if AudioPosition >= 9.358 and AudioPosition <= 12.053 {return "als je bang bent voor stromend water."}
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 6.173 {return "Ghost Farmer: Far away, one of Ganon's allies lives in a world of water."}
 		else if AudioPosition >= 6.473 and AudioPosition <= 9.333 {return "The entrance is hidden, and you may never find it"}
 		else if AudioPosition >= 9.358 and AudioPosition <= 12.053 {return "if you fear the touch of falling water."}

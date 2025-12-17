@@ -1,8 +1,8 @@
 function UI_MainMenu_Text(TextIndex)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if TextIndex = 3 {return "PLAY"}
 		else if TextIndex = 4
 		{
@@ -22,7 +22,7 @@ function UI_MainMenu_Text(TextIndex)
 		else if TextIndex = 8 {return "EMPTY"}
 		break;
 		
-	case "nl":
+	case "dutch":
 		if TextIndex = 3 {return "SPEEL"}
 		else if TextIndex = 4
 		{
@@ -42,7 +42,7 @@ function UI_MainMenu_Text(TextIndex)
 		else if TextIndex = 8 {return "LEEG"}
 		break;
 	
-	case "fr":
+	case "french":
 		if TextIndex = 3 {return "JOUER"}
 		else if TextIndex = 4
 		{

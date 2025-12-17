@@ -9,7 +9,7 @@ if IsPlayerOnSameTile() = true
 			{
 				if Register_Registered("BeggarWoman_Intro") = false
 				{
-					global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees
+					global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRubies
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 					Register_Add("BeggarWoman_Intro",true)
 				}
@@ -47,7 +47,7 @@ if IsPlayerOnSameTile() = true
 					if instance_exists(Entity_Pickup_Firestorm) = false
 					{
 						instance_create_layer(3606,5232,"Items_AboveForeground",Entity_Pickup_Firestorm)
-						global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
+						global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRubies
 						global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 					}
 				}
@@ -65,17 +65,17 @@ if IsPlayerOnSameTile() = true
 				audio_resume_sound(global.CurrentDialogue_ID)
 			}
 			var AudioPosition = audio_sound_get_track_position(global.CurrentDialogue_ID)
-			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees
+			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRubies
 			{
-				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees(AudioPosition)
+				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRubies(AudioPosition)
 			}
-			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRupees
+			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_AfterGiveRubies
 			{
-				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRupees(AudioPosition)
+				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRubies(AudioPosition)
 			}
 			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_Charity
 			{
-				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_Charity(AudioPosition)
+				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_MustLearnCharity(AudioPosition)
 			}
 		}
 		else

@@ -23,7 +23,7 @@ if IsPlayerOnSameTile() = true
 			var AudioPosition = audio_sound_get_track_position(global.CurrentDialogue_ID)
 			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary_Dagger
 			{
-				global.Subtitle = Subtitle_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary_Dagger(AudioPosition)
+				global.Subtitle = Subtitle_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary(AudioPosition)
 			}
 			
 		}

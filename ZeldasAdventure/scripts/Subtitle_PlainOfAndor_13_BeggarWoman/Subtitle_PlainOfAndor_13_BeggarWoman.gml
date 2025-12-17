@@ -1,77 +1,23 @@
-function Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRupees(AudioPosition)
+function Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRubies(AudioPosition)
 {
-	switch global.CurrentLanguage
-	{
-	case "en":
-		if AudioPosition >= 0.000 and AudioPosition <= 3.476 {return "Beggar: You will be blessed a thousand times"}
-		else if AudioPosition >= 3.501 and AudioPosition <= 6.396 {return "a thousand, fair princess!"}
-		else return ""
-		break;
-		
-	case "nl":
-		if AudioPosition >= 0.000 and AudioPosition <= 3.476 {return "Beggar: U zijt duizendmaal gezegend"}
-		else if AudioPosition >= 3.501 and AudioPosition <= 6.396 {return "duizendmaal, schone prinses!"}
-		else return ""
-		break;
-		
-	case "fr":
-		if AudioPosition >= 0.000 and AudioPosition <= 3.476 {return "Beggar: You will be blessed a thousand times"}
-		else if AudioPosition >= 3.501 and AudioPosition <= 6.396 {return "a thousand, fair princess!"}
-		else return ""
-		break;
-	}
+	if AudioPosition >=		 0.000 and AudioPosition <= 3.476 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.AfterGiveRubies.Line01} //"Beggar: You will be blessed a thousand times"
+	else if AudioPosition >= 3.501 and AudioPosition <= 6.396 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.AfterGiveRubies.Line02} //"a thousand, fair princess!"
+	else return ""
 }
 
-function Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees(AudioPosition)
+function Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRubies(AudioPosition)
 {
-	switch global.CurrentLanguage
-	{
-	case "en":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.769 {return "Beggar: Oh, fair princess"}
-		else if AudioPosition >= 1.769 and AudioPosition <= 6.870 {return "pity a suffering creature exiled from Great Wimbich in the north!"}
-		else if AudioPosition >= 7.309 and AudioPosition <= 10.626 {return "I ask only enough for a single meal for my children"}
-		else if AudioPosition >= 10.651 and AudioPosition <= 13.830 {return "who hunger and are chilled by the wind."}
-		else return ""
-		break;
-		
-	case "nl":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.769 {return "Bedelaar: Oh, schone prinses"}
-		else if AudioPosition >= 1.769 and AudioPosition <= 6.870 {return "heb meelij met een arm wezen, verbannen uit Great Wimbich in het noorden!"}
-		else if AudioPosition >= 7.309 and AudioPosition <= 10.626 {return "Ik vraag slechts genoeg voor een enkele maaltijd voor mijn kinderen"}
-		else if AudioPosition >= 10.651 and AudioPosition <= 13.830 {return "die honger hebben en kou lijden door de wind."}
-		else return ""
-		break;
-		
-	case "fr":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.769 {return "Beggar: Oh, fair princess"}
-		else if AudioPosition >= 1.769 and AudioPosition <= 6.870 {return "pity a suffering creature exiled from Great Wimbich in the north!"}
-		else if AudioPosition >= 7.309 and AudioPosition <= 10.626 {return "I ask only enough for a single meal for my children"}
-		else if AudioPosition >= 10.651 and AudioPosition <= 13.830 {return "who hunger and are chilled by the wind."}
-		else return ""
-		break;
-	}
+	if AudioPosition	  >=  0.000 and AudioPosition <=  1.769 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.BeforeGiveRubies.Line01} //"Beggar: Oh, fair princess"
+	else if AudioPosition >=  1.769 and AudioPosition <=  6.870 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.BeforeGiveRubies.Line02} //"pity a suffering creature exiled from Great Wimbich in the north!"
+	else if AudioPosition >=  7.309 and AudioPosition <= 10.626 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.BeforeGiveRubies.Line03} //"I ask only enough for a single meal for my children"
+	else if AudioPosition >= 10.651 and AudioPosition <= 13.830 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.BeforeGiveRubies.Line04} //"who hunger and are chilled by the wind."
+	else return ""
 }
 
-function Subtitle_PlainOfAndor_13_BeggarWoman_Charity(AudioPosition)
+function Subtitle_PlainOfAndor_13_BeggarWoman_MustLearnCharity(AudioPosition)
 {
-	switch global.CurrentLanguage
-	{
-	case "en":
-		if AudioPosition >= 0.000 and AudioPosition <= 4.313 {return "Beggar: You must learn charity before you may become a true princess!"}
-		else if AudioPosition >= 4.947 and AudioPosition <= 8.460 {return "May you never see the red willow by the cave!"}
-		else return ""
-		break;
-		
-	case "nl":
-		if AudioPosition >= 0.000 and AudioPosition <= 4.313 {return "Bedelaar: Je moet liefdadigheid leren voordat je een echte prinses kunt worden!"}
-		else if AudioPosition >= 4.947 and AudioPosition <= 8.460 {return "Moge je nooit de rode wilg bij de grot zien!"}
-		else return ""
-		break;
-		
-	case "fr":
-		if AudioPosition >= 0.000 and AudioPosition <= 4.313 {return "Beggar: You must learn charity before you may become a true princess!"}
-		else if AudioPosition >= 4.947 and AudioPosition <= 8.460 {return "May you never see the red willow by the cave!"}
-		else return ""
-		break;
-	}
+	if AudioPosition	  >= 0.000 and AudioPosition <= 4.313 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.MustLearnCharity.Line01} //"Beggar: You must learn charity before you may become a true princess!"
+	else if AudioPosition >= 4.947 and AudioPosition <= 8.460 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.MustLearnCharity.Line02} //"May you never see the red willow by the cave!"
+	else return ""
+	
 }

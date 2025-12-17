@@ -1,9 +1,9 @@
 //Yvonne
 function Subtitle_GreatWimbich_Yvonne_Giveflute(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.393 {return "Yvonne: Hello, Zelda. My name is Yvonne."}
 		else if AudioPosition >= 2.527 and AudioPosition <= 4.633 {return "You look like a music lover, too."}
 		else if AudioPosition >= 4.700 and AudioPosition <= 7.380 {return "Music can soothe a savage beast."}
@@ -15,7 +15,7 @@ function Subtitle_GreatWimbich_Yvonne_Giveflute(AudioPosition)
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.393 {return "Yvonne: Hallo, Zelda. Mijn naam is Yvonne."}
 		else if AudioPosition >= 2.527 and AudioPosition <= 4.633 {return "Je ziet er uit als een mede-muziekliefhebber."}
 		else if AudioPosition >= 4.700 and AudioPosition <= 7.380 {return "Muziek kan zelfs een woest beest kalmeren."}
@@ -27,7 +27,7 @@ function Subtitle_GreatWimbich_Yvonne_Giveflute(AudioPosition)
 		else return ""
 		break;
 	
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 2.393 {return "Yvonne: Hello, Zelda. My name is Yvonne."}
 		else if AudioPosition >= 2.527 and AudioPosition <= 4.633 {return "You look like a music lover, too."}
 		else if AudioPosition >= 4.700 and AudioPosition <= 7.380 {return "Music can soothe a savage beast."}
@@ -43,19 +43,19 @@ function Subtitle_GreatWimbich_Yvonne_Giveflute(AudioPosition)
 
 function Subtitle_GreatWimbich_Yvonne_Singing(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 5.421 {return "*Yvonne sings*"}
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 5.421 {return "*Yvonne zingt*"}
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 5.421 {return "*Yvonne sings*"}
 		else return ""
 		break;
@@ -65,23 +65,23 @@ function Subtitle_GreatWimbich_Yvonne_Singing(AudioPosition)
 
 function Subtitle_GreatWimbich_ErinAndIan_MeetTheTwins(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 3.333 {return "Twins (Eric & Ian): Hello, Zelda. I'm Eric and this is Ian."}
 		else if AudioPosition >= 3.800 and AudioPosition <= 7.166 {return "Oh, what do you mean? I'm Eric, I've always been."}
 		else if AudioPosition >= 7.260 and AudioPosition <= 9.273 {return "No you're not, I'm Eric!"}
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 3.333 {return "Tweeling (Eric & Ian): Hallo, Zelda. Ik ben Eric en dit is Ian."}
 		else if AudioPosition >= 3.800 and AudioPosition <= 7.166 {return "Wat bedoel je? Ik ben Eric, dat ben ik altijd geweest."}
 		else if AudioPosition >= 7.260 and AudioPosition <= 9.273 {return "Nee, dat ben je niet, ik ben Eric!"}
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 3.333 {return "Twins (Eric & Ian): Hello, Zelda. I'm Eric and this is Ian."}
 		else if AudioPosition >= 3.800 and AudioPosition <= 7.166 {return "Oh, what do you mean? I'm Eric, I've always been."}
 		else if AudioPosition >= 7.260 and AudioPosition <= 9.273 {return "No you're not, I'm Eric!"}
@@ -93,23 +93,23 @@ function Subtitle_GreatWimbich_ErinAndIan_MeetTheTwins(AudioPosition)
 
 function Subtitle_GreatWimbich_ErinAndIan_MeetOurFather(AudioPosition)
 {
-	switch global.CurrentLanguage
+	switch string_lower(Localize.Meta.LanguageNameNative)
 	{
-	case "en":
+	case "english":
 		if AudioPosition >= 0.000 and AudioPosition <= 1.720 {return "Well, never mind who we are."}
 		else if AudioPosition >= 1.927 and AudioPosition <= 4.693 {return "You should go into the yellow house and meet our father!"}
 		else if AudioPosition >= 4.893 and AudioPosition <= 7.413 {return "He'll tell you something that's good to know."}
 		else return ""
 		break;
 		
-	case "nl":
+	case "dutch":
 		if AudioPosition >= 0.000 and AudioPosition <= 1.720 {return "Ach, het doet er niet toe wie wij zijn. "}
 		else if AudioPosition >= 1.927 and AudioPosition <= 4.693 {return "Je zou het gele huis eens moeten bezoeken en onze vader ontmoeten!"}
 		else if AudioPosition >= 4.893 and AudioPosition <= 7.413 {return "Hij zal je iets interessants vertellen."}
 		else return ""
 		break;
 		
-	case "fr":
+	case "french":
 		if AudioPosition >= 0.000 and AudioPosition <= 1.720 {return "Well, never mind who we are."}
 		else if AudioPosition >= 1.927 and AudioPosition <= 4.693 {return "You should go into the yellow house and meet our father!"}
 		else if AudioPosition >= 4.893 and AudioPosition <= 7.413 {return "He'll tell you something that's good to know."}
