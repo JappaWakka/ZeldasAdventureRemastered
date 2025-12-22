@@ -322,6 +322,37 @@
 				}
 			},
 			"ForestOfOgham": {
+				"OghamMerchant": {
+					"PlentyToBuy": {
+						"Line01": "Koopman: Kom eens hier, slimme jongedame.",
+						"Line02": "Ik heb een geweldig koopje voor je!",
+						"Line03": "Neem gratis wat Ogham Kruid en kijk dan even rond.",
+						"Line04": "Er is genoeg te koop!"
+					},
+					"NothingToSell": {
+						"Line01": "Koopman: Het spijt me, prinses, ik heb vandaag niets te koop!"
+					},
+					"WisePurchase": {
+						"Line01": "Koopman: Dat was een wijze aankoop, jonge prinses!"
+					}
+				},
+				"Enid": {
+					"ComeClose": {
+						"Line01": "Enid: Kom dichterbij, Prinses! Dan vertel ik u een groot geheim!"
+					},
+					"TrustNoOneWithHair": {
+						"Line01": "Enid: Hoor wat ik fluister: Vertrouw niemand met haar! Huh-huh-huh!",
+						"Line02": "Vertrouw zelfs mij niet! Ha-haa!",
+						"Line03": "Ik heb een van uw levens gestolen! Hi-hi-hi-hi-hi!"
+					},
+					"TooClever": {
+						"Line01": "Enid: Aaaaaaah, u bent te slim voor Enid!"
+					},
+					"GoAway": {
+						"Line01": "Enid: Ga weg! Ik heb niets voor u.",
+						"Line02": "Ik heb u niets te zeggen."
+					}
+				}
 			},
 			"ShrineOfEarth": {
 			},

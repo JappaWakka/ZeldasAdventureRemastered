@@ -314,6 +314,37 @@
 				}
 			},
 			"ForestOfOgham": {
+				"OghamMerchant": {
+					"PlentyToBuy": {
+						"Line01": "Merchant: Come here, bright young lady.",
+						"Line02": "I have a wonderful bargain for you!",
+						"Line03": "Take some Ogham Herb for free, then look around.",
+						"Line04": "There's plenty to buy!"
+					},
+					"NothingToSell": {
+						"Line01": "Merchant: I'm sorry, Princess, I've got nothing to sell today!"
+					},
+					"WisePurchase": {
+						"Line01": "Merchant: That was a wise purchase, young princess!"
+					}
+				},
+				"Enid": {
+					"ComeClose": {
+						"Line01": "Enid: Kom dichterbij, Prinses! Dan vertel ik u een groot geheim!"
+					},
+					"TrustNoOneWithHair": {
+						"Line01": "Enid: Hoor wat ik fluister: Vertrouw niemand met haar! Huh-huh-huh!",
+						"Line02": "Vertrouw zelfs mij niet! Ha-haa!",
+						"Line03": "Ik heb een van uw levens gestolen! Hi-hi-hi-hi-hi!"
+					},
+					"TooClever": {
+						"Line01": "Enid: Aaaaaaah, u bent te slim voor Enid!"
+					},
+					"GoAway": {
+						"Line01": "Enid: Ga weg! Ik heb niets voor u.",
+						"Line02": "Ik heb u niets te zeggen."
+					}
+				}
 			},
 			"ShrineOfEarth": {
 			},
