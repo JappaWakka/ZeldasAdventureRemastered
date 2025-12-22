@@ -14,10 +14,10 @@ function Subtitle_PlainOfAndor_13_BeggarWoman_BeforeGiveRubies(AudioPosition)
 	else return ""
 }
 
-function Subtitle_PlainOfAndor_13_BeggarWoman_MustLearnCharity(AudioPosition)
+function Subtitle_PlainOfAndor_13_BeggarWoman_WhenAttacked(AudioPosition)
 {
-	if AudioPosition	  >= 0.000 and AudioPosition <= 4.313 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.MustLearnCharity.Line01} //"Beggar: You must learn charity before you may become a true princess!"
-	else if AudioPosition >= 4.947 and AudioPosition <= 8.460 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.MustLearnCharity.Line02} //"May you never see the red willow by the cave!"
+	if AudioPosition	  >= 0.000 and AudioPosition <= 4.313 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.WhenAttacked.Line01} //"Beggar: You must learn charity before you may become a true princess!"
+	else if AudioPosition >= 4.947 and AudioPosition <= 8.460 {return Localize.Subtitles.Dialogue.PlainOfAndor.BeggarWoman.WhenAttacked.Line02} //"May you never see the red willow by the cave!"
 	else return ""
 	
 }

@@ -17,7 +17,6 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 		else if VideoPosition >= 113.362 and VideoPosition <= 116.300 {return Localize.Subtitles.Cutscenes.Intro.Line13} //"en luister naar de bondgenoten die u tegenkomt tijdens uw reis."
 		else if VideoPosition >= 116.814 and VideoPosition <= 123.070 {return Localize.Subtitles.Cutscenes.Intro.Line14} //"Ga nu, mijn prinses. Haal de Hemelse Tekens terug en red Link."
 		else return ""
-		
 	}
 	else
 	{
@@ -34,6 +33,5 @@ function Subtitle_Cutscene_Intro(VideoPosition)
 		else if VideoPosition >= 112.081 and VideoPosition <= 116.300	{return Localize.Subtitles.Cutscenes.Intro.Line11} //"Use it wisely and listen to your allies along the way!"
 		else if VideoPosition >= 116.814 and VideoPosition <= 123.070	{return Localize.Subtitles.Cutscenes.Intro.Line12} //"Go now, my Princess. Restore the Celestial Signs and rescue Link!"
 		else return ""
-
 	}
 }

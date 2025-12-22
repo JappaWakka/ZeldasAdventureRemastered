@@ -73,9 +73,9 @@ if IsPlayerOnSameTile() = true
 			{
 				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_AfterGiveRubies(AudioPosition)
 			}
-			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_Charity
+			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_13_BeggarWoman_WhenAttacked
 			{
-				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_MustLearnCharity(AudioPosition)
+				global.Subtitle = Subtitle_PlainOfAndor_13_BeggarWoman_WhenAttacked(AudioPosition)
 			}
 		}
 		else

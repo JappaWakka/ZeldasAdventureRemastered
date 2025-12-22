@@ -252,32 +252,78 @@
 						"Line01": "Beggar: You will be blessed a thousand times",
 						"Line02": "a thousand, fair princess!"
 					},
-					"MustLearnCharity": {
+					"WhenAttacked": {
 						"Line01": "Beggar: You must learn charity before you may become a true princess!",
 						"Line02": "May you never see the red willow by the cave!"
 					},
 				},
 				"GlebbTheThirsty": {
-					
+					"BeforeFill": {
+						"Line01": "Glebb the Thirsty: Young princess, please attend me.",
+						"Line02": "A traveler of kind intentions has found me at last!",
+						"Line03": "I am collapsed with thirst and dryness."
+					},
+					"AfterFill": {
+						"Line01": "Glebb the Thirsty: Bless you, princess!",
+						"Line02": "You have saved the life of a weary old woman!",
+						"Line03": "I offer you these treasures."
+					},
+					"WhenAttacked": {
+						"Line01": "Glebb the Thirsty: You monster!",
+						"Line02": "How dare you assault a weak, old woman?!",
+						"Line03": "You will lose a life for this!"
+					}
 				},
 				"MobilinsHeadInn": {
 					"LotharTheInnKeeper": {
-						
+						"BeforeBuy": {
+							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
+							"Line02": "You look dry, have a cup of Andor cider on the house.",
+							"Line03": "I have a spell of Calm to sell, but it will cost you 100 rubies."
+						},
+						"AfterBuy": {
+							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
+							"Line02": "You look dry, have a cup of Andor cider on the house.",
+						},
+						"PurchaseCalmSpell": {
+							"Line01": "Lothar the Innkeeper: That is wise beyond your years.",
+							"Line02": "The spell of Calm will help you when you need it most, use it well.",
+							"Line03": "And look after yourself on the lonely Plain of Andor."
+						}
 					},
 					"WomanAtTable": {
-						
+						"Line01": "Woman at Table: You look like an honest maid.",
+						"Line02": "Sit a moment.",
+						"Line03": "It is said those who go deep into the earth learn to overcome the sins of greed.",
+						"Line04": "That may be true, but I do know this:",
+						"Line05": "a candle and a silver key can bring you bliss.",
+						"Line06": "Hurry on now, lass, time's a wasting!"
 					},
 					"DefeatedSoldier": {
-						
+						"Line01": "Defeated Soldier: I am so exhausted from my travels.",
+						"Line02": "If only I had known to cross the chasm rift with a ladder",
+						"Line03": "it would have saved me months!"
 					},
 					"KrebbTheWeary": {
-						
+						"Line01": "Krebb the Weary: Why spend a whole lifetime being defeated like me?",
+						"Line02": "Get it over with. Quit, go home, give up.",
+						"Line03": "You're patient. I can see you're not one to surrender.",
+						"Line04": "All right, take this dagger from me.",
+						"Line05": "It may do you more service than it ever did me."
 					}
 				}
 			},
 			"ForestOfOgham": {
 			},
+			"ShrineOfEarth": {
+			},
 			"ForestOfFindo": {
+				"TalkingToadstool": {
+					"Line01": "Toadstool: Hoo hoo hoo hoo!",
+					"Line02": "Those Mobilins out there are so slow and stupid...",
+					"Line03": "they're still trying to eat their soup with a fork!",
+					"Line04": "Huh huh huh huh huh huh!"
+				}
 			},
 			"MeadowOfSkotness": {
 			},
@@ -286,6 +332,5 @@
 			"PlainOfDonora": {
 			}
 		}
-		
     }
 }

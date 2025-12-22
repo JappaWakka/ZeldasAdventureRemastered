@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees",
+  "name": "Dialog_PlainOfAndor_20_GlebbTheThirsty_WhenAttacked",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,8 +14,8 @@
     "name": "AudioGroup_Dialogue",
     "path": "audiogroups/AudioGroup_Dialogue",
   },
-  "soundFile": "Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRupees.ogg",
-  "duration": 13.973492,
+  "soundFile": "Dialog_PlainOfAndor_20_GlebbTheThirsty_WhenAttacked.ogg",
+  "duration": 7.893333,
   "parent": {
     "name": "PlainOfAndor",
     "path": "folders/Sounds/Dialogue/PlainOfAndor.yy",

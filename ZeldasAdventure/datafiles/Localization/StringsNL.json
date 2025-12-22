@@ -106,8 +106,8 @@
 		},
 		"SkipCutsceneHint": "Druk nogmaals om over te slaan"
     },
-    "Subtitles": {
-		"Cutscenes": { //The Dutch localizations for some of the cutscenes have more lines than English because some of the lines became too long
+    "Subtitles": { //Some of the Dutch localizations have more lines than English does because some of the lines became too long.
+		"Cutscenes": {
 			"Intro": {
 				"Line01": "Gaspra: Er komt van sterrenkijken niets meer vannacht.",
 				"Line02": "Ah, de Rol van Shurmak...",
@@ -237,12 +237,12 @@
 						"Line09": "en naar de mond die nooit praat."
 					},
 					"DoNotRoam": {
-						"Line01": "Shurmak: Zelda! Zelda! Do not roam unprotected.",
-						"Line02": "Look nearby for something to aid you."
+						"Line01": "Shurmak: Zelda! Zelda! Zwerf niet onbeschermd rond.",
+						"Line02": "Kijk in de buurt of er iets is dat je kan helpen."
 					},
 					"DoNotBeHasty": {
 						"Line01": "Shurmak: Zelda, wees niet zo haastig!",
-						"Line02": "Er is hier in de buurt iets dat je moet hebben.",
+						"Line02": "Er is hier iets in de buurt dat je moet hebben.",
 						"Line03": "Verkenning is de sleutel tot jouw succes."
 					}
 				}
@@ -252,8 +252,8 @@
 					"BeforeGiveRupees": {
 						"Line01": "Bedelaar: Oh, schone prinses",
 						"Line02": "heb meelij met een arm wezen, verbannen uit Great Wimbich in het noorden!",
-						"Line03": "Ik vraag slechts genoeg voor een enkele maaltijd voor mijn kinderen",
-						"Line04": "die honger hebben en kou lijden door de wind."
+						"Line03": "Ik vraag alleen genoeg voor één maaltijd voor mijn kinderen",
+						"Line04": "die honger lijden en kou hebben van de wind."
 					},
 					"AfterGiveRupees": {
 						"Line01": "Bedelaar: U zijt duizendmaal gezegend",
@@ -261,11 +261,84 @@
 					},
 					"MustLearnCharity": {
 						"Line01": "Bedelaar: Je moet liefdadigheid leren voordat je een echte prinses kunt worden!",
-						"Line02": "Moge je nooit de rode wilg bij de grot komen!"
+						"Line02": "Moge je de rode wilg bij de grot nooit zien!"
 					},
 				},
+				"GlebbTheThirsty": {
+					"BeforeFill": {
+						"Line01": "Glebb de Dorstige: Jonge prinses, kom alstublieft bij me.",
+						"Line02": "Een reiziger met goede bedoelingen heeft me eindelijk gevonden!",
+						"Line03": "Ik ben ingestort van de dorst en droogte."
+					},
+					"AfterFill": {
+						"Line01": "Glebb de Dorstige: U zijt gezegend, prinses!",
+						"Line02": "U heeft het leven van een vermoeide oude vrouw gered!",
+						"Line03": "Ik bied u deze schatten aan."
+					},
+					"WhenAttacked": {
+						"Line01": "Glebb de Dorstige: Jij monster!",
+						"Line02": "Hoe durft u een zwakke, oude vrouw aan te vallen?!",
+						"Line03": "Hiervoor verliest u een leven!"
+					}
+				},
+				"MobilinsHeadInn": {
+					"LotharTheInnKeeper": {
+						"BeforeBuy": {
+							"Line01": "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, prinses!",
+							"Line02": "U ziet er uitgedroogd uit, neem een kopje Andor cider van het huis.",
+							"Line03": "Ik heb een Kalmte-spreuk te koop, maar hij kost u 100 robijnen."
+						},
+						"AfterBuy": {
+							"Line01": "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, prinses!",
+							"Line02": "U ziet er uitgedroogd uit, neem een kopje Andor cider van het huis.",
+						},
+						"PurchaseCalmSpell": {
+							"Line01": "Lothar de Herbergier: Dat is wijsheid die uw jaren te boven gaat.",
+							"Line02": "De Kalmte-spreuk zal u helpen wanneer u hem het meest nodig heeft, maak er goed gebruik van.",
+							"Line03": "En let goed op uzelf op de eenzame Andorvlakte."
+						}
+					},
+					"WomanAtTable": {
+						"Line01": "Vrouw aan Tafel: Je ziet eruit als een eerlijke meid.",
+						"Line02": "Kom even zitten.",
+						"Line03": "Er wordt gezegd dat degenen die diep de aarde ingaan",
+						"Line04": "leren om de zonden van hebzucht te overwinnen.",
+						"Line05": "Dat zou waar kunnen zijn, maar ik weet wel dit:",
+						"Line06": "een kaars en een zilveren sleutel kunnen je geluk brengen.",
+						"Line07": "Schiet op, meisje, de tijd dringt!"
+					},
+					"DefeatedSoldier": {
+						"Line01": "Verslagen Soldaat: Ik ben zo uitgeput van mijn reizen.",
+						"Line02": "Had ik maar geweten dat ik de kloof met een ladder kon oversteken",
+						"Line03": "dat had me maanden bespaard!"
+					},
+					"KrebbTheWeary": {
+						"Line01": "Krebb de Vermoeide: Waarom een heel leven lang verslagen zijn zoals ik?",
+						"Line02": "Maak er een einde aan. Stop, ga naar huis, geef het op.",
+						"Line03": "Je bent geduldig. Ik zie dat je je niet zomaar overgeeft.",
+						"Line04": "Oké, neem deze dolk van me af.",
+						"Line05": "Die zal je vast meer helpen dan het mij ooit heeft gedaan."
+					}
+				}
 			},
-		
+			"ForestOfOgham": {
+			},
+			"ShrineOfEarth": {
+			},
+			"ForestOfFindo": {
+				"TalkingToadstool": {
+					"Line01": "Paddenstoel: Hoehoehoehoe!",
+					"Line02": "Die Mobilins zijn zo traag en dom...",
+					"Line03": "dat ze nog steeds hun soep met een vork proberen te eten!",
+					"Line04": "Huh-huh-huh-huh-huh-huh!"
+				}
+			},
+			"MeadowOfSkotness": {
+			},
+			"GreatWimbich": {
+			},
+			"PlainOfDonora": {
+			}
 		}
 		
     }

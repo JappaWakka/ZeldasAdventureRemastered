@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Dialog_PlainOfAndor_13_BeggarWoman_Charity",
+  "name": "Dialog_PlainOfAndor_13_BeggarWoman_WhenAttacked",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,7 +14,7 @@
     "name": "AudioGroup_Dialogue",
     "path": "audiogroups/AudioGroup_Dialogue",
   },
-  "soundFile": "Dialog_PlainOfAndor_13_BeggarWoman_Charity.ogg",
+  "soundFile": "Dialog_PlainOfAndor_13_BeggarWoman_WhenAttacked.ogg",
   "duration": 9.173333,
   "parent": {
     "name": "PlainOfAndor",

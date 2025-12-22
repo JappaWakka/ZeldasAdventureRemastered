@@ -88,9 +88,9 @@ if IsPlayerOnSameTile() = true
 			{
 				global.Subtitle = Subtitle_PlainOfAndor_20_GlebbTheThirsty_AfterFill(AudioPosition)
 			}
-			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_YouMonster
+			if global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_WhenAttacked
 			{
-				global.Subtitle = Subtitle_PlainOfAndor_20_GlebbTheThirsty_YouMonster(AudioPosition)
+				global.Subtitle = Subtitle_PlainOfAndor_20_GlebbTheThirsty_WhenAttacked(AudioPosition)
 			}
 		}
 		else
