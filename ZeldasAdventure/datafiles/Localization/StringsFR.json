@@ -380,6 +380,34 @@
 						"Line02": "Llort, this enemy is coming!"
 					},
 				},
+				"BlueSardak": {
+					"ThoughtIWasAlone": {
+						"Line01": "Blue Sardak: Huh? I... I thought I was alone here!",
+						"Line02": "Llort, an enemy is in your cave!"
+					},
+					"CouldntStopHer": {
+						"Line01": "Blue Sardak: Llort, I couldn't stop her!",
+						"Line02": "Get ready to fight!"
+					},
+				},
+				"YellowSardak": {
+					"EnemyOfMyBoss": {
+						"Line01": "Yellow Sardak: Hey! Who goes there?",
+						"Line02": "Aren't you an enemy of my boss Llort?",
+						"Line03": "You can't come in here."
+					},
+					"ShesComing": {
+						"Line01": "Yellow Sardak: Hey, Llort! Watch out!",
+						"Line02": "She's coming!"
+					},
+				},
+				"TreasureChest": {
+					"WhatDoWeHaveHere": {
+						"Line01": "Treasure Chest: Oh-ho-ho! Oh, what do we have here?!",
+						"Line02": "A human person's coming close!",
+						"Line03": "Why, what a great event! Hoo-hoo!"
+					},
+				},
 			},
 			"ForestOfFindo": {
 				"TalkingToadstool": {
