@@ -17,11 +17,6 @@ if IsPlayerOnSameTile() = true
 	}
 	if Register_Registered("RedSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Red) = false
 	{
-		if global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_07_RedSardak_NoThreat
-		{
-			audio_stop_sound(global.CurrentDialogue_ID)
-			global.CurrentDialogue_Asset = Dialog_None
-		}
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_07_RedSardak_FailedMission

@@ -38,7 +38,7 @@
 				"Full": "Plein",
 				"Resolution": "Résolution",
 				"RemasteredMode": "Mode Remastérisé",
-				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor, Fonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
+				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor. Fonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
 				"Subtitles": "Sous-titres",
 				"Language": "Langue"
 			},
@@ -347,6 +347,39 @@
 				}
 			},
 			"ShrineOfEarth": {
+				"Shurmak": {
+					"EvilsOfGreed": {
+						"Line01": "Shurmak: Beware the evils of greed.",
+						"Line02": "Act quickly, think on your feet",
+						"Line03": "and you will be rewarded."
+					},
+				},
+				"Llort": {
+					"YouAreNotWanted": {
+						"Line01": "Llort: Do not come in here! You are not wanted.",
+						"Line02": "I am Llort, and this is my shrine! All mine!"
+					},
+					"ShrineOfRock": {
+						"Line01": "Llort: I said this is my cave! Mine!",
+						"Line02": "This is the Shrine of Rock and I am Llort!",
+						"Line03": "Go away! Take nothing! It's all mine!"
+					},
+					"TakingMyThings": {
+						"Line01": "Llort: You've been taking my things.",
+						"Line02": "Put them back! Don't touch anything!",
+						"Line03": "Those are my gems!"
+					},
+				},
+				"RedSardak": {
+					"NoThreat": {
+						"Line01": "Red Sardak: Hey dee hee, hoo dee bee!",
+						"Line02": "You're no threat to us down here!"
+					},
+					"FailedMission": {
+						"Line01": "Red Sardak: I've failed in my mission!",
+						"Line02": "Llort, this enemy is coming!"
+					},
+				},
 			},
 			"ForestOfFindo": {
 				"TalkingToadstool": {

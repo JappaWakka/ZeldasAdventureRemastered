@@ -17,12 +17,6 @@ if IsPlayerOnSameTile() = true
 	}
 	if Register_Registered("YellowSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Yellow) = false
 	{
-		
-		if global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_20_YellowSardak_EnemyOfMyBoss
-		{
-			audio_stop_sound(global.CurrentDialogue_ID)
-			global.CurrentDialogue_Asset = Dialog_None
-		}
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_20_YellowSardak_ShesComing

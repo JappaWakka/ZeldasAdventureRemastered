@@ -38,7 +38,7 @@
 				"Full": "Full",
 				"Resolution": "Resolution",
 				"RemasteredMode": "Remastered Mode",
-				"RemasteredModeHint": "Action 1 = Use Weapon, Action 2 = Use Treasure, Restored cut content, Action Button 2 replaces Ruby item etc.",
+				"RemasteredModeHint": "Action 1 = Use Weapon, Action 2 = Use Treasure. Restored cut content, Action Button 2 replaces Ruby item etc.",
 				"Subtitles": "Subtitles",
 				"Language": "Language"
 			},
@@ -347,6 +347,67 @@
 				}
 			},
 			"ShrineOfEarth": {
+				"Shurmak": {
+					"EvilsOfGreed": {
+						"Line01": "Shurmak: Beware the evils of greed.",
+						"Line02": "Act quickly, think on your feet",
+						"Line03": "and you will be rewarded."
+					},
+				},
+				"Llort": {
+					"YouAreNotWanted": {
+						"Line01": "Llort: Do not come in here! You are not wanted.",
+						"Line02": "I am Llort, and this is my shrine! All mine!"
+					},
+					"ShrineOfRock": {
+						"Line01": "Llort: I said this is my cave! Mine!",
+						"Line02": "This is the Shrine of Rock and I am Llort!",
+						"Line03": "Go away! Take nothing! It's all mine!"
+					},
+					"TakingMyThings": {
+						"Line01": "Llort: You've been taking my things.",
+						"Line02": "Put them back! Don't touch anything!",
+						"Line03": "Those are my gems!"
+					},
+				},
+				"RedSardak": {
+					"NoThreat": {
+						"Line01": "Red Sardak: Hey dee hee, hoo dee bee!",
+						"Line02": "You're no threat to us down here!"
+					},
+					"FailedMission": {
+						"Line01": "Red Sardak: I've failed in my mission!",
+						"Line02": "Llort, this enemy is coming!"
+					},
+				},
+				"BlueSardak": {
+					"ThoughtIWasAlone": {
+						"Line01": "Blue Sardak: Huh? I... I thought I was alone here!",
+						"Line02": "Llort, an enemy is in your cave!"
+					},
+					"CouldntStopHer": {
+						"Line01": "Blue Sardak: Llort, I couldn't stop her!",
+						"Line02": "Get ready to fight!"
+					},
+				},
+				"YellowSardak": {
+					"EnemyOfMyBoss": {
+						"Line01": "Yellow Sardak: Hey! Who goes there?",
+						"Line02": "Aren't you an enemy of my boss Llort?",
+						"Line03": "You can't come in here."
+					},
+					"ShesComing": {
+						"Line01": "Yellow Sardak: Hey, Llort! Watch out!",
+						"Line02": "She's coming!"
+					},
+				},
+				"TreasureChest": {
+					"WhatDoWeHaveHere": {
+						"Line01": "Treasure Chest: Oh-ho-ho! Oh, what do we have here?!",
+						"Line02": "A human person's coming close!",
+						"Line03": "Why, what a great event! Hoo-hoo!"
+					},
+				},
 			},
 			"ForestOfFindo": {
 				"TalkingToadstool": {

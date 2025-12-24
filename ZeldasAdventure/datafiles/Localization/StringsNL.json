@@ -38,7 +38,7 @@
 				"Full": "Volledig",
 				"Resolution": "Resolutie",
 				"RemasteredMode": "Remaster-Modus",
-				"RemasteredModeHint": "Actie 1 = Gebruik Wapen, Actie 2 = Gebruik Schat, Herstelde ongebruikte inhoud, Actieknop 2 vervangt Robijn voorwerp etc.",
+				"RemasteredModeHint": "Actie 1 = Gebruik Wapen, Actie 2 = Gebruik Schat. Herstelde ongebruikte inhoud, Actieknop 2 vervangt Robijn voorwerp etc.",
 				"Subtitles": "Ondertiteling",
 				"Language": "Taal"
 			},
@@ -355,6 +355,67 @@
 				}
 			},
 			"ShrineOfEarth": {
+				"Shurmak": {
+					"EvilsOfGreed": {
+						"Line01": "Shurmak: Pas op voor de kwaden van hebzucht.",
+						"Line02": "Handel snel, denk goed na",
+						"Line03": "en je zult beloond worden."
+					},
+				},
+				"Llort": {
+					"YouAreNotWanted": {
+						"Line01": "Llort: Kom hier niet naar binnen! Je bent niet welkom.",
+						"Line02": "Ik ben Llort, en dit is mijn tempel! Helemaal van mij!"
+					},
+					"ShrineOfRock": {
+						"Line01": "Llort: Ik zei dit is mijn grot! Van mij!",
+						"Line02": "Dit is de Steentempel en ik ben Llort!",
+						"Line03": "Ga weg! Neem niks mee! Het is allemaal van mij!"
+					},
+					"TakingMyThings": {
+						"Line01": "Llort: Je hebt mijn dingen gejat."
+						"Line02": "Leg ze terug! Raak niets meer aan!"
+						"Line03": "Dat zijn mijn juwelen!"
+					},
+				},
+				"RedSardak": {
+					"NoThreat": {
+						"Line01": "Rode Sardak: Hee-die-hie, hoe-die-bie!",
+						"Line02": "Je bent geen bedreiging voor ons hier beneden!"
+					},
+					"FailedMission": {
+						"Line01": "Rode Sardak: Ik heb gefaald in mijn missie!",
+						"Line02": "Llort, deze vijand komt eraan!"
+					},
+				},
+				"BlueSardak": {
+					"ThoughtIWasAlone": {
+						"Line01": "Blauwe Sardak: Huh? Ik... Ik dacht dat ik alleen was hier!",
+						"Line02": "Llort, er zit een vijand in je grot!"
+					},
+					"CouldntStopHer": {
+						"Line01": "Blauwe Sardak: Llort, ik kon haar niet stoppen!",
+						"Line02": "Bereid je voor op een gevecht!"
+					},
+				},
+				"YellowSardak": {
+					"EnemyOfMyBoss": {
+						"Line01": "Gele Sardak: Hé! Wie is daar?",
+						"Line02": "Ben jij niet een vijand van mijn baas Llort?",
+						"Line03": "Je mag hier niet naar binnen."
+					},
+					"ShesComing": {
+						"Line01": "Gele Sardak: Hé, Llort! Kijk uit!",
+						"Line02": "Ze komt eraan!"
+					},
+				},
+				"TreasureChest": {
+					"WhatDoWeHaveHere": {
+						"Line01": "Schatkist: Oh-ho-ho! Oh, wat hebben we hier?!",
+						"Line02": "Daar komt een menselijk persoon aan!",
+						"Line03": "Nou, wat een geweldige gebeurtenis! Hoe-hoe!"
+					},
+				},
 			},
 			"ForestOfFindo": {
 				"TalkingToadstool": {

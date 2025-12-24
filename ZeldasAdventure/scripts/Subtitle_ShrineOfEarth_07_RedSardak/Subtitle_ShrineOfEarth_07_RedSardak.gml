@@ -1,47 +1,14 @@
 function Subtitle_ShrineOfEarth_07_RedSardak_NoThreat(AudioPosition)
 {
-	switch string_lower(Localize.Meta.LanguageNameNative)
-	{
-	case "english":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.706 {return "Red Sardak: Hey dee hee, hoo dee bee!"}
-		if AudioPosition >= 1.731 and AudioPosition <= 3.860 {return "You're no threat to us down here!"}
-		else return ""
-		break;
-		
-	case "dutch":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.706 {return "Rode Sardak: Hee-die-hie, hoe-die-bie!"}
-		if AudioPosition >= 1.731 and AudioPosition <= 3.860 {return "Je bent geen bedreiging voor ons hier beneden!"}
-		else return ""
-		break;
-		
-	case "french":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.706 {return "Red Sardak: Hey dee hee, hoo dee bee!"}
-		if AudioPosition >= 1.731 and AudioPosition <= 3.860 {return "You're no threat to us down here!"}
-		else return ""
-		break;
-	}
+	if AudioPosition >=		 0.000 and AudioPosition <= 1.706 {return Localize.Subtitles.Dialogue.ShrineOfEarth.RedSardak.NoThreat.Line01} //"Red Sardak: Hey dee hee, hoo dee bee!"
+	else if AudioPosition >= 1.731 and AudioPosition <= 3.860 {return Localize.Subtitles.Dialogue.ShrineOfEarth.RedSardak.NoThreat.Line02} //"You're no threat to us down here!"
+	else return ""
 }
+
 
 function Subtitle_ShrineOfEarth_07_RedSardak_FailedMission(AudioPosition)
 {
-	switch string_lower(Localize.Meta.LanguageNameNative)
-	{
-	case "english":
-		if AudioPosition >= 0.000 and AudioPosition <= 2.267 {return "Red Sardak: I've failed in my mission!"}
-		if AudioPosition >= 2.367 and AudioPosition <= 4.553 {return "Llort, this enemy is coming!"}
-		else return ""
-		break;
-		
-	case "dutch":
-		if AudioPosition >= 0.000 and AudioPosition <= 2.267 {return "Rode Sardak: Ik heb gefaald in mijn missie!"}
-		if AudioPosition >= 2.367 and AudioPosition <= 4.553 {return "Llort, deze vijand komt eraan!"}
-		else return ""
-		break;
-		
-	case "french":
-		if AudioPosition >= 0.000 and AudioPosition <= 2.267 {return "Red Sardak: I've failed in my mission!"}
-		if AudioPosition >= 2.367 and AudioPosition <= 4.553 {return "Llort, this enemy is coming!"}
-		else return ""
-		break;
-	}
+	if AudioPosition >=		 0.000 and AudioPosition <= 2.267 {return Localize.Subtitles.Dialogue.ShrineOfEarth.RedSardak.FailedMission.Line01} //"Red Sardak: I've failed in my mission!"
+	else if AudioPosition >= 2.367 and AudioPosition <= 4.553 {return Localize.Subtitles.Dialogue.ShrineOfEarth.RedSardak.FailedMission.Line02} //"Llort, this enemy is coming!"
+	else return ""
 }

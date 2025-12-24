@@ -1,50 +1,14 @@
 function Subtitle_ShrineOfEarth_20_YellowSardak_EnemyOfMyBoss(AudioPosition)
 {
-	switch string_lower(Localize.Meta.LanguageNameNative)
-	{
-	case "english":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.660 {return "Yellow Sardak: Hey! Who goes there?"}
-		if AudioPosition >= 1.933 and AudioPosition <= 4.093 {return "Aren't you an enemy of my boss Llort?"}
-		if AudioPosition >= 4.273 and AudioPosition <= 6.133 {return "You can't come in here."}
-		else return ""
-		break;
-		
-	case "dutch":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.660 {return "Gele Sardak: Hé! Wie is daar?"}
-		if AudioPosition >= 1.933 and AudioPosition <= 4.093 {return "Ben jij niet een vijand van mijn baas Llort?"}
-		if AudioPosition >= 4.273 and AudioPosition <= 6.133 {return "Je mag hier niet binnenkomen."}
-		else return ""
-		break;
-		
-	case "french":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.660 {return "Yellow Sardak: Hey! Who goes there?"}
-		if AudioPosition >= 1.933 and AudioPosition <= 4.093 {return "Aren't you an enemy of my boss Llort?"}
-		if AudioPosition >= 4.273 and AudioPosition <= 6.133 {return "You can't come in here."}
-		else return ""
-		break;
-	}
+	if AudioPosition >=		 0.000 and AudioPosition <= 1.660 {return Localize.Subtitles.Dialogue.ShrineOfEarth.YellowSardak.EnemyOfMyBoss.Line01} //"Yellow Sardak: Hey! Who goes there?"
+	else if AudioPosition >= 1.933 and AudioPosition <= 4.093 {return Localize.Subtitles.Dialogue.ShrineOfEarth.YellowSardak.EnemyOfMyBoss.Line02} //"Aren't you an enemy of my boss Llort?"
+	else if AudioPosition >= 4.273 and AudioPosition <= 6.133 {return Localize.Subtitles.Dialogue.ShrineOfEarth.YellowSardak.EnemyOfMyBoss.Line03} //"You can't come in here."
+	else return ""
 }
 
 function Subtitle_ShrineOfEarth_20_YellowSardak_ShesComing(AudioPosition)
 {
-	switch string_lower(Localize.Meta.LanguageNameNative)
-	{
-	case "english":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.720 {return "Yellow Sardak: Hey, Llort! Watch out!"}
-		if AudioPosition >= 1.966 and AudioPosition <= 3.019 {return "She's coming!"}
-		else return ""
-		break;
-		
-	case "dutch":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.720 {return "Gele Sardak: Hé, Llort! Kijk uit!"}
-		if AudioPosition >= 1.966 and AudioPosition <= 3.019 {return "Ze komt eraan!"}
-		else return ""
-		break;
-		
-	case "french":
-		if AudioPosition >= 0.000 and AudioPosition <= 1.720 {return "Yellow Sardak: Hey, Llort! Watch out!"}
-		if AudioPosition >= 1.966 and AudioPosition <= 3.019 {return "She's coming!"}
-		else return ""
-		break;
-	}
+	if AudioPosition >=		 0.000 and AudioPosition <= 1.720 {return Localize.Subtitles.Dialogue.ShrineOfEarth.YellowSardak.ShesComing.Line01} //"Yellow Sardak: Hey, Llort! Watch out!"
+	else if AudioPosition >= 1.966 and AudioPosition <= 3.019 {return Localize.Subtitles.Dialogue.ShrineOfEarth.YellowSardak.ShesComing.Line02} //"She's coming!"
+	else return ""
 }
