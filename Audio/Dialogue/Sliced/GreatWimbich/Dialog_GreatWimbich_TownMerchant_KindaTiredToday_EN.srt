@@ -1,6 +1,6 @@
 ﻿1
 00:00:00,073 --> 00:00:02,595
-I'm kinda... tired today.
+Town Merchant: I'm kinda... tired today.
 
 2
 00:00:02,619 --> 00:00:05,607

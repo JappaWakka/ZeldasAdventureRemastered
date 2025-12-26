@@ -418,10 +418,150 @@
 				}
 			},
 			"MeadowOfSkotness": {
+				"Farmer": {
+					"HelloThereMiss": {
+						"Line01": "Farmer: Hello there, Miss!",
+						"Line02": "Watch how you go out in the meadows!",
+						"Line03": "They're full of Leevers and Tektites this time of year!"
+					},
+					"WhatBringsYouThisWay": {
+						"Line01": "Farmer: It's good to see ya!",
+						"Line02": "What brings you this way?",
+						"Line03": "'scuse me, but I got to get back to plowin'."
+					}
+				}
 			},
 			"GreatWimbich": {
+				"TownMerchant": {
+					"ForThirtySuns": {					
+						"Line01": "Town Merchant: For thirty suns my husband and I",
+						"Line02": "ran the great locksmith forge for Warbane.",
+						"Line03": "Then Ganon came and pressed Warbane into service",
+						"Line04": "for his own evil plans.",
+						"Line05": "The forge was closed.",
+						"Line06": "Warbane built a fortified retreat of his own",
+						"Line07": "somewhere off in the Forest of Canvula to the north.",
+						"Line08": "We were left with nothing but these trinkets to sell!",
+						"Line09": "Perhaps they will be of use to you in the underground.",
+						"Line10": "I can not give them up cheap."
+					},
+					"KindaTiredToday": {					
+						"Line01": "Town Merchant: I'm kinda... tired today.",
+						"Line02": "Everything's turning to... mud."
+					}
+				},
+				"Yvonne": {
+					"GiveFlute": {
+						"Line01": "Yvonne: Hello, Zelda. My name is Yvonne.",
+						"Line02": "You look like a music lover, too.",
+						"Line03": "Music can soothe a savage beast.",
+						"Line04": "I believe Shurmak has graced you with her friendship.",
+						"Line05": "She helped me once, so I am going to help you.",
+						"Line06": "Listen to this!",
+						"Line07": "*Yvonne plays the flute*",
+						"Line08": "Heh heh! The flute can be used to calm the savage hiss of a snake."
+					},
+					"Singing": {
+						"Line01": "*Yvonne sings*",
+					},
+				},
+				"EricAndIan": {
+					"MeetTheTwins": {
+						"Line01": "Twins (Eric & Ian): Hello, Zelda. I'm Eric and this is Ian.",
+						"Line02": "Oh, what do you mean? I'm Eric, I've always been.",
+						"Line03": "No you're not, I'm Eric!"
+					},
+					"MeetOurFather": {
+						"Line01": "Well, never mind who we are.",
+						"Line02": "You should go into the yellow house and meet our father!",
+						"Line03": "He'll tell you something that's good to know."
+					},
+				},
+				"Alice": {
+					"MyGoodness": {
+						"Line01": "Alice: My goodness, it's the brave Zelda!",
+						"Line02": "I've heard so much about ya from everyone.",
+						"Line03": "Sit a goodly spell with Alice, and indulge an old woman."
+					},
+					"PeculiarLittleTown": {
+						"Line01": "Alice: Great Wimbich is such a peculiar little town.",
+						"Line02": "The shops out on Upper Street have anything you could wish for",
+						"Line03": "and if you can't find it there",
+						"Line04": "you're sure to stumble across it in the market square."
+					},
+					"IfYaLikeMusic": {
+						"Line01": "Alice: Now, if ya like music, follow your ear to Yvonne",
+						"Line02": "the musician down Skotness Road right here.",
+						"Line03": "If ya get tired in ya wanderings, this is a great place to settle down."
+					},
+					"NothingMoreToSay": {
+						"Line01": "Alice: Zelda, it's been fun visiting with you",
+						"Line02": "but I have nothing more to say now.",
+						"Line03": "Come back and see me again, okay?"
+					},
+					"RealNice": {
+						"Line01": "Alice: Yes, Zelda, it's real nice around here."
+					},
+				},
+				"GhostFarmer": {
+					"StayBack": {
+						"Line01": "Ghost Farmer: Stay back!",
+						"Line02": "This splendid farm is all mine.",
+						"Line03": "Isn't it wonderful?",
+						"Line04": "I have worked this land for three-hundred years."
+					},
+					"StillHere": {
+						"Line01": "No? You're still here?",
+						"Line02": "Alright, I admit it, my farm is in ruins.",
+						"Line03": "Ganon and his cruel friends took all my crops and tools.",
+						"Line04": "You must save us!",
+						"Line05": "Come close, and I'll tell you a secret."
+					},
+					"ShrineOfWater_Classic": {
+						"Line01": "Ghost Farmhand: Far away, one of Ganon's allies lives in a world of water.",
+						"Line02": "The entrance is hidden, and you may never find it",
+						"Line03": "if you fear the touch of falling water.",
+						"Line04": "You can cross any fjord in Skotness River with the Red Boots."
+					},
+					"ShrineOfWater_Remastered": {
+						"Line01": "Ghost Farmer: Far away, one of Ganon's allies lives in a world of water.",
+						"Line02": "The entrance is hidden, and you may never find it",
+						"Line03": "if you fear the touch of falling water."
+					},
+				},
+				"TwinFather": {
+					"WelcomeToMyHome": {
+						"Line01": "Twins' Father: Hello, Zelda! Welcome to my home!",
+						"Line02": "I'm the twins' father, and even I don't know which twin is which.",
+						"Line03": "Still, it is good of you to come and visit.",
+						"Line04": "My name is Zelda and you must be the father.",
+						"Line05": "No, wait! That can't be true, you just came in.",
+						"Line06": "You must be Zelda!"
+					},
+					"CoalAndRubies": {
+						"Line01": "I do know this for sure, because I used to be",
+						"Line02": "a miner over on the Plain of Hobel:",
+						"Line03": "Coal and rubies are the same substance.",
+						"Line04": "I believe there's a crusher somewhere nearby.",
+						"Line05": "Uh, go in peace, little one. Uh... are you Eric or Ian?"
+					},
+					"VaguelyFamiliar": {
+						"Line01": "Twins' Father: You seem... vaguely familiar, but, um...",
+						"Line02": "i-it's really time for my nap.",
+						"Line03": "Are you Eric or- or Ian?"
+					},
+				},
 			},
 			"PlainOfDonora": {
+				"YalzanTheStern": {
+					"Toll10Rubies": {
+						"Line01": "Yalzan the Stern: Ten rubies gets you through the pass, young lady, no less."
+					},
+					"Toll20Rubies": {
+						"Line01": "Yalzan the Stern: Oh, force my hand, will you?",
+						"Line02": "The price is now 20 rubies."
+					},
+				}
 			}
 		}
     }

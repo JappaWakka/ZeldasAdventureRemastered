@@ -426,10 +426,150 @@
 				}
 			},
 			"MeadowOfSkotness": {
+				"Farmer": {
+					"HelloThereMiss": {
+						"Line01": "Boer: Hallo daar, jongedame!",
+						"Line02": "Pas op als je de weiden in gaat!",
+						"Line03": "Ze zitten vol met Leevers en Tektites rond deze tijd van het jaar!"
+					},
+					"WhatBringsYouThisWay": {
+						"Line01": "Boer: Wat leuk om je te zien!",
+						"Line02": "Van waar ben je hier gekomen?",
+						"Line03": "Sorry, maar ik moet weer verder met ploegen."
+					}
+				}
 			},
 			"GreatWimbich": {
+				"TownMerchant": {
+					"ForThirtySuns": {					
+						"Line01": "Dorpshandelaar: Dertig zonnen lang hebben mijn man en ik",
+						"Line02": "de grote slotenmakersmederij voor Warbane gerund.",
+						"Line03": "Toen kwam Ganon en dwong Warbane om voor zijn",
+						"Line04": "eigen kwaadaardige plannen te werken.",
+						"Line05": "De smederij werd gesloten.",
+						"Line06": "Warbane bouwde zijn eigen versterkte toevluchtsoord",
+						"Line07": "ergens in het Bos van Canvula in het noorden.",
+						"Line08": "We hadden niets meer behalve deze snuisterijen om te verkopen!",
+						"Line09": "Misschien heb je iets aan ze in de ondergrondse wereld.",
+						"Line10": "Ik kan ze niet goedkoop afstaan."
+					},
+					"KindaTiredToday": {					
+						"Line01": "Dorpshandelaar: Ik ben een beetje... moe vandaag."
+						"Line02": "Alles verandert in... modder."
+					}
+				},
+				"Yvonne": {
+					"GiveFlute": {
+						"Line01": "Line01": "Yvonne: Hallo, Zelda. Mijn naam is Yvonne.",
+						"Line02": "Line02": "Je ziet er uit als een mede-muziekliefhebber.",
+						"Line03": "Line03": "Muziek kan zelfs een woest beest kalmeren.",
+						"Line04": "Line04": "Ik heb vernomen dat Shurmak je met haar vriendschap heeft vereerd.",
+						"Line05": "Line05": "Ze heeft mij ooit geholpen, dus nu zal ik ook jou helpen.",
+						"Line06": "Line06": "Luister hier eens naar!",
+						"Line07": "Line07": "*Yvonne bespeelt de fluit*",
+						"Line08": "Line08": "Hihi! De fluit kan worden gebruikt om het woeste gesis van een slang te kalmeren."
+					},
+					"Singing": {
+						"Line01": "*Yvonne zingt*",
+					},
+				},
+				"EricAndIan": {
+					"MeetTheTwins": {
+						"Line01": "Tweeling (Eric & Ian): Hallo, Zelda. Ik ben Eric en dit is Ian.",
+						"Line02": "Wat bedoel je? Ik ben Eric, dat ben ik altijd geweest.",
+						"Line03": "Nee, dat ben je niet, ik ben Eric!"
+					},
+					"MeetOurFather": {
+						"Line01": "Ach, het doet er niet toe wie wij zijn.",
+						"Line02": "Je zou het gele huis eens moeten bezoeken en onze vader ontmoeten!",
+						"Line03": "Hij zal je iets interessants vertellen."
+					},
+				},
+				"Alice": {
+					"MyGoodness": {
+						"Line01": "Alice: Mijn hemel, het is de dappere Zelda!",
+						"Line02": "Ik heb van iedereen zoveel over je gehoord.",
+						"Line03": "Kom lekker bij Alice zitten en doe een oude vrouw een plezier."
+					},
+					"PeculiarLittleTown": {
+						"Line01": "Alice: Great Wimbich is zo'n eigenaardig dorpje.",
+						"Line02": "De winkels in de Bovenstraat hebben alles wat je maar kunt wensen",
+						"Line03": "en als je het daar niet kunt vinden",
+						"Line04": "kom je het vast en zeker tegen op het marktplein."
+					},
+					"IfYaLikeMusic": {
+						"Line01": "Alice: Maar als je van muziek houdt, volg dan je oren naar Yvonne",
+						"Line02": "de muzikante hier verderop de Skotnessweg.",
+						"Line03": "Als je tijdens je reizen uitgeput raakt, is dit een geweldige plek om bij te komen."
+					},
+					"NothingMoreToSay": {
+						"Line01": "Alice: Zelda, het was leuk om met je te praten",
+						"Line02": "maar ik heb je niets meer te vertellen.",
+						"Line03": "Kom nog eens langs, oké?"
+					},
+					"RealNice": {
+						"Line01": "Alice: Ja, Zelda, het is echt heel mooi in deze omgeving."
+					},
+				},
+				"GhostFarmer": {
+					"StayBack": {
+						"Line01": "Spookboer: Blijf daar!",
+						"Line02": "Deze schitterende boerderij is helemaal van mij.",
+						"Line03": "Is het niet prachtig?",
+						"Line04": "Ik bewerk dit land al driehonderd jaar."
+					},
+					"StillHere": {
+						"Line01": "Nee? Ben je er nog steeds?",
+						"Line02": "Oké, ik geef het toe, mijn boerderij is een puinhoop.",
+						"Line03": "Ganon en zijn wrede vrienden hebben al mijn gewassen en gereedschap meegenomen.",
+						"Line04": "Je moet ons redden!",
+						"Line05": "Kom dichterbij, dan vertel ik je een geheim."
+					},
+					"WaterShrine_Classic": {
+						"Line01": "Spookknecht: Hier ver vandaan leeft een bondgenoot van Ganon in een wereld van water.",
+						"Line02": "De ingang is verborgen en je zult hem nooit vinden",
+						"Line03": "als je bang bent voor stromend water.",
+						"Line04": "Met de rode laarzen kun je elke fjord in de Skotnessrivier oversteken."
+					},
+					"WaterShrine_Remastered": {
+						"Line01": "Spookboer: Hier ver vandaan leeft een bondgenoot van Ganon in een wereld van water.",
+						"Line02": "De ingang is verborgen en je zult hem nooit vinden",
+						"Line03": "als je bang bent voor stromend water."
+					},
+				},
+				"TwinFather": {
+					"WelcomeToMyHome": {
+						"Line01": "Vader van de Tweeling: Hallo, Zelda! Welkom in mijn huis.",
+						"Line02": "Ik ben de vader van de tweeling, en zelfs ik weet niet welke tweeling welke is.",
+						"Line03": "Maar het is leuk dat je langskomt.",
+						"Line04": "Mijn naam is Zelda en jij bent vast de vader.",
+						"Line05": "Nee, wacht! Dat kan niet kloppen, je bent net binnengekomen.",
+						"Line06": "Jij bent vast Zelda!"
+					},
+					"CoalAndRubies": {
+						"Line01": "Ik weet dit zeker, want ik was vroeger",
+						"Line02": "mijnwerker op de Vlakte van Hobel:",
+						"Line03": "Steenkool en robijnen zijn dezelfde substantie.",
+						"Line04": "Ik geloof dat er ergens in de buurt een breker is.",
+						"Line05": "Eh, ga in vrede, kleintje. Eh... ben jij Eric of Ian?"
+					},
+					"VaguelyFamiliar": {
+						"Line01": "Vader van de Tweeling: Je... komt me vaag bekend voor, maar eh...",
+						"Line02": "het is echt tijd voor mijn dutje.",
+						"Line03": "Ben jij Eric of Ian?"
+					},
+				},
 			},
 			"PlainOfDonora": {
+				"YalzanTheStern": {
+					"Toll10Rubies": {
+						"Line01": "Yalzan de Strenge: Voor tien robijnen mag je door de poort, jongedame, niet minder."
+					},
+					"Toll20Rubies": {
+						"Line01": "Yalzan de Strenge: Oh, dwing je me je door te laten?",
+						"Line02": "De prijs is nu 20 robijnen."
+					},
+				}
 			}
 		}
 		

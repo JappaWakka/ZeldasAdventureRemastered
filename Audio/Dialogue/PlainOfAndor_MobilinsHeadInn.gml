@@ -45,7 +45,7 @@
 
 #region KrebbTheWeary
 	//Used
-	Subtitle_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary_Dagger
+	Subtitle_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary
 	{
 		//English
 			"Krebb the Weary: Why spend a whole lifetime being defeated like me?"

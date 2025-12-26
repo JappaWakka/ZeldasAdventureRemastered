@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Dialog_PlainOfDonora_YalzanTheStern_10Rubies",
+  "name": "Dialog_PlainOfDonora_10_YalzanTheStern_Toll20Rubies",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Dialog_PlainOfDonora_YalzanTheStern_10Rubies.ogg",
-  "duration": 3.626667,
+  "soundFile": "Dialog_PlainOfDonora_10_YalzanTheStern_Toll20Rubies.ogg",
+  "duration": 5.013333,
   "parent": {
     "name": "PlainOfDonora",
     "path": "folders/Sounds/Dialogue/PlainOfDonora.yy",

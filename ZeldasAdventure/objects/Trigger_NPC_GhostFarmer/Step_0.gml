@@ -34,11 +34,11 @@ if IsPlayerOnSameTile() = true
 					}
 					else
 					{
-						if place_meeting(x,y,Entity_Player) and Register_Registered("GhostFarmer_WaterShrine") = false
+						if place_meeting(x,y,Entity_Player) and Register_Registered("GhostFarmer_ShrineOfWater") = false
 						{
-							global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_WaterShrine_Remastered
+							global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_ShrineOfWater_Remastered
 							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GhostFarmer,global.CurrentDialogue_Asset,500,false)
-							Register_Add("GhostFarmer_WaterShrine")
+							Register_Add("GhostFarmer_ShrineOfWater")
 							HasSpoken = true
 						}
 					}
@@ -66,9 +66,9 @@ if IsPlayerOnSameTile() = true
 			{
 				global.Subtitle = Subtitle_GreatWimbich_GhostFarmer_StillHere(AudioPosition)
 			}
-			if global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_WaterShrine_Remastered
+			if global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_ShrineOfWater_Remastered
 			{
-				global.Subtitle = Subtitle_GreatWimbich_GhostFarmer_WaterShrine_Remastered(AudioPosition)
+				global.Subtitle = Subtitle_GreatWimbich_GhostFarmer_ShrineOfWater_Remastered(AudioPosition)
 			}
 			
 		}

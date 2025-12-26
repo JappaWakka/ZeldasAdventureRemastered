@@ -4,7 +4,7 @@ if Register_Registered("DonoraGateFeePaid") = false
 	{
 		if HasTalked = false
 		{
-			//Temporarily Block Progress// global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_20Rubies
+			//Temporarily Block Progress// global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_Toll10Rubies
 			//Temporarily Block Progress// global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false,x)
 			//Temporarily Block Progress// Register_Add("DonoraGateAttacked")
 		}
@@ -57,13 +57,13 @@ if IsPlayerOnSameTile_EnemyOrNPC()
 			//Temporarily Block Progress//  	audio_resume_sound(global.CurrentDialogue_ID)
 			//Temporarily Block Progress//  }
 			//Temporarily Block Progress//  var AudioPosition = audio_sound_get_track_position(global.CurrentDialogue_ID)
-			//Temporarily Block Progress//  if global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_10Rubies
+			//Temporarily Block Progress//  if global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_Toll10Rubies
 			//Temporarily Block Progress//  {
-			//Temporarily Block Progress//  	global.Subtitle = Subtitle_PlainOfDonora_10_YalzanTheStern_10Rubies(AudioPosition)
+			//Temporarily Block Progress//  	global.Subtitle = Subtitle_PlainOfDonora_10_YalzanTheStern_Toll10Rubies(AudioPosition)
 			//Temporarily Block Progress//  }
-			//Temporarily Block Progress//  if global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_20Rubies
+			//Temporarily Block Progress//  if global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_Toll20Rubies
 			//Temporarily Block Progress//  {
-			//Temporarily Block Progress//  	global.Subtitle = Subtitle_PlainOfDonora_10_YalzanTheStern_20Rubies(AudioPosition)
+			//Temporarily Block Progress//  	global.Subtitle = Subtitle_PlainOfDonora_10_YalzanTheStern_Toll20Rubies(AudioPosition)
 			//Temporarily Block Progress//  }
 		}
 		else
