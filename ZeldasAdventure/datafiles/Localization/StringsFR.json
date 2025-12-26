@@ -252,7 +252,7 @@
 						"Line01": "Beggar: You will be blessed a thousand times",
 						"Line02": "a thousand, fair princess!"
 					},
-					"MustLearnCharity": {
+					"WhenAttacked": {
 						"Line01": "Beggar: You must learn charity before you may become a true princess!",
 						"Line02": "May you never see the red willow by the cave!"
 					},
@@ -330,19 +330,19 @@
 				},
 				"Enid": {
 					"ComeClose": {
-						"Line01": "Enid: Kom dichterbij, Prinses! Dan vertel ik u een groot geheim!"
+						"Line01": "Enid: Come close, Princess! I'll tell you a great secret!"
 					},
 					"TrustNoOneWithHair": {
-						"Line01": "Enid: Hoor wat ik fluister: Vertrouw niemand met haar! Huh-huh-huh!",
-						"Line02": "Vertrouw zelfs mij niet! Ha-haa!",
-						"Line03": "Ik heb een van uw levens gestolen! Hi-hi-hi-hi-hi!"
+						"Line01": "Enid: Hear me whisper: Trust no one with hair! Huh huh huh!",
+						"Line02": "Don't even trust me! Hah hah!",
+						"Line03": "I've stolen one of your lives! Hee hee hee hee hee!"
 					},
 					"TooClever": {
-						"Line01": "Enid: Aaaaaaah, u bent te slim voor Enid!"
+						"Line01": "Enid: Aaaaaaah, you're too clever for Enid!"
 					},
 					"GoAway": {
-						"Line01": "Enid: Ga weg! Ik heb niets voor u.",
-						"Line02": "Ik heb u niets te zeggen."
+						"Line01": "Enid: Go away! I have nothing for you.",
+						"Line02": "I have nothing to say to you."
 					}
 				}
 			},
@@ -559,7 +559,7 @@
 					},
 					"Toll20Rubies": {
 						"Line01": "Yalzan the Stern: Oh, force my hand, will you?",
-						"Line02": "The price is now 20 rubies."
+						"Line02": "The price is now twenty rubies."
 					},
 				}
 			}

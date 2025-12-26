@@ -259,7 +259,7 @@
 						"Line01": "Bedelaar: U zijt duizendmaal gezegend",
 						"Line02": "duizendmaal, schone prinses!"
 					},
-					"MustLearnCharity": {
+					"WhenAttacked": {
 						"Line01": "Bedelaar: Je moet liefdadigheid leren voordat je een echte prinses kunt worden!",
 						"Line02": "Moge je de rode wilg bij de grot nooit zien!"
 					},
@@ -567,7 +567,7 @@
 					},
 					"Toll20Rubies": {
 						"Line01": "Yalzan de Strenge: Oh, dwing je me je door te laten?",
-						"Line02": "De prijs is nu 20 robijnen."
+						"Line02": "De prijs is nu twintig robijnen."
 					},
 				}
 			}
