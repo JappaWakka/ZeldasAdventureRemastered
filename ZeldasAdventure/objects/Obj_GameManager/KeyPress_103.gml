@@ -1,4 +1,4 @@
-/// @description Add ALL items
+/// @description Add ALL items (DebugMode)
 
 if global.DebugMode = true and room = Room_Overworld
 {
