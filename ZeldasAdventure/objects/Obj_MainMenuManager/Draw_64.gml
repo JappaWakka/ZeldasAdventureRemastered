@@ -135,7 +135,7 @@ if PageIndex = 0 //Main Menu
 				draw_text(90,180,UI_MainMenu_Text(4))
 				
 				//Settings
-				if global.CurrentLanguage = "fr"
+				if string_lower(Localize.Meta.LanguageNameNative) = "french"
 				{
 					draw_set_font(Font_Menu_Smaller)
 					draw_text(194,181,UI_MainMenu_Text(5))
@@ -151,7 +151,7 @@ if PageIndex = 0 //Main Menu
 				
 			//Fancy Font
 				//Exit
-				if global.CurrentLanguage = "fr"
+				if string_lower(Localize.Meta.LanguageNameNative) = "french"
 				{
 					draw_set_font(Font_Fancy_Small)
 					draw_text(298,139,UI_MainMenu_Text(7))
@@ -508,7 +508,7 @@ else //SettingsMenu
 								StringValue = string_concat("stick l ",UI_SettingsMenu_Text(4,14))
 								break;
 							case "gamepad thumbstick l click":
-								StringValue = string_concat("stick l ",UI_SettingsMenu_Text(4,15))
+								StringValue = string_concat("stick ",UI_SettingsMenu_Text(4,15)," ",UI_SettingsMenu_Text(4,11))
 								break;
 							case "gamepad thumbstick r left":
 								StringValue = string_concat("stick r ",UI_SettingsMenu_Text(4,11))
@@ -523,7 +523,7 @@ else //SettingsMenu
 								StringValue = string_concat("stick r ",UI_SettingsMenu_Text(4,14))
 								break;
 							case "gamepad thumbstick r click":
-								StringValue = string_concat("stick r ",UI_SettingsMenu_Text(4,15))
+								StringValue = string_concat("stick ",UI_SettingsMenu_Text(4,15)," ",UI_SettingsMenu_Text(4,12))
 								break;								
 						}
 					}
@@ -575,7 +575,13 @@ else //SettingsMenu
 	}
 	
 	draw_set_font(ToolTipFont);
-	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 32, string(TooltipText), 12 * global.WindowScale, ViewWidth * global.WindowScale * 0.65, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
+	var CropWidthPlus = 0
+	var TextYPosMin = 0
+	if string_lower(Localize.Meta.LanguageNameNative) = "french"
+	{
+		CropWidthPlus = ViewWidth * global.WindowScale * 0.08
+	}
+	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 32, string(TooltipText), 12 * global.WindowScale, ViewWidth * global.WindowScale * 0.65 + CropWidthPlus, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
 	
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);	

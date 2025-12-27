@@ -116,5 +116,27 @@ function ResetSettings()
 	
 	input_profile_reset_bindings("keyboard_and_mouse")
 	input_profile_reset_bindings("gamepad")
+	set_language(global.CurrentLanguage)
+	
+	//Reset Game Menu (2)
+	var CurrentGrid = Menu_Pages[2]
+	CurrentGrid[# 3, 0] = real(global.Fullscreen)
+	CurrentGrid[# 3, 1] = global.WindowScale - 1
+	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
+	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
+	CurrentGrid[# 3, 4] = real(global.CurrentLanguage)
+	
+	//Reset Audio Menu (3)
+	CurrentGrid = Menu_Pages[3]
+	CurrentGrid[# 3, 0] = global.VolumeMaster
+	CurrentGrid[# 3, 1] = global.VolumeMusic
+	CurrentGrid[# 3, 2] = global.VolumeSoundFX
+	CurrentGrid[# 3, 3] = global.VolumeDialogue
+	
+	//Reset the WindowScale
+	if global.Fullscreen = false
+	{
+		window_set_size(ViewWidth * global.WindowScale,ViewHeight * global.WindowScale);
+	}
 	SavedSettings = false
 }

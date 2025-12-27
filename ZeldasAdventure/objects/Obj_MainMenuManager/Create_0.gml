@@ -47,7 +47,7 @@ ds_Menu_Settings = CreateMenuPage(
 );
 
 var LanguageNameArray = []
-for (i = 0; i < array_length(Obj_LocalizationManager.AvailableLanguagesStruct.Languages) - 1; i +=1)
+for (i = 0; i <= array_length(Obj_LocalizationManager.AvailableLanguagesStruct.Languages) - 1; i +=1)
 {
 	array_push(LanguageNameArray,Obj_LocalizationManager.AvailableLanguagesStruct.Languages[i].LanguageNameLocal)
 }

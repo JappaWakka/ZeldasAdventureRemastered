@@ -34,13 +34,15 @@ function Settings_Discard()
 	global.VolumeSoundFX		=	TempVolumeSoundFX
 	global.VolumeDialogue		=	TempVolumeDialogue
 	
+	set_language(global.CurrentLanguage)
+	
 	//Reset Game Menu (2)
 	var CurrentGrid = Menu_Pages[2]
 	CurrentGrid[# 3, 0] = real(global.Fullscreen)
 	CurrentGrid[# 3, 1] = global.WindowScale - 1
 	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
 	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
-	CurrentGrid[# 3, 4]  = global.CurrentLanguage
+	CurrentGrid[# 3, 4] = real(global.CurrentLanguage)
 	
 	//Reset Audio Menu (3)
 	CurrentGrid = Menu_Pages[3]

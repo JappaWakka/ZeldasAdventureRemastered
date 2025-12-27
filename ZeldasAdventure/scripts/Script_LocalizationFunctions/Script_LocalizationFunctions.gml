@@ -2,10 +2,6 @@
 #macro LOCALIZE Obj_LocalizationManager.LocalizedStrings
 #macro Localize Obj_LocalizationManager.LocalizedStrings
 
-#macro meta Obj_LocalizationManager.AvailableLanguagesStruct
-#macro META Obj_LocalizationManager.AvailableLanguagesStruct
-#macro Meta Obj_LocalizationManager.AvailableLanguagesStruct
-
 function LocalizationInit()
 {
 	var _availableLangsJsonStr = load_json_file_to_string("Localization/AvailableLanguages.json");
@@ -18,8 +14,8 @@ function LocalizationInit()
 
 function GetLocalizedLocalizedSprite(PathToFile)
 {
-	var CurrentFilePath = string_concat(Meta.Languages[global.CurrentLanguage].SpritesFolder,"\\",PathToFile)
-	var DefaultFilePath = string_concat(Meta.Languages[0].SpritesFolder,"\\",PathToFile)
+	var CurrentFilePath = "Localization/"+Obj_LocalizationManager.AvailableLanguagesStruct.Languages[global.CurrentLanguage].SpritesFolder + "/" + PathToFile
+	var DefaultFilePath = "Localization/"+Obj_LocalizationManager.AvailableLanguagesStruct.Languages[0].SpritesFolder + "/" + PathToFile
 	if file_exists(CurrentFilePath) = true
 	{
 		return sprite_add(CurrentFilePath,1,false,false,0,0)

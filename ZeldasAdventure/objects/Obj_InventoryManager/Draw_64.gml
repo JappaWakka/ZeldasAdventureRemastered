@@ -107,7 +107,7 @@ if Alpha = 255
 	draw_text(76,46,UI_Inventory_Text(2)) // Make it extra thick
 	
 	//Draw Exit Button Text
-	if global.CurrentLanguage = "fr"
+	if string_lower(Localize.Meta.LanguageNameNative) = "french"
 	{
 		draw_set_font(Font_Fancy_Smaller)
 		draw_text(304,48,UI_Inventory_Text(3))

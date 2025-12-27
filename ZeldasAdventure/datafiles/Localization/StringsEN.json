@@ -2,11 +2,11 @@
 //This is useful in case you need to add notes or instructions to your translator for specific lines.
 //Note: This only works with double slash comments, not slash star comment star slash.
 {
-    "Meta": {
-        "LanguageNameNative": "English", //The name of the language, in your game's native language
-        "LanguageNameLocal": "English" //The name of the language, in that language
-    },
-    "UI": {
+	"Meta": {
+		"LanguageNameNative": "English", //The name of the language, in your game's native language
+		"LanguageNameLocal": "English" //The name of the language, in that language
+	},
+	"UI": {
 		"MainMenu": {
 			"PlayButton": "PLAY",
 			"DeleteButton": "DELETE",
@@ -18,11 +18,11 @@
 			"EmptySaveFile": "EMPTY"
 		},
 		"NameEntryMenu": {
-			"PlayButton": "ENTER THY NAME",
-			"DeleteButton": "Done"
+			"EnterThyName": "ENTER THY NAME",
+			"DoneButton": "Done"
 		},
 		"SettingsMenu": {
-			"Back": "Back"
+			"Back": "Back",
 			"MainSubMenu": {
 				"Game": "Game",
 				"AudioVolume": "Audio Volume",
@@ -30,7 +30,7 @@
 				"ResetSettings": "Reset Settings",
 				"SaveSettings": "Save Settings"
 			},
-			"GameSubmenu": {
+			"GameSubMenu": {
 				"ToggleOff": "Off",
 				"ToggleOn": "On",
 				"WindowMode": "Window Mode",
@@ -42,13 +42,13 @@
 				"Subtitles": "Subtitles",
 				"Language": "Language"
 			},
-			"AudioSubmenu": {
+			"AudioSubMenu": {
 				"MasterVolume": "Master",
 				"MusicVolume": "Music",
 				"SoundFXVolume": "SoundFX",
 				"DialogueVolume": "Dialogue"
 			},
-			"ControlsSubmenu": {
+			"ControlsSubMenu": {
 				"DeviceToConfig": "Device to Config",
 				"Keys": "Keys",
 				"Gamepad": "Gamepad",
@@ -98,6 +98,7 @@
 				"West": "W",
 				"East": "E",
 				"South": "S"
+			},
 		},
 		"ExitMenu": {
 			"SaveAndQuit": "Save & Quit",
@@ -105,8 +106,8 @@
 			"ReturnToGame": "Return To Game"
 		},
 		"SkipCutsceneHint": "Press again to skip"
-    },
-    "Subtitles": {
+	},
+	"Subtitles": {
 		"Cutscenes": {
 			"Intro": {
 				"Line01": "Gaspra: There'll be no more viewing tonight.",
@@ -255,7 +256,7 @@
 					"WhenAttacked": {
 						"Line01": "Beggar: You must learn charity before you may become a true princess!",
 						"Line02": "May you never see the red willow by the cave!"
-					},
+					}
 				},
 				"GlebbTheThirsty": {
 					"BeforeFill": {
@@ -283,7 +284,7 @@
 						},
 						"AfterBuy": {
 							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
-							"Line02": "You look dry, have a cup of Andor cider on the house.",
+							"Line02": "You look dry, have a cup of Andor cider on the house."
 						},
 						"PurchaseCalmSpell": {
 							"Line01": "Lothar the Innkeeper: That is wise beyond your years.",
@@ -352,7 +353,7 @@
 						"Line01": "Shurmak: Beware the evils of greed.",
 						"Line02": "Act quickly, think on your feet",
 						"Line03": "and you will be rewarded."
-					},
+					}
 				},
 				"Llort": {
 					"YouAreNotWanted": {
@@ -368,7 +369,7 @@
 						"Line01": "Llort: You've been taking my things.",
 						"Line02": "Put them back! Don't touch anything!",
 						"Line03": "Those are my gems!"
-					},
+					}
 				},
 				"RedSardak": {
 					"NoThreat": {
@@ -378,7 +379,7 @@
 					"FailedMission": {
 						"Line01": "Red Sardak: I've failed in my mission!",
 						"Line02": "Llort, this enemy is coming!"
-					},
+					}
 				},
 				"BlueSardak": {
 					"ThoughtIWasAlone": {
@@ -388,7 +389,7 @@
 					"CouldntStopHer": {
 						"Line01": "Blue Sardak: Llort, I couldn't stop her!",
 						"Line02": "Get ready to fight!"
-					},
+					}
 				},
 				"YellowSardak": {
 					"EnemyOfMyBoss": {
@@ -399,15 +400,15 @@
 					"ShesComing": {
 						"Line01": "Yellow Sardak: Hey, Llort! Watch out!",
 						"Line02": "She's coming!"
-					},
+					}
 				},
 				"TreasureChest": {
 					"WhatDoWeHaveHere": {
 						"Line01": "Treasure Chest: Oh-ho-ho! Oh, what do we have here?!",
 						"Line02": "A human person's coming close!",
 						"Line03": "Why, what a great event! Hoo-hoo!"
-					},
-				},
+					}
+				}
 			},
 			"ForestOfFindo": {
 				"TalkingToadstool": {
@@ -462,8 +463,8 @@
 						"Line08": "Heh heh! The flute can be used to calm the savage hiss of a snake."
 					},
 					"Singing": {
-						"Line01": "*Yvonne sings*",
-					},
+						"Line01": "*Yvonne sings*"
+					}
 				},
 				"EricAndIan": {
 					"MeetTheTwins": {
@@ -475,7 +476,7 @@
 						"Line01": "Well, never mind who we are.",
 						"Line02": "You should go into the yellow house and meet our father!",
 						"Line03": "He'll tell you something that's good to know."
-					},
+					}
 				},
 				"Alice": {
 					"MyGoodness": {
@@ -501,7 +502,7 @@
 					},
 					"RealNice": {
 						"Line01": "Alice: Yes, Zelda, it's real nice around here."
-					},
+					}
 				},
 				"GhostFarmer": {
 					"StayBack": {
@@ -527,7 +528,7 @@
 						"Line01": "Ghost Farmer: Far away, one of Ganon's allies lives in a world of water.",
 						"Line02": "The entrance is hidden, and you may never find it",
 						"Line03": "if you fear the touch of falling water."
-					},
+					}
 				},
 				"TwinFather": {
 					"WelcomeToMyHome": {
@@ -549,8 +550,8 @@
 						"Line01": "Twins' Father: You seem... vaguely familiar, but, um...",
 						"Line02": "i-it's really time for my nap.",
 						"Line03": "Are you Eric or- or Ian?"
-					},
-				},
+					}
+				}
 			},
 			"PlainOfDonora": {
 				"YalzanTheStern": {
@@ -560,9 +561,9 @@
 					"Toll20Rubies": {
 						"Line01": "Yalzan the Stern: Oh, force my hand, will you?",
 						"Line02": "The price is now twenty rubies."
-					},
+					}
 				}
 			}
 		}
-    }
+	}
 }

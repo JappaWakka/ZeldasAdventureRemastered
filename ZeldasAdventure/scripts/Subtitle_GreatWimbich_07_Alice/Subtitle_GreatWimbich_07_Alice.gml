@@ -4,7 +4,6 @@ function Subtitle_GreatWimbich_Alice_MyGoodness(AudioPosition)
 	else if AudioPosition >= 3.220 and AudioPosition <= 5.840 {return Localize.Subtitles.Dialogue.GreatWimbich.Alice.MyGoodness.Line02} //"I've heard so much about ya from everyone.
 	else if AudioPosition >= 5.967 and AudioPosition <= 9.253 {return Localize.Subtitles.Dialogue.GreatWimbich.Alice.MyGoodness.Line03} //"Sit a goodly spell with Alice, and indulge an old woman.
 	else return ""
-	break;
 }
 
 function Subtitle_GreatWimbich_Alice_PeculiarLittleTown(AudioPosition)

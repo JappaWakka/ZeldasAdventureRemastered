@@ -2,11 +2,11 @@
 //This is useful in case you need to add notes or instructions to your translator for specific lines.
 //Note: This only works with double slash comments, not slash star comment star slash.
 {
-    "Meta": {
-        "LanguageNameNative": "Dutch", //The name of the language, in your game's native language
-        "LanguageNameLocal": "Nederlands" //The name of the language, in that language
-    },
-    "UI": {
+	"Meta": {
+		"LanguageNameNative": "Dutch", //The name of the language, in your game's native language
+		"LanguageNameLocal": "Nederlands" //The name of the language, in that language
+	},
+	"UI": {
 		"MainMenu": {
 			"PlayButton": "SPEEL",
 			"DeleteButton": "WIS",
@@ -18,19 +18,19 @@
 			"EmptySaveFile": "LEEG"
 		},
 		"NameEntryMenu": {
-			"PlayButton": "VOER UW NAAM IN",
-			"DeleteButton": "Klaar"
+			"EnterThyName": "VOER UW NAAM IN",
+			"DoneButton": "Klaar"
 		},
 		"SettingsMenu": {
-			"Back": "Terug"
+			"Back": "Terug",
 			"MainSubMenu": {
 				"Game": "Spel",
-				"Audio Volume": "Geluidsvolume",
+				"AudioVolume": "Geluidsvolume",
 				"Controls": "Besturing",
-				"Reset Settings": "Opties Herstellen",
-				"Save Settings": "Opties Opslaan"
+				"ResetSettings": "Opties Herstellen",
+				"SaveSettings": "Opties Opslaan"
 			},
-			"GameSubmenu": {
+			"GameSubMenu": {
 				"ToggleOff": "Uit",
 				"ToggleOn": "Aan",
 				"WindowMode": "Schermmodus",
@@ -42,13 +42,13 @@
 				"Subtitles": "Ondertiteling",
 				"Language": "Taal"
 			},
-			"AudioSubmenu": {
+			"AudioSubMenu": {
 				"MasterVolume": "Hoofdvolume",
 				"MusicVolume": "Muziek",
 				"SoundFXVolume": "Geluiden",
 				"DialogueVolume": "Dialoog"
 			},
-			"ControlsSubmenu": {
+			"ControlsSubMenu": {
 				"DeviceToConfig": "Instelapparaat",
 				"Keys": "Toetsen",
 				"Gamepad": "Gamepad",
@@ -98,6 +98,7 @@
 				"West": "W",
 				"East": "O",
 				"South": "Z"
+			},
 		},
 		"ExitMenu": {
 			"SaveAndQuit": "Opslaan & Stoppen",
@@ -105,8 +106,8 @@
 			"ReturnToGame": "Terug Naar Spel"
 		},
 		"SkipCutsceneHint": "Druk nogmaals om over te slaan"
-    },
-    "Subtitles": { //Some of the Dutch localizations have more lines than English does because some of the lines became too long.
+	},
+	"Subtitles": { //Some of the Dutch localizations have more lines than English does because some of the lines became too long.
 		"Cutscenes": {
 			"Intro": {
 				"Line01": "Gaspra: Er komt van sterrenkijken niets meer vannacht.",
@@ -219,7 +220,7 @@
 				"Line01": "Gaspra: Gefeliciteerd, Zelda. Je hebt gezegevierd.",
 				"Line02": "Haast je nu. Je moet naar een festivalplaats reizen.",
 				"Line03": "Het gerucht gaat dat het in het grote bos in het noorden te vinden is.",
-				"Line04": "En onthoud: niet alles is wat het lijkt.",
+				"Line04": "En onthoud: niet alles is wat het lijkt."
 			}
 		},
 		"Dialogue": {
@@ -262,7 +263,7 @@
 					"WhenAttacked": {
 						"Line01": "Bedelaar: Je moet liefdadigheid leren voordat je een echte prinses kunt worden!",
 						"Line02": "Moge je de rode wilg bij de grot nooit zien!"
-					},
+					}
 				},
 				"GlebbTheThirsty": {
 					"BeforeFill": {
@@ -290,7 +291,7 @@
 						},
 						"AfterBuy": {
 							"Line01": "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, prinses!",
-							"Line02": "U ziet er uitgedroogd uit, neem een kopje Andor cider van het huis.",
+							"Line02": "U ziet er uitgedroogd uit, neem een kopje Andor cider van het huis."
 						},
 						"PurchaseCalmSpell": {
 							"Line01": "Lothar de Herbergier: Dat is wijsheid die uw jaren te boven gaat.",
@@ -360,7 +361,7 @@
 						"Line01": "Shurmak: Pas op voor de kwaden van hebzucht.",
 						"Line02": "Handel snel, denk goed na",
 						"Line03": "en je zult beloond worden."
-					},
+					}
 				},
 				"Llort": {
 					"YouAreNotWanted": {
@@ -373,10 +374,10 @@
 						"Line03": "Ga weg! Neem niks mee! Het is allemaal van mij!"
 					},
 					"TakingMyThings": {
-						"Line01": "Llort: Je hebt mijn dingen gejat."
-						"Line02": "Leg ze terug! Raak niets meer aan!"
+						"Line01": "Llort: Je hebt mijn dingen gejat.",
+						"Line02": "Leg ze terug! Raak niets meer aan!",
 						"Line03": "Dat zijn mijn juwelen!"
-					},
+					}
 				},
 				"RedSardak": {
 					"NoThreat": {
@@ -386,7 +387,7 @@
 					"FailedMission": {
 						"Line01": "Rode Sardak: Ik heb gefaald in mijn missie!",
 						"Line02": "Llort, deze vijand komt eraan!"
-					},
+					}
 				},
 				"BlueSardak": {
 					"ThoughtIWasAlone": {
@@ -396,7 +397,7 @@
 					"CouldntStopHer": {
 						"Line01": "Blauwe Sardak: Llort, ik kon haar niet stoppen!",
 						"Line02": "Bereid je voor op een gevecht!"
-					},
+					}
 				},
 				"YellowSardak": {
 					"EnemyOfMyBoss": {
@@ -407,15 +408,15 @@
 					"ShesComing": {
 						"Line01": "Gele Sardak: Hé, Llort! Kijk uit!",
 						"Line02": "Ze komt eraan!"
-					},
+					}
 				},
 				"TreasureChest": {
 					"WhatDoWeHaveHere": {
 						"Line01": "Schatkist: Oh-ho-ho! Oh, wat hebben we hier?!",
 						"Line02": "Daar komt een menselijk persoon aan!",
 						"Line03": "Nou, wat een geweldige gebeurtenis! Hoe-hoe!"
-					},
-				},
+					}
+				}
 			},
 			"ForestOfFindo": {
 				"TalkingToadstool": {
@@ -454,24 +455,24 @@
 						"Line10": "Ik kan ze niet goedkoop afstaan."
 					},
 					"KindaTiredToday": {					
-						"Line01": "Dorpshandelaar: Ik ben een beetje... moe vandaag."
+						"Line01": "Dorpshandelaar: Ik ben een beetje... moe vandaag.",
 						"Line02": "Alles verandert in... modder."
 					}
 				},
 				"Yvonne": {
 					"GiveFlute": {
-						"Line01": "Line01": "Yvonne: Hallo, Zelda. Mijn naam is Yvonne.",
-						"Line02": "Line02": "Je ziet er uit als een mede-muziekliefhebber.",
-						"Line03": "Line03": "Muziek kan zelfs een woest beest kalmeren.",
-						"Line04": "Line04": "Ik heb vernomen dat Shurmak je met haar vriendschap heeft vereerd.",
-						"Line05": "Line05": "Ze heeft mij ooit geholpen, dus nu zal ik ook jou helpen.",
-						"Line06": "Line06": "Luister hier eens naar!",
-						"Line07": "Line07": "*Yvonne bespeelt de fluit*",
-						"Line08": "Line08": "Hihi! De fluit kan worden gebruikt om het woeste gesis van een slang te kalmeren."
+						"Line01": "Yvonne: Hallo, Zelda. Mijn naam is Yvonne.",
+						"Line02": "Je ziet er uit als een mede-muziekliefhebber.",
+						"Line03": "Muziek kan zelfs een woest beest kalmeren.",
+						"Line04": "Ik heb vernomen dat Shurmak je met haar vriendschap heeft vereerd.",
+						"Line05": "Ze heeft mij ooit geholpen, dus nu zal ik ook jou helpen.",
+						"Line06": "Luister hier eens naar!",
+						"Line07": "*Yvonne bespeelt de fluit*",
+						"Line08": "Hihi! De fluit kan worden gebruikt om het woeste gesis van een slang te kalmeren."
 					},
 					"Singing": {
-						"Line01": "*Yvonne zingt*",
-					},
+						"Line01": "*Yvonne zingt*"
+					}
 				},
 				"EricAndIan": {
 					"MeetTheTwins": {
@@ -483,7 +484,7 @@
 						"Line01": "Ach, het doet er niet toe wie wij zijn.",
 						"Line02": "Je zou het gele huis eens moeten bezoeken en onze vader ontmoeten!",
 						"Line03": "Hij zal je iets interessants vertellen."
-					},
+					}
 				},
 				"Alice": {
 					"MyGoodness": {
@@ -509,7 +510,7 @@
 					},
 					"RealNice": {
 						"Line01": "Alice: Ja, Zelda, het is echt heel mooi in deze omgeving."
-					},
+					}
 				},
 				"GhostFarmer": {
 					"StayBack": {
@@ -535,7 +536,7 @@
 						"Line01": "Spookboer: Hier ver vandaan leeft een bondgenoot van Ganon in een wereld van water.",
 						"Line02": "De ingang is verborgen en je zult hem nooit vinden",
 						"Line03": "als je bang bent voor stromend water."
-					},
+					}
 				},
 				"TwinFather": {
 					"WelcomeToMyHome": {
@@ -557,7 +558,7 @@
 						"Line01": "Vader van de Tweeling: Je... komt me vaag bekend voor, maar eh...",
 						"Line02": "het is echt tijd voor mijn dutje.",
 						"Line03": "Ben jij Eric of Ian?"
-					},
+					}
 				},
 			},
 			"PlainOfDonora": {
@@ -568,10 +569,10 @@
 					"Toll20Rubies": {
 						"Line01": "Yalzan de Strenge: Oh, dwing je me je door te laten?",
 						"Line02": "De prijs is nu twintig robijnen."
-					},
+					}
 				}
 			}
 		}
 		
-    }
+	}
 }

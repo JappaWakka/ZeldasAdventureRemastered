@@ -3,8 +3,8 @@ if room = Room_Overworld
 {
 	instance_create_layer(Entity_Player.x,Entity_Player.y,"PlayerAndNPCParent",Entity_Collision_Player)
 	
-	var CurrentFilePath = string_concat(Meta.Languages[global.CurrentLanguage].SpritesFolder,"\\",PathToFile)
-	var DefaultFilePath = string_concat(Meta.Languages[0].SpritesFolder,"\\",PathToFile)
+	var CurrentFilePath = "Localization/"+Obj_LocalizationManager.AvailableLanguagesStruct.Languages[global.CurrentLanguage].SpritesFolder
+	var DefaultFilePath = "Localization/"+Obj_LocalizationManager.AvailableLanguagesStruct.Languages[0].SpritesFolder
 	
 	if directory_exists(working_directory + CurrentFilePath) = true or directory_exists(working_directory + DefaultFilePath) = true
 	{

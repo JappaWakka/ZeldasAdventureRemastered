@@ -40,10 +40,20 @@ function GenerateSaveDataFile()
 	}
 	else
 	{
-		if is_numeric(ini_read_string("Options", "CurrentLanguage", "0")) = false
+		switch ini_read_string("Options", "CurrentLanguage", 0)
 		{
-			ini_write_real("Options",	"CurrentLanguage",	0)
-		}		
+			case "en":
+				ini_write_real("Options", "CurrentLanguage", 0)
+				break;
+		
+			case "nl":
+				ini_write_real("Options", "CurrentLanguage", 1)
+				break;
+		
+			case "fr":
+				ini_write_real("Options", "CurrentLanguage", 2)
+				break;
+		}
 	}
 	ini_close()
 	
