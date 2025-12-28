@@ -562,6 +562,14 @@
 						"Line01": "Yalzan the Stern: Oh, force my hand, will you?",
 						"Line02": "The price is now twenty rubies."
 					}
+				},
+				"KronThePegleg":{
+					"EverybodyComesTo": {
+						"Line01": "Kron the Pegleg: Everybody comes to Kron the Pegleg. Good time!"
+					},
+					"FineItemForSale": {
+						"Line01": "Well, here's a fine item I have for sale!"
+					}
 				}
 			}
 		}

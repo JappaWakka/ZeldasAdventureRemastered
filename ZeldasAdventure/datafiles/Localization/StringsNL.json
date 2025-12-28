@@ -570,6 +570,14 @@
 						"Line01": "Yalzan de Strenge: Oh, dwing je me je door te laten?",
 						"Line02": "De prijs is nu twintig robijnen."
 					}
+				},
+				"KronThePegleg":{
+					"EverybodyComesTo": {
+						"Line01": "Kron de Eenbeen: Iedereen komt naar Kron de Eenbeen. Gezellig!"
+					},
+					"FineItemForSale": {
+						"Line01": "Nou, hier heb ik toch een mooi voorwerp te koop!"
+					}
 				}
 			}
 		}

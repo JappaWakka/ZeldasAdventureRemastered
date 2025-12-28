@@ -1,0 +1,4 @@
+﻿1
+00:00:00,066 --> 00:00:02,633
+Everybody comes to Kron the Pegleg. Good time!
+
