@@ -575,13 +575,7 @@ else //SettingsMenu
 	}
 	
 	draw_set_font(ToolTipFont);
-	var CropWidthPlus = 0
-	var TextYPosMin = 0
-	if string_lower(Localize.Meta.LanguageNameNative) = "french"
-	{
-		CropWidthPlus = ViewWidth * global.WindowScale * 0.08
-	}
-	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 32, string(TooltipText), 12 * global.WindowScale, ViewWidth * global.WindowScale * 0.65 + CropWidthPlus, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
+	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 32, string(TooltipText), 12 * global.WindowScale, ViewWidth * global.WindowScale * 0.73, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
 	
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);	

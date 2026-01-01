@@ -20,7 +20,7 @@ function Subtitle_ForestOfOgham_14_Enid_TooClever(AudioPosition)
 
 function Subtitle_ForestOfOgham_14_Enid_GoAway(AudioPosition)
 {
-	if AudioPosition >= 0.000 and AudioPosition <= 3.793 {return Localize.Subtitles.Dialogue.ForestOfOgham.Enid.TrustNoOneWithHair.Line01} //"Enid: Go away! I have nothing for you."
-	if AudioPosition >= 3.818 and AudioPosition <= 5.893 {return Localize.Subtitles.Dialogue.ForestOfOgham.Enid.TrustNoOneWithHair.Line02} //"I have nothing to say to you."
+	if AudioPosition >= 0.000 and AudioPosition <= 3.793 {return Localize.Subtitles.Dialogue.ForestOfOgham.Enid.GoAway.Line01} //"Enid: Go away! I have nothing for you."
+	if AudioPosition >= 3.818 and AudioPosition <= 5.893 {return Localize.Subtitles.Dialogue.ForestOfOgham.Enid.GoAway.Line02} //"I have nothing to say to you."
 	else return ""
 }

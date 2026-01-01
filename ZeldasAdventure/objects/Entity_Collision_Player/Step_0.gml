@@ -54,7 +54,7 @@ else
 
 #region SpriteChanges & Direction
 
-Entity_Player.AnimSpeed = d(SpeedMultiplier)
+Entity_Player.AnimSpeed = d(SpeedMultiplier * DebugSpeedMultiplier)
 if global.CanControlPlayer = true and global.CameraIsPanning = false and IsMenuVisible() = false and global.FadeProgress = 2
 {
 	if Entity_Player.IsAttacking = false and global.PlayerIsDead = false

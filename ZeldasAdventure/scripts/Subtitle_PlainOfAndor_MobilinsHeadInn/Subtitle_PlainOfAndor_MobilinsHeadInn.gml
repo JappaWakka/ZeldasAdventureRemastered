@@ -27,7 +27,7 @@
 #region Woman At Table
 	function Subtitle_PlainOfAndor_MobilinsHeadInn_WomanAtTable(AudioPosition)
 	{
-		if Localize.Meta.LanguageNameNative = "dutch"
+		if string_lower(Localize.Meta.LanguageNameNative) = "dutch"
 		{
 			if AudioPosition >= 0.000 and AudioPosition <= 1.786		{return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.WomanAtTable.Line01} //"Vrouw aan Tafel: Je ziet eruit als een eerlijke meid."
 			else if AudioPosition >= 2.313 and AudioPosition <= 3.233	{return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.WomanAtTable.Line02} //"Kom even zitten."

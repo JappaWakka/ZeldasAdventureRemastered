@@ -1,6 +1,6 @@
 function Subtitle_Cutscene_Intro(VideoPosition)
 {
-	if Localize.Meta.LanguageNameNative = "dutch"
+	if string_lower(Localize.Meta.LanguageNameNative) = "dutch"
 	{
 		if VideoPosition >= 37.361 and VideoPosition <= 39.505		  {return Localize.Subtitles.Cutscenes.Intro.Line01} //"Gaspra: Er komt van sterrenkijken niets meer vannacht."
 		else if VideoPosition >= 56.667 and VideoPosition <= 59.756	  {return Localize.Subtitles.Cutscenes.Intro.Line02} //"Ah, de Rol van Shurmak..."

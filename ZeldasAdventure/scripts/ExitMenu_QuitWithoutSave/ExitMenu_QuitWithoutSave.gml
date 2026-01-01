@@ -4,6 +4,7 @@ function ExitMenu_QuitWithoutSave()
 {
 	Audio_StopMusic()
 	QuitToMainMenu = true;
+	global.CameraIsFading = true;
 	global.FadeProgress = 0;
 	global.FadeSpeed = 16;
 }

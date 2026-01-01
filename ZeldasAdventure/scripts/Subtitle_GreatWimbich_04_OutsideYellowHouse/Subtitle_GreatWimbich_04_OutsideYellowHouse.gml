@@ -1,5 +1,5 @@
 //Yvonne
-function Subtitle_GreatWimbich_Yvonne_Giveflute(AudioPosition)
+function Subtitle_GreatWimbich_Yvonne_GiveFlute(AudioPosition)
 {
 	if AudioPosition >=		  0.000 and AudioPosition <=  2.393 {return Localize.Subtitles.Dialogue.GreatWimbich.Yvonne.GiveFlute.Line01} //"Yvonne: Hello, Zelda. My name is Yvonne."
 	else if AudioPosition >=  2.527 and AudioPosition <=  4.633 {return Localize.Subtitles.Dialogue.GreatWimbich.Yvonne.GiveFlute.Line02} //"You look like a music lover, too."

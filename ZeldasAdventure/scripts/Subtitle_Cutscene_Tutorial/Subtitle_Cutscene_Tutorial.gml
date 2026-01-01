@@ -1,6 +1,6 @@
 function Subtitle_Cutscene_Tutorial(VideoPosition)
 {
-	if Localize.Meta.LanguageNameNative = "dutch"
+	if string_lower(Localize.Meta.LanguageNameNative) = "dutch"
 	{
 		if VideoPosition >=		 2.260	 and VideoPosition <= 6.580	  {return Localize.Subtitles.Cutscenes.Tutorial.Line01} //"Welkom bij Zelda's Adventure, een actie-avonturen rollenspel."
 		else if VideoPosition >= 7.379	 and VideoPosition <= 12.053  {return Localize.Subtitles.Cutscenes.Tutorial.Line02} //"Als speler neem je de persoonlijkheid aan van onze heldin Prinses Zelda."
@@ -91,6 +91,98 @@ function Subtitle_Cutscene_Tutorial(VideoPosition)
 		else if VideoPosition >= 317.231 and VideoPosition <= 319.038 {return Localize.Subtitles.Cutscenes.Tutorial.Line87} //"en druk je op Actieknop 1."
 		else if VideoPosition >= 319.329 and VideoPosition <= 322.149 {return Localize.Subtitles.Cutscenes.Tutorial.Line88} //"Dat is alles wat ik voor nu zal onthullen."
 		else if VideoPosition >= 322.663 and VideoPosition <= 325.263 {return Localize.Subtitles.Cutscenes.Tutorial.Line89} //"De rest is aan jou om te ontdekken."
+		else return ""
+	}
+	else if string_lower(Localize.Meta.LanguageNameNative) = "french"
+	{
+		if VideoPosition >=		  2.260 and VideoPosition <=    6.580 {return Localize.Subtitles.Cutscenes.Tutorial.Line01} //"Bienvenue dans l'Aventure de Zelda,\nun jeu de rôle, d'action-aventure.",
+		else if VideoPosition >=  7.379 and VideoPosition <=   12.053 {return Localize.Subtitles.Cutscenes.Tutorial.Line02} //"En tant que joueur,\ntu incarneras la Princesse Zelda.",
+		else if VideoPosition >=  12.719 and VideoPosition <=  17.673 {return Localize.Subtitles.Cutscenes.Tutorial.Line03} //"Pour réussir dans ta quête,\nexplore la grande terre de Tolemac.",
+		else if VideoPosition >=  18.267 and VideoPosition <=  20.993 {return Localize.Subtitles.Cutscenes.Tutorial.Line04} //"Pour déplacer Zelda\ndans la province de Tolemac,",
+		else if VideoPosition >=  21.266 and VideoPosition <=  26.426 {return Localize.Subtitles.Cutscenes.Tutorial.Line05} //"utilise le contrôle multidirectionnel\nde ta manette.",
+		else if VideoPosition >=  27.307 and VideoPosition <=  29.293 {return Localize.Subtitles.Cutscenes.Tutorial.Line06} //"L'astronome de la cour, Gaspra,",
+		else if VideoPosition >=  29.333 and VideoPosition <=  33.413 {return Localize.Subtitles.Cutscenes.Tutorial.Line07} //"te dévoilera l'histoire\nde Zelda et l'origine de sa quête.",
+		else if VideoPosition >=  33.751 and VideoPosition <=  36.665 {return Localize.Subtitles.Cutscenes.Tutorial.Line08} //"Il réapparaîtra chaque fois",
+		else if VideoPosition >=  36.746 and VideoPosition <=  40.320 {return Localize.Subtitles.Cutscenes.Tutorial.Line09} //"que Zelda aura achevé\nun sanctuaire souterrain",
+		else if VideoPosition >=  40.573 and VideoPosition <=  44.361 {return Localize.Subtitles.Cutscenes.Tutorial.Line10} //"et récupéré l'un des sept\nprécieux Signes Célestes.",
+		else if VideoPosition >=  45.166 and VideoPosition <=  48.859 {return Localize.Subtitles.Cutscenes.Tutorial.Line11} //"L'autre mentor et guide de Zelda,\nc'est moi, Shurmak.",
+		else if VideoPosition >=  49.107 and VideoPosition <=  52.254 {return Localize.Subtitles.Cutscenes.Tutorial.Line12} //"J'aide et j'oriente Zelda,\nà travers son odyssée.",
+		else if VideoPosition >=  53.039 and VideoPosition <=  57.426 {return Localize.Subtitles.Cutscenes.Tutorial.Line13} //"Durant son voyage, Zelda affrontera\nde nombreux ennemis.",
+		else if VideoPosition >=  57.700 and VideoPosition <=  61.474 {return Localize.Subtitles.Cutscenes.Tutorial.Line14} //"Pour les vaincre, elle devra acquérir\ndes compétences et de l'adresse.",
+		else if VideoPosition >=  61.970 and VideoPosition <=  63.977 {return Localize.Subtitles.Cutscenes.Tutorial.Line15} //"Zelda les attaque\navec sa baguette magique.",
+		else if VideoPosition >=  64.396 and VideoPosition <=  68.230 {return Localize.Subtitles.Cutscenes.Tutorial.Line16} //"Utilise la baguette magique\nen appuyant sur le bouton Action 1.",
+		else if VideoPosition >=  69.057 and VideoPosition <=  73.526 {return Localize.Subtitles.Cutscenes.Tutorial.Line17} //"Si Zelda l'emporte,\nelle sera récompensée.",
+		else if VideoPosition >=  73.776 and VideoPosition <=  76.129 {return Localize.Subtitles.Cutscenes.Tutorial.Line18} //"Ils laisseront ça et là\ndes rubis et des cœurs,",
+		else if VideoPosition >=  76.154 and VideoPosition <=  79.843 {return Localize.Subtitles.Cutscenes.Tutorial.Line19} //"augmentant ainsi ses ressources\net sa force de vie.",
+		else if VideoPosition >=  80.639 and VideoPosition <=  83.159 {return Localize.Subtitles.Cutscenes.Tutorial.Line20} //"Les rubis sont utilisés\ncomme monnaie à Tolemac.",
+		else if VideoPosition >=  83.500 and VideoPosition <=  85.288 {return Localize.Subtitles.Cutscenes.Tutorial.Line21} //"Ils servent à acheter des objets.",
+		else if VideoPosition >=  85.312 and VideoPosition <=  88.867 {return Localize.Subtitles.Cutscenes.Tutorial.Line22} //"Leur nombre est affiché\nen haut à gauche de l'écran.",
+		else if VideoPosition >=  89.516 and VideoPosition <=  94.176 {return Localize.Subtitles.Cutscenes.Tutorial.Line23} //"Les cœurs symbolisent\nla force de vie de Zelda.",
+		else if VideoPosition >=  94.602 and VideoPosition <=  98.068 {return Localize.Subtitles.Cutscenes.Tutorial.Line24} //"Le niveau de vie s'affiche\nen haut à droite de l'écran.",
+		else if VideoPosition >=  98.688 and VideoPosition <= 102.280 {return Localize.Subtitles.Cutscenes.Tutorial.Line25} //"Pour sélectionner un objet\nou une arme dans l'inventaire,",
+		else if VideoPosition >= 102.400 and VideoPosition <= 104.361 {return Localize.Subtitles.Cutscenes.Tutorial.Line26} //"appuie sur le bouton Action 2.",
+		else if VideoPosition >= 105.297 and VideoPosition <= 107.365 {return Localize.Subtitles.Cutscenes.Tutorial.Line27} //"Dans l'écran d'inventaire,",
+		else if VideoPosition >= 107.438 and VideoPosition <= 110.371 {return Localize.Subtitles.Cutscenes.Tutorial.Line28} //"sélectionne un objet ou une arme",
+		else if VideoPosition >= 110.416 and VideoPosition <= 114.936 {return Localize.Subtitles.Cutscenes.Tutorial.Line29} //"avec le curseur et appuie\nsur le bouton Action 1.",
+		else if VideoPosition >= 115.706 and VideoPosition <= 119.660 {return Localize.Subtitles.Cutscenes.Tutorial.Line30} //"Les trésors et les armes\npeuvent être parcourus",
+		else if VideoPosition >= 119.685 and VideoPosition <= 123.766 {return Localize.Subtitles.Cutscenes.Tutorial.Line31} //"avec les flèches gauche\net droite de l'inventaire.",
+		else if VideoPosition >= 124.601 and VideoPosition <= 129.218 {return Localize.Subtitles.Cutscenes.Tutorial.Line32} //"Une fois sélectionnée, l'arme apparaît\nen bas à droite de l'inventaire.",
+		else if VideoPosition >= 129.977 and VideoPosition <= 133.584 {return Localize.Subtitles.Cutscenes.Tutorial.Line33} //"En sélectionnant un objet\npropice dans les trésors,",
+		else if VideoPosition >= 133.859 and VideoPosition <= 138.067 {return Localize.Subtitles.Cutscenes.Tutorial.Line34} //"il apparaîtra dans la même\nfenêtre que précédemment.",
+		else if VideoPosition >= 138.289 and VideoPosition <= 142.688 {return Localize.Subtitles.Cutscenes.Tutorial.Line35} //"Zelda ne peut utiliser qu'un seul objet\nou qu'une seule arme à la fois.",
+		else if VideoPosition >= 143.514 and VideoPosition <= 144.938 {return Localize.Subtitles.Cutscenes.Tutorial.Line36} //"Au cours de ses pérégrinations,",
+		else if VideoPosition >= 144.962 and VideoPosition <= 147.267 {return Localize.Subtitles.Cutscenes.Tutorial.Line37} //"Zelda découvrira d'importantes\nportes verrouillées.",
+		else if VideoPosition >= 147.664 and VideoPosition <= 151.750 {return Localize.Subtitles.Cutscenes.Tutorial.Line38} //"Il lui faudra trouver la clé\npour en ouvrir l'entrée.",
+		else if VideoPosition >= 152.096 and VideoPosition <= 156.029 {return Localize.Subtitles.Cutscenes.Tutorial.Line39} //"Le nombre de clés en sa possession",
+		else if VideoPosition >= 156.188 and VideoPosition <= 158.968 {return Localize.Subtitles.Cutscenes.Tutorial.Line40} //"apparaîtra dans la petite fenêtre\nen haut à droite de l'inventaire.",
+		else if VideoPosition >= 159.411 and VideoPosition <= 161.331 {return Localize.Subtitles.Cutscenes.Tutorial.Line41} //"Pour faciliter la navigation dans Tolemac,",
+		else if VideoPosition >= 161.610 and VideoPosition <= 165.510 {return Localize.Subtitles.Cutscenes.Tutorial.Line42} //"une carte est disponible en déplaçant\nle curseur vers le bouton \"Carte\",",
+		else if VideoPosition >= 165.630 and VideoPosition <= 168.337 {return Localize.Subtitles.Cutscenes.Tutorial.Line43} //"puis en appuyant sur le bouton Action 1.",
+		else if VideoPosition >= 169.269 and VideoPosition <= 170.750 {return Localize.Subtitles.Cutscenes.Tutorial.Line44} //"Il y a deux types de cartes :",
+		else if VideoPosition >= 171.089 and VideoPosition <= 174.862 {return Localize.Subtitles.Cutscenes.Tutorial.Line45} //"celle de la terre du dessus\net celle des terres du dessous.",
+		else if VideoPosition >= 175.210 and VideoPosition <= 179.330 {return Localize.Subtitles.Cutscenes.Tutorial.Line46} //"La carte du dessus montrera\nta position et tes déplacements,",
+		else if VideoPosition >= 180.105 and VideoPosition <= 184.666 {return Localize.Subtitles.Cutscenes.Tutorial.Line47} //"tandis que les cartes des terres du dessous\nindiqueront ta position, tes déplacements",
+		else if VideoPosition >= 184.727 and VideoPosition <= 188.753 {return Localize.Subtitles.Cutscenes.Tutorial.Line48} //"et le chemin à suivre\npour accomplir ta quête.",
+		else if VideoPosition >= 189.522 and VideoPosition <= 193.776 {return Localize.Subtitles.Cutscenes.Tutorial.Line49} //"Pour reprendre l'aventure,\nappuie sur le bouton Action 2.",
+		else if VideoPosition >= 194.168 and VideoPosition <= 196.215 {return Localize.Subtitles.Cutscenes.Tutorial.Line50} //"Pour quitter l'aventure,",
+		else if VideoPosition >= 196.240 and VideoPosition <= 200.449 {return Localize.Subtitles.Cutscenes.Tutorial.Line51} //"déplace le curseur vers le bouton \"Quitter\"\net appuie sur Action 1.",
+		else if VideoPosition >= 201.489 and VideoPosition <= 203.397 {return Localize.Subtitles.Cutscenes.Tutorial.Line52} //"Tu peux sauvegarder et quitter,\nquitter sans sauvegarder",
+		else if VideoPosition >= 203.421 and VideoPosition <= 205.329 {return Localize.Subtitles.Cutscenes.Tutorial.Line53} //"ou continuer l'aventure.",
+		else if VideoPosition >= 205.730 and VideoPosition <= 207.770 {return Localize.Subtitles.Cutscenes.Tutorial.Line54} //"Pour confirmer ton choix,",
+		else if VideoPosition >= 207.795 and VideoPosition <= 212.203 {return Localize.Subtitles.Cutscenes.Tutorial.Line55} //"déplace le curseur vers un bouton\net appuie sur le bouton Action 1.",
+		else if VideoPosition >= 213.597 and VideoPosition <= 217.964 {return Localize.Subtitles.Cutscenes.Tutorial.Line56} //"Si tu choisis de sauvegarder et quitter,\ntu retourneras à l'écran d'accueil,",
+		else if VideoPosition >= 218.015 and VideoPosition <= 221.533 {return Localize.Subtitles.Cutscenes.Tutorial.Line57} //"où tu pourras décider de rejouer\nou de quitter le jeu.",
+		else if VideoPosition >= 222.307 and VideoPosition <= 224.050 {return Localize.Subtitles.Cutscenes.Tutorial.Line58} //"Pour rejouer,",
+		else if VideoPosition >= 224.237 and VideoPosition <= 227.724 {return Localize.Subtitles.Cutscenes.Tutorial.Line59} //"sélectionne le nom\nd'une sauvegarde existante.",
+		else if VideoPosition >= 228.658 and VideoPosition <= 231.885 {return Localize.Subtitles.Cutscenes.Tutorial.Line60} //"Tu reviendras alors à l'écran du jeu",
+		else if VideoPosition >= 231.960 and VideoPosition <= 235.506 {return Localize.Subtitles.Cutscenes.Tutorial.Line61} //"avec tous tes objets et armes\nprésents dans ton inventaire.",
+		else if VideoPosition >= 236.393 and VideoPosition <= 241.430 {return Localize.Subtitles.Cutscenes.Tutorial.Line62} //"Si tu choisis de quitter sans sauvegarder,\ntu retourneras à l'écran d'accueil,",
+		else if VideoPosition >= 241.483 and VideoPosition <= 245.096 {return Localize.Subtitles.Cutscenes.Tutorial.Line63} //"où tu pourras décider de rejouer\nou de quitter le jeu.",
+		else if VideoPosition >= 246.025 and VideoPosition <= 247.872 {return Localize.Subtitles.Cutscenes.Tutorial.Line64} //"Lorsque tu reviendras au jeu,",
+		else if VideoPosition >= 247.897 and VideoPosition <= 250.790 {return Localize.Subtitles.Cutscenes.Tutorial.Line65} //"ta progression sera perdue.",
+		else if VideoPosition >= 250.848 and VideoPosition <= 255.809 {return Localize.Subtitles.Cutscenes.Tutorial.Line66} //"Cependant, ton statut sera celui\nque tu as créé d'entrée de jeu.",
+		else if VideoPosition >= 256.586 and VideoPosition <= 258.319 {return Localize.Subtitles.Cutscenes.Tutorial.Line67} //"Si tu choisis de continuer l'aventure,",
+		else if VideoPosition >= 258.383 and VideoPosition <= 262.463 {return Localize.Subtitles.Cutscenes.Tutorial.Line68} //"tu accéderas à l'écran de l'inventaire.",
+		else if VideoPosition >= 262.563 and VideoPosition <= 264.616 {return Localize.Subtitles.Cutscenes.Tutorial.Line69} //"Appuie sur le bouton Action 2\npour revenir au jeu.",
+		else if VideoPosition >= 265.036 and VideoPosition <= 269.103 {return Localize.Subtitles.Cutscenes.Tutorial.Line70} //"Avant chaque nouvelle aventure,\nattribue un nom à ton personnage.",
+		else if VideoPosition >= 269.633 and VideoPosition <= 273.506 {return Localize.Subtitles.Cutscenes.Tutorial.Line71} //"Pour cela, déplace le curseur\nsur l'espace vide réservé",
+		else if VideoPosition >= 273.682 and VideoPosition <= 276.015 {return Localize.Subtitles.Cutscenes.Tutorial.Line72} //"et appuie sur le bouton Action 1.",
+		else if VideoPosition >= 276.954 and VideoPosition <= 279.364 {return Localize.Subtitles.Cutscenes.Tutorial.Line73} //"À l'écran suivant, entre un nom",
+		else if VideoPosition >= 279.388 and VideoPosition <= 281.814 {return Localize.Subtitles.Cutscenes.Tutorial.Line74} //"en sélectionnant chaque\nlettre à l'aide du clavier.",
+		else if VideoPosition >= 281.869 and VideoPosition <= 285.489 {return Localize.Subtitles.Cutscenes.Tutorial.Line75} //"Valide en appuyant\nsur le bouton Action 1.",
+		else if VideoPosition >= 285.533 and VideoPosition <= 288.142 {return Localize.Subtitles.Cutscenes.Tutorial.Line76} //"Déplace ensuite le curseur\nsur le bouton \"OK\".",
+		else if VideoPosition >= 288.196 and VideoPosition <= 290.896 {return Localize.Subtitles.Cutscenes.Tutorial.Line77} //"De même, valide en appuyant\nsur le bouton Action 1.",
+		else if VideoPosition >= 292.042 and VideoPosition <= 294.875 {return Localize.Subtitles.Cutscenes.Tutorial.Line78} //"Tu es redirigé vers l'écran d'accueil.",
+		else if VideoPosition >= 295.266 and VideoPosition <= 298.145 {return Localize.Subtitles.Cutscenes.Tutorial.Line79} //"Place le curseur sur le bouton \"Jouer\"",
+		else if VideoPosition >= 298.259 and VideoPosition <= 300.446 {return Localize.Subtitles.Cutscenes.Tutorial.Line80} //"et appuie sur le bouton Action 1.",
+		else if VideoPosition >= 300.964 and VideoPosition <= 303.064 {return Localize.Subtitles.Cutscenes.Tutorial.Line81} //"L'aventure débute alors.",
+		else if VideoPosition >= 303.600 and VideoPosition <= 307.580 {return Localize.Subtitles.Cutscenes.Tutorial.Line82} //"Pour effacer le nom d'un joueur,\nplace le curseur sur le bouton \"Supprimer\"",
+		else if VideoPosition >= 307.682 and VideoPosition <= 312.295 {return Localize.Subtitles.Cutscenes.Tutorial.Line83} //"et maintiens le bouton Action 1\nenfoncé pendant trois secondes.",
+		else if VideoPosition >= 313.397 and VideoPosition <= 317.170 {return Localize.Subtitles.Cutscenes.Tutorial.Line84} //"Pour quitter le jeu, place le curseur\nsur le bouton \"Quitter\"",
+		else if VideoPosition >= 317.231 and VideoPosition <= 319.038 {return Localize.Subtitles.Cutscenes.Tutorial.Line85} //"et appuie sur le bouton Action 1.",
+		else if VideoPosition >= 319.329 and VideoPosition <= 322.149 {return Localize.Subtitles.Cutscenes.Tutorial.Line86} //"C'est tout ce que je peux\nte dire pour l'instant.",
+		else if VideoPosition >= 322.663 and VideoPosition <= 325.263 {return Localize.Subtitles.Cutscenes.Tutorial.Line87} //"Les secrets de l'aventure t'attendent."
+		else return ""
 	}
 	else
 	{
@@ -178,93 +270,7 @@ function Subtitle_Cutscene_Tutorial(VideoPosition)
 		else if VideoPosition >= 317.231 and VideoPosition <= 319.038 {return Localize.Subtitles.Cutscenes.Tutorial.Line82} //"and press Action Button 1."
 		else if VideoPosition >= 319.329 and VideoPosition <= 322.149 {return Localize.Subtitles.Cutscenes.Tutorial.Line83} //"That is all I will reveal for now."
 		else if VideoPosition >= 322.663 and VideoPosition <= 325.263 {return Localize.Subtitles.Cutscenes.Tutorial.Line84} //"The rest is up to you to discover."
+		else return ""
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

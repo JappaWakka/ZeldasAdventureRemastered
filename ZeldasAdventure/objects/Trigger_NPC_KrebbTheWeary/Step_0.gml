@@ -45,9 +45,12 @@ if IsPlayerOnSameTile() = true
 				instance_create_layer(4064,5192,"Items_BelowForeground",Entity_Pickup_Dagger)
 			}
 		}
-		if global.CurrentMusic_Name = "Silence"
+		if global.CameraIsFading = false
 		{
-			global.SwitchTracks = true
+			if global.CurrentMusic_Name = "Silence"
+			{
+				global.SwitchTracks = true
+			}
 		}
 	}
 }

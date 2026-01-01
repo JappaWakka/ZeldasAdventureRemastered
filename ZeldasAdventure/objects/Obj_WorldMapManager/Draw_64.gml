@@ -65,16 +65,8 @@ if Alpha = 255
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	
-	if TitleIndex = Maps.Gauntlet and string_lower(Localize.Meta.LanguageNameNative) = "french"
-	{
-		draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,51)
-		draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,51) // Make it extra thick
-	}
-	else
-	{
-		draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,60)
-		draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,60) // Make it extra thick
-	}
+	draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,60)
+	draw_text_ext(90,53,UI_WorldMap_Title_Text(TitleIndex),12,60) // Make it extra thick
 	
 	//Reset Font Properties
 	draw_set_color(c_white);

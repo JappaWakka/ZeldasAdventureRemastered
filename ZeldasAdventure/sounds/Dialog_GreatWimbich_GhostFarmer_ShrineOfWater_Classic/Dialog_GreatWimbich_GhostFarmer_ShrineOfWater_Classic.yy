@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Dialog_GreatWimbich_GhostFarmer_WaterShrine_Remastered",
+  "name": "Dialog_GreatWimbich_GhostFarmer_ShrineOfWater_Classic",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,8 +14,8 @@
     "name": "AudioGroup_Dialogue",
     "path": "audiogroups/AudioGroup_Dialogue",
   },
-  "soundFile": "Dialog_GreatWimbich_GhostFarmer_WaterShrine_Remastered.ogg",
-  "duration": 12.397196,
+  "soundFile": "Dialog_GreatWimbich_GhostFarmer_ShrineOfWater_Classic.ogg",
+  "duration": 19.093332,
   "parent": {
     "name": "GreatWimbich",
     "path": "folders/Sounds/Dialogue/GreatWimbich.yy",

@@ -37,9 +37,12 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if global.CurrentMusic_Name = "Silence"
+		if global.CameraIsFading = false
 		{
-			global.SwitchTracks = true
+			if global.CurrentMusic_Name = "Silence"
+			{
+				global.SwitchTracks = true
+			}
 		}
 	}
 }

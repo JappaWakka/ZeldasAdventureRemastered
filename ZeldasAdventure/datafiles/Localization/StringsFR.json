@@ -10,7 +10,7 @@
 		"MainMenu": {
 			"PlayButton": "JOUER",
 			"DeleteButton": "SUPPRIMER",
-			"DeleteYouSure": "SUR ?",
+			"DeleteYouSure": "SÛR ?",
 			"DeleteDeleted": "SUPPRIMÉ",
 			"SettingsButton": "PARAMÈTRES",
 			"TutorialButton": "TUTORIEL",
@@ -27,7 +27,7 @@
 				"Game": "Jeu",
 				"AudioVolume": "Volume",
 				"Controls": "Contrôles",
-				"ResetSettings": "Réinitiliser",
+				"ResetSettings": "Réinitialiser",
 				"SaveSettings": "Sauvegarder"
 			},
 			"GameSubMenu": {
@@ -38,7 +38,7 @@
 				"Full": "Plein",
 				"Resolution": "Résolution",
 				"RemasteredMode": "Mode Remastérisé",
-				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor. Fonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
+				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor.\nFonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
 				"Subtitles": "Sous-titres",
 				"Language": "Langue"
 			},
@@ -84,21 +84,21 @@
 		"MapMenu": {
 			"LocationTitles": {
 				"Tolemac": "Tolemac",
-				"ShrineOfEarth": "Sanctuaire de la Terre",
-				"ShrineOfIllusion": "Sanctuaire de l'Illusion",
-				"ShrineOfAir": "Sanctuaire de l’Air",
-				"ShrineOfDestiny": "Sanctuaire du Destin",
-				"ShrineOfWater": "Sanctuaire de l'Eau",
-				"ShrineOfStrength": "Sanctuaire de la Force",
-				"ShrineOfFire": "Sanctuaire du Feu",
-				"GanonsGauntlet": "Gantelet de Ganon"
+				"ShrineOfEarth": "Sanctuaire\nde la Terre",
+				"ShrineOfIllusion": "Sanctuaire\nde l 'Illusion", //added a space before ' because otherwise it would overlap with the l
+				"ShrineOfAir": "Sanctuaire\nde l 'Air", //same here
+				"ShrineOfDestiny": "Sanctuaire\ndu Destin",
+				"ShrineOfWater": "Sanctuaire\nde l 'Eau", //and here
+				"ShrineOfStrength": "Sanctuaire\nde la Force",
+				"ShrineOfFire": "Sanctuaire\ndu Feu",
+				"GanonsGauntlet": "Gantelet\nde Ganon"
 			},
 			"CompassDirections": {
 				"North": "N",
 				"West": "O",
 				"East": "E",
 				"South": "S"
-			},
+			}
 		},
 		"ExitMenu": {
 			"SaveAndQuit": "Sauvegarder & Quitter",
@@ -110,325 +110,328 @@
 	"Subtitles": {
 		"Cutscenes": {
 			"Intro": {
-				"Line01": "Gaspra : Il n'y aura plusde visionnement ce soir.",
+				"Line01": "Gaspra : Il n'y aura plus rien\nà observer ce soir.",
 				"Line02": "Ah, le parchemin de Shurmak...",
-				"Line03": "porteur de tristes nouvelles il y a de nombreuses années.",
-				"Line04": "C'est ainsi que Ganon, le Seigneur des Ténèbres, s'empara de Tolemac.",
-				"Line05": "Il avait volé les précieux signes célestes et capturé Link !",
-				"Line06": "Il faudrait trouver une guerrière courageuse pour affronter ce monstre maléfique.",
-				"Line07": "Et j'ai donc trouvé cette championne de force et de courage.",
-				"Line08": "C'est vous, princesse Zelda. Avec ce pendentif magique, allez de l'avant...",
-				"Line09": "et avec chaque signe que vous recueillerez, vous gagnerez aussi en connaissance.",
+				"Line03": "porteur de tristes nouvelles\ndepuis tant d'années.",
+				"Line04": "C'est ainsi que Ganon, le Seigneur\ndes Ténèbres, s'empara de Tolemac.",
+				"Line05": "Il a volé les précieux\nSignes Célestes et capturé Link !",
+				"Line06": "Un cœur vaillant est nécessaire\npour vaincre ce monstre maléfique !...",
+				"Line07": "Et j'ai trouvé ce héros doté d'une force\net d'un courage exceptionnels.",
+				"Line08": "C'est vous, Princesse Zelda !\nAvec ce pendentif magique, allez de l'avant,",
+				"Line09": "et à chaque Signe que vous récupérez,\nvous gagnerez en connaissance.",
 				"Line10": "Trouvez votre baguette magique.",
-				"Line11": "Utilisez-la à bon escient et écoutez vos alliés tout au long du chemin !",
-				"Line12": "Allez-y maintenant, ma princesse. Restaurez les signes céleste et sauvez Link !"
+				"Line11": "Utilisez-la à bon escient et écoutez\nvos alliés tout au long du chemin !",
+				"Line12": "Allez, ma Princesse.\nRestaurez les Signes Célestes et sauvez Link !"
 			},
 			"Tutorial": {
-				"Line01": "Bienvenue dans les aventures de Zelda, un jeu de rôle d'action et aventure.",
-				"Line02": "En tant que joueur, vous incarnez notre héroïne, la princesse Zelda.",
-				"Line03": "Pour jouer au jeu avec succès, vous devez explorer le grand territoire de Tolemac.",
-				"Line04": "Pour contrôler les déplacements de Zelda autour de Tolemac",
-				"Line05": "déplacez la manette à gauche, à droite, en haut, en bas et en diagonale.",
-				"Line06": "L'astronome de la cour Gaspra",
-				"Line07": "présentera l'histoire de Zelda et décrira comment sa quête a commencé.",
-				"Line08": "Il réapparaîtra également chaque fois",
-				"Line09": "que Zelda a réussi à terminer un sanctuaire souterrain",
-				"Line10": "et a récupéré l'un des sept précieux Signes Célestes.",
-				"Line11": "Un autre mentor et guide pour Zelda, c'est moi, Shurmak.",
-				"Line12": "Tout au long du jeu, j'aide Zelda à s'orienter et je la guide.",
-				"Line13": "En explorant, Zelda rencontrera de nombreux ennemis qui habitent cette région.",
-				"Line14": "Elle doit les vaincre en utilisant son habileté et sa rapidité.",
-				"Line15": "Zelda les attaque avec sa baguette magique.",
-				"Line16": "Vous utilisez la baguette en appuyant sur le bouton Action 1.",
-				"Line17": "Si Zelda réussit à vaincre ses ennemis, elle sera récompensée.",
-				"Line18": "Ils laisseront tomber aléatoirement des rubis et des cœurs...",
-				"Line19": "cela augmentera respectivement sa monnaie et ses unités de vie.",
-				"Line20": "Les rubis, qui constituent la monnaie de Tolemac",
-				"Line21": "peut être utilisé pour acheter des objets utiles",
-				"Line22": "et sont indiqués dans le coin supérieur gauche de l'écran.",
-				"Line23": "Les coeurs sont les unités de vie qui donnent à Zelda la force de combattre tout au long du jeu.",
-				"Line24": "Ils sont représentés dans le coin supérieur droit de l'écran de jeu.",
-				"Line25": "Pour sélectionner un objet ou une arme dans l'écran de l'inventaire, appuyez sur le bouton Action 2.",
-				"Line26": "Une fois dans l'écran de l'inventaire",
-				"Line27": "vous pouvez accéder à des objets utiles et des armes",
-				"Line28": "en sélectionnant un objet avec votre curseur et en appuyant sur le bouton Action 1.",
-				"Line29": "Les trésors et les armes peuvent être parcourus en appuyant sur le bouton gauche de la fenêtre.",
-				"Line30": "pour se déplacer vers la gauche, et en appuyant sur le bouton de la fenêtre droite pour se déplacer vers la droite.",
-				"Line31": "L'arme utilisée apparaît dans la fenêtre en bas à droite de l'écran de l'inventaire.",
-				"Line32": "Si vous sélectionnez un objet utile parmi la sélection de trésors",
-				"Line33": "L'objet apparaîtra dans la même fenêtre où la sélection des armes est apparue.",
-				"Line34": "Zelda ne peut utiliser qu'un seul objet ou une seule arme à la fois.",
-				"Line35": "Au cours de ses voyages, Zelda trouvera de nombreuses portes verrouillées.",
-				"Line36": "Elle doit avoir une clé en sa possession pour passer par ces entrées verrouillées.",
-				"Line37": "Le nombre de clés en possession de Zelda apparaîtra dans la petite fenêtre",
-				"Line38": "en haut à droite de l'écran de l'inventaire.",
-				"Line39": "Pour vous aider à naviguer dans Tolemac",
-				"Line40": "une carte est disponible en déplaçant votre joystick vers le bouton de la carte",
-				"Line41": "et ensuite en appuyant sur votre bouton Action 1.",
-				"Line42": "Il existe deux types de cartes:",
-				"Line43": "Un pour le monde supérieur et un pour chacun des mondes souterrains.",
-				"Line44": "La carte du monde vous indiquera où vous vous trouvez et où vous avez voyagé.",
-				"Line45": "Les cartes de chacun des mondes souterrains révéleront où vous vous trouvez...",
-				"Line46": "où vous avez voyagé et où vous devez vous rendre pour accomplir votre quête.",
-				"Line47": "Pour revenir au jeu, appuyez sur le bouton Action 2.",
-				"Line48": "Quand vous êtes prêt à quitter le jeu...",
-				"Line49": "déplacez votre curseur sur le bouton Quitter et appuyez sur le bouton Action 1.",
-				"Line50": "Vous arriverez ensuite à l'écran Sauvegarder, Continuer et Quitter.",
-				"Line51": "Pour activer l’un de ces boutons",
-				"Line52": "vous devez déplacer le curseur vers le bouton et appuyer sur le bouton Action 1.",
-				"Line53": "Si vous enregistrez et quittez, vous arriverez à l'écran de sélection du joueur",
-				"Line54": "où vous avez l'option de rejouer ou de quitter le jeu.",
-				"Line55": "Quand vous reviendrez jouer à nouveau",
-				"Line56": "vous pouvez reprendre là où vous vous étiez arrêté en sélectionnant votre nom.",
-				"Line57": "Vous retournerez ensuite au premier écran de jeu.",
-				"Line58": "avec tous les objets et armes encore dans l'inventaire.",
-				"Line59": "Si vous quittez sans sauvegarder, vous arriverez à l’écran de sélection du joueur",
-				"Line60": "où vous avez l'option de rejouer ou de quitter le jeu.",
-				"Line61": "Lorsque vous revenez au jeu...",
-				"Line62": "vous ne pourrez pas revenir à votre partie précédente.",
-				"Line63": "Cependant, votre statut sera celui de la dernière partie que vous avez sauvegardée.",
-				"Line64": "Si vous choisissez Retour au Jeu",
-				"Line65": "vous arriverez à l'écran de l'inventaire où vous appuyez sur le bouton Action 2",
-				"Line66": "ce qui vous ramène ensuite au jeu.",
-				"Line67": "Avant chaque partie, vous devez choisir un nom pour votre héros ou héroïne.",
-				"Line68": "Vous pouvez choisir le bouton de création en déplaçant le curseur sur le bouton",
-				"Line69": "et en appuyant sur le bouton Action 1.",
-				"Line70": "Cela vous amène à l'écran de saisie du nom",
-				"Line71": "où vous tapez votre nom sur le clavier",
-				"Line72": "en sélectionnant les lettres souhaitées avec le bouton Action 1",
-				"Line73": "et ensuite en déplaçant votre curseur vers le bouton Terminé",
-				"Line74": "et en appuyant à nouveau sur le bouton Action 1.",
-				"Line75": "Cela vous ramène à l'écran de sélection du joueur.",
-				"Line76": "Ici, vous appuyez sur Jouer en sélectionnant le bouton Jouer",
-				"Line77": "et en appuyant sur le bouton Action 1.",
-				"Line78": "Vous commencerez alors le jeu.",
-				"Line79": "Pour supprimer le nom d'un joueur, placez le curseur sur le bouton Supprimer",
-				"Line80": "et appuyez sur le bouton Action 1 pendant trois secondes.",
-				"Line81": "Pour quitter le jeu, placez le curseur sur le bouton Quitter",
-				"Line82": "et appuyez sur le bouton Action 1.",
-				"Line83": "C'est tout ce que je révélerai pour l'instant.",
-				"Line84": "Le reste, c'est à vous de le découvrir."
+				"Line01": "Bienvenue dans l'Aventure de Zelda,\nun jeu de rôle, d'action-aventure.",
+				"Line02": "En tant que joueur,\ntu incarneras la Princesse Zelda.",
+				"Line03": "Pour réussir dans ta quête,\nexplore la grande terre de Tolemac.",
+				"Line04": "Pour déplacer Zelda\ndans la province de Tolemac,",
+				"Line05": "utilise le contrôle multidirectionnel\nde ta manette.",
+				"Line06": "L'astronome de la cour, Gaspra,",
+				"Line07": "te dévoilera l'histoire\nde Zelda et l'origine de sa quête.",
+				"Line08": "Il réapparaîtra chaque fois",
+				"Line09": "que Zelda aura achevé\nun sanctuaire souterrain",
+				"Line10": "et récupéré l'un des sept\nprécieux Signes Célestes.",
+				"Line11": "L'autre mentor et guide de Zelda,\nc'est moi, Shurmak.",
+				"Line12": "J'aide et j'oriente Zelda,\nà travers son odyssée.",
+				"Line13": "Durant son voyage, Zelda affrontera\nde nombreux ennemis.",
+				"Line14": "Pour les vaincre, elle devra acquérir\ndes compétences et de l'adresse.",
+				"Line15": "Zelda les attaque\navec sa baguette magique.",
+				"Line16": "Utilise la baguette magique\nen appuyant sur le bouton Action 1.",
+				"Line17": "Si Zelda l'emporte,\nelle sera récompensée.",
+				"Line18": "Ils laisseront ça et là\ndes rubis et des cœurs,",
+				"Line19": "augmentant ainsi ses ressources\net sa force de vie.",
+				"Line20": "Les rubis sont utilisés\ncomme monnaie à Tolemac.",
+				"Line21": "Ils servent à acheter des objets.",
+				"Line22": "Leur nombre est affiché\nen haut à gauche de l'écran.",
+				"Line23": "Les cœurs symbolisent\nla force de vie de Zelda.",
+				"Line24": "Le niveau de vie s'affiche\nen haut à droite de l'écran.",
+				"Line25": "Pour sélectionner un objet\nou une arme dans l'inventaire,",
+				"Line26": "appuie sur le bouton Action 2.",
+				"Line27": "Dans l'écran d'inventaire,",
+				"Line28": "sélectionne un objet ou une arme",
+				"Line29": "avec le curseur et appuie\nsur le bouton Action 1.",
+				"Line30": "Les trésors et les armes\npeuvent être parcourus",
+				"Line31": "avec les flèches gauche\net droite de l'inventaire.",
+				"Line32": "Une fois sélectionnée, l'arme apparaît\nen bas à droite de l'inventaire.",
+				"Line33": "En sélectionnant un objet\npropice dans les trésors,",
+				"Line34": "il apparaîtra dans la même\nfenêtre que précédemment.",
+				"Line35": "Zelda ne peut utiliser qu'un seul objet\nou qu'une seule arme à la fois.",
+				"Line36": "Au cours de ses pérégrinations,",
+				"Line37": "Zelda découvrira d'importantes\nportes verrouillées.",
+				"Line38": "Il lui faudra trouver la clé\npour en ouvrir l'entrée.",
+				"Line39": "Le nombre de clés en sa possession",
+				"Line40": "apparaîtra dans la petite fenêtre\nen haut à droite de l'inventaire.",
+				"Line41": "Pour faciliter la navigation dans Tolemac,",
+				"Line42": "une carte est disponible en déplaçant\nle curseur vers le bouton \"Carte\",",
+				"Line43": "puis en appuyant sur le bouton Action 1.",
+				"Line44": "Il y a deux types de cartes :",
+				"Line45": "celle de la terre du dessus\net celle des terres du dessous.",
+				"Line46": "La carte du dessus montrera\nta position et tes déplacements,",
+				"Line47": "tandis que les cartes des terres du dessous\nindiqueront ta position, tes déplacements",
+				"Line48": "et le chemin à suivre\npour accomplir ta quête.",
+				"Line49": "Pour reprendre l'aventure,\nappuie sur le bouton Action 2.",
+				"Line50": "Pour quitter l'aventure,",
+				"Line51": "déplace le curseur vers le bouton \"Quitter\"\net appuie sur Action 1.",
+				"Line52": "Tu peux sauvegarder et quitter,\nquitter sans sauvegarder",
+				"Line53": "ou continuer l'aventure.",
+				"Line54": "Pour confirmer ton choix,",
+				"Line55": "déplace le curseur vers un bouton\net appuie sur le bouton Action 1.",
+				"Line56": "Si tu choisis de sauvegarder et quitter,\ntu retourneras à l'écran d'accueil,",
+				"Line57": "où tu pourras décider de rejouer\nou de quitter le jeu.",
+				"Line58": "Pour rejouer,",
+				"Line59": "sélectionne le nom\nd'une sauvegarde existante.",
+				"Line60": "Tu reviendras alors à l'écran du jeu",
+				"Line61": "avec tous tes objets et armes\nprésents dans ton inventaire.",
+				"Line62": "Si tu choisis de quitter sans sauvegarder,\ntu retourneras à l'écran d'accueil,",
+				"Line63": "où tu pourras décider de rejouer\nou de quitter le jeu.",
+				"Line64": "Lorsque tu reviendras au jeu,",
+				"Line65": "ta progression sera perdue.",
+				"Line66": "Cependant, ton statut sera celui\nque tu as créé d'entrée de jeu.",
+				"Line67": "Si tu choisis de continuer l'aventure,",
+				"Line68": "tu accéderas à l'écran de l'inventaire.",
+				"Line69": "Appuie sur le bouton Action 2\npour revenir au jeu.",
+				"Line70": "Avant chaque nouvelle aventure,\nattribue un nom à ton personnage.",
+				"Line71": "Pour cela, déplace le curseur\nsur l'espace vide réservé",
+				"Line72": "et appuie sur le bouton Action 1.",
+				"Line73": "À l'écran suivant, entre un nom",
+				"Line74": "en sélectionnant chaque\nlettre à l'aide du clavier.",
+				"Line75": "Valide en appuyant\nsur le bouton Action 1.",
+				"Line76": "Déplace ensuite le curseur\nsur le bouton \"OK\".",
+				"Line77": "De même, valide en appuyant\nsur le bouton Action 1.",
+				"Line78": "Tu es redirigé vers l'écran d'accueil.",
+				"Line79": "Place le curseur sur le bouton \"Jouer\"",
+				"Line80": "et appuie sur le bouton Action 1.",
+				"Line81": "L'aventure débute alors.",
+				"Line82": "Pour effacer le nom d'un joueur,\nplace le curseur sur le bouton \"Supprimer\"",
+				"Line83": "et maintiens le bouton Action 1\nenfoncé pendant trois secondes.",
+				"Line84": "Pour quitter le jeu, place le curseur\nsur le bouton \"Quitter\"",
+				"Line85": "et appuie sur le bouton Action 1.",
+				"Line86": "C'est tout ce que je peux\nte dire pour l'instant.",
+				"Line87": "Les secrets de l'aventure t'attendent."
 			},
 			"ShrineOfEarth": {
-				"Line01": "Gaspra : Félicitations, Zelda. Vous avez triomphé !",
-				"Line02": "Dépêchez-vous. Vous devez vous rendre à un festival.",
-				"Line03": "La rumeur dit qu'il se trouve dans la grande forêt au nord.",
-				"Line04": "Et rappelez-vous, tout n'est pas ce qu'il paraît."
+				"Line01": "Gaspra : Félicitations, Zelda.\nVous avez triomphé !",
+				"Line02": "Le temps presse.\nVous devez vous rendre à un festival.",
+				"Line03": "La rumeur dit qu'il se trouve\ndans la grande forêt au nord.",
+				"Line04": "Et rappelez-vous,\ntout n'est pas ce qu'il paraît"
 			}
 		},
 		"Dialogue": {
 			"VisionHenge": {
 				"Shurmak": {
 					"Introduction": {
-						"Line01": "Shurmak: I am Shurmak, your guide.",
-						"Line02": "I have known you since you were a child.",
-						"Line03": "You were given a difficult challenge.",
-						"Line04": "You will have to go far and overcome great danger.",
-						"Line05": "Stay calm and use your knowledge and strength to defeat your enemies.",
-						"Line06": "Remember what you learn along the way, and persevere.",
-						"Line07": "Go now to the one who has a bed but never sleeps",
-						"Line08": "where by its side the red willow weeps",
-						"Line09": "and to its mouth that never speaks."
+						"Line01": "Shurmak : Je suis Shurmak, ta guide.",
+						"Line02": "Je t'ai connue depuis l'enfance.",
+						"Line03": "Ta quête s'annonce ardue.",
+						"Line04": "Il te faudra t'aventurer loin,\noù le danger s'érige.",
+						"Line05": "Patience, force et adresse,\nt'aideront à vaincre tes ennemis.",
+						"Line06": "N'aie crainte,\ntu gagneras en habiletés.",
+						"Line07": "Va maintenant vers celle qui,\ndans son lit, n'est jamais endormie.",
+						"Line08": "Là vit le saule\nque le pourpre envahit.",
+						"Line09": "Près de la bouche de pierre,\noù le silence s'épanouit."
 					},
 					"DoNotRoam": {
-						"Line01": "Shurmak: Zelda! Zelda! Do not roam unprotected.",
-						"Line02": "Look nearby for something to aid you."
+						"Line01": "Zelda ! Zelda !\nNe t'aventure pas sans protection !",
+						"Line02": "Trouve d'abord un moyen\nde te défendre."
 					},
 					"DoNotBeHasty": {
-						"Line01": "Shurmak: Zelda, do not be hasty!",
-						"Line02": "There is something you must have nearby here.",
-						"Line03": "Exploration is the key to your success."
+						"Line01": "Shurmak : Zelda, ne sois pas si pressée !",
+						"Line02": "Une chose essentielle\nt'attend non loin d'ici.",
+						"Line03": "L'exploration est la clé du succès."
 					}
 				}
 			},
 			"PlainOfAndor": {
 				"BeggarWoman": {
 					"BeforeGiveRupees": {
-						"Line01": "Beggar: Oh, fair princess",
-						"Line02": "pity a suffering creature exiled from Great Wimbich in the north!",
-						"Line03": "I ask only enough for a single meal for my children",
-						"Line04": "who hunger and are chilled by the wind."
+						"Line01": "Mendiante : Oh, belle princesse,",
+						"Line02": "ayez pitié des souffrances d'une créature\nexilée de Grand Wimbich, au nord !",
+						"Line03": "Je ne demande qu'un simple\nrepas pour mes enfants",
+						"Line04": "qui sont affamés\net frigorifiés par le vent."
 					},
 					"AfterGiveRupees": {
-						"Line01": "Beggar: You will be blessed a thousand times",
-						"Line02": "a thousand, fair princess!"
+						"Line01": "Mendiante : Que mille merci\nvous soient rendus,",
+						"Line02": "ô belle princesse !"
 					},
 					"WhenAttacked": {
-						"Line01": "Beggar: You must learn charity before you may become a true princess!",
-						"Line02": "May you never see the red willow by the cave!"
+						"Line01": "Mendiante : Hors la charité,\npoint de salut, princesse !",
+						"Line02": "Puissiez-vous ne jamais apercevoir\nle saule rouge près de la grotte !"
 					}
 				},
 				"GlebbTheThirsty": {
 					"BeforeFill": {
-						"Line01": "Glebb the Thirsty: Young princess, please attend me.",
-						"Line02": "A traveler of kind intentions has found me at last!",
-						"Line03": "I am collapsed with thirst and dryness."
+						"Line01": "Glebb l'assoiffée : Jeune princesse,\nje vous en prie, écoutez mes paroles...",
+						"Line02": "Une voyageuse bienveillante\nm'a enfin trouvée !",
+						"Line03": "De grâce, je suis accablée\npar la soif et l'indifférence..."
 					},
 					"AfterFill": {
-						"Line01": "Glebb the Thirsty: Bless you, princess!",
-						"Line02": "You have saved the life of a weary old woman!",
-						"Line03": "I offer you these treasures."
+						"Line01": "Glebb l'assoiffée : Soyez bénie,\nprincesse !",
+						"Line02": "Vous avez redonné vie\nà une vieille dame épuisée !",
+						"Line03": "En remerciement,\nje vous offre ce trésor."
 					},
 					"WhenAttacked": {
-						"Line01": "Glebb the Thirsty: You monster!",
-						"Line02": "How dare you assault a weak, old woman?!",
-						"Line03": "You will lose a life for this!"
+						"Line01": "Glebb l'assoiffée : Monstre !",
+						"Line02": "Comment osez-vous tourmenter\nune vieille femme faible ?!",
+						"Line03": "Vous allez perdre\nune vie pour cela !"
 					}
 				},
 				"MobilinsHeadInn": {
 					"LotharTheInnKeeper": {
 						"BeforeBuy": {
-							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
-							"Line02": "You look dry, have a cup of Andor cider on the house.",
-							"Line03": "I have a spell of Calm to sell, but it will cost you 100 rubies."
+							"Line01": "Lothar l'aubergiste : Bienvenue à l'auberge\nde la Tête de Mobilin, ma princesse !",
+							"Line02": "Vous avez l'air desséchée. Prenez donc\nun cidre d'Andor, c'est pour la maison !",
+							"Line03": "J'ai aussi un sort de Calme à vendre,\nmais il vous en coûtera 100 rubis."
 						},
 						"AfterBuy": {
-							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
-							"Line02": "You look dry, have a cup of Andor cider on the house."
+							"Line01": "Lothar l'aubergiste : Bienvenue à l'auberge\nde la Tête de Mobilin, ma princesse !",
+							"Line02": "Vous avez l'air desséchée. Prenez donc\nun cidre d'Andor, c'est pour la maison !"
 						},
 						"PurchaseCalmSpell": {
-							"Line01": "Lothar the Innkeeper: That is wise beyond your years.",
-							"Line02": "The spell of Calm will help you when you need it most, use it well.",
-							"Line03": "And look after yourself on the lonely Plain of Andor."
+							"Line01": "Lothar l'aubergiste :\nVous êtes plus sage que votre âge.",
+							"Line02": "Le sort de Calme sera opportun\nen cas de grain. Utilisez-le bien !",
+							"Line03": "Prenez soin de vous\ndans la plaine d'Andor."
 						}
 					},
 					"WomanAtTable": {
-						"Line01": "Woman at Table: You look like an honest maid.",
-						"Line02": "Sit a moment.",
-						"Line03": "It is said those who go deep into the earth learn to overcome the sins of greed.",
-						"Line04": "That may be true, but I do know this:",
-						"Line05": "a candle and a silver key can bring you bliss.",
-						"Line06": "Hurry on now, lass, time's a wasting!"
+						"Line01": "Femme attablée : Tu m'as l'air\nd'une honnête fille.",
+						"Line02": "Assieds-toi un moment.",
+						"Line03": "On dit que celui qui descendra sous terre\nparviendra à vaincre le péché de cupidité.",
+						"Line04": "C'est peut-être vrai, mais je sais ceci...",
+						"Line05": "Une bougie, telle une clé d'argent,\npourra te mettre le cœur en liesse.",
+						"Line06": "Dépêche-toi maintenant, jeune fille,\ncar le temps presse !"
 					},
 					"DefeatedSoldier": {
-						"Line01": "Defeated Soldier: I am so exhausted from my travels.",
-						"Line02": "If only I had known to cross the chasm rift with a ladder",
-						"Line03": "it would have saved me months!"
+						"Line01": "Soldat défait : Je ne me suis jamais\nremis de toutes ces campagnes.",
+						"Line02": "Si j'avais su pouvoir traverser\nla crevasse avec une échelle,",
+						"Line03": "j'aurais gagné des mois !"
 					},
 					"KrebbTheWeary": {
-						"Line01": "Krebb the Weary: Why spend a whole lifetime being defeated like me?",
-						"Line02": "Get it over with. Quit, go home, give up.",
-						"Line03": "You're patient. I can see you're not one to surrender.",
-						"Line04": "All right, take this dagger from me.",
-						"Line05": "It may do you more service than it ever did me."
+						"Line01": "Krebb le désabusé : Pourquoi vivre\nune vie de défaite comme la mienne ?",
+						"Line02": "C'est sans conteste.\nRetournez chez vous, abandonnez.",
+						"Line03": "Vous êtes patiente, vous n'êtes point\nde celles qui se rendent.",
+						"Line04": "Acceptez cette dague de ma part.",
+						"Line05": "Qu'elle vous soit plus utile\nqu'elle ne l'a jamais été pour moi."
 					}
 				}
 			},
 			"ForestOfOgham": {
 				"OghamMerchant": {
 					"PlentyToBuy": {
-						"Line01": "Merchant: Come here, bright young lady.",
-						"Line02": "I have a wonderful bargain for you!",
-						"Line03": "Take some Ogham Herb for free, then look around.",
-						"Line04": "There's plenty to buy!"
+						"Line01": "Marchand : Par ici, jeune\net radieuse demoiselle.",
+						"Line02": "Saisissez cette aubaine !",
+						"Line03": "Prenez pour rien un peu d'Herbe d'Ogham,\npuis regardez autour de vous.",
+						"Line04": "Il y a plein de choses à acheter !"
 					},
 					"NothingToSell": {
-						"Line01": "Merchant: I'm sorry, Princess, I've got nothing to sell today!"
+						"Line01": "Marchand : Je suis navré, Princesse,\nje n'ai plus rien à vendre aujourd'hui !"
 					},
 					"WisePurchase": {
-						"Line01": "Merchant: That was a wise purchase, young princess!"
+						"Line01": "Marchand : C'était un achat\ndes plus judicieux, jeune princesse !"
 					}
 				},
 				"Enid": {
 					"ComeClose": {
-						"Line01": "Enid: Come close, Princess! I'll tell you a great secret!"
+						"Line01": "Enid : Approchez, Princesse !\nJe vais vous révéler un grand secret  !"
 					},
 					"TrustNoOneWithHair": {
-						"Line01": "Enid: Hear me whisper: Trust no one with hair! Huh huh huh!",
-						"Line02": "Don't even trust me! Hah hah!",
-						"Line03": "I've stolen one of your lives! Hee hee hee hee hee!"
+						"Line01": "Enid : Laissez-moi vous susurrer...\nNe faites confiance à personne. Huhuhu !",
+						"Line02": "Pas même à moi.\nHah hah !",
+						"Line03": "J'ai subtilisé un de vos cœurs !\nHé hé hé !"
 					},
 					"TooClever": {
-						"Line01": "Enid: Aaaaaaah, you're too clever for Enid!"
+						"Line01": "Enid : Aaaaaaah,\ntu es bien trop maligne pour Enid !"
 					},
 					"GoAway": {
-						"Line01": "Enid: Go away! I have nothing for you.",
-						"Line02": "I have nothing to say to you."
+						"Line01": "Enid : Allez-vous-en !\nJe n'ai rien pour vous.",
+						"Line02": "Je n'ai rien à vous dire !"
 					}
 				}
 			},
 			"ShrineOfEarth": {
 				"Shurmak": {
 					"EvilsOfGreed": {
-						"Line01": "Shurmak: Beware the evils of greed.",
-						"Line02": "Act quickly, think on your feet",
-						"Line03": "and you will be rewarded."
+						"Line01": "Shurmak : Méfie-toi\ndes méfaits de la cupidité.",
+						"Line02": "Agis sans tarder, sois alerte,",
+						"Line03": "et tu seras récompensée."
 					}
 				},
 				"Llort": {
 					"YouAreNotWanted": {
-						"Line01": "Llort: Do not come in here! You are not wanted.",
-						"Line02": "I am Llort, and this is my shrine! All mine!"
+						"Line01": "Llort : N'entre pas ici !\nTu n'es pas la bienvenue.",
+						"Line02": "Je suis Llort, c'est mon sanctuaire,\nTOUT m'appartient !"
 					},
 					"ShrineOfRock": {
-						"Line01": "Llort: I said this is my cave! Mine!",
-						"Line02": "This is the Shrine of Rock and I am Llort!",
-						"Line03": "Go away! Take nothing! It's all mine!"
+						"Line01": "Llort : J'ai dit que c'est MA grotte !\nLa mienne !",
+						"Line02": "Ici, c'est le Sanctuaire du Rocher\net je suis Llort !",
+						"Line03": "Va-t'en ! Ne touche à rien !\nTout est mien !"
 					},
 					"TakingMyThings": {
-						"Line01": "Llort: You've been taking my things.",
-						"Line02": "Put them back! Don't touch anything!",
-						"Line03": "Those are my gems!"
+						"Line01": "Llort : Tu as pris mes affaires !",
+						"Line02": "Remets-les à leur place !\nNe touche plus à rien !",
+						"Line03": "Ce sont mes trésors !"
 					}
 				},
 				"RedSardak": {
 					"NoThreat": {
-						"Line01": "Red Sardak: Hey dee hee, hoo dee bee!",
-						"Line02": "You're no threat to us down here!"
+						"Line01": "Sardak le Rouge : Tralali, tralalère !",
+						"Line02": "Même pas peur !"
 					},
 					"FailedMission": {
-						"Line01": "Red Sardak: I've failed in my mission!",
-						"Line02": "Llort, this enemy is coming!"
+						"Line01": "Sardak le Rouge :\nMa mission est un fiasco !",
+						"Line02": "Llort, l'ennemie approche !"
 					}
 				},
 				"BlueSardak": {
 					"ThoughtIWasAlone": {
-						"Line01": "Blue Sardak: Huh? I... I thought I was alone here!",
-						"Line02": "Llort, an enemy is in your cave!"
+						"Line01": "Sardak le Bleu : Hein ? Quoi ?\nJe... je croyais que j'étais seul ici !",
+						"Line02": "Llort, il y a une ennemie\bdans ta grotte !"
 					},
 					"CouldntStopHer": {
-						"Line01": "Blue Sardak: Llort, I couldn't stop her!",
-						"Line02": "Get ready to fight!"
+						"Line01": "Sardak le Bleu : Llort,\nje n'ai pas pu l'arrêter...",
+						"Line02": "Sois prêt à en découdre..."
 					}
 				},
 				"YellowSardak": {
 					"EnemyOfMyBoss": {
-						"Line01": "Yellow Sardak: Hey! Who goes there?",
-						"Line02": "Aren't you an enemy of my boss Llort?",
-						"Line03": "You can't come in here."
+						"Line01": "Sardak le Jaune : Hé ! Qui va là ?!",
+						"Line02": "N'es-tu pas une ennemie\nde mon maître, Llort ?",
+						"Line03": "Tu n'as pas le droit d'entrer ici !"
 					},
 					"ShesComing": {
-						"Line01": "Yellow Sardak: Hey, Llort! Watch out!",
-						"Line02": "She's coming!"
+						"Line01": "Sardak le Jaune : Hé, Llort !\nFais attention !",
+						"Line02": "Elle arrive !"
 					}
 				},
 				"TreasureChest": {
 					"WhatDoWeHaveHere": {
-						"Line01": "Treasure Chest: Oh-ho-ho! Oh, what do we have here?!",
-						"Line02": "A human person's coming close!",
-						"Line03": "Why, what a great event! Hoo-hoo!"
+						"Line01": "Coffre au trésor : Oh-oh-oh !\nOh, que vois-je ici ?!",
+						"Line02": "Un être humain s'en vient !",
+						"Line03": "C'est Mardi gras ou quoi ?!\nHou-hou !"
 					}
 				}
 			},
 			"ForestOfFindo": {
 				"TalkingToadstool": {
-					"Line01": "Toadstool: Hoo hoo hoo hoo!",
-					"Line02": "Those Mobilins out there are so slow and stupid...",
-					"Line03": "they're still trying to eat their soup with a fork!",
-					"Line04": "Huh huh huh huh huh huh!"
+					"Line01": "Champignon potinier :\nHou hou hou hou !",
+					"Line02": "Ces Mobilins là-bas\nsont si lents et stupides...",
+					"Line03": "ils essaient encore de manger\nleur soupe avec une fourchette !",
+					"Line04": "Héhé héhé héhé héhé héhé !"
 				}
 			},
 			"MeadowOfSkotness": {
 				"Farmer": {
 					"HelloThereMiss": {
-						"Line01": "Farmer: Hello there, Miss!",
-						"Line02": "Watch how you go out in the meadows!",
-						"Line03": "They're full of Leevers and Tektites this time of year!"
+						"Line01": "Fermier : Oh là, mam'zelle !",
+						"Line02": "Soyez prudente dans la beausse !",
+						"Line03": "Ça grouille de Leveurs\net d'Tektites ces temps-ci !"
 					},
 					"WhatBringsYouThisWay": {
-						"Line01": "Farmer: It's good to see ya!",
-						"Line02": "What brings you this way?",
-						"Line03": "'scuse me, but I got to get back to plowin'."
+						"Line01": "Fermier : C'est bon d'voir du monde !",
+						"Line02": "Quel bon vent vous amène ?",
+						"Line03": "Scusez-moi, mais c'est aussi\nle temps du labour !"
 					}
 				}
 			},

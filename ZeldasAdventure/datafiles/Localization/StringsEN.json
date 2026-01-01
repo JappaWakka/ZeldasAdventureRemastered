@@ -38,7 +38,7 @@
 				"Full": "Full",
 				"Resolution": "Resolution",
 				"RemasteredMode": "Remastered Mode",
-				"RemasteredModeHint": "Action 1 = Use Weapon, Action 2 = Use Treasure. Restored cut content, Action Button 2 replaces Ruby item etc.",
+				"RemasteredModeHint": "Action 1 = Use Weapon, Action 2 = Use Treasure.\nRestored cut content, Action Button 2 replaces Ruby\nitem etc.",
 				"Subtitles": "Subtitles",
 				"Language": "Language"
 			},
@@ -98,7 +98,7 @@
 				"West": "W",
 				"East": "E",
 				"South": "S"
-			},
+			}
 		},
 		"ExitMenu": {
 			"SaveAndQuit": "Save & Quit",
@@ -127,7 +127,7 @@
 				"Line01": "Welcome to Zelda's Adventure, an action-adventure role-playing game.",
 				"Line02": "As a player, you will adopt the personality of our heroine Princess Zelda.",
 				"Line03": "To play the game succesfully, you must explore the great land of Tolemac.",
-				"Line04": "To control Zelda's movement around Tolemac",
+				"Line04": "To control Zelda's movement around Tolemac,",
 				"Line05": "move the controller left, right, up, down and diagonally.",
 				"Line06": "The court astronomer Gaspra",
 				"Line07": "will introduce the story of Zelda and describe how her quest came about.",
@@ -143,57 +143,57 @@
 				"Line17": "If Zelda is succesful at defeating her enemies, she will be rewarded.",
 				"Line18": "They will randomly drop rubies and hearts",
 				"Line19": "that will increase her currency and life units respectively.",
-				"Line20": "Rubies which are the currency of Tolemac",
+				"Line20": "Rubies, which are the currency of Tolemac,",
 				"Line21": "can be used to buy useful items",
 				"Line22": "and are indicated on the top-left corner of the screen.",
 				"Line23": "Hearts are the life units that give Zelda strength to fight throughout the game.",
 				"Line24": "They are represented on the upper-right corner of the play screen.",
 				"Line25": "To select an object or a weapon on the inventory screen, press Action Button 2.",
-				"Line26": "Once in the inventory screen",
+				"Line26": "Once in the inventory screen,",
 				"Line27": "you can access useful items and weapons",
 				"Line28": "by selecting an object with your cursor and then pressing Action Button 1.",
 				"Line29": "Treasures and weapons can be scrolled by pressing the left window button",
 				"Line30": "to move left, and by pressing the right window button to move right.",
 				"Line31": "The weapon in use appears in the window in the lower right of the inventory screen.",
-				"Line32": "If you select a useful item from the treasures selection",
+				"Line32": "If you select a useful item from the treasures selection,",
 				"Line33": "the item will appear in the same window where the weapon selection appeared.",
 				"Line34": "Zelda can use only one item or weapon at a time.",
 				"Line35": "In Zelda's travels she will find many locked doors.",
 				"Line36": "She must have a key in her possession to pass through these locked entrances.",
 				"Line37": "The number of keys in Zelda's possession will appear in the small window",
 				"Line38": "in the upper right of the inventory screen.",
-				"Line39": "To help navigate through Tolemac",
+				"Line39": "To help navigate through Tolemac,",
 				"Line40": "a map is available by moving your joystick to the map button",
 				"Line41": "and then pressing your Action Button 1.",
 				"Line42": "There are two types of maps:",
 				"Line43": "One for the overworld and one for each of the underworlds.",
 				"Line44": "The map for the overworld will reveal where you are and where you have traveled.",
-				"Line45": "The maps for each of the underworlds will reveal where you are",
+				"Line45": "The maps for each of the underworlds will reveal where you are,",
 				"Line46": "where you have traveled, and where you need to go to complete your quest.",
 				"Line47": "To return to gameplay, press Action Button 2.",
 				"Line48": "When you are ready to exit game",
 				"Line49": "move your cursor to exit button and press Action Button 1.",
 				"Line50": "You will then arrive at the save, continue and quit screen.",
-				"Line51": "To activate any of these buttons",
+				"Line51": "To activate any of these buttons,",
 				"Line52": "you must move the cursor to the button and press Action Button 1.",
 				"Line53": "If you save and quit, you will arrive at the player select screen",
 				"Line54": "where you have to option to play again or exit game.",
-				"Line55": "When you come back to play again",
+				"Line55": "When you come back to play again,",
 				"Line56": "you can restart where you left off by selecting your name.",
 				"Line57": "You will then return to the first screen of gameplay",
 				"Line58": "with all items and weapons still in the inventory.",
-				"Line59": "If you quit without save, you will arrive at the player select screen",
+				"Line59": "If you quit without save, you will arrive at the player select screen,",
 				"Line60": "where you have to option to play again or exit game.",
-				"Line61": "When you return to gameplay",
+				"Line61": "When you return to gameplay,",
 				"Line62": "you will not be able to return to your previous game.",
 				"Line63": "However, your status will be fled the last game you saved.",
-				"Line64": "If you choose Return to Game",
-				"Line65": "you will arrive at the inventory screen where you press Action Button 2",
+				"Line64": "If you choose Return to Game,",
+				"Line65": "you will arrive at the inventory screen where you press Action Button 2,",
 				"Line66": "which then returns you to gameplay.",
 				"Line67": "Before each game, you must select a name for your hero or heroine.",
 				"Line68": "You can choose the create button by moving the cursor onto the button",
 				"Line69": "and pressing Action Button 1.",
-				"Line70": "This takes you to the enter name screen",
+				"Line70": "This takes you to the enter name screen,",
 				"Line71": "where you type in your name on the keyboard",
 				"Line72": "by selecting the desired letters with Action Button 1",
 				"Line73": "and then moving your cursor to the done button",
@@ -244,13 +244,13 @@
 			"PlainOfAndor": {
 				"BeggarWoman": {
 					"BeforeGiveRupees": {
-						"Line01": "Beggar: Oh, fair princess",
+						"Line01": "Beggar: Oh, fair princess,",
 						"Line02": "pity a suffering creature exiled from Great Wimbich in the north!",
-						"Line03": "I ask only enough for a single meal for my children",
+						"Line03": "I ask only enough for a single meal for my children,",
 						"Line04": "who hunger and are chilled by the wind."
 					},
 					"AfterGiveRupees": {
-						"Line01": "Beggar: You will be blessed a thousand times",
+						"Line01": "Beggar: You will be blessed a thousand times,",
 						"Line02": "a thousand, fair princess!"
 					},
 					"WhenAttacked": {
@@ -302,7 +302,7 @@
 					},
 					"DefeatedSoldier": {
 						"Line01": "Defeated Soldier: I am so exhausted from my travels.",
-						"Line02": "If only I had known to cross the chasm rift with a ladder",
+						"Line02": "If only I had known to cross the chasm rift with a ladder,",
 						"Line03": "it would have saved me months!"
 					},
 					"KrebbTheWeary": {
@@ -351,7 +351,7 @@
 				"Shurmak": {
 					"EvilsOfGreed": {
 						"Line01": "Shurmak: Beware the evils of greed.",
-						"Line02": "Act quickly, think on your feet",
+						"Line02": "Act quickly, think on your feet,",
 						"Line03": "and you will be rewarded."
 					}
 				},
@@ -487,16 +487,16 @@
 					"PeculiarLittleTown": {
 						"Line01": "Alice: Great Wimbich is such a peculiar little town.",
 						"Line02": "The shops out on Upper Street have anything you could wish for",
-						"Line03": "and if you can't find it there",
+						"Line03": "and if you can't find it there,",
 						"Line04": "you're sure to stumble across it in the market square."
 					},
 					"IfYaLikeMusic": {
-						"Line01": "Alice: Now, if ya like music, follow your ear to Yvonne",
+						"Line01": "Alice: Now, if ya like music, follow your ear to Yvonne,",
 						"Line02": "the musician down Skotness Road right here.",
 						"Line03": "If ya get tired in ya wanderings, this is a great place to settle down."
 					},
 					"NothingMoreToSay": {
-						"Line01": "Alice: Zelda, it's been fun visiting with you",
+						"Line01": "Alice: Zelda, it's been fun visiting with you,",
 						"Line02": "but I have nothing more to say now.",
 						"Line03": "Come back and see me again, okay?"
 					},

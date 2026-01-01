@@ -120,6 +120,7 @@ function ExitMenu_SaveAndQuit()
 	
 	Audio_StopMusic()
 	QuitToMainMenu = true;
+	global.CameraIsFading = true;
 	global.FadeSpeed = 16;
 	global.FadeProgress = 0;
 }
