@@ -1077,6 +1077,7 @@
     {"id":{"name":"Sprite_Enemy_Tumblebot_East","path":"sprites/Sprite_Enemy_Tumblebot_East/Sprite_Enemy_Tumblebot_East.yy",},"order":0,},
     {"id":{"name":"Overworld_350_Solid","path":"sprites/Overworld_350_Solid/Overworld_350_Solid.yy",},"order":3,},
     {"id":{"name":"input_mouse_in_bounds","path":"scripts/input_mouse_in_bounds/input_mouse_in_bounds.yy",},"order":7,},
+    {"id":{"name":"LocalizedSprite_ForestOfTorian_10_Below","path":"objects/LocalizedSprite_ForestOfTorian_10_Below/LocalizedSprite_ForestOfTorian_10_Below.yy",},"order":5,},
     {"id":{"name":"Solid_PlainOfAndor_MobilinsHeadInn","path":"objects/Solid_PlainOfAndor_MobilinsHeadInn/Solid_PlainOfAndor_MobilinsHeadInn.yy",},"order":8,},
     {"id":{"name":"ForestOfFindo_SeacoastPlain_Shortcut_Cycle_Water","path":"sprites/ForestOfFindo_SeacoastPlain_Shortcut_Cycle_Water/ForestOfFindo_SeacoastPlain_Shortcut_Cycle_Water.yy",},"order":3,},
     {"id":{"name":"ForestOfOgham_12_Above","path":"sprites/ForestOfOgham_12_Above/ForestOfOgham_12_Above.yy",},"order":36,},
@@ -2778,6 +2779,10 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"PlainOfDonora_03_Above.png","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesNL/Maps/PlainOfDonora",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"PlainOfDonora_03_Below.png","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesNL/Maps/PlainOfDonora",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"How to enable Debug Mode & use Cheats.txt","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ForestOfTorian_10.psd","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesEN/#Source (Photoshop 2026)",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ForestOfTorian_10_Below.png","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesEN/Maps/ForestOfTorian",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ForestOfTorian_10_Below.png","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesFR/Maps/ForestOfTorian",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"ForestOfTorian_10_Below.png","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesNL/Maps/ForestOfTorian",},
   ],
   "MetaData": {
     "IDEVersion": "2022.0.3.85",
