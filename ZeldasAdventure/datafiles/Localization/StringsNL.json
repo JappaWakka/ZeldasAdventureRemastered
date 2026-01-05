@@ -559,6 +559,109 @@
 						"Line02": "het is echt tijd voor mijn dutje.",
 						"Line03": "Ben jij Eric of Ian?"
 					}
+				},
+				"Lounger": {
+					"HiThere": {
+						"Line01": "Lounger: Hi there! Don't worry about the dog, he won't bite.",
+						"Line02": "I wish he did bite, then there'd be a little excitement here in Great Wimbich.",
+						"Line03": "Nothing ever happens here!",
+						"Line04": "When people do come, they're even more boring.",
+						"Line05": "Everybody's dull."
+					},
+					"DontWannaSeeYou": {
+						"Line01": "Lounger: Ugh... I don't want to see you again.",
+					},
+					"GoAway": {
+						"Line01": "Lounger: Why don't you go away and be boring someplace else?",
+						"Line02": "Good riddance."
+					}
+				},
+				"GeneralShopkeeper": {
+					"HelloLittleOne": {
+						"Line01": "Shopkeeper: Hello, little one! Heh!",
+						"Line02": "I hope I can be of help to you.",
+						"Line03": "Did you see my dog out on Upper Street?",
+						"Line04": "How did he smell?",
+						"Line05": "Knave: With his nose, of course!",
+						"Line06": "*laughter from both men*"
+					},
+					"GoodsOnTheTable": {
+						"Line01": "Shopkeeper: You see my goods on the table?",
+						"Line02": "You may purchase whatever you wish.",
+						"Line03": "There's even a bone here that my dog would love!"
+					},
+					"HowAreYou": {
+						"Line01": "Shopkeeper: Ooooooh! Heh!",
+						"Line02": "How are you? Ha ha ha!",
+						"Line03": "May I be of some service?"
+					},
+					"ThatWasSmart": {
+						"Line01": "Shopkeeper: Oooooo! *laughter*",
+						"Line02": "That was smart!",
+						"Line03": "Come again, little one! Come again."
+					}
+				},
+				"Knave": {
+					"ShrineTakenLightly": {
+						"Line01": "Knave: Is a shrine a thing to be taken lightly? *laughter*",
+						"Line02": "No, and a candle is needed to light a shrine! *laughter*"
+					},
+					"JokeToPassTime": {
+						"Line01": "Knave: *nervous laughter* Oh-hoh-hooo!",
+						"Line02": "Oooo, we may joke to pass the time, princess, but...",
+						"Line03": "we are all troubled about the future of Tolemac.",
+						"Line04": "You must seek out the tablets and save us! *nervous laughter*"
+					},
+					"WatchOutForGanon": {
+						"Line01": "Knave: *laughing* Oo-hooo!",
+						"Line02": "Watch out for that Ganon, Zelda!",
+						"Line03": "Ooooooooo!"
+					}
+				},
+				"MadameKriggle": {
+					"ApproachedAtLast": {
+						"Line01": "Madame Kriggle: At last!",
+						"Line02": "Madame Kriggle is approached by an innocent",
+						"Line03": "who wishes to grow in the use of magic and spells.",
+						"Line04": "My old friend Shurmak has told me of your coming;",
+						"Line05": "I have awaited you many moons and suns.",
+						"Line06": "It is important to remember",
+						"Line07": "that magic adornments will defend thee from many beings",
+						"Line08": "who will attack you with magic.",
+						"Line09": "You may purchase my Turquoise Ring",
+						"Line10": "or my Jade Amulet to raise your defenses."
+					},
+					"TouchWhatYouWantToUse": {
+						"Line01": "Madame Kriggle: Touch what you wish to use,",
+						"Line02": "and leave me your Rubies.",
+						"Line03": "I promise you will be pleased."
+					},
+					"WonderfulToSeeYou": {
+						"Line01": "Madame Kriggle: How wonderful to see you, my dear!"
+					},
+					"WiseChoice": {
+						"Line01": "Madame Kriggle: A wise choice for setting out! Oh-hoh...",
+						"Line02": "Come and see me again!"
+					}
+				},
+				"Smithy": {
+					"WhoGoesThere": {
+						"Line01": "Smithy: Who goes there!? Oh, it's a young girl.",
+						"Line02": "Don't touch anything!",
+						"Line03": "People steal me blind; I know you all hate me!",
+						"Line04": "What did I ever do to any of you!?",
+						"Line05": "I give an honest bargain, I grind your coal into Rubies,",
+						"Line06": "I stay open late and work my fingers to the bone.",
+						"Line07": "Do any of you appreciate it? No!"
+					},
+					"ChooseItemAndHurry": {
+						"Line01": "Smithy: Choose your item and hurry, the world is full of thieves.",
+					},
+					"CongratsOnFindingCoal": {
+						"Line01": "Smithy: Congratulations on finding such a fine piece of coal!",
+						"Line02": "After Wimbich taxes - my commission, of course...",
+						"Line03": "*cough* that leaves, umm..."
+					}
 				}
 			},
 			"PlainOfDonora": {
