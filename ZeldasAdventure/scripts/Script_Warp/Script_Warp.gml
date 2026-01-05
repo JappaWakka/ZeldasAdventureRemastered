@@ -135,7 +135,7 @@ global.WarpLocations =
 	
 	//Plain Of Andor
 	PlainOfAndor_MobilinsHeadInn_Inside : {TileX:10,TileY:21,PlayerX:64,PlayerY:148},
-	PlainOfAndor_MobilinsHeadInn_Outside : {TileX:9,TileY:21,PlayerX:96,PlayerY:188},
+	PlainOfAndor_MobilinsHeadInn_Outside : {TileX:9,TileY:21,PlayerX:120,PlayerY:176},
 
 	//Forest of Ogham
 	ForestOfOgham_TektiteCave_Inside : {TileX:7,TileY:31,PlayerX:38,PlayerY:128},
