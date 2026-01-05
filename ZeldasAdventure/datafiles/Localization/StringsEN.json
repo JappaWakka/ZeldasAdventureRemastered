@@ -121,7 +121,7 @@
 				"Line09": "and with each Sign you gather, so too will you gain knowledge.",
 				"Line10": "Find your magic wand.",
 				"Line11": "Use it wisely and listen to your allies along the way!",
-				"Line12": "Go now, my Princess. Restore the Celestial Signs and rescue Link!"
+				"Line12": "Go now, my princess. Restore the Celestial Signs and rescue Link!"
 			},
 			"Tutorial": {
 				"Line01": "Welcome to Zelda's Adventure, an action-adventure role-playing game.",
@@ -141,7 +141,7 @@
 				"Line15": "Zelda attacks them with her wand.",
 				"Line16": "You employ the wand by pressing Action Button 1.",
 				"Line17": "If Zelda is succesful at defeating her enemies, she will be rewarded.",
-				"Line18": "They will randomly drop rubies and hearts",
+				"Line18": "They will randomly drop Rubies and hearts",
 				"Line19": "that will increase her currency and life units respectively.",
 				"Line20": "Rubies, which are the currency of Tolemac,",
 				"Line21": "can be used to buy useful items",
@@ -265,7 +265,7 @@
 						"Line03": "I am collapsed with thirst and dryness."
 					},
 					"AfterFill": {
-						"Line01": "Glebb the Thirsty: Bless you, princess!",
+						"Line01": "Glebb the Thirsty: Bless you, Princess!",
 						"Line02": "You have saved the life of a weary old woman!",
 						"Line03": "I offer you these treasures."
 					},
@@ -280,7 +280,7 @@
 						"BeforeBuy": {
 							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
 							"Line02": "You look dry, have a cup of Andor cider on the house.",
-							"Line03": "I have a spell of Calm to sell, but it will cost you 100 rubies."
+							"Line03": "I have a spell of Calm to sell, but it will cost you 100 Rubies."
 						},
 						"AfterBuy": {
 							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
@@ -542,7 +542,7 @@
 					"CoalAndRubies": {
 						"Line01": "I do know this for sure, because I used to be",
 						"Line02": "a miner over on the Plain of Hobel:",
-						"Line03": "Coal and rubies are the same substance.",
+						"Line03": "Coal and Rubies are the same substance.",
 						"Line04": "I believe there's a crusher somewhere nearby.",
 						"Line05": "Uh, go in peace, little one. Uh... are you Eric or Ian?"
 					},
@@ -556,11 +556,11 @@
 			"PlainOfDonora": {
 				"YalzanTheStern": {
 					"Toll10Rubies": {
-						"Line01": "Yalzan the Stern: Ten rubies gets you through the pass, young lady, no less."
+						"Line01": "Yalzan the Stern: Ten Rubies gets you through the pass, young lady, no less."
 					},
 					"Toll20Rubies": {
 						"Line01": "Yalzan the Stern: Oh, force my hand, will you?",
-						"Line02": "The price is now twenty rubies."
+						"Line02": "The price is now twenty Rubies."
 					}
 				},
 				"KronThePegleg":{

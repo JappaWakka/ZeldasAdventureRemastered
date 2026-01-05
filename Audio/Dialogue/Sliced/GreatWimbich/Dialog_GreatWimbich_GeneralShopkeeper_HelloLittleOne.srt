@@ -1,0 +1,24 @@
+﻿1
+00:00:00,127 --> 00:00:02,200
+Shopkeeper: Hello, little one! Heh!
+
+2
+00:00:02,227 --> 00:00:04,673
+I hope I can be of help to you.
+
+3
+00:00:04,753 --> 00:00:07,520
+Did you see my dog out on Upper Street?
+
+4
+00:00:08,080 --> 00:00:09,333
+How did he smell?
+
+5
+00:00:09,700 --> 00:00:11,953
+Knave: With his nose, of course!
+
+6
+00:00:11,978 --> 00:00:18,047
+*laughter from both men*
+

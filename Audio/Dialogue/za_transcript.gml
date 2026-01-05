@@ -8,31 +8,44 @@
 "Twins (Eric and Ian): Hello, Zelda. I'm Eric and this is Ian... Well, what do you mean? I'm Eric, I've always been. No you're not, I'm Eric!"
 "Twins' Father: Hello, Zelda! Welcome to my home. I'm the twins' father, and even I don't know which twin is which. Still, it is good of you to come and visit. My name is Zelda and you must be the father. No, wait! That can't be true; you just came in. You must be Zelda!"
 "Town Merchant: For thirty suns my husband and I ran the great locksmith forge for Warbane. Then Ganon came and pressed Warbane into service for his own evil plans. The forge was closed. Warbane built a fortified retreat of his own, somewhere off in the Forest of Canvula to the north. We were left with nothing but these trinkets to sell! Perhaps they will be of use to you in the underground. I can not give them up cheap."
-"Lounger: Hi there! Don't worry about the dog, he won't bite. I wish he did bite, then there'd be a little excitement here in Great Wimbich. Nothing ever happens here! When people do come here, they're even more boring. Everybody's dull."
-"Lounger: Ohh... I don't want to see you again."
+
+"Lounger: Hi there! Don't worry about the dog, he won't bite. I wish he did bite, then there'd be a little excitement here in Great Wimbich. Nothing ever happens here! When people do come, they're even more boring. Everybody's dull."
+"Lounger: Ugh... I don't want to see you again."
+"Lounger: Why don't you go away and be boring someplace else? Good riddance."
+
 "Madame Kriggle: At last! Madame Kriggle is approached by an innocent who wishes to grow in the use of magic and spells. My old friend Shurmak has told me of your coming; I have awaited you many moons and suns. It is important to remember that magic adornments will defend thee from many beings who will attack you with magic. You may purchase my turquoise ring or my jade amulet to raise your defenses."
+"Madame Kriggle: Touch what you wish to use, and leave me your Rubies. I promise you will be pleased."
+"Madame Kriggle: How wonderful to see you, my dear!"
 "Madame Kriggle: A wise choice for setting out! Come and see me again!"
-"Shopkeeper: Hello, little one! I hope I can be of help to you. Did you see my dog out on Upper Street? How did he smell?"
-"Knave: With his nose, of course! [laughter]"
-"Knave: Is a shrine a thing to be taken lightly? No, and a candle is needed to light a shrine! [laughter]"
-"Knave: [laughter] We may joke to pass the time, Princess, but we are all troubled about the future of Tolemac. You must seek out the tablets and save us! [laughter]"
-"Smithy: Who goes there!? Oh, it's a young girl. Don't touch anything! People steal me blind; I know you all hate me! What did I ever do to any of you!? I give an honest bargain and I grind the coal into rubies. I stay open late and work my fingers to the bone. Do any of you appreciate it? No!"
+
+"Shopkeeper: Hello, little one! Heh! I hope I can be of help to you. Did you see my dog out on Upper Street? How did he smell? Knave: With his nose, of course! *laughter from both men*"
+"Shopkeeper: You see my goods on the table? You may purchase whatever you wish. There's even a bone here that my dog would love!"
+"Shopkeeper: Ooooooh! Heh, how are you? Ha ha ha! May I be of some service?"
+"Shopkeeper: Oooooo! *laughter* That was smart! Come again, little one! Come again."
+
+"Knave: Is a shrine a thing to be taken lightly? *laughter* No, and a candle is needed to light a shrine! *laughter* *nervous laughter* Oh-hoh-hooo! Oooo, we may joke to pass the time, princess, but we are all troubled about the future of Tolemac. You must seek out the tablets and save us! *nervous laughter*"
+"Knave: *laughing* Oo-hooo! Watch out for that Ganon, Zelda! Ooooooooo!"
+
+"Smithy: Who goes there!? Oh, it's a young girl. Don't touch anything! People steal me blind; I know you all hate me! What did I ever do to any of you!? I give an honest bargain, I grind your Coal into Rubies, I stay open late and work my fingers to the bone. Do any of you appreciate it? No!"
+"Smithy: Choose your item and hurry, the world is full of thieves."
+"Smithy: Congratulations on finding such a fine piece of coal! After Wimbich taxes - my commission, of course *cough* - that leaves, umm..."
+
 "Ghost Farmer: Far away, one of Ganon's allies lives in a world of water. The entrance is hidden, and you may never find it if you fear the touch of falling water. You can cross any fjord in Skotness River with the Red Boots."
 "Ghost Farmer: Stay back! This splendid farm is all mine. Isn't it wonderful? I have worked this land for three-hundred years."
 "Waldensop: Good morn, lady. A noble person such as yourself on foot-fend? If it's rest you seek, you'll get precious little comfort in this thieves' den, I'll tell you."
 "Waldensop: Be careful if you go inside, milady! Some people in these parts would rob you same as look at you, they would."
 "Waldensop: I would like to give you a feather as a sign of my affection. This will take you to new heights!"
 "Lodgekeeper: I need to make more Bumbleberry Tea, that's for certain. What!? Oh, I'm sorry, but the lodge is full. You are welcome to rest here before you head out into the Forest of Torian."
-"Sir Basil: Hail, Princess Zelda, friend of Shurmak! I am Sir Basil of Tolemac and Shurmak has sent me to assist you."
+"Sir Basil: Hail, princess Zelda, friend of Shurmak! I am Sir Basil of Tolemac and Shurmak has sent me to assist you."
 "Shurmak: You seem tired now, Zelda. Leave off the contest and come back another day."
 "Shurmak: Look beyond illusion to conquer the evil Pasquinade. Deception is all around you."
 "Pasquinade: Look to your heart. Look to your dreams. You'll find that nothing is what it seems. Hm hm hm hm hm hm!"
 "Pasquinade: Welcome, my lovely! Come, sit, and rest. But first let me give you one small test."
 
 "Shurmak: Hello, Zelda! I see you've found your own way to my retreat. You already know about magic and you have been doing well, so there's nothing more I can do at the moment. I will always be there for you. Good luck."
-"Yalzan the Stern: Ten rubies gets you through the pass, young lady, no less."
+"Yalzan the Stern: Ten Rubies gets you through the pass, young lady, no less."
 "Yelena: It's good of you to come see me. I was the one who was guiding Link across Tolemac when we were spotted by one of Ganon's spies. I did what I could to stand with Link, but there were too many of them and he was taken. I wish I could come with you, but as you can see, I have not recovered yet and there is no way I could survive the North Desert. Listen closely, and I will tell you what I can. You must heed both Shurmak and Gaspra; there is some envy between them, but it is a small thing and they both fight for the right in different ways."
-"Faust the Boatman: Hello there, young lady! I am Faust the Boatman and for two rubies I offer a tour to Mystery Island. What's on Mystery Island? If I told you, it wouldn't be a mystery."
+"Faust the Boatman: Hello there, young lady! I am Faust the Boatman and for two Rubies I offer a tour to Mystery Island. What's on Mystery Island? If I told you, it wouldn't be a mystery."
 "Hooded Woman: Zelda, we pray you walk softly here and bring no enemies on us. We have built our village on the Barachno Marsh as a refuge to avoid Ganon's fellows. The dome house is a home of our philosopher, Sirram Bew, whose logic is not always easy to follow."
 "Sirram Bew: You are now in the presence of one whose feet have often touched the earth and whose eyes have seen what they have seen. Beware of all those beings who can harm thee, for they are dangerous, but be a friend of all who are true friends for they may aid thee."
 "Giant Swamp Rat: Hi there, Zelda. It's good to see you. I hope you like the swamp. We like it here because we know Ganon hates it!"
@@ -45,7 +58,7 @@
 "Bitterbeck: Come in! Sit with me! Warm yourself by the fire! Bitterbeck: I know it can get colder than Ganon's heart up here, but I've endured worse. Once, when I was in the Forest of Torian... No, it was... it was the Forest of Canvula. No, no, it cannot be true, for Canvula wood is always hot and did I say... I did say it was cold, right? Well, then it was the Forest of Torian."
 "Toatobar: What do you want with me?! Cannot someone other-worthy help you? Even if I do help you, you cannot for a moment believe you shall defeat the mighty Ganon, do you?"
 "Myntoll the Jaded: I am called Myntoll, and I know who you are. Do you not grow bored with your quest? I certainly would."
-"Myntoll the Jaded: You again? I suppose you want rubies or information or directions to a shrine or whatnot. Really, it is all too dull!"
+"Myntoll the Jaded: You again? I suppose you want Rubies or information or directions to a shrine or whatnot. Really, it is all too dull!"
 "Nimonee: I know you have come far, but I have nothing to give you."
 "Vapora: So, bold one, you challenge me? Can you be serious?"
 "Aviana: You can never catch me! Ha ha har rah!"
@@ -79,7 +92,7 @@ Beachcomber: You have to beware on this great south sea. There are monsters and 
 Beachcomber: Ebsuri, uh, hello there! Did you see the shipwreck up the beach? It happened many storms ago, and I've collected some of the things from the wreck here. I will sell them to you if you wish.
 Blueclad Seafarer: We're too busy to help you now, Miss. Find another seafarer!
 Toobar of the Eyepatch: Imsouri! You're a small thing to be lost in a rough place like this! You won't learn anything from any of these; they've been to sea too long and their brains are scrambled! Mine seem to be okay.
-Seafarer: Imsouri! If you wish to cross the sea, bring us twenty rubies and a vial of wind. The offshore wind has died down, and you must bring your own breeze.
+Seafarer: Imsouri! If you wish to cross the sea, bring us twenty Rubies and a vial of wind. The offshore wind has died down, and you must bring your own breeze.
 Shurmak: A strong spirit leads the way to the troubled waters that lie ahead. Stay above water and you will conquer the evil Agwanda.
 Agwanda: I am Agwanda, and this is my realm! I control the waters of life and renewal. I will dry up even you tears, little one!
 South Kelpie: I am the South Kelpie! It is my honor to fight you for my mistress, the great Agwanda!
@@ -93,7 +106,7 @@ Anti-Ganon Soldiers: Hail Zelda! We have heard much of you. We retreated here to
 Quarry Man: Welcome to my quarry, young one. I don't see many folks these days. Ever since Ganon devastated the land there's been so little construction no one comes to me for quarry stones. I am told there is wealth in this large lump of coal, but I know not how to claim it. You may take it away with you.
 Sir Basil: Ah, Zelda! It's me, Sir Basil. You've fared well so far on your difficult journey. You will shortly be meeting Ursore. Use well your knowledge of the broadsword.
 Shurmak: Physical strength is the next test for you, Zelda. Prepare for the dangerous series of contests just ahead.
-Stall Keeper #1: Come over here, Princess! I have things of beauty to please your eye! The red ribbon costs 50 rubies, but it has a history beyond price. Come again, you deserve many objects of beauty!
+Stall Keeper #1: Come over here, Princess! I have things of beauty to please your eye! The red ribbon costs 50 Rubies, but it has a history beyond price. Come again, you deserve many objects of beauty!
 Water Bearer: Hello, young one. You look like a friendly face. It's been many a year since I've sat down with a young woman like you to talk over my troubles. My children have all moved on to other areas of Hyrule, and I don't get to see them very much at all. Did you know that Morgan has been seeing the maid Vanity? I don't think it's at all suitable. Am I boring you? No matter; you look like you don't have much to do. It's certainly odd weather we've been having, don't you think? My, this water jug is becoming heavy! I wish my husband had installed running water in our house, but it was just too expensive; you know how things are these days. I guess I better be moving on. Have a good day and watch out for the Tektites. Tirrah!
 Water Bearer: It's wise of you to halt a spell with me, young one. I know a little of what lies concealed in the realm of combat. You must gain skill in every weapon before meeting the mighty Ursore.
 
@@ -108,7 +121,7 @@ Carny Barker: Hello there, little one! Step up and buy a ticket to the jousting 
 Stall Keeper #2: Dare you ride in the joust against the Red Knight? You are so young! But take up the lance, if you will.
 Red Knight: Hold tight, little enemy! You have something stolen from me and I am strong!
 Ursore: *Roar* Who has harmed my Red Knight? I will not forget. *Roar*
-Stall Keeper #3: What have we here? A princess, wandering the field of honor on her own. Come over here, and I'll sell you a ticket to the Field of the Broadsword. Watch yourself inside; the swords are heavier than you are. Twenty rubies! Get your ticket here! Just take a step through turnstile to the east and keep your head down.
+Stall Keeper #3: What have we here? A princess, wandering the field of honor on her own. Come over here, and I'll sell you a ticket to the Field of the Broadsword. Watch yourself inside; the swords are heavier than you are. Twenty Rubies! Get your ticket here! Just take a step through turnstile to the east and keep your head down.
 Blue Knight: A thin waif like thee? Hah! Can you even lift a broadsword?
 Green Knight: One as small as thee put aflight my brother!? This I must test!
 Ursore: Hrm... Rrrr! Something does put my Blue Knight to shame and defeated my Green Knight! This will be punished! *Roar*

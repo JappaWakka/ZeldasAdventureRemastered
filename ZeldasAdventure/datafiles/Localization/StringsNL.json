@@ -119,7 +119,7 @@
 				"Line07": "Er zou een moedige krijger gevonden moeten worden",
 				"Line08": "om de strijd aan te gaan met dat kwaadaardige monster.",
 				"Line09": "En zo vond ik deze kampioen van kracht en moed.",
-				"Line10": "U bent het, prinses Zelda. Met deze magische ketting, ga voort...",
+				"Line10": "U bent het, Prinses Zelda. Met deze magische ketting, ga voort...",
 				"Line11": "en met elk Teken dat u vindt zult u ook meer kennis opdoen.",
 				"Line12": "Vind uw magische toverstaf, gebruik hem verstandig",
 				"Line13": "en luister naar de bondgenoten die u tegenkomt tijdens uw reis.",
@@ -144,7 +144,7 @@
 				"Line16": "Zelda valt ze aan met haar toverstaf.",
 				"Line17": "Je gebruikt de toverstaf door op Actieknop 1 te drukken.",
 				"Line18": "Als Zelda succesvol is in het verslaan van haar vijanden, wordt ze beloond.",
-				"Line19": "Ze laten willekeurig robijnen en harten vallen",
+				"Line19": "Ze laten willekeurig Robijnen en harten vallen",
 				"Line20": "die respectievelijk haar valuta en levenseenheden verhogen.",
 				"Line21": "Robijnen, de valuta van Tolemac,",
 				"Line22": "kunnen worden gebruikt om nuttige voorwerpen te kopen",
@@ -272,7 +272,7 @@
 						"Line03": "Ik ben ingestort van de dorst en droogte."
 					},
 					"AfterFill": {
-						"Line01": "Glebb de Dorstige: U zijt gezegend, prinses!",
+						"Line01": "Glebb de Dorstige: U zijt gezegend, Prinses!",
 						"Line02": "U heeft het leven van een vermoeide oude vrouw gered!",
 						"Line03": "Ik bied u deze schatten aan."
 					},
@@ -287,7 +287,7 @@
 						"BeforeBuy": {
 							"Line01": "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, mijn prinses!",
 							"Line02": "U ziet er uitgedroogd uit, neem een kopje Andor cider van het huis.",
-							"Line03": "Ik heb een Kalmte-spreuk te koop, maar hij kost u 100 robijnen."
+							"Line03": "Ik heb een Kalmte-spreuk te koop, maar hij kost u 100 Robijnen."
 						},
 						"AfterBuy": {
 							"Line01": "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, mijn prinses!",
@@ -331,7 +331,7 @@
 						"Line04": "Er is genoeg te koop!"
 					},
 					"NothingToSell": {
-						"Line01": "Koopman: Het spijt me, prinses, ik heb vandaag niets te koop!"
+						"Line01": "Koopman: Het spijt me, Prinses, ik heb vandaag niets te koop!"
 					},
 					"WisePurchase": {
 						"Line01": "Koopman: Dat was een wijze aankoop, jonge prinses!"
@@ -550,7 +550,7 @@
 					"CoalAndRubies": {
 						"Line01": "Ik weet dit zeker, want ik was vroeger",
 						"Line02": "mijnwerker op de Vlakte van Hobel:",
-						"Line03": "Steenkool en robijnen zijn dezelfde substantie.",
+						"Line03": "Steenkool en Robijnen zijn dezelfde substantie.",
 						"Line04": "Ik geloof dat er ergens in de buurt een breker is.",
 						"Line05": "Eh, ga in vrede, kleintje. Eh... ben jij Eric of Ian?"
 					},
@@ -564,11 +564,11 @@
 			"PlainOfDonora": {
 				"YalzanTheStern": {
 					"Toll10Rubies": {
-						"Line01": "Yalzan de Strenge: Voor tien robijnen mag je door de poort, jongedame, niet minder."
+						"Line01": "Yalzan de Strenge: Voor tien Robijnen mag je door de poort, jongedame, niet minder."
 					},
 					"Toll20Rubies": {
 						"Line01": "Yalzan de Strenge: Oh, dwing je me je door te laten?",
-						"Line02": "De prijs is nu twintig robijnen."
+						"Line02": "De prijs is nu twintig Robijnen."
 					}
 				},
 				"KronThePegleg":{

@@ -1,0 +1,12 @@
+﻿1
+00:00:00,053 --> 00:00:02,207
+Shopkeeper: You see my goods on the table?
+
+2
+00:00:02,247 --> 00:00:05,306
+You may purchase whatever you wish.
+
+3
+00:00:05,539 --> 00:00:09,640
+There's even a bone here that my dog would love!
+
