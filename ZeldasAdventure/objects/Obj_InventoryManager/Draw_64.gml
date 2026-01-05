@@ -103,15 +103,26 @@ if Alpha = 255
 	draw_set_halign(fa_center)
 	
 	//Draw Map Button Text
-	draw_text(76,46,UI_Inventory_Text(2))
-	draw_text(76,46,UI_Inventory_Text(2)) // Make it extra thick
+	if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_InventoryMenu_Map) = "true"
+	{
+		draw_set_font(Font_Fancy_Small)
+		draw_text(76,48,UI_Inventory_Text(2))
+		draw_text(76,48,UI_Inventory_Text(2)) // Make it extra thick
+		draw_set_font(Font_Fancy)
+	}
+	else
+	{
+		draw_text(76,46,UI_Inventory_Text(2))
+		draw_text(76,46,UI_Inventory_Text(2)) // Make it extra thick
+	}
+	
 	
 	//Draw Exit Button Text
-	if string_lower(Localize.Meta.LanguageNameNative) = "french"
+	if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_InventoryMenu_Exit) = "true"
 	{
 		draw_set_font(Font_Fancy_Smaller)
-		draw_text(304,48,UI_Inventory_Text(3))
-		draw_text(304,48,UI_Inventory_Text(3)) // Make it extra thick
+		draw_text(304,49,UI_Inventory_Text(3))
+		draw_text(304,49,UI_Inventory_Text(3)) // Make it extra thick
 	}
 	else
 	{
@@ -172,7 +183,7 @@ if Alpha = 255
 		if Item_FindValue(i,0) != -1
 		{
 			draw_sprite_ext(
-			Sprite_Inventory_Treasure,
+			LocalizedSprite_Treasure,
 			Item_FindValue(i,0), //ImageIndex
 			TreasureOffsetX, 0, //position x,y
 			1,1, //scale x,y
@@ -199,7 +210,7 @@ if Alpha = 255
 		if Item_FindValue(i,1) != -1
 		{
 			draw_sprite_ext(
-			Sprite_Inventory_Spells,
+			LocalizedSprite_Spells,
 			Item_FindValue(i,1), //ImageIndex
 			SpellsOffsetX, 0, //position x,y
 			1,1, //scale x,y
@@ -224,7 +235,7 @@ if Alpha = 255
 			if global.CurrentItem[0] = 0
 			{
 				draw_sprite_ext(
-				Sprite_Inventory_Treasure,
+				LocalizedSprite_Treasure,
 				Item_FindValue(global.CurrentItem[1],0), //ImageIndex
 				319,
 				146,
@@ -235,7 +246,7 @@ if Alpha = 255
 			else
 			{
 				draw_sprite_ext(
-				Sprite_Inventory_Spells,
+				LocalizedSprite_Spells,
 				Item_FindValue(global.CurrentItem[1],1),
 				319,
 				146,
@@ -250,7 +261,7 @@ if Alpha = 255
 		if global.CurrentTreasure <> -1
 		{
 			draw_sprite_ext(
-			Sprite_Inventory_Treasure,
+			LocalizedSprite_Treasure,
 			Item_FindValue(global.CurrentTreasure,0), //ImageIndex
 			319,
 			120,
@@ -261,7 +272,7 @@ if Alpha = 255
 		if global.CurrentSpell <> -1
 		{
 			draw_sprite_ext(
-			Sprite_Inventory_Spells,
+			LocalizedSprite_Spells,
 			Item_FindValue(global.CurrentSpell,1),
 			319,
 			178,

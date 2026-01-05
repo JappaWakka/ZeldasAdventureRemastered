@@ -1,6 +1,6 @@
-#macro localize Obj_LocalizationManager.LocalizedStrings
-#macro LOCALIZE Obj_LocalizationManager.LocalizedStrings
 #macro Localize Obj_LocalizationManager.LocalizedStrings
+
+#macro LanguageData Obj_LocalizationManager.AvailableLanguagesStruct.Languages
 
 function LocalizationInit()
 {
@@ -12,17 +12,17 @@ function LocalizationInit()
 	set_language(global.CurrentLanguage);
 }
 
-function GetLocalizedLocalizedSprite(PathToFile)
+function GetLocalizedLocalizedSprite(PathToFile, NumberOfFrames = 1, OriginX = 0, OriginY = 0)
 {
 	var CurrentFilePath = "Localization/"+Obj_LocalizationManager.AvailableLanguagesStruct.Languages[global.CurrentLanguage].SpritesFolder + "/" + PathToFile
 	var DefaultFilePath = "Localization/"+Obj_LocalizationManager.AvailableLanguagesStruct.Languages[0].SpritesFolder + "/" + PathToFile
 	if file_exists(CurrentFilePath) = true
 	{
-		return sprite_add(CurrentFilePath,1,false,false,0,0)
+		return sprite_add(CurrentFilePath,NumberOfFrames,false,false,OriginX,OriginY)
 	}
 	else if file_exists(DefaultFilePath) = true
 	{
-		return sprite_add(DefaultFilePath,1,false,false,0,0)
+		return sprite_add(DefaultFilePath,NumberOfFrames,false,false,OriginX,OriginY)
 	}
 	else
 	{

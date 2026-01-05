@@ -13,3 +13,21 @@ else
 		global.CurrentItem = [1,Item_FindIndex(Spells.Wand,1)];
 	}
 }
+
+if LocalizedSprite_Spells = -1
+{
+	LocalizedSprite_Spells = GetLocalizedLocalizedSprite("Sprites/Sprite_Inventory_Spells.png",24)
+	if LocalizedSprite_Spells = -1
+	{
+		LocalizedSprite_Spells = Sprite_Inventory_Spells
+	}		
+}
+
+if LocalizedSprite_Treasure = -1
+{
+	LocalizedSprite_Treasure = GetLocalizedLocalizedSprite("Sprites/Sprite_Inventory_Treasure.png",51)
+	if LocalizedSprite_Treasure = -1
+	{
+		LocalizedSprite_Treasure = Sprite_Inventory_Treasure
+	}		
+}

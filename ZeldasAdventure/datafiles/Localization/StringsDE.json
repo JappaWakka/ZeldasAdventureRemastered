@@ -1,0 +1,577 @@
+//Comments like this technically violate the JSON standard, but the game will filter them out automatically when loading the file
+//This is useful in case you need to add notes or instructions to your translator for specific lines.
+//Note: This only works with double slash comments, not slash star comment star slash.
+{
+	"Meta": {
+		"LanguageNameNative": "German", //The name of the language, in your game's native language
+		"LanguageNameLocal": "Deutsch" //The name of the language, in that language
+	},
+	"UI": {
+		"MainMenu": {
+			"PlayButton": "START",
+			"DeleteButton": "LÖSCHEN",
+			"DeleteYouSure": "WIRKLICH?",
+			"DeleteDeleted": "GELÖSCHT",
+			"SettingsButton": "OPTIONEN",
+			"TutorialButton": "ANLEITUNG",
+			"ExitButton": "Beenden",
+			"EmptySaveFile": "LEER"
+		},
+		"NameEntryMenu": {
+			"EnterThyName": "NAMEN EINGEBEN",
+			"DoneButton": "Fertig"
+		},
+		"SettingsMenu": {
+			"Back": "Zurück",
+			"MainSubMenu": {
+				"Game": "Spiel",
+				"AudioVolume": "Lautstärke",
+				"Controls": "Steuerung",
+				"ResetSettings": "Voreinstellungen",
+				"SaveSettings": "Speichern"
+			},
+			"GameSubMenu": {
+				"ToggleOff": "Aus",
+				"ToggleOn": "An",
+				"WindowMode": "Bildschirm",
+				"Window": "Fenster",
+				"Full": "Vollbild",
+				"Resolution": "Auflösung",
+				"RemasteredMode": "Remastered-Modus",
+				"RemasteredModeHint": "Aktion 1 = Waffe benutzen, Aktion 2 = Schatz benutzen.\nGeschnittene Inhalte wiederhergestellt, Aktion Taste 2\nwechseln, Rubine, Gegenstände usw.",
+				"Subtitles": "Untertitel",
+				"Language": "Sprache"
+			},
+			"AudioSubMenu": {
+				"MasterVolume": "Gesamtlautstärke",
+				"MusicVolume": "Musik",
+				"SoundFXVolume": "Geräusche",
+				"DialogueVolume": "Dialoge"
+			},
+			"ControlsSubMenu": {
+				"DeviceToConfig": "Steuerung",
+				"Keys": "Tastatur",
+				"Gamepad": "Gamepad",
+				"BindingNames": {
+					"Left": "Links",
+					"Right": "Rechts",
+					"Up": "Hoch",
+					"Down": "Runter",
+					"Action1": "Aktion 1/Bestätigen",
+					"Action2": "Aktion 2/Beenden",
+					"Inventory": "Inventar",
+					"Map": "Karte",
+					"Menu": "Menü"
+				},
+				"InputNames": {
+					"Left": "links",
+					"Right": "rechts",
+					"Up": "hoch",
+					"Down": "runter",
+					"Escape": "esc",
+					"Enter": "enter",
+					"Arrow": "pfeil",
+					"StickClick": "klick"
+				}
+			}
+		},
+		"InventoryMenu": {
+			"TreasuresCategory": "SCHÄTZE",
+			"WeaponsCategory": "WAFFEN",
+			"MapButton": "Karte",
+			"ExitButton": "Beenden"
+		},
+		"MapMenu": {
+			"LocationTitles": {
+				"Tolemac": "Tolemac",
+				"ShrineOfEarth": "Erdschrein",
+				"ShrineOfIllusion": "Illusions-\nschrein",
+				"ShrineOfAir": "Luftschrein",
+				"ShrineOfDestiny": "Schicksals-\nschrein",
+				"ShrineOfWater": "Wasser-\nschrein",
+				"ShrineOfStrength": "Stärke-\nschrein",
+				"ShrineOfFire": "Feuerschrein",
+				"GanonsGauntlet": "Ganons\nPrüfung"
+			},
+			"CompassDirections": {
+				"North": "N",
+				"West": "W",
+				"East": "O",
+				"South": "S"
+			}
+		},
+		"ExitMenu": {
+			"SaveAndQuit": "Speichern und Beenden",
+			"QuitWithoutSave": "Beenden ohne zu speichern",
+			"ReturnToGame": "Zurück zum Spiel"
+		},
+		"SkipCutsceneHint": "Zum Überspringen nochmal drücken"
+	},
+	"Subtitles": {
+		"Cutscenes": {
+			"Intro": {
+				"Line01": "Gaspra: Heute Abend gibt es nichts mehr zu sehen...",
+				"Line02": "Ah... die Schriftrolle von Shurmak...",
+				"Line03": "die mir vor vielen Jahren traurige Nachrichten überbrachte.",
+				"Line04": "Ganon, der Herr der Dunkelheit, hat Tolemac erobert.",
+				"Line05": "Er hat die kostbaren himmlischen Siegel gestohlen und Link gefangen genommen!",
+				"Line06": "Ein tapferer Krieger wird gebraucht, um sich diesem bösen Monster zu stellen.",
+				"Line07": "Und so fand ich diesen Helden voller Stärke und Mut.",
+				"Line08": "Du bist es, Prinzessin Zelda! Mit diesem magischen Anhänger, gehe los...",
+				"Line09": "Und mit jedem Siegel, das du erhältst, wirst du auch Wissen erlangen.",
+				"Line10": "Finde deinen Zauberstab.",
+				"Line11": "Setze ihn mit Bedacht ein und höre auf deine Verbündeten.",
+				"Line12": "Geh nun, meine Prinzessin. Bringe die himmlischen Siegel zurück und rette Link!"
+			},
+			"Tutorial": {
+				"Line01": "Willkommen bei Zelda's Adventure, einem Action-Adventure-Rollenspiel.",
+				"Line02": "Als Spieler schlüpfst du in die Rolle unserer Heldin Prinzessin Zelda.",
+				"Line03": "Um das Spiel zu meistern, musst du das großartige Land Tolemac erkunden.",
+				"Line04": "Um mit Zelda durch Tolemac zu reisen,",
+				"Line05": "bewege das Steuerkreuz nach links, rechts, oben, unten und diagonal.",
+				"Line06": "Der Astronom Gaspra",
+				"Line07": "wird die Geschichte von Zelda erzählen und erklären, wie sie ihrer Aufgabe erhalten hat.",
+				"Line08": "Er wird auch jedes Mal wieder auftauchen, wenn",
+				"Line09": "Zelda einen Schrein erfolgreich beendet und eines",
+				"Line10": "der sieben wertvollen himmlischen Siegel eingesammelt hat.",
+				"Line11": "Ein weiterer Wegweiser und Berater für Zelda bin ich, Shurmak.",
+				"Line12": "Während des gesamten Spiels helfe ich Zelda, sich zurechtzufinden, und leite sie an.",
+				"Line13": "Während ihrer Erkundung wird Zelda auf viele Feinde treffen, die dieses Land bevölkern.",
+				"Line14": "Sie muss sie mit Geschick und Schnelligkeit besiegen.",
+				"Line15": "Zelda greift sie mit ihrem Zauberstab an.",
+				"Line16": "Du verwendest den Zauberstab, indem Du die Aktions-Taste 1 drückst.",
+				"Line17": "Wenn Zelda ihre Feinde erfolgreich besiegt, wird sie belohnt.",
+				"Line18": "Sie lassen zufällig Rubine und Herzen fallen",
+				"Line19": "die ihre Zahlungsmittel und Lebenspunkte erhöhen.",
+				"Line20": "Rubine, sind die Währung von Tolemac,",
+				"Line21": "diese können zum Kauf nützlicher Gegenstände verwendet werden",
+				"Line22": "und werden in der oberen linken Ecke des Bildschirms angezeigt.",
+				"Line23": "Herzen sind die Lebenspunkte, die Zelda während des gesamten Spiels die Kraft zum Kämpfen geben.",
+				"Line24": "Diese werden in der oberen rechten Ecke des Bildschirms angezeigt.",
+				"Line25": "Um einen Gegenstand oder eine Waffe im Inventarbildschirm auszuwählen, drücke die Aktions-Taste 2.",
+				"Line26": "Sobald du dich auf dem Inventarbildschirm befindest,",
+				"Line27": "kannst du auf nützliche Gegenstände und Waffen zugreifen.",
+				"Line28": "indem du einen Gegenstand mit dem Mauszeiger auswählst und dann die Aktions-Taste 1 drückst.",
+				"Line29": "Schätze und Waffen können durchgeblättert werden, mithilfe der Taste links vom Fenster",
+				"Line30": "bewegst du sie nach links, und durch Drücken der rechten Taste rechts vom Fenster, nach rechts.",
+				"Line31": "Die ausgewählte Waffe wird im Fenster unten rechts auf dem Inventarbildschirm angezeigt.",
+				"Line32": "Wenn du einen nützlichen Gegenstand aus den Schätzen auswählst, wird der",
+				"Line33": "Gegenstand in demselben Fenster angezeigt, in dem auch die Waffenauswahl angezeigt wurde.",
+				"Line34": "Zelda kann jeweils nur einen Gegenstand oder eine Waffe gleichzeitig verwenden.",
+				"Line35": "Auf ihren Reisen wird Zelda viele verschlossene Türen finden.",
+				"Line36": "Sie muss einen Schlüssel besitzen, um durch diese verschlossenen Türen zu gelangen.",
+				"Line37": "Die Anzahl der Schlüssel, die Zelda besitzt, wird in diesem kleinen Fenster angezeigt",
+				"Line38": "oben rechts auf dem Inventarbildschirm.",
+				"Line39": "Um sich in Tolemac zurechtzufinden, ist eine Karte verfügbar,",
+				"Line40": "bewege den Mauszeiger auf die Kartentaste und drücke",
+				"Line41": "dann die Aktions-Taste 1.",
+				"Line42": "Es gibt zwei Arten von Karten:",
+				"Line43": "Einer für die Oberwelt und eine für die ganzen Unterwelten.",
+				"Line44": "Die Karte der Oberwelt zeigt dir, wo du dich befindest und wohin du gereist bist.",
+				"Line45": "Die Karten für die Unterwelten zeigen dir, wo du dich befindest.",
+				"Line46": "wo du warst und wohin du noch gehen musst, um deine Aufgabe zu erfüllen.",
+				"Line47": "Um zum Spiel zurückzukommen, drücke die Aktions-Taste 2.",
+				"Line48": "Wenn du das Spiel beenden möchtest",
+				"Line49": "bewege den Mauszeiger auf die Taste \"Beenden\" und drücke Aktions-Taste 1.",
+				"Line50": "Du kommst dann zum Bildschirm \"Speichern, Fortsetzen und Beenden\".",
+				"Line51": "Um eine dieser Tasten zu betätigen,",
+				"Line52": "musst du den Mauszeiger auf die Taste bewegen und die Aktions-Taste 1 drücken.",
+				"Line53": "Wenn du speicherst und beendest, gelangst du zum Startbildschirm zurück.",
+				"Line54": "wo du die Wahl hast, weiterzuspielen oder das Spiel zu beenden.",
+				"Line55": "Wenn du weiterspielen möchtest,",
+				"Line56": "kannst du dort weitermachen, wo du aufgehört hast, indem du deinen Namen auswählst.",
+				"Line57": "Du kehrst dann zum ersten Bildschirm des Spiels zurück.",
+				"Line58": "mit allen Gegenständen und Waffen, die sich im Inventar befunden haben.",
+				"Line59": "Wenn du ohne zu speichern beendest, gelangst du zum Startbildschirm zurück.",
+				"Line60": "wo du die Wahl hast, weiterzuspielen oder das Spiel zu beenden.",
+				"Line61": "Wenn du weiterspielen möchtest,",
+				"Line62": "kannst du dein vorherigen Spiel nicht dort weiterspielen wo du warst.",
+				"Line63": "Dein Status wird zum letzten gespeicherten Spiel zurückgesetzt.",
+				"Line64": "Wenn Du \"Zurück zum Spiel\" wählst,",
+				"Line65": "gelangst du zum Inventarbildschirm, wo du die Aktions-Taste 2 drücken musst,",
+				"Line66": "wodurch du zum Spiel zurückkehrst.",
+				"Line67": "Vor jedem Neuen Spiel musst du einen Namen für deinen Helden oder deine Heldin auswählen.",
+				"Line68": "Wähle eine Leeres Speicher Feld aus, bewege den Mauszeiger auf die Taste START",
+				"Line69": "und drücke die Aktions-Taste 1.",
+				"Line70": "Dadurch gelangst Du zum Bildschirm für die Namenseingabe,",
+				"Line71": "wo du deinen Namen auf der Tastatur eingibst",
+				"Line72": "wähle die Buchstaben aus und bestätige sie mit der Aktions-Taste 1",
+				"Line73": "und dann bewege den Mauszeiger auf die Taste Fertig",
+				"Line74": "und drücke erneut die Aktions-Taste 1.",
+				"Line75": "Dadurch gelangst du zurück zum Startbildschirm.",
+				"Line76": "Hier drückst du auf \"START\", indem du die Taste auswählst",
+				"Line77": "und die Aktions-Taste 1 drückst.",
+				"Line78": "Dann beginnt das Spiel.",
+				"Line79": "Um den Namen eines Spielers zu löschen, bewege den Mauszeiger auf die Taste LÖSCHEN",
+				"Line80": "und drücke die Action-Taste 1 für drei Sekunden.",
+				"Line81": "Um das Spiel zu beenden, bewege den Mauszeiger auf die Taste Beenden.",
+				"Line82": "und drücke die Aktions-Taste 1.",
+				"Line83": "Das ist alles, was ich im Augenblick verraten werde.",
+				"Line84": "Den Rest musst du selbst herausfinden."
+			},
+			"ShrineOfEarth": {
+				"Line01": "Gaspra: Herzlichen Glückwunsch, Zelda, du hast gewonnen!",
+				"Line02": "Beeil dich. Du musst zu einem Ort der Feste reisen.",
+				"Line03": "Gerüchten zufolge befindet er sich im großen Wald im Norden.",
+				"Line04": "Und denke daran: Nicht alles ist so, wie es scheint."
+			}
+		},
+		"Dialogue": {
+			"VisionHenge": {
+				"Shurmak": {
+					"Introduction": {
+						"Line01": "Shurmak: Ich bin Shurmak, dein Führer.",
+						"Line02": "Ich kenne dich seit deiner Kindheit.",
+						"Line03": "Dir wurde eine schwierige Aufgabe übertragen.",
+						"Line04": "Du musst weit reisen und große Gefahren überwinden.",
+						"Line05": "Bleibe ruhig und nutze dein Wissen und deine Stärke, um deine Feinde zu besiegen.",
+						"Line06": "Behalte im Gedächtnis, was du unterwegs lernst, und gib nicht auf.",
+						"Line07": "Begib dich nun zu dem, der ein Bett hat, aber niemals schläft,",
+						"Line08": "an dessen Seite die rote Weide weint",
+						"Line09": "und dessen Mund niemals spricht."
+					},
+					"DoNotRoam": {
+						"Line01": "Shurmak: Zelda! Zelda! Streife nicht ungeschützt umher!",
+						"Line02": "Suche in der Nähe nach etwas, das dir helfen kann."
+					},
+					"DoNotBeHasty": {
+						"Line01": "Shurmak: Zelda, nicht so schnell!",
+						"Line02": "Es gibt hier in der Nähe etwas, das du unbedingt haben musst.",
+						"Line03": "Erkundung ist der Schlüssel zum Erfolg."
+					}
+				}
+			},
+			"PlainOfAndor": {
+				"BeggarWoman": {
+					"BeforeGiveRupees": {
+						"Line01": "Bettler: Oh! Schöne Prinzessin,",
+						"Line02": "hab Erbarmen mit einem leidenden Geschöpf, das aus dem großen Wimbich im Norden verbannt wurde!",
+						"Line03": "Ich bitte nur um genug für eine einzige Mahlzeit für meine Kinder,",
+						"Line04": "die hungern und frieren."
+					},
+					"AfterGiveRupees": {
+						"Line01": "Bettler: Seid tausendfach gesegnet,",
+						"Line02": "tausendfach, schöne Prinzessin!"
+					},
+					"WhenAttacked": {
+						"Line01": "Bettler: Du musst erst Nächstenliebe erlernen, bevor du eine echte Prinzessin sein kannst!",
+						"Line02": "Mögest du niemals die rote Weide bei der Höhle erblicken!"
+					}
+				},
+				"GlebbTheThirsty": {
+					"BeforeFill": {
+						"Line01": "Glebb, die durstige: Junge Prinzessin, bitte komm zu mir.",
+						"Line02": "Endlich hat mich ein Reisender mit guten Absichten gefunden!",
+						"Line03": "Ich bin vor Durst und Hitze zusammengebrochen. "
+					},
+					"AfterFill": {
+						"Line01": "Glebb, die durstige: Sei gesegnet, Prinzessin!",
+						"Line02": "Du hast das Leben einer müden alten Frau gerettet!",
+						"Line03": "Ich schenke dir diesen Schatz..."
+					},
+					"WhenAttacked": {
+						"Line01": "Glebb, die durstige: Du Monster!",
+						"Line02": "Wie kannst du es wagen, eine schwache, alte Frau anzugreifen?!",
+						"Line03": "Das kostet dich ein Herz!"
+					}
+				},
+				"MobilinsHeadInn": {
+					"LotharTheInnKeeper": {
+						"BeforeBuy": {
+							"Line01": "Lothar, der Eigentümer: Willkommen in der Schenke Moblins Kopf, Prinzessin!",
+							"Line02": "Du siehst durstig aus, trink einen Becher Andors Apfelwein aufs Haus!",
+							"Line03": "Ich habe einen \"Ruhezauber\" zu verkaufen, aber er kostet dich 100 Rubine."
+						},
+						"AfterBuy": {
+							"Line01": "Lothar, der Eigentümer: Willkommen in der Schenke Moblins Kopf, Prinzessin!",
+							"Line02": "Du siehst durstig aus, trink einen Becher Andors Apfelwein aufs Haus!"
+						},
+						"PurchaseCalmSpell": {
+							"Line01": "Lothar, der Eigentümer: Du bist sehr weise für dein Alter!",
+							"Line02": "Der \"Ruhezauber\" wird dir helfen, wenn du ihn am meisten brauchen wirst.",
+							"Line03": "Verwende ihn sorgsam und pass gut auf dich auf in der einsamen Ebene von Andor."
+						}
+					},
+					"WomanAtTable": {
+						"Line01": "Frau am Tisch: Du siehst ehrlich aus.",
+						"Line02": "Setz dich einen Moment.",
+						"Line03": "Man sagt, dass die, wo tief in die Erde vordringen, die Sünde der Gier überwinden müssen.",
+						"Line04": "Das mag stimmen, aber eines weiß ich sicher:",
+						"Line05": "Eine Kerze und ein silberner Schlüssel können dir Glück bringen.",
+						"Line06": "Beeil dich nun, mein Kind... die Zeit drängt!"
+					},
+					"DefeatedSoldier": {
+						"Line01": "Besiegter Soldat: Ich bin so erschöpft von meinen Reisen.",
+						"Line02": "Hätte ich nur gewusst, dass ich die Schlucht mit der Leiter",
+						"Line03": "überqueren kann... hätte ich mir Monate erspart!"
+					},
+					"KrebbTheWeary": {
+						"Line01": "Der müde Krebb: Warum ein ganzes Leben lang ständig unterlegen sein?",
+						"Line02": "Beende das Ganze... Gib auf. Geh nach Hause...",
+						"Line03": "Du bist hartnäckig. Ich sehe, dass du nicht der Typ bist, der aufgibt.",
+						"Line04": "Nun gut, nimm diesen Dolch von mir.",
+						"Line05": "Er wird dir vielleicht mehr nützen als mir."
+					}
+				}
+			},
+			"ForestOfOgham": {
+				"OghamMerchant": {
+					"PlentyToBuy": {
+						"Line01": "Händler: Komm her, kluge junge Dame.",
+						"Line02": "Ich habe ein wunderbares Angebot für dich!",
+						"Line03": "Nimm dir etwas kostenloses Ogham-Kraut und schau dich dann um.",
+						"Line04": "Es gibt viel zu kaufen!"
+					},
+					"NothingToSell": {
+						"Line01": "Händler: Es tut mir leid, Prinzessin, ich habe heute nichts zu verkaufen!"
+					},
+					"WisePurchase": {
+						"Line01": "Händler: Das war ein kluger Kauf, junge Prinzessin!"
+					}
+				},
+				"Enid": {
+					"ComeClose": {
+						"Line01": "Enid: Komm näher, Prinzessin, ich verrate dir ein großes Geheimnis!"
+					},
+					"TrustNoOneWithHair": {
+						"Line01": "Enid: Höre meine Worte, traue niemandem mit Haaren\" Ha Ha Ha!",
+						"Line02": "Vertraue nicht einmal mir! Ha Ha!",
+						"Line03": "Ich habe dir gerade ein Herz gestohlen! HA HA HA HA!"
+					},
+					"TooClever": {
+						"Line01": "Enid: Aaaaaaah, du bist zu schlau für Enid!"
+					},
+					"GoAway": {
+						"Line01": "Enid: Geh weg! Ich habe nichts für dich.",
+						"Line02": "Ich habe dir nichts zu sagen."
+					}
+				}
+			},
+			"ShrineOfEarth": {
+				"Shurmak": {
+					"EvilsOfGreed": {
+						"Line01": "Shurmak: Hüte dich vor den Gefahren der Gier!",
+						"Line02": "Handle schnell, denke schnell",
+						"Line03": "und du wirst belohnt werden."
+					}
+				},
+				"Llort": {
+					"YouAreNotWanted": {
+						"Line01": "Llort: Komm hier nicht rein! Du bist hier nicht willkommen.",
+						"Line02": "Ich bin Llort, und das ist mein Schrein! Er gehört mir!"
+					},
+					"ShrineOfRock": {
+						"Line01": "Llort: Ich sagte, das ist meine Höhle, meine!",
+						"Line02": "Das ist der Erdschrein, und ich bin Llort!",
+						"Line03": "Fort mit dir, nimm nichts mit, das gehört alles mir!"
+					},
+					"TakingMyThings": {
+						"Line01": "Llort: Du hast meine Sachen genommen!",
+						"Line02": "Leg sie zurück! Fass nichts an!",
+						"Line03": "Das sind meine Juwelen!"
+					}
+				},
+				"RedSardak": {
+					"NoThreat": {
+						"Line01": "Roter Sardak: Halli-hallo wer bist denn du?",
+						"Line02": "Du bist keine Bedrohung für uns hier unten!"
+					},
+					"FailedMission": {
+						"Line01": "Roter Sardak: Ich habe versagt!",
+						"Line02": "Llort, der Feind kommt!"
+					}
+				},
+				"BlueSardak": {
+					"ThoughtIWasAlone": {
+						"Line01": "Blauer Sardak: Häh? Ach, ich dachte, ich wäre hier allein.",
+						"Line02": "Llort! Ein Feind ist in deiner Höhle."
+					},
+					"CouldntStopHer": {
+						"Line01": "Blauer Sardak: Llort, ich konnte sie nicht aufhalten!",
+						"Line02": "Mach dich bereit für den Kampf!"
+					}
+				},
+				"YellowSardak": {
+					"EnemyOfMyBoss": {
+						"Line01": "Gelber Sardak: Hey, wer ist da?",
+						"Line02": "Bist du nicht ein Feind meines Herrn Llort?!",
+						"Line03": "Du darfst hier nicht rein!"
+					},
+					"ShesComing": {
+						"Line01": "Gelber Sardak: Hey, Llort, pass auf!",
+						"Line02": "Sie kommt!"
+					}
+				},
+				"TreasureChest": {
+					"WhatDoWeHaveHere": {
+						"Line01": "Schatztruhe: Huhu! Oh je, was haben wir denn hier?!",
+						"Line02": "Ein Mensch kommt näher!",
+						"Line03": "Was für ein tolles Erlebnis! Juhu!"
+					}
+				}
+			},
+			"ForestOfFindo": {
+				"TalkingToadstool": {
+					"Line01": "Fliegenpilz: Ho ho ho ho!",
+					"Line02": "Die Moblins da oben sind so langsam und dumm!",
+					"Line03": "Sie versuchen immer noch, ihre Suppe mit einer Gabel zu essen!",
+					"Line04": "Hu hu hu hu hu hu!"
+				}
+			},
+			"MeadowOfSkotness": {
+				"Farmer": {
+					"HelloThereMiss": {
+						"Line01": "Bauer: Hallo, Fräulein!",
+						"Line02": "Pass auf, wenn du auf die Wiesen gehst.",
+						"Line03": "Um diese Jahreszeit wimmelt es dort nur so von Leevers und Tektites!"
+					},
+					"WhatBringsYouThisWay": {
+						"Line01": "Bauer: Schön, dich zu sehen!",
+						"Line02": "Was führt dich hierher?",
+						"Line03": "Entschuldige mich bitte, aber ich muss weiter pflügen."
+					}
+				}
+			},
+			"GreatWimbich": {
+				"TownMerchant": {
+					"ForThirtySuns": {					
+						"Line01": "Händler der Stadt: Dreißig Sonnen lang betrieben mein Mann",
+						"Line02": "und ich eine große Schmiede für Warbane.",
+						"Line03": "Dann kam Ganon und zwang Warbane, sich in den Dienst",
+						"Line04": "seiner bösen Pläne zu stellen.",
+						"Line05": "Die Schmiede wurde geschlossen.",
+						"Line06": "Warbane baute sich irgendwo im Wald von Canvula",
+						"Line07": "im Norden einen eigenen befestigten Rückzugsort.",
+						"Line08": "Uns blieb nichts als das, was wir verkaufen können.",
+						"Line09": "Vielleicht wird es dir im Untergrund von Nutzen sein.",
+						"Line10": "Ich kann es aber nicht billig abgeben!"
+					},
+					"KindaTiredToday": {					
+						"Line01": "Händler der Stadt: Ich bin heute irgendwie... müde.",
+						"Line02": "Alles verwandelt sich in... Schlamm."
+					}
+				},
+				"Yvonne": {
+					"GiveFlute": {
+						"Line01": "Yvonne: Hallo, Zelda. Mein Name ist Yvonne.",
+						"Line02": "Du siehst auch aus wie eine Musikliebhaberin.",
+						"Line03": "Musik kann wilde Bestien besänftigen.",
+						"Line04": "Ich glaube, Shurmak hat euch mit seiner Freundschaft beglückt.",
+						"Line05": "Sie hat mir einmal geholfen, also werde ich dir helfen.",
+						"Line06": "Hör dir das an.",
+						"Line07": "*Yvonne spielt Flöte*",
+						"Line08": "Hehe! Die Flöte kann benutzt werden, um das wilde Zischen einer Schlange zu beruhigen."
+					},
+					"Singing": {
+						"Line01": "*Yvonne singt*"
+					}
+				},
+				"EricAndIan": {
+					"MeetTheTwins": {
+						"Line01": "Die Zwillinge (Eric & Ian): Hallo, Zelda. Ich bin Eric, und das ist Ian.",
+						"Line02": "Äh, was meinst du damit? Ich bin Eric! Schon immer.",
+						"Line03": "Nein, bist du nicht! Ich bin Eric!"
+					},
+					"MeetOurFather": {
+						"Line01": "Nun, egal, wer wir sind.",
+						"Line02": "Du solltest in das gelbe Haus gehen und unseren Vater treffen!",
+						"Line03": "Er wird dir etwas erzählen, das du wirklich wissen solltest."
+					}
+				},
+				"Alice": {
+					"MyGoodness": {
+						"Line01": "Alice: Meine Güte, die tapfere Zelda!",
+						"Line02": "Ich habe schon so viel von dir gehört.",
+						"Line03": "Bleib eine Weile bei Alice sitzen und erfreue eine alte Frau."
+					},
+					"PeculiarLittleTown": {
+						"Line01": "Alice: Groß-Wimbich ist eine ganz besondere kleine Stadt.",
+						"Line02": "Die Geschäfte in der Oberen Straße bieten alles, was man",
+						"Line03": "sich nur wünschen kann. Und wenn du es dort nicht findest,",
+						"Line04": "wirst du sicher auf dem Marktplatz darüber stolpern."
+					},
+					"IfYaLikeMusic": {
+						"Line01": "Alice: Wenn du Musik magst, dann folge deinen Ohren zu Yvonne.",
+						"Line02": "der Musikerin hier unten in der Skotness Straße.",
+						"Line03": "Wenn du müde bist, ist dies ein großartiger Ort, um dich auszuruhen."
+					},
+					"NothingMoreToSay": {
+						"Line01": "Alice: Zelda, es hat Spaß gemacht, mit dir zu plaudern.",
+						"Line02": "aber ich habe jetzt nichts mehr zu sagen.",
+						"Line03": "Komm mich wieder besuchen, okay?"
+					},
+					"RealNice": {
+						"Line01": "Ja, Zelda, es ist wirklich schön hier."
+					}
+				},
+				"GhostFarmer": {
+					"StayBack": {
+						"Line01": "Geist des Bauern: Bleib zurück!",
+						"Line02": "Diese herrliche Farm gehört mir.",
+						"Line03": "Ist sie nicht wunderbar?",
+						"Line04": "Ich bearbeite dieses Land seit dreihundert Jahren."
+					},
+					"StillHere": {
+						"Line01": "Nein? Du bist immer noch hier?",
+						"Line02": "Gut, ich gebe es zu, meine Farm liegt in Trümmern.",
+						"Line03": "Ganon und seine grausamen Schergen haben mir meine gesamte Ernte und meine Werkzeuge gestohlen.",
+						"Line04": "Du musst uns retten!",
+						"Line05": "Komm näher, dann verrate ich dir ein Geheimnis."
+					},
+					"ShrineOfWater_Classic": {
+						"Line01": "Geist des Bauern: Weit entfernt lebt einer von Ganons Verbündeten in einer Welt aus Wasser.",
+						"Line02": "Der Eingang ist versteckt, und du wirst ihn vielleicht nie finden...",
+						"Line03": "wenn du Angst vor fallendem Wasser hast.",
+						"Line04": "Mit den roten Stiefeln kannst du jede Stelle im Skotness Fluss überqueren."
+					},
+					"ShrineOfWater_Remastered": {
+						"Line01": "Geist des Bauern: Weit entfernt lebt einer von Ganons Verbündeten in einer Welt aus Wasser.",
+						"Line02": "Der Eingang ist versteckt, und du wirst ihn vielleicht nie finden",
+						"Line03": "wenn du Angst vor fallendem Wasser hast."
+					}
+				},
+				"TwinFather": {
+					"WelcomeToMyHome": {
+						"Line01": "Vater der Zwillinge: Hallo, Zelda. Willkommen bei mir zu Hause!",
+						"Line02": "Ich bin der Vater der Zwillinge, und selbst ich weiß nicht, welcher Zwilling wer ist.",
+						"Line03": "Trotzdem ist es schön, dass du mich besuchen kommst.",
+						"Line04": "Äh, mein Name ist Zelda, und Sie sind der Vater.",
+						"Line05": "Nein, warte... das kann nicht sein, du bist eben gekommen.",
+						"Line06": "DU musst Zelda sein!"
+					},
+					"CoalAndRubies": {
+						"Line01": "Das weiß ich ganz sicher, denn ich war früher einmal",
+						"Line02": "ein Bergmann in der Ebene von Hobel:",
+						"Line03": "Kohle und Rubine bestehen aus derselben Substanz.",
+						"Line04": "Ich glaube, irgendwo in der Nähe gibt es eine Brechanlage.",
+						"Line05": "Äh, geh in Frieden, Kleines. Äh... bist du Eric oder Ian?"
+					},
+					"VaguelyFamiliar": {
+						"Line01": "Vater der Zwillinge: Du kommst mir irgendwie bekannt vor, aber, ähm...",
+						"Line02": "es ist wirklich Zeit für mein Nickerchen.",
+						"Line03": "Bist du Eric oder Ian?"
+					}
+				}
+			},
+			"PlainOfDonora": {
+				"YalzanTheStern": {
+					"Toll10Rubies": {
+						"Line01": "Yalzan der Strenge: Willst du passieren, kostet es 10 Rubine, junge Dame. Nicht weniger."
+					},
+					"Toll20Rubies": {
+						"Line01": "Yalzan der Strenge: Oh, du willst mich dazu zwingen?",
+						"Line02": "Der Preis beträgt jetzt zwanzig Rubine."
+					}
+				},
+				"KronThePegleg":{
+					"EverybodyComesTo": {
+						"Line01": "Kron der Einbeinige: Alle kommen zu Kron dem Einbeinigen. Gute Zeiten!"
+					},
+					"FineItemForSale": {
+						"Line01": "Nun, hier ist etwas Schönes, das ich zu verkaufen habe!"
+					}
+				}
+			}
+		}
+	}
+}

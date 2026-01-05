@@ -44,7 +44,7 @@ if Alpha = 255
 		draw_set_halign(fa_center)
 		draw_set_valign(fa_middle)
 		var FontYOffset = 0
-		if string_lower(Localize.Meta.LanguageNameNative) = "french"
+		if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_ExitMenu) = "true"
 		{
 			draw_set_font(Font_Menu)
 			FontYOffset = 1

@@ -7,19 +7,61 @@
 			"LanguageNameNative": "English", //The name of the language, in your game's native language
 			"LanguageNameLocal": "English",  //The name of the language, in that language
 			"StringsFile": "StringsEN.json", //The name of the JSON file containing strings for the given language
-			"SpritesFolder": "SpritesEN" //The root folder name for localized sprites
+			"SpritesFolder": "SpritesEN", //The root folder name for localized sprites
+			"UseSmallerFont_MainMenu_Play": "false",
+			"UseSmallerFont_MainMenu_Delete": "false",
+			"UseSmallerFont_MainMenu_Settings": "false",
+			"UseSmallerFont_MainMenu_Tutorial": "false",
+			"UseSmallerFont_MainMenu_Exit": "false",
+			"UseSmallerFont_NameEntryMenu_Done": "false",
+			"UseSmallerFont_InventoryMenu_Map": "false",
+			"UseSmallerFont_InventoryMenu_Exit": "false",
+			"UseSmallerFont_ExitMenu": "false"
 		},
 		{ 
 			"LanguageNameNative": "Dutch", 
 			"LanguageNameLocal": "Nederlands", 
 			"StringsFile": "StringsNL.json",
-			"SpritesFolder": "SpritesNL"
+			"SpritesFolder": "SpritesNL",
+			"UseSmallerFont_MainMenu_Play": "false",
+			"UseSmallerFont_MainMenu_Delete": "false",
+			"UseSmallerFont_MainMenu_Settings": "false",
+			"UseSmallerFont_MainMenu_Tutorial": "false",
+			"UseSmallerFont_MainMenu_Exit": "false",
+			"UseSmallerFont_NameEntryMenu_Done": "false",
+			"UseSmallerFont_InventoryMenu_Map": "false",
+			"UseSmallerFont_InventoryMenu_Exit": "false",
+			"UseSmallerFont_ExitMenu": "false"
 		},
 		{ 
 			"LanguageNameNative": "French", 
 			"LanguageNameLocal": "Français", 
 			"StringsFile": "StringsFR.json",
-			"SpritesFolder": "SpritesFR"
+			"SpritesFolder": "SpritesFR",
+			"UseSmallerFont_MainMenu_Play": "false",
+			"UseSmallerFont_MainMenu_Delete": "false",
+			"UseSmallerFont_MainMenu_Settings": "true",
+			"UseSmallerFont_MainMenu_Tutorial": "false",
+			"UseSmallerFont_MainMenu_Exit": "true",
+			"UseSmallerFont_NameEntryMenu_Done": "false",
+			"UseSmallerFont_InventoryMenu_Map": "false",
+			"UseSmallerFont_InventoryMenu_Exit": "true",
+			"UseSmallerFont_ExitMenu": "true"
+		},
+		{ 
+			"LanguageNameNative": "German", 
+			"LanguageNameLocal": "Deutsch", 
+			"StringsFile": "StringsDE.json",
+			"SpritesFolder": "SpritesDE",
+			"UseSmallerFont_MainMenu_Play": "false",
+			"UseSmallerFont_MainMenu_Delete": "false",
+			"UseSmallerFont_MainMenu_Settings": "false",
+			"UseSmallerFont_MainMenu_Tutorial": "true",
+			"UseSmallerFont_MainMenu_Exit": "true",
+			"UseSmallerFont_NameEntryMenu_Done": "true",
+			"UseSmallerFont_InventoryMenu_Map": "true",
+			"UseSmallerFont_InventoryMenu_Exit": "true",
+			"UseSmallerFont_ExitMenu": "true"
 		}
 	]
 }

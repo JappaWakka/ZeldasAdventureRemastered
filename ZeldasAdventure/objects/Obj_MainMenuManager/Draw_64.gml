@@ -129,13 +129,31 @@ if PageIndex = 0 //Main Menu
 			draw_set_font(Font_Menu)
 			
 				//Play
-				draw_text(90,146,UI_MainMenu_Text(3))
+				if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_MainMenu_Play) = "true"
+				{
+					draw_set_font(Font_Menu_Smaller)
+					draw_text(90,147,UI_MainMenu_Text(3))
+					draw_set_font(Font_Menu)
+				}
+				else
+				{
+					draw_text(90,146,UI_MainMenu_Text(3))
+				}
 				
 				//Delete
-				draw_text(90,180,UI_MainMenu_Text(4))
+				if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_MainMenu_Delete) = "true"
+				{
+					draw_set_font(Font_Menu_Smaller)
+					draw_text(90,181,UI_MainMenu_Text(4))
+					draw_set_font(Font_Menu)
+				}
+				else
+				{
+					draw_text(90,180,UI_MainMenu_Text(4))
+				}
 				
 				//Settings
-				if string_lower(Localize.Meta.LanguageNameNative) = "french"
+				if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_MainMenu_Settings) = "true"
 				{
 					draw_set_font(Font_Menu_Smaller)
 					draw_text(194,181,UI_MainMenu_Text(5))
@@ -147,11 +165,20 @@ if PageIndex = 0 //Main Menu
 				}
 				
 				//Tutorial
-				draw_text(296,180,UI_MainMenu_Text(6))
+				if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_MainMenu_Tutorial) = "true"
+				{
+					draw_set_font(Font_Menu_Smaller)
+					draw_text(296,181,UI_MainMenu_Text(6))
+					draw_set_font(Font_Menu)
+				}
+				else
+				{
+					draw_text(296,180,UI_MainMenu_Text(6))
+				}
 				
 			//Fancy Font
 				//Exit
-				if string_lower(Localize.Meta.LanguageNameNative) = "french"
+				if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_MainMenu_Exit) = "true"
 				{
 					draw_set_font(Font_Fancy_Small)
 					draw_text(298,139,UI_MainMenu_Text(7))
@@ -179,7 +206,7 @@ if PageIndex = 0 //Main Menu
 				);
 		}
 }
-else if PageIndex = 5 //Name Input Menu
+else if PageIndex = 5 //Name Entry Menu
 {
 	//Setup some variables
 	var CurrentGrid = Menu_Pages[PageIndex];
@@ -261,10 +288,23 @@ else if PageIndex = 5 //Name Input Menu
 		draw_text(180,54,UI_NameEntryMenu_Text(0))
 	
 	//Draw Done Button Text
+		
+		if string_lower(LanguageData[global.CurrentLanguage].UseSmallerFont_MainMenu_Exit) = "true"
+		{
+			draw_set_font(Font_Fancy_Small)
+			draw_set_color(make_color_rgb(55,23,16))
+			draw_text(314,51,UI_NameEntryMenu_Text(1))
+			draw_text(314,51,UI_NameEntryMenu_Text(1)) // Make it extra thick
+		}
+		else
+		{
+			draw_set_font(Font_Fancy)
+			draw_set_color(make_color_rgb(55,23,16))
+			draw_text(314,50,UI_NameEntryMenu_Text(1))
+			draw_text(314,50,UI_NameEntryMenu_Text(1)) // Make it extra thick
+		}
+		
 		draw_set_font(Font_Fancy)
-		draw_set_color(make_color_rgb(55,23,16))
-		draw_text(314,50,UI_NameEntryMenu_Text(1))
-		draw_text(314,50,UI_NameEntryMenu_Text(1)) // Make it extra thick
 	
 	//Reset Font Properties
 		draw_set_color(c_white)
@@ -434,16 +474,16 @@ else //SettingsMenu
 							case "enter":
 								StringValue =  UI_SettingsMenu_Text(4,16)
 								break;
-							case "arrow up":
+							case "arrow left":
 								StringValue = string_concat(UI_SettingsMenu_Text(4,18)," ",UI_SettingsMenu_Text(4,11))
 								break;
-							case "arrow down":
+							case "arrow right":
 								StringValue = string_concat(UI_SettingsMenu_Text(4,18)," ",UI_SettingsMenu_Text(4,12))
 								break;
-							case "arrow left":
+							case "arrow up":
 								StringValue = string_concat(UI_SettingsMenu_Text(4,18)," ",UI_SettingsMenu_Text(4,13))
 								break;
-							case "arrow right":
+							case "arrow down":
 								StringValue = string_concat(UI_SettingsMenu_Text(4,18)," ",UI_SettingsMenu_Text(4,14))
 								break;
 						}
