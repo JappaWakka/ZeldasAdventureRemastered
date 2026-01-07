@@ -297,19 +297,19 @@
 						"Line02": "Sit a moment.",
 						"Line03": "It is said those who go deep into the earth learn to overcome the sins of greed.",
 						"Line04": "That may be true, but I do know this:",
-						"Line05": "a candle and a silver key can bring you bliss.",
+						"Line05": "a Candle and a silver key can bring you bliss.",
 						"Line06": "Hurry on now, lass, time's a wasting!"
 					},
 					"DefeatedSoldier": {
 						"Line01": "Defeated Soldier: I am so exhausted from my travels.",
-						"Line02": "If only I had known to cross the chasm rift with a ladder,",
+						"Line02": "If only I had known to cross the chasm rift with a Ladder,",
 						"Line03": "it would have saved me months!"
 					},
 					"KrebbTheWeary": {
 						"Line01": "Krebb the Weary: Why spend a whole lifetime being defeated like me?",
 						"Line02": "Get it over with. Quit, go home, give up.",
 						"Line03": "You're patient. I can see you're not one to surrender.",
-						"Line04": "All right, take this dagger from me.",
+						"Line04": "All right, take this Dagger from me.",
 						"Line05": "It may do you more service than it ever did me."
 					}
 				}
@@ -642,7 +642,7 @@
 						"Line02": "Don't touch anything!",
 						"Line03": "People steal me blind; I know you all hate me!",
 						"Line04": "What did I ever do to any of you!?",
-						"Line05": "I give an honest bargain, I grind your coal into Rubies,",
+						"Line05": "I give an honest bargain, I grind your Coal into Rubies,",
 						"Line06": "I stay open late and work my fingers to the bone.",
 						"Line07": "Do any of you appreciate it? No!"
 					},
@@ -650,7 +650,7 @@
 						"Line01": "Smithy: Choose your item and hurry, the world is full of thieves.",
 					},
 					"CongratsOnFindingCoal": {
-						"Line01": "Smithy: Congratulations on finding such a fine piece of coal!",
+						"Line01": "Smithy: Congratulations on finding such a fine piece of Coal!",
 						"Line02": "After Wimbich taxes - my commission, of course...",
 						"Line03": "*cough* that leaves, umm..."
 					}

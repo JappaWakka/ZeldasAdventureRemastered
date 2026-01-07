@@ -90,7 +90,6 @@ if IsPlayerOnSameTile() = true
 						break
 					case 2:
 						Register_Add("EricAndIan_Dialogue")
-						instance_destroy()
 						break
 				}
 				if Register_Registered("EricAndIan_Dialogue") = true

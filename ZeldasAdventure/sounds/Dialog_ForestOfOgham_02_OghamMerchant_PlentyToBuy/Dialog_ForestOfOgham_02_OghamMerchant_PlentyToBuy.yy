@@ -8,7 +8,7 @@
   "preload": false,
   "bitRate": 192,
   "sampleRate": 22050,
-  "type": 1,
+  "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "AudioGroup_Dialogue",

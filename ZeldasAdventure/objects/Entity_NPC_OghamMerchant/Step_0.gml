@@ -1,4 +1,3 @@
-
 if IsPlayerOnSameTile() = true
 {
 	if Register_Registered("OghamMerchant_Intro") = false
@@ -15,7 +14,7 @@ if IsPlayerOnSameTile() = true
 		}
 		
 		Register_Add("OghamMerchant_Intro",true)
-	}			
+	}
 	
 	if global.CurrentDialogue_Asset != Dialog_None
 	{

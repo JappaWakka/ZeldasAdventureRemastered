@@ -305,19 +305,19 @@
 						"Line03": "Er wordt gezegd dat degenen die diep de aarde ingaan",
 						"Line04": "leren om de zonden van hebzucht te overwinnen.",
 						"Line05": "Dat zou waar kunnen zijn, maar ik weet wel dit:",
-						"Line06": "een kaars en een zilveren sleutel kunnen je geluk brengen.",
+						"Line06": "een Kaars en een zilveren sleutel kunnen je geluk brengen.",
 						"Line07": "Schiet op, meisje, de tijd dringt!"
 					},
 					"DefeatedSoldier": {
 						"Line01": "Verslagen Soldaat: Ik ben zo uitgeput van mijn reizen.",
-						"Line02": "Had ik maar geweten dat ik de kloof met een ladder kon oversteken,",
+						"Line02": "Had ik maar geweten dat ik de kloof met een Ladder kon oversteken,",
 						"Line03": "dat had me maanden bespaard!"
 					},
 					"KrebbTheWeary": {
 						"Line01": "Krebb de Vermoeide: Waarom een heel leven lang verslagen zijn zoals ik?",
 						"Line02": "Maak er een einde aan. Stop, ga naar huis, geef het op.",
 						"Line03": "Je bent geduldig. Ik zie dat je je niet zomaar overgeeft.",
-						"Line04": "Oké, neem deze dolk van me af.",
+						"Line04": "Oké, neem deze Dolk van me af.",
 						"Line05": "Die zal je vast meer helpen dan het mij ooit heeft gedaan."
 					}
 				}
@@ -494,7 +494,7 @@
 					},
 					"PeculiarLittleTown": {
 						"Line01": "Alice: Great Wimbich is zo'n eigenaardig dorpje.",
-						"Line02": "De winkels in de Bovenstraat hebben alles wat je maar kunt wensen",
+						"Line02": "De winkels in de Hoofdstraat hebben alles wat je maar kunt wensen",
 						"Line03": "en als je het daar niet kunt vinden,",
 						"Line04": "kom je het vast en zeker tegen op het marktplein."
 					},
@@ -562,105 +562,105 @@
 				},
 				"Lounger": {
 					"HiThere": {
-						"Line01": "Lounger: Hi there! Don't worry about the dog, he won't bite.",
-						"Line02": "I wish he did bite, then there'd be a little excitement here in Great Wimbich.",
-						"Line03": "Nothing ever happens here!",
-						"Line04": "When people do come, they're even more boring.",
-						"Line05": "Everybody's dull."
+						"Line01": "Luilak: Hallo daar! Maak je geen zorgen over de hond, hij bijt niet.",
+						"Line02": "Ik wou dat hij wel beet, dan zou er tenminste wat spanning zijn hier in Great Wimbich.",
+						"Line03": "Er gebeurt hier nooit iets!",
+						"Line04": "Als er dan eindelijk mensen komen, zijn ze nog saaier.",
+						"Line05": "Iedereen is suf."
 					},
 					"DontWannaSeeYou": {
-						"Line01": "Lounger: Ugh... I don't want to see you again.",
+						"Line01": "Luilak: Bah... Ik wil jou niet meer zien.",
 					},
 					"GoAway": {
-						"Line01": "Lounger: Why don't you go away and be boring someplace else?",
-						"Line02": "Good riddance."
+						"Line01": "Luilak: Waarom ga je niet weg en ga je ergens anders saai zijn?",
+						"Line02": "Dat zou een opluchting zijn."
 					}
 				},
 				"GeneralShopkeeper": {
 					"HelloLittleOne": {
-						"Line01": "Shopkeeper: Hello, little one! Heh!",
-						"Line02": "I hope I can be of help to you.",
-						"Line03": "Did you see my dog out on Upper Street?",
-						"Line04": "How did he smell?",
-						"Line05": "Knave: With his nose, of course!",
-						"Line06": "*laughter from both men*"
+						"Line01": "Winkelier: Hallo, kleintje! Heh!",
+						"Line02": "Ik hoop dat ik je van dienst kan zijn.",
+						"Line03": "Heb je mijn hond gezien op de Hoofdstraat?",
+						"Line04": "Hoe rook hij?",
+						"Line05": "Nar: Met zijn neus natuurlijk!",
+						"Line06": "*gelach van beide mannen*"
 					},
 					"GoodsOnTheTable": {
-						"Line01": "Shopkeeper: You see my goods on the table?",
-						"Line02": "You may purchase whatever you wish.",
-						"Line03": "There's even a bone here that my dog would love!"
+						"Line01": "Winkelier: Zie je mijn waren op de tafel?",
+						"Line02": "Je mag kopen wat je maar wilt.",
+						"Line03": "Er ligt hier zelfs een bot dat mijn hond heerlijk zou vinden!"
 					},
 					"HowAreYou": {
-						"Line01": "Shopkeeper: Ooooooh! Heh!",
-						"Line02": "How are you? Ha ha ha!",
-						"Line03": "May I be of some service?"
+						"Line01": "Winkelier: Ooooooh! Heh!",
+						"Line02": "Hoe gaat het met je? Ha ha ha!",
+						"Line03": "Kan ik je ergens mee van dienst zijn?"
 					},
 					"ThatWasSmart": {
-						"Line01": "Shopkeeper: Oooooo! *laughter*",
-						"Line02": "That was smart!",
-						"Line03": "Come again, little one! Come again."
+						"Line01": "Winkelier: Oeeeee! *gelach*",
+						"Line02": "Dat was slim van je!",
+						"Line03": "Kom nog eens terug, kleintje! Tot ziens."
 					}
 				},
 				"Knave": {
 					"ShrineTakenLightly": {
-						"Line01": "Knave: Is a shrine a thing to be taken lightly? *laughter*",
-						"Line02": "No, and a candle is needed to light a shrine! *laughter*"
+						"Line01": "Nar: Is een tempel iets om lichtvaardig op te vatten? *gelach*",
+						"Line02": "Nee, en je hebt een kaars nodig om een tempel te verlichten! *gelach*"
 					},
 					"JokeToPassTime": {
-						"Line01": "Knave: *nervous laughter* Oh-hoh-hooo!",
-						"Line02": "Oooo, we may joke to pass the time, princess, but...",
-						"Line03": "we are all troubled about the future of Tolemac.",
-						"Line04": "You must seek out the tablets and save us! *nervous laughter*"
+						"Line01": "Nar: *nerveus gelach* Oh-hoh-hoee!",
+						"Line02": "Oeee, we maken misschien grapjes om de tijd te doden, Prinses, maar...",
+						"Line03": "we maken ons allemaal zorgen over de toekomst van Tolemac.",
+						"Line04": "Je moet de tabletten zoeken en ons redden! *nerveus gelach*"
 					},
 					"WatchOutForGanon": {
-						"Line01": "Knave: *laughing* Oo-hooo!",
-						"Line02": "Watch out for that Ganon, Zelda!",
-						"Line03": "Ooooooooo!"
+						"Line01": "Nar: *gelach* Oe-hoee!",
+						"Line02": "Pas op voor die Ganon, Zelda!",
+						"Line03": "Oeeeeeeeee!"
 					}
 				},
 				"MadameKriggle": {
 					"ApproachedAtLast": {
-						"Line01": "Madame Kriggle: At last!",
-						"Line02": "Madame Kriggle is approached by an innocent",
-						"Line03": "who wishes to grow in the use of magic and spells.",
-						"Line04": "My old friend Shurmak has told me of your coming;",
-						"Line05": "I have awaited you many moons and suns.",
-						"Line06": "It is important to remember",
-						"Line07": "that magic adornments will defend thee from many beings",
-						"Line08": "who will attack you with magic.",
-						"Line09": "You may purchase my Turquoise Ring",
-						"Line10": "or my Jade Amulet to raise your defenses."
+						"Line01": "Madame Kriggle: Eindelijk!",
+						"Line02": "Madame Kriggle wordt benaderd door een onschuldige",
+						"Line03": "die zich wil verdiepen in het gebruik van magie en spreuken.",
+						"Line04": "Mijn oude vriendin Shurmak heeft me verteld dat je zou komen;",
+						"Line05": "Ik heb vele manen en zonnen op je gewacht.",
+						"Line06": "Het is belangrijk om te onthouden",
+						"Line07": "dat magische sieraden je zullen beschermen tegen vele wezens",
+						"Line08": "die jou met magie zullen aanvallen.",
+						"Line09": "Je kunt mijn Turquoise Ring",
+						"Line10": "of mijn Jade Amulet kopen om uw verdediging te versterken."
 					},
 					"TouchWhatYouWantToUse": {
-						"Line01": "Madame Kriggle: Touch what you wish to use,",
-						"Line02": "and leave me your Rubies.",
-						"Line03": "I promise you will be pleased."
+						"Line01": "Madame Kriggle: Raak aan wat je wilt gebruiken",
+						"Line02": "en laat jouw Robijnen bij mij achter.",
+						"Line03": "Ik beloof je dat je tevreden zult zijn.."
 					},
 					"WonderfulToSeeYou": {
-						"Line01": "Madame Kriggle: How wonderful to see you, my dear!"
+						"Line01": "Madame Kriggle: Wat fijn om je te zien, lieve schat!"
 					},
 					"WiseChoice": {
-						"Line01": "Madame Kriggle: A wise choice for setting out! Oh-hoh...",
-						"Line02": "Come and see me again!"
+						"Line01": "Madame Kriggle: Een verstandige keuze om mee te nemen! Oh-hoh...",
+						"Line02": "Kom me gerust nog eens opzoeken!"
 					}
 				},
 				"Smithy": {
 					"WhoGoesThere": {
-						"Line01": "Smithy: Who goes there!? Oh, it's a young girl.",
-						"Line02": "Don't touch anything!",
-						"Line03": "People steal me blind; I know you all hate me!",
-						"Line04": "What did I ever do to any of you!?",
-						"Line05": "I give an honest bargain, I grind your coal into Rubies,",
-						"Line06": "I stay open late and work my fingers to the bone.",
-						"Line07": "Do any of you appreciate it? No!"
+						"Line01": "Smid: Wie is daar!? Oh, het is een jong meisje.",
+						"Line02": "Raak niets aan!",
+						"Line03": "Mensen bestelen me; ik weet dat jullie me allemaal haten!",
+						"Line04": "Wat heb ik jullie ooit aangedaan!?",
+						"Line05": "Ik geef jullie een eerlijke deal, ik vermaal jullie Steenkool tot Robijnen",
+						"Line06": "Ik blijf laat open en werk me uit de naad",
+						"Line07": "Waardeert iemand van jullie dat? Nee!"
 					},
 					"ChooseItemAndHurry": {
-						"Line01": "Smithy: Choose your item and hurry, the world is full of thieves.",
+						"Line01": "Smithy: Kies je voorwerp en schiet op, de wereld zit vol dieven.",
 					},
 					"CongratsOnFindingCoal": {
-						"Line01": "Smithy: Congratulations on finding such a fine piece of coal!",
-						"Line02": "After Wimbich taxes - my commission, of course...",
-						"Line03": "*cough* that leaves, umm..."
+						"Line01": "Smithy: Gefeliciteerd met het vinden van zo'n mooi stuk Steenkool!",
+						"Line02": "Na de belastingen van Wimbich - en mijn commissie natuurlijk...",
+						"Line03": "*kuch* blijft er nog over, eh..."
 					}
 				}
 			},

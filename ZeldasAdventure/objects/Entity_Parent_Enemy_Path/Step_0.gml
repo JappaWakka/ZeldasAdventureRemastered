@@ -119,7 +119,7 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 						{
 							ReturnPointPosition = [x,y];
 						}
-					}				
+					}
 					
 					///Reduce HitPoints, play damage sound
 					var ReceivedDamage

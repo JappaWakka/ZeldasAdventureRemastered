@@ -642,7 +642,7 @@
 						"Line02": "Don't touch anything!",
 						"Line03": "People steal me blind; I know you all hate me!",
 						"Line04": "What did I ever do to any of you!?",
-						"Line05": "I give an honest bargain, I grind your coal into Rubies,",
+						"Line05": "I give an honest bargain, I grind your Coal into Rubies,",
 						"Line06": "I stay open late and work my fingers to the bone.",
 						"Line07": "Do any of you appreciate it? No!"
 					},
@@ -650,7 +650,7 @@
 						"Line01": "Smithy: Choose your item and hurry, the world is full of thieves.",
 					},
 					"CongratsOnFindingCoal": {
-						"Line01": "Smithy: Congratulations on finding such a fine piece of coal!",
+						"Line01": "Smithy: Congratulations on finding such a fine piece of Coal!",
 						"Line02": "After Wimbich taxes - my commission, of course...",
 						"Line03": "*cough* that leaves, umm..."
 					}

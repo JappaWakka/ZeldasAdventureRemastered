@@ -11,8 +11,8 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "AudioGroup_Dialogue",
+    "path": "audiogroups/AudioGroup_Dialogue",
   },
   "soundFile": "Dialog_PlainOfDonora_02_KronThePegleg_EverybodyComesTo.ogg",
   "duration": 3.093333,
