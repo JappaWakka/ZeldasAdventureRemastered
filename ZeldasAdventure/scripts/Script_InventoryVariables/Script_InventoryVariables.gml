@@ -114,7 +114,7 @@ enum Spells
 	Pyros,
 	RoarStick,
 	ShortAxe,
-	SapphireRing,
+	TurquoiseRing,
 	Boomerang,
 	//Cut Content
 	Hourglass,
@@ -180,7 +180,7 @@ function CastCost(Item)
 		case Spells.ShortAxe :
 			Cost = 2;
 			break;
-		case Spells.SapphireRing :
+		case Spells.TurquoiseRing :
 			Cost = 26;
 			break;
 		case Spells.Boomerang :
