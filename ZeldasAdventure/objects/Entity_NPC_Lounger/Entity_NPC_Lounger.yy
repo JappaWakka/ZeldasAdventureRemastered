@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_NPC_Farmer",
+  "name": "Entity_NPC_Lounger",
   "spriteId": {
-    "name": "Sprite_NPC_Farmer_South",
-    "path": "sprites/Sprite_NPC_Farmer_South/Sprite_NPC_Farmer_South.yy",
+    "name": "Sprite_NPC_Lounger_South",
+    "path": "sprites/Sprite_NPC_Lounger_South/Sprite_NPC_Lounger_South.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "MeadowOfSkotness",
-    "path": "folders/Objects/Entities/NPCs/MeadowOfSkotness.yy",
+    "name": "GreatWimbich",
+    "path": "folders/Objects/Entities/NPCs/GreatWimbich.yy",
   },
 }

@@ -20,7 +20,6 @@ function UseSpell_JadeRing()
 				break;
 		}
 		var JadeRingProjectile = instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_JadeRing)
-		JadeRingProjectile.direction = Facing
 		audio_play_sound_relative(SFX_Use_JadeRing,600,false)
 		global.CanUseSpell = true
 	}

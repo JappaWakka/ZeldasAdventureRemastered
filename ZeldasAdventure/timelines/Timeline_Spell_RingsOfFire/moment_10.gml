@@ -15,5 +15,4 @@ switch Entity_Parent_Projectile_Player_RingsOfFire.Facing
 		yOffset = 16
 		break;
 }
-var RingOfFireProjectile2 = instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_RingsOfFire)
-RingOfFireProjectile2.direction = Entity_Parent_Projectile_Player_RingsOfFire.Facing
+instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_RingsOfFire)

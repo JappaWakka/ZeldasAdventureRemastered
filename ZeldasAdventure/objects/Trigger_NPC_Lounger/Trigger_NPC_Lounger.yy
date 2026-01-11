@@ -1,19 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_NPC_Farmer",
+  "name": "Trigger_NPC_Lounger",
   "spriteId": {
-    "name": "Sprite_NPC_Farmer_South",
-    "path": "sprites/Sprite_NPC_Farmer_South/Sprite_NPC_Farmer_South.yy",
+    "name": "Sprite_Cursor",
+    "path": "sprites/Sprite_Cursor/Sprite_Cursor.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Entity_Parent_NPC",
-    "path": "objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",
+    "name": "Parent_DialogueTrigger",
+    "path": "objects/Parent_DialogueTrigger/Parent_DialogueTrigger.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,11 +29,14 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"HasSpoken","varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+  ],
   "overriddenProperties": [],
   "parent": {
-    "name": "MeadowOfSkotness",
-    "path": "folders/Objects/Entities/NPCs/MeadowOfSkotness.yy",
+    "name": "GreatWimbich",
+    "path": "folders/Objects/DialogueTriggers/GreatWimbich.yy",
   },
 }
