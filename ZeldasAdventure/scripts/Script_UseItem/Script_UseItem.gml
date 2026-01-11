@@ -98,6 +98,18 @@ function UseItem_Spell()
 			case Spells.Pyros:
 				UseSpell_Pyros()
 				break;
+			case Spells.TurquoiseRing:
+				UseSpell_TurquoiseRing()
+				break;
+			case Spells.JadeAmulet:
+				UseSpell_JadeAmulet()
+				break;
+			case Spells.ShortAxe:
+				UseSpell_ShortAxe()
+				break;
+			case Spells.RingsOfFire:
+				UseSpell_RingsOfFire()
+				break;
 		}
 			
 		if global.CanUseSpell = true

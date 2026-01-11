@@ -12,7 +12,7 @@ if IsPlayerOnSameTile() = true
 		{
 			global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_HelloLittleOne
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-		Register_Add("GeneralShopkeeper_Intro",true)
+			Register_Add("GeneralShopkeeper_Intro",true)
 		}
 		
 	}
@@ -20,7 +20,7 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.RemasteredMode = true and Register_Registered("LeftGeneralStore") = true
 		{
-			if Register_Registered("PurchasedBone") = true
+			if Register_Registered("PurchasedBone") = false
 			{
 				if Register_Registered("GeneralShopkeeper_GoodsOnTable") = false
 				{

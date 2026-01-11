@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "Sprite_Projectile_Spell_JadeRing_NorthSouth",
-  "bboxMode": 2,
+  "bboxMode": 1,
   "collisionKind": 1,
   "type": 0,
   "origin": 4,

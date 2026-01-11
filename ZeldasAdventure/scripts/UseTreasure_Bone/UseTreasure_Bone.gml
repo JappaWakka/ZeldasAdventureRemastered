@@ -2,7 +2,7 @@ function UseTreasure_Bone()
 {
 	if global.CurrentTile.x = 10 && global.CurrentTile.y = 12
 	{
-		Item_Remove(Treasures.EmptyPitcher,0);
+		Item_Remove(Treasures.Bone,0);
 		if global.RemasteredMode = true
 		{
 			global.CurrentTreasure = -1

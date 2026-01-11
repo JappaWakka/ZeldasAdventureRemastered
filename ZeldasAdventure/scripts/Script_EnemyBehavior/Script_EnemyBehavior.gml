@@ -4,11 +4,11 @@ function Script_AggroRange()
 	{
 		if Entity_Player.x < self.x
 		{
-			if self.x - Entity_Player.x <= 120
+			if self.x - Entity_Player.x <= 100
 			{
 				if Entity_Player.y < self.y
 				{
-					if self.y - Entity_Player.y <= 80
+					if self.y - Entity_Player.y <= 60
 					{
 						ChangeDelay_Min = 0.5 * FrameRate
 						ChangeDelay_Max = 1 * FrameRate
@@ -17,7 +17,7 @@ function Script_AggroRange()
 				}
 				else
 				{
-					if Entity_Player.y - self.y <= 80
+					if Entity_Player.y - self.y <= 60
 					{
 						ChangeDelay_Min = 0.5 * FrameRate
 						ChangeDelay_Max = 1 * FrameRate
@@ -28,11 +28,11 @@ function Script_AggroRange()
 		}
 		else
 		{
-			if Entity_Player.x - self.x <= 120
+			if Entity_Player.x - self.x <= 100
 			{
 				if Entity_Player.y < self.y
 				{
-					if self.y - Entity_Player.y <= 80
+					if self.y - Entity_Player.y <= 60
 					{
 						ChangeDelay_Min = 0.5 * FrameRate
 						ChangeDelay_Max = 1 * FrameRate
@@ -41,7 +41,7 @@ function Script_AggroRange()
 				}
 				else
 				{
-					if Entity_Player.y - self.y <= 80
+					if Entity_Player.y - self.y <= 60
 					{
 						ChangeDelay_Min = 0.5 * FrameRate
 						ChangeDelay_Max = 1 * FrameRate

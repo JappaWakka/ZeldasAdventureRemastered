@@ -39,7 +39,7 @@
     "name": "Sprite_Projectile_Spell_Boomerang",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 12.0,
+    "playbackSpeed": 7.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

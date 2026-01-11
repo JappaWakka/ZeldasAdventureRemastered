@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "Entity_Projectile_Player_Pyros",
   "spriteId": {
-    "name": "Sprite_Enemy_TallFire",
-    "path": "sprites/Sprite_Enemy_TallFire/Sprite_Enemy_TallFire.yy",
+    "name": "Sprite_Projectile_Spell_Pyros",
+    "path": "sprites/Sprite_Projectile_Spell_Pyros/Sprite_Projectile_Spell_Pyros.yy",
   },
   "solid": false,
   "visible": true,

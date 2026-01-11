@@ -10,8 +10,8 @@
   "visible": true,
   "managed": true,
   "spriteMaskId": {
-    "name": "Enemy_Collision_Solid_64px",
-    "path": "sprites/Enemy_Collision_Solid_64px/Enemy_Collision_Solid_64px.yy",
+    "name": "NPC_Collision_Solid_64px",
+    "path": "sprites/NPC_Collision_Solid_64px/NPC_Collision_Solid_64px.yy",
   },
   "persistent": false,
   "parentObjectId": {
@@ -34,6 +34,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Parent_NPCSolid","path":"objects/Parent_NPCSolid/Parent_NPCSolid.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [
