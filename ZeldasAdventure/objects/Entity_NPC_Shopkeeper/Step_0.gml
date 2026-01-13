@@ -6,14 +6,14 @@ if IsPlayerOnSameTile() = true
 		{
 			global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_HowAreYou
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			Register_Add("GeneralShopkeeper_Intro")
+			Register_Add("GeneralShopkeeper_HowAreYou",true)
 		}
 		else
 		{
 			global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_HelloLittleOne
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			Register_Add("GeneralShopkeeper_Intro",true)
 		}
+		Register_Add("GeneralShopkeeper_Intro",true)
 		
 	}
 	else

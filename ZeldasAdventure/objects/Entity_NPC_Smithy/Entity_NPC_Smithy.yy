@@ -1,17 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Pickup_Firestorm",
+  "name": "Entity_NPC_Smithy",
   "spriteId": {
-    "name": "Sprite_Pickup_Firestorm",
-    "path": "sprites/Sprite_Pickup_Firestorm/Sprite_Pickup_Firestorm.yy",
+    "name": "Sprite_NPC_Smithy",
+    "path": "sprites/Sprite_NPC_Smithy/Sprite_NPC_Smithy.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Entity_Parent_NPC",
+    "path": "objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,15 +28,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Entity_Player","path":"objects/Entity_Player/Entity_Player.yy",},},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":8,"eventType":7,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Spells",
-    "path": "folders/Objects/Entities/Pickups/Spells.yy",
+    "name": "GreatWimbich",
+    "path": "folders/Objects/Entities/NPCs/GreatWimbich.yy",
   },
 }

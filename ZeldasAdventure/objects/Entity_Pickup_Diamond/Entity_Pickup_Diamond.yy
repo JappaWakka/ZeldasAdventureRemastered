@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Pickup_Firestorm",
+  "name": "Entity_Pickup_Diamond",
   "spriteId": {
-    "name": "Sprite_Pickup_Firestorm",
-    "path": "sprites/Sprite_Pickup_Firestorm/Sprite_Pickup_Firestorm.yy",
+    "name": "Sprite_Pickup_Diamond",
+    "path": "sprites/Sprite_Pickup_Diamond/Sprite_Pickup_Diamond.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Spells",
-    "path": "folders/Objects/Entities/Pickups/Spells.yy",
+    "name": "Treasure",
+    "path": "folders/Objects/Entities/Pickups/Treasure.yy",
   },
 }

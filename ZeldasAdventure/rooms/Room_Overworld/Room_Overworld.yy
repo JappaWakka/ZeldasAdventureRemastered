@@ -425,6 +425,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4B015434","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_ShopkeeperDog","path":"objects/Entity_NPC_ShopkeeperDog/Entity_NPC_ShopkeeperDog.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3968.0,"y":3072.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5B60483","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_MadameKriggle","path":"objects/Entity_NPC_MadameKriggle/Entity_NPC_MadameKriggle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3265.0,"y":2738.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_DB1E675","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_Lounger","path":"objects/Entity_NPC_Lounger/Entity_NPC_Lounger.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4012.0,"y":3021.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14ACE0AB","properties":[],"isDnd":false,"objectId":{"name":"Entity_NPC_Smithy","path":"objects/Entity_NPC_Smithy/Entity_NPC_Smithy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3746.0,"y":2779.0,},
       ],"visible":true,"depth":101700,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":4,"gridY":4,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"SpecialCollisions","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_465A723E","properties":[],"isDnd":false,"objectId":{"name":"UseItem_PlainOfAndor_01_RedBoots","path":"objects/UseItem_PlainOfAndor_01_RedBoots/UseItem_PlainOfAndor_01_RedBoots.yy",},"inheritCode":false,"hasCreationCode":false,"colour":2147483647,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1536.0,"y":4560.0,},
@@ -1651,6 +1652,7 @@
     {"name":"inst_5B60483","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_710092AF","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_DB1E675","path":"rooms/Room_Overworld/Room_Overworld.yy",},
+    {"name":"inst_14ACE0AB","path":"rooms/Room_Overworld/Room_Overworld.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

@@ -1,8 +1,15 @@
-if Item_FindIndex(Spells.Wand,1) = -1
-{
-	visible = true;
+if IsPlayerOnSameTile() = true
+{	
+	if Item_FindIndex(Spells.Wand,1) = -1
+	{
+		visible = true;
+	}
+	else
+	{
+		instance_destroy()
+	}
 }
 else
 {
-	instance_destroy()
+	visible = false
 }
