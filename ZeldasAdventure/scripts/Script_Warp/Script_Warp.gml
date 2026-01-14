@@ -125,6 +125,10 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		{
 			global.CompassWarp = ""
 		}
+		if global.HarpWarp != ""
+		{
+			global.HarpWarp = ""
+		}
 	}
 }
 
@@ -184,8 +188,15 @@ global.WarpLocations =
 	
 	ShrineOfFire_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
 	
-	GannonsGauntlet : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
-		
+	Gauntlet_Llort : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	Gauntlet_Pasquinade : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	Gauntlet_Avianna : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	Gauntlet_Malmort : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	Gauntlet_Agwanda : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	Gauntlet_Ursore : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	Gauntlet_Warbane : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	Gauntlet_Ganon : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	
 }
 
 function WarpToLocation(Name)
@@ -500,12 +511,75 @@ function WarpToLocation(Name)
 			break;
 				
 		//Gauntlet
-		case "Spawn_Gauntlet":
+		case "Gauntlet_Llort":
 			WarpTo(
-			global.WarpLocations.GannonsGauntlet.TileX,
-			global.WarpLocations.GannonsGauntlet.TileY,
-			global.WarpLocations.GannonsGauntlet.PlayerX,
-			global.WarpLocations.GannonsGauntlet.PlayerY
+			global.WarpLocations.Gauntlet_Llort.TileX,
+			global.WarpLocations.Gauntlet_Llort.TileY,
+			global.WarpLocations.Gauntlet_Llort.PlayerX,
+			global.WarpLocations.Gauntlet_Llort.PlayerY
+			)
+			break;
+			
+		case "Gauntlet_Pasquinade":
+			WarpTo(
+			global.WarpLocations.Gauntlet_Pasquinade.TileX,
+			global.WarpLocations.Gauntlet_Pasquinade.TileY,
+			global.WarpLocations.Gauntlet_Pasquinade.PlayerX,
+			global.WarpLocations.Gauntlet_Pasquinade.PlayerY
+			)
+			break;
+			
+		case "Gauntlet_Avianna":
+			WarpTo(
+			global.WarpLocations.Gauntlet_Avianna.TileX,
+			global.WarpLocations.Gauntlet_Avianna.TileY,
+			global.WarpLocations.Gauntlet_Avianna.PlayerX,
+			global.WarpLocations.Gauntlet_Avianna.PlayerY
+			)
+			break;
+			
+		case "Gauntlet_Malmort":
+			WarpTo(
+			global.WarpLocations.Gauntlet_Malmort.TileX,
+			global.WarpLocations.Gauntlet_Malmort.TileY,
+			global.WarpLocations.Gauntlet_Malmort.PlayerX,
+			global.WarpLocations.Gauntlet_Malmort.PlayerY
+			)
+			break;
+			
+		case "Gauntlet_Agwanda":
+			WarpTo(
+			global.WarpLocations.Gauntlet_Agwanda.TileX,
+			global.WarpLocations.Gauntlet_Agwanda.TileY,
+			global.WarpLocations.Gauntlet_Agwanda.PlayerX,
+			global.WarpLocations.Gauntlet_Agwanda.PlayerY
+			)
+			break;
+			
+		case "Gauntlet_Ursore":
+			WarpTo(
+			global.WarpLocations.Gauntlet_Ursore.TileX,
+			global.WarpLocations.Gauntlet_Ursore.TileY,
+			global.WarpLocations.Gauntlet_Ursore.PlayerX,
+			global.WarpLocations.Gauntlet_Ursore.PlayerY
+			)
+			break;
+			
+		case "Gauntlet_Warbane":
+			WarpTo(
+			global.WarpLocations.Gauntlet_Warbane.TileX,
+			global.WarpLocations.Gauntlet_Warbane.TileY,
+			global.WarpLocations.Gauntlet_Warbane.PlayerX,
+			global.WarpLocations.Gauntlet_Warbane.PlayerY
+			)
+			break;
+			
+		case "Gauntlet_Ganon":
+			WarpTo(
+			global.WarpLocations.Gauntlet_Ganon.TileX,
+			global.WarpLocations.Gauntlet_Ganon.TileY,
+			global.WarpLocations.Gauntlet_Ganon.PlayerX,
+			global.WarpLocations.Gauntlet_Ganon.PlayerY
 			)
 			break;
 			

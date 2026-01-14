@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "AudioGroup_SoundFX",
+    "path": "audiogroups/AudioGroup_SoundFX",
   },
   "soundFile": "SFX_Use_ShortAxe.ogg",
   "duration": 0.201451,

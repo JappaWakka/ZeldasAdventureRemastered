@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "AudioGroup_Dialogue",
+    "path": "audiogroups/AudioGroup_Dialogue",
   },
   "soundFile": "Dialog_GreatWimbich_MadameKriggle_ApproachedAtLast.ogg",
   "duration": 29.774975,

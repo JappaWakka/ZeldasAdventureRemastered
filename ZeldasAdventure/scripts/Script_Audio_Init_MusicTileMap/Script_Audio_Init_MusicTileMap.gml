@@ -250,14 +250,14 @@ function Audio_Init_MusicTileMap()
 	global.Music[26][15] = "Canyon_Normal";
 	
 	//Y = 16
-	global.Music[0][16] = "Gauntlet_1_Llort";
-	global.Music[1][16] = "Gauntlet_2_Pasquinade";
-	global.Music[2][15] = "Gauntlet_3_Avianna";
-	global.Music[3][15] = "Gauntlet_4_Malmort";
-	global.Music[4][16] = "Gauntlet_5_Agwanda";
-	global.Music[5][16] = "Gauntlet_6_Ursore"; //Unused
-	global.Music[6][16] = "Gauntlet_7_Warbane";
-	global.Music[7][16] = "Gauntlet_8_Gannon";
+	global.Music[0][16] = "Gauntlet_Llort";
+	global.Music[1][16] = "Gauntlet_Pasquinade";
+	global.Music[2][15] = "Gauntlet_Avianna";
+	global.Music[3][15] = "Gauntlet_Malmort";
+	global.Music[4][16] = "Gauntlet_Agwanda";
+	global.Music[5][16] = "Gauntlet_Ursore"; //Unused
+	global.Music[6][16] = "Gauntlet_Warbane";
+	global.Music[7][16] = "Gauntlet_Ganon";
 	
 	global.Music[9][16] = "Plain_Stream";
 	global.Music[10][16] = "Plain_Stream";

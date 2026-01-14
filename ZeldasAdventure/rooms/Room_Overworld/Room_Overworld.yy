@@ -196,6 +196,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D5BC5A9","properties":[],"isDnd":false,"objectId":{"name":"Entity_Pickup_TurquoiseRing","path":"objects/Entity_Pickup_TurquoiseRing/Entity_Pickup_TurquoiseRing.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3188.0,"y":2763.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6412F35B","properties":[],"isDnd":false,"objectId":{"name":"Entity_Pickup_JadeAmulet","path":"objects/Entity_Pickup_JadeAmulet/Entity_Pickup_JadeAmulet.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3329.0,"y":2761.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_EFD70D7","properties":[],"isDnd":false,"objectId":{"name":"Entity_Pickup_RingsOfFire","path":"objects/Entity_Pickup_RingsOfFire/Entity_Pickup_RingsOfFire.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3391.0,"y":2805.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_90BE1","properties":[],"isDnd":false,"objectId":{"name":"Entity_Pickup_Harp","path":"objects/Entity_Pickup_Harp/Entity_Pickup_Harp.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4808.0,"y":4916.0,},
       ],"visible":true,"depth":101300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Foreground_Opaque","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_36A4B75E","spriteId":{"name":"PlainOfAndor_MobilinsHeadInn_Above_Opaque","path":"sprites/PlainOfAndor_MobilinsHeadInn_Above_Opaque/PlainOfAndor_MobilinsHeadInn_Above_Opaque.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":3840.0,"y":5040.0,},
@@ -1653,6 +1654,7 @@
     {"name":"inst_710092AF","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_DB1E675","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_14ACE0AB","path":"rooms/Room_Overworld/Room_Overworld.yy",},
+    {"name":"inst_90BE1","path":"rooms/Room_Overworld/Room_Overworld.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

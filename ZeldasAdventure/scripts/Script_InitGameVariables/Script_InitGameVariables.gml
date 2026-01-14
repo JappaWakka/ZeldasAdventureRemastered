@@ -18,6 +18,7 @@ function InitGameVariables()
 	
 	global.EnemyCannotTouchEdge = false
 	global.CompassWarp = ""
+	global.HarpWarp = ""
 	global.StartCutscene = ""
 	global.AddCutItems = false; //Include items that were cut from the original game
 	global.CurrentSaveGame = 0;

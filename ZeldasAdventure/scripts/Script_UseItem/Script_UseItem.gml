@@ -39,8 +39,14 @@ function UseItem_Treasure()
 			case Treasures.LifePotion:
 				UseTreasure_LifePotion()
 				break;
+			case Treasures.Flute:
+				UseTreasure_Flute()
+				break;
 			case Treasures.Bone:
 				UseTreasure_Bone()
+				break;
+			case Treasures.Harp:
+				UseTreasure_Harp()
 				break;
 			case Treasures.Coal:
 				UseTreasure_Coal()

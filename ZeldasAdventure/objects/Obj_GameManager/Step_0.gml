@@ -81,6 +81,10 @@ if room = Room_Overworld
 	{
 		WarpToLocation(global.CompassWarp)
 	}
+	if global.HarpWarp != ""
+	{
+		WarpToLocation(global.HarpWarp)
+	}
 	if global.StartCutscene != ""
 	{
 		if global.FadeProgress = 1

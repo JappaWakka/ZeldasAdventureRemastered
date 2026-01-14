@@ -51,12 +51,12 @@ function Audio_Init_Soundtrack()
 		Shrine_Fire : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Shrine_Fire_Boss : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Shrine_Fire_Sign : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
-		Gauntlet_Llort : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
-		Gauntlet_Pasquinade : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
+		Gauntlet_Llort : {Asset : Music_Shrine_Earth_Boss, IntroLength : 1.751, LoopLength : 19.992},
+		Gauntlet_Pasquinade : {Asset : Music_Shrine_Illusion_Boss, IntroLength : 2.086, LoopLength : 17.935},
 		Gauntlet_Avianna : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Gauntlet_Malmort : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Gauntlet_Agwanda : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 		Gauntlet_Warbane : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
-		Gauntlet_Gannon : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
+		Gauntlet_Ganon : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
 	}	
 }

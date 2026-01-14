@@ -276,10 +276,10 @@ function Audio_SetCurrentMusic(TrackName)
 				global.CurrentMusic_IntroLength = global.MusicTracks.Gauntlet_Warbane.IntroLength;
 				global.CurrentMusic_LoopLength = global.MusicTracks.Gauntlet_Warbane.LoopLength;
 				break;
-			case "Gauntlet_Gannon" : 
-				global.CurrentMusic_Asset = global.MusicTracks.Gauntlet_Gannon.Asset
-				global.CurrentMusic_IntroLength = global.MusicTracks.Gauntlet_Gannon.IntroLength;
-				global.CurrentMusic_LoopLength = global.MusicTracks.Gauntlet_Gannon.LoopLength;
+			case "Gauntlet_Ganon" : 
+				global.CurrentMusic_Asset = global.MusicTracks.Gauntlet_Ganon.Asset
+				global.CurrentMusic_IntroLength = global.MusicTracks.Gauntlet_Ganon.IntroLength;
+				global.CurrentMusic_LoopLength = global.MusicTracks.Gauntlet_Ganon.LoopLength;
 				break;
 		}
 	}
