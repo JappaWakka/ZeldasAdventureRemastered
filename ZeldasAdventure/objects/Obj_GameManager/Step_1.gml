@@ -3,11 +3,8 @@ if global.Fullscreen <> window_get_fullscreen()
 {
 	window_enable_borderless_fullscreen(true)
 	window_set_fullscreen(global.Fullscreen)
-	if global.Fullscreen = false
-	{
-		window_set_size(ViewWidth * global.WindowScale,ViewHeight * global.WindowScale);
-	}
 }
+
 
 /// Overworld Camera
 if room == Room_Overworld

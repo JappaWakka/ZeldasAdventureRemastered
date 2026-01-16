@@ -40,7 +40,10 @@
 				"RemasteredMode": "Remastered-Modus",
 				"RemasteredModeHint": "Aktion 1 = Waffe benutzen, Aktion 2 = Schatz benutzen.\nGeschnittene Inhalte wiederhergestellt, Aktion Taste 2\nwechseln, Rubine, Gegenstände usw.",
 				"Subtitles": "Untertitel",
-				"Language": "Sprache"
+				"Language": "Sprache",
+				"PixelRatio": "Auflösung",
+				"PixelRatio_Original": "Original (1:1)",
+				"PixelRatio_CRT": "CRT (1:1.08)"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Gesamtlautstärke",

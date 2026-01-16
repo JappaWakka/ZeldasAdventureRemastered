@@ -53,11 +53,12 @@ for (i = 0; i <= array_length(Obj_LocalizationManager.AvailableLanguagesStruct.L
 }
 
 ds_Menu_Game = CreateMenuPage(
-["Window Mode",			Menu_ElementType.Toggle,			ChangeWindowMode,				real(global.Fullscreen),				["Window","Full"]	],
+["Window Mode",			Menu_ElementType.Toggle,			ChangeWindowMode,				real(global.Fullscreen),				["Window","Full"]					],
 ["Resolution",			Menu_ElementType.Shift,				ChangeResolution,				global.WindowScale - 1,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
-["Remastered Mode",		Menu_ElementType.Toggle,			ChangeRemasteredModeEnabled,	real(global.RemasteredMode),			["Off","On"]				],
-["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			real(global.ShowSubtitles),				["Off","On"]				],
-["Language",			Menu_ElementType.Shift,				ChangeLanguage,					global.CurrentLanguage,					LanguageNameArray	],
+["Remastered Mode",		Menu_ElementType.Toggle,			ChangeRemasteredModeEnabled,	real(global.RemasteredMode),			["Off","On"]						],
+["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			real(global.ShowSubtitles),				["Off","On"]						],
+["Language",			Menu_ElementType.Shift,				ChangeLanguage,					global.CurrentLanguage,					LanguageNameArray					],
+["Pixel Ratio",			Menu_ElementType.Shift,				ChangePixelRatio,				GetPixelRatio(),						["Original (1:1)",	"CRT (1:1.08)"]	],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings				]
 );
 

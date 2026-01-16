@@ -40,7 +40,10 @@
 				"RemasteredMode": "Remaster-Modus",
 				"RemasteredModeHint": "Actie 1 = Gebruik Wapen, Actie 2 = Gebruik Schat. Herstelde ongebruikte inhoud, Actieknop 2 vervangt\nRobijn voorwerp etc.",
 				"Subtitles": "Ondertiteling",
-				"Language": "Taal"
+				"Language": "Taal",
+				"PixelRatio": "Pixelverhouding",
+				"PixelRatio_Original": "Origineel (1:1)",
+				"PixelRatio_CRT": "CRT (1:1.08)"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Hoofdvolume",

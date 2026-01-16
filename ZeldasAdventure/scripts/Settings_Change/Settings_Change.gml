@@ -26,9 +26,14 @@ function ChangeResolution(Value)
 {
 	var oldSetting = global.WindowScale
 	global.WindowScale = Value + 1
-	if global.Fullscreen = false
+	var Resolution = 
+	[	ViewWidth * global.WindowScale,
+		ViewHeight * global.WindowScale * global.PixelRatio
+	]
+	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{
-		window_set_size(ViewWidth * global.WindowScale,ViewHeight * global.WindowScale);
+		window_set_size(Resolution[0],Resolution[1]);
+		surface_resize(application_surface,Resolution[0],Resolution[1]);
 	}
 	if oldSetting <> global.WindowScale
 	{
@@ -99,6 +104,45 @@ function ChangeWindowMode(Value){
 	}
 }
 
+function ChangePixelRatio(Value){
+	var oldSetting = global.PixelRatio
+	switch Value
+	{
+		case 0:
+			global.PixelRatio = 1
+			break
+		case 1:
+			global.PixelRatio = 1.08
+			break
+	}
+	var Resolution = 
+	[	ViewWidth * global.WindowScale,
+		ViewHeight * global.WindowScale * global.PixelRatio
+	]
+	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
+	{
+		window_set_size(Resolution[0],Resolution[1]);
+		surface_resize(application_surface,Resolution[0],Resolution[1]);
+	}
+	if oldSetting <> global.PixelRatio
+	{
+		SavedSettings = false
+	}
+}
+
+function GetPixelRatio(){
+	switch global.PixelRatio
+	{
+		case 1:
+			return 0
+			break
+		case 1.08:
+			return 1
+			break
+	}
+	
+}
+
 function ResetSettings()
 {
 	global.WindowScale = 3;
@@ -106,6 +150,7 @@ function ResetSettings()
 	global.ShowSubtitles = 1;
 	global.RemasteredMode = 1;
 	global.CurrentLanguage = 0;
+	global.PixelRatio = 0;
 	global.VolumeMaster = 1;
 	global.VolumeMusic = 1;
 	global.VolumeSoundFX = 1;
@@ -124,7 +169,8 @@ function ResetSettings()
 	CurrentGrid[# 3, 1] = global.WindowScale - 1
 	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
 	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
-	CurrentGrid[# 3, 4] = real(global.CurrentLanguage)
+	CurrentGrid[# 3, 4] = global.CurrentLanguage
+	CurrentGrid[# 3, 5] = global.PixelRatio
 	
 	//Reset Audio Menu (3)
 	CurrentGrid = Menu_Pages[3]
@@ -134,9 +180,14 @@ function ResetSettings()
 	CurrentGrid[# 3, 3] = global.VolumeDialogue
 	
 	//Reset the WindowScale
-	if global.Fullscreen = false
+	var Resolution = 
+	[	ViewWidth * global.WindowScale,
+		ViewHeight * global.WindowScale * global.PixelRatio
+	]
+	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{
-		window_set_size(ViewWidth * global.WindowScale,ViewHeight * global.WindowScale);
+		window_set_size(Resolution[0],Resolution[1]);
+		surface_resize(application_surface,Resolution[0],Resolution[1]);
 	}
 	SavedSettings = false
 }

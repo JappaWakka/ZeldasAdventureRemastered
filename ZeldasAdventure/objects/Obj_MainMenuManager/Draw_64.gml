@@ -311,7 +311,7 @@ else if PageIndex = 5 //Name Entry Menu
 		draw_set_halign(fa_left)
 	
 }
-else //SettingsMenu
+else //Settings Menu
 {
 	var CurrentGrid = Menu_Pages[PageIndex];
 	var GridHeight = ds_grid_height(CurrentGrid);
@@ -615,7 +615,7 @@ else //SettingsMenu
 	}
 	
 	draw_set_font(ToolTipFont);
-	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 32, string(TooltipText), 12 * global.WindowScale, ViewWidth * global.WindowScale * 0.73, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
+	draw_text_ext_transformed_color(ViewWidth / 2, ViewHeight - 28, string(TooltipText), 12 * global.WindowScale, ViewWidth * global.WindowScale * 0.73, 1 / global.WindowScale, 1 / global.WindowScale, 0, DrawColor, DrawColor, DrawColor, DrawColor, 1);
 	
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);	

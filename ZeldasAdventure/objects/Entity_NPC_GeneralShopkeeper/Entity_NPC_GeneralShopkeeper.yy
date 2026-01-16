@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_NPC_Shopkeeper",
+  "name": "Entity_NPC_GeneralShopkeeper",
   "spriteId": {
     "name": "Sprite_NPC_GeneralShopkeeper",
     "path": "sprites/Sprite_NPC_GeneralShopkeeper/Sprite_NPC_GeneralShopkeeper.yy",

@@ -44,7 +44,13 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.Language} //"Language"
 				if OptionIndex > -1 {return Obj_LocalizationManager.AvailableLanguagesStruct.Languages[OptionIndex].LanguageNameLocal} //English
 			}
-			else if TextIndex = 5 {return Localize.UI.SettingsMenu.Back} //"Back"
+			if TextIndex = 5
+			{
+				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.PixelRatio} //"Subtitles"
+				if OptionIndex = 0 {return Localize.UI.SettingsMenu.GameSubMenu.PixelRatio_Original} //"Off"
+				if OptionIndex = 1 {return Localize.UI.SettingsMenu.GameSubMenu.PixelRatio_CRT} //"On"
+			}
+			else if TextIndex = 6 {return Localize.UI.SettingsMenu.Back} //"Back"
 			break;
 		case 3: //Settings - Audio
 			if TextIndex = 0 {return Localize.UI.SettingsMenu.AudioSubMenu.MasterVolume} //"Master"

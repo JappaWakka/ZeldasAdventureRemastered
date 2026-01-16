@@ -1868,7 +1868,7 @@
     {"id":{"name":"Sprite_Cursor","path":"sprites/Sprite_Cursor/Sprite_Cursor.yy",},"order":5,},
     {"id":{"name":"input_debug_player_input","path":"scripts/input_debug_player_input/input_debug_player_input.yy",},"order":3,},
     {"id":{"name":"SFX_Use_JadeRing","path":"sounds/SFX_Use_JadeRing/SFX_Use_JadeRing.yy",},"order":3,},
-    {"id":{"name":"Entity_NPC_Shopkeeper","path":"objects/Entity_NPC_Shopkeeper/Entity_NPC_Shopkeeper.yy",},"order":10,},
+    {"id":{"name":"Entity_NPC_GeneralShopkeeper","path":"objects/Entity_NPC_GeneralShopkeeper/Entity_NPC_GeneralShopkeeper.yy",},"order":10,},
     {"id":{"name":"Shrine_Strength_21_Below","path":"sprites/Shrine_Strength_21_Below/Shrine_Strength_21_Below.yy",},"order":20,},
     {"id":{"name":"BarachnoMarsh_12_Below","path":"sprites/BarachnoMarsh_12_Below/BarachnoMarsh_12_Below.yy",},"order":11,},
     {"id":{"name":"__input_gamepad_guid_parse","path":"scripts/__input_gamepad_guid_parse/__input_gamepad_guid_parse.yy",},"order":1,},

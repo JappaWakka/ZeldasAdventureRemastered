@@ -8,6 +8,7 @@ function Settings_Save()
 		ini_write_real("Options",	"ShowSubtitles",	real(global.ShowSubtitles));
 		ini_write_real("Options",	"RemasteredMode",	real(global.RemasteredMode));
 		ini_write_real("Options",	"CurrentLanguage",	global.CurrentLanguage);
+		ini_write_real("Options",	"PixelRatio",		global.PixelRatio);
 		ini_write_real("Options",	"VolumeMaster",		global.VolumeMaster);
 		ini_write_real("Options",	 "VolumeMusic",		global.VolumeMusic);
 		ini_write_real("Options",	 "VolumeSoundFX",	global.VolumeSoundFX);
@@ -24,6 +25,7 @@ function Settings_Save()
 function Settings_Discard()
 {
 	//Reset Settings
+	global.PixelRatio			=	TempPixelRatio
 	global.WindowScale			=	TempWindowScale
 	global.Fullscreen			=	TempFullscreen
 	global.ShowSubtitles		=	TempShowSubtitles
@@ -42,7 +44,8 @@ function Settings_Discard()
 	CurrentGrid[# 3, 1] = global.WindowScale - 1
 	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
 	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
-	CurrentGrid[# 3, 4] = real(global.CurrentLanguage)
+	CurrentGrid[# 3, 4] = global.CurrentLanguage
+	CurrentGrid[# 3, 5] = global.PixelRatio
 	
 	//Reset Audio Menu (3)
 	CurrentGrid = Menu_Pages[3]
@@ -57,9 +60,14 @@ function Settings_Discard()
 	file_text_close(KeyBindingsJSON)
 	
 	//Reset the WindowScale
-	if global.Fullscreen = false
+	var Resolution = 
+	[	ViewWidth * global.WindowScale,
+		ViewHeight * global.WindowScale * global.PixelRatio
+	]
+	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{
-		window_set_size(ViewWidth * global.WindowScale,ViewHeight * global.WindowScale);
+		window_set_size(Resolution[0],Resolution[1]);
+		surface_resize(application_surface,Resolution[0],Resolution[1]);
 	}
 	audio_play_sound(Menu_NameInput_Backspace,1000,false)
 }
@@ -67,6 +75,7 @@ function Settings_Discard()
 function Settings_Update()
 {
 	//Update Settings
+	TempPixelRatio			=		global.PixelRatio
 	TempWindowScale			=		global.WindowScale
 	TempFullscreen			=		global.Fullscreen
 	TempShowSubtitles		=		global.ShowSubtitles

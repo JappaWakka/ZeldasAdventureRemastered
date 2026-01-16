@@ -98,6 +98,7 @@ function InitGameVariables()
 	ini_open(global.SaveDataFileName)
 	
 	global.DebugMode = bool(ini_read_real("Options", "DebugMode", 0));
+	global.PixelRatio = ini_read_real("Options", "PixelRatio", 1);
 	global.WindowScale = ini_read_real("Options", "WindowScale", 3);
 	global.Fullscreen = bool(ini_read_real("Options", "Fullscreen", 0));
 	global.ShowSubtitles = bool(ini_read_real("Options", "ShowSubtitles", 1));

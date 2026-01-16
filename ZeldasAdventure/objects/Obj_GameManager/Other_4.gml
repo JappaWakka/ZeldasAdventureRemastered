@@ -19,3 +19,13 @@ if room = Room_Overworld
 	instance_deactivate_layer("TileDialogueTriggers")
 	instance_deactivate_object(Parent_DialogueTrigger)
 }
+
+var Resolution = 
+[	ViewWidth * global.WindowScale,
+	ViewHeight * global.WindowScale * global.PixelRatio
+]
+if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
+{
+	window_set_size(Resolution[0],Resolution[1]);
+	surface_resize(application_surface,Resolution[0],Resolution[1]);
+}

@@ -40,7 +40,10 @@
 				"RemasteredMode": "Mode Remastérisé",
 				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor.\nFonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
 				"Subtitles": "Sous-titres",
-				"Language": "Langue"
+				"Language": "Langue",
+				"PixelRatio": "Pixel Ratio",
+				"PixelRatio_Original": "Original (1:1)",
+				"PixelRatio_CRT": "CRT (1:1.08)"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Général",

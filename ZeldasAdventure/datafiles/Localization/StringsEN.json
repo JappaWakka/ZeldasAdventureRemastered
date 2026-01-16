@@ -40,7 +40,10 @@
 				"RemasteredMode": "Remastered Mode",
 				"RemasteredModeHint": "Action 1 = Use Weapon, Action 2 = Use Treasure.\nRestored cut content, Action Button 2 replaces Ruby\nitem etc.",
 				"Subtitles": "Subtitles",
-				"Language": "Language"
+				"Language": "Language",
+				"PixelRatio": "Pixel Ratio",
+				"PixelRatio_Original": "Original (1:1)",
+				"PixelRatio_CRT": "CRT (1:1.08)"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Master",
