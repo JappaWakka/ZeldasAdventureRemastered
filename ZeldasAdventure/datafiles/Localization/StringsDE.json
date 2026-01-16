@@ -41,9 +41,7 @@
 				"RemasteredModeHint": "Aktion 1 = Waffe benutzen, Aktion 2 = Schatz benutzen.\nGeschnittene Inhalte wiederhergestellt, Aktion Taste 2\nwechseln, Rubine, Gegenstände usw.",
 				"Subtitles": "Untertitel",
 				"Language": "Sprache",
-				"PixelRatio": "Auflösung",
-				"PixelRatio_Original": "Original (1:1)",
-				"PixelRatio_CRT": "CRT (1:1.08)"
+				"AspectRatio": "Bildformat"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Gesamtlautstärke",
@@ -557,105 +555,105 @@
 				},
 				"Lounger": {
 					"HiThere": {
-						"Line01": "Lounger: Hi there! Don't worry about the dog, he won't bite.",
-						"Line02": "I wish he did bite, then there'd be a little excitement here in Great Wimbich.",
-						"Line03": "Nothing ever happens here!",
-						"Line04": "When people do come, they're even more boring.",
-						"Line05": "Everybody's dull."
+						"Line01": "Faulpelz: Hallo! Keine Sorge wegen dem Hund, er beißt nicht.",
+						"Line02": "Ich wünschte, er würde beißen, dann gäbe es hier in Groß-Wimbich ein wenig Aufregung.",
+						"Line03": "Hier passiert nie etwas!",
+						"Line04": "Wenn Leute kommen, sind sie sogar noch langweiliger.",
+						"Line05": "Alle sind langweilig."
 					},
 					"DontWannaSeeYou": {
-						"Line01": "Lounger: Ugh... I don't want to see you again.",
+						"Line01": "Faulpelz: Ugh... Ich will dich nicht mehr sehen.",
 					},
 					"GoAway": {
-						"Line01": "Lounger: Why don't you go away and be boring someplace else?",
-						"Line02": "Good riddance."
+						"Line01": "Faulpelz: Warum gehst du nicht weg und langweilst andere Leute?",
+						"Line02": "Auf Nimmerwiedersehen."
 					}
 				},
 				"GeneralShopkeeper": {
 					"HelloLittleOne": {
-						"Line01": "Shopkeeper: Hello, little one! Heh!",
-						"Line02": "I hope I can be of help to you.",
-						"Line03": "Did you see my dog out on Upper Street?",
-						"Line04": "How did he smell?",
-						"Line05": "Knave: With his nose, of course!",
-						"Line06": "*laughter from both men*"
+						"Line01": "Ladenbesitzer: Hallo, Kleine! Heh!",
+						"Line02": "Ich hoffe, ich kann dir helfen.",
+						"Line03": "Hast du meinen Hund auf der Oberen Straße gesehen?",
+						"Line04": "Wie er riecht?",
+						"Line05": "Knabe: Mit seiner Nase natürlich!",
+						"Line06": "*beide lachen*"
 					},
 					"GoodsOnTheTable": {
-						"Line01": "Shopkeeper: You see my goods on the table?",
-						"Line02": "You may purchase whatever you wish.",
-						"Line03": "There's even a bone here that my dog would love!"
+						"Line01": "Ladenbesitzer: Siehst du meine Waren auf dem Tisch?",
+						"Line02": "Du kannst kaufen, was immer du willst.",
+						"Line03": "Hier gibt es sogar einen Knochen, den mein Hund lieben würde!"
 					},
 					"HowAreYou": {
-						"Line01": "Shopkeeper: Ooooooh! Heh!",
-						"Line02": "How are you? Ha ha ha!",
-						"Line03": "May I be of some service?"
+						"Line01": "Ladenbesitzer: Ooooooh! Heh!",
+						"Line02": "Wie geht es dir? Ha ha ha!",
+						"Line03": "Kann ich dir irgendwie helfen?"
 					},
 					"ThatWasSmart": {
-						"Line01": "Shopkeeper: Oooooo! *laughter*",
-						"Line02": "That was smart!",
-						"Line03": "Come again, little one! Come again."
+						"Line01": "Ladenbesitzer: Oooooo! *lacht*",
+						"Line02": "Das war schlau!",
+						"Line03": "Komm wieder, Kleine! Komm wieder."
 					}
 				},
 				"Knave": {
 					"ShrineTakenLightly": {
-						"Line01": "Knave: Is a shrine a thing to be taken lightly? *laughter*",
-						"Line02": "No, and a candle is needed to light a shrine! *laughter*"
+						"Line01": "Knabe: Ist ein Schrein etwas, das man auf die leichte Schulter nehmen sollte? *lacht*",
+						"Line02": "Nein, und man braucht eine Kerze, um einen Schrein zu beleuchten! *lacht*"
 					},
 					"JokeToPassTime": {
-						"Line01": "Knave: *nervous laughter* Oh-hoh-hooo!",
-						"Line02": "Oooo, we may joke to pass the time, princess, but...",
-						"Line03": "we are all troubled about the future of Tolemac.",
-						"Line04": "You must seek out the tablets and save us! *nervous laughter*"
+						"Line01": "Knabe: *lacht nervös* Oh-hoh-hooo!",
+						"Line02": "Oooo, wir scherzen natürlich nur, um uns die Zeit zu vertreiben, Prinzessin, aber...",
+						"Line03": "wir alle machen uns Sorgen um die Zukunft von Tolemac.",
+						"Line04": "Du musst die Steine finden und uns retten! *nervöses Lachen*"
 					},
 					"WatchOutForGanon": {
-						"Line01": "Knave: *laughing* Oo-hooo!",
-						"Line02": "Watch out for that Ganon, Zelda!",
+						"Line01": "Knabe: *lacht* Oo-hooo!",
+						"Line02": "Hüte dich vor Ganon, Zelda!",
 						"Line03": "Ooooooooo!"
 					}
 				},
 				"MadameKriggle": {
 					"ApproachedAtLast": {
-						"Line01": "Madame Kriggle: At last!",
-						"Line02": "Madame Kriggle is approached by an innocent",
-						"Line03": "who wishes to grow in the use of magic and spells.",
-						"Line04": "My old friend Shurmak has told me of your coming;",
-						"Line05": "I have awaited you many moons and suns.",
-						"Line06": "It is important to remember",
-						"Line07": "that magic adornments will defend thee from many beings",
-						"Line08": "who will attack you with magic.",
-						"Line09": "You may purchase my Turquoise Ring",
-						"Line10": "or my Jade Amulet to raise your defenses."
+						"Line01": "Madame Kriggle: Endlich!",
+						"Line02": "Madame Kriggle wird von einer arglosen angesprochen,",
+						"Line03": "die sich in Magie und Zaubern verbessern möchte.",
+						"Line04": "Meine alte Freundin Shurmak hat mir gesagt, dass du kommst.",
+						"Line05": "Ich habe viele Sonnen und Monde auf dich gewartet.",
+						"Line06": "Es ist wichtig, sich daran zu erinnern,",
+						"Line07": "dass magische Schmuckstücke dich vor vielen Wesen schützen können",
+						"Line08": "die dich mit Magie angreifen werden.",
+						"Line09": "Du kannst meinen Türkisring kaufen",
+						"Line10": "oder mein Jade-Amulett, um deine Abwehrkräfte zu stärken."
 					},
 					"TouchWhatYouWantToUse": {
-						"Line01": "Madame Kriggle: Touch what you wish to use,",
-						"Line02": "and leave me your Rubies.",
-						"Line03": "I promise you will be pleased."
+						"Line01": "Madame Kriggle: Berühre, was du haben möchtest,",
+						"Line02": "und gib mir deine Rubine.",
+						"Line03": "Ich verspreche, Du wirst zufrieden sein."
 					},
 					"WonderfulToSeeYou": {
-						"Line01": "Madame Kriggle: How wonderful to see you, my dear!"
+						"Line01": "Madame Kriggle: Wie schön, dich zu sehen, meine Liebe!"
 					},
 					"WiseChoice": {
-						"Line01": "Madame Kriggle: A wise choice for setting out! Oh-hoh...",
-						"Line02": "Come and see me again!"
+						"Line01": "Madame Kriggle: Eine kluge Wahl für den Anfang! Oh-hoh...",
+						"Line02": "Komm mich wieder besuchen!"
 					}
 				},
 				"Smithy": {
 					"WhoGoesThere": {
-						"Line01": "Smithy: Who goes there!? Oh, it's a young girl.",
-						"Line02": "Don't touch anything!",
-						"Line03": "People steal me blind; I know you all hate me!",
-						"Line04": "What did I ever do to any of you!?",
-						"Line05": "I give an honest bargain, I grind your Coal into Rubies,",
-						"Line06": "I stay open late and work my fingers to the bone.",
-						"Line07": "Do any of you appreciate it? No!"
+						"Line01": "Smithy: Wer ist da? Oh, es ist ein junges Mädchen.",
+						"Line02": "Fass nichts an!",
+						"Line03": "Die Leute bestehlen mich; ich weiß, dass ihr mich alle hasst!",
+						"Line04": "Was habe ich euch denn je getan!?",
+						"Line05": "Ich mache dir ein ehrliches Angebot, ich verwandle deine Kohle in Rubine,",
+						"Line06": "Ich arbeite bis spät in die Nacht und schufte mich zu Tode.",
+						"Line07": "Schätzt das irgendjemand von euch? Nein!"
 					},
 					"ChooseItemAndHurry": {
-						"Line01": "Smithy: Choose your item and hurry, the world is full of thieves.",
+						"Line01": "Smithy: Wähle deinen Gegenstand und beeil dich, die Welt ist voller Diebe.",
 					},
 					"CongratsOnFindingCoal": {
-						"Line01": "Smithy: Congratulations on finding such a fine piece of Coal!",
-						"Line02": "After Wimbich taxes - my commission, of course...",
-						"Line03": "*cough* that leaves, umm..."
+						"Line01": "Smithy: Glückwunsch zum Fund dieses schönen Stücks Kohle!",
+						"Line02": "Nach Abzug der Wimbich-Steuern – natürlich abzüglich meiner Provision...",
+						"Line03": "*hustet* Das sind dann, ähm..."
 					}
 				}
 			},

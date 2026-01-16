@@ -20,12 +20,12 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 			if TextIndex = 1
 			{
 				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.Resolution} //"Resolution"
-				if OptionIndex = 0 {return "1x (384x240)"}
-				if OptionIndex = 1 {return "2x (768x480)"}
-				if OptionIndex = 2 {return "3x (1152x720)"}
-				if OptionIndex = 3 {return "4x (1536x960)"}
-				if OptionIndex = 4 {return "5x (1920x1200)"}
-				if OptionIndex = 5 {return "6x (2304x1440)"}
+				if OptionIndex = 0 {return string_concat("1x (384x", (240 + global.AspectRatio), ")")}
+				if OptionIndex = 1 {return string_concat("2x (768x", (240 + global.AspectRatio) * 2, ")")}
+				if OptionIndex = 2 {return string_concat("3x (1152x", (240 + global.AspectRatio) * 3, ")")}
+				if OptionIndex = 3 {return string_concat("4x (1536x", (240 + global.AspectRatio) * 4, ")")}
+				if OptionIndex = 4 {return string_concat("5x (1920x", (240 + global.AspectRatio) * 5, ")")}
+				if OptionIndex = 5 {return string_concat("6x (2304x", (240 + global.AspectRatio) * 6, ")")}
 			}
 			if TextIndex = 2
 			{
@@ -46,9 +46,9 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 			}
 			if TextIndex = 5
 			{
-				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.PixelRatio} //"Subtitles"
-				if OptionIndex = 0 {return Localize.UI.SettingsMenu.GameSubMenu.PixelRatio_Original} //"Off"
-				if OptionIndex = 1 {return Localize.UI.SettingsMenu.GameSubMenu.PixelRatio_CRT} //"On"
+				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.AspectRatio} //"Aspect Ratio"
+				if OptionIndex = 0 {return "NTSC"}
+				if OptionIndex = 1 {return "PAL"}
 			}
 			else if TextIndex = 6 {return Localize.UI.SettingsMenu.Back} //"Back"
 			break;

@@ -58,7 +58,7 @@ ds_Menu_Game = CreateMenuPage(
 ["Remastered Mode",		Menu_ElementType.Toggle,			ChangeRemasteredModeEnabled,	real(global.RemasteredMode),			["Off","On"]						],
 ["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			real(global.ShowSubtitles),				["Off","On"]						],
 ["Language",			Menu_ElementType.Shift,				ChangeLanguage,					global.CurrentLanguage,					LanguageNameArray					],
-["Pixel Ratio",			Menu_ElementType.Shift,				ChangePixelRatio,				GetPixelRatio(),						["Original (1:1)",	"CRT (1:1.08)"]	],
+["Aspect Ratio",		Menu_ElementType.Shift,				ChangeAspectRatio,				GetAspectRatio(),						["NTSC","PAL"]						],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings				]
 );
 

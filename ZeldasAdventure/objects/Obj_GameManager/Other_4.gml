@@ -22,7 +22,7 @@ if room = Room_Overworld
 
 var Resolution = 
 [	ViewWidth * global.WindowScale,
-	ViewHeight * global.WindowScale * global.PixelRatio
+	ViewHeight * global.WindowScale * global.AspectRatio
 ]
 if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 {

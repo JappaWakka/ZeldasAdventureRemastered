@@ -28,7 +28,7 @@ function ChangeResolution(Value)
 	global.WindowScale = Value + 1
 	var Resolution = 
 	[	ViewWidth * global.WindowScale,
-		ViewHeight * global.WindowScale * global.PixelRatio
+		ViewHeight * global.WindowScale * global.AspectRatio
 	]
 	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{
@@ -104,39 +104,39 @@ function ChangeWindowMode(Value){
 	}
 }
 
-function ChangePixelRatio(Value){
-	var oldSetting = global.PixelRatio
+function ChangeAspectRatio(Value){
+	var oldSetting = global.AspectRatio
 	switch Value
 	{
 		case 0:
-			global.PixelRatio = 1
+			global.AspectRatio = 0
 			break
 		case 1:
-			global.PixelRatio = 1.08
+			global.AspectRatio = 40
 			break
 	}
 	var Resolution = 
 	[	ViewWidth * global.WindowScale,
-		ViewHeight * global.WindowScale * global.PixelRatio
+		(ViewHeight + global.AspectRatio) * global.WindowScale
 	]
 	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{
 		window_set_size(Resolution[0],Resolution[1]);
 		surface_resize(application_surface,Resolution[0],Resolution[1]);
 	}
-	if oldSetting <> global.PixelRatio
+	if oldSetting <> global.AspectRatio
 	{
 		SavedSettings = false
 	}
 }
 
-function GetPixelRatio(){
-	switch global.PixelRatio
+function GetAspectRatio(){
+	switch global.AspectRatio
 	{
-		case 1:
+		case 0:
 			return 0
 			break
-		case 1.08:
+		case 40:
 			return 1
 			break
 	}
@@ -150,7 +150,7 @@ function ResetSettings()
 	global.ShowSubtitles = 1;
 	global.RemasteredMode = 1;
 	global.CurrentLanguage = 0;
-	global.PixelRatio = 0;
+	global.AspectRatio = 0;
 	global.VolumeMaster = 1;
 	global.VolumeMusic = 1;
 	global.VolumeSoundFX = 1;
@@ -170,7 +170,7 @@ function ResetSettings()
 	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
 	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
 	CurrentGrid[# 3, 4] = global.CurrentLanguage
-	CurrentGrid[# 3, 5] = global.PixelRatio
+	CurrentGrid[# 3, 5] = global.AspectRatio
 	
 	//Reset Audio Menu (3)
 	CurrentGrid = Menu_Pages[3]
@@ -182,7 +182,7 @@ function ResetSettings()
 	//Reset the WindowScale
 	var Resolution = 
 	[	ViewWidth * global.WindowScale,
-		ViewHeight * global.WindowScale * global.PixelRatio
+		ViewHeight * global.WindowScale * global.AspectRatio
 	]
 	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{

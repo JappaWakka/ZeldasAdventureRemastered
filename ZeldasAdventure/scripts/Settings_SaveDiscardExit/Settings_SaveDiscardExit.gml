@@ -8,7 +8,7 @@ function Settings_Save()
 		ini_write_real("Options",	"ShowSubtitles",	real(global.ShowSubtitles));
 		ini_write_real("Options",	"RemasteredMode",	real(global.RemasteredMode));
 		ini_write_real("Options",	"CurrentLanguage",	global.CurrentLanguage);
-		ini_write_real("Options",	"PixelRatio",		global.PixelRatio);
+		ini_write_real("Options",	"AspectRatio",		global.AspectRatio);
 		ini_write_real("Options",	"VolumeMaster",		global.VolumeMaster);
 		ini_write_real("Options",	 "VolumeMusic",		global.VolumeMusic);
 		ini_write_real("Options",	 "VolumeSoundFX",	global.VolumeSoundFX);
@@ -25,7 +25,7 @@ function Settings_Save()
 function Settings_Discard()
 {
 	//Reset Settings
-	global.PixelRatio			=	TempPixelRatio
+	global.AspectRatio			=	TempAspectRatio
 	global.WindowScale			=	TempWindowScale
 	global.Fullscreen			=	TempFullscreen
 	global.ShowSubtitles		=	TempShowSubtitles
@@ -45,7 +45,7 @@ function Settings_Discard()
 	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
 	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
 	CurrentGrid[# 3, 4] = global.CurrentLanguage
-	CurrentGrid[# 3, 5] = global.PixelRatio
+	CurrentGrid[# 3, 5] = global.AspectRatio
 	
 	//Reset Audio Menu (3)
 	CurrentGrid = Menu_Pages[3]
@@ -62,7 +62,7 @@ function Settings_Discard()
 	//Reset the WindowScale
 	var Resolution = 
 	[	ViewWidth * global.WindowScale,
-		ViewHeight * global.WindowScale * global.PixelRatio
+		ViewHeight * global.WindowScale * global.AspectRatio
 	]
 	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{
@@ -75,7 +75,7 @@ function Settings_Discard()
 function Settings_Update()
 {
 	//Update Settings
-	TempPixelRatio			=		global.PixelRatio
+	TempAspectRatio			=		global.AspectRatio
 	TempWindowScale			=		global.WindowScale
 	TempFullscreen			=		global.Fullscreen
 	TempShowSubtitles		=		global.ShowSubtitles
