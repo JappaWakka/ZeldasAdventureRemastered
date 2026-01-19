@@ -41,7 +41,7 @@
 				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor.\nFonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
 				"Subtitles": "Sous-titres",
 				"Language": "Langue",
-				"AspectRatio": "Aspect Ratio"
+				"AspectRatio": "Rapport d'aspect"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Général",
