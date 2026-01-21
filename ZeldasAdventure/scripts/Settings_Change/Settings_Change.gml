@@ -28,7 +28,7 @@ function ChangeResolution(Value)
 	global.WindowScale = Value + 1
 	var Resolution = 
 	[	ViewWidth * global.WindowScale,
-		ViewHeight * global.WindowScale * global.AspectRatio
+		(ViewHeight + global.AspectRatio) * global.WindowScale
 	]
 	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{
@@ -170,7 +170,7 @@ function ResetSettings()
 	CurrentGrid[# 3, 2] = real(global.RemasteredMode)
 	CurrentGrid[# 3, 3] = real(global.ShowSubtitles)
 	CurrentGrid[# 3, 4] = global.CurrentLanguage
-	CurrentGrid[# 3, 5] = global.AspectRatio
+	CurrentGrid[# 3, 5] = GetAspectRatio()
 	
 	//Reset Audio Menu (3)
 	CurrentGrid = Menu_Pages[3]
@@ -182,7 +182,7 @@ function ResetSettings()
 	//Reset the WindowScale
 	var Resolution = 
 	[	ViewWidth * global.WindowScale,
-		ViewHeight * global.WindowScale * global.AspectRatio
+		(ViewHeight + global.AspectRatio) * global.WindowScale
 	]
 	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{

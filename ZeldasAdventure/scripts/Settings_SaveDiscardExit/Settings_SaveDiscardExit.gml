@@ -62,7 +62,7 @@ function Settings_Discard()
 	//Reset the WindowScale
 	var Resolution = 
 	[	ViewWidth * global.WindowScale,
-		ViewHeight * global.WindowScale * global.AspectRatio
+		(ViewHeight + global.AspectRatio) * global.WindowScale
 	]
 	if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1]
 	{
