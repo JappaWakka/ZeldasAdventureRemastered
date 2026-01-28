@@ -1,0 +1,9 @@
+﻿1
+00:00:00,073 --> 00:00:02,595
+Marchande : Je suis un peu...
+fatiguée aujourd'hui.
+
+2
+00:00:02,619 --> 00:00:05,607
+Tout se transforme en... boue.
+

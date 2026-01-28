@@ -1,0 +1,19 @@
+﻿1
+00:00:00,001 --> 00:00:02,867
+Alice : Grand Wimbich est une petite
+bourgade si particulière.
+
+2
+00:00:03,074 --> 00:00:06,408
+Les échoppes situées sur la Rue Haute
+ont tout ce que vous pourriez désirer,
+
+3
+00:00:06,503 --> 00:00:08,236
+et si vous ne le trouvez pas là-bas,
+
+4
+00:00:08,261 --> 00:00:11,049
+soyez sûre de le dénicher
+sur la place du marché.
+

@@ -1,0 +1,29 @@
+﻿1
+00:00:00,008 --> 00:00:02,349
+Le père des jumeaux : Bonjour, Zelda !
+Bienvenue chez moi !
+
+2
+00:00:02,374 --> 00:00:06,282
+Je suis le père des jumeaux,
+et même moi, je ne sais pas qui est qui.
+
+3
+00:00:06,774 --> 00:00:09,100
+Bref, c'est gentil à vous
+d'être venu me rendre visite.
+
+4
+00:00:09,125 --> 00:00:11,282
+Je m'appelle Zelda
+et vous devez être le père des...
+
+5
+00:00:11,307 --> 00:00:14,506
+Non, attendez ! C'est impossible,
+vous venez juste d'arriver.
+
+6
+00:00:14,531 --> 00:00:16,039
+Vous devez être Zelda !
+

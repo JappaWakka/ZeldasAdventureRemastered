@@ -478,11 +478,11 @@
 				"EricAndIan": {
 					"MeetTheTwins": {
 						"Line01": "Tweeling (Eric & Ian): Hallo, Zelda. Ik ben Eric en dit is Ian.",
-						"Line02": "Wat bedoel je? Ik ben Eric, dat ben ik altijd geweest.",
-						"Line03": "Nee, dat ben je niet, ik ben Eric!"
+						"Line02": "- Wat bedoel je? Ik ben Eric, dat ben ik altijd geweest.",
+						"Line03": "- Nee, dat ben je niet, ik ben Eric!"
 					},
 					"MeetOurFather": {
-						"Line01": "Ach, het doet er niet toe wie wij zijn.",
+						"Line01": "Tweeling (Eric & Ian): Ach, het doet er niet toe wie wij zijn.",
 						"Line02": "Je zou het gele huis eens moeten bezoeken en onze vader ontmoeten!",
 						"Line03": "Hij zal je iets interessants vertellen."
 					}
@@ -680,7 +680,7 @@
 						"Line01": "Kron de Eenbeen: Iedereen komt naar Kron de Eenbeen. Gezellig!"
 					},
 					"FineItemForSale": {
-						"Line01": "Nou, hier heb ik toch een mooi voorwerp te koop!"
+						"Line01": "Kron de Eenbeen: Nou, hier heb ik toch een mooi voorwerp te koop!"
 					}
 				}
 			}

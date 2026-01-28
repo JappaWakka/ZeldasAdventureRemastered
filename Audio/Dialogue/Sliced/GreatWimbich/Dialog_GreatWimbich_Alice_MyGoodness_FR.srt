@@ -1,0 +1,14 @@
+﻿1
+00:00:00,007 --> 00:00:02,853
+Alice : Mon Dieu,
+c'est la courageuse Zelda !
+
+2
+00:00:03,220 --> 00:00:05,840
+Votre nom est sur toutes les lèvres.
+
+3
+00:00:05,967 --> 00:00:09,253
+Asseyez-vous un moment avec Alice
+et faites plaisir à une vieille dame.
+

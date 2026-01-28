@@ -1,0 +1,15 @@
+﻿1
+00:00:00,021 --> 00:00:02,241
+Alice : Zelda, c'est gentil
+à vous de passer me voir,
+
+2
+00:00:02,348 --> 00:00:04,501
+mais je n'ai plus grand-chose
+à dire pour le moment.
+
+3
+00:00:04,648 --> 00:00:06,434
+Revenez me voir
+tout à l'heure, d'accord ?
+

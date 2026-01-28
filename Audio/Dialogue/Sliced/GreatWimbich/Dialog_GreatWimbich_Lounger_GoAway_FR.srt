@@ -1,0 +1,9 @@
+﻿1
+00:00:00,033 --> 00:00:02,820
+Clampin : Pourquoi vous n'allez pas
+voir ailleurs si j'y suis ?
+
+2
+00:00:02,845 --> 00:00:04,040
+Bon vent.
+

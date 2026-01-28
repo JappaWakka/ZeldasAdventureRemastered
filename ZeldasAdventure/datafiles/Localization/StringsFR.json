@@ -439,243 +439,243 @@
 			"GreatWimbich": {
 				"TownMerchant": {
 					"ForThirtySuns": {					
-						"Line01": "Town Merchant: For thirty suns my husband and I",
-						"Line02": "ran the great locksmith forge for Warbane.",
-						"Line03": "Then Ganon came and pressed Warbane into service",
-						"Line04": "for his own evil plans.",
-						"Line05": "The forge was closed.",
-						"Line06": "Warbane built a fortified retreat of his own",
-						"Line07": "somewhere off in the Forest of Canvula to the north.",
-						"Line08": "We were left with nothing but these trinkets to sell!",
-						"Line09": "Perhaps they will be of use to you in the underground.",
-						"Line10": "I can not give them up cheap."
+						"Line01": "Marchande: Pendant trente soleils,\nmon mari et moi",
+						"Line02": "avons géré la grande forge\npour Warbane.",
+						"Line03": "Puis Ganon est arrivé\net a contraint Warbane",
+						"Line04": "à servir ses propres\nplans maléfiques.",
+						"Line05": "La forge a été fermée.",
+						"Line06": "Warbane a établi\nson repaire fortifié",
+						"Line07": "quelque part au nord\nde la forêt de Canvula.",
+						"Line08": "Nous n'avons plus\nque ces articles à vendre !",
+						"Line09": "Ils pourraient vous être utiles\ndans les terres du dessous.",
+						"Line10": "Je ne peux pas me permettre\nde les brader."
 					},
 					"KindaTiredToday": {					
-						"Line01": "Town Merchant: I'm kinda... tired today.",
-						"Line02": "Everything's turning to... mud."
+						"Line01": "Marchande : Je suis un peu...\nfatiguée aujourd'hui.",
+						"Line02": "Tout se transforme en... boue."
 					}
 				},
 				"Yvonne": {
 					"GiveFlute": {
-						"Line01": "Yvonne: Hello, Zelda. My name is Yvonne.",
-						"Line02": "You look like a music lover, too.",
-						"Line03": "Music can soothe a savage beast.",
-						"Line04": "I believe Shurmak has graced you with her friendship.",
-						"Line05": "She helped me once, so I am going to help you.",
-						"Line06": "Listen to this!",
-						"Line07": "*Yvonne plays the flute*",
-						"Line08": "Heh heh! The flute can be used to calm the savage hiss of a snake."
+						"Line01": "Yvonne : Bonjour, Zelda.\nJe m'appelle Yvonne.",
+						"Line02": "Vous avez l'air d'aimer\nla musique, vous aussi.",
+						"Line03": "On dit que la musique\nadoucit les bêtes sauvages.",
+						"Line04": "Je crois que Shurmak vous a fait\nl'honneur de son amitié.",
+						"Line05": "Elle m'a aidée une fois,\nalors je vais vous aider.",
+						"Line06": "Écoutez ça !",
+						"Line07": "Turlututu...",
+						"Line08": "Hé hé hé ! Cette flûte peut stupéfier\nle sifflement d'un serpent menaçant."
 					},
 					"Singing": {
-						"Line01": "*Yvonne sings*"
+						"Line01": "La la la, la la la, la la la, la la."
 					}
 				},
 				"EricAndIan": {
 					"MeetTheTwins": {
-						"Line01": "Twins (Eric & Ian): Hello, Zelda. I'm Eric and this is Ian.",
-						"Line02": "Oh, what do you mean? I'm Eric, I've always been.",
-						"Line03": "No you're not, I'm Eric!"
+						"Line01": "Les jumeaux Érik et Ian : Bonjour, Zelda.\nJe suis Éric, et voici Ian.",
+						"Line02": "— Oh, que veux-tu dire ?\nJe suis Éric, je l'ai toujours été.",
+						"Line03": "— Non, tu ne l'es pas, je suis Éric !"
 					},
 					"MeetOurFather": {
-						"Line01": "Well, never mind who we are.",
-						"Line02": "You should go into the yellow house and meet our father!",
-						"Line03": "He'll tell you something that's good to know."
+						"Line01": "Les jumeaux Érik et Ian : Eh bien,\npeu importe qui nous sommes.",
+						"Line02": "Tu devrais entrer dans la maison jaune\net rencontrer notre père !",
+						"Line03": "Il a quelque chose\nd'intéressant à te dire."
 					}
 				},
 				"Alice": {
 					"MyGoodness": {
-						"Line01": "Alice: My goodness, it's the brave Zelda!",
-						"Line02": "I've heard so much about ya from everyone.",
-						"Line03": "Sit a goodly spell with Alice, and indulge an old woman."
+						"Line01": "Alice : Mon Dieu,\nc'est la courageuse Zelda !",
+						"Line02": "Votre nom est sur toutes les lèvres.",
+						"Line03": "Asseyez-vous un moment avec Alice\net faites plaisir à une vieille dame."
 					},
 					"PeculiarLittleTown": {
-						"Line01": "Alice: Great Wimbich is such a peculiar little town.",
-						"Line02": "The shops out on Upper Street have anything you could wish for",
-						"Line03": "and if you can't find it there",
-						"Line04": "you're sure to stumble across it in the market square."
+						"Line01": "Alice : Grand Wimbich est une petite\nbourgade si particulière.",
+						"Line02": "Les échoppes situées sur la Rue Haute\nont tout ce que vous pourriez désirer,",
+						"Line03": "et si vous ne le trouvez pas là-bas,",
+						"Line04": "soyez sûre de le dénicher\nsur la place du marché."
 					},
 					"IfYaLikeMusic": {
-						"Line01": "Alice: Now, if ya like music, follow your ear to Yvonne",
-						"Line02": "the musician down Skotness Road right here.",
-						"Line03": "If ya get tired in ya wanderings, this is a great place to settle down."
+						"Line01": "Alice : Maintenant, Si vous aimez la musique,\ntendez l'oreille jusqu'à Yvonne.",
+						"Line02": "C'est la musicienne, au bas\nde la Route de Skotness.",
+						"Line03": "Et si vous êtes sur les rotules,\nc'est l'endroit idéal pour faire une pause."
 					},
 					"NothingMoreToSay": {
-						"Line01": "Alice: Zelda, it's been fun visiting with you",
-						"Line02": "but I have nothing more to say now.",
-						"Line03": "Come back and see me again, okay?"
+						"Line01": "Alice : Zelda, c'est gentil\nà vous de passer me voir,",
+						"Line02": "mais je n'ai plus grand-chose\nà dire pour le moment.",
+						"Line03": "Revenez me voir\ntout à l'heure, d'accord ?"
 					},
 					"RealNice": {
-						"Line01": "Alice: Yes, Zelda, it's real nice around here."
+						"Line01": "Alice : Oui, Zelda,\nle coin est bien agréable."
 					}
 				},
 				"GhostFarmer": {
 					"StayBack": {
-						"Line01": "Ghost Farmer: Stay back!",
-						"Line02": "This splendid farm is all mine.",
-						"Line03": "Isn't it wonderful?",
-						"Line04": "I have worked this land for three-hundred years."
+						"Line01": "Fermier fantôme : Reculez !",
+						"Line02": "Cette splendide ferme m'appartient.",
+						"Line03": "N'est-elle pas merveilleuse ?",
+						"Line04": "Je travaille cette terre\ndepuis trois cents ans."
 					},
 					"StillHere": {
-						"Line01": "No? You're still here?",
-						"Line02": "Alright, I admit it, my farm is in ruins.",
-						"Line03": "Ganon and his cruel friends took all my crops and tools.",
-						"Line04": "You must save us!",
-						"Line05": "Come close, and I'll tell you a secret."
+						"Line01": "Non ! Vous êtes toujours là ?",
+						"Line02": "Hélas, je dois l'avouer, ma ferme\nest devenue un champ de ruines.",
+						"Line03": "Ganon et ses hordes infâmes ont ravagé\nmes récoltes et emporté tous mes outils.",
+						"Line04": "Vous devez nous sauver !",
+						"Line05": "Approchez-vous,\net je vous révélerai un secret..."
 					},
 					"ShrineOfWater_Classic": {
-						"Line01": "Ghost Farmhand: Far away, one of Ganon's allies lives in a world of water.",
-						"Line02": "The entrance is hidden, and you may never find it",
-						"Line03": "if you fear the touch of falling water.",
-						"Line04": "You can cross any fjord in Skotness River with the Red Boots."
+						"Line01": "Fermier fantôme : Loin d'ici, un allié\nde Ganon vit dans un monde aquatique.",
+						"Line02": "L'entrée est secrète et vous\nne l'atteindrez sans doute jamais",
+						"Line03": "si vous redoutez les rapides.",
+						"Line04": "Pour traverser la rivière Skotness,\nchaussez les bottes rouges."
 					},
 					"ShrineOfWater_Remastered": {
-						"Line01": "Ghost Farmer: Far away, one of Ganon's allies lives in a world of water.",
-						"Line02": "The entrance is hidden, and you may never find it",
-						"Line03": "if you fear the touch of falling water."
+						"Line01": "Fermier fantôme : Loin d'ici, un allié\nde Ganon vit dans un monde aquatique.",
+						"Line02": "L'entrée est secrète et vous\nne l'atteindrez sans doute jamais",
+						"Line03": "si vous redoutez les rapides."
 					}
 				},
 				"TwinFather": {
 					"WelcomeToMyHome": {
-						"Line01": "Twins' Father: Hello, Zelda! Welcome to my home!",
-						"Line02": "I'm the twins' father, and even I don't know which twin is which.",
-						"Line03": "Still, it is good of you to come and visit.",
-						"Line04": "My name is Zelda and you must be the father.",
-						"Line05": "No, wait! That can't be true, you just came in.",
-						"Line06": "You must be Zelda!"
+						"Line01": "Le père des jumeaux : Bonjour, Zelda !\nBienvenue chez moi !",
+						"Line02": "Je suis le père des jumeaux,\net même moi, je ne sais pas qui est qui.",
+						"Line03": "Bref, c'est gentil à vous\nd'être venu me rendre visite.",
+						"Line04": "Je m'appelle Zelda\net vous devez être le père des...",
+						"Line05": "Non, attendez ! C'est impossible,\nvous venez juste d'arriver.",
+						"Line06": "Vous devez être Zelda !"
 					},
 					"CoalAndRubies": {
-						"Line01": "I do know this for sure, because I used to be",
-						"Line02": "a miner over on the Plain of Hobel:",
-						"Line03": "Coal and rubies are the same substance.",
-						"Line04": "I believe there's a crusher somewhere nearby.",
-						"Line05": "Uh, go in peace, little one. Uh... are you Eric or Ian?"
+						"Line01": "Père des jumeaux :\nJe sais ce que je sais, car j'ai été",
+						"Line02": "mineur sur la plaine de Hobel.",
+						"Line03": "Le charbon et les rubis\nsont alchimiques.",
+						"Line04": "Je crois qu'il y a un concasseur\nquelque part à proximité.",
+						"Line05": "Euh, allez en paix, mon enfant.\nEuh... êtes-vous Eric ou Ian ?"
 					},
 					"VaguelyFamiliar": {
-						"Line01": "Twins' Father: You seem... vaguely familiar, but, um...",
-						"Line02": "i-it's really time for my nap.",
-						"Line03": "Are you Eric or- or Ian?"
+						"Line01": "Père des jumeaux : Vous me semblez...\nvaguement familière, mais, euh...",
+						"Line02": "Il... il est vraiment temps\npour ma sieste.",
+						"Line03": "Êtes-vous Eric ou... ou Ian ?"
 					}
 				},
 				"Lounger": {
 					"HiThere": {
-						"Line01": "Lounger: Hi there! Don't worry about the dog, he won't bite.",
-						"Line02": "I wish he did bite, then there'd be a little excitement here in Great Wimbich.",
-						"Line03": "Nothing ever happens here!",
-						"Line04": "When people do come, they're even more boring.",
-						"Line05": "Everybody's dull."
+						"Line01": "Clampin : Bien le bonjour !\nN'ayez crainte, le chien ne mord pas.",
+						"Line02": "J'aimerais qu'il morde, ça mettrait\nun peu d'animation à Grand Wimbich.",
+						"Line03": "Il ne se passe jamais rien ici !",
+						"Line04": "Même les passants sont ennuyeux.",
+						"Line05": "Tout le monde est rasoir."
 					},
 					"DontWannaSeeYou": {
-						"Line01": "Lounger: Ugh... I don't want to see you again.",
+						"Line01": "Clampin : Argh...\nJe ne veux plus vous revoir.",
 					},
 					"GoAway": {
-						"Line01": "Lounger: Why don't you go away and be boring someplace else?",
-						"Line02": "Good riddance."
+						"Line01": "Clampin : Pourquoi vous n'allez pas\nvoir ailleurs si j'y suis ?",
+						"Line02": "Bon vent."
 					}
 				},
 				"GeneralShopkeeper": {
 					"HelloLittleOne": {
-						"Line01": "Shopkeeper: Hello, little one! Heh!",
-						"Line02": "I hope I can be of help to you.",
-						"Line03": "Did you see my dog out on Upper Street?",
-						"Line04": "How did he smell?",
-						"Line05": "Knave: With his nose, of course!",
-						"Line06": "*laughter from both men*"
+						"Line01": "Boutiquier : Bonjour, vous !  Hé hé.",
+						"Line02": "J'espère pouvoir vous aider...",
+						"Line03": "Euh, avez-vous vu mon chien\ndans la Rue Haute ?",
+						"Line04": "Euh, comment se sentait-il ?",
+						"Line05": "L'Idiot du village :\n— Avec sa truffe, bien sûr !",
+						"Line06": "Pff ! Hi hi hi ! Oh oh oh !\nHa ha ha ! Ouh ! Ha ha..."
 					},
 					"GoodsOnTheTable": {
-						"Line01": "Shopkeeper: You see my goods on the table?",
-						"Line02": "You may purchase whatever you wish.",
-						"Line03": "There's even a bone here that my dog would love!"
+						"Line01": "Boutiquier : Vous voyez\nmes marchandises sur la table ?",
+						"Line02": "Vous pouvez acheter\ntout ce que vous souhaitez.",
+						"Line03": "Il y a même un os ici\nque mon chien adorerait ! Ouaf !"
 					},
 					"HowAreYou": {
-						"Line01": "Shopkeeper: Ooooooh! Heh!",
-						"Line02": "How are you? Ha ha ha!",
-						"Line03": "May I be of some service?"
+						"Line01": "Boutiquier : Ooooooh ! Hé hé.",
+						"Line02": "Comment allez-vous ?\nHa ha ha !",
+						"Line03": "Puis-je vous être utile ?"
 					},
 					"ThatWasSmart": {
-						"Line01": "Shopkeeper: Oooooo! *laughter*",
-						"Line02": "That was smart!",
-						"Line03": "Come again, little one! Come again."
+						"Line01": "Boutiquier : Oooooh ! Hé hé hé hé !",
+						"Line02": "Euh, c'est futé !",
+						"Line03": "Euh, revenez nous voir, petite reine !\nRevenez nous voir."
 					}
 				},
 				"Knave": {
 					"ShrineTakenLightly": {
-						"Line01": "Knave: Is a shrine a thing to be taken lightly? *laughter*",
-						"Line02": "No, and a candle is needed to light a shrine! *laughter*"
+						"Line01": "L'Idiot du village : Un sanctuaire\ntoujours t'éclairera-t-il ? Mmmh !",
+						"Line02": "Non, mais pour éclairer un sanctuaire\nune bougie sera utile ! Héhéhé !..."
 					},
 					"JokeToPassTime": {
-						"Line01": "Knave: *nervous laughter* Oh-hoh-hooo!",
-						"Line02": "Oooo, we may joke to pass the time, princess, but...",
-						"Line03": "we are all troubled about the future of Tolemac.",
-						"Line04": "You must seek out the tablets and save us! *nervous laughter*"
+						"Line01": "L'Idiot du village :\nHéhéhé hihihi ohoh...",
+						"Line02": "Ooooh, nous pouvons rire\npour passer le temps, princesse, mais...",
+						"Line03": "nous sommes tous inquiets\npour l'avenir de Tolemac.",
+						"Line04": "Vous devez retrouver les Signes\net nous sauver ! Hahaha, mmmh."
 					},
 					"WatchOutForGanon": {
-						"Line01": "Knave: *laughing* Oo-hooo!",
-						"Line02": "Watch out for that Ganon, Zelda!",
-						"Line03": "Ooooooooo!"
+						"Line01": "L'Idiot du village : Hi hi hi ! Hou hou !",
+						"Line02": "Prenez garde au grand\nméchant Ganon, Zelda !",
+						"Line03": "Hou hou houuuu !..."
 					}
 				},
 				"MadameKriggle": {
 					"ApproachedAtLast": {
-						"Line01": "Madame Kriggle: At last!",
-						"Line02": "Madame Kriggle is approached by an innocent",
-						"Line03": "who wishes to grow in the use of magic and spells.",
-						"Line04": "My old friend Shurmak has told me of your coming;",
-						"Line05": "I have awaited you many moons and suns.",
-						"Line06": "It is important to remember",
-						"Line07": "that magic adornments will defend thee from many beings",
-						"Line08": "who will attack you with magic.",
-						"Line09": "You may purchase my Turquoise Ring",
-						"Line10": "or my Jade Amulet to raise your defenses."
+						"Line01": "Madame Kriggle : Enfin !",
+						"Line02": "Madame Kriggle est approchée\npar une innocente",
+						"Line03": "qui souhaite progresser dans la pratique\nde la magie et des sorts.",
+						"Line04": "Ma vieille amie Shurmak\nm'a informée de votre venue.",
+						"Line05": "Je vous ai attendue\nde nombreuses lunes et soleils.",
+						"Line06": "Il est important de se rappeler",
+						"Line07": "que mes bijoux magiques vous seront\nd'un grand secours contre tous ceux",
+						"Line08": "qui vous attaqueront par magie.",
+						"Line09": "Vous pouvez par exemple\nacheter ma bague de saphir",
+						"Line10": "ou mon amulette de jade\npour renforcer vos défenses."
 					},
 					"TouchWhatYouWantToUse": {
-						"Line01": "Madame Kriggle: Touch what you wish to use,",
-						"Line02": "and leave me your Rubies.",
-						"Line03": "I promise you will be pleased."
+						"Line01": "Madame Kriggle : Touchez\nce que vous souhaitez utiliser",
+						"Line02": "et de vos rubis, je serai assurée.",
+						"Line03": "Je vous promets que vous ne serez\nque pleinement satisfaite."
 					},
 					"WonderfulToSeeYou": {
-						"Line01": "Madame Kriggle: How wonderful to see you, my dear!"
+						"Line01": "Madame Kriggle : Quel plaisir\nde vous revoir, ma chère !"
 					},
 					"WiseChoice": {
-						"Line01": "Madame Kriggle: A wise choice for setting out! Oh-hoh...",
-						"Line02": "Come and see me again!"
+						"Line01": "Madame Kriggle : Vous vous êtes parée\nd'un excellent choix ! Ohhh...",
+						"Line02": "Revenez me voir bientôt !"
 					}
 				},
 				"Smithy": {
 					"WhoGoesThere": {
-						"Line01": "Smithy: Who goes there!? Oh, it's a young girl.",
-						"Line02": "Don't touch anything!",
-						"Line03": "People steal me blind; I know you all hate me!",
-						"Line04": "What did I ever do to any of you!?",
-						"Line05": "I give an honest bargain, I grind your Coal into Rubies,",
-						"Line06": "I stay open late and work my fingers to the bone.",
-						"Line07": "Do any of you appreciate it? No!"
+						"Line01": "Forgeron : Qui va là ?!\nOh, c'est une jeune fille.",
+						"Line02": "Ne touchez à rien !",
+						"Line03": "Les gens me volent sans vergogne,\nje sais que vous me détestez tous !",
+						"Line04": "Qu'est-ce que\nj'ai bien pu vous faire ?",
+						"Line05": "Je suis un honnête artisan,\nje transmute votre charbon en rubis,",
+						"Line06": "je reste ouvert tard\net je travaille d'arrache-pied.",
+						"Line07": "Est-ce que quelqu'un l'apprécie ?\nNon !"
 					},
 					"ChooseItemAndHurry": {
-						"Line01": "Smithy: Choose your item and hurry, the world is full of thieves.",
+						"Line01": "Forgeron : Choisissez vite votre objet,\nle monde regorge de voleurs.",
 					},
 					"CongratsOnFindingCoal": {
-						"Line01": "Smithy: Congratulations on finding such a fine piece of Coal!",
-						"Line02": "After Wimbich taxes - my commission, of course...",
-						"Line03": "*cough* that leaves, umm..."
+						"Line01": "Forgeron : Félicitations\npour ce beau morceau de charbon !",
+						"Line02": "Après les taxes de Wimbich,\nma commission, bien sûr...",
+						"Line03": "hum, cela fait..."
 					}
 				}
 			},
 			"PlainOfDonora": {
 				"YalzanTheStern": {
 					"Toll10Rubies": {
-						"Line01": "Yalzan the Stern: Ten rubies gets you through the pass, young lady, no less."
+						"Line01": "Yalzan le Sévère : Dix rubis vous permettront\nde franchir le col, jeune fille, pas moins."
 					},
 					"Toll20Rubies": {
-						"Line01": "Yalzan the Stern: Oh, force my hand, will you?",
-						"Line02": "The price is now twenty rubies."
+						"Line01": "Yalzan le Sévère : Oh, vous voulez\nme forcer la main, n'est-ce pas ?",
+						"Line02": "Le prix est désormais de vingt rubis."
 					}
 				},
 				"KronThePegleg":{
 					"EverybodyComesTo": {
-						"Line01": "Kron the Pegleg: Everybody comes to Kron the Pegleg. Good time!"
+						"Line01": "Kron, Quille de Bois : Tout le monde\nvient chez Kron, Quille de Bois. C'est heureux !"
 					},
 					"FineItemForSale": {
-						"Line01": "Well, here's a fine item I have for sale!"
+						"Line01": "Kron, Quille de Bois : Eh bien, voici\nun bel article que j'ai à vendre !"
 					}
 				}
 			}

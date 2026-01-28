@@ -1,0 +1,23 @@
+﻿1
+00:00:00,033 --> 00:00:03,160
+Non ! Vous êtes toujours là ?
+
+2
+00:00:03,660 --> 00:00:07,127
+Hélas, je dois l'avouer, ma ferme
+est devenue un champ de ruines.
+
+3
+00:00:07,587 --> 00:00:11,200
+Ganon et ses hordes infâmes ont ravagé
+mes récoltes et emporté tous mes outils.
+
+4
+00:00:11,819 --> 00:00:13,586
+Vous devez nous sauver !
+
+5
+00:00:14,067 --> 00:00:16,893
+Approchez-vous,
+et je vous révélerai un secret…
+

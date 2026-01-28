@@ -1,0 +1,19 @@
+﻿1
+00:00:00,173 --> 00:00:06,173
+Fermier fantôme : Loin d'ici, un allié
+de Ganon vit dans un monde aquatique.
+
+2
+00:00:06,473 --> 00:00:09,333
+L'entrée est secrète et vous
+ne l'atteindrez sans doute jamais
+
+3
+00:00:09,358 --> 00:00:12,053
+si vous redoutez les rapides.
+
+4
+00:00:13,087 --> 00:00:18,700
+Pour traverser la rivière Skotness,
+chaussez les bottes rouges.
+

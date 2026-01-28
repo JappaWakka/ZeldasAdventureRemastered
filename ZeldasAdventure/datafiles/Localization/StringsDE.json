@@ -470,11 +470,11 @@
 				"EricAndIan": {
 					"MeetTheTwins": {
 						"Line01": "Die Zwillinge (Eric & Ian): Hallo, Zelda. Ich bin Eric, und das ist Ian.",
-						"Line02": "Äh, was meinst du damit? Ich bin Eric! Schon immer.",
-						"Line03": "Nein, bist du nicht! Ich bin Eric!"
+						"Line02": "- Äh, was meinst du damit? Ich bin Eric! Schon immer.",
+						"Line03": "- Nein, bist du nicht! Ich bin Eric!"
 					},
 					"MeetOurFather": {
-						"Line01": "Nun, egal, wer wir sind.",
+						"Line01": "Die Zwillinge (Eric & Ian): Nun, egal, wer wir sind.",
 						"Line02": "Du solltest in das gelbe Haus gehen und unseren Vater treffen!",
 						"Line03": "Er wird dir etwas erzählen, das du wirklich wissen solltest."
 					}
@@ -672,7 +672,7 @@
 						"Line01": "Kron der Einbeinige: Alle kommen zu Kron dem Einbeinigen. Gute Zeiten!"
 					},
 					"FineItemForSale": {
-						"Line01": "Nun, hier ist etwas Schönes, das ich zu verkaufen habe!"
+						"Line01": "Kron der Einbeinige: Nun, hier ist etwas Schönes, das ich zu verkaufen habe!"
 					}
 				}
 			}

@@ -470,11 +470,11 @@
 				"EricAndIan": {
 					"MeetTheTwins": {
 						"Line01": "Twins (Eric & Ian): Hello, Zelda. I'm Eric and this is Ian.",
-						"Line02": "Oh, what do you mean? I'm Eric, I've always been.",
-						"Line03": "No you're not, I'm Eric!"
+						"Line02": "- Oh, what do you mean? I'm Eric, I've always been.",
+						"Line03": "- No you're not, I'm Eric!"
 					},
 					"MeetOurFather": {
-						"Line01": "Well, never mind who we are.",
+						"Line01": "Twins (Eric & Ian): Well, never mind who we are.",
 						"Line02": "You should go into the yellow house and meet our father!",
 						"Line03": "He'll tell you something that's good to know."
 					}
@@ -672,7 +672,7 @@
 						"Line01": "Kron the Pegleg: Everybody comes to Kron the Pegleg. Good time!"
 					},
 					"FineItemForSale": {
-						"Line01": "Well, here's a fine item I have for sale!"
+						"Line01": "Kron the Pegleg: Well, here's a fine item I have for sale!"
 					}
 				}
 			}
