@@ -439,7 +439,7 @@
 			"GreatWimbich": {
 				"TownMerchant": {
 					"ForThirtySuns": {					
-						"Line01": "Marchande: Pendant trente soleils,\nmon mari et moi",
+						"Line01": "Marchande : Pendant trente soleils,\nmon mari et moi",
 						"Line02": "avons géré la grande forge\npour Warbane.",
 						"Line03": "Puis Ganon est arrivé\net a contraint Warbane",
 						"Line04": "à servir ses propres\nplans maléfiques.",
@@ -467,7 +467,7 @@
 						"Line08": "Hé hé hé ! Cette flûte peut stupéfier\nle sifflement d'un serpent menaçant."
 					},
 					"Singing": {
-						"Line01": "La la la, la la la, la la la, la la."
+						"Line01": "Yvonne : La la la, la la la, la la la, la la."
 					}
 				},
 				"EricAndIan": {
@@ -516,14 +516,14 @@
 						"Line04": "Je travaille cette terre\ndepuis trois cents ans."
 					},
 					"StillHere": {
-						"Line01": "Non ! Vous êtes toujours là ?",
+						"Line01": "Fermier fantôme : Non !\nVous êtes toujours là ?",
 						"Line02": "Hélas, je dois l'avouer, ma ferme\nest devenue un champ de ruines.",
 						"Line03": "Ganon et ses hordes infâmes ont ravagé\nmes récoltes et emporté tous mes outils.",
 						"Line04": "Vous devez nous sauver !",
 						"Line05": "Approchez-vous,\net je vous révélerai un secret..."
 					},
 					"ShrineOfWater_Classic": {
-						"Line01": "Fermier fantôme : Loin d'ici, un allié\nde Ganon vit dans un monde aquatique.",
+						"Line01": "Valet de ferme fantôme : Loin d'ici, un allié\nde Ganon vit dans un monde aquatique.",
 						"Line02": "L'entrée est secrète et vous\nne l'atteindrez sans doute jamais",
 						"Line03": "si vous redoutez les rapides.",
 						"Line04": "Pour traverser la rivière Skotness,\nchaussez les bottes rouges."
