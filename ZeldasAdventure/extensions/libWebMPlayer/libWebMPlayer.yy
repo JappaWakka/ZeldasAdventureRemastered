@@ -1,86 +1,82 @@
 {
-  "optionsFile": "options.json",
-  "options": [],
-  "exportToGame": true,
-  "supportedTargets": -1,
-  "extensionVersion": "0.0.1",
-  "packageId": "",
-  "productId": "",
-  "author": "",
-  "date": "2021-04-21T01:29:23",
-  "license": "",
-  "description": "",
-  "helpfile": "",
-  "iosProps": false,
-  "tvosProps": false,
+  "resourceType": "GMExtension",
+  "resourceVersion": "1.2",
+  "name": "libWebMPlayer",
+  "androidactivityinject": "",
+  "androidclassname": "",
+  "androidcodeinjection": "",
+  "androidinject": "",
+  "androidmanifestinject": "",
+  "androidPermissions": [],
   "androidProps": false,
-  "installdir": "",
+  "androidsourcedir": "",
+  "author": "",
+  "classname": "",
+  "copyToTargets": 194,
+  "date": "2021-04-21T01:29:23",
+  "description": "",
+  "exportToGame": true,
+  "extensionVersion": "0.0.1",
   "files": [
-    {"filename":"libWebMPlayer.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
-        {"externalName":"video_exists","kind":1,"help":"webm_exists(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"libWebMPlayer.dll","constants":[
+        {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"WEBM_INVALID","hidden":false,"value":"0",},
+        {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"WEBM_WIDTH","hidden":false,"value":"1",},
+        {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"WEBM_HEIGHT","hidden":false,"value":"2",},
+        {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"WEBM_PLAYTIME","hidden":false,"value":"3",},
+        {"resourceType":"GMExtensionConstant","resourceVersion":"1.0","name":"WEBM_DURATION","hidden":false,"value":"4",},
+      ],"copyToTargets":194,"filename":"libWebMPlayer.dll","final":"","functions":[
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_exists","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_exists","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_add","kind":1,"help":"webm_add(fname)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_exists","help":"webm_exists(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_add","argCount":0,"args":[
             1,
-          ],"resourceVersion":"1.0","name":"webm_add","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_delete","kind":1,"help":"webm_delete(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_add","help":"webm_add(fname)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_delete","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_delete","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_is_playing","kind":1,"help":"webm_is_playing(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_delete","help":"webm_delete(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_is_playing","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_is_playing","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_play","kind":1,"help":"webm_play(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_is_playing","help":"webm_is_playing(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_play","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_play","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_is_paused","kind":1,"help":"webm_is_paused(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_play","help":"webm_play(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_is_paused","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_is_paused","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_pause","kind":1,"help":"webm_pause(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_is_paused","help":"webm_is_paused(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_pause","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_pause","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_is_stopped","kind":1,"help":"webm_is_stopped(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_pause","help":"webm_pause(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_is_stopped","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_is_stopped","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_stop","kind":1,"help":"webm_stop(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_is_stopped","help":"webm_is_stopped(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_stop","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_stop","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_get_width","kind":1,"help":"webm_get_width(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_stop","help":"webm_stop(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_get_width","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_get_width","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_get_height","kind":1,"help":"webm_get_height(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_get_width","help":"webm_get_width(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_get_height","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_get_height","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_get_duration","kind":1,"help":"webm_get_duration(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_get_height","help":"webm_get_height(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_get_duration","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_get_duration","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_get_property","kind":1,"help":"webm_get_property(ind,prop)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_get_duration","help":"webm_get_duration(ind)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_get_property","argCount":0,"args":[
             2,
             2,
-          ],"resourceVersion":"1.0","name":"webm_get_property","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_grab_frame_image","kind":1,"help":"webm_grab_frame_image(ind,fname)","hidden":false,"returnType":2,"argCount":0,"args":[
-            2,
-            1,
-          ],"resourceVersion":"1.0","name":"webm_grab_frame_image","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_grab_frame_buffer","kind":1,"help":"webm_grab_frame_buffer(ind,buffer)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_get_property","help":"webm_get_property(ind,prop)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_grab_frame_image","argCount":0,"args":[
             2,
             1,
-          ],"resourceVersion":"1.0","name":"webm_grab_frame_buffer","tags":[],"resourceType":"GMExtensionFunction",},
-        {"externalName":"video_get_playtime","kind":1,"help":"webm_get_playtime(ind)","hidden":false,"returnType":2,"argCount":0,"args":[
+          ],"documentation":"","externalName":"webm_grab_frame_image","help":"webm_grab_frame_image(ind,fname)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_grab_frame_buffer","argCount":0,"args":[
             2,
-          ],"resourceVersion":"1.0","name":"webm_get_playtime","tags":[],"resourceType":"GMExtensionFunction",},
-      ],"constants":[
-        {"value":"0","hidden":false,"resourceVersion":"1.0","name":"WEBM_INVALID","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"1","hidden":false,"resourceVersion":"1.0","name":"WEBM_WIDTH","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"2","hidden":false,"resourceVersion":"1.0","name":"WEBM_HEIGHT","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"3","hidden":false,"resourceVersion":"1.0","name":"WEBM_PLAYTIME","tags":[],"resourceType":"GMExtensionConstant",},
-        {"value":"4","hidden":false,"resourceVersion":"1.0","name":"WEBM_DURATION","tags":[],"resourceType":"GMExtensionConstant",},
-      ],"ProxyFiles":[
-        {"TargetMask":1,"resourceVersion":"1.0","name":"libWebMPlayer.dylib","tags":[],"resourceType":"GMProxyFile",},
-        {"TargetMask":7,"resourceVersion":"1.0","name":"libWebMPlayer.so","tags":[],"resourceType":"GMProxyFile",},
-        {"TargetMask":6,"resourceVersion":"1.0","name":"libWebMPlayer_x64.dll","tags":[],"resourceType":"GMProxyFile",},
-        {"TargetMask":7,"resourceVersion":"1.0","name":"libWebMPlayer_arm.so","tags":[],"resourceType":"GMProxyFile",},
-        {"TargetMask":7,"resourceVersion":"1.0","name":"libWebMPlayer_arm64.so","tags":[],"resourceType":"GMProxyFile",},
-      ],"copyToTargets":194,"order":[
+            1,
+          ],"documentation":"","externalName":"webm_grab_frame_buffer","help":"webm_grab_frame_buffer(ind,buffer)","hidden":false,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"webm_get_playtime","argCount":0,"args":[
+            2,
+          ],"documentation":"","externalName":"webm_get_playtime","help":"webm_get_playtime(ind)","hidden":false,"kind":1,"returnType":2,},
+      ],"init":"","kind":1,"order":[
         {"name":"webm_exists","path":"extensions/libWebMPlayer/libWebMPlayer.yy",},
         {"name":"webm_add","path":"extensions/libWebMPlayer/libWebMPlayer.yy",},
         {"name":"webm_delete","path":"extensions/libWebMPlayer/libWebMPlayer.yy",},
@@ -97,48 +93,52 @@
         {"name":"webm_get_property","path":"extensions/libWebMPlayer/libWebMPlayer.yy",},
         {"name":"webm_grab_frame_image","path":"extensions/libWebMPlayer/libWebMPlayer.yy",},
         {"name":"webm_grab_frame_buffer","path":"extensions/libWebMPlayer/libWebMPlayer.yy",},
-      ],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
-    {"filename":"libWebMPlayer.zip","origname":"","init":"","final":"","kind":4,"uncompress":false,"functions":[],"constants":[],"ProxyFiles":[],"copyToTargets":0,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+      ],"origname":"","ProxyFiles":[
+        {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"libWebMPlayer.dylib","TargetMask":1,},
+        {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"libWebMPlayer_arm64.so","TargetMask":7,},
+        {"resourceType":"GMProxyFile","resourceVersion":"1.0","name":"libWebMPlayer.so","TargetMask":7,},
+      ],"uncompress":false,"usesRunnerInterface":false,},
+    {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"libWebMPlayer.zip","constants":[],"copyToTargets":0,"filename":"libWebMPlayer.zip","final":"","functions":[],"init":"","kind":4,"order":[],"origname":"","ProxyFiles":[],"uncompress":false,"usesRunnerInterface":false,},
   ],
-  "classname": "",
-  "tvosclassname": "",
-  "tvosdelegatename": "",
-  "iosdelegatename": "",
-  "androidclassname": "",
-  "sourcedir": "",
-  "androidsourcedir": "",
-  "macsourcedir": "",
-  "maccompilerflags": "",
-  "tvosmaccompilerflags": "",
-  "maclinkerflags": "",
-  "tvosmaclinkerflags": "",
-  "iosplistinject": "",
-  "tvosplistinject": "",
-  "androidinject": "",
-  "androidmanifestinject": "",
-  "androidactivityinject": "",
   "gradleinject": "",
-  "androidcodeinjection": "",
   "hasConvertedCodeInjection": true,
-  "ioscodeinjection": "",
-  "tvoscodeinjection": "",
-  "iosSystemFrameworkEntries": [],
-  "tvosSystemFrameworkEntries": [],
-  "iosThirdPartyFrameworkEntries": [],
-  "tvosThirdPartyFrameworkEntries": [],
+  "helpfile": "",
+  "HTML5CodeInjection": "",
+  "html5Props": false,
   "IncludedResources": [],
-  "androidPermissions": [],
-  "copyToTargets": 194,
-  "iosCocoaPods": "",
-  "tvosCocoaPods": "",
+  "installdir": "",
   "iosCocoaPodDependencies": "",
-  "tvosCocoaPodDependencies": "",
+  "iosCocoaPods": "",
+  "ioscodeinjection": "",
+  "iosdelegatename": "",
+  "iosplistinject": "",
+  "iosProps": false,
+  "iosSystemFrameworkEntries": [],
+  "iosThirdPartyFrameworkEntries": [],
+  "license": "",
+  "maccompilerflags": "",
+  "maclinkerflags": "",
+  "macsourcedir": "",
+  "options": [],
+  "optionsFile": "options.json",
+  "packageId": "",
   "parent": {
     "name": "Extensions",
     "path": "folders/Extensions.yy",
   },
-  "resourceVersion": "1.2",
-  "name": "libWebMPlayer",
-  "tags": [],
-  "resourceType": "GMExtension",
+  "productId": "",
+  "sourcedir": "",
+  "supportedTargets": -1,
+  "tvosclassname": "",
+  "tvosCocoaPodDependencies": "",
+  "tvosCocoaPods": "",
+  "tvoscodeinjection": "",
+  "tvosdelegatename": "",
+  "tvosmaccompilerflags": "",
+  "tvosmaclinkerflags": "",
+  "tvosplistinject": "",
+  "tvosProps": false,
+  "tvosSystemFrameworkEntries": [],
+  "tvosThirdPartyFrameworkEntries": [],
+
 }

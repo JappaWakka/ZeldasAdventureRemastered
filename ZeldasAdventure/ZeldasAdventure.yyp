@@ -2900,6 +2900,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"PlainOfAndor_15.psd","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesEN/#Source (Photoshop 2026)",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"MeadowOfSkotness_10.psd","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesEN/#Source (Photoshop 2026)",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"MeadowOfSkotness_10_Below.png","CopyToMask":-1,"filePath":"datafiles/Localization/SpritesDE/Maps/MeadowOfSkotness",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cutscene_Shrine_Illusion.webm","CopyToMask":-1,"filePath":"datafiles/Video",},
   ],
   "MetaData": {
     "IDEVersion": "2022.0.3.85",
