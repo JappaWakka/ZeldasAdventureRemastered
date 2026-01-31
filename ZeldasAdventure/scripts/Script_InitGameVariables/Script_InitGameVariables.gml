@@ -108,6 +108,21 @@ function InitGameVariables()
 	global.VolumeMusic = ini_read_real("Options", "VolumeMusic", 1);
 	global.VolumeSoundFX = ini_read_real("Options", "VolumeSoundFX", 1);
 	global.VolumeDialogue = ini_read_real("Options", "VolumeDialogue", 1);
+	
+	if ini_section_exists("Options")
+	{
+		ini_write_real("Options",	"WindowScale",		global.WindowScale);
+		ini_write_real("Options",	"Fullscreen",		real(global.Fullscreen));
+		ini_write_real("Options",	"ShowSubtitles",	real(global.ShowSubtitles));
+		ini_write_real("Options",	"RemasteredMode",	real(global.RemasteredMode));
+		ini_write_real("Options",	"CurrentLanguage",	global.CurrentLanguage);
+		ini_write_real("Options",	"AspectRatio",		global.AspectRatio);
+		ini_write_real("Options",	"VolumeMaster",		global.VolumeMaster);
+		ini_write_real("Options",	 "VolumeMusic",		global.VolumeMusic);
+		ini_write_real("Options",	 "VolumeSoundFX",	global.VolumeSoundFX);
+		ini_write_real("Options",	 "VolumeDialogue",	global.VolumeDialogue);
+	}
+	
 	audio_group_set_gain(AudioGroup_Music,global.VolumeMusic * global.VolumeMaster,0);
 	audio_group_set_gain(AudioGroup_SoundFX,global.VolumeSoundFX * global.VolumeMaster,0);
 	audio_group_set_gain(AudioGroup_Dialogue,global.VolumeDialogue * global.VolumeMaster,0);
