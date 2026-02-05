@@ -7,5 +7,10 @@ if room = Room_Overworld
 }
 if global.ShowSubtitles = true && global.Subtitle != ""
 {
-	Draw_Subtitles(ViewWidth / 2, ViewHeight, global.Subtitle,c_white,1,c_black,1,1,200,1 / global.WindowScale,1 / global.WindowScale,0);
+	var AspectY = 1
+	if global.AspectRatio != 0
+	{
+		AspectY = ViewHeight / (ViewHeight + global.AspectRatio)
+	}
+	Draw_Subtitles(ViewWidth / 2, ViewHeight, global.Subtitle,c_white,1,c_black,1,1,AspectY,200,1 / global.WindowScale,1 / global.WindowScale * AspectY,0);
 }
