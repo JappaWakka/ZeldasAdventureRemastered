@@ -205,6 +205,11 @@ function InitGameVariables()
 	enum MapTileType
 	{
 		Regular,
+		ShrineEntrance,
+		Shortcut,
+		Interior,
+		FairyFountain,
+		Shop,
 		Large,
 		SignRoom
 	};

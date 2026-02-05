@@ -111,14 +111,37 @@ if Alpha = 255
 			case Maps.Overworld:
 				if global.WorldMap_Tiles[i][0] = TitleIndex and WorldMap_HasVisitedTile(global.WorldMap_Tiles[i][3]) = true
 				{
+					var TileImageIndex = 0
+					if global.RemasteredMode = true
+					{
+						switch WorldMap_GetTileType(global.WorldMap_Tiles[i][3])
+						{
+							case MapTileType.Regular:
+								TileImageIndex = 0
+								break;
+							case MapTileType.ShrineEntrance:
+								TileImageIndex = 2
+								break;
+							case MapTileType.Shortcut:
+								TileImageIndex = 4
+								break;
+							case MapTileType.Interior:
+								TileImageIndex = 6
+								break;
+							case MapTileType.FairyFountain:
+								TileImageIndex = 8
+								break;
+							case MapTileType.Shop:
+								TileImageIndex = 10
+								break;
+						}
+					}
 					if WorldMap_GetCurrentTileID() = global.WorldMap_Tiles[i][3]
 					{
-						draw_sprite(WorldMap_TileIcons, 1, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
+						TileImageIndex += 1
 					}
-					else
-					{
-						draw_sprite(WorldMap_TileIcons, 0, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
-					}
+					draw_sprite(WorldMap_TileIcons_Overworld, TileImageIndex, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
+					
 				}
 				break;
 			case Maps.Shrine1:
@@ -150,7 +173,7 @@ if Alpha = 255
 			{
 				if WorldMap_GetCurrentTileID() = global.WorldMap_Tiles[i][3]
 				{
-					draw_sprite(WorldMap_TileIcons, 5, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
+					draw_sprite(WorldMap_TileIcons_Shrine, 3, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
 				}
 				else
 				{
@@ -158,11 +181,11 @@ if Alpha = 255
 					{
 						if WorldMap_GetTileType(global.WorldMap_Tiles[i][3]) = MapTileType.SignRoom and Item_FindIndex(CompassItem,0) != -1
 						{
-							draw_sprite(WorldMap_TileIcons, 4, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
+							draw_sprite(WorldMap_TileIcons_Shrine, 2, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
 						}
 						else
 						{
-							draw_sprite(WorldMap_TileIcons, 3, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
+							draw_sprite(WorldMap_TileIcons_Shrine, 1, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
 						}
 					}
 					else
@@ -171,11 +194,11 @@ if Alpha = 255
 						{
 							if WorldMap_GetTileType(global.WorldMap_Tiles[i][3]) = MapTileType.SignRoom and Item_FindIndex(CompassItem,0) != -1
 							{
-								draw_sprite(WorldMap_TileIcons, 4, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
+								draw_sprite(WorldMap_TileIcons_Shrine, 2, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
 							}
 							else
 							{
-								draw_sprite(WorldMap_TileIcons, 2, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
+								draw_sprite(WorldMap_TileIcons_Shrine, 0, TilesStartPositionX + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[0] * TileSeparatorX, TilesStartPositionY + WorldMap_GetPositionOnMap(global.WorldMap_Tiles[i][3])[1] * TileSeparatorY);
 							}
 						}
 					}

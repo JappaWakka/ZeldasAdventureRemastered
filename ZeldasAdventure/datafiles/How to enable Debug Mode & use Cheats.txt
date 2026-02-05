@@ -5,10 +5,11 @@ You can also use these cheats:
 Keypad 0 - Fill HP to max
 Keypad 1 - Decrease current HP by half a heart
 Keypad 2 - Increase current HP by half a heart
-Keypad 3 - Decrease max HP by a whole heart
-Keypad 4 - Increase max HP by a whole heart
+Keypad 3 - Decrease max HP by a whole heart
+Keypad 4 - Increase max HP by a whole heart
 Keypad 5 - Add 250 Rubies
-Keypad 6 - Adds a single item to the inventory (originally used when I hadn't implemented NPCs yet, currently adds an Empty Pitcher)​
-Keypad 7 - Adds all available treasures and weapons to the inventory (many have not been implemented yet and only subtract from your Rubies)
+Keypad 6 - Adds a single item to the inventory (originally used when I hadn't implemented NPCs yet, currently adds an Empty Pitcher)
+Keypad 7 - Adds all available treasures and weapons to the inventory (many have not been implemented yet and only subtract from your Rubies)
 Keypad 8 - Double player speed (press again to reset to original speed)
-Keypad 9 - Changes the currently visible World Map
+Keypad 9 - Changes the currently visible map in the World Map screen (Overworld or one of the Shrines)
+Keypad / - Marks every tile (both Overworld and Shrines) as visited on the World Map screen
