@@ -1125,6 +1125,7 @@
     {"id":{"name":"Solid_ForestOfOgham_09","path":"objects/Solid_ForestOfOgham_09/Solid_ForestOfOgham_09.yy",},"order":11,},
     {"id":{"name":"Shrine_Illusion_17_Below","path":"sprites/Shrine_Illusion_17_Below/Shrine_Illusion_17_Below.yy",},"order":16,},
     {"id":{"name":"SeaIsland_02_Below","path":"sprites/SeaIsland_02_Below/SeaIsland_02_Below.yy",},"order":0,},
+    {"id":{"name":"Music_Forest_Ocean","path":"sounds/Music_Forest_Ocean/Music_Forest_Ocean.yy",},"order":20,},
     {"id":{"name":"FadeBeforePan_Shrine_Earth_14","path":"objects/FadeBeforePan_Shrine_Earth_14/FadeBeforePan_Shrine_Earth_14.yy",},"order":7,},
     {"id":{"name":"Shrine_Water_24_Below","path":"sprites/Shrine_Water_24_Below/Shrine_Water_24_Below.yy",},"order":23,},
     {"id":{"name":"Settings_SaveDiscardExit","path":"scripts/Settings_SaveDiscardExit/Settings_SaveDiscardExit.yy",},"order":7,},

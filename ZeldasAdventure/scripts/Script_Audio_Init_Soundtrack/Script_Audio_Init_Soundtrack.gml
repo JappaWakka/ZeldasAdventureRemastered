@@ -16,7 +16,7 @@ function Audio_Init_Soundtrack()
 		Fireplace_Normal : {Asset : Music_Fireplace_Normal, IntroLength : 1.811, LoopLength : 19.927},
 		Fireplace_Southport : {Asset : Music_Fireplace_Southport, IntroLength : 1.779, LoopLength : 19.497},
 		Forest : {Asset : Music_Forest, IntroLength : 1.429, LoopLength : 19.996},
-		Forest_Ocean : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
+		Forest_Ocean : {Asset : Music_Forest_Ocean, IntroLength : 2.098, LoopLength : 19.493},
 		Forest_Stream : {Asset : Music_Forest_Stream, IntroLength : 2.082, LoopLength : 19.478},
 		Inn : {Asset : Music_Inn, IntroLength : 2.333, LoopLength : 18.461},
 		Lava_Stream : {Asset : Music_Silence, IntroLength : 0, LoopLength : 0},
