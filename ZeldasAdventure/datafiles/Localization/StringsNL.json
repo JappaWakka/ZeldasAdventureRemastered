@@ -234,8 +234,8 @@
 						"Line04": "Je zult ver moeten reizen en grote gevaren moeten trotseren.",
 						"Line05": "Blijf kalm en gebruik je kennis en kracht om je vijanden te verslaan.",
 						"Line06": "Onthoud wat je leert tijdens je reis en geef niet op.",
-						"Line07": "Ga nu naar degene die een bed heeft, maar nooit slaapt",
-						"Line08": "waarbij een rode wilg waakt",
+						"Line07": "Ga nu naar degene die een bed heeft, maar nooit slaapt,",
+						"Line08": "waarbij een rode wilg waakt,",
 						"Line09": "en naar de mond die nooit praat."
 					},
 					"DoNotRoam": {
@@ -255,7 +255,7 @@
 						"Line01": "Bedelaar: Oh, schone prinses,",
 						"Line02": "heb meelij met een arm wezen, verbannen uit Great Wimbich in het noorden!",
 						"Line03": "Ik vraag alleen genoeg voor één maaltijd voor mijn kinderen,",
-						"Line04": "die honger lijden en kou hebben van de wind."
+						"Line04": "die honger lijden en het koud hebben van de wind."
 					},
 					"AfterGiveRupees": {
 						"Line01": "Bedelaar: U zijt duizendmaal gezegend,",
@@ -286,7 +286,7 @@
 				"MobilinsHeadInn": {
 					"LotharTheInnKeeper": {
 						"BeforeBuy": {
-							"Line01": "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, mijn prinses!",
+							"Line01": "Lothar de Herbergier: Welkom bij mijn Herberg, de Kop van de Mobilin, prinses!",
 							"Line02": "U ziet er uitgedroogd uit, neem een glaasje Andor cider van het huis.",
 							"Line03": "Ik heb een Kalmte-spreuk te koop, maar hij kost u 100 Robijnen."
 						},
@@ -296,7 +296,7 @@
 						},
 						"PurchaseCalmSpell": {
 							"Line01": "Lothar de Herbergier: Dat is wijsheid die uw jaren te boven gaat.",
-							"Line02": "De Kalmte-spreuk zal u helpen wanneer u hem het meest nodig heeft, maak er goed gebruik van.",
+							"Line02": "De Kalmte-spreuk zal u helpen als u die het meest nodig heeft, maak er goed gebruik van.",
 							"Line03": "En let goed op uzelf op de eenzame Andorvlakte."
 						}
 					},
@@ -306,7 +306,7 @@
 						"Line03": "Er wordt gezegd dat degenen die diep de aarde ingaan",
 						"Line04": "leren om de zonden van hebzucht te overwinnen.",
 						"Line05": "Dat zou waar kunnen zijn, maar ik weet wel dit:",
-						"Line06": "een Kaars en een zilveren sleutel kunnen je geluk brengen.",
+						"Line06": "met een Kaars en een zilveren sleutel weet je dat je goed zit.",
 						"Line07": "Schiet op, meisje, de tijd dringt!"
 					},
 					"DefeatedSoldier": {
@@ -315,11 +315,11 @@
 						"Line03": "dat had me maanden bespaard!"
 					},
 					"KrebbTheWeary": {
-						"Line01": "Krebb de Vermoeide: Waarom een heel leven lang verslagen zijn zoals ik?",
+						"Line01": "Krebb de Vermoeide: Waarom zou je je hele leven verslagen worden zoals ik?",
 						"Line02": "Maak er een einde aan. Stop, ga naar huis, geef het op.",
-						"Line03": "Je bent geduldig. Ik zie dat je je niet zomaar overgeeft.",
+						"Line03": "Je bent geduldig. Ik zie dat jij je niet zomaar overgeeft.",
 						"Line04": "Oké, neem deze Dolk van me af.",
-						"Line05": "Die zal je vast meer helpen dan het mij ooit heeft gedaan."
+						"Line05": "Die zal je vast meer helpen dan hij mij ooit heeft gedaan."
 					}
 				}
 			},
@@ -392,7 +392,7 @@
 				},
 				"BlueSardak": {
 					"ThoughtIWasAlone": {
-						"Line01": "Blauwe Sardak: Huh? Ik... Ik dacht dat ik alleen was hier!",
+						"Line01": "Blauwe Sardak: Huh? Ik... Ik dacht dat ik hier alleen was!",
 						"Line02": "Llort, er zit een vijand in je grot!"
 					},
 					"CouldntStopHer": {
@@ -457,7 +457,7 @@
 					},
 					"KindaTiredToday": {					
 						"Line01": "Dorpshandelaar: Ik ben een beetje... moe vandaag.",
-						"Line02": "Alles verandert in... modder."
+						"Line02": "Alles wordt een beetje... modderig."
 					}
 				},
 				"Yvonne": {
@@ -565,7 +565,7 @@
 					"HiThere": {
 						"Line01": "Luilak: Hallo daar! Maak je geen zorgen over de hond, hij bijt niet.",
 						"Line02": "Ik wou dat hij wel beet, dan zou er tenminste wat spanning zijn hier in Great Wimbich.",
-						"Line03": "Er gebeurt hier nooit iets!",
+						"Line03": "Er gebeurt hier ook nooit iets!",
 						"Line04": "Als er dan eindelijk mensen komen, zijn ze nog saaier.",
 						"Line05": "Iedereen is suf."
 					},
