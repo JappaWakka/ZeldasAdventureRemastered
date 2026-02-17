@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Solid_ForestOfOgham_TektiteCave",
   "spriteId": {
     "name": "ForestOfOgham_TektiteCave_Solid",
     "path": "sprites/ForestOfOgham_TektiteCave_Solid/ForestOfOgham_TektiteCave_Solid.yy",
   },
   "solid": true,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -30,8 +34,4 @@
     "name": "ForestOfOgham",
     "path": "folders/Objects/Solids/Overworld/ForestOfOgham.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Solid_ForestOfOgham_TektiteCave",
-  "tags": [],
-  "resourceType": "GMObject",
 }

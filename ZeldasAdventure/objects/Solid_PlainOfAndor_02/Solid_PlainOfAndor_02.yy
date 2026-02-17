@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Solid_PlainOfAndor_02",
   "spriteId": {
     "name": "PlainOfAndor_02_Solid",
     "path": "sprites/PlainOfAndor_02_Solid/PlainOfAndor_02_Solid.yy",
   },
   "solid": true,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -30,8 +34,4 @@
     "name": "PlainOfAndor",
     "path": "folders/Objects/Solids/Overworld/PlainOfAndor.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Solid_PlainOfAndor_02",
-  "tags": [],
-  "resourceType": "GMObject",
 }

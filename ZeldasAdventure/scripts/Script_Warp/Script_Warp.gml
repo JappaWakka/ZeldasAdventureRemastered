@@ -157,6 +157,14 @@ global.WarpLocations =
 	GreatWimbich_TwinFatherHouse_Inside : {TileX:9,TileY:12,PlayerX:204,PlayerY:196},
 	GreatWimbich_TwinFatherHouse_Outside : {TileX:11,TileY:13,PlayerX:248,PlayerY:176},
 	
+	//Forest of Torian
+	ForestOfTorian_WhiteSteedLodge_Inside : {TileX:13,TileY:6,PlayerX:180,PlayerY:208},
+	ForestOfTorian_WhiteSteedLodge_Outside : {TileX:13,TileY:10,PlayerX:258,PlayerY:124},
+	ForestOfTorian_TreeTrunkCave_Inside : {TileX:16,TileY:10,PlayerX:268,PlayerY:60},
+	ForestOfTorian_TreeTrunkCave_Outside : {TileX:14,TileY:10,PlayerX:276,PlayerY:124},
+	ForestOfTorian_ShrineOfIllusion_Exit : {TileX:11,TileY:7,PlayerX:176,PlayerY:136},
+	ForestOfTorian_ShrineOfIllusion_Warp : {TileX:11,TileY:7,PlayerX:232,PlayerY:156},
+	
 	//Shortcuts
 	SeacoastPlainShortcut_Inside_West : {TileX:12,TileY:20,PlayerX:64,PlayerY:144},
 	SeacoastPlainShortcut_Inside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112},
@@ -176,17 +184,17 @@ global.WarpLocations =
 	ShrineOfEarth_21_to_22 : {TileX:12,TileY:29,PlayerX:176,PlayerY:208},
 	ShrineOfEarth_22_to_21 : {TileX:12,TileY:30,PlayerX:188,PlayerY:28},
 
-	ShrineOfIllusion_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	ShrineOfIllusion_Spawn_Entrance : {TileX:19,TileY:27,PlayerX:184,PlayerY:204},
 	
-	ShrineOfAir_Entrance : {TileX:5,TileY:2,PlayerX:184,PlayerY:128},
+	ShrineOfAir_Spawn_Entrance : {TileX:5,TileY:2,PlayerX:184,PlayerY:128},
 	
-	ShrineOfDestiny_Entrance : {TileX:26,TileY:24,PlayerX:188,PlayerY:168},
+	ShrineOfDestiny_Spawn_Entrance : {TileX:26,TileY:24,PlayerX:188,PlayerY:168},
 	
-	ShrineOfWater_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	ShrineOfWater_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
 	
-	ShrineOfStrength_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	ShrineOfStrength_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
 	
-	ShrineOfFire_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	ShrineOfFire_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
 	
 	Gauntlet_Llort : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
 	Gauntlet_Pasquinade : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
@@ -333,6 +341,56 @@ function WarpToLocation(Name)
 			)
 			break;
 			
+		//Forest of Torian
+		case "WhiteSteedLodge_Inside":
+			WarpTo(
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.TileX,
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.TileY,
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.PlayerX,
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.PlayerY
+			)
+			break;
+		case "WhiteSteedLodge_Outside":
+			WarpTo(
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.TileX,
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.TileY,
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.PlayerX,
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.PlayerY
+			)
+			break;
+		case "TreeTrunkCave_Inside":
+			WarpTo(
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.TileX,
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.TileY,
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.PlayerX,
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.PlayerY
+			)
+			break;
+		case "TreeTrunkCave_Outside":
+			WarpTo(
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.TileX,
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.TileY,
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.PlayerX,
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.PlayerY
+			)
+			break;
+		case "ShrineOfIllusion_Outside_Exit":
+			WarpTo(
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.TileX,
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.TileY,
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.PlayerX,
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.PlayerY
+			)
+			break;
+		case "ShrineOfIllusion_Outside_Warp":
+			WarpTo(
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.TileX,
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.TileY,
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.PlayerX,
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.PlayerY
+			)
+			break;
+			
 		//Shorcuts
 		case "SeacoastPlainShortcut_Inside_West":
 			WarpTo(
@@ -453,60 +511,60 @@ function WarpToLocation(Name)
 		//Shrine of Illusion
 		case "Spawn_ShrineOfIllusion":
 			WarpTo(
-			global.WarpLocations.ShrineOfIllusion_Entrance.TileX,
-			global.WarpLocations.ShrineOfIllusion_Entrance.TileY,
-			global.WarpLocations.ShrineOfIllusion_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfIllusion_Entrance.PlayerY
+			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.TileX,
+			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.TileY,
+			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerX,
+			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerY
 			)
 			break;
 			
 		//Shrine of Air
 		case "Spawn_ShrineOfAir":
 			WarpTo(
-			global.WarpLocations.ShrineOfAir_Entrance.TileX,
-			global.WarpLocations.ShrineOfAir_Entrance.TileY,
-			global.WarpLocations.ShrineOfAir_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfAir_Entrance.PlayerY
+			global.WarpLocations.ShrineOfAir_Spawn_Entrance.TileX,
+			global.WarpLocations.ShrineOfAir_Spawn_Entrance.TileY,
+			global.WarpLocations.ShrineOfAir_Spawn_Entrance.PlayerX,
+			global.WarpLocations.ShrineOfAir_Spawn_Entrance.PlayerY
 			)
 			break;
 			
 		//Shrine of Destiny
 		case "Spawn_ShrineOfDestiny":
 			WarpTo(
-			global.WarpLocations.ShrineOfDestiny_Entrance.TileX,
-			global.WarpLocations.ShrineOfDestiny_Entrance.TileY,
-			global.WarpLocations.ShrineOfDestiny_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfDestiny_Entrance.PlayerY
+			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.TileX,
+			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.TileY,
+			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.PlayerX,
+			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.PlayerY
 			)
 			break;
 			
 		//Shrine of Water
 		case "Spawn_ShrineOfWater":
 			WarpTo(
-			global.WarpLocations.ShrineOfWater_Entrance.TileX,
-			global.WarpLocations.ShrineOfWater_Entrance.TileY,
-			global.WarpLocations.ShrineOfWater_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfWater_Entrance.PlayerY
+			global.WarpLocations.ShrineOfWater_Spawn_Entrance.TileX,
+			global.WarpLocations.ShrineOfWater_Spawn_Entrance.TileY,
+			global.WarpLocations.ShrineOfWater_Spawn_Entrance.PlayerX,
+			global.WarpLocations.ShrineOfWater_Spawn_Entrance.PlayerY
 			)
 			break;
 			
 		//Shrine of Strength
 		case "Spawn_ShrineOfStrength":
 			WarpTo(
-			global.WarpLocations.ShrineOfStrength_Entrance.TileX,
-			global.WarpLocations.ShrineOfStrength_Entrance.TileY,
-			global.WarpLocations.ShrineOfStrength_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfStrength_Entrance.PlayerY
+			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.TileX,
+			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.TileY,
+			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.PlayerX,
+			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.PlayerY
 			)
 			break;
 			
 		//Shrine of Fire
 		case "Spawn_ShrineOfFire":
 			WarpTo(
-			global.WarpLocations.ShrineOfFire_Entrance.TileX,
-			global.WarpLocations.ShrineOfFire_Entrance.TileY,
-			global.WarpLocations.ShrineOfFire_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfFire_Entrance.PlayerY
+			global.WarpLocations.ShrineOfFire_Spawn_Entrance.TileX,
+			global.WarpLocations.ShrineOfFire_Spawn_Entrance.TileY,
+			global.WarpLocations.ShrineOfFire_Spawn_Entrance.PlayerX,
+			global.WarpLocations.ShrineOfFire_Spawn_Entrance.PlayerY
 			)
 			break;
 				

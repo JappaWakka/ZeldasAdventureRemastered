@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Solid_VisionHenge_02",
   "spriteId": {
     "name": "VisionHenge_02_Solid",
     "path": "sprites/VisionHenge_02_Solid/VisionHenge_02_Solid.yy",
   },
   "solid": true,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -30,8 +34,4 @@
     "name": "VisionHenge",
     "path": "folders/Objects/Solids/Overworld/VisionHenge.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Solid_VisionHenge_02",
-  "tags": [],
-  "resourceType": "GMObject",
 }

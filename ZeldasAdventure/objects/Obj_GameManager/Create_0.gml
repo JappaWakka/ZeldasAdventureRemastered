@@ -28,6 +28,7 @@ if global.PlayerIsDead = false
 	global.HasResetEnemies = true
 }
 DoFillHearts = false
+DoPlayHeartFillSound = false
 FillHeartsAlarms = create_alarm_array(2);
 FillHeartsAlarms[0] = new Alarm(6, IncreaseHP, true);
-FillHeartsAlarms[1] = new Alarm(15, PlayOriginalHeartFillSound, true);
+FillHeartsAlarms[1] = new Alarm(15, PlayOriginalHeartFillSound(Obj_GameManager.DoPlayHeartFillSound), true);

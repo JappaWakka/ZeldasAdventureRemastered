@@ -37,16 +37,17 @@ function IncreaseMaxHealth()
 	global.MaxHealth += 20
 }
 
-function FillHP()
+function FillHP(PlayHeartFillSound = false)
 {
 	if global.CurrentHealth < global.MaxHealth
 	{
 		Obj_GameManager.DoFillHearts = true
+		Obj_GameManager.DoPlayHeartFillSound = PlayHeartFillSound
 	}
 }
-function PlayOriginalHeartFillSound()
+function PlayOriginalHeartFillSound(PlayHeartFillSound = false)
 {
-	if room = Room_Overworld and global.RemasteredMode = false
+	if room = Room_Overworld and global.RemasteredMode = false and PlayHeartFillSound = true
 	{
 		if global.CurrentHealth < global.MaxHealth
 		{

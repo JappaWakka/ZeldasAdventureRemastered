@@ -34,6 +34,6 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ShrineOfEarth",
-    "path": "folders/Objects/Warps/ShrineOfEarth.yy",
+    "path": "folders/Objects/Warps/Underworld/ShrineOfEarth.yy",
   },
 }

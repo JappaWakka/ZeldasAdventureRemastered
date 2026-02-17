@@ -43,8 +43,6 @@ function update_position(argument0, argument1) {
 		}
 	}
 	
-	
-	
 	////Ladder Hole
 	if Register_Registered("PlacedLadder") = false
 	{
@@ -53,7 +51,17 @@ function update_position(argument0, argument1) {
 			FreeToMoveCurrent = false
 		}
 	}
-		
+	
+	//Fairy Fountains
+	if place_meeting(x_target, y_target, Parent_FairyFountain)
+	{
+		FreeToMoveCurrent = false
+	}
+	if place_meeting(x_target, y_target, FairyFountain_ForestOfTorian_08)
+	{
+		FairyFountain_ForestOfTorian_08.Trigger_Start = true
+	}
+	
 	if FreeToMoveCurrent = true {
 		// Move if we are not colliding.
 	    x = x_target;

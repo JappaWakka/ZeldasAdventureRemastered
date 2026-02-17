@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "Solid_ForestOfOgham_16",
   "spriteId": {
     "name": "ForestOfOgham_16_Solid",
     "path": "sprites/ForestOfOgham_16_Solid/ForestOfOgham_16_Solid.yy",
   },
   "solid": true,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -30,8 +34,4 @@
     "name": "ForestOfOgham",
     "path": "folders/Objects/Solids/Overworld/ForestOfOgham.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Solid_ForestOfOgham_16",
-  "tags": [],
-  "resourceType": "GMObject",
 }

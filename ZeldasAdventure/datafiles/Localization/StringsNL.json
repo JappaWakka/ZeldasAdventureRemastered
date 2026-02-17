@@ -287,12 +287,12 @@
 					"LotharTheInnKeeper": {
 						"BeforeBuy": {
 							"Line01": "Lothar de Herbergier: Welkom bij mijn Herberg, de Kop van de Mobilin, prinses!",
-							"Line02": "U ziet er uitgedroogd uit, neem een glaasje Andor cider van het huis.",
+							"Line02": "U ziet er uitgedroogd uit, neem een kopje Andorcider van het huis.",
 							"Line03": "Ik heb een Kalmte-spreuk te koop, maar hij kost u 100 Robijnen."
 						},
 						"AfterBuy": {
 							"Line01": "Lothar de Herbergier: Welkom bij Herberg de Kop van de Mobilin, mijn prinses!",
-							"Line02": "U ziet er uitgedroogd uit, neem een glaasje Andor cider van het huis."
+							"Line02": "U ziet er uitgedroogd uit, neem een kopje Andorcider van het huis."
 						},
 						"PurchaseCalmSpell": {
 							"Line01": "Lothar de Herbergier: Dat is wijsheid die uw jaren te boven gaat.",
