@@ -52,12 +52,15 @@ function UseItem_Treasure()
 				UseTreasure_Coal()
 				break;
 			case Treasures.Compass_Earth:
-				UseTreasure_Compass_Earth();
+				UseTreasure_Compass_Earth()
+				break;
+			case Treasures.Compass_Illusion:
+				UseTreasure_Compass_Illusion()
 				break;
 			case Treasures.Rubies:
 				if global.RemasteredMode = false
 				{
-					UseTreasure_Rubies();
+					UseTreasure_Rubies()
 				}
 				break;
 			default:

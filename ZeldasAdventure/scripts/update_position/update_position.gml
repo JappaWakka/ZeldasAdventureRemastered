@@ -136,6 +136,16 @@ function update_position(argument0, argument1) {
 					}
 				}
 				
+				//Fairy Fountains
+				if place_meeting(x_target, y_target, Parent_FairyFountain)
+				{
+					FreeToMoveNew = false
+				}
+				if place_meeting(x_target, y_target, FairyFountain_ForestOfTorian_08)
+				{
+					FairyFountain_ForestOfTorian_08.Trigger_Start = true
+				}
+				
 	            if FreeToMoveNew = true {
 	                x = x_target;
 	                y = y_target;  
