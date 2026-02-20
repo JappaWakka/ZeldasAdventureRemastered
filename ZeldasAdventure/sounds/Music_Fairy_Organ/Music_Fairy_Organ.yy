@@ -15,7 +15,7 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Fairy_Organ.ogg",
-  "duration": 28.936031,
+  "duration": 38.431374,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

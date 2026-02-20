@@ -15,7 +15,7 @@
     "path": "audiogroups/AudioGroup_Music",
   },
   "soundFile": "Music_Fairy_Canyon.ogg",
-  "duration": 28.85022,
+  "duration": 38.431374,
   "parent": {
     "name": "Music",
     "path": "folders/Sounds/Music.yy",

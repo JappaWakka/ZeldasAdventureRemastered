@@ -45,17 +45,21 @@ function FillHP(PlayHeartFillSound = false)
 		Obj_GameManager.DoPlayHeartFillSound = PlayHeartFillSound
 	}
 }
-function PlayOriginalHeartFillSound(PlayHeartFillSound = false)
+
+function PlayOriginalHeartFillSound()
 {
-	if room = Room_Overworld and global.RemasteredMode = false and PlayHeartFillSound = true
+	if room = Room_Overworld and global.RemasteredMode = false
 	{
-		if global.CurrentHealth < global.MaxHealth
+		if Obj_GameManager.DoPlayHeartFillSound = true
 		{
-			if audio_is_playing(SFX_Use_Error) = false
+			if global.CurrentHealth < global.MaxHealth
 			{
-				if global.CameraIsPanning = false and IsMenuVisible() = false
+				if audio_is_playing(SFX_Use_Error) = false
 				{
-					audio_play_sound_relative_toplayer(SFX_Use_Error,999,false)
+					if global.CameraIsPanning = false and IsMenuVisible() = false
+					{
+						audio_play_sound_relative_toplayer(SFX_Use_Error,999,false)
+					}
 				}
 			}
 		}
