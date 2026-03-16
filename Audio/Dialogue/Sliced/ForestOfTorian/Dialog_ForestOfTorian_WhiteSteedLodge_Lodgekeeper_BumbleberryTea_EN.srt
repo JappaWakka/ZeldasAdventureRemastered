@@ -1,0 +1,12 @@
+﻿1
+00:00:00,253 --> 00:00:03,107
+Lodgekeeper: I need to make more Bumbleberry Tea, that's for certain...
+
+2
+00:00:03,387 --> 00:00:06,920
+What? Oh, I'm sorry, but the lodge is full.
+
+3
+00:00:07,079 --> 00:00:11,106
+You are welcome to rest here before you head out into the Forest of Torian!
+

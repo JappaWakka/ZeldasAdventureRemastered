@@ -675,6 +675,75 @@
 						"Line01": "Kron the Pegleg: Well, here's a fine item I have for sale!"
 					}
 				}
+			},
+			"ForestOfTorian": {
+				"Waldensop": {
+					"GoodMorn": {
+						"Line01": "Waldensop: Good morn, lady.",
+						"Line02": "A noble person such as yourself on foot, then?",
+						"Line03": "If it's rest you seek,",
+						"Line04": "you'll get precious little comfort in this thieves' den,",
+						"Line05": "I'll tell you.",
+						"Line06": "Be careful if you go inside, milady!",
+						"Line07": "Some people in these parts would rob you",
+						"Line08": "same as look at you, they would."
+					},
+					"Feather": {
+						"Line01": "Waldensop: I would like to give you a feather...",
+						"Line02": "as a sign of my affection.",
+						"Line03": "This will take you to new heights!"
+					}
+				},
+				"SirBasil": {
+					"HailPrincessZelda": {
+						"Line01": "Hail Princess Zelda, friend of Shurmak!",
+						"Line02": "I am Sir Basil of Tolemac and Shurmak has sent me to assist you."
+					}
+				},
+				"Shurmak": {
+					"YouSeemTired": {
+						"Line01": "Shurmak: You seem tired now, Zelda.",
+						"Line02": "Leave off the contest and come back another day."
+					}
+				},
+				"WhiteSteedLodge": {
+					"Lodgekeeper": {
+						"BumbleberryTea": {
+							"Line01": "Lodgekeeper: I need to make more Bumbleberry Tea, that's for certain...",
+							"Line02": "What? Oh, I'm sorry, but the lodge is full.",
+							"Line03": "You are welcome to rest here before you head out into the Forest of Torian!"
+						},
+						"CantTalkToYouNow": {
+							"Line01": "Lodgekeeper: I can't talk to you now!",
+							"Line02": "Oh, I have these tables to attend to!",
+							"Line03": "Well, rest a spell, you must be tired!"
+						}
+					},
+					"GrumpyPatron": {
+						"TeaInPeace": {
+							"Line01": "Grumpy Patron: Grr! Can't a man have his Bumbleberry Tea in peace?",
+							"Line02": "Off with you!"
+						},
+						"QuietMountainStream": {
+							"Line01": "Grumpy Patron: What I would not give for the quiet of a mountain stream,",
+							"Line02": "instead of all the nattering of fools!",
+							"Line03": "Begone!"
+						}
+					},
+					"FriendlyPatron": {
+						"RoughBunch": {
+							"Line01": "Friendly Patron: Well...",
+							"Line02": "what is one so fine as you doing with this rough bunch?",
+							"Line03": "Have some Bumbleberry Tea."
+						},
+						"YoungNoble": {
+							"Line01": "Friendly Patron: Aah, a young noble, no doubt.",
+							"Line02": "Come, share a cup of Bumbleberry Tea",
+							"Line03": "and warm yourself by the fire.",
+							"Line04": "It's warm inside, Zelda."
+						}
+					}
+				}
 			}
 		}
 	}

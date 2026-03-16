@@ -1,0 +1,8 @@
+﻿1
+00:00:00,033 --> 00:00:03,207
+Grumpy Patron: Grr! Can't a man have his Bumbleberry Tea in peace?
+
+2
+00:00:03,467 --> 00:00:04,520
+Off with you!
+

@@ -1,0 +1,12 @@
+﻿1
+00:00:00,040 --> 00:00:03,247
+Grumpy Patron: What I would not give for the quiet of a mountain stream,
+
+2
+00:00:03,272 --> 00:00:05,573
+instead of all the nattering of fools!
+
+3
+00:00:05,747 --> 00:00:06,780
+Begone!
+
