@@ -120,7 +120,7 @@
 				"Line07": "Er zou een moedige krijger gevonden moeten worden",
 				"Line08": "om de strijd aan te gaan met dat kwaadaardige monster.",
 				"Line09": "En zo vond ik deze kampioen van kracht en moed.",
-				"Line10": "U bent het, Prinses Zelda. Met deze magische ketting, ga voort...",
+				"Line10": "U bent het, prinses Zelda. Met deze magische ketting, ga voort...",
 				"Line11": "en met elk Teken dat u vindt zult u ook meer kennis opdoen.",
 				"Line12": "Vind uw magische toverstaf, gebruik hem verstandig",
 				"Line13": "en luister naar de bondgenoten die u tegenkomt tijdens uw reis.",
@@ -128,7 +128,7 @@
 			},
 			"Tutorial": {
 				"Line01": "Welkom bij Zelda's Adventure, een actie-avonturen rollenspel.",
-				"Line02": "Als speler neem je de persoonlijkheid aan van onze heldin Prinses Zelda.",
+				"Line02": "Als speler neem je de persoonlijkheid aan van onze heldin prinses Zelda.",
 				"Line03": "Om het spel succesvol te spelen, moet je het grote land Tolemac verkennen.",
 				"Line04": "Om Zelda's beweging door Tolemac te besturen,",
 				"Line05": "beweeg je de controller naar links, rechts, omhoog, omlaag en diagonaal.",
@@ -273,7 +273,7 @@
 						"Line03": "Ik ben ingestort van de dorst en droogte."
 					},
 					"AfterFill": {
-						"Line01": "Glebb de Dorstige: U zijt gezegend, Prinses!",
+						"Line01": "Glebb de Dorstige: U zijt gezegend, prinses!",
 						"Line02": "U heeft het leven van een vermoeide oude vrouw gered!",
 						"Line03": "Ik bied u deze schatten aan."
 					},
@@ -332,7 +332,7 @@
 						"Line04": "Er is genoeg te koop!"
 					},
 					"NothingToSell": {
-						"Line01": "Koopman: Het spijt me, Prinses, ik heb vandaag niets te koop!"
+						"Line01": "Koopman: Het spijt me, prinses, ik heb vandaag niets te koop!"
 					},
 					"WisePurchase": {
 						"Line01": "Koopman: Dat was een wijze aankoop, jonge prinses!"
@@ -340,7 +340,7 @@
 				},
 				"Enid": {
 					"ComeClose": {
-						"Line01": "Enid: Kom dichterbij, Prinses! Dan vertel ik u een groot geheim!"
+						"Line01": "Enid: Kom dichterbij, prinses! Dan vertel ik u een groot geheim!"
 					},
 					"TrustNoOneWithHair": {
 						"Line01": "Enid: Hoor wat ik fluister: Vertrouw niemand met haar! Huh-huh-huh!",
@@ -609,7 +609,7 @@
 					},
 					"JokeToPassTime": {
 						"Line01": "Nar: *nerveus gelach* Oh-hoh-hoee!",
-						"Line02": "Oeee, we maken misschien grapjes om de tijd te doden, Prinses, maar...",
+						"Line02": "Oeee, we maken misschien grapjes om de tijd te doden, prinses, maar...",
 						"Line03": "we maken ons allemaal zorgen over de toekomst van Tolemac.",
 						"Line04": "Je moet de tabletten zoeken en ons redden! *nerveus gelach*"
 					},
@@ -687,68 +687,68 @@
 			"ForestOfTorian": {
 				"Waldensop": {
 					"GoodMorn": {
-						"Line01": "Waldensop: Good morn, lady.",
-						"Line02": "A noble person such as yourself on foot, then?",
-						"Line03": "If it's rest you seek,",
-						"Line04": "you'll get precious little comfort in this thieves' den,",
-						"Line05": "I'll tell you.",
-						"Line06": "Be careful if you go inside, milady!",
-						"Line07": "Some people in these parts would rob you",
-						"Line08": "same as look at you, they would."
+						"Line01": "Waldensop: Goedemorgen, mevrouw.",
+						"Line02": "Een edel persoon als u, te voet onderweg?",
+						"Line03": "Als u rust zoekt,",
+						"Line04": "zult u in dit rovershol nauwelijks iets van comfort vinden,",
+						"Line05": "dat kan ik u wel vertellen.",
+						"Line06": "Wees voorzichtig als u naar binnen gaat, mevrouw!",
+						"Line07": "Sommige mensen hier zouden u bestelen",
+						"Line08": "zodra ze u zien, echt waar."
 					},
 					"Feather": {
-						"Line01": "Waldensop: I would like to give you a feather...",
-						"Line02": "as a sign of my affection.",
-						"Line03": "This will take you to new heights!"
+						"Line01": "Waldensop: Ik zou u graag een veer willen geven...",
+						"Line02": "als teken van mijn genegenheid.",
+						"Line03": "Dit zal u naar nieuwe hoogten brengen!"
 					}
 				},
 				"SirBasil": {
 					"HailPrincessZelda": {
-						"Line01": "Hail Princess Zelda, friend of Shurmak!",
-						"Line02": "I am Sir Basil of Tolemac and Shurmak has sent me to assist you."
+						"Line01": "Wees gegroet, prinses Zelda, vriendin van Shurmak!",
+						"Line02": "Ik ben Heer Basil van Tolemac en Shurmak heeft mij gestuurd om u te helpen."
 					}
 				},
 				"Shurmak": {
 					"YouSeemTired": {
-						"Line01": "Shurmak: You seem tired now, Zelda.",
-						"Line02": "Leave off the contest and come back another day."
+						"Line01": "Shurmak: Je ziet er moe uit, Zelda.",
+						"Line02": "Laat de strijd rusten en ga een andere dag verder."
 					}
 				},
 				"WhiteSteedLodge": {
 					"Lodgekeeper": {
 						"BumbleberryTea": {
-							"Line01": "Lodgekeeper: I need to make more Bumbleberry Tea, that's for certain...",
-							"Line02": "What? Oh, I'm sorry, but the lodge is full.",
-							"Line03": "You are welcome to rest here before you head out into the Forest of Torian!"
+							"Line01": "Herbergier: Ik moet nog wat meer bosbessenthee zetten, dat is zeker...",
+							"Line02": "Wat? Oh, het spijt me, maar de herberg zit vol.",
+							"Line03": "U bent van harte welkom om hier uit te rusten voordat u het Bos van Torian intrekt!"
 						},
 						"CantTalkToYouNow": {
-							"Line01": "Lodgekeeper: I can't talk to you now!",
-							"Line02": "Oh, I have these tables to attend to!",
-							"Line03": "Well, rest a spell, you must be tired!"
+							"Line01": "Herbergier: Ik kan nu even niet met u praten!",
+							"Line02": "Oh, ik moet deze tafels bedienen!",
+							"Line03": "Nou, rust even uit, u bent vast moe!"
 						}
 					},
 					"GrumpyPatron": {
 						"TeaInPeace": {
-							"Line01": "Grumpy Patron: Grr! Can't a man have his Bumbleberry Tea in peace?",
-							"Line02": "Off with you!"
+							"Line01": "Chagrijnige Gast: Grr! Kan een man zijn bosbessenthee niet eens rustig opdrinken?",
+							"Line02": "Wegwezen!"
 						},
 						"QuietMountainStream": {
-							"Line01": "Grumpy Patron: What I would not give for the quiet of a mountain stream,",
-							"Line02": "instead of all the nattering of fools!",
-							"Line03": "Begone!"
+							"Line01": "Chagrijnige Gast: Hoe graag zou ik het geluid van een rustig bergbeekje horen,",
+							"Line02": "in plaats van al dat geklets van dwazen!",
+							"Line03": "Verdwijn!"
 						}
 					},
 					"FriendlyPatron": {
 						"RoughBunch": {
-							"Line01": "Friendly Patron: Well...",
-							"Line02": "what is one so fine as you doing with this rough bunch?",
-							"Line03": "Have some Bumbleberry Tea."
+							"Line01": "Vriendelijke Gast: Zo zo...",
+							"Line02": "wat doet iemand zo fraai als jij bij dit ruige gezelschap?",
+							"Line03": "Neem wat bosbessenthee."
 						},
 						"YoungNoble": {
-							"Line01": "Friendly Patron: Aah, a young noble, no doubt.",
-							"Line02": "Come, share a cup of Bumbleberry Tea",
-							"Line03": "and warm yourself by the fire.",
-							"Line04": "It's warm inside, Zelda."
+							"Line01": "Vriendelijke Gast: Aah, ongetwijfeld een jonge edelvrouw.",
+							"Line02": "Kom, drink een kopje bosbessenthee",
+							"Line03": "en warm jezelf op bij het vuur.",
+							"Line04": "Het is hier binnen lekker warm, Zelda."
 						}
 					}
 				}

@@ -679,68 +679,68 @@
 			"ForestOfTorian": {
 				"Waldensop": {
 					"GoodMorn": {
-						"Line01": "Waldensop: Good morn, lady.",
-						"Line02": "A noble person such as yourself on foot, then?",
-						"Line03": "If it's rest you seek,",
-						"Line04": "you'll get precious little comfort in this thieves' den,",
-						"Line05": "I'll tell you.",
-						"Line06": "Be careful if you go inside, milady!",
-						"Line07": "Some people in these parts would rob you",
-						"Line08": "same as look at you, they would."
+						"Line01": "Waldensop: Guten Morgen, meine Dame.",
+						"Line02": "Eine so vornehme Dame wie du zu Fuß unterwegs?",
+						"Line03": "Wenn du Ruhe suchst,",
+						"Line04": "wirst du sie dieser Diebeshöhle wirklich nicht finden,",
+						"Line05": "das kann ich dir sagen.",
+						"Line06": "Sei vorsichtig, wenn du hineingehst, Meine Dame!",
+						"Line07": "Manche Leute hier würden dich ausrauben,",
+						"Line08": "sobald sie dich sehen."
 					},
 					"Feather": {
-						"Line01": "Waldensop: I would like to give you a feather...",
-						"Line02": "as a sign of my affection.",
-						"Line03": "This will take you to new heights!"
+						"Line01": "Waldensop: Ich möchte dir eine Feder schenken...",
+						"Line02": "als Zeichen meiner Wertschätzung.",
+						"Line03": "Sie wird dich zu neuen Höhen führen!"
 					}
 				},
 				"SirBasil": {
 					"HailPrincessZelda": {
-						"Line01": "Hail Princess Zelda, friend of Shurmak!",
-						"Line02": "I am Sir Basil of Tolemac and Shurmak has sent me to assist you."
+						"Line01": "Sei gegrüßt, Prinzessin Zelda, Freundin von Shurmak.",
+						"Line02": "Ich bin Sir Basil von Tolemac, und Shurmak hat mich geschickt, um dir zu helfen."
 					}
 				},
 				"Shurmak": {
 					"YouSeemTired": {
-						"Line01": "Shurmak: You seem tired now, Zelda.",
-						"Line02": "Leave off the contest and come back another day."
+						"Line01": "Shurmak: Du siehst müde aus, Zelda.",
+						"Line02": "Du solltest erst einmal eine Pause einlegen und später weitermachen."
 					}
 				},
 				"WhiteSteedLodge": {
 					"Lodgekeeper": {
 						"BumbleberryTea": {
-							"Line01": "Lodgekeeper: I need to make more Bumbleberry Tea, that's for certain...",
-							"Line02": "What? Oh, I'm sorry, but the lodge is full.",
-							"Line03": "You are welcome to rest here before you head out into the Forest of Torian!"
+							"Line01": "Wirt: Ich muss mehr Beeren Tee kochen, das ist sicher...",
+							"Line02": "Was? Oh, es tut mir leid, aber die Herberge ist voll.",
+							"Line03": "Du kannst dich aber hier gerne ausruhen, bevor du dich in den Wald von Torian begibst!"
 						},
 						"CantTalkToYouNow": {
-							"Line01": "Lodgekeeper: I can't talk to you now!",
-							"Line02": "Oh, I have these tables to attend to!",
-							"Line03": "Well, rest a spell, you must be tired!"
+							"Line01": "Wirt: Ich kann gerade nicht mit dir reden!",
+							"Line02": "Ach, ich muss mich um diese Tische kümmern!",
+							"Line03": "Nun, ruh dich etwas aus, du musst müde sein!"
 						}
 					},
 					"GrumpyPatron": {
 						"TeaInPeace": {
-							"Line01": "Grumpy Patron: Grr! Can't a man have his Bumbleberry Tea in peace?",
-							"Line02": "Off with you!"
+							"Line01": "Mürrischer Gast: Grr! Kann man seinen Tee nicht in Ruhe trinken?",
+							"Line02": "Verschwinde!"
 						},
 						"QuietMountainStream": {
-							"Line01": "Grumpy Patron: What I would not give for the quiet of a mountain stream,",
-							"Line02": "instead of all the nattering of fools!",
-							"Line03": "Begone!"
+							"Line01": "Mürrischer Gast: Was würde ich nicht alles für die Ruhe eines Gebirgsbachs geben,",
+							"Line02": "statt all dem Geschwätz dieser Narren!",
+							"Line03": "Hau ab!"
 						}
 					},
 					"FriendlyPatron": {
 						"RoughBunch": {
-							"Line01": "Friendly Patron: Well...",
-							"Line02": "what is one so fine as you doing with this rough bunch?",
-							"Line03": "Have some Bumbleberry Tea."
+							"Line01": "Freundlicher Gast: Nun...",
+							"Line02": "Was macht jemand, der so gut aussieht wie du, bei diesen rauen Gestalten?",
+							"Line03": "Probier doch mal einen Beeren Tee."
 						},
 						"YoungNoble": {
-							"Line01": "Friendly Patron: Aah, a young noble, no doubt.",
-							"Line02": "Come, share a cup of Bumbleberry Tea",
-							"Line03": "and warm yourself by the fire.",
-							"Line04": "It's warm inside, Zelda."
+							"Line01": "Freundlicher Gast: Ah, zweifellos eine junge Adlige.",
+							"Line02": "Komm, trink eine Tasse Beeren Tee mit mir",
+							"Line03": "und wärme dich am Feuer.",
+							"Line04": "Hier ist es warm, Zelda."
 						}
 					}
 				}
