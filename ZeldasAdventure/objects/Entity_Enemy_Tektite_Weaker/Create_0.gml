@@ -14,7 +14,7 @@ y >= 31 * tileHeight && y < 31 * tileHeight + tileHeight
 {
 	if Register_Registered("TektiteAmbush") = false
 	{
-		TriggerScriptName = "TektiteAmbush"
+		TriggerScriptName = "TektiteCave_Ambush"
 		ReturnToPoint = true
 		EnemyState = EnemyStates.Idle
 	}
@@ -22,5 +22,5 @@ y >= 31 * tileHeight && y < 31 * tileHeight + tileHeight
 if x >= 9 * tileWidth && x < 9 * tileWidth + tileWidth &&
 y >= 35 * tileHeight && y < 35 * tileHeight + tileHeight
 {
-	TriggerScriptName = "UnderworldMapEarthTreasure"
+	TriggerScriptName = "ShrineOfEarth_UnderworldMapEarth"
 }

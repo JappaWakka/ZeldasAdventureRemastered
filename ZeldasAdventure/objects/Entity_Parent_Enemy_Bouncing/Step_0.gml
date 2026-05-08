@@ -241,14 +241,14 @@ if HitPoints <= 0
 {
 	switch TriggerScriptName
 	{
-			case "BoomerangSpell" :
-				if global.DeathAmountForTrigger.BoomerangSpell[1] > 0
+			case "PlainOfAndor_Boomerang" :
+				if global.DeathAmountForTrigger.PlainOfAndor_Boomerang[1] > 0
 				{
-					global.DeathAmountForTrigger.BoomerangSpell[1] -= 1
+					global.DeathAmountForTrigger.PlainOfAndor_Boomerang[1] -= 1
 				}
-				if global.DeathAmountForTrigger.BoomerangSpell[1] = 0
+				if global.DeathAmountForTrigger.PlainOfAndor_Boomerang[1] = 0
 				{
-					Script_Trigger_BoomerangSpell() //Spawn Boomerang Spell Pickup
+					Script_Trigger_PlainOfAndor_Boomerang() //Spawn Boomerang Spell Pickup
 				}
 				break
 	}

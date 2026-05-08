@@ -12,7 +12,7 @@ if global.FluteUsed = true && audio_is_playing(SFX_Use_Flute) = false
 		instance_create_layer(3700,3468,"Enemies_BelowForeground",Entity_Enemy_TallFire)
 		instance_create_layer(3720,3472,"Enemies_BelowForeground",Entity_Enemy_TallFire)
 		instance_create_layer(3740,3468,"Enemies_BelowForeground",Entity_Enemy_TallFire)
-		Script_Trigger_PyrosSpell()
+		Script_Trigger_GreatWimbich_Pyros()
 		instance_destroy()
 		
 	}

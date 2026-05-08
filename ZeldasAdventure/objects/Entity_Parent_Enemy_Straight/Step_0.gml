@@ -237,37 +237,37 @@ if HitPoints <= 0
 {
 	switch TriggerScriptName
 	{
-		case "BoomerangSpell" :
-			if global.DeathAmountForTrigger.BoomerangSpell[1] > 0
+		case "PlainOfAndor_Boomerang" :
+			if global.DeathAmountForTrigger.PlainOfAndor_Boomerang[1] > 0
 			{
-				global.DeathAmountForTrigger.BoomerangSpell[1] -= 1
+				global.DeathAmountForTrigger.PlainOfAndor_Boomerang[1] -= 1
 			}
-			if global.DeathAmountForTrigger.BoomerangSpell[1] = 0
+			if global.DeathAmountForTrigger.PlainOfAndor_Boomerang[1] = 0
 			{
-				Script_Trigger_BoomerangSpell() //Spawn Boomerang Spell Pickup
-			}
-			break
-		case "TektiteAmbush" :
-			if global.DeathAmountForTrigger.TektiteAmbush[1] > 0
-			{
-				global.DeathAmountForTrigger.TektiteAmbush[1] -= 1
-			}
-			if global.DeathAmountForTrigger.TektiteAmbush[1] = 0
-			{
-				Script_Trigger_TektiteAmbush() //Spawn a bunch of Tektites
+				Script_Trigger_PlainOfAndor_Boomerang() //Spawn Boomerang Spell Pickup
 			}
 			break
-		case "UnderworldMapEarthTreasure" :
-			if global.DeathAmountForTrigger.UnderworldMapEarthTreasure[1] > 0
+		case "TektiteCave_Ambush" :
+			if global.DeathAmountForTrigger.TektiteCave_Ambush[1] > 0
 			{
-				global.DeathAmountForTrigger.UnderworldMapEarthTreasure[1] -= 1
+				global.DeathAmountForTrigger.TektiteCave_Ambush[1] -= 1
 			}
-			if global.DeathAmountForTrigger.UnderworldMapEarthTreasure[1] = 0
+			if global.DeathAmountForTrigger.TektiteCave_Ambush[1] = 0
 			{
-				Script_Trigger_UnderworldMapEarthTreasure() //Spawn UnderworldMap_Earth Treasure Pickup
+				Script_Trigger_TektiteCave_Ambush() //Spawn a bunch of Tektites
 			}
 			break
-		case "EarthSardakBarrier" :
+		case "ShrineOfEarth_UnderworldMapEarth" :
+			if global.DeathAmountForTrigger.ShrineOfEarth_UnderworldMapEarth[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfEarth_UnderworldMapEarth[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfEarth_UnderworldMapEarth[1] = 0
+			{
+				Script_Trigger_ShrineOfEarth_UnderworldMapEarth() //Spawn UnderworldMap_Earth Treasure Pickup
+			}
+			break
+		case "ShrineOfEarth_SardakBarrier" :
 			var Color = "None"
 			if object_get_name(object_index) = "Entity_Enemy_Sardak_Red"
 			{ Color = "Red" }
@@ -275,7 +275,17 @@ if HitPoints <= 0
 			{ Color = "Blue" }
 			else if object_get_name(object_index) = "Entity_Enemy_Sardak_Yellow"
 			{ Color = "Yellow" }
-			Script_Trigger_EarthSardakBarrier(Color) //Spawn UnderworldMap_Earth Treasure Pickup
+			Script_Trigger_ShrineOfEarth_SardakBarrier(Color) //Remove Shrine of Earth Boss Barrier
+			break
+		case "ShrineOfIllusion_KeyMolluska" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_KeyMolluska() //Spawn Key
+			}
 			break
 	}
 	

@@ -9,6 +9,6 @@ image_speed = 0;
 if x >= 3 * tileWidth && x < 3 * tileWidth + tileWidth &&
 y >= 23 * tileHeight && y < 23 * tileHeight + tileHeight
 {
-	TriggerScriptName = "BoomerangSpell"
+	TriggerScriptName = "PlainOfAndor_Boomerang"
 }
 ResetAlarm = new Alarm(15,ResetEnemyState,false);

@@ -6,6 +6,6 @@ direction = choose(global.Directions.North,global.Directions.South,global.Direct
 speed = 0;
 image_speed = 0;
 
-TriggerScriptName = "EarthSardakBarrier"
+TriggerScriptName = "ShrineOfEarth_SardakBarrier"
 
 ResetAlarm = new Alarm(15,ResetEnemyState,false);

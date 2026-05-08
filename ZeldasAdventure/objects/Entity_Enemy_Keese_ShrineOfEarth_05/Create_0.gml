@@ -22,5 +22,5 @@ if OriginX = 3672 and OriginY = 8776
 if x >= 9 * tileWidth && x < 9 * tileWidth + tileWidth &&
 y >= 36 * tileHeight && y < 36 * tileHeight + tileHeight
 {
-	TriggerScriptName = "CompassEarthTreasure"
+	TriggerScriptName = "ShrineOfEarth_CompassEarth"
 }

@@ -146,10 +146,11 @@ function InitGameVariables()
 	
 	global.DeathAmountForTrigger = //Amount of Entities to defeat before executing a trigger script
 	{
-		BoomerangSpell : [1,1],
-		TektiteAmbush : [1,1],
-		UnderworldMapEarthTreasure : [2,2],
-		CompassEarthTreasure : [3,3]
+		PlainOfAndor_Boomerang : [1,1],
+		TektiteCave_Ambush : [1,1],
+		ShrineOfEarth_UnderworldMapEarth : [2,2],
+		ShrineOfEarth_CompassEarth : [3,3],
+		ShrineOfIllusion_KeyMolluska : [3,3]
 	}
 	global.EnemySpeeds =
 	{

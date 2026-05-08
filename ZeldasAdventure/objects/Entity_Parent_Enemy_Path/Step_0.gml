@@ -226,14 +226,14 @@ if HitPoints <= 0
 {
 	switch TriggerScriptName
 	{
-		case "CompassEarthTreasure" :
-			if global.DeathAmountForTrigger.CompassEarthTreasure[1] > 0
+		case "ShrineOfEarth_CompassEarth" :
+			if global.DeathAmountForTrigger.ShrineOfEarth_CompassEarth[1] > 0
 			{
-				global.DeathAmountForTrigger.CompassEarthTreasure[1] -= 1
+				global.DeathAmountForTrigger.ShrineOfEarth_CompassEarth[1] -= 1
 			}
-			if global.DeathAmountForTrigger.CompassEarthTreasure[1] = 0
+			if global.DeathAmountForTrigger.ShrineOfEarth_CompassEarth[1] = 0
 			{
-				Script_Trigger_CompassEarthTreasure() //Spawn Compass_Earth Treasure Pickup
+				Script_Trigger_ShrineOfEarth_CompassEarth() //Spawn Compass_Earth Treasure Pickup
 			}
 			break
 	}
