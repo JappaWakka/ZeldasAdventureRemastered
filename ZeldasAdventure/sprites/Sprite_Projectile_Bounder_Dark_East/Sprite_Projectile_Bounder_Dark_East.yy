@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Projectiles_Enemies",
-    "path": "folders/Sprites/Entities/Projectiles_Enemies.yy",
+    "name": "Bounder_Dark",
+    "path": "folders/Sprites/Entities/Projectiles_Enemies/Bounder_Dark.yy",
   },
 }
