@@ -15,7 +15,7 @@ if EnemyState != EnemyStates.Attack
 			}
 		}
 	}
-	var SardakSpear = instance_create_layer(x,y,"Enemies_BelowForeground",Entity_Projectile_Enemy_Sardak)
+	var SardakSpear = instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Projectile_Enemy_Sardak)
 	SardakSpear.direction = direction
 	SardakSpear.image_angle = direction
 	EnemyState = EnemyStates.Attack

@@ -15,8 +15,8 @@
   },
   "persistent": false,
   "parentObjectId": {
-    "name": "Entity_Parent_Enemy_StillThrower",
-    "path": "objects/Entity_Parent_Enemy_StillThrower/Entity_Parent_Enemy_StillThrower.yy",
+    "name": "Entity_Parent_Enemy_IdleThrower",
+    "path": "objects/Entity_Parent_Enemy_IdleThrower/Entity_Parent_Enemy_IdleThrower.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -44,8 +44,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"DropsItemOnDefeat","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"HitRadius_Attack","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"14",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"HitRadius_Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"value":"12",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileAsset","path":"objects/Entity_Parent_Enemy_StillThrower/Entity_Parent_Enemy_StillThrower.yy",},"objectId":{"name":"Entity_Parent_Enemy_StillThrower","path":"objects/Entity_Parent_Enemy_StillThrower/Entity_Parent_Enemy_StillThrower.yy",},"value":"Entity_Projectile_Enemy_Dolomite",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ThrowProjectileFrame","path":"objects/Entity_Parent_Enemy_StillThrower/Entity_Parent_Enemy_StillThrower.yy",},"objectId":{"name":"Entity_Parent_Enemy_StillThrower","path":"objects/Entity_Parent_Enemy_StillThrower/Entity_Parent_Enemy_StillThrower.yy",},"value":"4",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileAsset","path":"objects/Entity_Parent_Enemy_IdleThrower/Entity_Parent_Enemy_IdleThrower.yy",},"objectId":{"name":"Entity_Parent_Enemy_IdleThrower","path":"objects/Entity_Parent_Enemy_IdleThrower/Entity_Parent_Enemy_IdleThrower.yy",},"value":"Entity_Projectile_Enemy_Dolomite",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ThrowProjectileFrame","path":"objects/Entity_Parent_Enemy_IdleThrower/Entity_Parent_Enemy_IdleThrower.yy",},"objectId":{"name":"Entity_Parent_Enemy_IdleThrower","path":"objects/Entity_Parent_Enemy_IdleThrower/Entity_Parent_Enemy_IdleThrower.yy",},"value":"4",},
   ],
   "parent": {
     "name": "Dolomites",
