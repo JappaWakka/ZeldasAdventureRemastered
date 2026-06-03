@@ -122,6 +122,9 @@ function UseItem_Spell()
 			case Spells.RingsOfFire:
 				UseSpell_RingsOfFire()
 				break;
+			case Spells.Feather:
+				UseSpell_Feather()
+				break;
 		}
 			
 		if global.CanUseSpell = true

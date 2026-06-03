@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Entity_Projectile_Player_JadeRing",
+  "name": "Entity_Projectile_Player_Feather",
   "spriteId": {
-    "name": "Sprite_Projectile_Spell_JadeRing_EastWest",
-    "path": "sprites/Sprite_Projectile_Spell_JadeRing_EastWest/Sprite_Projectile_Spell_JadeRing_EastWest.yy",
+    "name": "Sprite_Projectile_Spell_Feather_EastWest",
+    "path": "sprites/Sprite_Projectile_Spell_Feather_EastWest/Sprite_Projectile_Spell_Feather_EastWest.yy",
   },
   "solid": false,
   "visible": true,
@@ -36,9 +36,9 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileDirection","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"\"Straight\"",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Power","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"objectId":{"name":"Entity_Parent_Projectile_Enemy","path":"objects/Entity_Parent_Projectile_Enemy/Entity_Parent_Projectile_Enemy.yy",},"value":"40",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"Power","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"20",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileSpeed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"global.ProjectileSpeeds.Player + 0.4",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"ProjectileSpeed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"global.ProjectileSpeeds.Player * 1.5 + 0.4",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"DestroyOnEnemyImpact","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"True",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"SpellUsed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"Spells.JadeRing",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"SpellUsed","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"Spells.Feather",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"BonusDamageIfWeak","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"objectId":{"name":"Entity_Parent_Projectile_Player","path":"objects/Entity_Parent_Projectile_Player/Entity_Parent_Projectile_Player.yy",},"value":"70",},
   ],
   "parent": {
