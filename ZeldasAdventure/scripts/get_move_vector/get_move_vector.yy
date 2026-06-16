@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "get_move_vector",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Movement",
-    "path": "folders/Scripts/PlayerFunctions/Movement.yy",
+  "$GMScript":"v1",
+  "%Name":"get_move_vector",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_move_vector",
+  "parent":{
+    "name":"Movement",
+    "path":"folders/Scripts/PlayerFunctions/Movement.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

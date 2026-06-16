@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_ShrineOfEarth_20_YellowSardak",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "ShrineOfEarth",
-    "path": "folders/Scripts/Localization/Subtitles/Dialogue/ShrineOfEarth.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_ShrineOfEarth_20_YellowSardak",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_ShrineOfEarth_20_YellowSardak",
+  "parent":{
+    "name":"ShrineOfEarth",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/ShrineOfEarth.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

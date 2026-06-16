@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "move",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Movement",
-    "path": "folders/Scripts/PlayerFunctions/Movement.yy",
+  "$GMScript":"v1",
+  "%Name":"move",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"move",
+  "parent":{
+    "name":"Movement",
+    "path":"folders/Scripts/PlayerFunctions/Movement.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

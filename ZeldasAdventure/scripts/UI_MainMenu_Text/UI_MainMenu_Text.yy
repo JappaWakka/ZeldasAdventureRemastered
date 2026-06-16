@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "UI_MainMenu_Text",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "MainMenu",
-    "path": "folders/Scripts/Localization/UI/MainMenu.yy",
+  "$GMScript":"v1",
+  "%Name":"UI_MainMenu_Text",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UI_MainMenu_Text",
+  "parent":{
+    "name":"MainMenu",
+    "path":"folders/Scripts/Localization/UI/MainMenu.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

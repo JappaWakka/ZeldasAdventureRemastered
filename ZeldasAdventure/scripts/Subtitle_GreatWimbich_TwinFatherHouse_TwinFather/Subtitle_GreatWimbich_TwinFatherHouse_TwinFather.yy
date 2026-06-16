@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_GreatWimbich_TwinFatherHouse_TwinFather",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "GreatWimbich",
-    "path": "folders/Scripts/Localization/Subtitles/Dialogue/GreatWimbich.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_GreatWimbich_TwinFatherHouse_TwinFather",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_GreatWimbich_TwinFatherHouse_TwinFather",
+  "parent":{
+    "name":"GreatWimbich",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/GreatWimbich.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

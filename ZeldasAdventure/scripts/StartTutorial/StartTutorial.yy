@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "StartTutorial",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "MenuFunctions",
-    "path": "folders/Scripts/MenuFunctions.yy",
+  "$GMScript":"v1",
+  "%Name":"StartTutorial",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"StartTutorial",
+  "parent":{
+    "name":"MenuFunctions",
+    "path":"folders/Scripts/MenuFunctions.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

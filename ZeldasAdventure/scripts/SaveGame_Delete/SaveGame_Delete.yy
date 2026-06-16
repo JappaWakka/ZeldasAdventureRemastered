@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "SaveGame_Delete",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "MenuFunctions",
-    "path": "folders/Scripts/MenuFunctions.yy",
+  "$GMScript":"v1",
+  "%Name":"SaveGame_Delete",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SaveGame_Delete",
+  "parent":{
+    "name":"MenuFunctions",
+    "path":"folders/Scripts/MenuFunctions.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

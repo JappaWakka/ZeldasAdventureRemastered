@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_Register_AddFindRemove",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Inventory & Register",
-    "path": "folders/Scripts/Inventory & Register.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_Register_AddFindRemove",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Register_AddFindRemove",
+  "parent":{
+    "name":"Inventory & Register",
+    "path":"folders/Scripts/Inventory & Register.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

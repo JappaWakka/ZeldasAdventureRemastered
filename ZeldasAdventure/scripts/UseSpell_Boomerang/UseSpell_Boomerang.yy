@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "UseSpell_Boomerang",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Spells",
-    "path": "folders/Scripts/UseItem/Spells.yy",
+  "$GMScript":"v1",
+  "%Name":"UseSpell_Boomerang",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UseSpell_Boomerang",
+  "parent":{
+    "name":"Spells",
+    "path":"folders/Scripts/UseItem/Spells.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

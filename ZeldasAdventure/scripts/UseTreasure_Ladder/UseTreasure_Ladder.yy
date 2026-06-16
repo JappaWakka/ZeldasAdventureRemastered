@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "UseTreasure_Ladder",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Treasures",
-    "path": "folders/Scripts/UseItem/Treasures.yy",
+  "$GMScript":"v1",
+  "%Name":"UseTreasure_Ladder",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UseTreasure_Ladder",
+  "parent":{
+    "name":"Treasures",
+    "path":"folders/Scripts/UseItem/Treasures.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

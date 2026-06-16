@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_PlainOfAndor_13_BeggarWoman",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "PlainOfAndor",
-    "path": "folders/Scripts/Localization/Subtitles/Dialogue/PlainOfAndor.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_PlainOfAndor_13_BeggarWoman",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_PlainOfAndor_13_BeggarWoman",
+  "parent":{
+    "name":"PlainOfAndor",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/PlainOfAndor.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

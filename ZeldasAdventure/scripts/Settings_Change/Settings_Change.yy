@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Settings_Change",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "MenuFunctions",
-    "path": "folders/Scripts/MenuFunctions.yy",
+  "$GMScript":"v1",
+  "%Name":"Settings_Change",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Settings_Change",
+  "parent":{
+    "name":"MenuFunctions",
+    "path":"folders/Scripts/MenuFunctions.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

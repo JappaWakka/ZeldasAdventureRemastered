@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_Trigger_TektiteCave_Ambush",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Triggers",
-    "path": "folders/Scripts/Triggers.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_Trigger_TektiteCave_Ambush",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Trigger_TektiteCave_Ambush",
+  "parent":{
+    "name":"Triggers",
+    "path":"folders/Scripts/Triggers.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

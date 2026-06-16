@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_GreatWimbich_03_TownMerchant",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "GreatWimbich",
-    "path": "folders/Scripts/Localization/Subtitles/Dialogue/GreatWimbich.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_GreatWimbich_03_TownMerchant",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_GreatWimbich_03_TownMerchant",
+  "parent":{
+    "name":"GreatWimbich",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/GreatWimbich.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Macros, Enums & Variables",
-    "path": "folders/Scripts/Macros, Enums & Variables.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_CameraVariables",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_CameraVariables",
+  "parent":{
+    "name":"Macros, Enums & Variables",
+    "path":"folders/Scripts/Macros, Enums & Variables.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Script_CameraVariables",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

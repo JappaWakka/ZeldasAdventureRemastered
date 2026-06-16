@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "add_vectors",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Movement",
-    "path": "folders/Scripts/PlayerFunctions/Movement.yy",
+  "$GMScript":"v1",
+  "%Name":"add_vectors",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"add_vectors",
+  "parent":{
+    "name":"Movement",
+    "path":"folders/Scripts/PlayerFunctions/Movement.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

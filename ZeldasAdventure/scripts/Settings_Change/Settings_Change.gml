@@ -52,10 +52,11 @@ function ChangeSubtitlesEnabled(Value){
 
 function ChangeVolume(GroupIndex, Value)
 {
+	var oldSetting = 0
 	switch GroupIndex
 	{
 		case 0:  //Master
-			var oldSetting = global.VolumeMaster
+			oldSetting = global.VolumeMaster
 			global.VolumeMaster = Value;
 			audio_group_set_gain(AudioGroup_Music,global.VolumeMusic * global.VolumeMaster,0);
 			audio_group_set_gain(AudioGroup_SoundFX,global.VolumeSoundFX * global.VolumeMaster,0);
@@ -66,7 +67,7 @@ function ChangeVolume(GroupIndex, Value)
 			}
 			break;
 		case 1:  //Music
-			var oldSetting = global.VolumeMusic
+			oldSetting = global.VolumeMusic
 			global.VolumeMusic = Value;
 			audio_group_set_gain(AudioGroup_Music,global.VolumeMusic * global.VolumeMaster,0);
 			if oldSetting <> global.VolumeMusic
@@ -75,7 +76,7 @@ function ChangeVolume(GroupIndex, Value)
 			}
 			break;
 		case 2:  //SoundFX
-			var oldSetting = global.VolumeSoundFX
+			oldSetting = global.VolumeSoundFX
 			global.VolumeSoundFX = Value;
 			audio_group_set_gain(AudioGroup_SoundFX,global.VolumeSoundFX * global.VolumeMaster,0);
 			if oldSetting <> global.VolumeSoundFX
@@ -84,7 +85,7 @@ function ChangeVolume(GroupIndex, Value)
 			}
 			break;
 		case 3:  //Dialogue
-			var oldSetting = global.VolumeDialogue
+			oldSetting = global.VolumeDialogue
 			global.VolumeDialogue = Value;
 			audio_group_set_gain(AudioGroup_Dialogue,global.VolumeDialogue * global.VolumeMaster,0);
 			if oldSetting <> global.VolumeDialogue
@@ -135,10 +136,8 @@ function GetAspectRatio(){
 	{
 		case 0:
 			return 0
-			break
 		case 40:
 			return 1
-			break
 	}
 	
 }

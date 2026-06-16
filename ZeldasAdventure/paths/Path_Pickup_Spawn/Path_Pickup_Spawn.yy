@@ -1,11 +1,14 @@
 {
-  "resourceType": "GMPath",
-  "resourceVersion": "1.0",
-  "name": "Path_Pickup_Spawn",
-  "kind": 0,
-  "closed": false,
-  "precision": 4,
-  "points": [
+  "$GMPath":"",
+  "%Name":"Path_Pickup_Spawn",
+  "closed":false,
+  "kind":0,
+  "name":"Path_Pickup_Spawn",
+  "parent":{
+    "name":"Pickups & Items",
+    "path":"folders/Paths/Pickups & Items.yy",
+  },
+  "points":[
     {"speed":100.0,"x":0.0,"y":0.0,},
     {"speed":100.0,"x":0.0,"y":-12.0,},
     {"speed":50.0,"x":0.0,"y":-16.0,},
@@ -25,8 +28,7 @@
     {"speed":50.0,"x":0.0,"y":-4.0,},
     {"speed":100.0,"x":0.0,"y":0.0,},
   ],
-  "parent": {
-    "name": "Pickups & Items",
-    "path": "folders/Paths/Pickups & Items.yy",
-  },
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
 }

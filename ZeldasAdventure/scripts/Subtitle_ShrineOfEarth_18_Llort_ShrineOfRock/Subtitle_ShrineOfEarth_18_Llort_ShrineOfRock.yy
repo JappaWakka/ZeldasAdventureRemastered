@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_ShrineOfEarth_18_Llort_ShrineOfRock",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "ShrineOfEarth",
-    "path": "folders/Scripts/Localization/Subtitles/Dialogue/ShrineOfEarth.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_ShrineOfEarth_18_Llort_ShrineOfRock",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_ShrineOfEarth_18_Llort_ShrineOfRock",
+  "parent":{
+    "name":"ShrineOfEarth",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/ShrineOfEarth.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

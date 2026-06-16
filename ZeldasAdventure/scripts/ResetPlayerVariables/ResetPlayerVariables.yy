@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ResetPlayerVariables",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "MenuFunctions",
-    "path": "folders/Scripts/MenuFunctions.yy",
+  "$GMScript":"v1",
+  "%Name":"ResetPlayerVariables",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ResetPlayerVariables",
+  "parent":{
+    "name":"MenuFunctions",
+    "path":"folders/Scripts/MenuFunctions.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

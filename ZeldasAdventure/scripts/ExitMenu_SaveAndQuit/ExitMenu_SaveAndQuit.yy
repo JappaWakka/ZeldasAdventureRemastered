@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ExitMenu_SaveAndQuit",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "MenuFunctions",
-    "path": "folders/Scripts/MenuFunctions.yy",
+  "$GMScript":"v1",
+  "%Name":"ExitMenu_SaveAndQuit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ExitMenu_SaveAndQuit",
+  "parent":{
+    "name":"MenuFunctions",
+    "path":"folders/Scripts/MenuFunctions.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

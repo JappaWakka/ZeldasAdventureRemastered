@@ -50,7 +50,7 @@ if PageIndex = 0 //Main Menu
 				Sprite_MainMenu_SelectedSave,
 				0,
 				85, //x
-				58 + (SaveIndex * SaveNameSeparationDistance), //y
+				58 + (SaveIndex * SaveNameSeparationDistance) //y
 				);
 		}
 		
@@ -78,7 +78,7 @@ if PageIndex = 0 //Main Menu
 				Sprite_MainMenu_Button_Play,
 				0,
 				46, //x
-				139, //y
+				139 //y
 				);
 				break;
 				
@@ -87,7 +87,7 @@ if PageIndex = 0 //Main Menu
 				Sprite_MainMenu_Button_Delete,
 				0,
 				47, //x
-				174, //y
+				174 //y
 				);
 				break;
 				
@@ -96,7 +96,7 @@ if PageIndex = 0 //Main Menu
 				Sprite_MainMenu_Button_Settings,
 				0,
 				149, //x
-				174, //y
+				174 //y
 				);
 				break;
 				
@@ -105,7 +105,7 @@ if PageIndex = 0 //Main Menu
 				Sprite_MainMenu_Button_Tutorial,
 				0,
 				252, //x
-				174, //y
+				174 //y
 				);
 				break;
 				
@@ -114,7 +114,7 @@ if PageIndex = 0 //Main Menu
 				Sprite_MainMenu_Button_Exit,
 				0,
 				258, //x
-				130, //y
+				130 //y
 				);
 				break;
 		}
@@ -232,14 +232,14 @@ else if PageIndex = 5 //Name Entry Menu
 				Sprite_NameEntryMenu_Button_Keys,
 				CurrentIndex,
 				67 + CurrentColumn * CharButtonsDistance.x, //x
-				127 + CurrentRow * CharButtonsDistance.y, //y
+				127 + CurrentRow * CharButtonsDistance.y //y
 				)
 			//Draw Cursor
 			draw_sprite(
 				Sprite_Cursor,
 				0,
 				67 + CurrentColumn * CharButtonsDistance.x + 24, //x
-				127 + CurrentRow * CharButtonsDistance.y + 16, //y
+				127 + CurrentRow * CharButtonsDistance.y + 16 //y
 				);
 		}
 		CurrentColumn++
@@ -257,7 +257,7 @@ else if PageIndex = 5 //Name Entry Menu
 				Sprite_NameEntryMenu_Button_Done,
 				0,
 				274, //x
-				41, //y
+				41 //y
 				);
 		
 		//Draw Cursor
@@ -265,7 +265,7 @@ else if PageIndex = 5 //Name Entry Menu
 			Sprite_Cursor,
 			0,
 			329, //x
-			75, //y
+			75 //y
 			);
 	}
 	
@@ -371,11 +371,12 @@ else //Settings Menu
 		var DrawColor = c_black;
 		RightTextY = StartPosition.y + (ElementIndexRight * SeparationDistance.y);
 		
+		var CurrentValue = CurrentGrid[# 3, ElementIndexRight];
+		var CurrentArray = CurrentGrid[# 4, ElementIndexRight];
+		
 		switch(CurrentGrid[# 1, ElementIndexRight])
 			{
 				case Menu_ElementType.Shift:
-					var CurrentValue = CurrentGrid[# 3, ElementIndexRight];
-					var CurrentArray = CurrentGrid[# 4, ElementIndexRight];
 					var LeftShift = "<< ";
 					var RightShift = " >>";
 					
@@ -401,8 +402,6 @@ else //Settings Menu
 				
 				case Menu_ElementType.Slider:
 					var LineLength = 64;
-					var CurrentValue = CurrentGrid[# 3, ElementIndexRight];
-					var CurrentArray = CurrentGrid[# 4, ElementIndexRight];
 					var CirclePosition = ((CurrentValue - CurrentArray[0]) / (CurrentArray[1] - CurrentArray[0]))
 					
 					DrawColor = c_black;
@@ -433,8 +432,6 @@ else //Settings Menu
 					var DrawColor1 = c_black;
 					var DrawAlpha0 = 1;
 					var DrawAlpha1 = 1;
-					var CurrentValue = CurrentGrid[# 3, ElementIndexRight];
-					var CurrentArray = CurrentGrid[# 4, ElementIndexRight];
 					
 					if CurrentValue == 0
 					{
@@ -587,7 +584,7 @@ else //Settings Menu
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_bottom);
 	
-	DrawColor = make_color_rgb(141,48,18);
+	var DrawColor = make_color_rgb(141,48,18);
 	var ToolTipFont = Font_Subtitles_1x
 	switch global.WindowScale
 	{

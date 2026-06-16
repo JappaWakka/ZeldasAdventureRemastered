@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "UseTreasure_Candle",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Treasures",
-    "path": "folders/Scripts/UseItem/Treasures.yy",
+  "$GMScript":"v1",
+  "%Name":"UseTreasure_Candle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UseTreasure_Candle",
+  "parent":{
+    "name":"Treasures",
+    "path":"folders/Scripts/UseItem/Treasures.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

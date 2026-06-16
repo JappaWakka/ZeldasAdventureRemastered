@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_SpawnPoint_Tilemap",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Macros, Enums & Variables",
-    "path": "folders/Scripts/Macros, Enums & Variables.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_SpawnPoint_Tilemap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_SpawnPoint_Tilemap",
+  "parent":{
+    "name":"Macros, Enums & Variables",
+    "path":"folders/Scripts/Macros, Enums & Variables.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

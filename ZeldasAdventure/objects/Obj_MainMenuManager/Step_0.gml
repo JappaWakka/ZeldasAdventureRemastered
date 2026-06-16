@@ -311,13 +311,13 @@ else //SettingsMenu
 	{
 		var CurrentGrid = Menu_Pages[PageIndex];
 		var GridHeight = ds_grid_height(CurrentGrid);
+		var OptionChange = input_check_pressed("right") - input_check_pressed("left");
 		if IsInputting == true
 		{
 			switch(CurrentGrid[# 1, Menu_CurrentEntry[PageIndex]])
 			{
 				case Menu_ElementType.Shift:
 				
-					var OptionChange = input_check_pressed("right") - input_check_pressed("left");
 					if OptionChange = 0
 					{
 						OptionChange = input_check_pressed("joyright") - input_check_pressed("joyleft");
@@ -336,7 +336,7 @@ else //SettingsMenu
 					}
 					break;
 				case Menu_ElementType.Slider:
-					var OptionChange = input_check("right") - input_check("left");
+					OptionChange = input_check("right") - input_check("left");
 					if OptionChange = 0
 					{
 						OptionChange = input_check("joyright") - input_check("joyleft");
@@ -369,7 +369,7 @@ else //SettingsMenu
 					}
 					break;
 				case Menu_ElementType.Toggle:
-					var OptionChange = input_check_pressed("right") - input_check_pressed("left");
+					OptionChange = input_check_pressed("right") - input_check_pressed("left");
 					if OptionChange = 0
 					{
 						OptionChange = input_check_pressed("joyright") - input_check_pressed("joyleft");
@@ -443,7 +443,7 @@ else //SettingsMenu
 				FirstChangeDone = false;
 			}
 			
-			var OptionChange = input_check_pressed("down") - input_check_pressed("up");
+			OptionChange = input_check_pressed("down") - input_check_pressed("up");
 			if OptionChange = 0
 			{
 				OptionChange = input_check_pressed("joydown") - input_check_pressed("joyup");

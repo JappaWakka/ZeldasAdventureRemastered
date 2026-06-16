@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_Draw_HUD_Rubies",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Draw",
-    "path": "folders/Scripts/Draw.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_Draw_HUD_Rubies",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Draw_HUD_Rubies",
+  "parent":{
+    "name":"Draw",
+    "path":"folders/Scripts/Draw.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

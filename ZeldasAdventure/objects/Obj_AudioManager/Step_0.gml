@@ -10,7 +10,7 @@ if global.Initialized = true //Check if all the Audiogroups have been loaded
 		//I'll set NextTrackName to other values once I've made the other rooms like the Main Menu
 		if (global.CurrentMusic_Name != NextTrackName) //Check if the track is not the same as the one currently playing
 		{
-			audio_stop_sound(global.CurrentMusic_Asset) //Stop the old music track
+			Audio_StopMusic() //Stop the old music track
 			//Set the various global.CurrentMusic properties to the ones defined in the global.Music[x][y] array based on the current tile the player is on
 			Audio_SetCurrentMusic(NextTrackName)
 			BGAudio_IntroLength = global.CurrentMusic_IntroLength; //Set the length of the intro part of the audio track
@@ -23,10 +23,13 @@ if global.Initialized = true //Check if all the Audiogroups have been loaded
 	}
 	else
 	{
-		var BGAudio_Position = audio_sound_get_track_position(BGAudio_Track);
-		if (BGAudio_Position > BGAudio_TotalLength) //If the playback position is larger than the intro + the loop, it's in the buffer area of the audio track
+		if BGAudio_Track != -1
 		{
-			audio_sound_set_track_position(BGAudio_Track, BGAudio_Position - BGAudio_LoopLength); //Subtract the length of the loop from the current playback position
+			var BGAudio_Position = audio_sound_get_track_position(BGAudio_Track);
+			if (BGAudio_Position > BGAudio_TotalLength) //If the playback position is larger than the intro + the loop, it's in the buffer area of the audio track
+			{
+				audio_sound_set_track_position(BGAudio_Track, BGAudio_Position - BGAudio_LoopLength); //Subtract the length of the loop from the current playback position
+			}
 		}
 	}
 }

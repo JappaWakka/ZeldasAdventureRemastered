@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_Cutscene_Intro",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Cutscenes",
-    "path": "folders/Scripts/Localization/Subtitles/Cutscenes.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_Cutscene_Intro",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_Cutscene_Intro",
+  "parent":{
+    "name":"Cutscenes",
+    "path":"folders/Scripts/Localization/Subtitles/Cutscenes.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

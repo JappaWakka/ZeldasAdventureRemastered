@@ -15,13 +15,13 @@ function InventoryList(InventoryIndex)
 	{
 	case 0 :
 		return global.Inventory.Treasures
-		break
+		
 	case 1 :
 		return global.Inventory.Spells
-		break
+		
 	case 2 :
 		return global.Inventory.CelestialSigns
-		break
+		
 	}
 	return -1
 	

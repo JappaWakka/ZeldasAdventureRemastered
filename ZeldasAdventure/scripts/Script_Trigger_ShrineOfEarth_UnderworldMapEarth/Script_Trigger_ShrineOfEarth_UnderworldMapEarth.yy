@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_Trigger_ShrineOfEarth_UnderworldMapEarth",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Triggers",
-    "path": "folders/Scripts/Triggers.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_Trigger_ShrineOfEarth_UnderworldMapEarth",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Trigger_ShrineOfEarth_UnderworldMapEarth",
+  "parent":{
+    "name":"Triggers",
+    "path":"folders/Scripts/Triggers.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,12 +1,13 @@
 {
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Draw",
-    "path": "folders/Scripts/Draw.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_Draw_HUD_Hearts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Draw_HUD_Hearts",
+  "parent":{
+    "name":"Draw",
+    "path":"folders/Scripts/Draw.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Script_Draw_HUD_Hearts",
-  "tags": [],
-  "resourceType": "GMScript",
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

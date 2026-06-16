@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "ResetDeathAmountForTriggers",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Macros, Enums & Variables",
-    "path": "folders/Scripts/Macros, Enums & Variables.yy",
+  "$GMScript":"v1",
+  "%Name":"ResetDeathAmountForTriggers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ResetDeathAmountForTriggers",
+  "parent":{
+    "name":"Macros, Enums & Variables",
+    "path":"folders/Scripts/Macros, Enums & Variables.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

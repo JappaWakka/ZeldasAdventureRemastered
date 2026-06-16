@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_UseItem",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "UseItem",
-    "path": "folders/Scripts/UseItem.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_UseItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_UseItem",
+  "parent":{
+    "name":"UseItem",
+    "path":"folders/Scripts/UseItem.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

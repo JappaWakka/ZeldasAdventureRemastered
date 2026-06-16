@@ -15,7 +15,7 @@ if Alpha = 255
 				Sprite_ExitMenu_Button_SaveAndQuit,
 				0,
 				68, //x
-				46, //y
+				46 //y
 				);
 				break;
 				
@@ -24,7 +24,7 @@ if Alpha = 255
 				Sprite_ExitMenu_Button_QuitWithoutSave,
 				0,
 				68, //x
-				100, //y
+				100 //y
 				);
 				break;
 				
@@ -33,7 +33,7 @@ if Alpha = 255
 				Sprite_ExitMenu_Button_ReturnToGame,
 				0,
 				68, //x
-				154, //y
+				154 //y
 				);
 				break;
 				

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_LocalizationFunctions",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Localization",
-    "path": "folders/Scripts/Localization.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_LocalizationFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_LocalizationFunctions",
+  "parent":{
+    "name":"Localization",
+    "path":"folders/Scripts/Localization.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

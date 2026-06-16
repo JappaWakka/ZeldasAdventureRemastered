@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_Audio_Init_MusicTileMap",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Audio",
-    "path": "folders/Scripts/Audio.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_Audio_Init_MusicTileMap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Audio_Init_MusicTileMap",
+  "parent":{
+    "name":"Audio",
+    "path":"folders/Scripts/Audio.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

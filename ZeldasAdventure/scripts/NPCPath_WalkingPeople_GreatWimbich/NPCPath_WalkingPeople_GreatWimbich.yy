@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "NPCPath_WalkingPeople_GreatWimbich",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "NPCs",
-    "path": "folders/Scripts/Paths/NPCs.yy",
+  "$GMScript":"v1",
+  "%Name":"NPCPath_WalkingPeople_GreatWimbich",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NPCPath_WalkingPeople_GreatWimbich",
+  "parent":{
+    "name":"NPCs",
+    "path":"folders/Scripts/Paths/NPCs.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

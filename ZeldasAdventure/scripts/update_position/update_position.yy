@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "update_position",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Movement",
-    "path": "folders/Scripts/PlayerFunctions/Movement.yy",
+  "$GMScript":"v1",
+  "%Name":"update_position",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"update_position",
+  "parent":{
+    "name":"Movement",
+    "path":"folders/Scripts/PlayerFunctions/Movement.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

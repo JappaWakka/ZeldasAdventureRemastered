@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "UI_Inventory_Text",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "UI",
-    "path": "folders/Scripts/Localization/UI.yy",
+  "$GMScript":"v1",
+  "%Name":"UI_Inventory_Text",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UI_Inventory_Text",
+  "parent":{
+    "name":"UI",
+    "path":"folders/Scripts/Localization/UI.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

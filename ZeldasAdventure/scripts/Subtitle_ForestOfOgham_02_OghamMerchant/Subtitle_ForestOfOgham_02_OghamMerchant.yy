@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_ForestOfOgham_02_OghamMerchant",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "ForestOfOgham",
-    "path": "folders/Scripts/Localization/Subtitles/Dialogue/ForestOfOgham.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_ForestOfOgham_02_OghamMerchant",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_ForestOfOgham_02_OghamMerchant",
+  "parent":{
+    "name":"ForestOfOgham",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/ForestOfOgham.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

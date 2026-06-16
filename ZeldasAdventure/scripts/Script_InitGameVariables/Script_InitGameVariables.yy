@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_InitGameVariables",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Macros, Enums & Variables",
-    "path": "folders/Scripts/Macros, Enums & Variables.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_InitGameVariables",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_InitGameVariables",
+  "parent":{
+    "name":"Macros, Enums & Variables",
+    "path":"folders/Scripts/Macros, Enums & Variables.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

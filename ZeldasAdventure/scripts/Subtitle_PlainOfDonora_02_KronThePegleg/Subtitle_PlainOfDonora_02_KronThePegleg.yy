@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_PlainOfDonora_02_KronThePegleg",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "PlainOfDonora",
-    "path": "folders/Scripts/Localization/Subtitles/Dialogue/PlainOfDonora.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_PlainOfDonora_02_KronThePegleg",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_PlainOfDonora_02_KronThePegleg",
+  "parent":{
+    "name":"PlainOfDonora",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/PlainOfDonora.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "UseSpell_RingsOfFire",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Spells",
-    "path": "folders/Scripts/UseItem/Spells.yy",
+  "$GMScript":"v1",
+  "%Name":"UseSpell_RingsOfFire",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UseSpell_RingsOfFire",
+  "parent":{
+    "name":"Spells",
+    "path":"folders/Scripts/UseItem/Spells.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -7,5 +7,12 @@ function Audio_StopMusic()
 {
 	audio_stop_sound(global.CurrentMusic_Asset)
 	Audio_SetCurrentMusic("Silence")
-	Audio_PlayMusic(global.CurrentMusic_Asset)
+	if instance_exists(Obj_AudioManager)
+	{
+		Obj_AudioManager.BGAudio_Track = Audio_PlayMusic(global.CurrentMusic_Asset)
+	}
+	else
+	{
+		Audio_PlayMusic(global.CurrentMusic_Asset)	
+	}
 }

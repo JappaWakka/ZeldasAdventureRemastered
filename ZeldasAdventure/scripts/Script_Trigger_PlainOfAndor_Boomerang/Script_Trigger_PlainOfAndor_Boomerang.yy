@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_Trigger_PlainOfAndor_Boomerang",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Triggers",
-    "path": "folders/Scripts/Triggers.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_Trigger_PlainOfAndor_Boomerang",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Trigger_PlainOfAndor_Boomerang",
+  "parent":{
+    "name":"Triggers",
+    "path":"folders/Scripts/Triggers.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

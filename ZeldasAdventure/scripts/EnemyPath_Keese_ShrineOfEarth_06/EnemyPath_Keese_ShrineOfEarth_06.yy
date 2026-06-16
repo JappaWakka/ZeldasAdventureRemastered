@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "EnemyPath_Keese_ShrineOfEarth_06",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Enemy",
-    "path": "folders/Scripts/Paths/Enemy.yy",
+  "$GMScript":"v1",
+  "%Name":"EnemyPath_Keese_ShrineOfEarth_06",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EnemyPath_Keese_ShrineOfEarth_06",
+  "parent":{
+    "name":"Enemy",
+    "path":"folders/Scripts/Paths/Enemy.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

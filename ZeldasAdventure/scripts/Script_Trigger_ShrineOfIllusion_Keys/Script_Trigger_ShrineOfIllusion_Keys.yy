@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Script_Trigger_ShrineOfIllusion_Keys",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "Triggers",
-    "path": "folders/Scripts/Triggers.yy",
+  "$GMScript":"v1",
+  "%Name":"Script_Trigger_ShrineOfIllusion_Keys",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Trigger_ShrineOfIllusion_Keys",
+  "parent":{
+    "name":"Triggers",
+    "path":"folders/Scripts/Triggers.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

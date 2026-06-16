@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Subtitle_GreatWimbich_MagicStore",
-  "isDnD": false,
-  "isCompatibility": false,
-  "parent": {
-    "name": "GreatWimbich",
-    "path": "folders/Scripts/Localization/Subtitles/Dialogue/GreatWimbich.yy",
+  "$GMScript":"v1",
+  "%Name":"Subtitle_GreatWimbich_MagicStore",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_GreatWimbich_MagicStore",
+  "parent":{
+    "name":"GreatWimbich",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/GreatWimbich.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
