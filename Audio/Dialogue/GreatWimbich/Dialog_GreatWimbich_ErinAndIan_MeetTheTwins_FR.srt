@@ -1,0 +1,14 @@
+﻿1
+00:00:00,227 --> 00:00:03,333
+Les jumeaux Érik et Ian : Bonjour, Zelda.
+Je suis Éric, et voici Ian.
+
+2
+00:00:03,800 --> 00:00:07,166
+— Oh, que veux-tu dire ?
+Je suis Éric, je l'ai toujours été.
+
+3
+00:00:07,260 --> 00:00:09,273
+— Non, tu ne l'es pas, je suis Éric !
+

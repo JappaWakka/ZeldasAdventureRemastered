@@ -1,0 +1,12 @@
+﻿1
+00:00:00,067 --> 00:00:01,626
+Lodgekeeper: I can't talk to you now!
+
+2
+00:00:01,673 --> 00:00:03,780
+Oh, I have these tables to attend to!
+
+3
+00:00:03,973 --> 00:00:06,053
+Well, rest a spell, you must be tired!
+

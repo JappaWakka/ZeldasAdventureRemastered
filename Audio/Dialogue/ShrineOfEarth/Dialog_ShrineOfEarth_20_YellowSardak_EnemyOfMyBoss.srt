@@ -1,0 +1,12 @@
+﻿1
+00:00:00,007 --> 00:00:01,660
+Yellow Sardak: Hey! Who goes there?
+
+2
+00:00:01,933 --> 00:00:04,093
+Aren't you an enemy of my boss Llort?
+
+3
+00:00:04,273 --> 00:00:06,133
+You can't come in here.
+

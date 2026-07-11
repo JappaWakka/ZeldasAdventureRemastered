@@ -1,0 +1,16 @@
+﻿1
+00:00:00,001 --> 00:00:02,587
+Friendly Patron: Aah, a young noble, no doubt.
+
+2
+00:00:02,900 --> 00:00:06,293
+Come, share a cup of Bumbleberry Tea
+
+3
+00:00:06,318 --> 00:00:08,407
+and warm yourself by the fire.
+
+4
+00:00:08,720 --> 00:00:11,140
+It's warm inside, Zelda.
+

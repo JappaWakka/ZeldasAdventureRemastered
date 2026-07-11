@@ -1,0 +1,34 @@
+﻿1
+00:00:00,213 --> 00:00:02,187
+Forgeron : Qui va là ?! 
+Oh, c'est une jeune fille.
+
+2
+00:00:02,212 --> 00:00:03,640
+Ne touchez à rien !
+
+3
+00:00:03,665 --> 00:00:06,473
+Les gens me volent sans vergogne,
+je sais que vous me détestez tous !
+
+4
+00:00:07,180 --> 00:00:08,753
+Qu'est-ce que
+j'ai bien pu vous faire ?
+
+5
+00:00:08,927 --> 00:00:11,486
+Je suis un honnête artisan,
+je transmute votre charbon en rubis,
+
+6
+00:00:11,511 --> 00:00:13,620
+je reste ouvert tard
+et je travaille d'arrache-pied.
+
+7
+00:00:13,646 --> 00:00:15,647
+Est-ce que quelqu'un l'apprécie ?
+Non !
+

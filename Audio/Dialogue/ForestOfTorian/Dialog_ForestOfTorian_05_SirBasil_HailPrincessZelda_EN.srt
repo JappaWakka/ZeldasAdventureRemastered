@@ -1,0 +1,8 @@
+﻿1
+00:00:00,013 --> 00:00:02,233
+Hail Princess Zelda, friend of Shurmak!
+
+2
+00:00:02,306 --> 00:00:06,267
+I am Sir Basil of Tolemac and Shurmak has sent me to assist you.
+

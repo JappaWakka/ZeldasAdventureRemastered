@@ -1,0 +1,22 @@
+﻿1
+00:00:00,140 --> 00:00:03,553
+Clampin : Bien le bonjour !
+N'ayez crainte, le chien ne mord pas.
+
+2
+00:00:03,578 --> 00:00:07,687
+J'aimerais qu'il morde, ça mettrait
+un peu d'animation à Grand Wimbich.
+
+3
+00:00:08,133 --> 00:00:10,180
+Il ne se passe jamais rien ici !
+
+4
+00:00:10,205 --> 00:00:12,255
+Même les passants sont ennuyeux.
+
+5
+00:00:12,280 --> 00:00:13,933
+Tout le monde est rasoir.
+

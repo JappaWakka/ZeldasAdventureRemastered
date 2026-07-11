@@ -1,0 +1,12 @@
+﻿1
+00:00:00,007 --> 00:00:02,853
+My goodness, it's the brave Zelda!
+
+2
+00:00:03,220 --> 00:00:05,840
+I've heard so much about ya from everyone.
+
+3
+00:00:05,967 --> 00:00:09,253
+Sit a goodly spell with Alice, and indulge an old woman.
+

@@ -1,0 +1,27 @@
+﻿1
+00:00:00,127 --> 00:00:02,200
+Boutiquier : Bonjour, vous !  Hé hé.
+
+2
+00:00:02,227 --> 00:00:04,673
+J'espère pouvoir vous aider...
+
+3
+00:00:04,753 --> 00:00:07,520
+Euh, avez-vous vu mon chien
+dans la Rue Haute ?
+
+4
+00:00:08,080 --> 00:00:09,333
+Euh, comment se sentait-il ?
+
+5
+00:00:09,700 --> 00:00:11,953
+L'Idiot du village :
+— Avec sa truffe, bien sûr !
+
+6
+00:00:11,978 --> 00:00:18,047
+Pff ! Hi hi hi ! Oh oh oh !
+Ha ha ha ! Ouh ! Ha ha…
+

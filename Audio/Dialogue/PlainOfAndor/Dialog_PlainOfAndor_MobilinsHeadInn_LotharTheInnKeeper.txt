@@ -1,0 +1,16 @@
+Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_BeforeBuy:
+
+Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!
+You look dry, have a cup of Andor cider on the house.
+I have a spell of Calm to sell, but it will cost you one-hundred rubies.
+
+Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_AfterBuy:
+
+Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!
+You look dry, have a cup of Andor cider on the house.
+
+Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_PurchaseCalmSpell
+
+Lothar the Innkeeper: That is wise beyond your years.
+The spell of Calm will help you when you need it most, use it well.
+And look after yourself on the lonely Plain of Andor.

@@ -1,0 +1,8 @@
+﻿1
+00:00:00,053 --> 00:00:04,320
+Shurmak: Zelda! Zelda! Do not roam unprotected.
+
+2
+00:00:04,567 --> 00:00:07,180
+Look nearby for something to aid you.
+

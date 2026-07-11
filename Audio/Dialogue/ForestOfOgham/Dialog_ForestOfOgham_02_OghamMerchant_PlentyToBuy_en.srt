@@ -1,0 +1,16 @@
+﻿1
+00:00:00,001 --> 00:00:01,374
+Merchant: Come here, bright young lady.
+
+2
+00:00:01,399 --> 00:00:03,080
+I have a wonderful bargain for you!
+
+3
+00:00:03,226 --> 00:00:06,160
+Take some Ogham Herb for free, then look around.
+
+4
+00:00:06,213 --> 00:00:07,653
+There's plenty to buy!
+

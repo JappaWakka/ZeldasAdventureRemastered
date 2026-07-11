@@ -1,0 +1,40 @@
+﻿1
+00:00:00,047 --> 00:00:02,301
+Town Merchant: For thirty suns my husband and I
+
+2
+00:00:02,326 --> 00:00:05,313
+ran the great locksmith forge for Warbane.
+
+3
+00:00:05,786 --> 00:00:08,899
+Then Ganon came and pressed Warbane into service
+
+4
+00:00:08,931 --> 00:00:10,520
+for his own evil plans.
+
+5
+00:00:10,853 --> 00:00:12,253
+The forge was closed.
+
+6
+00:00:12,278 --> 00:00:14,650
+Warbane built a fortified retreat of his own
+
+7
+00:00:14,751 --> 00:00:17,419
+somewhere off in the Forest of Canvula to the north.
+
+8
+00:00:17,720 --> 00:00:20,527
+We were left with nothing but these trinkets to sell!
+
+9
+00:00:21,113 --> 00:00:23,747
+Perhaps they will be of use to you in the underground.
+
+10
+00:00:23,987 --> 00:00:26,646
+I can not give them up cheap.
+

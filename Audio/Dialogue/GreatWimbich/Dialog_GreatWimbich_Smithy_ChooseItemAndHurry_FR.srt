@@ -1,0 +1,5 @@
+﻿1
+00:00:00,067 --> 00:00:02,906
+Forgeron : Choisissez vite votre objet,
+le monde regorge de voleurs.
+

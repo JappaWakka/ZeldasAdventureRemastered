@@ -1,0 +1,5 @@
+﻿1
+00:00:00,066 --> 00:00:02,633
+Kron, Quille de Bois : Tout le monde
+vient chez Kron, Quille de Bois. C'est heureux !
+

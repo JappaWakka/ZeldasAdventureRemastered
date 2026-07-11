@@ -1,0 +1,17 @@
+﻿1
+00:00:00,001 --> 00:00:01,808
+Fermier fantôme : Reculez !
+
+2
+00:00:01,832 --> 00:00:04,106
+Cette splendide ferme m'appartient.
+
+3
+00:00:04,131 --> 00:00:06,044
+N'est-elle pas merveilleuse ?
+
+4
+00:00:06,507 --> 00:00:10,453
+Je travaille cette terre
+depuis trois cents ans.
+

@@ -1,0 +1,15 @@
+﻿1
+00:00:00,053 --> 00:00:02,207
+Boutiquier : Vous voyez
+mes marchandises sur la table ?
+
+2
+00:00:02,247 --> 00:00:05,306
+Vous pouvez acheter
+tout ce que vous souhaitez.
+
+3
+00:00:05,539 --> 00:00:09,640
+Il y a même un os ici
+que mon chien adorerait ! Ouaf !
+
