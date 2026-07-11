@@ -1,5 +1,8 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"ForestOfTorian","order":1,"path":"folders/Scripts/Localization/Subtitles/Dialogue/ForestOfTorian.yy",},
+    {"name":"ForestOfTorian","order":5,"path":"folders/Sounds/Dialogue/ForestOfTorian.yy",},
+  ],
   "ResourceOrderSettings":[
     {"name":"libWebMPlayer","order":2,"path":"extensions/libWebMPlayer/libWebMPlayer.yy",},
     {"name":"Font_Fancy_Small","order":10,"path":"fonts/Font_Fancy_Small/Font_Fancy_Small.yy",},
@@ -75,6 +78,7 @@
     {"name":"Entity_NPC_TownMerchant","order":9,"path":"objects/Entity_NPC_TownMerchant/Entity_NPC_TownMerchant.yy",},
     {"name":"Entity_NPC_TreasureChest","order":1,"path":"objects/Entity_NPC_TreasureChest/Entity_NPC_TreasureChest.yy",},
     {"name":"Entity_NPC_TwinFather","order":5,"path":"objects/Entity_NPC_TwinFather/Entity_NPC_TwinFather.yy",},
+    {"name":"Entity_NPC_Waldensop","order":2,"path":"objects/Entity_NPC_Waldensop/Entity_NPC_Waldensop.yy",},
     {"name":"Entity_NPC_WomanAtTable","order":2,"path":"objects/Entity_NPC_WomanAtTable/Entity_NPC_WomanAtTable.yy",},
     {"name":"Entity_NPC_Yvonne","order":4,"path":"objects/Entity_NPC_Yvonne/Entity_NPC_Yvonne.yy",},
     {"name":"Entity_Parent_Enemy_Bouncing","order":1,"path":"objects/Entity_Parent_Enemy_Bouncing/Entity_Parent_Enemy_Bouncing.yy",},
@@ -832,6 +836,7 @@
     {"name":"Dialog_ForestOfOgham_14_Enid_GoAway","order":4,"path":"sounds/Dialog_ForestOfOgham_14_Enid_GoAway/Dialog_ForestOfOgham_14_Enid_GoAway.yy",},
     {"name":"Dialog_ForestOfOgham_14_Enid_TooClever","order":5,"path":"sounds/Dialog_ForestOfOgham_14_Enid_TooClever/Dialog_ForestOfOgham_14_Enid_TooClever.yy",},
     {"name":"Dialog_ForestOfOgham_14_Enid_TrustNoOneWithHair","order":6,"path":"sounds/Dialog_ForestOfOgham_14_Enid_TrustNoOneWithHair/Dialog_ForestOfOgham_14_Enid_TrustNoOneWithHair.yy",},
+    {"name":"Dialog_ForestOfTorian_22_Waldensop_Feather","order":1,"path":"sounds/Dialog_ForestOfTorian_22_Waldensop_Feather/Dialog_ForestOfTorian_22_Waldensop_Feather.yy",},
     {"name":"Dialog_GreatWimbich_Alice_IfYaLikeMusic","order":4,"path":"sounds/Dialog_GreatWimbich_Alice_IfYaLikeMusic/Dialog_GreatWimbich_Alice_IfYaLikeMusic.yy",},
     {"name":"Dialog_GreatWimbich_Alice_NothingMoreToSay","order":1,"path":"sounds/Dialog_GreatWimbich_Alice_NothingMoreToSay/Dialog_GreatWimbich_Alice_NothingMoreToSay.yy",},
     {"name":"Dialog_GreatWimbich_Alice_PeculiarLittleTown","order":2,"path":"sounds/Dialog_GreatWimbich_Alice_PeculiarLittleTown/Dialog_GreatWimbich_Alice_PeculiarLittleTown.yy",},
@@ -2396,6 +2401,7 @@
     {"name":"Sprite_NPC_Smithy","order":24,"path":"sprites/Sprite_NPC_Smithy/Sprite_NPC_Smithy.yy",},
     {"name":"Sprite_NPC_TownMerchant","order":13,"path":"sprites/Sprite_NPC_TownMerchant/Sprite_NPC_TownMerchant.yy",},
     {"name":"Sprite_NPC_TreasureChest","order":1,"path":"sprites/Sprite_NPC_TreasureChest/Sprite_NPC_TreasureChest.yy",},
+    {"name":"Sprite_NPC_Waldensop","order":2,"path":"sprites/Sprite_NPC_Waldensop/Sprite_NPC_Waldensop.yy",},
     {"name":"Sprite_NPC_WalkingMan1_East","order":2,"path":"sprites/Sprite_NPC_WalkingMan1_East/Sprite_NPC_WalkingMan1_East.yy",},
     {"name":"Sprite_NPC_WalkingMan1_North","order":3,"path":"sprites/Sprite_NPC_WalkingMan1_North/Sprite_NPC_WalkingMan1_North.yy",},
     {"name":"Sprite_NPC_WalkingMan1_South","order":4,"path":"sprites/Sprite_NPC_WalkingMan1_South/Sprite_NPC_WalkingMan1_South.yy",},

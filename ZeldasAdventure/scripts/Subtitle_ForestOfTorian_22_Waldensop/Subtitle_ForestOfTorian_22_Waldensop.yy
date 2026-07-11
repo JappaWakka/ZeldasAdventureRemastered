@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Subtitle_ForestOfTorian_22_Waldensop",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_ForestOfTorian_22_Waldensop",
+  "parent":{
+    "name":"ForestOfTorian",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/ForestOfTorian.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

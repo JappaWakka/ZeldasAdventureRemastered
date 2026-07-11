@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_ForestOfTorian_22_Waldensop_Feather",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":7.786667,
+  "exportDir":"",
+  "name":"Dialog_ForestOfTorian_22_Waldensop_Feather",
+  "parent":{
+    "name":"ForestOfTorian",
+    "path":"folders/Sounds/Dialogue/ForestOfTorian.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_ForestOfTorian_22_Waldensop_Feather.ogg",
+  "volume":1.0,
+}
