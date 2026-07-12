@@ -54,7 +54,17 @@ if IsPlayerOnSameTile() = true
 		}
 	}
 }
-else if instance_exists(Entity_Pickup_Dagger) = false and Item_FindIndex(Spells.Dagger,1) = -1
+else
 {
-	Register_Remove("KrebbTheWeary",true)
+	if Item_FindIndex(Spells.Dagger,1) <> -1
+	{
+		instance_destroy()
+	}
+	else
+	{	
+		if instance_exists(Entity_Pickup_Dagger) = false
+		{
+			Register_Remove("KrebbTheWeary",true)
+		}
+	}
 }
