@@ -13,7 +13,7 @@ if IsPlayerOnSameTile() = true
 			}
 			else
 			{
-				if Register_Registered("Waldensop_Feather") = false and Register_Registered("EnteredWhiteSteedLodge") = true
+				if Register_Registered("Waldensop_Feather") = false and Register_Registered("HasLeftWaldensopTile") = true
 				{
 					global.CurrentDialogue_Asset = Dialog_ForestOfTorian_22_Waldensop_Feather
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
@@ -65,6 +65,10 @@ if IsPlayerOnSameTile() = true
 }
 else
 {
+	if Register_Registered("HasLeftWaldensopTile") = false
+	{
+		Register_Add("HasLeftWaldensopTile")
+	}
 	if Item_FindIndex(Spells.Feather,1) <> -1
 	{
 		instance_destroy()
