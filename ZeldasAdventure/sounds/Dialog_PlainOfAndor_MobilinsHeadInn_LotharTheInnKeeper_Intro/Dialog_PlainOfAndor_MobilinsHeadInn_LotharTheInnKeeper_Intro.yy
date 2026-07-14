@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_Intro",
+  "audioGroupId":{
+    "name":"AudioGroup_Dialogue",
+    "path":"audiogroups/AudioGroup_Dialogue",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":6,
+  "conversionMode":0,
+  "duration":9.045851,
+  "exportDir":"",
+  "name":"Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_Intro",
+  "parent":{
+    "name":"PlainOfAndor",
+    "path":"folders/Sounds/Dialogue/PlainOfAndor.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_Intro.ogg",
+  "volume":1.0,
+}

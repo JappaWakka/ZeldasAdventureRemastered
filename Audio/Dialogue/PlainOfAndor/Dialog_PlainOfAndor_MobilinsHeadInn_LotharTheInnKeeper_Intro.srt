@@ -1,0 +1,10 @@
+﻿1
+00:00:00,001 --> 00:00:03,893
+Lothar the Innkeeper: Welcome to
+the Mobilin's Head Inn, my princess!
+
+2
+00:00:04,017 --> 00:00:09,026
+You look dry, have a cup
+of Andor cider on the house.
+

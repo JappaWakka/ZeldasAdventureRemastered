@@ -1,18 +1,25 @@
 #region Lothar The Inn Keeper
-
-	function Subtitle_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_BeforeBuy(AudioPosition)
+	
+	function Subtitle_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_Intro(AudioPosition)
 	{
-		if AudioPosition >=		 0.000 and AudioPosition <=  3.813 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.BeforeBuy.Line01} //"Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!"
-		else if AudioPosition >= 3.838 and AudioPosition <=  8.787 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.BeforeBuy.Line02} //"You look dry, have a cup of Andor cider on the house."
-		else if AudioPosition >= 9.106 and AudioPosition <= 13.753 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.BeforeBuy.Line03} //"I have a spell of calm to sell, but it will cost you 100 rubies."
-		else return ""	
-	}
-		
-	function Subtitle_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_AfterBuy(AudioPosition)
-	{
-		if AudioPosition >=		 0.000 and AudioPosition <= 3.813 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.AfterBuy.Line01} //"Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!"
-		else if AudioPosition >= 3.838 and AudioPosition <= 8.787 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.AfterBuy.Line02} //"You look dry, have a cup of Andor cider on the house."
+		if AudioPosition >=		 0.000 and AudioPosition <= 3.893 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.Intro.Line01} //"Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!"
+		else if AudioPosition >= 4.017 and AudioPosition <= 9.026 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.Intro.Line02} //"You look dry, have a cup of Andor cider on the house."
 		else return ""
+	}
+	
+	function Subtitle_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_OfferCalmSpell(AudioPosition)
+	{
+		if string_lower(Localize.Meta.LanguageNameNative) = "french"
+		{
+			if AudioPosition >= 		0.000 and AudioPosition <=  2.000 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.OfferCalmSpell.Line01}
+			else if  AudioPosition >= 	2.024 and AudioPosition <=  4.460 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.OfferCalmSpell.Line02}
+			else return ""
+		}
+		else
+		{
+			if AudioPosition >=		 0.000 and AudioPosition <=  4.460 {return Localize.Subtitles.Dialogue.PlainOfAndor.MobilinsHeadInn.LotharTheInnKeeper.OfferCalmSpell.Line01} //"Lothar the Innkeeper: I have a spell of calm to sell, but it will cost you 100 rubies."
+			else return ""
+		}
 	}
 	
 	function Subtitle_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_PurchaseCalmSpell(AudioPosition)

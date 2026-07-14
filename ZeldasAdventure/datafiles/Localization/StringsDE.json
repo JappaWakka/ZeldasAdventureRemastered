@@ -278,14 +278,12 @@
 				},
 				"MobilinsHeadInn": {
 					"LotharTheInnKeeper": {
-						"BeforeBuy": {
-							"Line01": "Lothar, der Eigentümer: Willkommen in der Schenke Moblins Kopf, Prinzessin!",
-							"Line02": "Du siehst durstig aus, trink einen Becher Andors Apfelwein aufs Haus!",
-							"Line03": "Ich habe einen \"Ruhezauber\" zu verkaufen, aber er kostet dich 100 Rubine."
-						},
-						"AfterBuy": {
+						"Intro": {
 							"Line01": "Lothar, der Eigentümer: Willkommen in der Schenke Moblins Kopf, Prinzessin!",
 							"Line02": "Du siehst durstig aus, trink einen Becher Andors Apfelwein aufs Haus!"
+						},
+						"OfferCalmSpell": {
+							"Line01": "Lothar, der Eigentümer: Ich habe einen \"Ruhezauber\" zu verkaufen, aber er kostet dich 100 Rubine."
 						},
 						"PurchaseCalmSpell": {
 							"Line01": "Lothar, der Eigentümer: Du bist sehr weise für dein Alter!",

@@ -3,13 +3,10 @@
   "%Name":"Entity_NPC_LotharTheInnKeeper",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Entity_NPC_LotharTheInnKeeper",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"propertyId":{"name":"EnableAnimationAlarm","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"PlainOfAndor",
     "path":"folders/Objects/Entities/NPCs/PlainOfAndor.yy",

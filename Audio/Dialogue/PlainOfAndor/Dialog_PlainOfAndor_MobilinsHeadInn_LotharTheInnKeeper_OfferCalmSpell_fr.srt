@@ -1,0 +1,9 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+Lothar l'aubergiste :
+J'ai aussi un sort de Calme à vendre,
+
+2
+00:00:02,024 --> 00:00:04,460
+mais il vous en coûtera 100 rubis.
+

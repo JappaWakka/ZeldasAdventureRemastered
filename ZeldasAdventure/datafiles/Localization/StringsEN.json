@@ -278,14 +278,12 @@
 				},
 				"MobilinsHeadInn": {
 					"LotharTheInnKeeper": {
-						"BeforeBuy": {
-							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
-							"Line02": "You look dry, have a cup of Andor cider on the house.",
-							"Line03": "I have a spell of Calm to sell, but it will cost you 100 Rubies."
-						},
-						"AfterBuy": {
+						"Intro": {
 							"Line01": "Lothar the Innkeeper: Welcome to the Mobilin's Head Inn, my princess!",
 							"Line02": "You look dry, have a cup of Andor cider on the house."
+						},
+						"OfferCalmSpell": {
+							"Line01": "Lothar the Innkeeper: I have a spell of Calm to sell, but it will cost you 100 Rubies."
 						},
 						"PurchaseCalmSpell": {
 							"Line01": "Lothar the Innkeeper: That is wise beyond your years.",

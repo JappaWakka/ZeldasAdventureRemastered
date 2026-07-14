@@ -281,14 +281,13 @@
 				},
 				"MobilinsHeadInn": {
 					"LotharTheInnKeeper": {
-						"BeforeBuy": {
-							"Line01": "Lothar l'aubergiste : Bienvenue à l'auberge\nde la Tête de Mobilin, ma princesse !",
-							"Line02": "Vous avez l'air desséchée. Prenez donc\nun cidre d'Andor, c'est pour la maison !",
-							"Line03": "J'ai aussi un sort de Calme à vendre,\nmais il vous en coûtera 100 rubis."
-						},
-						"AfterBuy": {
+						"Intro": {
 							"Line01": "Lothar l'aubergiste : Bienvenue à l'auberge\nde la Tête de Mobilin, ma princesse !",
 							"Line02": "Vous avez l'air desséchée. Prenez donc\nun cidre d'Andor, c'est pour la maison !"
+						},
+						"OfferCalmSpell": {
+							"Line01": "Lothar l'aubergiste :\nJ'ai aussi un sort de Calme à vendre,",
+							"Line02": "mais il vous en coûtera 100 rubis."
 						},
 						"PurchaseCalmSpell": {
 							"Line01": "Lothar l'aubergiste :\nVous êtes plus sage que votre âge.",
