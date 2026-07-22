@@ -5,7 +5,7 @@ direction = choose(global.Directions.North,global.Directions.South,global.Direct
 speed = 0;
 image_speed = 0;
 if x >= 16 * tileWidth && x < 16 * tileWidth + tileWidth &&
-y >= 11 * tileHeight && y < 11 * tileHeight + tileHeight
+y >= 9 * tileHeight && y < 9 * tileHeight + tileHeight
 {
 	sprite_index = Sprite_Enemy_Tektite_Blue
 }
