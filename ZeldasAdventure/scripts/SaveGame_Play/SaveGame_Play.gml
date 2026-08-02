@@ -94,7 +94,7 @@ function SaveGame_Play(){
 		}
 		ini_close()
 		
-		global.SaveCreatedAtVersion = ini_read_real(Section, "SaveCreatedAtVersion", 0.06)
+		global.SaveLastUpdatedAtVersion = ini_read_real(Section, "SaveLastUpdatedAtVersion", 0.06)
 		SaveGamePatches()
 		
 		global.PlayerIsDead = false;

@@ -94,7 +94,7 @@ function InitGameVariables()
 	global.Power = 30;
 	global.Defense = 30;
 	global.VisitedTiles = ds_list_create()
-	global.SaveCreatedAtVersion = CurrentVersion
+	global.SaveLastUpdatedAtVersion = CurrentVersion
 	
 	//Option Variables
 	ini_open(global.SaveDataFileName)
