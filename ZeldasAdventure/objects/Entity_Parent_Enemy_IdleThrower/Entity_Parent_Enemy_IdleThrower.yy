@@ -38,6 +38,8 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"ThrowProjectileFrame","filters":[],"listItems":[],"multiselect":false,"name":"ThrowProjectileFrame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"ProjectileAsset","filters":[],"listItems":[],"multiselect":false,"name":"ProjectileAsset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"StillFrame","filters":[],"listItems":[],"multiselect":false,"name":"StillFrame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"PreviousFrame","filters":[],"listItems":[],"multiselect":false,"name":"PreviousFrame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

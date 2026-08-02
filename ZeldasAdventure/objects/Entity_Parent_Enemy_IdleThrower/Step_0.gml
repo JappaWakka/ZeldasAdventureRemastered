@@ -11,9 +11,26 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 	//Wait for next attack
 	if image_speed = 1
 	{
-		if (floor(image_index) >= image_number - 1)
+		if StillFrame > 0
 		{
-			image_index = 0
+			if (floor(image_index) >= image_number - 1)
+			{			
+				image_index = 0
+			}
+			else if (floor(image_index) = StillFrame and PreviousFrame <> StillFrame)
+			{
+				image_index = StillFrame
+				image_speed = 0
+				if EnemyState = EnemyStates.Idle and alarm[1] = -1
+				{
+					alarm_set(1, round(random_range(2, 9 * FrameRate)));
+				}
+			}
+			PreviousFrame = floor(image_index)
+		}
+		else if (floor(image_index) >= image_number - 1)
+		{
+			image_index = StillFrame
 			image_speed = 0
 			if EnemyState = EnemyStates.Idle and alarm[1] = -1
 			{
@@ -195,6 +212,7 @@ else
 		x = OriginX;
 		y = OriginY;
 		image_index = 0;
+		PreviousFrame = 0;
 	}
 	speed = global.EnemySpeeds.Still;
 	EnemyState = EnemyStates.Idle
