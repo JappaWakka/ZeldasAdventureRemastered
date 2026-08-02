@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script_Health",
+  "%Name":"Script_DefensePower",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script_Health",
+  "name":"Script_DefensePower",
   "parent":{
     "name":"PlayerFunctions",
     "path":"folders/Scripts/PlayerFunctions.yy",

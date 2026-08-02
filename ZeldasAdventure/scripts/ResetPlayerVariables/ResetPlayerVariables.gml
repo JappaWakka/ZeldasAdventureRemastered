@@ -20,6 +20,7 @@ function ResetPlayerVariables(){
 	global.Power = 30;
 	global.Defense = 30;
 	ds_list_clear(global.VisitedTiles)
+	global.SaveCreatedAtVersion = CurrentVersion;
 	
 	global.CurrentItem = [-1,-1]
 	global.CurrentTreasure = -1;

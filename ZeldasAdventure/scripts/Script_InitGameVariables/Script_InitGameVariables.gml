@@ -9,6 +9,7 @@ function InitGameVariables()
 	
 	//System Variables
 	#macro FrameRate 60
+	#macro CurrentVersion 0.10
 	Init_SpawnPoints_TileMap()
 	WorldMap_Tiles_Init()
 	Font_CreateFonts()
@@ -93,6 +94,7 @@ function InitGameVariables()
 	global.Power = 30;
 	global.Defense = 30;
 	global.VisitedTiles = ds_list_create()
+	global.SaveCreatedAtVersion = CurrentVersion
 	
 	//Option Variables
 	ini_open(global.SaveDataFileName)

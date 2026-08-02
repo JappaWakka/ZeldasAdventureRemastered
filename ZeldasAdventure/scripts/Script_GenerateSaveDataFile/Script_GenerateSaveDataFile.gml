@@ -22,6 +22,7 @@ function GenerateSaveDataFile()
 			ini_write_string(Section, "InventoryCelestialSigns", "");
 			ini_write_string(Section, "Register", "");
 			ini_write_string(Section, "VisitedTiles", "");
+			ini_write_string(Section, "SaveCreatedAtVersion", CurrentVersion);
 		}
 	}
 	

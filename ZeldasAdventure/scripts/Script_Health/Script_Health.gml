@@ -37,12 +37,19 @@ function IncreaseMaxHealth()
 	global.MaxHealth += 20
 }
 
-function FillHP(PlayHeartFillSound = false)
+function FillHP(PlayHeartFillSound = false, InstantFill = false)
 {
 	if global.CurrentHealth < global.MaxHealth
 	{
-		Obj_GameManager.DoFillHearts = true
-		Obj_GameManager.DoPlayHeartFillSound = PlayHeartFillSound
+		if InstantFill = false
+		{
+			Obj_GameManager.DoFillHearts = true
+			Obj_GameManager.DoPlayHeartFillSound = PlayHeartFillSound
+		}
+		else
+		{
+			global.CurrentHealth = global.MaxHealth
+		}
 	}
 }
 

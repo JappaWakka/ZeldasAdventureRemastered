@@ -94,6 +94,9 @@ function SaveGame_Play(){
 		}
 		ini_close()
 		
+		global.SaveCreatedAtVersion = ini_read_real(Section, "SaveCreatedAtVersion", 0.06)
+		SaveGamePatches()
+		
 		global.PlayerIsDead = false;
 		global.FadeProgress = 0;
 		HasPressedPlay = true
