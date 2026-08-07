@@ -16,4 +16,5 @@ function Subtitle_ForestOfTorian_22_Waldensop_Feather(AudioPosition)
 	if AudioPosition >=		 0.000 and AudioPosition <= 2.120 {return Localize.Subtitles.Dialogue.ForestOfTorian.Waldensop.Feather.Line01}
 	else if AudioPosition >= 2.333 and AudioPosition <= 4.960 {return Localize.Subtitles.Dialogue.ForestOfTorian.Waldensop.Feather.Line02}
 	else if AudioPosition >= 5.060 and AudioPosition <= 7.413 {return Localize.Subtitles.Dialogue.ForestOfTorian.Waldensop.Feather.Line03}
+	else return ""
 }

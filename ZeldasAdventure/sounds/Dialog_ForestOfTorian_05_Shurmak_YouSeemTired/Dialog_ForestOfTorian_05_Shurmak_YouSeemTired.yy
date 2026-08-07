@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"Dialog_ForestOfTorian_22_Waldensop_GoodMorn",
+  "%Name":"Dialog_ForestOfTorian_05_Shurmak_YouSeemTired",
   "audioGroupId":{
     "name":"AudioGroup_Dialogue",
     "path":"audiogroups/AudioGroup_Dialogue",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":16.97483,
+  "duration":5.653333,
   "exportDir":"",
-  "name":"Dialog_ForestOfTorian_22_Waldensop_GoodMorn",
+  "name":"Dialog_ForestOfTorian_05_Shurmak_YouSeemTired",
   "parent":{
     "name":"ForestOfTorian",
     "path":"folders/Sounds/Dialogue/ForestOfTorian.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":22050,
-  "soundFile":"Dialog_ForestOfTorian_22_Waldensop_GoodMorn.ogg",
+  "soundFile":"Dialog_ForestOfTorian_05_Shurmak_YouSeemTired.ogg",
   "volume":1.0,
 }

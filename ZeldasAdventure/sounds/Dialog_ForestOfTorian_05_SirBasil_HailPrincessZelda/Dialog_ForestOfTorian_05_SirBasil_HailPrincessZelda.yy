@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"Dialog_ForestOfTorian_22_Waldensop_GoodMorn",
+  "%Name":"Dialog_ForestOfTorian_05_SirBasil_HailPrincessZelda",
   "audioGroupId":{
     "name":"AudioGroup_Dialogue",
     "path":"audiogroups/AudioGroup_Dialogue",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":16.97483,
+  "duration":6.585079,
   "exportDir":"",
-  "name":"Dialog_ForestOfTorian_22_Waldensop_GoodMorn",
+  "name":"Dialog_ForestOfTorian_05_SirBasil_HailPrincessZelda",
   "parent":{
     "name":"ForestOfTorian",
     "path":"folders/Sounds/Dialogue/ForestOfTorian.yy",
@@ -20,7 +20,7 @@
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
-  "sampleRate":22050,
-  "soundFile":"Dialog_ForestOfTorian_22_Waldensop_GoodMorn.ogg",
+  "sampleRate":44100,
+  "soundFile":"Dialog_ForestOfTorian_05_SirBasil_HailPrincessZelda.ogg",
   "volume":1.0,
 }

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"NPCPath_WalkingPeople_GreatWimbich",
+  "%Name":"NPCPath_GreatWimbich",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"NPCPath_WalkingPeople_GreatWimbich",
+  "name":"NPCPath_GreatWimbich",
   "parent":{
     "name":"NPCs",
     "path":"folders/Scripts/Paths/NPCs.yy",

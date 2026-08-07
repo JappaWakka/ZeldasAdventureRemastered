@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"Dialog_ForestOfTorian_22_Waldensop_Feather",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"AudioGroup_Dialogue",
+    "path":"audiogroups/AudioGroup_Dialogue",
   },
   "bitDepth":1,
   "channelFormat":0,
