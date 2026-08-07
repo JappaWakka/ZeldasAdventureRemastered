@@ -125,6 +125,9 @@ function UseItem_Spell()
 			case Spells.Feather:
 				UseSpell_Feather()
 				break;
+			case Spells.Broadsword:
+				UseSpell_Broadsword()
+				break;
 		}
 			
 		if global.CanUseSpell = true

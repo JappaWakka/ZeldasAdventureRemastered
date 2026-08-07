@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UseSpell_Broadsword",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UseSpell_Broadsword",
+  "parent":{
+    "name":"Spells",
+    "path":"folders/Scripts/UseItem/Spells.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
