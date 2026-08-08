@@ -92,10 +92,11 @@ function SaveGame_Play(){
 		{
 			WorldMap_UpdateVisitedTiles(VisitedTilesList)
 		}
-		ini_close()
 		
 		global.SaveLastUpdatedAtVersion = ini_read_real(Section, "SaveLastUpdatedAtVersion", 0.06)
 		SaveGamePatches()
+		
+		ini_close()
 		
 		global.PlayerIsDead = false;
 		global.FadeProgress = 0;
