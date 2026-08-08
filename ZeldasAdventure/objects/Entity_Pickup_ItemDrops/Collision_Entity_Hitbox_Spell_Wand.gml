@@ -2,15 +2,21 @@
 switch EnemyDropType
 {
 	case "Ruby_5" :
-		AddRubies(5);
-		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
-		instance_destroy();
+		if WandCanPickUp = true
+		{
+			AddRubies(5);
+			instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
+			instance_destroy();
+		}
 		break;
 	
 	case "Ruby_10" :
-		AddRubies(10);
-		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
-		instance_destroy();
+		if WandCanPickUp = true
+		{
+			AddRubies(10);
+			instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
+			instance_destroy();
+		}
 		break;
 		
 	case "Heart" :

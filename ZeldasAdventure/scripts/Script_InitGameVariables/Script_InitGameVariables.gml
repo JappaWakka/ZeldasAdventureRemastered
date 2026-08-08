@@ -158,8 +158,8 @@ function InitGameVariables()
 	{
 		Still: 0,
 		Slow : 1,
-		Medium : 1.4,
-		Fast: 1.8
+		Medium : 1.5,
+		Fast: 2.0
 	};
 	
 	global.ProjectileSpeeds =

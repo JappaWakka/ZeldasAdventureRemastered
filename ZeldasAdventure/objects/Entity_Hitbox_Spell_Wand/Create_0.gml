@@ -1,17 +1,17 @@
 if Entity_Player.Facing = global.Directions.East
 {
-	image_index = 0;
+	sprite_index = Hitbox_Spell_Wand_East
 }
 else if Entity_Player.Facing = global.Directions.North
 {
-	image_index = 1;
+	sprite_index = Hitbox_Spell_Wand_North
 }
 else if Entity_Player.Facing = global.Directions.West
 {
-	image_index = 2;
+	sprite_index = Hitbox_Spell_Wand_West
 }
 else if Entity_Player.Facing = global.Directions.South
 {
-	image_index = 3;
+	sprite_index = Hitbox_Spell_Wand_South
 }
-alarm[0] = d(0.25 * FrameRate);
+image_speed = 1
