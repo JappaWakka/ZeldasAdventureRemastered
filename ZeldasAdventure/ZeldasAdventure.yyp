@@ -435,6 +435,7 @@
     {"id":{"name":"Entity_Enemy_FloorSpikes_ShrineOfDestiny","path":"objects/Entity_Enemy_FloorSpikes_ShrineOfDestiny/Entity_Enemy_FloorSpikes_ShrineOfDestiny.yy",},},
     {"id":{"name":"Entity_Enemy_FloorSpikes_ShrineOfIllusion","path":"objects/Entity_Enemy_FloorSpikes_ShrineOfIllusion/Entity_Enemy_FloorSpikes_ShrineOfIllusion.yy",},},
     {"id":{"name":"Entity_Enemy_Goriya","path":"objects/Entity_Enemy_Goriya/Entity_Enemy_Goriya.yy",},},
+    {"id":{"name":"Entity_Enemy_InvisibleMan","path":"objects/Entity_Enemy_InvisibleMan/Entity_Enemy_InvisibleMan.yy",},},
     {"id":{"name":"Entity_Enemy_Keese_ShrineOfEarth_05","path":"objects/Entity_Enemy_Keese_ShrineOfEarth_05/Entity_Enemy_Keese_ShrineOfEarth_05.yy",},},
     {"id":{"name":"Entity_Enemy_Keese_ShrineOfEarth_06","path":"objects/Entity_Enemy_Keese_ShrineOfEarth_06/Entity_Enemy_Keese_ShrineOfEarth_06.yy",},},
     {"id":{"name":"Entity_Enemy_Keese_ShrineOfEarth_10","path":"objects/Entity_Enemy_Keese_ShrineOfEarth_10/Entity_Enemy_Keese_ShrineOfEarth_10.yy",},},
