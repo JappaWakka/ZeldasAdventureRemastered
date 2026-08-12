@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.512336,
+  "duration":0.5123356,
   "exportDir":"",
   "name":"SFX_Enemy_Gannon_Attack",
   "parent":{

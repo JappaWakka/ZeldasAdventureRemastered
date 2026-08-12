@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.2922,
+  "duration":0.28058958,
   "exportDir":"",
   "name":"SFX_Enemy_Loccasin",
   "parent":{

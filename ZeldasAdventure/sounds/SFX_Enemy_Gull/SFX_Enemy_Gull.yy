@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.977823,
+  "duration":0.97782314,
   "exportDir":"",
   "name":"SFX_Enemy_Gull",
   "parent":{

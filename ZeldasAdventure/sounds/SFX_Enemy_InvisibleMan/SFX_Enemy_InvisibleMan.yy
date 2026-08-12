@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.851667,
+  "duration":0.85170066,
   "exportDir":"",
   "name":"SFX_Enemy_InvisibleMan",
   "parent":{

@@ -89,6 +89,7 @@ function ExitMenu_SaveAndQuit()
 		}
 		ini_write_string(Section, "Register", SaveString);
 	}
+	ini_write_string(Section, "SaveLastUpdatedAtVersion", global.SaveLastUpdatedAtVersion);
 	ini_write_real(Section, "CurrentKeys", global.CurrentKeys);
 	ini_write_real(Section, "CurrentRubies", global.CurrentRubies);
 	if global.RemasteredMode = false

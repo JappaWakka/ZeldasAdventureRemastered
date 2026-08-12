@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.106395,
+  "duration":1.1063945,
   "exportDir":"",
   "name":"SFX_Enemy_Tornado",
   "parent":{

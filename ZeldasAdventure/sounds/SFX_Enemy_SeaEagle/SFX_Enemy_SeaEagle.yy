@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.091156,
+  "duration":1.0911565,
   "exportDir":"",
   "name":"SFX_Enemy_SeaEagle",
   "parent":{

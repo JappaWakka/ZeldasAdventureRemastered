@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.25737,
+  "duration":0.24575964,
   "exportDir":"",
   "name":"SFX_Enemy_Puffer",
   "parent":{

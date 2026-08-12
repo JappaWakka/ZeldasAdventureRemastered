@@ -3,7 +3,7 @@ if EnemyState != EnemyStates.Attack
 {
 	if global.EnemySoundPlaying = false
 	{
-		if global.EnemySound[0] != -1 and global.EnemySound[1] != -1
+		if global.EnemySound[0] = -1 and global.EnemySound[1] = -1
 		{
 			global.EnemySound = [EnemySoundName,x]
 		}

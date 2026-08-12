@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.611293,
+  "duration":0.61129254,
   "exportDir":"",
   "name":"SFX_Enemy_Mardleg",
   "parent":{

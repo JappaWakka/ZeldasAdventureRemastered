@@ -5,7 +5,7 @@ function SaveGamePatches()
 	if global.SaveLastUpdatedAtVersion < 0.10
 	{
 		if global.DebugMode = false and
-		Item_FindIndex(CelestialSigns.Earth,2) = true and
+		Item_FindIndex(CelestialSigns.Earth,2) <> -1 and
 		global.Power = 30 and global.Defense = 30
 		{
 			FillHP(false,true)

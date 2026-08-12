@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.997279,
+  "duration":0.9972789,
   "exportDir":"",
   "name":"SFX_Enemy_Wizzrobe",
   "parent":{

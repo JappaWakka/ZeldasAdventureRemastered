@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.426667,
+  "duration":0.42666668,
   "exportDir":"",
   "name":"SFX_Enemy_Patra_PolsVoice",
   "parent":{

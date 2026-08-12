@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.053605,
+  "duration":1.0536054,
   "exportDir":"",
   "name":"SFX_Enemy_Pasquinade",
   "parent":{

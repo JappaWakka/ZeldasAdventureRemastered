@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.50585,
+  "duration":0.5058503,
   "exportDir":"",
   "name":"SFX_Enemy_Gannon_Teleport",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.821406,
+  "duration":0.8214059,
   "exportDir":"",
   "name":"SFX_Enemy_Dolomite",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.954649,
+  "duration":0.95464855,
   "exportDir":"",
   "name":"SFX_Enemy_Lowder",
   "parent":{

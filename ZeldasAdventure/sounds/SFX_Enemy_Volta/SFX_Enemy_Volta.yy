@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.96195,
+  "duration":0.9619501,
   "exportDir":"",
   "name":"SFX_Enemy_Volta",
   "parent":{

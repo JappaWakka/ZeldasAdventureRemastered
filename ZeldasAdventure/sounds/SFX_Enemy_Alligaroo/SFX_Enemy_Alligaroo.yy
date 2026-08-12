@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.858594,
+  "duration":0.8585941,
   "exportDir":"",
   "name":"SFX_Enemy_Alligaroo",
   "parent":{

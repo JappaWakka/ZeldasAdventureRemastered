@@ -66,6 +66,7 @@
     {"name":"Entity_Enemy_Mobilin","order":7,"path":"objects/Entity_Enemy_Mobilin/Entity_Enemy_Mobilin.yy",},
     {"name":"Entity_Enemy_Moby","order":5,"path":"objects/Entity_Enemy_Moby/Entity_Enemy_Moby.yy",},
     {"name":"Entity_Enemy_Molluska","order":23,"path":"objects/Entity_Enemy_Molluska/Entity_Enemy_Molluska.yy",},
+    {"name":"Entity_Enemy_Octorok","order":26,"path":"objects/Entity_Enemy_Octorok/Entity_Enemy_Octorok.yy",},
     {"name":"Entity_Enemy_Peahat","order":4,"path":"objects/Entity_Enemy_Peahat/Entity_Enemy_Peahat.yy",},
     {"name":"Entity_Enemy_Rope","order":21,"path":"objects/Entity_Enemy_Rope/Entity_Enemy_Rope.yy",},
     {"name":"Entity_Enemy_Sardak_Blue","order":2,"path":"objects/Entity_Enemy_Sardak_Blue/Entity_Enemy_Sardak_Blue.yy",},

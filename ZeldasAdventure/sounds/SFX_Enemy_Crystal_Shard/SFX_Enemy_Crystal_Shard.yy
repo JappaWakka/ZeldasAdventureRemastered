@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.894649,
+  "duration":0.89464855,
   "exportDir":"",
   "name":"SFX_Enemy_Crystal_Shard",
   "parent":{

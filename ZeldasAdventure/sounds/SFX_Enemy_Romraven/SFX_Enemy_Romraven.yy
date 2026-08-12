@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.058549,
+  "duration":1.0585488,
   "exportDir":"",
   "name":"SFX_Enemy_Romraven",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.004082,
+  "duration":1.0040816,
   "exportDir":"",
   "name":"SFX_Enemy_Crockarock",
   "parent":{

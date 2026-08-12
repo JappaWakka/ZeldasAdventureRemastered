@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.912154,
+  "duration":0.9121542,
   "exportDir":"",
   "name":"SFX_Enemy_Molluska",
   "parent":{

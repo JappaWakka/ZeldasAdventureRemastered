@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.049977,
+  "duration":1.0499773,
   "exportDir":"",
   "name":"SFX_Enemy_Ursore",
   "parent":{

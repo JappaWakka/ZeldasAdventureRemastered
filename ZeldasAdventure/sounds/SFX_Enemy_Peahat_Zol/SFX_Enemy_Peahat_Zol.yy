@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.696599,
+  "duration":0.69659865,
   "exportDir":"",
   "name":"SFX_Enemy_Peahat_Zol",
   "parent":{

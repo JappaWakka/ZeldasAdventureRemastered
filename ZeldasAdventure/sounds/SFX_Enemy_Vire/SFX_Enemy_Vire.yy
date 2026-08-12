@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.944127,
+  "duration":0.94412696,
   "exportDir":"",
   "name":"SFX_Enemy_Vire",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.99415,
+  "duration":0.9941497,
   "exportDir":"",
   "name":"SFX_Enemy_Goriya",
   "parent":{

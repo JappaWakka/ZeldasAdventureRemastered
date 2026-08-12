@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.855646,
+  "duration":0.85564625,
   "exportDir":"",
   "name":"SFX_Enemy_Octorok",
   "parent":{

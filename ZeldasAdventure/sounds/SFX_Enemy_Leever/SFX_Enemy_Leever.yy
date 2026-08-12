@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.952426,
+  "duration":0.9524263,
   "exportDir":"",
   "name":"SFX_Enemy_Leever",
   "parent":{

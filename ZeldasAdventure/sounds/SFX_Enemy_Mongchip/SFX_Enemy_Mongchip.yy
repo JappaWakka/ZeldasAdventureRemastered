@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.84576,
+  "duration":0.84575963,
   "exportDir":"",
   "name":"SFX_Enemy_Mongchip",
   "parent":{

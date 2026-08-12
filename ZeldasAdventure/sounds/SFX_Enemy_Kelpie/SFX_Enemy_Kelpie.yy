@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.435828,
+  "duration":0.43582767,
   "exportDir":"",
   "name":"SFX_Enemy_Kelpie",
   "parent":{

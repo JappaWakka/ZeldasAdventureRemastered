@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.363537,
+  "duration":0.37732425,
   "exportDir":"",
   "name":"SFX_Enemy_Squibber",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.260272,
+  "duration":0.26702946,
   "exportDir":"",
   "name":"SFX_Enemy_Bolla",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.899456,
+  "duration":0.8994558,
   "exportDir":"",
   "name":"SFX_Enemy_Stalfos",
   "parent":{

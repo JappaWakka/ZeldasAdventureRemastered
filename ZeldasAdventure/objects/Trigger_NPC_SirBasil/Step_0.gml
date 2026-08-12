@@ -8,7 +8,7 @@ if IsPlayerOnSameTile() = true
 			{
 				if HasTalked = false
 				{
-					if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
+					if global.CurrentDialogue_Asset = Dialog_None
 					{
 						global.CurrentDialogue_Asset = Dialog_ForestOfTorian_05_SirBasil_HailPrincessZelda
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_SirBasil,global.CurrentDialogue_Asset,500,false)
@@ -57,7 +57,7 @@ if IsPlayerOnSameTile() = true
 			if HasTalked = true and Register_Registered("SirBasil_Dialogue") = false
 			{
 				global.CurrentDialogue_Asset = Dialog_ForestOfTorian_05_Shurmak_YouSeemTired
-				global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false,tileWidth/2)
+				global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
 				if Item_FindIndex(Spells.Broadsword,1) = -1 and instance_exists(Entity_Pickup_Broadsword) = false
 				{
 					instance_create_layer(5938,1770,"Temporary_AbovePlayer",Entity_Pickup_Broadsword)

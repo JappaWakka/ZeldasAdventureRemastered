@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.841361,
+  "duration":0.84136057,
   "exportDir":"",
   "name":"SFX_Enemy_Bounder_Cactorok",
   "parent":{

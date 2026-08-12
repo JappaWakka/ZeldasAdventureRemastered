@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.000771,
+  "duration":1.0007709,
   "exportDir":"",
   "name":"SFX_Enemy_Skora",
   "parent":{

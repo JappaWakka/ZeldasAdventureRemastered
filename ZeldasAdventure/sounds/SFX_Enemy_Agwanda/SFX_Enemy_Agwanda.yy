@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.567166,
+  "duration":0.5555556,
   "exportDir":"",
   "name":"SFX_Enemy_Agwanda",
   "parent":{

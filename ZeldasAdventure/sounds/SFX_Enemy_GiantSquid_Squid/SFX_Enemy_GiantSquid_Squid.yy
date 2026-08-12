@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.017007,
+  "duration":1.0170068,
   "exportDir":"",
   "name":"SFX_Enemy_GiantSquid_Squid",
   "parent":{

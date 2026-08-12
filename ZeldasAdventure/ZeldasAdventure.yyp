@@ -444,6 +444,7 @@
     {"id":{"name":"Entity_Enemy_Mobilin","path":"objects/Entity_Enemy_Mobilin/Entity_Enemy_Mobilin.yy",},},
     {"id":{"name":"Entity_Enemy_Moby","path":"objects/Entity_Enemy_Moby/Entity_Enemy_Moby.yy",},},
     {"id":{"name":"Entity_Enemy_Molluska","path":"objects/Entity_Enemy_Molluska/Entity_Enemy_Molluska.yy",},},
+    {"id":{"name":"Entity_Enemy_Octorok","path":"objects/Entity_Enemy_Octorok/Entity_Enemy_Octorok.yy",},},
     {"id":{"name":"Entity_Enemy_Peahat","path":"objects/Entity_Enemy_Peahat/Entity_Enemy_Peahat.yy",},},
     {"id":{"name":"Entity_Enemy_Rope","path":"objects/Entity_Enemy_Rope/Entity_Enemy_Rope.yy",},},
     {"id":{"name":"Entity_Enemy_Sardak_Blue","path":"objects/Entity_Enemy_Sardak_Blue/Entity_Enemy_Sardak_Blue.yy",},},

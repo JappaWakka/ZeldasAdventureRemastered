@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.30263,
+  "duration":0.2910204,
   "exportDir":"",
   "name":"SFX_Enemy_Sardak",
   "parent":{

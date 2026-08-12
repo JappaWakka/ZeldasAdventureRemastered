@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.035147,
+  "duration":1.0351474,
   "exportDir":"",
   "name":"SFX_Enemy_Dragonfly",
   "parent":{

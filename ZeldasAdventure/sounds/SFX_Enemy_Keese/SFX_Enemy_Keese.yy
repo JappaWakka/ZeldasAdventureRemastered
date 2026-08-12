@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.918866,
+  "duration":0.9188662,
   "exportDir":"",
   "name":"SFX_Enemy_Keese",
   "parent":{

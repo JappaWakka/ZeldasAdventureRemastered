@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.053016,
+  "duration":1.0530158,
   "exportDir":"",
   "name":"SFX_Enemy_Mobilin",
   "parent":{

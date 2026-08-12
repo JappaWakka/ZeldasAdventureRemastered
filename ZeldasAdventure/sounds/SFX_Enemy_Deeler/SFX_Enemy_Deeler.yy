@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.655329,
+  "duration":0.6553288,
   "exportDir":"",
   "name":"SFX_Enemy_Deeler",
   "parent":{

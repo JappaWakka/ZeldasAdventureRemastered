@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.252063,
+  "duration":0.2554195,
   "exportDir":"",
   "name":"SFX_Enemy_IronKnuckle",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.505261,
+  "duration":0.4936508,
   "exportDir":"",
   "name":"SFX_Enemy_Zola",
   "parent":{

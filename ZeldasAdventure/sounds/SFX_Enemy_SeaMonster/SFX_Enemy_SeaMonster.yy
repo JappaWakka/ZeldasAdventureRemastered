@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.941179,
+  "duration":0.94117916,
   "exportDir":"",
   "name":"SFX_Enemy_SeaMonster",
   "parent":{

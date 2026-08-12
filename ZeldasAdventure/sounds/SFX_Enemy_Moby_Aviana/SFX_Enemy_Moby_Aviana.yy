@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.788163,
+  "duration":0.78816324,
   "exportDir":"",
   "name":"SFX_Enemy_Moby_Aviana",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.140635,
+  "duration":1.1406349,
   "exportDir":"",
   "name":"SFX_Enemy_Malmord",
   "parent":{
