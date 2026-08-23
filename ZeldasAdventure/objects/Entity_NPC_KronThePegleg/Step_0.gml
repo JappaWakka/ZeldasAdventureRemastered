@@ -3,21 +3,21 @@ if IsPlayerOnSameTile() = true
 {
 	if global.RemasteredMode = true
 	{
-		if Register_Registered("KronThePegleg_Intro") = false
+		if Register_Registered(Registers.KronThePegleg_Intro) = false
 		{
 			global.CurrentDialogue_Asset = Dialog_PlainOfDonora_02_KronThePegleg_EverybodyComesTo
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			Register_Add("KronThePegleg_Intro",true)
+			Register_Add(Registers.KronThePegleg_Intro,true)
 		}
 		else
 		{
-			if Register_Registered("KronThePegleg_ItemForSale") = false
+			if Register_Registered(Registers.KronThePegleg_ItemForSale) = false
 			{
 				if Item_FindIndex(Treasures.LifePotion,0) = -1
 				{
 					global.CurrentDialogue_Asset = Dialog_PlainOfDonora_02_KronThePegleg_FineItemForSale
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					Register_Add("KronThePegleg_ItemForSale",true)
+					Register_Add(Registers.KronThePegleg_ItemForSale,true)
 				}
 			}
 		}
@@ -53,13 +53,13 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if Register_Registered("KronThePegleg_Intro") = true and Register_Registered("KronThePegleg_ItemForSale") = false
+		if Register_Registered(Registers.KronThePegleg_Intro) = true and Register_Registered(Registers.KronThePegleg_ItemForSale) = false
 		{
 			if Item_FindIndex(Treasures.LifePotion,0) = -1
 			{
 				global.CurrentDialogue_Asset = Dialog_PlainOfDonora_02_KronThePegleg_FineItemForSale
 				global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-				Register_Add("KronThePegleg_ItemForSale",true)
+				Register_Add(Registers.KronThePegleg_ItemForSale,true)
 			}
 		}
 	}

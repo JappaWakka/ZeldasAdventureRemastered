@@ -8,7 +8,7 @@ if IsPlayerOnSameTile() = true
 			{
 				if AliceDialogue = 0
 				{
-					if Register_Registered("Alice_Dialogue") = false
+					if Register_Registered(Registers.Alice_DoneTalking) = false
 					{
 						if place_meeting(x,y,Entity_Player)
 						{
@@ -22,7 +22,7 @@ if IsPlayerOnSameTile() = true
 					}
 					else
 					{
-						if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player) and Register_Registered("Alice_TempDialogue") = false
+						if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player) and Register_Registered(Registers.Alice_Greeting) = false
 						{
 							global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_RealNice
 							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
@@ -31,7 +31,7 @@ if IsPlayerOnSameTile() = true
 						}
 					}
 				}
-				if Register_Registered("Alice_Dialogue") = false
+				if Register_Registered(Registers.Alice_DoneTalking) = false
 				{
 					if AliceDialogue = 1
 					{
@@ -71,13 +71,13 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if global.FadeAlpha = 0 and Register_Registered("Alice_Dialogue") = false
+		if global.FadeAlpha = 0 and Register_Registered(Registers.Alice_DoneTalking) = false
 		{
 			if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 			{
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_Alice_PeculiarLittleTown
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Alice,global.CurrentDialogue_Asset,500,false)
-				Register_Add("Alice_Dialogue")
+				Register_Add(Registers.Alice_DoneTalking)
 				HasTalked = true
 			}
 		}
@@ -130,7 +130,7 @@ if IsPlayerOnSameTile() = true
 		{
 			if HasTalked = true
 			{
-				if Register_Registered("Alice_TempDialogue") = false
+				if Register_Registered(Registers.Alice_Greeting) = false
 				{
 					switch AliceDialogue
 					{
@@ -147,10 +147,10 @@ if IsPlayerOnSameTile() = true
 							HasTalked = false
 							break
 						case 3:
-							Register_Add("Alice_Dialogue")
+							Register_Add(Registers.Alice_DoneTalking)
 							break
 						case 4:
-							Register_Add("Alice_TempDialogue",true)
+							Register_Add(Registers.Alice_Greeting,true)
 							instance_destroy()
 							break
 					}
@@ -166,7 +166,7 @@ if IsPlayerOnSameTile() = true
 		{
 			if HasTalked = true
 			{
-				if Register_Registered("Alice_Dialogue") = true and global.FadeAlpha = 0
+				if Register_Registered(Registers.Alice_DoneTalking) = true and global.FadeAlpha = 0
 				{
 					instance_destroy()
 				}

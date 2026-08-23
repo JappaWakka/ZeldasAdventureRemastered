@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":4.373333,
+  "duration":4.3733335,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_MadameKriggle_WonderfulToSeeYou",
   "parent":{

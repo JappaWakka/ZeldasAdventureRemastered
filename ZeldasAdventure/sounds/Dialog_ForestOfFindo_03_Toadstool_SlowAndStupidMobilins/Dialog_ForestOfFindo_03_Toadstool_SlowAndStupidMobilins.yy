@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":10.346667,
+  "duration":10.346666,
   "exportDir":"",
   "name":"Dialog_ForestOfFindo_03_Toadstool_SlowAndStupidMobilins",
   "parent":{

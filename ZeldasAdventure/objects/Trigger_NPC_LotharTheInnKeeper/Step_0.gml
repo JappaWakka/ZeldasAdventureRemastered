@@ -1,13 +1,13 @@
 if IsPlayerOnSameTile() = true
 {
-	if Item_FindIndex(Spells.Calm,1) = -1 and Register_Registered("LotharTheInnKeeper_OfferSpellOfCalm") = false
+	if Item_FindIndex(Spells.Calm,1) = -1 and Register_Registered(Registers.LotharTheInnKeeper_OfferSpellOfCalm) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 		{
 			global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_OfferCalmSpell
 			Audio_StopMusic()
 			global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_LotharTheInnKeeper,global.CurrentDialogue_Asset,500,false)
-			Register_Add("LotharTheInnKeeper_OfferSpellOfCalm",true)
+			Register_Add(Registers.LotharTheInnKeeper_OfferSpellOfCalm,true)
 		}
 	}
 	if global.CurrentDialogue_Asset != Dialog_None

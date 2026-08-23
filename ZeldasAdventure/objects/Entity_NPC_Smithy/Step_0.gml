@@ -1,26 +1,26 @@
 if IsPlayerOnSameTile() = true
 {
-	if Register_Registered("Smithy_Intro") = false
+	if Register_Registered(Registers.WimbichSmithy_Intro) = false
 	{
 		global.CurrentDialogue_Asset = Dialog_GreatWimbich_Smithy_WhoGoesThere
 		global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 		
-		Register_Add("Smithy_Intro",true)
+		Register_Add(Registers.WimbichSmithy_Intro,true)
 	}
 	else
 	{
-		if global.RemasteredMode = true and Register_Registered("LeftSmithy") = true
+		if global.RemasteredMode = true and Register_Registered(Registers.LeftSmithy) = true
 		{
 			if Item_FindIndex(Treasures.Candle,0) = -1
 			{
-				if Register_Registered("Smithy_ChooseItemAndHurry") = false
+				if Register_Registered(Registers.WimbichSmithy_ChooseItemAndHurry) = false
 				{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Smithy_ChooseItemAndHurry
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					Register_Add("Smithy_ChooseItemAndHurry",true)
+					Register_Add(Registers.WimbichSmithy_ChooseItemAndHurry,true)
 				}
 			}
-			Register_Remove("LeftSmithy")
+			Register_Remove(Registers.LeftSmithy)
 		}
 	}
 	
@@ -58,5 +58,5 @@ if IsPlayerOnSameTile() = true
 }
 else
 {
-	Register_Add("LeftSmithy")
+	Register_Add(Registers.LeftSmithy)
 }

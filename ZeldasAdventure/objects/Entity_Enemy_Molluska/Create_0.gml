@@ -16,5 +16,5 @@ y >= 12 * tileHeight && y < 12 * tileHeight + tileHeight
 if x >= 24 * tileWidth && x < 24 * tileWidth + tileWidth &&
 y >= 20 * tileHeight && y < 20 * tileHeight + tileHeight
 {
-	TriggerScriptName = "ShrineOfIllusion_KeyMolluska"
+	TriggerScriptName = Registers.Key_Molluska
 }

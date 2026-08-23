@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":7.573333,
+  "duration":7.5733333,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_GeneralShopkeeper_ThatWasSmart",
   "parent":{

@@ -5,13 +5,13 @@ if IsPlayerOnSameTile() = true
 		instance_destroy()
 	}
 	
-	if Register_Registered("Shurmak_EvilsOfGreed") = false and global.FadeAlpha = 0
+	if Register_Registered(Registers.Shurmak_EvilsOfGreed) = false and global.FadeAlpha = 0
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_01_Shurmak_EvilsOfGreed
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("Shurmak_EvilsOfGreed",true)
+			Register_Add(Registers.Shurmak_EvilsOfGreed,true)
 		}
 		
 	}

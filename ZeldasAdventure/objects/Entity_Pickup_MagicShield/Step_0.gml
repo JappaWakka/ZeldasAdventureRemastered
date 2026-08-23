@@ -43,11 +43,11 @@ if IsPlayerOnSameTile() = true
 								RemoveRubies(ItemCost.Price);
 								audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 								Item_Add(Treasures.MagicShield,0)
-								if Register_Registered("OghamMerchant_WisePurchase") = false
+								if Register_Registered(Registers.OghamMerchant_WisePurchase) = false
 								{
 									global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
 									global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
-									Register_Add("OghamMerchant_WisePurchase",true)
+									Register_Add(Registers.OghamMerchant_WisePurchase,true)
 								}
 								instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
 								visible = false

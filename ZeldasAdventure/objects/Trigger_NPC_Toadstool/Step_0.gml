@@ -1,12 +1,12 @@
 if IsPlayerOnSameTile() = true
 {
-	if Register_Registered("TalkingToadstool") = false and global.FadeAlpha = 0
+	if Register_Registered(Registers.TalkingToadstool) = false and global.FadeAlpha = 0
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ForestOfFindo_03_Toadstool_SlowAndStupidMobilins
 			global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_TalkingToadstool,global.CurrentDialogue_Asset,500,false)
-			Register_Add("TalkingToadstool")
+			Register_Add(Registers.TalkingToadstool)
 		}
 		
 	}
@@ -37,7 +37,7 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if Register_Registered("TalkingToadstool") = true and global.FadeAlpha = 0
+		if Register_Registered(Registers.TalkingToadstool) = true and global.FadeAlpha = 0
 		{
 			instance_destroy()
 		}

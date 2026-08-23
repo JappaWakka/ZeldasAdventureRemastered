@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":18.986668,
+  "duration":18.986666,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_Knave_JokeToPassTime",
   "parent":{

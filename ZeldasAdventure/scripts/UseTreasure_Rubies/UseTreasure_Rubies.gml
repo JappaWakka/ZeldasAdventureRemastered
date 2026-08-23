@@ -222,7 +222,7 @@ function UseTreasure_Rubies()
 	//else if global.CurrentTile.x = 16 && global.CurrentTile.y = 14
 	//{
 	//	//If you already have the Firestorm Spell
-	//	if Register_Registered("DonoraGateFeePaid") = true
+	//	if Register_Registered(Registers.YalzanTheStern_PaidFee) = true
 	//	{
 	//		if global.RemasteredMode = true
 	//		{

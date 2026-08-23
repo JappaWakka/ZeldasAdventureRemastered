@@ -5,23 +5,23 @@ if IsPlayerOnSameTile() = true
 		instance_destroy()
 	}
 	
-	if Register_Registered("RedSardak_Intro") = false and instance_exists(Entity_Enemy_Sardak_Red) = true and global.FadeAlpha = 0
+	if Register_Registered(Registers.RedSardak_Intro) = false and instance_exists(Entity_Enemy_Sardak_Red) = true and global.FadeAlpha = 0
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_07_RedSardak_NoThreat
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("RedSardak_Intro",true)
+			Register_Add(Registers.RedSardak_Intro,true)
 		}
 		
 	}
-	if Register_Registered("RedSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Red) = false
+	if Register_Registered(Registers.RedSardak_Outro) = false and instance_exists(Entity_Enemy_Sardak_Red) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_07_RedSardak_FailedMission
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("RedSardak_Outro")
+			Register_Add(Registers.RedSardak_Outro)
 		}
 		
 	}
@@ -56,7 +56,7 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if Register_Registered("RedSardak_Outro") = true
+		if Register_Registered(Registers.RedSardak_Outro) = true
 		{
 			instance_destroy()
 		}

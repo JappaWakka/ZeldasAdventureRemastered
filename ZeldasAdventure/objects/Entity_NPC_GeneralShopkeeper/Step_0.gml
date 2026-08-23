@@ -1,44 +1,44 @@
 if IsPlayerOnSameTile() = true
 {
-	if Register_Registered("GeneralShopkeeper_Intro") = false
+	if Register_Registered(Registers.GeneralShopkeeper_Intro) = false
 	{
-		if global.RemasteredMode = true and Register_Registered("PurchasedBone") = true
+		if global.RemasteredMode = true and Register_Registered(Registers.GeneralShopkeeper_PurchasedBone) = true
 		{
 			global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_HowAreYou
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			Register_Add("GeneralShopkeeper_HowAreYou",true)
+			Register_Add(Registers.GeneralShopkeeper_HowAreYou,true)
 		}
 		else
 		{
 			global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_HelloLittleOne
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 		}
-		Register_Add("GeneralShopkeeper_Intro",true)
+		Register_Add(Registers.GeneralShopkeeper_Intro,true)
 		
 	}
 	else
 	{
-		if global.RemasteredMode = true and Register_Registered("LeftGeneralStore") = true
+		if global.RemasteredMode = true and Register_Registered(Registers.LeftGeneralStore) = true
 		{
-			if Register_Registered("PurchasedBone") = false
+			if Register_Registered(Registers.GeneralShopkeeper_PurchasedBone) = false
 			{
-				if Register_Registered("GeneralShopkeeper_GoodsOnTable") = false
+				if Register_Registered(Registers.GeneralShopkeeper_GoodsOnTable) = false
 				{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_GoodsOnTheTable
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					Register_Add("GeneralShopkeeper_GoodsOnTable",true)
+					Register_Add(Registers.GeneralShopkeeper_GoodsOnTable,true)
 				}
 			}
 			else
 			{
-				if Register_Registered("GeneralShopkeeper_HowAreYou") = false
+				if Register_Registered(Registers.GeneralShopkeeper_HowAreYou) = false
 				{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_HowAreYou
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					Register_Add("GeneralShopkeeper_HowAreYou",true)
+					Register_Add(Registers.GeneralShopkeeper_HowAreYou,true)
 				}
 			}
-			Register_Remove("LeftGeneralStore")
+			Register_Remove(Registers.LeftGeneralStore)
 		}
 	}
 	
@@ -80,5 +80,5 @@ if IsPlayerOnSameTile() = true
 }
 else
 {
-	Register_Add("LeftGeneralStore")
+	Register_Add(Registers.LeftGeneralStore)
 }

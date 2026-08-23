@@ -1,0 +1,102 @@
+		''Vision Henge
+0		Shurmak_Introduction					''Shurmak has spoken her introduction dialogue
+1		Shurmak_DoNotBeHasty					''Shurmak has spoken when walking southeast (or south in Remastered Mode) of the starting tile before finding the Wand
+2		Shurmak_DoNotRoam						''Shurmak has spoken when walking northeast (or north in Remastered Mode) of the starting tile before finding the Wand
+
+		''Plain of Andor
+3		BeggarWoman_Intro						''Beggar Woman has asked for money
+4		BeggarWoman_Attacked					''Beggar Woman has been attacked (Remastered Mode)
+5		BeggarWoman_Paid						''Beggar Woman has been given 5 rubies, rewarding you with a Firestorm spell
+6		DefeatedSoldier							''Defeated Soldier in the Mobilin's Head Inn has talked
+7		GlebbTheThirsty_NoLongerThirsty			''Glebb the Thirsty has been given a full pitcher of water, rewarding you with a Vial of Wind
+8		GlebbTheThirsty_Attacked				''Glebb the Thirsty has been attacked and as a punishment, she subtracts a heart from your health
+9		KrebbTheWeary							''Krebb the Weary in the Mobilin's Head Inn has spoken his dialogue and if you stay until the end he gives you the Dagger spell
+10		LotharTheInnKeeper_Intro				''Lothar the Innkeeper has spoken upon entering the Mobilin Head's Inn
+11		LotharTheInnKeeper_OfferSpellOfCalm		''Lothar the Innkeeper has offered the Calm spell for sale
+12		WomanAtTable							''Woman at the Table in the Mobilin's Head Inn has spoken
+
+		''Forest Of Ogham
+13		Enid_Intro								''Enid has asked you to come closer
+14		Enid_StolenHeart						''Enid has stolen one of your hearts
+15		Enid_HitWithSpell						''Enid has been attacked from a distance. She won't steal your hearts anymore (Remastered Mode)
+16		OghamMerchant_Intro						''Ogham Merchant has spoken his introduction dialogue
+17		OghamMerchant_WisePurchase				''Ogham Merchant has spoken after you buying an item from him
+18		TektiteCaveAmbush						''Upon defeating the Tektite in the cave near the Shrine of Earth, other Tektites have ambushed you
+
+		''Shrine of Earth
+19		BlueSardak_Intro						''Blue Sardak has spoken his encounter dialogue
+20		BlueSardak_Outro						''Blue Sardak has spoken his defeat dialogue after being defeated
+21		BlueSardak_Defeated						''Blue Sardak has been defeated, contributing to opening the electric barrier near Llort
+22		Llort_YouAreNotWanted					''Llort has spoken upon entering the Shrine of Earth
+23		Llort_ShrineOfRock						''Llort has spoken when briefly encountered before the boss tile
+24		Llort_TakingMyThings					''Llort has spoken upon entering the boss tile, starting the battle
+25		Llort_Defeated							''Llort has been defeated, opening the entrance to the room that the Celestial Sign of Earth is kept in
+26		Ladder_Placed							''The Ladder has been used on the chasm in the Shrine of Earth
+27		RedSardak_Intro							''Red Sardak has spoken his encounter dialogue
+28		RedSardak_Outro							''Red Sardak has spoken his defeat dialogue after being defeated
+29		RedSardak_Defeated						''Red Sardak has been defeated, contributing to opening the electric barrier near Llort
+30		Shurmak_EvilsOfGreed					''Shurmak has given her advice at the start of the Shrine of Earth
+31		TreasureChest							''Treasure Chest has spoken and after finishing its dialogue it will spawn the Jade Ring spell
+32		YellowSardak_Intro						''Yellow Sardak has spoken his encounter dialogue
+33		YellowSardak_Outro						''Yellow Sardak has spoken his defeat dialogue after being defeated
+34		YellowSardak_Defeated					''Yellow Sardak has been defeated, contributing to opening the electric barrier near Llort
+
+		''Forest of Findo
+35		TalkingToadstool						''Talking Toadstool has spoken
+
+		''Meadow of Skotness
+36		Farmer_DialogueA						''Farmer has spoken upon entering the tile, default dialogue
+37		Farmer_DialogueB						''Farmer has spoken upon entering the tile, alternative dialogue (Remastered Mode)
+
+		''Great Wimbich
+38		Alice_DoneTalking						''Alice has told you all she had to tell
+39		Alice_Greeting							''After having told everything, Alice will greet you (Remastered Mode)
+40		EricAndIan								''Eric and Ian have spoken
+41		GeneralShopkeeper_Intro					''General Store Shopkeeper has spoken upon entering the store for the first time
+42		GeneralShopkeeper_GoodsOnTable			''General Store Shopkeeper has spoken upon entering the store a second time, if you didn't buy the Bone yet (Remastered Mode)
+43		GeneralShopkeeper_HowAreYou				''General Store Shopkeeper has spoken upon entering the store a second time, if you have bought the Bone before (Remastered Mode)
+44		GeneralShopkeeper_PurchasedBone			''General Store Shopkeeper has spoken after buying the Bone from him
+45		GhostFarmer_StayBack					''Ghost Farmer has spoken
+46		GhostFarmer_StillHere					''After staying or returning after Ghost Farmer has spoken, he has beckoned you to come closer (Remastered Mode)
+47		GhostFarmer_ShrineOfWater				''Ghost Farmer has told you the secret after getting closer (Remastered Mode)
+48		GhostFarmhand							''Ghost Farmhand has spoken (Classic Mode)
+49		Knave_Intro								''Knave in the General Store has spoken when you approached him
+50		Knave_WatchOutForGanon					''Knave in the General Store has warned you about Ganon if you stayed after his first dialogue (Remastered Mode)
+51		LeftGeneralStore						''You've left the General Store, allowing different dialogue to be triggered upon entering it the next time
+52		LeftMagicStore							''You've left the Madame Kriggle's Magic Store, allowing different dialogue to be triggered upon entering it the next time
+53		LeftSmithy								''You've left the Smithy, allowing different dialogue to be triggered upon entering it the next time
+54		Lounger_HiThere							''Lounger has spoken for the first time upon entering the tile that he is on
+55		Lounger_DontWannaSeeYou					''Lounger has spoken upon entering the tile that he is on for the second time
+56		Lounger_GoAway							''Lounger has spoken upon entering the tile that he is on for the third time (Remastered Mode)
+57		MadameKriggle_Intro						''Madame Kriggle has spoken upon entering her Magic Shop for the first time
+58		MadameKriggle_TouchWhatYouWantToUse		''Madame Kriggle has spoken upon entering her Magic Shop for the second time (Remastered Mode)
+59		MadameKriggle_WonderfulToSeeYou			''Madame Kriggle has spoken upon entering her Magic Shop for the third time or if you bought all items (Remastered Mode)
+60		MadameKriggle_AfterBuySpell				''Madame Kriggle has spoken after buying an item from her
+61		WimbichSmithy_Intro						''Great Wimbich Smithy has spoken upon entering his establishment for the first time
+62		WimbichSmithy_ChooseItemAndHurry		''Great Wimbich Smithy has spoken upon entering his establishment for the second time (Remastered Mode)
+63		WimbichSmithy_Coal						''Great Wimbich Smithy has spoken and given you a Diamond after giving him Coal
+64		TownMerchant_ForThirtySuns				''Great Wimbich Town Merchant has spoken upon entering the tile she is on for the first time
+65		TownMerchant_KindaTiredToday			''Great Wimbich Town Merchant has spoken upon entering the tile she is on for the second time (Remastered Mode)
+66		TwinFather_WelcomeToMyHome				''Twins' Father has spoken his introduction dialogue upon entering his house for the first time
+67		TwinFather_CoalAndRubies				''Twins' Father has given the hint about Coal and Diamonds after his introduction (Remastered Mode)
+68		TwinFather_VaguelyFamiliar				''Twins' Father has spoken upon entering his house for the second time (Remastered Mode)
+69		Yvonne									''Yvonne has spoken and at the end of her dialogue has given you the Flute
+
+		''Forest of Torian
+70		CrystalHeart_TreeTrunkCave				''Crystal Heart in the Tree Trunk Cave in the Forest of Torian has been picked up
+71		FriendlyPatron_RoughBunch               ''Friendly Patron has spoken one of his two possible dialogues (Remastered Mode)
+72		FriendlyPatron_YoungNoble               ''Friendly Patron has spoken the other one of his two possible dialogues (Remastered Mode)
+73		GrumpyPatron_QuietMountainStream        ''Grumpy Patron has spoken one of his two possible dialogues (Remastered Mode)
+74		GrumpyPatron_TeaInPeace                 ''Grumpy Patron has spoken the other one of his two possible dialogues (Remastered Mode)
+75		LodgeKeeper_CantTalkToYouNow            ''White Steed Lodge Keeper has spoken his default dialogue
+76		Lodgekeeper_BumbleberryTea              ''White Steed Lodge Keeper has spoken his alternative dialogue (Remastered Mode)
+77		SirBasil								''Sir Basil has spoken and at the end of his dialogue has given you the Broadsword
+78		Waldensop_Intro							''Waldensop has spoken for the first time
+79		Waldensop_HaveLeftTile					''You left the tile that Waldensop is on, so next time you enter the tile, he will confess his affection
+80		Waldensop_Feather						''After re-entering the tile that Waldensop is on and him confessing his affection for you, he gives you the Feather spell
+
+		''Plain of Donora
+81		KronThePegleg_Intro						''Kron the Pegleg has spoken his introduction dialogue (Remastered Mode)
+82		KronThePegleg_ItemForSale				''Kron the Pegleg has offered his Life Potion for sale if you don't have one already (Remastered Mode)
+83		YalzanTheStern_PaidFee					''Yalzan the Stern has been paid the fee for passing through the gate at the Plain of Donora
+84		YalzanTheStern_Attacked					''Yalzan the Stern near the Plain of Donora gate has been attacked, raising the price (Remastered Mode)

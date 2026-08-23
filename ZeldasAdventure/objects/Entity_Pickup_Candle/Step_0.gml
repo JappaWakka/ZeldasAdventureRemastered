@@ -46,11 +46,11 @@ if IsPlayerOnSameTile() = true
 							
 							if global.CurrentTile.x = 5 && global.CurrentTile.y = 25 //Forest of Ogham
 							{
-								if Register_Registered("OghamMerchant_WisePurchase") = false
+								if Register_Registered(Registers.OghamMerchant_WisePurchase) = false
 								{
 									global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
 									global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
-									Register_Add("OghamMerchant_WisePurchase",true)
+									Register_Add(Registers.OghamMerchant_WisePurchase,true)
 								}
 							}
 							instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
@@ -76,11 +76,11 @@ if IsPlayerOnSameTile() = true
 						
 						if global.CurrentTile.x = 5 && global.CurrentTile.y = 25 //Forest of Ogham
 						{
-							if Register_Registered("OghamMerchant_WisePurchase") = false
+							if Register_Registered(Registers.OghamMerchant_WisePurchase) = false
 							{
 								global.CurrentDialogue_Asset = Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase
 								global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_OghamMerchant,global.CurrentDialogue_Asset,500,false)
-								Register_Add("OghamMerchant_WisePurchase",true)
+								Register_Add(Registers.OghamMerchant_WisePurchase,true)
 							}
 						}
 						instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)

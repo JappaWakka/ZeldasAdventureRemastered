@@ -2,13 +2,13 @@ if IsPlayerOnSameTile() = true
 {
 	if HasSpoken = false
 	{
-		if Register_Registered("TwinFather_WelcomeToMyHome") = false and global.FadeAlpha = 0
+		if Register_Registered(Registers.TwinFather_WelcomeToMyHome) = false and global.FadeAlpha = 0
 		{
 			if global.CurrentDialogue_Asset = Dialog_None
 			{
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_TwinFather_WelcomeToMyHome
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_TwinFather,global.CurrentDialogue_Asset,500,false)
-				Register_Add("TwinFather_WelcomeToMyHome")
+				Register_Add(Registers.TwinFather_WelcomeToMyHome)
 				if global.RemasteredMode = false
 				{
 					HasSpoken = true
@@ -20,18 +20,18 @@ if IsPlayerOnSameTile() = true
 		{
 			if global.RemasteredMode = true and global.FadeAlpha = 0
 			{
-				if Register_Registered("TwinFather_WelcomeToMyHome") = true and Register_Registered("TwinFather_CoalAndRubies") = false
+				if Register_Registered(Registers.TwinFather_WelcomeToMyHome) = true and Register_Registered(Registers.TwinFather_CoalAndRubies) = false
 				{
 						global.CurrentDialogue_Asset = Dialog_GreatWimbich_TwinFather_CoalAndRubies
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_TwinFather,global.CurrentDialogue_Asset,500,false)
-						Register_Add("TwinFather_CoalAndRubies")
+						Register_Add(Registers.TwinFather_CoalAndRubies)
 						HasSpoken = true
 				}
-				else if Register_Registered("TwinFather_VaguelyFamiliar") = false
+				else if Register_Registered(Registers.TwinFather_VaguelyFamiliar) = false
 				{
 						global.CurrentDialogue_Asset = Dialog_GreatWimbich_TwinFather_VaguelyFamiliar
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_TwinFather,global.CurrentDialogue_Asset,500,false)
-						Register_Add("TwinFather_VaguelyFamiliar",true)
+						Register_Add(Registers.TwinFather_VaguelyFamiliar,true)
 						HasSpoken = true
 				}
 			}
@@ -73,7 +73,7 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if Register_Registered("TwinFather_WelcomeToMyHome") = true and Register_Registered("TwinFather_CoalAndRubies") = false
+		if Register_Registered(Registers.TwinFather_WelcomeToMyHome) = true and Register_Registered(Registers.TwinFather_CoalAndRubies) = false
 		{
 			HasSpoken = false
 		}

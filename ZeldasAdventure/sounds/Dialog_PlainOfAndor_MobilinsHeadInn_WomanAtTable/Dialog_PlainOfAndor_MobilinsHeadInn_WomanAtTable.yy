@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":19.772488,
+  "duration":19.772516,
   "exportDir":"",
   "name":"Dialog_PlainOfAndor_MobilinsHeadInn_WomanAtTable",
   "parent":{

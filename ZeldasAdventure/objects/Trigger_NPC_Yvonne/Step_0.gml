@@ -4,13 +4,13 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.FadeAlpha = 0
 		{
-			if Register_Registered("Yvonne_Dialogue") = false and Item_FindIndex(Treasures.Flute,0) = -1
+			if Register_Registered(Registers.Yvonne) = false and Item_FindIndex(Treasures.Flute,0) = -1
 			{
 				if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 				{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Yvonne_GiveFlute
 					global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Yvonne,global.CurrentDialogue_Asset,500,false)
-					Register_Add("Yvonne_Dialogue")
+					Register_Add(Registers.Yvonne)
 				}
 			}
 			else
@@ -29,13 +29,13 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if global.FadeAlpha = 0 and Register_Registered("Yvonne_Dialogue") = false
+		if global.FadeAlpha = 0 and Register_Registered(Registers.Yvonne) = false
 		{
 			if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 			{
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_Yvonne_GiveFlute
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Yvonne,global.CurrentDialogue_Asset,500,false)
-				Register_Add("Yvonne_Dialogue")
+				Register_Add(Registers.Yvonne)
 			}
 		}
 	}
@@ -73,7 +73,7 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.RemasteredMode = true and global.FadeAlpha = 0
 		{
-			if Register_Registered("Yvonne_Dialogue") = true
+			if Register_Registered(Registers.Yvonne) = true
 			{
 				if Item_FindIndex(Treasures.Flute,0) = -1 and instance_exists(Entity_Pickup_Flute) = false
 				{
@@ -88,7 +88,7 @@ if IsPlayerOnSameTile() = true
 		}
 		else
 		{
-			if Register_Registered("Yvonne_Dialogue") = true and global.FadeAlpha = 0
+			if Register_Registered(Registers.Yvonne) = true and global.FadeAlpha = 0
 			{
 				if Item_FindIndex(Treasures.Flute,0) = -1 and instance_exists(Entity_Pickup_Flute) = false
 				{

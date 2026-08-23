@@ -4,31 +4,31 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
-			if Register_Registered("Lounger_HiThere") = false
+			if Register_Registered(Registers.Lounger_HiThere) = false
 			{
 				if global.CurrentDialogue_Asset = Dialog_None
 				{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_Lounger_HiThere
 					global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Lounger,global.CurrentDialogue_Asset,500,false)
-					Register_Add("Lounger_HiThere")
+					Register_Add(Registers.Lounger_HiThere)
 					HasSpoken = true
 				}
 				
 			}
 			else
 			{
-				if Register_Registered("Lounger_DontWannaSeeYou") = false
+				if Register_Registered(Registers.Lounger_DontWannaSeeYou) = false
 				{
 						global.CurrentDialogue_Asset = Dialog_GreatWimbich_Lounger_DontWannaSeeYou
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Lounger,global.CurrentDialogue_Asset,500,false)
-						Register_Add("Lounger_DontWannaSeeYou")
+						Register_Add(Registers.Lounger_DontWannaSeeYou)
 						HasSpoken = true
 				}
-				else if Register_Registered("Lounger_GoAway") = false and global.RemasteredMode = true
+				else if Register_Registered(Registers.Lounger_GoAway) = false and global.RemasteredMode = true
 				{
 						global.CurrentDialogue_Asset = Dialog_GreatWimbich_Lounger_GoAway
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Lounger,global.CurrentDialogue_Asset,500,false)
-						Register_Add("Lounger_GoAway",true)
+						Register_Add(Registers.Lounger_GoAway,true)
 						HasSpoken = true
 				}
 				

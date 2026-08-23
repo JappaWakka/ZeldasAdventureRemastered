@@ -5,13 +5,13 @@ if IsPlayerOnSameTile() = true
 		instance_destroy()
 	}
 	
-	if Register_Registered("Llort_YouAreNotWanted") = false
+	if Register_Registered(Registers.Llort_YouAreNotWanted) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_02_Llort_YouAreNotWanted
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("Llort_YouAreNotWanted",true)
+			Register_Add(Registers.Llort_YouAreNotWanted,true)
 		}
 		
 	}

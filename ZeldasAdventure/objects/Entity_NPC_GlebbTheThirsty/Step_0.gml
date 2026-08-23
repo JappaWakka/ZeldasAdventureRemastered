@@ -5,13 +5,11 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.CameraIsPanning = false
 		{
-			if Register_Registered("GlebbNoLongerThirsty") = true and Item_FindIndex(Treasures.VialOfWind,0) = -1
+			if Register_Registered(Registers.GlebbTheThirsty_NoLongerThirsty) = true and Item_FindIndex(Treasures.VialOfWind,0) = -1
 			{
 				if instance_exists(Entity_Pickup_VialOfWind) = false
 				{
 					instance_create_layer(3696,5568,"Temporary_AbovePlayer",Entity_Pickup_VialOfWind)
-					global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
-					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 				}
 			}
 			else
@@ -43,7 +41,7 @@ if IsPlayerOnSameTile() = true
 										global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
 										global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 									}
-									Register_Add("GlebbNoLongerThirsty")
+									Register_Add(Registers.GlebbTheThirsty_NoLongerThirsty)
 								}
 							}
 						}
@@ -61,7 +59,7 @@ if IsPlayerOnSameTile() = true
 										global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
 										global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 									}
-									Register_Add("GlebbNoLongerThirsty")
+									Register_Add(Registers.GlebbTheThirsty_NoLongerThirsty)
 								}
 							}
 						}

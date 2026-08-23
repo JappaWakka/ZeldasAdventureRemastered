@@ -12,7 +12,7 @@ y >= 9 * tileHeight && y < 9 * tileHeight + tileHeight
 if x >= 7 * tileWidth && x < 7 * tileWidth + tileWidth &&
 y >= 31 * tileHeight && y < 31 * tileHeight + tileHeight
 {
-	if Register_Registered("TektiteAmbush") = false
+	if Register_Registered(Registers.TektiteCaveAmbush) = false
 	{
 		TriggerScriptName = "TektiteCave_Ambush"
 		ReturnToPoint = true

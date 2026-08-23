@@ -4,26 +4,26 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.FadeAlpha = 0 and global.CurrentDialogue_Asset = Dialog_None and HasTalked = false
 		{
-			if Register_Registered("TownMerchant_ForThirtySuns") = false
+			if Register_Registered(Registers.TownMerchant_ForThirtySuns) = false
 			{
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_TownMerchant_ForThirtySuns
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_TownMerchant,global.CurrentDialogue_Asset,500,false)
 				if global.RemasteredMode = true
 				{
-					Register_Add("TownMerchant_ForThirtySuns")
+					Register_Add(Registers.TownMerchant_ForThirtySuns)
 					HasTalked = true
 				}
 				else
 				{
-					Register_Add("TownMerchant_ForThirtySuns",true)
+					Register_Add(Registers.TownMerchant_ForThirtySuns,true)
 					HasTalked = true
 				}
 			}
-			else if Register_Registered("TownMerchant_KindaTiredToday") = false and global.RemasteredMode = true
+			else if Register_Registered(Registers.TownMerchant_KindaTiredToday) = false and global.RemasteredMode = true
 			{
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_TownMerchant_KindaTiredToday
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_TownMerchant,global.CurrentDialogue_Asset,500,false)
-				Register_Add("TownMerchant_KindaTiredToday",true)
+				Register_Add(Registers.TownMerchant_KindaTiredToday,true)
 				HasTalked = true
 			}
 		}

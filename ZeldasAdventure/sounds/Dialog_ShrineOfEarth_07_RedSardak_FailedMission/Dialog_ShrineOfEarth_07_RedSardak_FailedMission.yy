@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":4.906667,
+  "duration":4.9066668,
   "exportDir":"",
   "name":"Dialog_ShrineOfEarth_07_RedSardak_FailedMission",
   "parent":{

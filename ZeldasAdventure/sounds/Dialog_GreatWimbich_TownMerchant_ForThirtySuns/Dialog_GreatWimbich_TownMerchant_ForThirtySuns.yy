@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":26.986668,
+  "duration":26.986666,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_TownMerchant_ForThirtySuns",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":7.893333,
+  "duration":7.8933334,
   "exportDir":"",
   "name":"Dialog_PlainOfAndor_20_GlebbTheThirsty_WhenAttacked",
   "parent":{

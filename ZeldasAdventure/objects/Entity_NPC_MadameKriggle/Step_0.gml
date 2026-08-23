@@ -7,7 +7,7 @@ if IsPlayerOnSameTile() = true
 	{
 		BoughtAllItems = true
 	}
-	if Register_Registered("MadameKriggle_Intro") = false
+	if Register_Registered(Registers.MadameKriggle_Intro) = false
 	{
 		if global.RemasteredMode = true
 		{
@@ -20,47 +20,47 @@ if IsPlayerOnSameTile() = true
 			{
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_MadameKriggle_WonderfulToSeeYou
 				global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-				Register_Add("MadameKriggle_WonderfulToSeeYou",true)
+				Register_Add(Registers.MadameKriggle_WonderfulToSeeYou,true)
 			}
-			Register_Add("MadameKriggle_Intro")
+			Register_Add(Registers.MadameKriggle_Intro)
 		}
 		else
 		{
 			global.CurrentDialogue_Asset = Dialog_GreatWimbich_MadameKriggle_ApproachedAtLast
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			Register_Add("MadameKriggle_Intro",true)
+			Register_Add(Registers.MadameKriggle_Intro,true)
 		}
 		
 	}
 	else
 	{
-		if global.RemasteredMode = true and Register_Registered("LeftMagicStore") = true
+		if global.RemasteredMode = true and Register_Registered(Registers.LeftMagicStore) = true
 		{
 			if BoughtAllItems = false
 			{
-				if Register_Registered("MadameKriggle_TouchWhatYouWantToUse") = false
+				if Register_Registered(Registers.MadameKriggle_TouchWhatYouWantToUse) = false
 				{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_MadameKriggle_TouchWhatYouWantToUse
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					Register_Add("MadameKriggle_TouchWhatYouWantToUse",true)
+					Register_Add(Registers.MadameKriggle_TouchWhatYouWantToUse,true)
 				}
-				else if Register_Registered("MadameKriggle_WonderfulToSeeYou") = false
+				else if Register_Registered(Registers.MadameKriggle_WonderfulToSeeYou) = false
 				{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_MadameKriggle_WonderfulToSeeYou
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					Register_Add("MadameKriggle_WonderfulToSeeYou",true)
+					Register_Add(Registers.MadameKriggle_WonderfulToSeeYou,true)
 				}
 			}
 			else
 			{
-				if Register_Registered("MadameKriggle_WonderfulToSeeYou") = false
+				if Register_Registered(Registers.MadameKriggle_WonderfulToSeeYou) = false
 				{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_MadameKriggle_WonderfulToSeeYou
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					Register_Add("MadameKriggle_WonderfulToSeeYou",true)
+					Register_Add(Registers.MadameKriggle_WonderfulToSeeYou,true)
 				}
 			}
-			Register_Remove("LeftMagicStore")
+			Register_Remove(Registers.LeftMagicStore)
 		}
 	}
 	
@@ -102,5 +102,5 @@ if IsPlayerOnSameTile() = true
 }
 else
 {
-	Register_Add("LeftMagicStore")
+	Register_Add(Registers.LeftMagicStore)
 }

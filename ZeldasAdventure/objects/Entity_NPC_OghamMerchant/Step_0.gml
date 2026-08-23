@@ -1,6 +1,6 @@
 if IsPlayerOnSameTile() = true
 {
-	if Register_Registered("OghamMerchant_Intro") = false
+	if Register_Registered(Registers.OghamMerchant_Intro) = false
 	{
 		if global.RemasteredMode = true && Item_FindIndex(Treasures.MagicShield,0) <> -1 && Item_FindIndex(Treasures.Candle,0) <> -1
 		{
@@ -13,7 +13,7 @@ if IsPlayerOnSameTile() = true
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 		}
 		
-		Register_Add("OghamMerchant_Intro",true)
+		Register_Add(Registers.OghamMerchant_Intro,true)
 	}
 	
 	if global.CurrentDialogue_Asset != Dialog_None

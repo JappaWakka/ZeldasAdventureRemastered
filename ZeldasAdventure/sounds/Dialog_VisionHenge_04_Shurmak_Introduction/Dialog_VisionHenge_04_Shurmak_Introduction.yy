@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":27.093332,
+  "duration":27.093334,
   "exportDir":"",
   "name":"Dialog_VisionHenge_04_Shurmak_Introduction",
   "parent":{

@@ -1,4 +1,4 @@
-if Register_Registered("Enid_Done") = true
+if Register_Registered(Registers.Enid_StolenHeart) = true
 {
 	instance_destroy()
 }

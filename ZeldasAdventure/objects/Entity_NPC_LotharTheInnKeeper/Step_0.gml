@@ -1,12 +1,12 @@
 
 if IsPlayerOnSameTile() = true and global.CameraIsFading = false
 {
-	if Register_Registered("LotharTheInnKeeper_Intro") = false
+	if Register_Registered(Registers.LotharTheInnKeeper_Intro) = false
 	{
 		global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_Intro
 		Audio_StopMusic()
 		global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-		Register_Add("LotharTheInnKeeper_Intro",true)
+		Register_Add(Registers.LotharTheInnKeeper_Intro,true)
 	}
 			
 	

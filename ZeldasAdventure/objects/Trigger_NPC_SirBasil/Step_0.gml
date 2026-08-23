@@ -4,7 +4,7 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.FadeAlpha = 0
 		{
-			if Register_Registered("SirBasil_Dialogue") = false
+			if Register_Registered(Registers.SirBasil) = false
 			{
 				if HasTalked = false
 				{
@@ -54,7 +54,7 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.FadeAlpha = 0
 		{
-			if HasTalked = true and Register_Registered("SirBasil_Dialogue") = false
+			if HasTalked = true and Register_Registered(Registers.SirBasil) = false
 			{
 				global.CurrentDialogue_Asset = Dialog_ForestOfTorian_05_Shurmak_YouSeemTired
 				global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
@@ -62,7 +62,7 @@ if IsPlayerOnSameTile() = true
 				{
 					instance_create_layer(5938,1770,"Temporary_AbovePlayer",Entity_Pickup_Broadsword)
 				}
-				Register_Add("SirBasil_Dialogue")
+				Register_Add(Registers.SirBasil)
 			}
 			else
 			{

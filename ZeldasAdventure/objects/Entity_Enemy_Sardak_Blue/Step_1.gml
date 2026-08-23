@@ -1,4 +1,4 @@
-if Register_Registered("BlueSardakDefeated") = true
+if Register_Registered(Registers.BlueSardak_Defeated) = true
 {
 	instance_destroy()
 }

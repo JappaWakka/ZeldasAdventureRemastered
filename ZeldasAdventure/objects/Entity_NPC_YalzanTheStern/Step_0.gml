@@ -1,4 +1,4 @@
-if Register_Registered("DonoraGateFeePaid") = false
+if Register_Registered(Registers.YalzanTheStern_PaidFee) = false
 {	
 	if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 	{
@@ -6,12 +6,12 @@ if Register_Registered("DonoraGateFeePaid") = false
 		{
 			//Temporarily Block Progress// global.CurrentDialogue_Asset = Dialog_PlainOfDonora_10_YalzanTheStern_Toll10Rubies
 			//Temporarily Block Progress// global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false,x)
-			//Temporarily Block Progress// Register_Add("DonoraGateAttacked")
+			//Temporarily Block Progress// Register_Add(Registers.YalzanTheStern_Attacked,true)
 		}
 		var GateFee = 10
 		if global.RemasteredMode = true
 		{
-			if Register_Registered("DonoraGateAttacked")
+			if Register_Registered(Registers.YalzanTheStern_Attacked)
 			{
 				GateFee = 20
 			}
@@ -23,7 +23,7 @@ if Register_Registered("DonoraGateFeePaid") = false
 				if global.CurrentItem[0] = 0 && Item_FindValue(global.CurrentItem[1],0) = Treasures.Rubies and global.CurrentRubies >= GateFee
 				{
 					//Temporarily Block Progress// RemoveRubies(GateFee);
-					//Temporarily Block Progress// Register_Add("DonoraGateFeePaid",true)
+					//Temporarily Block Progress// Register_Add(Registers.YalzanTheStern_PaidFee,true)
 				}
 				
 			}
@@ -35,7 +35,7 @@ if Register_Registered("DonoraGateFeePaid") = false
 				if global.CurrentRubies >= GateFee
 				{
 					//Temporarily Block Progress// RemoveRubies(GateFee);
-					//Temporarily Block Progress// Register_Add("DonoraGateFeePaid",true)
+					//Temporarily Block Progress// Register_Add(Registers.YalzanTheStern_PaidFee,true)
 				}
 			}
 		}
@@ -78,7 +78,7 @@ if IsPlayerOnSameTile_EnemyOrNPC()
 }
 else
 {
-	Register_Remove("DonoraGateFeePaid")
+	Register_Remove(Registers.YalzanTheStern_PaidFee)
 	instance_activate_object(Collision_PlainOfDonoraGate)
 	instance_activate_object(Entity_Enemy_FloorSpikes_PlainOfDonoraGate)
 }

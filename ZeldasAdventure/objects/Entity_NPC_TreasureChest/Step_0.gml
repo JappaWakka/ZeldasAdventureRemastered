@@ -1,12 +1,12 @@
 if IsPlayerOnSameTile() = true and global.CameraIsPanning = false
 {
-	if Register_Registered("TreasureChest") = false and Item_FindIndex(Spells.JadeRing,1) = -1
+	if Register_Registered(Registers.TreasureChest) = false and Item_FindIndex(Spells.JadeRing,1) = -1
 	{
 		if instance_exists(Entity_Pickup_JadeRing) = false
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_08_TreasureChest_WhatDoWeHaveHere
 			global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-			Register_Add("TreasureChest",true)
+			Register_Add(Registers.TreasureChest,true)
 		}
 		
 	}
@@ -36,7 +36,7 @@ if IsPlayerOnSameTile() = true and global.CameraIsPanning = false
 	}
 	else
 	{
-		if Register_Registered("TreasureChest") = true
+		if Register_Registered(Registers.TreasureChest) = true
 		{
 			if instance_exists(Entity_Pickup_JadeRing) = false and Item_FindIndex(Spells.JadeRing,1) = -1
 			{

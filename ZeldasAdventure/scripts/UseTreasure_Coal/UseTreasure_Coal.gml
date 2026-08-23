@@ -15,11 +15,11 @@ function UseTreasure_Coal()
 				global.CurrentItem[1] = -1
 			}
 			
-			if Register_Registered("WimbichSmithy_Coal") = false
+			if Register_Registered(Registers.WimbichSmithy_Coal) = false
 			{
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_Smithy_CongratsOnFindingCoal
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Smithy,global.CurrentDialogue_Asset,500,false)
-				Register_Add("WimbichSmithy_Coal",true)
+				Register_Add(Registers.WimbichSmithy_Coal,true)
 			}
 			
 			instance_create_layer(3679,2775,"Items_AboveForeground",Entity_Pickup_Diamond)

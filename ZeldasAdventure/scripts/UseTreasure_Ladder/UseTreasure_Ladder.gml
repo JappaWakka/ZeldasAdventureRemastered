@@ -12,7 +12,7 @@ function UseTreasure_Ladder()
 			global.CurrentItem[1] = -1
 		}
 			
-		Register_Add("PlacedLadder")
+		Register_Add(Registers.Ladder_Placed)
 	}
 	else
 	{

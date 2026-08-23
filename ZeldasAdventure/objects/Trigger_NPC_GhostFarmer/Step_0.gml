@@ -6,39 +6,39 @@ if IsPlayerOnSameTile() = true
 		{
 			if global.CurrentDialogue_Asset = Dialog_None
 			{
-				if Register_Registered("GhostFarmer_StayBack") = false
+				if Register_Registered(Registers.GhostFarmer_StayBack) = false
 				{
 					if global.RemasteredMode = true
 					{
 						global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_StayBack
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GhostFarmer,global.CurrentDialogue_Asset,500,false)
-						Register_Add("GhostFarmer_StayBack")
+						Register_Add(Registers.GhostFarmer_StayBack)
 						HasSpoken = true
 					}
 					else if place_meeting(x,y,Entity_Player)
 					{
 						global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_StayBack
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GhostFarmer,global.CurrentDialogue_Asset,500,false)
-						Register_Add("GhostFarmer_StayBack",true)
+						Register_Add(Registers.GhostFarmer_StayBack,true)
 						HasSpoken = true
 					}
 				}
 				else if global.RemasteredMode = true
 				{
-					if Register_Registered("GhostFarmer_StillHere") = false
+					if Register_Registered(Registers.GhostFarmer_StillHere) = false
 					{
 							global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_StillHere
 							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GhostFarmer,global.CurrentDialogue_Asset,500,false)
-							Register_Add("GhostFarmer_StillHere")
+							Register_Add(Registers.GhostFarmer_StillHere)
 							HasSpoken = true
 					}
 					else
 					{
-						if place_meeting(x,y,Entity_Player) and Register_Registered("GhostFarmer_ShrineOfWater") = false
+						if place_meeting(x,y,Entity_Player) and Register_Registered(Registers.GhostFarmer_ShrineOfWater) = false
 						{
 							global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_ShrineOfWater_Remastered
 							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GhostFarmer,global.CurrentDialogue_Asset,500,false)
-							Register_Add("GhostFarmer_ShrineOfWater")
+							Register_Add(Registers.GhostFarmer_ShrineOfWater)
 							HasSpoken = true
 						}
 					}
@@ -85,11 +85,11 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.RemasteredMode = true and global.FadeAlpha = 0
 		{
-			if Register_Registered("GhostFarmer_StayBack") = true and Register_Registered("GhostFarmer_StillHere") = false
+			if Register_Registered(Registers.GhostFarmer_StayBack) = true and Register_Registered(Registers.GhostFarmer_StillHere) = false
 			{
 					global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_StillHere
 					global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GhostFarmer,global.CurrentDialogue_Asset,500,false)
-					Register_Add("GhostFarmer_StillHere")
+					Register_Add(Registers.GhostFarmer_StillHere)
 					HasSpoken = false
 			}
 			

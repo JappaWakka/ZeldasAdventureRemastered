@@ -5,23 +5,23 @@ if IsPlayerOnSameTile() = true
 		instance_destroy()
 	}
 	
-	if Register_Registered("YellowSardak_Intro") = false and instance_exists(Entity_Enemy_Sardak_Yellow) = true and global.FadeAlpha = 0
+	if Register_Registered(Registers.YellowSardak_Intro) = false and instance_exists(Entity_Enemy_Sardak_Yellow) = true and global.FadeAlpha = 0
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_20_YellowSardak_EnemyOfMyBoss
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("YellowSardak_Intro",true)
+			Register_Add(Registers.YellowSardak_Intro,true)
 		}
 		
 	}
-	if Register_Registered("YellowSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Yellow) = false
+	if Register_Registered(Registers.YellowSardak_Outro) = false and instance_exists(Entity_Enemy_Sardak_Yellow) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_20_YellowSardak_ShesComing
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("YellowSardak_Outro")
+			Register_Add(Registers.YellowSardak_Outro)
 		}
 	}
 		
@@ -55,7 +55,7 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if Register_Registered("YellowSardak_Outro") = true
+		if Register_Registered(Registers.YellowSardak_Outro) = true
 		{
 			instance_destroy()
 		}

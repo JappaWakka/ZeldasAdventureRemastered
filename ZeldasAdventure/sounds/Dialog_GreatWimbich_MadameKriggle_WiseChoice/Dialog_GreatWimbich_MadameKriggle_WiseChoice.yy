@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":7.146667,
+  "duration":7.1466665,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_MadameKriggle_WiseChoice",
   "parent":{

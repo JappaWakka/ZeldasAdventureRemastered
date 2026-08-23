@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":3.093333,
+  "duration":3.0933332,
   "exportDir":"",
   "name":"Dialog_PlainOfDonora_02_KronThePegleg_EverybodyComesTo",
   "parent":{

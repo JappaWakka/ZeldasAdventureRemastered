@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":8.533333,
+  "duration":8.533334,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_Knave_WatchOutForGanon",
   "parent":{

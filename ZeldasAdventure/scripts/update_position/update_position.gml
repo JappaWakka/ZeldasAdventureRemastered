@@ -44,7 +44,7 @@ function update_position(argument0, argument1) {
 	}
 	
 	////Ladder Hole
-	if Register_Registered("PlacedLadder") = false
+	if Register_Registered(Registers.Ladder_Placed) = false
 	{
 		if place_meeting(x_target, y_target, UseItem_ShrineOfEarth_02_Ladder)
 		{
@@ -128,7 +128,7 @@ function update_position(argument0, argument1) {
 				}
 				
 				////Ladder Hole
-				if Register_Registered("PlacedLadder") = false
+				if Register_Registered(Registers.Ladder_Placed) = false
 				{
 					if place_meeting(x_target, y_target, UseItem_ShrineOfEarth_02_Ladder)
 					{

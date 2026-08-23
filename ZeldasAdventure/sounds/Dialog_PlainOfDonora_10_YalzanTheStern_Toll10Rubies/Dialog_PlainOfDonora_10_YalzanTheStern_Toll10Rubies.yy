@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":3.626667,
+  "duration":3.6266668,
   "exportDir":"",
   "name":"Dialog_PlainOfDonora_10_YalzanTheStern_Toll10Rubies",
   "parent":{

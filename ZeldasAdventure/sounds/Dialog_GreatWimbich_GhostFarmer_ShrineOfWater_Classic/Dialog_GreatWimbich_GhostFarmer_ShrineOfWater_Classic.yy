@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":19.093332,
+  "duration":19.093334,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_GhostFarmer_ShrineOfWater_Classic",
   "parent":{

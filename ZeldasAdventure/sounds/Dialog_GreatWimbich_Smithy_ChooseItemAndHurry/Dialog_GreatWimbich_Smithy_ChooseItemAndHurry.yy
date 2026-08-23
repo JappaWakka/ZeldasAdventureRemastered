@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":2.986667,
+  "duration":2.9866667,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_Smithy_ChooseItemAndHurry",
   "parent":{

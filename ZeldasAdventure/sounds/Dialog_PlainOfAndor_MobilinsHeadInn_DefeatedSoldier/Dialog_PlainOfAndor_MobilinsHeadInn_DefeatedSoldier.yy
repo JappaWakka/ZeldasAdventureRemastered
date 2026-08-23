@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":10.857513,
+  "duration":10.857551,
   "exportDir":"",
   "name":"Dialog_PlainOfAndor_MobilinsHeadInn_DefeatedSoldier",
   "parent":{

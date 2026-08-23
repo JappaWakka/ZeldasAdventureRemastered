@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Script_SaveGamePatches",
   "parent":{
-    "name":"Inventory & Register",
-    "path":"folders/Scripts/Inventory & Register.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

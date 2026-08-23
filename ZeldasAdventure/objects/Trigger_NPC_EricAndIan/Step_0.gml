@@ -4,7 +4,7 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.FadeAlpha = 0
 		{
-			if Register_Registered("EricAndIan_Dialogue") = false and place_meeting(x,y,Entity_Player)
+			if Register_Registered(Registers.EricAndIan) = false and place_meeting(x,y,Entity_Player)
 			{
 				if HasTalked = false
 				{
@@ -32,13 +32,13 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if global.FadeAlpha = 0 and Register_Registered("EricAndIan_Dialogue") = false
+		if global.FadeAlpha = 0 and Register_Registered(Registers.EricAndIan) = false
 		{
 			if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 			{
 				global.CurrentDialogue_Asset = Dialog_GreatWimbich_ErinAndIan_MeetTheTwins
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_EricAndIan,global.CurrentDialogue_Asset,500,false)
-				Register_Add("EricAndIan_Dialogue")
+				Register_Add(Registers.EricAndIan)
 			}
 		}
 	}
@@ -89,10 +89,10 @@ if IsPlayerOnSameTile() = true
 						TwinsDialogue = 2
 						break
 					case 2:
-						Register_Add("EricAndIan_Dialogue")
+						Register_Add(Registers.EricAndIan)
 						break
 				}
-				if Register_Registered("EricAndIan_Dialogue") = true
+				if Register_Registered(Registers.EricAndIan) = true
 				{
 					instance_destroy()
 				}	
@@ -102,7 +102,7 @@ if IsPlayerOnSameTile() = true
 		{
 			if HasTalked = true
 			{
-				if Register_Registered("EricAndIan_Dialogue") = true and global.FadeAlpha = 0
+				if Register_Registered(Registers.EricAndIan) = true and global.FadeAlpha = 0
 				{
 					instance_destroy()
 				}

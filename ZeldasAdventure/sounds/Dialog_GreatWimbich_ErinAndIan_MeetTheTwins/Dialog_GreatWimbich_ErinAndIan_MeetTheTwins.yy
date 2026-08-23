@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":10.381217,
+  "duration":10.381225,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_ErinAndIan_MeetTheTwins",
   "parent":{

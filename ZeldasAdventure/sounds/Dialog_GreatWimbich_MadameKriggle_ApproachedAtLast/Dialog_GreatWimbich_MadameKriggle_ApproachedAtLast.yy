@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":29.774975,
+  "duration":29.775011,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_MadameKriggle_ApproachedAtLast",
   "parent":{

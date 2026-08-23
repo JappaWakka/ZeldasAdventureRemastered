@@ -4,7 +4,7 @@ if PathHasEnded = true
 	if x >= 16 * tileWidth && x < 16 * tileWidth + tileWidth &&
 	y >= 10 * tileHeight && y < 10 * tileHeight + tileHeight
 	{
-		Register_Add("ShrineOfIllusion_KeyMolluska")
+		Register_Add(Registers.Key_Molluska)
 	}
 	global.CurrentKeys +=1
 	instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)

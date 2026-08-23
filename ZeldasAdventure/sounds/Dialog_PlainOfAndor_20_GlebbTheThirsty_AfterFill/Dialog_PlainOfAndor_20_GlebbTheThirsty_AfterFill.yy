@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":9.793915,
+  "duration":9.793923,
   "exportDir":"",
   "name":"Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill",
   "parent":{

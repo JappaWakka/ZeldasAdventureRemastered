@@ -42,11 +42,11 @@ if IsPlayerOnSameTile() = true
 								RemoveRubies(ItemCost.Price);
 								audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 								Item_Add(Spells.TurquoiseRing,1)
-								if Register_Registered("MadameKriggle_AfterBuySpell") = false
+								if Register_Registered(Registers.MadameKriggle_AfterBuySpell) = false
 								{
 									global.CurrentDialogue_Asset = Dialog_GreatWimbich_MadameKriggle_WiseChoice
 									global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_MadameKriggle,global.CurrentDialogue_Asset,500,false)
-									Register_Add("MadameKriggle_AfterBuySpell",true)
+									Register_Add(Registers.MadameKriggle_AfterBuySpell,true)
 								}
 								
 								instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
@@ -69,11 +69,11 @@ if IsPlayerOnSameTile() = true
 						RemoveRubies(ItemCost.Price);
 						audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 						Item_Add(Spells.TurquoiseRing,1)
-						if Register_Registered("MadameKriggle_AfterBuySpell") = false
+						if Register_Registered(Registers.MadameKriggle_AfterBuySpell) = false
 						{
 							global.CurrentDialogue_Asset = Dialog_GreatWimbich_MadameKriggle_WiseChoice
 							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_MadameKriggle,global.CurrentDialogue_Asset,500,false)
-							Register_Add("MadameKriggle_AfterBuySpell",true)
+							Register_Add(Registers.MadameKriggle_AfterBuySpell,true)
 						}
 						
 						instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)

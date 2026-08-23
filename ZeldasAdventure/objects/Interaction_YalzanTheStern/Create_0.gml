@@ -1,4 +1,4 @@
-if Register_Registered("DonoraGateAttacked") = true
+if Register_Registered(Registers.YalzanTheStern_Attacked) = true
 {
 	instance_destroy()
 }

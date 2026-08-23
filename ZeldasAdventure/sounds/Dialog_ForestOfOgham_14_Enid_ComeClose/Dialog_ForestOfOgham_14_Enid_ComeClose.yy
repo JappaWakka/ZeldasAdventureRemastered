@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":5.333333,
+  "duration":5.3333335,
   "exportDir":"",
   "name":"Dialog_ForestOfOgham_14_Enid_ComeClose",
   "parent":{

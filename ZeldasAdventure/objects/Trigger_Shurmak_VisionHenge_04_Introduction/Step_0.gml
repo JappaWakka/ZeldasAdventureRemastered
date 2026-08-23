@@ -1,12 +1,12 @@
 if IsPlayerOnSameTile() = true
 {
-	if Register_Registered("Shurmak_Introduction") = false
+	if Register_Registered(Registers.Shurmak_Introduction) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_VisionHenge_04_Shurmak_Introduction
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("Shurmak_Introduction")
+			Register_Add(Registers.Shurmak_Introduction)
 		}
 		
 	}

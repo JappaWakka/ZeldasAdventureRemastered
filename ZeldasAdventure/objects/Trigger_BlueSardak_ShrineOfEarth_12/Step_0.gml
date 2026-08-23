@@ -5,23 +5,23 @@ if IsPlayerOnSameTile() = true
 		instance_destroy()
 	}
 	
-	if Register_Registered("BlueSardak_Intro") = false and instance_exists(Entity_Enemy_Sardak_Blue) = true and global.FadeAlpha = 0
+	if Register_Registered(Registers.BlueSardak_Intro) = false and instance_exists(Entity_Enemy_Sardak_Blue) = true and global.FadeAlpha = 0
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_12_BlueSardak_ThoughtIWasAlone
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("BlueSardak_Intro",true)
+			Register_Add(Registers.BlueSardak_Intro,true)
 		}
 		
 	}
-	if Register_Registered("BlueSardak_Outro") = false and instance_exists(Entity_Enemy_Sardak_Blue) = false
+	if Register_Registered(Registers.BlueSardak_Outro) = false and instance_exists(Entity_Enemy_Sardak_Blue) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_12_BlueSardak_CouldntStopHer
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("BlueSardak_Outro")
+			Register_Add(Registers.BlueSardak_Outro)
 		}
 		
 	}
@@ -56,7 +56,7 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if Register_Registered("BlueSardak_Outro") = true
+		if Register_Registered(Registers.BlueSardak_Outro) = true
 		{
 			instance_destroy()
 		}

@@ -5,13 +5,13 @@ if IsPlayerOnSameTile() = true
 		instance_destroy()
 	}
 	
-	if Register_Registered("Llort_ShrineOfRock") = false
+	if Register_Registered(Registers.Llort_ShrineOfRock) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_18_Llort_ShrineOfRock
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("Llort_ShrineOfRock",true)
+			Register_Add(Registers.Llort_ShrineOfRock,true)
 		}
 		
 	}

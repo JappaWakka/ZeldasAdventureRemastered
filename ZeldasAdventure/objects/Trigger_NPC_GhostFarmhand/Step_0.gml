@@ -1,12 +1,12 @@
 if IsPlayerOnSameTile() = true
 {
-	if global.FadeAlpha = 0 and Register_Registered("Farmhand_Dialogue") = false
+	if global.FadeAlpha = 0 and Register_Registered(Registers.GhostFarmhand) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 		{
 			global.CurrentDialogue_Asset = Dialog_GreatWimbich_GhostFarmer_ShrineOfWater_Classic
 			global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GhostFarmhand,global.CurrentDialogue_Asset,500,false)
-			Register_Add("Farmhand_Dialogue",true)
+			Register_Add(Registers.GhostFarmhand,true)
 		}
 	}
 	

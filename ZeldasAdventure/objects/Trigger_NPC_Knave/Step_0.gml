@@ -4,7 +4,7 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.FadeAlpha = 0
 		{
-			if Register_Registered("Knave_Intro") = false
+			if Register_Registered(Registers.Knave_Intro) = false
 			{
 				if HasTalked = false and place_meeting(x,y,Entity_Player)
 				{
@@ -30,13 +30,13 @@ if IsPlayerOnSameTile() = true
 			}
 			else
 			{
-				if global.FadeAlpha = 0 and Register_Registered("Knave_WatchOutForGanon") = false
+				if global.FadeAlpha = 0 and Register_Registered(Registers.Knave_WatchOutForGanon) = false
 				{
 					if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 					{
 						global.CurrentDialogue_Asset = Dialog_GreatWimbich_Knave_WatchOutForGanon
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Knave,global.CurrentDialogue_Asset,500,false)
-						Register_Add("Knave_WatchOutForGanon",true)
+						Register_Add(Registers.Knave_WatchOutForGanon,true)
 					}
 				}
 			}
@@ -44,7 +44,7 @@ if IsPlayerOnSameTile() = true
 	}
 	else
 	{
-		if global.FadeAlpha = 0 and Register_Registered("Knave_Intro") = false
+		if global.FadeAlpha = 0 and Register_Registered(Registers.Knave_Intro) = false
 		{
 			if HasTalked = false and place_meeting(x,y,Entity_Player)
 			{
@@ -120,11 +120,11 @@ if IsPlayerOnSameTile() = true
 						KnaveDialogue = 2
 						break
 					case 2:
-						Register_Add("Knave_Intro")
+						Register_Add(Registers.Knave_Intro)
 						break
 				}
 			}
-			if Register_Registered("Knave_Intro") = true and Register_Registered("Knave_WatchOutForGanon") = true
+			if Register_Registered(Registers.Knave_Intro) = true and Register_Registered(Registers.Knave_WatchOutForGanon) = true
 			{
 				instance_destroy()
 			}
@@ -142,10 +142,10 @@ if IsPlayerOnSameTile() = true
 					KnaveDialogue = 2
 					break
 				case 2:
-					Register_Add("Knave_Intro")
+					Register_Add(Registers.Knave_Intro)
 					break
 			}
-			if Register_Registered("Knave_Intro") = true
+			if Register_Registered(Registers.Knave_Intro) = true
 			{
 				instance_destroy()
 			}	

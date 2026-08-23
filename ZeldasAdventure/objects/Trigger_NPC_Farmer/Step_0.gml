@@ -2,13 +2,13 @@ if IsPlayerOnSameTile() = true
 {
 	if HasSpoken = false
 	{
-		if Register_Registered("FarmerA") = false and global.FadeAlpha = 0
+		if Register_Registered(Registers.Farmer_DialogueA) = false and global.FadeAlpha = 0
 		{
 			if global.CurrentDialogue_Asset = Dialog_None
 			{
 				global.CurrentDialogue_Asset = Dialog_MeadowOfSkotness_Farmer_HelloThereMiss
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Farmer,global.CurrentDialogue_Asset,500,false)
-				Register_Add("FarmerA",true)
+				Register_Add(Registers.Farmer_DialogueA,true)
 			}
 			
 		}
@@ -16,19 +16,19 @@ if IsPlayerOnSameTile() = true
 		{
 			if global.RemasteredMode = true and global.FadeAlpha = 0
 			{
-				if Register_Registered("FarmerA") = true
+				if Register_Registered(Registers.Farmer_DialogueA) = true
 				{
-						Register_Remove("FarmerA",true)
+						Register_Remove(Registers.Farmer_DialogueA,true)
 						global.CurrentDialogue_Asset = Dialog_MeadowOfSkotness_Farmer_WhatBringsYouThisWay
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Farmer,global.CurrentDialogue_Asset,500,false)
-						Register_Add("FarmerB",true)
+						Register_Add(Registers.Farmer_DialogueB,true)
 				}
-				else if Register_Registered("FarmerB") = true
+				else if Register_Registered(Registers.Farmer_DialogueB) = true
 				{
-						Register_Remove("FarmerB",true)
+						Register_Remove(Registers.Farmer_DialogueB,true)
 						global.CurrentDialogue_Asset = Dialog_MeadowOfSkotness_Farmer_HelloThereMiss
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Farmer,global.CurrentDialogue_Asset,500,false)
-						Register_Add("FarmerA",true)
+						Register_Add(Registers.Farmer_DialogueA,true)
 				}
 			}
 				

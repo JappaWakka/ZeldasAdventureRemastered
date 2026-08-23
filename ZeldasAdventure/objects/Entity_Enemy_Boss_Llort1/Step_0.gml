@@ -173,9 +173,9 @@ if EnemyState = EnemyStates.Damaged
 				{
 					DeathAnimationCounter -=1
 					timerIndex = 1
-					if DeathAnimationCounter = 1 and Register_Registered("LlortDefeated") = false
+					if DeathAnimationCounter = 1 and Register_Registered(Registers.Llort_Defeated) = false
 					{
-						Register_Add("LlortDefeated")
+						Register_Add(Registers.Llort_Defeated)
 					}
 				}
 				else

@@ -4,7 +4,7 @@ OriginY = y;
 speed = global.EnemySpeeds.Still;
 image_speed = 0;
 EnemyState = EnemyStates.Idle
-if Register_Registered("LlortDefeated") = true
+if Register_Registered(Registers.Llort_Defeated) = true
 {
 	instance_destroy()
 }

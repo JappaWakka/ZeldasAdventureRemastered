@@ -1,6 +1,6 @@
 if IsPlayerOnSameTile() = true
 {
-	if Register_Registered("Llort_ShrineOfRock") = true
+	if Register_Registered(Registers.Llort_ShrineOfRock) = true
 	{
 		if global.CurrentDialogue_Asset != Dialog_None
 		{

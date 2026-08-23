@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":6.186667,
+  "duration":6.1866665,
   "exportDir":"",
   "name":"Dialog_ForestOfOgham_14_Enid_GoAway",
   "parent":{

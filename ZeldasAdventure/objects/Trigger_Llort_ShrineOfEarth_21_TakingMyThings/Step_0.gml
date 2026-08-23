@@ -5,13 +5,13 @@ if IsPlayerOnSameTile() = true
 		instance_destroy()
 	}
 	
-	if Register_Registered("Llort_TakingMyThings") = false
+	if Register_Registered(Registers.Llort_TakingMyThings) = false
 	{
 		if global.CurrentDialogue_Asset = Dialog_None
 		{
 			global.CurrentDialogue_Asset = Dialog_ShrineOfEarth_21_Llort_TakingMyThings
 			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-			Register_Add("Llort_TakingMyThings",true)
+			Register_Add(Registers.Llort_TakingMyThings,true)
 		}
 		
 	}

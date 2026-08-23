@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Subtitle_GreatWimbich_Blacksmith",
+  "%Name":"Subtitle_GreatWimbich_Smithy",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Subtitle_GreatWimbich_Blacksmith",
+  "name":"Subtitle_GreatWimbich_Smithy",
   "parent":{
     "name":"GreatWimbich",
     "path":"folders/Scripts/Localization/Subtitles/Dialogue/GreatWimbich.yy",

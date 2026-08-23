@@ -47,7 +47,7 @@ function Camera_Pan()
 			instance_activate_region(Desired.x, Desired.y, tileWidth, tileHeight,true)
 			
 			//Temporarily prevent ladder from disappearing
-			if Register_Registered("PlacedLadder") = true and
+			if Register_Registered(Registers.Ladder_Placed) = true and
 			global.CurrentTile.x = 7 && global.CurrentTile.y = 35
 			{
 				DisableLadderObject = true

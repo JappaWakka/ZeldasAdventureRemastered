@@ -5,29 +5,28 @@ if IsPlayerOnSameTile() = true
 	{
 		if global.CameraIsPanning = false
 		{
-			if Register_Registered("Waldensop_Intro") = false
+			if Register_Registered(Registers.Waldensop_Intro) = false
 			{
 				global.CurrentDialogue_Asset = Dialog_ForestOfTorian_22_Waldensop_GoodMorn
 				global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-				Register_Add("Waldensop_Intro")
+				Register_Add(Registers.Waldensop_Intro)
 			}
 			else
 			{
-				if Register_Registered("Waldensop_Feather") = false and Register_Registered("HasLeftWaldensopTile") = true
+				if Register_Registered(Registers.Waldensop_Feather) = false and Register_Registered(Registers.Waldensop_HaveLeftTile) = true
 				{
 					global.CurrentDialogue_Asset = Dialog_ForestOfTorian_22_Waldensop_Feather
 					global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-					Register_Add("Waldensop_Feather")
+					Register_Add(Registers.Waldensop_Feather)
 				}
 			}
 			if IsMenuVisible() = false and audio_is_playing(global.CurrentDialogue_ID) = false
 			{
-				if Register_Registered("Waldensop_Gift") = false and Register_Registered("Waldensop_Feather") = true
+				if Register_Registered(Registers.Waldensop_Feather) = true
 				{
 					if instance_exists(Entity_Pickup_Feather) = false
 					{
 						instance_create_layer(5224,2552,"Items_BelowForeground",Entity_Pickup_Feather)
-						Register_Add("Waldensop_Gift",true)
 					}
 				}
 			}
@@ -65,9 +64,9 @@ if IsPlayerOnSameTile() = true
 }
 else
 {
-	if Register_Registered("HasLeftWaldensopTile") = false
+	if Register_Registered(Registers.Waldensop_HaveLeftTile) = false
 	{
-		Register_Add("HasLeftWaldensopTile")
+		Register_Add(Registers.Waldensop_HaveLeftTile)
 	}
 	if Item_FindIndex(Spells.Feather,1) <> -1
 	{

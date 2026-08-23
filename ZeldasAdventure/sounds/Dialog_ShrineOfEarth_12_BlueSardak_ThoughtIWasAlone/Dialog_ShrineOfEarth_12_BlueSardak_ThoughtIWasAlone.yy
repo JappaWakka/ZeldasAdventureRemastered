@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":6.506667,
+  "duration":6.5066667,
   "exportDir":"",
   "name":"Dialog_ShrineOfEarth_12_BlueSardak_ThoughtIWasAlone",
   "parent":{

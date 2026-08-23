@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":13.973492,
+  "duration":13.973515,
   "exportDir":"",
   "name":"Dialog_PlainOfAndor_13_BeggarWoman_BeforeGiveRubies",
   "parent":{

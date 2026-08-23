@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":3.306667,
+  "duration":3.3066666,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_Lounger_DontWannaSeeYou",
   "parent":{

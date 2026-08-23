@@ -1,6 +1,6 @@
 if IsPlayerOnSameTile() = true
 {
-	if Item_FindIndex(Treasures.Bone,0) = -1 and Register_Registered("PurchasedBone") = false
+	if Item_FindIndex(Treasures.Bone,0) = -1 and Register_Registered(Registers.GeneralShopkeeper_PurchasedBone) = false
 	{
 		visible = true
 		
@@ -43,11 +43,11 @@ if IsPlayerOnSameTile() = true
 							RemoveRubies(ItemCost.Price);
 							audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 							Item_Add(Treasures.Bone,0)
-							if Register_Registered("PurchasedBone") = false
+							if Register_Registered(Registers.GeneralShopkeeper_PurchasedBone) = false
 							{
 								global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_ThatWasSmart
 								global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GeneralShopkeeper,global.CurrentDialogue_Asset,500,false)
-								Register_Add("PurchasedBone")
+								Register_Add(Registers.GeneralShopkeeper_PurchasedBone)
 							}
 							
 							instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
@@ -71,11 +71,11 @@ if IsPlayerOnSameTile() = true
 						audio_play_sound_relative(SFX_Pickup_Item,ItemCost.Price,false)
 						Item_Add(Treasures.Bone,0)
 						
-						if Register_Registered("PurchasedBone") = false
+						if Register_Registered(Registers.GeneralShopkeeper_PurchasedBone) = false
 						{
 							global.CurrentDialogue_Asset = Dialog_GreatWimbich_GeneralShopkeeper_ThatWasSmart
 							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GeneralShopkeeper,global.CurrentDialogue_Asset,500,false)
-							Register_Add("PurchasedBone")
+							Register_Add(Registers.GeneralShopkeeper_PurchasedBone)
 						}
 						instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
 						visible = false

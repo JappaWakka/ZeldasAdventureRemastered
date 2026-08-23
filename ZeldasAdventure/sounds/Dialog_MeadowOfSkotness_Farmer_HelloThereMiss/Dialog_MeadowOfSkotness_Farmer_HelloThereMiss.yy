@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":7.466667,
+  "duration":7.4666667,
   "exportDir":"",
   "name":"Dialog_MeadowOfSkotness_Farmer_HelloThereMiss",
   "parent":{

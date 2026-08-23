@@ -2,11 +2,11 @@
 if IsPlayerOnSameTile() = true
 {
 	
-	if Register_Registered("Enid_Intro") = false
+	if Register_Registered(Registers.Enid_Intro) = false
 	{
 		global.CurrentDialogue_Asset = Dialog_ForestOfOgham_14_Enid_ComeClose
 		global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
-		Register_Add("Enid_Intro",true)
+		Register_Add(Registers.Enid_Intro,true)
 	}
 
 	if global.CurrentDialogue_Asset != Dialog_None
@@ -47,7 +47,7 @@ if IsPlayerOnSameTile() = true
 }
 else
 {
-	if Register_Registered("Enid_Done") = true
+	if Register_Registered(Registers.Enid_StolenHeart) = true
 	{
 		instance_destroy()
 	}

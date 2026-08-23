@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":3.413333,
+  "duration":3.4133334,
   "exportDir":"",
   "name":"Dialog_ForestOfOgham_02_OghamMerchant_WisePurchase",
   "parent":{

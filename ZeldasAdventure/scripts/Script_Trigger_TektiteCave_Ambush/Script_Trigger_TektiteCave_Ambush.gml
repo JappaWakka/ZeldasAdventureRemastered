@@ -2,9 +2,9 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Script_Trigger_TektiteCave_Ambush()
 {
-	if Register_Registered("TektiteAmbush") = false
+	if Register_Registered(Registers.TektiteCaveAmbush) = false
 	{
-		Register_Add("TektiteAmbush",true)
+		Register_Add(Registers.TektiteCaveAmbush,true)
 		instance_create_layer(2912,7524,"Enemies_BelowForeground",Entity_Enemy_Tektite_Weaker)
 		instance_create_layer(2972,7564,"Enemies_BelowForeground",Entity_Enemy_Tektite_Weaker)
 		instance_create_layer(2916,7612,"Enemies_BelowForeground",Entity_Enemy_Tektite_Weaker)

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":3.946667,
+  "duration":3.9466667,
   "exportDir":"",
   "name":"Dialog_ShrineOfEarth_20_YellowSardak_ShesComing",
   "parent":{

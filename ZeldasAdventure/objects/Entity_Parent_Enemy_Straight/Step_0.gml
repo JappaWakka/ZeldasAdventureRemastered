@@ -277,7 +277,7 @@ if HitPoints <= 0
 			{ Color = "Yellow" }
 			Script_Trigger_ShrineOfEarth_SardakBarrier(Color) //Remove Shrine of Earth Boss Barrier
 			break
-		case "ShrineOfIllusion_KeyMolluska" :
+		case Registers.Key_Molluska :
 			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] > 0
 			{
 				global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] -= 1

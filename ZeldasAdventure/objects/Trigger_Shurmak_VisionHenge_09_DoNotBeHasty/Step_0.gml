@@ -2,21 +2,21 @@ if IsPlayerOnSameTile() = true
 {	
 	if Item_FindIndex(Spells.Wand,1) <> -1
 	{
-		if Register_Registered("Shurmak_DoNotBeHasty") = true
+		if Register_Registered(Registers.Shurmak_DoNotBeHasty) = true
 		{
-			Register_Remove("Shurmak_DoNotBeHasty")
+			Register_Remove(Registers.Shurmak_DoNotBeHasty)
 		}
 		instance_destroy()
 	}
 	else
 	{
-		if Register_Registered("Shurmak_DoNotBeHasty") = false
+		if Register_Registered(Registers.Shurmak_DoNotBeHasty) = false
 		{
 			if global.CurrentDialogue_Asset = Dialog_None
 			{
 				global.CurrentDialogue_Asset = Dialog_VisionHenge_09_Shurmak_DoNotBeHasty
 				global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
-				Register_Add("Shurmak_DoNotBeHasty")
+				Register_Add(Registers.Shurmak_DoNotBeHasty)
 			}
 			
 		}

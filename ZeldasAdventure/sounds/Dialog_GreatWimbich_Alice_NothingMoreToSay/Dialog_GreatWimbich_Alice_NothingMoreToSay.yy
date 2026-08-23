@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":6.833605,
+  "duration":6.8336053,
   "exportDir":"",
   "name":"Dialog_GreatWimbich_Alice_NothingMoreToSay",
   "parent":{

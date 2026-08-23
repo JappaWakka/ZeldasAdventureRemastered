@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":6.510899,
+  "duration":6.5109296,
   "exportDir":"",
   "name":"Dialog_MeadowOfSkotness_Farmer_WhatBringsYouThisWay",
   "parent":{
