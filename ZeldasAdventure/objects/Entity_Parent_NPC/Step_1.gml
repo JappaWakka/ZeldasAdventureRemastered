@@ -15,7 +15,7 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true
 }
 else
 {
-	if IsMenuVisible() = false && global.CameraIsFading = false
+	if IsMenuVisible() = false
 	{
 		CanContinue = false;
 		FrameIndex = 0;

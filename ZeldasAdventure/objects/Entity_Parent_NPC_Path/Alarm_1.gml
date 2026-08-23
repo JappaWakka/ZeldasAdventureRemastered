@@ -66,17 +66,35 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false && NP
 				
 		case "setvisible":
 			Animating = false
-			visible = false
+			visible = CurrentPath[CoordinateIndex][3]
 			NPCState = NPCStates.Idle
 			
 			CanContinue = true
 			alarm_set(1,4)
 			break;
-				
+		case "animateinplace":
+			//Delay is in CD-i Frames
+			var Delay = CurrentPath[CoordinateIndex][3] * 4
+			
+			Animating = true
+			CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+			CanContinue = false
+			NPCState = NPCStates.Wait
+			FrameIndex += 4
+			if Delay = 0
+			{
+				alarm_set(1,4)
+			}
+			else
+			{
+				alarm_set(1, Delay);
+			}
+			
+			break;
 		case "stoppath":
 			Animating = false
 			NPCState = NPCStates.StopPath
-			
+			visible = false
 			CanContinue = true
 			alarm_set(1,4)
 			break;

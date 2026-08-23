@@ -155,7 +155,7 @@ function BossAI_AnimateInPlace(TimeInCdiFrames)
 {
 	if Delay = -1
 	{
-		Delay = TimeInCdiFrames
+		Delay = TimeInCdiFrames * 4
 	}
 	
 	if EnemyState != EnemyStates.Damaged
@@ -188,7 +188,7 @@ function BossAI_Wait(TimeInCdiFrames)
 {
 	if Delay = -1
 	{
-		Delay = TimeInCdiFrames
+		Delay = TimeInCdiFrames * 4
 	}
 	
 	if EnemyState != EnemyStates.Damaged

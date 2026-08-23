@@ -502,7 +502,6 @@ function NPCPath_GreatWimbich_03_WalkingMan()
 		[0,-4,"move"],
 		[0,-4,"move"],
 		[0,-4,"move"],
-		[0,0,"setvisible",false],
 		[0,0,"stoppath"]
 	]	
 }

@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":239,
   "bbox_left":43,
-  "bbox_right":337,
+  "bbox_right":353,
   "bbox_top":237,
   "collisionKind":0,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"198fea97-08ea-4ef9-a231-3db6732d2f19","name":"198fea97-08ea-4ef9-a231-3db6732d2f19","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c781a1af-9201-41ba-bc80-d2884990fac1","name":"c781a1af-9201-41ba-bc80-d2884990fac1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"a0841d02-af83-4c0c-9353-c1b2ba9d7ded","blendMode":0,"displayName":"default","isLocked":false,"name":"a0841d02-af83-4c0c-9353-c1b2ba9d7ded","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"0dc12ba4-049e-4166-989f-7b5aaf63a164","blendMode":0,"displayName":"default","isLocked":false,"name":"0dc12ba4-049e-4166-989f-7b5aaf63a164","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"ForestOfTorian_WhiteSteedLodge_Warp",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"198fea97-08ea-4ef9-a231-3db6732d2f19","path":"sprites/ForestOfTorian_WhiteSteedLodge_Warp/ForestOfTorian_WhiteSteedLodge_Warp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ef48ad4e-897f-4fef-9e75-9d15287106d6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c781a1af-9201-41ba-bc80-d2884990fac1","path":"sprites/ForestOfTorian_WhiteSteedLodge_Warp/ForestOfTorian_WhiteSteedLodge_Warp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a61a9b34-6265-4a31-adfa-68738cd0aa25","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

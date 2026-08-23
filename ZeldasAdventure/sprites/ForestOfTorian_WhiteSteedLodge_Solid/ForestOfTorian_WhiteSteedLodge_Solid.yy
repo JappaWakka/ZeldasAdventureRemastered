@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"c7eecad9-529a-47cf-99d2-2dbc77014345","name":"c7eecad9-529a-47cf-99d2-2dbc77014345","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c092f332-0f11-4805-8b6b-baf392392872","name":"c092f332-0f11-4805-8b6b-baf392392872","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"2199ba0b-ba7e-4e1d-baf2-c957df1cf8c1","blendMode":0,"displayName":"default","isLocked":false,"name":"2199ba0b-ba7e-4e1d-baf2-c957df1cf8c1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"709c082b-251a-4bf9-bb9d-e151bc41b299","blendMode":0,"displayName":"default","isLocked":false,"name":"709c082b-251a-4bf9-bb9d-e151bc41b299","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"ForestOfTorian_WhiteSteedLodge_Solid",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c7eecad9-529a-47cf-99d2-2dbc77014345","path":"sprites/ForestOfTorian_WhiteSteedLodge_Solid/ForestOfTorian_WhiteSteedLodge_Solid.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"83cd6263-723f-40eb-9431-15caef725b16","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c092f332-0f11-4805-8b6b-baf392392872","path":"sprites/ForestOfTorian_WhiteSteedLodge_Solid/ForestOfTorian_WhiteSteedLodge_Solid.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f348c565-78a0-41ad-8b14-f22ef9d44d52","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Subtitle_ForestOfTorian_WhiteSteedLodge",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_ForestOfTorian_WhiteSteedLodge",
+  "parent":{
+    "name":"ForestOfTorian",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/ForestOfTorian.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

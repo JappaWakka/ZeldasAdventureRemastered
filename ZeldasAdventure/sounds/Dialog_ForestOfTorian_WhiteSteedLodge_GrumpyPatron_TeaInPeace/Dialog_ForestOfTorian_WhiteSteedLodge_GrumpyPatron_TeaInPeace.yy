@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_ForestOfTorian_WhiteSteedLodge_GrumpyPatron_TeaInPeace",
+  "audioGroupId":{
+    "name":"AudioGroup_Dialogue",
+    "path":"audiogroups/AudioGroup_Dialogue",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":4.8,
+  "exportDir":"",
+  "name":"Dialog_ForestOfTorian_WhiteSteedLodge_GrumpyPatron_TeaInPeace",
+  "parent":{
+    "name":"ForestOfTorian",
+    "path":"folders/Sounds/Dialogue/ForestOfTorian.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_ForestOfTorian_WhiteSteedLodge_GrumpyPatron_TeaInPeace.ogg",
+  "volume":1.0,
+}

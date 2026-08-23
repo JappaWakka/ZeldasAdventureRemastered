@@ -4,18 +4,11 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"Entity_Parent_NPC_Path",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"HitPoints","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"Power","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"45",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"MoveToPlayerChance","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"EnemySoundName","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resource":{"name":"SFX_Enemy_Keese","path":"sounds/SFX_Enemy_Keese/SFX_Enemy_Keese.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"SFX_Enemy_Keese",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"HitRadius_Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"14",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"HitRadius_Attack","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"16",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"ReturnToPoint","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_NPC","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"propertyId":{"name":"EnableAnimationAlarm","path":"objects/Entity_Parent_NPC/Entity_Parent_NPC.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
@@ -42,6 +35,7 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"CurrentPath","filters":[],"listItems":[],"multiselect":false,"name":"CurrentPath","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":4,},
     {"$GMObjectProperty":"v2","%Name":"CurrentCoordinates","filters":[],"listItems":[],"multiselect":false,"name":"CurrentCoordinates","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[x,y]","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"StartSprite","filters":[],"listItems":[],"multiselect":false,"name":"StartSprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

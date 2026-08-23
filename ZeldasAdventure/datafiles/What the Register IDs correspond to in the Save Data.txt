@@ -84,12 +84,12 @@
 
 		''Forest of Torian
 70		CrystalHeart_TreeTrunkCave				''Crystal Heart in the Tree Trunk Cave in the Forest of Torian has been picked up
-71		FriendlyPatron_RoughBunch               ''Friendly Patron has spoken one of his two possible dialogues (Remastered Mode)
-72		FriendlyPatron_YoungNoble               ''Friendly Patron has spoken the other one of his two possible dialogues (Remastered Mode)
-73		GrumpyPatron_QuietMountainStream        ''Grumpy Patron has spoken one of his two possible dialogues (Remastered Mode)
-74		GrumpyPatron_TeaInPeace                 ''Grumpy Patron has spoken the other one of his two possible dialogues (Remastered Mode)
-75		LodgeKeeper_CantTalkToYouNow            ''White Steed Lodge Keeper has spoken his default dialogue
-76		Lodgekeeper_BumbleberryTea              ''White Steed Lodge Keeper has spoken his alternative dialogue (Remastered Mode)
+71		LodgePatron_Friendly_RoughBunch         ''Friendly Lodge Patron has spoken one of his two possible dialogues (Remastered Mode)
+72		LodgePatron_Friendly_YoungNoble         ''Friendly Lodge Patron has spoken the other one of his two possible dialogues (Remastered Mode)
+73		LodgePatron_Grumpy_TeaInPeace           ''Grumpy Lodge Patron has spoken one of his two possible dialogues (Remastered Mode)
+74		LodgePatron_Grumpy_QuietMountainStream  ''Grumpy Lodge Patron has spoken the other one of his two possible dialogues (Remastered Mode)
+75		Lodgekeeper_BumbleberryTea      	    ''White Steed Lodge Keeper has spoken his default dialogue
+76		LodgeKeeper_CantTalkToYouNow            ''White Steed Lodge Keeper has spoken his alternative dialogue (Remastered Mode)
 77		SirBasil								''Sir Basil has spoken and at the end of his dialogue has given you the Broadsword
 78		Waldensop_Intro							''Waldensop has spoken for the first time
 79		Waldensop_HaveLeftTile					''You left the tile that Waldensop is on, so next time you enter the tile, he will confess his affection
