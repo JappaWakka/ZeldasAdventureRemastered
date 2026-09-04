@@ -165,12 +165,21 @@ global.WarpLocations =
 	ForestOfTorian_ShrineOfIllusion_Exit : {TileX:11,TileY:7,PlayerX:176,PlayerY:136},
 	ForestOfTorian_ShrineOfIllusion_Warp : {TileX:11,TileY:7,PlayerX:232,PlayerY:156},
 	
+	//Ubato Hills
+	UbatoHills_ShrineOfDestiny_Exit : {TileX:18,TileY:4,PlayerX:96,PlayerY:176},
+	
 	//Shortcuts
 	SeacoastPlainShortcut_Inside_West : {TileX:12,TileY:20,PlayerX:64,PlayerY:144},
 	SeacoastPlainShortcut_Inside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112},
 	SeacoastPlainShortcut_Outside_West : {TileX:9,TileY:20,PlayerX:320,PlayerY:124},
 	//SeacoastPlainShortcut_Outside_East : {TileX:14,TileY:21,PlayerX:248,PlayerY:112}, //working
 	SeacoastPlainShortcut_Outside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112}, //not working
+	
+	GubashaDesertShortcut_Inside_West : {TileX:20,TileY:4,PlayerX:52,PlayerY:116},
+	GubashaDesertShortcut_Inside_East : {TileX:20,TileY:4,PlayerX:336,PlayerY:112},
+	GubashaDesertShortcut_Outside_West : {TileX:19,TileY:5,PlayerX:284,PlayerY:112},
+	//GubashaDesertShortcut_Outside_East : {TileX:21,TileY:4,PlayerX:76,PlayerY:108}, //working
+	GubashaDesertShortcut_Outside_East : {TileX:20,TileY:4,PlayerX:336,PlayerY:112}, //not working
 	
 	//Shrines
 	ShrineOfEarth_Spawn_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
@@ -188,7 +197,7 @@ global.WarpLocations =
 	
 	ShrineOfAir_Spawn_Entrance : {TileX:5,TileY:2,PlayerX:184,PlayerY:128},
 	
-	ShrineOfDestiny_Spawn_Entrance : {TileX:26,TileY:24,PlayerX:188,PlayerY:168},
+	ShrineOfDestiny_Spawn_Entrance : {TileX:26,TileY:24,PlayerX:188,PlayerY:192},
 	
 	ShrineOfWater_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
 	
@@ -390,6 +399,16 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.PlayerY
 			)
 			break;
+		
+		//Ubato Hills
+		case "ShrineOfDestiny_Outside_Exit":
+			WarpTo(
+			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.TileX,
+			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.TileY,
+			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.PlayerX,
+			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.PlayerY
+			)
+			break;
 			
 		//Shorcuts
 		case "SeacoastPlainShortcut_Inside_West":
@@ -422,6 +441,38 @@ function WarpToLocation(Name)
 			global.WarpLocations.SeacoastPlainShortcut_Outside_East.TileY,
 			global.WarpLocations.SeacoastPlainShortcut_Outside_East.PlayerX,
 			global.WarpLocations.SeacoastPlainShortcut_Outside_East.PlayerY
+			)
+			break;
+		case "GubashaDesertShortcut_Inside_West":
+			WarpTo(
+			global.WarpLocations.GubashaDesertShortcut_Inside_West.TileX,
+			global.WarpLocations.GubashaDesertShortcut_Inside_West.TileY,
+			global.WarpLocations.GubashaDesertShortcut_Inside_West.PlayerX,
+			global.WarpLocations.GubashaDesertShortcut_Inside_West.PlayerY
+			)
+			break;
+		case "GubashaDesertShortcut_Inside_East":
+			WarpTo(
+			global.WarpLocations.GubashaDesertShortcut_Inside_East.TileX,
+			global.WarpLocations.GubashaDesertShortcut_Inside_East.TileY,
+			global.WarpLocations.GubashaDesertShortcut_Inside_East.PlayerX,
+			global.WarpLocations.GubashaDesertShortcut_Inside_East.PlayerY
+			)
+			break;
+		case "GubashaDesertShortcut_Outside_West":
+			WarpTo(
+			global.WarpLocations.GubashaDesertShortcut_Outside_West.TileX,
+			global.WarpLocations.GubashaDesertShortcut_Outside_West.TileY,
+			global.WarpLocations.GubashaDesertShortcut_Outside_West.PlayerX,
+			global.WarpLocations.GubashaDesertShortcut_Outside_West.PlayerY
+			)
+			break;
+		case "GubashaDesertShortcut_Outside_East":
+			WarpTo(
+			global.WarpLocations.GubashaDesertShortcut_Outside_East.TileX,
+			global.WarpLocations.GubashaDesertShortcut_Outside_East.TileY,
+			global.WarpLocations.GubashaDesertShortcut_Outside_East.PlayerX,
+			global.WarpLocations.GubashaDesertShortcut_Outside_East.PlayerY
 			)
 			break;
 			

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"UbatoHills",
-    "path":"folders/Sprites/Maps/Overworld/UbatoHills.yy",
+    "name":"Shortcuts",
+    "path":"folders/Sprites/Maps/Overworld/Shortcuts.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

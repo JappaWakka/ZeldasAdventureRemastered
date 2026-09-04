@@ -6,8 +6,8 @@
   "name":"TempSolid_ForestOfTorian_18",
   "overriddenProperties":[],
   "parent":{
-    "name":"#TempSolids",
-    "path":"folders/Objects/Solids/#TempSolids.yy",
+    "name":"TempSolids",
+    "path":"folders/Objects/Solids/TempSolids.yy",
   },
   "parentObjectId":{
     "name":"Parent_Solid",
