@@ -18,5 +18,6 @@ if room = Room_Overworld
 	instance_deactivate_layer("Temporary_BelowPlayer");
 	instance_deactivate_layer("TemporaryProgressionBlocker_Spikes");
 	instance_deactivate_layer("TileDialogueTriggers")
+	instance_deactivate_layer("SlipperyFloors")
 	instance_deactivate_object(Parent_DialogueTrigger)
 }

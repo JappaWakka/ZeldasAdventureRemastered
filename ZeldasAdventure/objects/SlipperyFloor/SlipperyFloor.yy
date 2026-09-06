@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Parent_DialogueTrigger",
+  "%Name":"SlipperyFloor",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Parent_DialogueTrigger",
+  "name":"SlipperyFloor",
   "overriddenProperties":[],
   "parent":{
-    "name":"DialogueTriggers",
-    "path":"folders/Objects/DialogueTriggers.yy",
+    "name":"SlipperyFloors",
+    "path":"folders/Objects/SpecialCollisions/SlipperyFloors.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite_Cursor",
+    "path":"sprites/Sprite_Cursor/Sprite_Cursor.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

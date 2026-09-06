@@ -5,6 +5,7 @@
     {"name":"River","order":1,"path":"folders/Objects/Entities/Enemies/Zola/River.yy",},
     {"name":"UbatoHills","order":1,"path":"folders/Objects/Solids/Overworld/UbatoHills.yy",},
     {"name":"Verna","order":2,"path":"folders/Objects/Solids/Overworld/Verna.yy",},
+    {"name":"SlipperyFloors","order":1,"path":"folders/Objects/SpecialCollisions/SlipperyFloors.yy",},
     {"name":"ShrineOfDestiny","order":2,"path":"folders/Objects/Warps/Underworld/ShrineOfDestiny.yy",},
     {"name":"ShrineOfIllusion","order":1,"path":"folders/Objects/Warps/Underworld/ShrineOfIllusion.yy",},
     {"name":"Audio","order":1,"path":"folders/Scripts/Audio.yy",},

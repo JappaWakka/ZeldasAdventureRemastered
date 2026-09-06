@@ -63,6 +63,15 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 	}
 	if global.FadeProgress = 2
 	{
+		if instance_exists(SlipperyFloor) = true
+		{
+			Entity_Collision_Player.Acceleration = PlayerAcceleration_Slippery
+		}
+		else
+		{
+			Entity_Collision_Player.Acceleration = PlayerBaseSpeed * Entity_Collision_Player.SpeedMultiplier
+		}
+		
 		if instance_exists(Entity_Parent_Enemy_Path) = true
 		{
 			with Entity_Parent_Enemy_Path
