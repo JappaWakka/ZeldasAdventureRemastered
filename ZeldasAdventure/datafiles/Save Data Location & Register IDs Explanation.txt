@@ -1,3 +1,10 @@
+Save Data Path (Windows): "%LocalAppData%\ZeldasAdventure\SaveData.ini"
+Keybindings Path (Windows): "%LocalAppData%\ZeldasAdventure\KeyBindings.json"
+
+What the Register IDs correspond to in the Save Data:
+
+ID		Internal Variable Name					What the game thinks happened if the ID is added to the Register variable
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 		''Vision Henge
 0		Shurmak_Introduction					''Shurmak has spoken her introduction dialogue
 1		Shurmak_DoNotBeHasty					''Shurmak has spoken when walking southeast (or south in Remastered Mode) of the starting tile before finding the Wand
