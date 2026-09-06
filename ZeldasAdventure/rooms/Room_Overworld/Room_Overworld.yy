@@ -705,6 +705,7 @@
     {"name":"inst_6BDF975F","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_51791B9E","path":"rooms/Room_Overworld/Room_Overworld.yy",},
     {"name":"inst_55AFB120","path":"rooms/Room_Overworld/Room_Overworld.yy",},
+    {"name":"inst_155574CF","path":"rooms/Room_Overworld/Room_Overworld.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -764,6 +765,7 @@
             {"$GMRInstance":"v4","%Name":"inst_6BDF975F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6BDF975F","objectId":{"name":"SlipperyFloor","path":"objects/SlipperyFloor/SlipperyFloor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":9216.0,"y":6480.0,},
             {"$GMRInstance":"v4","%Name":"inst_51791B9E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_51791B9E","objectId":{"name":"SlipperyFloor","path":"objects/SlipperyFloor/SlipperyFloor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":9216.0,"y":6720.0,},
             {"$GMRInstance":"v4","%Name":"inst_55AFB120","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55AFB120","objectId":{"name":"SlipperyFloor","path":"objects/SlipperyFloor/SlipperyFloor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":8832.0,"y":6720.0,},
+            {"$GMRInstance":"v4","%Name":"inst_155574CF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_155574CF","objectId":{"name":"SlipperyFloor","path":"objects/SlipperyFloor/SlipperyFloor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2688.0,"y":4800.0,},
           ],"layers":[],"name":"SlipperyFloors","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
       ],"name":"TileDialogueTriggersAndOverlays","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"EnemiesAndItemsAboveForeground","depth":100500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[

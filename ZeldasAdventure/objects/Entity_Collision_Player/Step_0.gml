@@ -51,7 +51,7 @@
 	}
 	if Entity_Player.DamageDelay > 0 and Entity_Player.DistanceLeftToKnockBack > 0
 	{
-		move(PlayerBaseSpeed, Entity_Player.HitFromDirection, PlayerBaseSpeed, 1);
+		move(1, Entity_Player.HitFromDirection, 1, 1);
 		Entity_Player.DistanceLeftToKnockBack -=1
 	}
 #endregion

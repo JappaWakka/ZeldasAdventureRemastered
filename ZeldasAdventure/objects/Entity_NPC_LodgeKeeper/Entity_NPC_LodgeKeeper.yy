@@ -38,8 +38,8 @@
     "path":"sprites/Sprite_NPC_LodgeKeeper_North/Sprite_NPC_LodgeKeeper_North.yy",
   },
   "spriteMaskId":{
-    "name":"ForestOfTorian_WhiteSteedLodge_Collision_LodgeKeeper",
-    "path":"sprites/ForestOfTorian_WhiteSteedLodge_Collision_LodgeKeeper/ForestOfTorian_WhiteSteedLodge_Collision_LodgeKeeper.yy",
+    "name":"NPC_DialogueTrigger",
+    "path":"sprites/NPC_DialogueTrigger/NPC_DialogueTrigger.yy",
   },
   "visible":true,
 }
