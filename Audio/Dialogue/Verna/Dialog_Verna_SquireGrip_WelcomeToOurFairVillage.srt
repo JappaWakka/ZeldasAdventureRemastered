@@ -1,0 +1,12 @@
+﻿1
+00:00:00,000 --> 00:00:02,693
+Squire Grip: Welcome to our fair village, my Princess!
+
+2
+00:00:02,717 --> 00:00:04,427
+We have heard of your coming.
+
+3
+00:00:04,573 --> 00:00:07,047
+Please accept this token of welcome!
+

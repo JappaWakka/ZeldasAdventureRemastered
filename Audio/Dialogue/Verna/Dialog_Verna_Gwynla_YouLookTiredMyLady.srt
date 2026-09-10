@@ -1,0 +1,16 @@
+﻿1
+00:00:00,000 --> 00:00:02,293
+Gwynla: Heh heh! You look tired, my lady.
+
+2
+00:00:02,340 --> 00:00:04,153
+I have something you may be able to use.
+
+3
+00:00:04,183 --> 00:00:05,526
+It creates a noise.
+
+4
+00:00:05,719 --> 00:00:07,013
+Use it when you must.
+

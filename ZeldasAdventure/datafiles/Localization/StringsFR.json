@@ -564,7 +564,7 @@
 						"Line05": "Tout le monde est rasoir."
 					},
 					"DontWannaSeeYou": {
-						"Line01": "Clampin : Argh...\nJe ne veux plus vous revoir.",
+						"Line01": "Clampin : Argh...\nJe ne veux plus vous revoir."
 					},
 					"GoAway": {
 						"Line01": "Clampin : Pourquoi vous n'allez pas\nvoir ailleurs si j'y suis ?",
@@ -650,7 +650,7 @@
 						"Line07": "Est-ce que quelqu'un l'apprécie ?\nNon !"
 					},
 					"ChooseItemAndHurry": {
-						"Line01": "Forgeron : Choisissez vite votre objet,\nle monde regorge de voleurs.",
+						"Line01": "Forgeron : Choisissez vite votre objet,\nle monde regorge de voleurs."
 					},
 					"CongratsOnFindingCoal": {
 						"Line01": "Forgeron : Félicitations\npour ce beau morceau de charbon !",
@@ -744,6 +744,77 @@
 							"Line03": "et réchauffez-vous près du feu.",
 							"Line04": "Il fait bon à l'intérieur, Zelda."
 						}
+					}
+				}
+			},
+			"Verna": {
+				"Gwynla": {
+					"YouLookTiredMyLady": {
+						"Line01": "Gwynla: Heh heh! You look tired, my lady.",
+						"Line02": "I have something you may be able to use.",
+						"Line03": "It creates a noise.",
+						"Line04": "Use it when you must."
+					}
+				},
+				"Lonlyn": {
+					"Greetings": {
+						"Line01": "Lonlyn: Greetings!",
+						"Line02": "I am Lonlyn, and I am a farmer.",
+						"Line03": "I have heard of you and your quest.",
+						"Line04": "I am a man of little wealth,",
+						"Line05": "but all that I have I give you!"
+					},
+					"CannotHelpYou": {
+						"Line01": "Lonlyn: I cannot help you, Princess, but...",
+						"Line02": "welcome to my farm."
+					}
+				},
+				"SquireGrip": {
+					"WelcomeToOurFairVillage": {
+						"Line01": "Squire Grip: Welcome to our fair village, my Princess!",
+						"Line02": "We have heard of your coming.",
+						"Line03": "Please accept this token of welcome!"
+					},
+					"YouMustLikeOurVillage": {
+						"Line01": "Squire Grip: You must like our village of Verna,",
+						"Line02": "for you remain here, I see.",
+						"Line03": "Good morrow!"
+					},
+					"SoBusyGotToGo": {
+						"Line01": "Squire Grip: Oh, I'm sorry, I'm so busy!",
+						"Line02": "I've got to go! I've got to go!"
+					}
+				},
+				"Merribal": {
+					"FirstSong": {
+						"Line01": "Merribal: Let all around who hear my song",
+						"Line02": "know that Zelda, brave and strong,",
+						"Line03": "will rid this land of every sadness",
+						"Line04": "and Ganon, too, that prince of badness.",
+						"Line05": "Ganon, too, that prince of badness."
+					},
+					"SecondSong": {
+						"Line01": "Merribal: There was a Princess, young and brave,",
+						"Line02": "who rid this land of varlet and knave",
+						"Line03": "And to the north, she should now go",
+						"Line04": "to find what she seeks and wants to know.",
+						"Line05": "To find what she seeks and wants to know."
+					},
+					"BeautifulWeather": {
+						"Line01": "Merribal: Beautiful weather we're having, Zelda,",
+						"Line02": "wouldn't you say?"
+					}
+				}
+			},
+			"UbatoHills": {
+				"Ethera": {
+					"WhatFoolishHumanComesThisWay": {
+						"Line01": "Ethera: What foolish human comes this way?",
+						"Line02": "She who tarries here never leaves.",
+						"Line03": "Ghini!"
+					},
+					"BegoneLittleCreature": {
+						"Line01": "Ethera: Begone, little creature!"
 					}
 				}
 			}

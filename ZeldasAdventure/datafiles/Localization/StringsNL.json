@@ -568,7 +568,7 @@
 						"Line05": "Iedereen is suf."
 					},
 					"DontWannaSeeYou": {
-						"Line01": "Luilak: Bah... Ik wil jou niet meer zien.",
+						"Line01": "Luilak: Bah... Ik wil jou niet meer zien."
 					},
 					"GoAway": {
 						"Line01": "Luilak: Waarom ga je niet weg en ga je ergens anders saai zijn?",
@@ -654,7 +654,7 @@
 						"Line07": "Waardeert iemand van jullie dat? Nee!"
 					},
 					"ChooseItemAndHurry": {
-						"Line01": "Smithy: Kies je voorwerp en schiet op, de wereld zit vol dieven.",
+						"Line01": "Smithy: Kies je voorwerp en schiet op, de wereld zit vol dieven."
 					},
 					"CongratsOnFindingCoal": {
 						"Line01": "Smithy: Gefeliciteerd met het vinden van zo'n mooi stuk Steenkool!",
@@ -750,8 +750,78 @@
 						}
 					}
 				}
+			},
+			"Verna": {
+				"Gwynla": {
+					"YouLookTiredMyLady": {
+						"Line01": "Gwynla: Hihi! U ziet er moe uit, mevrouw.",
+						"Line02": "Ik heb iets dat u wellicht kunt gebruiken.",
+						"Line03": "Het maakt geluid.",
+						"Line04": "Gebruik hem als het nodig is."
+					}
+				},
+				"Lonlyn": {
+					"Greetings": {
+						"Line01": "Lonlyn: Gegroet!",
+						"Line02": "Ik ben Lonlyn, en ik ben boer.",
+						"Line03": "Ik heb over u en uw zoektocht gehoord.",
+						"Line04": "Ik ben een man van weinig rijkdom,",
+						"Line05": "maar alles wat ik heb, geef ik u!"
+					},
+					"CannotHelpYou": {
+						"Line01": "Lonlyn: Ik kan u niet helpen, prinses, maar...",
+						"Line02": "welkom op mijn boerderij."
+					}
+				},
+				"SquireGrip": {
+					"WelcomeToOurFairVillage": {
+						"Line01": "Schildknaap Grip: Welkom in ons mooie dorp, mijn prinses!",
+						"Line02": "We hebben gehoord dat u eraan kwam.",
+						"Line03": "Neem alstublieft dit welkomstgeschenk in ontvangst!"
+					},
+					"YouMustLikeOurVillage": {
+						"Line01": "Schildknaap Grip: U vindt ons dorpje Verna vast erg leuk,",
+						"Line02": "want u bent hier nog steeds, zie ik.",
+						"Line03": "Goedemorgen!"
+					},
+					"SoBusyGotToGo": {
+						"Line01": "Schildknaap Grip: Oh, het spijt me, ik heb het zo druk!",
+						"Line02": "Ik moet gaan! Ik moet gaan!"
+					}
+				},
+				"Merribal": {
+					"FirstSong": {
+						"Line01": "Merribal: Laat ieder die mijn lied horen gaat",
+						"Line02": "weten dat Zelda, dapper en vol kracht,",
+						"Line03": "dit land zal bevrijden van elke droevige macht",
+						"Line04": "en ook van Ganon, die prins van het kwaad.",
+						"Line05": "Ook van Ganon, die prins van het kwaad."
+					},
+					"SecondSong": {
+						"Line01": "Merribal: Er was eens een prinses, jong en dapper,",
+						"Line02": "die dit land bevrijdde van boeven en mafklappers.",
+						"Line03": "En nu moet ze naar het noorden vertrekken",
+						"Line04": "om wat zij zoekt en wilt weten te ontdekken.",
+						"Line05": "Om wat zij zoekt en wilt weten te ontdekken."
+					},
+					"BeautifulWeather": {
+						"Line01": "Merribal: Wat een prachtig weer hebben we vandaag, Zelda,",
+						"Line02": "vind je niet?"
+					}
+				}
+			},
+			"UbatoHills": {
+				"Ethera": {
+					"WhatFoolishHumanComesThisWay": {
+						"Line01": "Wat voor dwaas persoon komt deze kant op?",
+						"Line02": "Wie hier blijft hangen, zal nooit meer vertrekken.",
+						"Line03": "Ghini!"
+					},
+					"BegoneLittleCreature": {
+						"Line01": "Ethera: Maak dat je weg komt, klein wezentje!"
+					}
+				}
 			}
 		}
-		
 	}
 }

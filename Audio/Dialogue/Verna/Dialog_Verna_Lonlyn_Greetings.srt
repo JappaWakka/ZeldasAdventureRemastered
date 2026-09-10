@@ -1,0 +1,20 @@
+﻿1
+00:00:00,000 --> 00:00:01,046
+Lonlyn: Greetings!
+
+2
+00:00:01,077 --> 00:00:02,999
+I am Lonlyn, and I am a farmer.
+
+3
+00:00:03,366 --> 00:00:05,373
+I have heard of you and your quest.
+
+4
+00:00:05,633 --> 00:00:07,340
+I am a man of little wealth,
+
+5
+00:00:07,380 --> 00:00:09,333
+but all that I have I give you!
+
