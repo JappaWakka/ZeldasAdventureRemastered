@@ -29,7 +29,7 @@ function GenerateSaveDataFile()
 	if !ini_section_exists("Options")
 	{
 		ini_write_real("Options",	"DebugMode",		0);
-		ini_write_real("Options",	"AspectRatio",		1);
+		ini_write_real("Options",	"AspectRatio",		0);
 		ini_write_real("Options",	"WindowScale",		3);
 		ini_write_real("Options",	"Fullscreen",		0);
 		ini_write_real("Options",	"ShowSubtitles",	1);

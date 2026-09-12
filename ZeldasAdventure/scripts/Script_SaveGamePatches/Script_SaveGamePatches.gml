@@ -3,8 +3,14 @@ function SaveGamePatches()
 	//Version 0.1.0 - Add a heart + 2 power + 2 defense for defeating the Shrine of Earth
 	//				  as long as the player didn't cheat.
 	//				  Also replace the string based registers with the index based ones
+	//				  and fix broken initial Aspect Ratio value.
 	if global.SaveLastUpdatedAtVersion < 0.10
 	{
+		if global.AspectRatio = 1
+		{
+			global.AspectRatio = 0
+		}
+		
 		if Item_FindIndex(CelestialSigns.Earth,2) <> -1 and
 		global.MaxHealth = 60 and global.Power = 30 and global.Defense = 30
 		{
