@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Script_SetLocalizedMapSprites",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_SetLocalizedMapSprites",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

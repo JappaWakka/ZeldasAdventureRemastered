@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"SFX_NPC_Ghini",
+  "audioGroupId":{
+    "name":"AudioGroup_SoundFX",
+    "path":"audiogroups/AudioGroup_SoundFX",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":6,
+  "conversionMode":0,
+  "duration":0.9505669,
+  "exportDir":"",
+  "name":"SFX_NPC_Ghini",
+  "parent":{
+    "name":"WanderingNPCs",
+    "path":"folders/Sounds/SoundFX/WanderingNPCs.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"SFX_NPC_Ghini.ogg",
+  "volume":1.0,
+}

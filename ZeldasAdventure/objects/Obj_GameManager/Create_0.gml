@@ -2,14 +2,7 @@
 if room = Room_Overworld
 {
 	instance_create_layer(Entity_Player.x,Entity_Player.y,"PlayerAndNPCParent",Entity_Collision_Player)
-	
-	var CurrentFilePath = "Localization/"+Obj_LocalizationManager.AvailableLanguagesStruct.Languages[global.CurrentLanguage].SpritesFolder
-	var DefaultFilePath = "Localization/"+Obj_LocalizationManager.AvailableLanguagesStruct.Languages[0].SpritesFolder
-	
-	if directory_exists(working_directory + CurrentFilePath) = true or directory_exists(working_directory + DefaultFilePath) = true
-	{
-		layer_set_visible("LocalizedForeground_English",false)
-	}
+	SetLocalizedMapSprites()
 }
 Camera_Init()
 

@@ -44,8 +44,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite_Dolomite_West",
-    "path":"sprites/Sprite_Dolomite_West/Sprite_Dolomite_West.yy",
+    "name":"Sprite_Enemy_Dolomite_West",
+    "path":"sprites/Sprite_Enemy_Dolomite_West/Sprite_Enemy_Dolomite_West.yy",
   },
   "spriteMaskId":{
     "name":"Enemy_Collision_Solid_64px",

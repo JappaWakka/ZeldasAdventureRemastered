@@ -1,1 +1,1 @@
-depth = GetCurrentDepth()
+depth = GetCurrentDepth(true)

@@ -45,8 +45,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite_Dolomite_North",
-    "path":"sprites/Sprite_Dolomite_North/Sprite_Dolomite_North.yy",
+    "name":"Sprite_Enemy_Dolomite_North",
+    "path":"sprites/Sprite_Enemy_Dolomite_North/Sprite_Enemy_Dolomite_North.yy",
   },
   "spriteMaskId":{
     "name":"Enemy_Collision_Solid_64px",

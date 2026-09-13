@@ -1,6 +1,4 @@
 /// @description Correct Resolution
-// You can write your code in this editor
-
 var Resolution = 
 [	ViewWidth * global.WindowScale,
 	(ViewHeight + global.AspectRatio) * global.WindowScale

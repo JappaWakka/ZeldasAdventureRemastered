@@ -13,6 +13,22 @@ if audio_group_is_loaded(AudioGroup_Music) && audio_group_is_loaded(AudioGroup_S
 	global.Initialized = true; //To tell the game it can start playing audio
 	if room = Room_InitGame
 	{
+		/// Correct Resolution
+		var Resolution = 
+		[	ViewWidth * global.WindowScale,
+			(ViewHeight + global.AspectRatio) * global.WindowScale
+		]
+		if surface_get_width(application_surface) != Resolution[0] or surface_get_height(application_surface) != Resolution[1] or
+		window_get_width() != Resolution[0] or window_get_height() != Resolution[1]
+		{
+			window_set_size(Resolution[0],Resolution[1]);
+			surface_resize(application_surface,Resolution[0],Resolution[1]);
+		}
+		if window_get_fullscreen() = false
+		{
+			window_center()
+		}
+		
 		room_goto(Room_Cutscene_Logos)
 	}
 }
