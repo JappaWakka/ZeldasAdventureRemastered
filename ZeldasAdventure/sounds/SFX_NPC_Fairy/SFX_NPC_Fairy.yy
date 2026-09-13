@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.101769,
+  "duration":1.1017687,
   "exportDir":"",
   "name":"SFX_NPC_Fairy",
   "parent":{

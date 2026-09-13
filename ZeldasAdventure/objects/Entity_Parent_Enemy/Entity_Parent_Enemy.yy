@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"Entity_Parent_Enemy",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"Entity_Parent_Enemy",
   "overriddenProperties":[],
@@ -65,6 +67,7 @@
         "\"Damage\"",
         "\"Immune\"",
       ],"multiselect":false,"name":"DamageOrImmune","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Damage\"","varType":6,},
+    {"$GMObjectProperty":"v2","%Name":"OriginalDepth","filters":[],"listItems":[],"multiselect":false,"name":"OriginalDepth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"depth","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

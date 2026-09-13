@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Script_GetCurrentDepth",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_GetCurrentDepth",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

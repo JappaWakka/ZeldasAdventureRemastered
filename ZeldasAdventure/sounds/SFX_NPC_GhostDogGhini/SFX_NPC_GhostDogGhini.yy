@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"SFX_NPC_GhiniGhostDog",
+  "%Name":"SFX_NPC_GhostDogGhini",
   "audioGroupId":{
     "name":"AudioGroup_SoundFX",
     "path":"audiogroups/AudioGroup_SoundFX",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.950567,
+  "duration":0.9505669,
   "exportDir":"",
-  "name":"SFX_NPC_GhiniGhostDog",
+  "name":"SFX_NPC_GhostDogGhini",
   "parent":{
     "name":"WanderingNPCs",
     "path":"folders/Sounds/SoundFX/WanderingNPCs.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":22050,
-  "soundFile":"SFX_NPC_GhiniGhostDog.ogg",
+  "soundFile":"SFX_NPC_GhostDogGhini.ogg",
   "volume":1.0,
 }
