@@ -8,7 +8,7 @@
   "option_windows_copyright_info":"Viridis",
   "option_windows_copy_exe_to_dest":false,
   "option_windows_d3dswapeffectdiscard":false,
-  "option_windows_description_info":"A remaster of Zelda's Adventure on the Phillips CD-i",
+  "option_windows_description_info":"A remaster of Zelda's Adventure, originally on the Philips CD-i",
   "option_windows_disable_sandbox":false,
   "option_windows_display_cursor":true,
   "option_windows_display_name":"Zelda's Adventure Remastered",
