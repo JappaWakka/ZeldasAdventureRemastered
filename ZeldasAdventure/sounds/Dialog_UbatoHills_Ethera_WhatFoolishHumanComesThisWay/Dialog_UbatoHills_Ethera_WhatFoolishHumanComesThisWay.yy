@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_UbatoHills_Ethera_WhatFoolishHumanComesThisWay",
+  "audioGroupId":{
+    "name":"AudioGroup_Dialogue",
+    "path":"audiogroups/AudioGroup_Dialogue",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":9.341768,
+  "exportDir":"",
+  "name":"Dialog_UbatoHills_Ethera_WhatFoolishHumanComesThisWay",
+  "parent":{
+    "name":"UbatoHills",
+    "path":"folders/Sounds/Dialogue/UbatoHills.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_UbatoHills_Ethera_WhatFoolishHumanComesThisWay.ogg",
+  "volume":1.0,
+}

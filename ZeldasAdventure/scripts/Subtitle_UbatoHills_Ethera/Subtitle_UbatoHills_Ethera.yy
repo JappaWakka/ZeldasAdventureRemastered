@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Subtitle_UbatoHills_Ethera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_UbatoHills_Ethera",
+  "parent":{
+    "name":"UbatoHills",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/UbatoHills.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

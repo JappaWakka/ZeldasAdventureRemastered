@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Subtitle_Verna_04_SquireGrip_Merribal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_Verna_04_SquireGrip_Merribal",
+  "parent":{
+    "name":"Verna",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/Verna.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

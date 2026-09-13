@@ -1,4 +1,5 @@
 if global.RemasteredMode = true
 {
-	x = 2304 + 4
+	x = 2304 + 16
+	y += 16
 }

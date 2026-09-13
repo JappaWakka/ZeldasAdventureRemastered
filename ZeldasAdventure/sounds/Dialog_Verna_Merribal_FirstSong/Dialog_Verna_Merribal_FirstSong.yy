@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_Verna_Merribal_FirstSong",
+  "audioGroupId":{
+    "name":"AudioGroup_Dialogue",
+    "path":"audiogroups/AudioGroup_Dialogue",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":26.84789,
+  "exportDir":"",
+  "name":"Dialog_Verna_Merribal_FirstSong",
+  "parent":{
+    "name":"Verna",
+    "path":"folders/Sounds/Dialogue/Verna.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_Verna_Merribal_FirstSong.ogg",
+  "volume":1.0,
+}

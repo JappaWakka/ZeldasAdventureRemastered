@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Subtitle_Verna_02_Gwynla_Lonlyn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_Verna_02_Gwynla_Lonlyn",
+  "parent":{
+    "name":"Verna",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/Verna.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

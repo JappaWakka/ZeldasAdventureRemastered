@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_Verna_SquireGrip_YouMustLikeOurVillage",
+  "audioGroupId":{
+    "name":"AudioGroup_Dialogue",
+    "path":"audiogroups/AudioGroup_Dialogue",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":4.6741495,
+  "exportDir":"",
+  "name":"Dialog_Verna_SquireGrip_YouMustLikeOurVillage",
+  "parent":{
+    "name":"Verna",
+    "path":"folders/Sounds/Dialogue/Verna.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_Verna_SquireGrip_YouMustLikeOurVillage.ogg",
+  "volume":1.0,
+}

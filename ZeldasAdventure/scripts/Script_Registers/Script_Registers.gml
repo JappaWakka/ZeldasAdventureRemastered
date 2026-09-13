@@ -103,6 +103,10 @@ enum Registers
 	YalzanTheStern_PaidFee,
 	YalzanTheStern_Attacked,
 	
+//Ubato Hills
+	Ethera_WhatFoolishHumanComesThisWay,
+	Ethera_BegoneLittleCreature,
+	
 //Shrine of Illusion
 	Key_Molluska,
 	
