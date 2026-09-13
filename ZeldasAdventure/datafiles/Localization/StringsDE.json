@@ -746,71 +746,71 @@
 			"Verna": {
 				"Gwynla": {
 					"YouLookTiredMyLady": {
-						"Line01": "Gwynla: Heh heh! You look tired, my lady.",
-						"Line02": "I have something you may be able to use.",
-						"Line03": "It creates a noise.",
-						"Line04": "Use it when you must."
+						"Line01": "Gwynla: Hehe! Du siehst müde aus, meine Dame.",
+						"Line02": "Ich habe da etwas, das dir vielleicht nützlich sein könnte.",
+						"Line03": "Es erzeugt ein Geräusch.",
+						"Line04": "Benutze es, wenn es nötig ist."
 					}
 				},
 				"Lonlyn": {
 					"Greetings": {
-						"Line01": "Lonlyn: Greetings!",
-						"Line02": "I am Lonlyn, and I am a farmer.",
-						"Line03": "I have heard of you and your quest.",
-						"Line04": "I am a man of little wealth,",
-						"Line05": "but all that I have I give you!"
+						"Line01": "Lonlyn: Hallo!",
+						"Line02": "Ich heiße Lonlyn und bin Bauer.",
+						"Line03": "Ich habe von dir und deiner Suche gehört.",
+						"Line04": "Ich bin ein Mann von geringen Mitteln,",
+						"Line05": "aber alles, was ich habe, gebe ich dir!"
 					},
 					"CannotHelpYou": {
-						"Line01": "Lonlyn: I cannot help you, Princess, but...",
-						"Line02": "welcome to my farm."
+						"Line01": "Lonlyn: Ich kann dir nicht helfen, Prinzessin, aber...",
+						"Line02": "willkommen auf meinem Hof."
 					}
 				},
 				"SquireGrip": {
 					"WelcomeToOurFairVillage": {
-						"Line01": "Squire Grip: Welcome to our fair village, my Princess!",
-						"Line02": "We have heard of your coming.",
-						"Line03": "Please accept this token of welcome!"
+						"Line01": "Knappe Grip: Willkommen in unserem schönen Dorf, Prinzessin!",
+						"Line02": "Wir haben gehört, dass du kommst.",
+						"Line03": "Bitte nimm dieses kleine Willkommensgeschenk an!"
 					},
 					"YouMustLikeOurVillage": {
-						"Line01": "Squire Grip: You must like our village of Verna,",
-						"Line02": "for you remain here, I see.",
-						"Line03": "Good morrow!"
+						"Line01": "Knappe Grip: Unser Dorf Verna wird dir sicher gefallen,",
+						"Line02": "du bleibst hier, wie ich sehe.",
+						"Line03": "Guten Morgen!"
 					},
 					"SoBusyGotToGo": {
-						"Line01": "Squire Grip: Oh, I'm sorry, I'm so busy!",
-						"Line02": "I've got to go! I've got to go!"
+						"Line01": "Knappe Grip: Oh, tut mir leid, ich bin sehr beschäftigt!",
+						"Line02": "Ich muss los! Ich muss los!"
 					}
 				},
 				"Merribal": {
 					"FirstSong": {
-						"Line01": "Merribal: Let all around who hear my song",
-						"Line02": "know that Zelda, brave and strong,",
-						"Line03": "will rid this land of every sadness",
-						"Line04": "and Ganon, too, that prince of badness.",
-						"Line05": "Ganon, too, that prince of badness."
+						"Line01": "Merribal: Mögen alle, die mein Lied hören,",
+						"Line02": "wissen, dass Zelda die mutig und stark ist,",
+						"Line03": "dieses Land von aller Trauer befreien wird",
+						"Line04": "und auch von Ganon, dem Prinzen des Bösen.",
+						"Line05": "Auch von Ganon, dem Prinzen des Bösen."
 					},
 					"SecondSong": {
-						"Line01": "Merribal: There was a Princess, young and brave,",
-						"Line02": "who rid this land of varlet and knave",
-						"Line03": "And to the north, she should now go",
-						"Line04": "to find what she seeks and wants to know.",
-						"Line05": "To find what she seeks and wants to know."
+						"Line01": "Merribal: Es war einmal eine Prinzessin, jung und tapfer,",
+						"Line02": "die dieses Land von Schurken und Gaunern befreit.",
+						"Line03": "Und nach Norden sollte sie nun gehen",
+						"Line04": "um zu finden, was sie sucht und wissen möchte.",
+						"Line05": "Um zu finden, was sie sucht und wissen möchte."
 					},
 					"BeautifulWeather": {
-						"Line01": "Merribal: Beautiful weather we're having, Zelda,",
-						"Line02": "wouldn't you say?"
+						"Line01": "Merribal: Was für ein schönes Wetter wir doch haben, Zelda,",
+						"Line02": "findest du nicht auch?"
 					}
 				}
 			},
 			"UbatoHills": {
 				"Ethera": {
 					"WhatFoolishHumanComesThisWay": {
-						"Line01": "Ethera: What foolish human comes this way?",
-						"Line02": "She who tarries here never leaves.",
-						"Line03": "Ghini!"
+						"Line01": "Ethera: Welcher törichte Mensch kommt hierher?",
+						"Line02": "Wer hier verweilt, geht nie wieder fort.",
+						"Line03": "GHINI!"
 					},
 					"BegoneLittleCreature": {
-						"Line01": "Ethera: Begone, little creature!"
+						"Line01": "Ethera: Verschwinde, du kleine Kreatur!"
 					}
 				}
 			}
