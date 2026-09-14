@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"NPCPath_Verna",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NPCPath_Verna",
+  "parent":{
+    "name":"NPCs",
+    "path":"folders/Scripts/Paths/NPCs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

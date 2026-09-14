@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.32,
+  "duration":0.30648527,
   "exportDir":"",
   "name":"Menu_NameInput_Letter",
   "parent":{

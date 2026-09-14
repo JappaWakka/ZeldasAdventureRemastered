@@ -58,6 +58,7 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false && NP
 			{
 				visible = true
 			}
+			CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
 			NPCState = NPCStates.Idle
 			
 			CanContinue = true
