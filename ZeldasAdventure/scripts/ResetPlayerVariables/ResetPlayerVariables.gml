@@ -26,4 +26,10 @@ function ResetPlayerVariables(){
 	global.CurrentTreasure = -1;
 	global.CurrentSpell = -1;
 	
+//System Variables
+	global.SwappedBetweenDimensions = false
+	global.SwapPosition = [0,0]
+	global.SwapSprite = noone
+	global.SwapDirection = 0
+	global.DebugSpeedMultiplier = 1
 }

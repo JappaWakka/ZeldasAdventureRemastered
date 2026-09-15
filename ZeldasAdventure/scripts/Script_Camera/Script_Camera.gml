@@ -1,9 +1,20 @@
-function Camera_Init()
+function Camera_Init(SwappedBetweenDimensions = false)
 {
 	//Set initial Camera position if we're in the Overworld
 	if room == Room_Overworld
 	{
-		WarpToLocation(global.PlayerSpawn)
+		if SwappedBetweenDimensions = false
+		{
+			WarpToLocation(global.PlayerSpawn)
+		}
+		else
+		{
+			Entity_Collision_Player.x = global.SwapPosition[0]
+			Entity_Collision_Player.y = global.SwapPosition[1]
+			Entity_Player.sprite_index = global.SwapSprite
+			Entity_Player.Facing = global.SwapDirection
+		}
+		
 		camera_set_view_pos(view,global.CurrentTile.x * ViewWidth,global.CurrentTile.y * ViewHeight);
 	}
 	//Set view size

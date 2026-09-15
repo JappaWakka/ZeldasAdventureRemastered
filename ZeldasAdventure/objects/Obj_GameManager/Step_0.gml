@@ -30,6 +30,11 @@ if room = Room_Overworld
 	}
 	else
 	{
+		var ResetEnemies = false
+		if (global.PlayerSpawn = "Spawn_Overworld" and global.SpawnPoints[global.CurrentTile.x][global.CurrentTile.y] != "Spawn_Overworld") or (global.PlayerSpawn != "Spawn_Overworld" and global.SpawnPoints[global.CurrentTile.x][global.CurrentTile.y] = "Spawn_Overworld")
+		{
+			ResetEnemies = true
+		}
 		global.PlayerSpawn = global.SpawnPoints[global.CurrentTile.x][global.CurrentTile.y]
 		switch global.PlayerSpawn
 		{
@@ -75,6 +80,15 @@ if room = Room_Overworld
 			case "Spawn_Gauntlet":
 				global.CurrentMap = Maps.Gauntlet
 				break;
+		}
+		if ResetEnemies = true
+		{
+			global.SwappedBetweenDimensions = true
+			global.HasResetEnemies = true
+			global.SwapPosition = [Entity_Collision_Player.x,Entity_Collision_Player.y]
+			global.SwapSprite = Entity_Player.sprite_index
+			global.SwapDirection = Entity_Player.Facing
+			room_goto(Room_Overworld)
 		}
 	}
 	if global.CompassWarp != ""

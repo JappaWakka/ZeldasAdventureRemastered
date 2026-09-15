@@ -1,0 +1,1 @@
+DebugSpeedMultiplier = global.DebugSpeedMultiplier

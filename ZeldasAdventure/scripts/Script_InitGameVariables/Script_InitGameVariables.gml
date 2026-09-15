@@ -17,6 +17,12 @@ function InitGameVariables()
 	global.ColorRed = [0.91, 0.06, 0.06, 1.00]
 	global.ColorBlue = [0.06, 0.06, 0.91, 1.00]
 	
+	global.SwappedBetweenDimensions = false
+	global.SwapPosition = [0,0]
+	global.SwapSprite = noone
+	global.SwapDirection = 0
+	global.DebugSpeedMultiplier = 1
+	
 	global.EnemyCannotTouchEdge = false
 	global.CompassWarp = ""
 	global.HarpWarp = ""
