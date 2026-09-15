@@ -8,7 +8,14 @@ if IsPlayerOnSameTile() = true
 			{
 				global.CurrentDialogue_Asset = Dialog_UbatoHills_Ethera_WhatFoolishHumanComesThisWay
 				global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Ethera,global.CurrentDialogue_Asset,500,false)
-				Register_Add(Registers.Ethera_WhatFoolishHumanComesThisWay,true)
+				if global.RemasteredMode = true
+				{
+					Register_Add(Registers.Ethera_WhatFoolishHumanComesThisWay)
+				}
+				else
+				{
+					Register_Add(Registers.Ethera_WhatFoolishHumanComesThisWay,true)
+				}
 			}
 			else
 			{
@@ -18,7 +25,9 @@ if IsPlayerOnSameTile() = true
 					{
 						global.CurrentDialogue_Asset = Dialog_UbatoHills_Ethera_BegoneLittleCreature
 						global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_Ethera,global.CurrentDialogue_Asset,500,false)
-						Register_Add(Registers.Ethera_BegoneLittleCreature)
+						Register_Add(Registers.Ethera_BegoneLittleCreature,true)
+						Register_Remove(Registers.Ethera_WhatFoolishHumanComesThisWay)
+						Register_Add(Registers.Ethera_WhatFoolishHumanComesThisWay,true)
 					}
 				}
 			}
