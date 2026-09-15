@@ -2,6 +2,7 @@
   "FolderOrderSettings":[
     {"name":"ForestOfTorian","order":4,"path":"folders/Objects/DialogueTriggers/ForestOfTorian.yy",},
     {"name":"UbatoHills","order":5,"path":"folders/Objects/DialogueTriggers/UbatoHills.yy",},
+    {"name":"Verna","order":6,"path":"folders/Objects/DialogueTriggers/Verna.yy",},
     {"name":"Zola","order":25,"path":"folders/Objects/Entities/Enemies/Zola.yy",},
     {"name":"River","order":1,"path":"folders/Objects/Entities/Enemies/Zola/River.yy",},
     {"name":"UbatoHills","order":11,"path":"folders/Objects/Entities/NPCs/UbatoHills.yy",},
@@ -445,6 +446,7 @@
     {"name":"Trigger_NPC_LodgePatron_Grumpy","order":2,"path":"objects/Trigger_NPC_LodgePatron_Grumpy/Trigger_NPC_LodgePatron_Grumpy.yy",},
     {"name":"Trigger_NPC_LotharTheInnKeeper","order":5,"path":"objects/Trigger_NPC_LotharTheInnKeeper/Trigger_NPC_LotharTheInnKeeper.yy",},
     {"name":"Trigger_NPC_Lounger","order":8,"path":"objects/Trigger_NPC_Lounger/Trigger_NPC_Lounger.yy",},
+    {"name":"Trigger_NPC_SquireGrip","order":1,"path":"objects/Trigger_NPC_SquireGrip/Trigger_NPC_SquireGrip.yy",},
     {"name":"Trigger_NPC_TownMerchant","order":6,"path":"objects/Trigger_NPC_TownMerchant/Trigger_NPC_TownMerchant.yy",},
     {"name":"Trigger_NPC_TwinFather","order":2,"path":"objects/Trigger_NPC_TwinFather/Trigger_NPC_TwinFather.yy",},
     {"name":"Trigger_NPC_WomanAtTable","order":4,"path":"objects/Trigger_NPC_WomanAtTable/Trigger_NPC_WomanAtTable.yy",},

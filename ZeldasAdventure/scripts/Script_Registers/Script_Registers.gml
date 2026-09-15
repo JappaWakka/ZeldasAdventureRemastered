@@ -106,6 +106,17 @@ enum Registers
 //Ubato Hills
 	Ethera_WhatFoolishHumanComesThisWay,
 	Ethera_BegoneLittleCreature,
+
+//Verna
+	SquireGrip_WelcomeToOurFairVillage,
+	SquireGrip_YouMustLikeOurVillage,
+	SquireGrip_SoBusyGotToGo,
+	Merribal_FirstSong,
+	Merribal_SecondSong,
+	Merribal_BeautifulWeather,
+	Gwynla_YouLookTiredMyLady,
+	Lonlyn_Greetings,
+	Lonlyn_CannotHelpYou,
 	
 //Shrine of Illusion
 	Key_Molluska,

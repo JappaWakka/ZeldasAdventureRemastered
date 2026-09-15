@@ -3,3 +3,5 @@ if Item_FindIndex(Spells.Broadsword,1) <> -1
 {
 	instance_destroy()
 }
+x += 16
+y += 16
