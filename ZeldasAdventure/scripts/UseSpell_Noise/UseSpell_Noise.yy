@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UseSpell_Noise",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UseSpell_Noise",
+  "parent":{
+    "name":"Spells",
+    "path":"folders/Scripts/UseItem/Spells.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

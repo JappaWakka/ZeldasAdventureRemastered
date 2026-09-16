@@ -116,6 +116,7 @@ enum Registers
 	Merribal_BeautifulWeather,
 	Gwynla_YouLookTiredMyLady,
 	Lonlyn_Greetings,
+	Lonlyn_HasGivenMoney,
 	Lonlyn_CannotHelpYou,
 	
 //Shrine of Illusion
