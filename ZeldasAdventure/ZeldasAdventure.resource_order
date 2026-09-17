@@ -443,6 +443,7 @@
     {"name":"Trigger_NPC_EricAndIan","order":3,"path":"objects/Trigger_NPC_EricAndIan/Trigger_NPC_EricAndIan.yy",},
     {"name":"Trigger_NPC_GhostFarmer","order":4,"path":"objects/Trigger_NPC_GhostFarmer/Trigger_NPC_GhostFarmer.yy",},
     {"name":"Trigger_NPC_GhostFarmhand","order":5,"path":"objects/Trigger_NPC_GhostFarmhand/Trigger_NPC_GhostFarmhand.yy",},
+    {"name":"Trigger_NPC_Gwynla_Lonlyn","order":2,"path":"objects/Trigger_NPC_Gwynla_Lonlyn/Trigger_NPC_Gwynla_Lonlyn.yy",},
     {"name":"Trigger_NPC_Knave","order":7,"path":"objects/Trigger_NPC_Knave/Trigger_NPC_Knave.yy",},
     {"name":"Trigger_NPC_KrebbTheWeary","order":3,"path":"objects/Trigger_NPC_KrebbTheWeary/Trigger_NPC_KrebbTheWeary.yy",},
     {"name":"Trigger_NPC_LodgePatron_Friendly","order":1,"path":"objects/Trigger_NPC_LodgePatron_Friendly/Trigger_NPC_LodgePatron_Friendly.yy",},

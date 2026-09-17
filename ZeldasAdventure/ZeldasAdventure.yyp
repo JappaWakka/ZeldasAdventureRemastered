@@ -852,6 +852,7 @@
     {"id":{"name":"Trigger_NPC_Farmer","path":"objects/Trigger_NPC_Farmer/Trigger_NPC_Farmer.yy",},},
     {"id":{"name":"Trigger_NPC_GhostFarmer","path":"objects/Trigger_NPC_GhostFarmer/Trigger_NPC_GhostFarmer.yy",},},
     {"id":{"name":"Trigger_NPC_GhostFarmhand","path":"objects/Trigger_NPC_GhostFarmhand/Trigger_NPC_GhostFarmhand.yy",},},
+    {"id":{"name":"Trigger_NPC_Gwynla_Lonlyn","path":"objects/Trigger_NPC_Gwynla_Lonlyn/Trigger_NPC_Gwynla_Lonlyn.yy",},},
     {"id":{"name":"Trigger_NPC_Knave","path":"objects/Trigger_NPC_Knave/Trigger_NPC_Knave.yy",},},
     {"id":{"name":"Trigger_NPC_KrebbTheWeary","path":"objects/Trigger_NPC_KrebbTheWeary/Trigger_NPC_KrebbTheWeary.yy",},},
     {"id":{"name":"Trigger_NPC_LodgePatron_Friendly","path":"objects/Trigger_NPC_LodgePatron_Friendly/Trigger_NPC_LodgePatron_Friendly.yy",},},
