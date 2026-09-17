@@ -79,6 +79,11 @@ if IsPlayerOnSameTile() = true
 				instance_create_layer(6776,2124,"Items_AboveForeground",Entity_Pickup_Noise)
 			}
 		}
+		if Register_Registered(Registers.Lonlyn_Greetings) = true and Register_Registered(Registers.Lonlyn_HasGivenMoney) = false
+		{
+			AddRubies(25)
+			Register_Add(Registers.Lonlyn_HasGivenMoney)
+		}
 		if Register_Registered(Registers.Lonlyn_CannotHelpYou) = true
 		{
 			instance_destroy()
