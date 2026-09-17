@@ -20,4 +20,9 @@ if room = Room_Overworld
 	instance_deactivate_layer("TileDialogueTriggers")
 	instance_deactivate_layer("SlipperyFloors")
 	instance_deactivate_object(Parent_DialogueTrigger)
+	if global.SwappedBetweenDimensions = true
+	{
+		instance_activate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true)
+		global.SwappedBetweenDimensions = false
+	}
 }

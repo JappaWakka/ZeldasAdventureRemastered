@@ -31,7 +31,7 @@ function Audio_Init_Soundtrack()
 		Twinkle_Dad : {Asset : Music_Twinkle_Dad, IntroLength : 2.593, LoopLength : 20.056},
 		Shrine_Earth_Ambient : {Asset : Music_Shrine_Earth_Ambient, IntroLength : 2.232, LoopLength : 39.467},
 		Shrine_Earth_Boss : {Asset : Music_Shrine_Earth_Boss, IntroLength : 1.751, LoopLength : 19.992},
-		Shrine_Earth_Regular : {Asset : Music_Shrine_Earth_Regular, IntroLength : 1.751, LoopLength : 332.011},
+		Shrine_Earth_Regular : {Asset : Music_Shrine_Earth_Regular, IntroLength : 1.751, LoopLength : 305.749},
 		Shrine_Earth_Sign : {Asset : Music_Shrine_Earth_Sign, IntroLength : 1.751, LoopLength : 19.705},
 		Shrine_Illusion : {Asset : Music_Shrine_Illusion_Regular, IntroLength : 2.041, LoopLength : 59.904},
 		Shrine_Illusion_Boss : {Asset : Music_Shrine_Illusion_Boss, IntroLength : 2.086, LoopLength : 17.935},

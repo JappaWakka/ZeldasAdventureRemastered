@@ -1,5 +1,5 @@
 /// @description Set Player Speed to 2 (DebugMode)
-if global.DebugMode = true and room = Room_Overworld
+if global.DebugMode = true and room = Room_Overworld and instance_exists(Entity_Parent_Player) = true
 {
 	if global.DebugSpeedMultiplier != 2
 	{

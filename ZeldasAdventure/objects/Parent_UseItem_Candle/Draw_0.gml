@@ -13,3 +13,8 @@ if Alpha > 0 && IsMenuVisible() = false && IsPlayerOnSameTile() = true
 {
 	draw_sprite(Entity_Player.sprite_index,Entity_Player.image_index,Entity_Player.x,Entity_Player.y)
 }
+
+if ForegroundSprite != noone
+{
+	draw_sprite_ext(ForegroundSprite,0,DrawStart.x,DrawStart.y,1,1,0,c_white,Alpha * 0.5)
+}

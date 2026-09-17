@@ -14,7 +14,6 @@ ChangeRubyAlarms[1] = new Alarm(15, PlayRubySound, true);
 if global.SwappedBetweenDimensions = true
 {	
 	global.HasSpawned = true
-	global.SwappedBetweenDimensions = false
 }
 else
 {

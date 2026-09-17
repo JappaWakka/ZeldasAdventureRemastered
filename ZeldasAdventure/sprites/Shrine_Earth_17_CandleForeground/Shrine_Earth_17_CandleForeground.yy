@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"Shrine_Earth_17_Above",
+  "%Name":"Shrine_Earth_17_CandleForeground",
   "bboxMode":0,
   "bbox_bottom":239,
   "bbox_left":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"232f1a4c-8556-43eb-86a5-0fb1198ab947","name":"232f1a4c-8556-43eb-86a5-0fb1198ab947","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"01017d3c-7ce9-4b1a-9a7e-28df70ec8260","name":"01017d3c-7ce9-4b1a-9a7e-28df70ec8260","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"133c50e3-49f2-4c3e-a121-80bf32b4a0e3","blendMode":0,"displayName":"default","isLocked":false,"name":"133c50e3-49f2-4c3e-a121-80bf32b4a0e3","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f916daf0-ac56-4af3-b9de-b7967abb5d9a","blendMode":0,"displayName":"default","isLocked":false,"name":"f916daf0-ac56-4af3-b9de-b7967abb5d9a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"Shrine_Earth_17_Above",
+  "name":"Shrine_Earth_17_CandleForeground",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"Shrine_Earth_17_Above",
+    "%Name":"Shrine_Earth_17_CandleForeground",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Shrine_Earth_17_Above",
+    "name":"Shrine_Earth_17_CandleForeground",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"232f1a4c-8556-43eb-86a5-0fb1198ab947","path":"sprites/Shrine_Earth_17_Above/Shrine_Earth_17_Above.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"947e5a1c-bbe9-48d8-b87e-93f673d4ee4c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"01017d3c-7ce9-4b1a-9a7e-28df70ec8260","path":"sprites/Shrine_Earth_17_CandleForeground/Shrine_Earth_17_CandleForeground.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7b8fdd85-3f94-44a2-b6dc-0e1abff3f550","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -79,10 +79,10 @@
     "yorigin":0,
   },
   "swatchColours":null,
-  "swfPrecision":2.525,
+  "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"TextureGroup_Maps",
-    "path":"texturegroups/TextureGroup_Maps",
+    "name":"Default",
+    "path":"texturegroups/Default",
   },
   "type":0,
   "VTile":false,

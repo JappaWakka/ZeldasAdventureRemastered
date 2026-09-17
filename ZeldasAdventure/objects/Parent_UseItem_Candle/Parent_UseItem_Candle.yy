@@ -10,8 +10,8 @@
   "name":"Parent_UseItem_Candle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Item_Candle",
-    "path":"folders/Objects/SpecialCollisions/Item_Candle.yy",
+    "name":"CandleDarkness",
+    "path":"folders/Objects/CandleDarkness.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,6 +29,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"Alpha","filters":[],"listItems":[],"multiselect":false,"name":"Alpha","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"ForegroundSprite","filters":[],"listItems":[],"multiselect":false,"name":"ForegroundSprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

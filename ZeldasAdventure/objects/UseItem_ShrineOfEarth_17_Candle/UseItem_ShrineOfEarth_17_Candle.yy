@@ -4,10 +4,12 @@
   "eventList":[],
   "managed":true,
   "name":"UseItem_ShrineOfEarth_17_Candle",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Parent_UseItem_Candle","path":"objects/Parent_UseItem_Candle/Parent_UseItem_Candle.yy",},"propertyId":{"name":"ForegroundSprite","path":"objects/Parent_UseItem_Candle/Parent_UseItem_Candle.yy",},"resource":{"name":"Shrine_Earth_17_CandleForeground","path":"sprites/Shrine_Earth_17_CandleForeground/Shrine_Earth_17_CandleForeground.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Shrine_Earth_17_CandleForeground",},
+  ],
   "parent":{
-    "name":"Item_Candle",
-    "path":"folders/Objects/SpecialCollisions/Item_Candle.yy",
+    "name":"CandleDarkness",
+    "path":"folders/Objects/CandleDarkness.yy",
   },
   "parentObjectId":{
     "name":"Parent_UseItem_Candle",

@@ -53,6 +53,7 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		}
 		camera_set_view_pos(view,global.CurrentTile.x * tileWidth,global.CurrentTile.y * tileHeight);
 		instance_deactivate_region(PrevousTileX * tileWidth, PrevousTileY * tileHeight, tileWidth, tileHeight,true,true)
+		instance_activate_layer("CandleDarkness")
 		instance_activate_region(TileX * tileWidth, TileY * tileHeight, tileWidth, tileHeight, true)
 		instance_activate_object(Entity_Parent_Player)
 		global.SwitchTracks = true;
