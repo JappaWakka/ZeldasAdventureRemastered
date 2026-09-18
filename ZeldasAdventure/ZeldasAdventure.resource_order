@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"CandleDarkness","order":7,"path":"folders/Objects/CandleDarkness.yy",},
     {"name":"ForestOfTorian","order":4,"path":"folders/Objects/DialogueTriggers/ForestOfTorian.yy",},
     {"name":"UbatoHills","order":5,"path":"folders/Objects/DialogueTriggers/UbatoHills.yy",},
     {"name":"Verna","order":6,"path":"folders/Objects/DialogueTriggers/Verna.yy",},
@@ -13,7 +14,6 @@
     {"name":"UbatoHills","order":1,"path":"folders/Objects/Solids/Overworld/UbatoHills.yy",},
     {"name":"Verna","order":2,"path":"folders/Objects/Solids/Overworld/Verna.yy",},
     {"name":"SpecialCollisions","order":4,"path":"folders/Objects/SpecialCollisions.yy",},
-    {"name":"CandleDarkness","order":7,"path":"folders/Objects/CandleDarkness.yy",},
     {"name":"SlipperyFloors","order":1,"path":"folders/Objects/SpecialCollisions/SlipperyFloors.yy",},
     {"name":"System","order":5,"path":"folders/Objects/System.yy",},
     {"name":"Warps","order":6,"path":"folders/Objects/Warps.yy",},
