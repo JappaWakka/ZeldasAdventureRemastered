@@ -25,7 +25,9 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		{
 			DestinationY = Entity_Collision_Player.y
 		}
-		instance_destroy(Entity_Pickup_ItemDrops)
+		instance_destroy(Entity_Pickup_ItemDrops_All)
+		instance_destroy(Entity_Pickup_ItemDrops_CanBe5Rubies)
+		instance_destroy(Entity_Pickup_ItemDrops_GuaranteedHeart)
 		var PrevousTileX = global.CurrentTile.x
 		var PrevousTileY = global.CurrentTile.y
 		

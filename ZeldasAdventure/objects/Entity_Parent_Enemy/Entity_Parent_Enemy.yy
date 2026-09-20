@@ -29,7 +29,12 @@
     {"$GMObjectProperty":"v2","%Name":"Power","filters":[],"listItems":[],"multiselect":false,"name":"Power","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"Defense","filters":[],"listItems":[],"multiselect":false,"name":"Defense","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"HitPoints","filters":[],"listItems":[],"multiselect":false,"name":"HitPoints","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"DropsItemOnDefeat","filters":[],"listItems":[],"multiselect":false,"name":"DropsItemOnDefeat","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"DropsItemOnDefeat","filters":[],"listItems":[
+        "\"All\"",
+        "\"AlwaysHeart\"",
+        "\"5RubiesOrNothing\"",
+        "\"Nothing\"",
+      ],"multiselect":false,"name":"DropsItemOnDefeat","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"All\"","varType":6,},
     {"$GMObjectProperty":"v2","%Name":"EnemySoundName","filters":[],"listItems":[],"multiselect":false,"name":"EnemySoundName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"SFX_Enemy_Tumblebot","path":"sounds/SFX_Enemy_Tumblebot/SFX_Enemy_Tumblebot.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"SFX_Enemy_Tumblebot","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"TriggerScriptName","filters":[],"listItems":[],"multiselect":false,"name":"TriggerScriptName","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"WeakToSpell","filters":[],"listItems":[],"multiselect":false,"name":"WeakToSpell","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":4,},

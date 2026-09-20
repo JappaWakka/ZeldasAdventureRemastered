@@ -241,9 +241,17 @@ if HitPoints <= 0
 	}
 	
 	instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Particle_EnemyDefeat)
-	if DropsItemOnDefeat = true
+	if DropsItemOnDefeat = "All"
 	{
-		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops)
+		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops_All)
+	}
+	else if DropsItemOnDefeat = "GuaranteedHeart"
+	{
+		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops_GuaranteedHeart)
+	}
+	else if DropsItemOnDefeat = "5RubiesOrNothing"
+	{
+		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops_CanBe5Rubies)
 	}
 	instance_destroy();
 	

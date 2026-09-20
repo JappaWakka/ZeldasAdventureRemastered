@@ -52,7 +52,9 @@ function Camera_Pan()
 		{
 						
 			//Deactivate old tile, activate new tile
-			instance_destroy(Entity_Pickup_ItemDrops)
+			instance_destroy(Entity_Pickup_ItemDrops_All)
+			instance_destroy(Entity_Pickup_ItemDrops_CanBe5Rubies)
+			instance_destroy(Entity_Pickup_ItemDrops_GuaranteedHeart)
 			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)
 			instance_activate_layer("CandleDarkness")
 			instance_activate_object(Entity_Parent_Player)

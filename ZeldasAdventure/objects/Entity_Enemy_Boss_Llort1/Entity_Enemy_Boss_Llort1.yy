@@ -18,6 +18,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"HitRadius_Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"32",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"HitRadius_Attack","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"KnockbackDistance","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.KnockbackDistances.None",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"DropsItemOnDefeat","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Nothing\"",},
   ],
   "parent":{
     "name":"Enemies",

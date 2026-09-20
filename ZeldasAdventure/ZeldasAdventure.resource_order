@@ -189,6 +189,8 @@
     {"name":"Entity_Pickup_Flute","order":11,"path":"objects/Entity_Pickup_Flute/Entity_Pickup_Flute.yy",},
     {"name":"Entity_Pickup_FullPitcher","order":1,"path":"objects/Entity_Pickup_FullPitcher/Entity_Pickup_FullPitcher.yy",},
     {"name":"Entity_Pickup_Harp","order":16,"path":"objects/Entity_Pickup_Harp/Entity_Pickup_Harp.yy",},
+    {"name":"Entity_Pickup_ItemDrops_CanBe5Rubies","order":5,"path":"objects/Entity_Pickup_ItemDrops_CanBe5Rubies/Entity_Pickup_ItemDrops_CanBe5Rubies.yy",},
+    {"name":"Entity_Pickup_ItemDrops_GuaranteedHeart","order":4,"path":"objects/Entity_Pickup_ItemDrops_GuaranteedHeart/Entity_Pickup_ItemDrops_GuaranteedHeart.yy",},
     {"name":"Entity_Pickup_JadeAmulet","order":10,"path":"objects/Entity_Pickup_JadeAmulet/Entity_Pickup_JadeAmulet.yy",},
     {"name":"Entity_Pickup_JadeRing","order":5,"path":"objects/Entity_Pickup_JadeRing/Entity_Pickup_JadeRing.yy",},
     {"name":"Entity_Pickup_Key","order":3,"path":"objects/Entity_Pickup_Key/Entity_Pickup_Key.yy",},
