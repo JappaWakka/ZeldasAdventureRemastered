@@ -18,7 +18,7 @@ if IsPlayerOnSameTile() = true
 			}
 			else if Item_FindIndex(Spells.Broadsword,1) = -1 and instance_exists(Entity_Pickup_Broadsword) = false
 			{
-				instance_create_layer(5938,1770,"Temporary_AbovePlayer",Entity_Pickup_Broadsword)
+				instance_create_layer(5938,1770,"Temporary_AboveForeground",Entity_Pickup_Broadsword)
 			}
 		}
 	}
@@ -60,7 +60,7 @@ if IsPlayerOnSameTile() = true
 				global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
 				if Item_FindIndex(Spells.Broadsword,1) = -1 and instance_exists(Entity_Pickup_Broadsword) = false
 				{
-					instance_create_layer(5938,1770,"Temporary_AbovePlayer",Entity_Pickup_Broadsword)
+					instance_create_layer(5938,1770,"Temporary_AboveForeground",Entity_Pickup_Broadsword)
 				}
 				Register_Add(Registers.SirBasil)
 			}

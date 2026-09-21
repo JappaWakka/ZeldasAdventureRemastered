@@ -23,7 +23,7 @@ function UseSpell_Any()
 	}
 	if global.RemasteredMode = false
 	{
-		instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Hitbox_Spell_Wand)
+		instance_create_layer(x,y,"Temporary_AboveForeground",Entity_Hitbox_Spell_Wand)
 	}
 	IsAttacking = true;
 	alarm[0] = d(0.25 * FrameRate)

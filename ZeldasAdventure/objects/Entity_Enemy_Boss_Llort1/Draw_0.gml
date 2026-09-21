@@ -24,7 +24,7 @@ if StartDeathAnimation = true
 	DamageOrImmune = "Damage"
 	if instance_number(Entity_Particle_BossDefeat) = 0
 	{
-		instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Particle_BossDefeat)
+		instance_create_layer(x,y,"Temporary_AboveForeground",Entity_Particle_BossDefeat)
 	}
 	
 }

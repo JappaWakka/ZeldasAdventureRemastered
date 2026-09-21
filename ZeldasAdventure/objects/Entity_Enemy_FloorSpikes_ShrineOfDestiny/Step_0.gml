@@ -220,7 +220,7 @@ else
 if HitPoints <= 0
 {
 	
-	instance_create_layer(x,y,"Temporary_AbovePlayer",Entity_Particle_EnemyDefeat)
+	instance_create_layer(x,y,"Temporary_AboveForeground",Entity_Particle_EnemyDefeat)
 	if DropsItemOnDefeat = "All"
 	{
 		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops_All)

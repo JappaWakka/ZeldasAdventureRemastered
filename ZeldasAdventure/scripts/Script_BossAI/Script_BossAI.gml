@@ -230,9 +230,9 @@ function BossAI_UseAttack(BossIndex)
 				BossAI_PlaySound(BossIndex)
 				var xOffset = -16
 				var yOffset = 32
-				var Projectile_1 = instance_create_layer(x+xOffset,y+yOffset,"Temporary_AbovePlayer",Entity_Projectile_Boss_Llort1)
+				var Projectile_1 = instance_create_layer(x+xOffset,y+yOffset,"Temporary_AboveForeground",Entity_Projectile_Boss_Llort1)
 				Projectile_1.direction = global.Directions.South - 45
-				var Projectile_2 = instance_create_layer(x+xOffset,y+yOffset,"Temporary_AbovePlayer",Entity_Projectile_Boss_Llort1)
+				var Projectile_2 = instance_create_layer(x+xOffset,y+yOffset,"Temporary_AboveForeground",Entity_Projectile_Boss_Llort1)
 				Projectile_2.direction = global.Directions.South + 45
 				EnemyState = EnemyStates.Attack
 			}

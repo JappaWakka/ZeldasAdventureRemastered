@@ -57,7 +57,6 @@
     {"name":"Tumblebot","order":15,"path":"folders/Sprites/Entities/Enemies/Tumblebot.yy",},
     {"name":"Zola","order":18,"path":"folders/Sprites/Entities/Enemies/Zola.yy",},
     {"name":"River","order":1,"path":"folders/Sprites/Entities/Enemies/Zola/River.yy",},
-    {"name":"TemporaryMapObjects","order":1,"path":"folders/Sprites/Entities/TemporaryMapObjects.yy",},
     {"name":"ForestOfOgham","order":1,"path":"folders/Sprites/Entities/NPCs/ForestOfOgham.yy",},
     {"name":"ForestOfTorian","order":2,"path":"folders/Sprites/Entities/NPCs/ForestOfTorian.yy",},
     {"name":"GreatWimbich","order":3,"path":"folders/Sprites/Entities/NPCs/GreatWimbich.yy",},
@@ -67,6 +66,7 @@
     {"name":"ShrineOfEarth","order":7,"path":"folders/Sprites/Entities/NPCs/ShrineOfEarth.yy",},
     {"name":"UbatoHills","order":12,"path":"folders/Sprites/Entities/NPCs/UbatoHills.yy",},
     {"name":"Verna","order":13,"path":"folders/Sprites/Entities/NPCs/Verna.yy",},
+    {"name":"TemporaryMapObjects","order":1,"path":"folders/Sprites/Entities/TemporaryMapObjects.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"libWebMPlayer","order":2,"path":"extensions/libWebMPlayer/libWebMPlayer.yy",},

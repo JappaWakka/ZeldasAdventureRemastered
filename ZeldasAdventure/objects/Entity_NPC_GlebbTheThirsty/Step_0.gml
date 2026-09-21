@@ -9,7 +9,7 @@ if IsPlayerOnSameTile() = true
 			{
 				if instance_exists(Entity_Pickup_VialOfWind) = false
 				{
-					instance_create_layer(3696,5568,"Temporary_AbovePlayer",Entity_Pickup_VialOfWind)
+					instance_create_layer(3696,5568,"Temporary_AboveForeground",Entity_Pickup_VialOfWind)
 				}
 			}
 			else
@@ -18,7 +18,7 @@ if IsPlayerOnSameTile() = true
 				{
 					if instance_exists(Entity_Pickup_EmptyPitcher) = false
 					{
-						instance_create_layer(3680,5616,"Temporary_AbovePlayer",Entity_Pickup_EmptyPitcher)
+						instance_create_layer(3680,5616,"Temporary_AboveForeground",Entity_Pickup_EmptyPitcher)
 						global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_BeforeFill
 						global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 					}
@@ -37,7 +37,7 @@ if IsPlayerOnSameTile() = true
 									global.CurrentItem[1] = -1
 									if instance_exists(Entity_Pickup_VialOfWind) = false
 									{
-										instance_create_layer(3696,5568,"Temporary_AbovePlayer",Entity_Pickup_VialOfWind)
+										instance_create_layer(3696,5568,"Temporary_AboveForeground",Entity_Pickup_VialOfWind)
 										global.CurrentDialogue_Asset = Dialog_PlainOfAndor_20_GlebbTheThirsty_AfterFill
 										global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 									}

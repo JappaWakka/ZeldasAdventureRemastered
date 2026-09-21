@@ -77,7 +77,7 @@ if IsPlayerOnSameTile() = true
 			{
 				if Item_FindIndex(Treasures.Flute,0) = -1 and instance_exists(Entity_Pickup_Flute) = false
 				{
-					instance_create_layer(4415,3288,"Temporary_AbovePlayer",Entity_Pickup_Flute)
+					instance_create_layer(4415,3288,"Temporary_AboveForeground",Entity_Pickup_Flute)
 				}
 				if YvonneSings = true
 				{
@@ -92,7 +92,7 @@ if IsPlayerOnSameTile() = true
 			{
 				if Item_FindIndex(Treasures.Flute,0) = -1 and instance_exists(Entity_Pickup_Flute) = false
 				{
-					instance_create_layer(4415,3288,"Temporary_AbovePlayer",Entity_Pickup_Flute)
+					instance_create_layer(4415,3288,"Temporary_AboveForeground",Entity_Pickup_Flute)
 				}
 				instance_destroy()
 			}
