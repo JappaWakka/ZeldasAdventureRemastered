@@ -33,15 +33,15 @@
 			"GameSubMenu": {
 				"ToggleOff": "Non",
 				"ToggleOn": "Oui",
+				"RemasteredMode": "Mode Remastérisé",
+				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor.\nFonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
 				"WindowMode": "Écran Mode",
 				"Window": "Fenêtré",
 				"Full": "Plein",
+				"AspectRatio": "Rapport d'aspect",
 				"Resolution": "Résolution",
-				"RemasteredMode": "Mode Remastérisé",
-				"RemasteredModeHint": "Action 1 = Utiliser une arme, Action 2 = Utiliser un trésor.\nFonction restaurée, le bouton Action 2 remplace l'objet Ruby, etc.",
-				"Subtitles": "Sous-titres",
 				"Language": "Langue",
-				"AspectRatio": "Rapport d'aspect"
+				"Subtitles": "Sous-titres"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Général",

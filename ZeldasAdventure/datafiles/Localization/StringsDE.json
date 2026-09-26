@@ -33,15 +33,15 @@
 			"GameSubMenu": {
 				"ToggleOff": "Aus",
 				"ToggleOn": "An",
+				"RemasteredMode": "Remastered-Modus",
+				"RemasteredModeHint": "Aktion 1 = Waffe benutzen, Aktion 2 = Schatz benutzen.\nGeschnittene Inhalte wiederhergestellt, Aktion Taste 2\nwechseln, Rubine, Gegenstände usw.",
 				"WindowMode": "Bildschirm",
 				"Window": "Fenster",
 				"Full": "Vollbild",
+				"AspectRatio": "Bildformat",
 				"Resolution": "Auflösung",
-				"RemasteredMode": "Remastered-Modus",
-				"RemasteredModeHint": "Aktion 1 = Waffe benutzen, Aktion 2 = Schatz benutzen.\nGeschnittene Inhalte wiederhergestellt, Aktion Taste 2\nwechseln, Rubine, Gegenstände usw.",
-				"Subtitles": "Untertitel",
 				"Language": "Sprache",
-				"AspectRatio": "Bildformat"
+				"Subtitles": "Untertitel"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Gesamtlautstärke",
@@ -783,18 +783,18 @@
 				},
 				"Merribal": {
 					"FirstSong": {
-						"Line01": "Merribal: Mögen alle, die mein Lied hören,",
-						"Line02": "wissen, dass Zelda die mutig und stark ist,",
-						"Line03": "dieses Land von aller Trauer befreien wird",
-						"Line04": "und auch von Ganon, dem Prinzen des Bösen.",
-						"Line05": "Auch von Ganon, dem Prinzen des Bösen."
+						"Line01": "Merribal: Lasst alle, die dies Lied hier hören",
+						"Line02": "wissen: Zelda lässt sich nicht zerstören.",
+						"Line03": "Mutig und stark macht sie das Land frei,",
+						"Line04": "von Kummer und Leid - und Ganon dabei,",
+						"Line05": "ja, Ganon, der Fürst des Bösen, ist auch dabei."
 					},
 					"SecondSong": {
-						"Line01": "Merribal: Es war einmal eine Prinzessin, jung und tapfer,",
-						"Line02": "die dieses Land von Schurken und Gaunern befreit.",
-						"Line03": "Und nach Norden sollte sie nun gehen",
-						"Line04": "um zu finden, was sie sucht und wissen möchte.",
-						"Line05": "Um zu finden, was sie sucht und wissen möchte."
+						"Line01": "Es war eine Prinzessin jung und fein,",
+						"Line02": "mutig und tapfer, so sollte sie sein.",
+						"Line03": "Sie trieb die Schurken und Halunken fort,",
+						"Line04": "um zu finden, was sie sucht, im Norden dort.",
+						"Line05": "Um zu finden, was sie sucht, im Norden dort."
 					},
 					"BeautifulWeather": {
 						"Line01": "Merribal: Was für ein schönes Wetter wir doch haben, Zelda,",

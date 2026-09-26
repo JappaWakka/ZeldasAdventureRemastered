@@ -33,15 +33,15 @@
 			"GameSubMenu": {
 				"ToggleOff": "Off",
 				"ToggleOn": "On",
+				"RemasteredMode": "Remastered Mode",
+				"RemasteredModeHint": "Action 1 = Use Weapon, Action 2 = Use Treasure.\nRestored cut content, Action Button 2 replaces Ruby\nitem etc.",
 				"WindowMode": "Window Mode",
 				"Window": "Window",
 				"Full": "Full",
+				"AspectRatio": "Aspect Ratio",
 				"Resolution": "Resolution",
-				"RemasteredMode": "Remastered Mode",
-				"RemasteredModeHint": "Action 1 = Use Weapon, Action 2 = Use Treasure.\nRestored cut content, Action Button 2 replaces Ruby\nitem etc.",
-				"Subtitles": "Subtitles",
 				"Language": "Language",
-				"AspectRatio": "Aspect Ratio"
+				"Subtitles": "Subtitles"
 			},
 			"AudioSubMenu": {
 				"MasterVolume": "Master",
@@ -791,7 +791,7 @@
 					},
 					"SecondSong": {
 						"Line01": "Merribal: There was a Princess, young and brave,",
-						"Line02": "who rid this land of varlet and knave",
+						"Line02": "who rid this land of varlet and knave.",
 						"Line03": "And to the north, she should now go",
 						"Line04": "to find what she seeks and wants to know.",
 						"Line05": "To find what she seeks and wants to know."
