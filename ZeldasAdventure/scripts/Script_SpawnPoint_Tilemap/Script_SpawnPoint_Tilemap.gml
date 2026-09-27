@@ -261,17 +261,17 @@ function Init_SpawnPoints_TileMap()
 	
 	global.SpawnPoints[9][16] = "Spawn_Overworld";
 	global.SpawnPoints[10][16] = "Spawn_Overworld";
-	global.SpawnPoints[11][15] = "Spawn_Overworld";
-	global.SpawnPoints[12][15] = "Spawn_Overworld";
+	global.SpawnPoints[11][16] = "Spawn_Overworld";
+	global.SpawnPoints[12][16] = "Spawn_Overworld";
 	global.SpawnPoints[13][16] = "Spawn_Overworld";
 	global.SpawnPoints[14][16] = "Spawn_Overworld";
 	
-	global.SpawnPoints[16][15] = "Spawn_Overworld";
-	global.SpawnPoints[17][15] = "Spawn_Overworld";
-	global.SpawnPoints[18][15] = "Spawn_Overworld";
-	global.SpawnPoints[19][15] = "Spawn_Overworld";
-	global.SpawnPoints[20][15] = "Spawn_Overworld";
-	global.SpawnPoints[21][15] = "Spawn_Overworld";
+	global.SpawnPoints[16][16] = "Spawn_Overworld";
+	global.SpawnPoints[17][16] = "Spawn_Overworld";
+	global.SpawnPoints[18][16] = "Spawn_Overworld";
+	global.SpawnPoints[19][16] = "Spawn_Overworld";
+	global.SpawnPoints[20][16] = "Spawn_Overworld";
+	global.SpawnPoints[21][16] = "Spawn_Overworld";
 	global.SpawnPoints[22][16] = "Spawn_Overworld";
 	
 	global.SpawnPoints[24][16] = "Spawn_Overworld";

@@ -59,7 +59,7 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		instance_activate_region(TileX * tileWidth, TileY * tileHeight, tileWidth, tileHeight, true)
 		instance_activate_object(Entity_Parent_Player)
 		global.SwitchTracks = true;
-		
+				
 		global.CameraIsPanning = false;
 		
 		return true;
@@ -74,7 +74,14 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		{
 			Entity_Collision_Player.Acceleration = PlayerBaseSpeed * Entity_Collision_Player.SpeedMultiplier
 		}
-		
+		with Obj_GameManager
+		{
+			if global.RemasteredMode = true
+			{
+				global.EnemyCannotTouchEdge = true
+				alarm_set(0,75)
+			}
+		}
 		if instance_exists(Entity_Parent_Enemy_Path) = true
 		{
 			with Entity_Parent_Enemy_Path
