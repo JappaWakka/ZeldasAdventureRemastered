@@ -1,4 +1,4 @@
-function Settings_Save()
+function Settings_Save(FirstSetup = false)
 {
 	ini_open(global.SaveDataFileName)
 	if ini_section_exists("Options")
@@ -13,6 +13,14 @@ function Settings_Save()
 		ini_write_real("Options",	 "VolumeMusic",		global.VolumeMusic);
 		ini_write_real("Options",	 "VolumeSoundFX",	global.VolumeSoundFX);
 		ini_write_real("Options",	 "VolumeDialogue",	global.VolumeDialogue);
+		if FirstSetup = true
+		{
+			ini_write_real("Options", "FirstSetup",	1);
+		}
+		else
+		{
+			ini_write_real("Options", "FirstSetup",	global.FirstSetup);
+		}
 	}
 	ini_close()
 	

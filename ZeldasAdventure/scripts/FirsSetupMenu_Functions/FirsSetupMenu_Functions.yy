@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"FirsSetupMenu_Functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FirsSetupMenu_Functions",
+  "parent":{
+    "name":"MenuFunctions",
+    "path":"folders/Scripts/MenuFunctions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -13,11 +13,23 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 		case 2: //Settings - Game
 			if TextIndex = 0
 			{
+				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.RemasteredMode} //"Remastered Mode"
+				if OptionIndex = 0 {return Localize.UI.SettingsMenu.GameSubMenu.ToggleOff} //"Off"
+				if OptionIndex = 1 {return Localize.UI.SettingsMenu.GameSubMenu.ToggleOn} //"On"
+			}
+			if TextIndex = 1
+			{
 				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.WindowMode} //"Window Mode"
 				if OptionIndex = 0  {return Localize.UI.SettingsMenu.GameSubMenu.Window} //"Window"
 				if OptionIndex = 1  {return Localize.UI.SettingsMenu.GameSubMenu.Full} //"Full"
 			}
-			if TextIndex = 1
+			if TextIndex = 2
+			{
+				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.AspectRatio} //"Aspect Ratio"
+				if OptionIndex = 0 {return "NTSC"}
+				if OptionIndex = 1 {return "PAL"}
+			}
+			if TextIndex = 3
 			{
 				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.Resolution} //"Resolution"
 				if OptionIndex = 0 {return string_concat("1x (384x", (240 + global.AspectRatio), ")")}
@@ -27,18 +39,6 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 				if OptionIndex = 4 {return string_concat("5x (1920x", (240 + global.AspectRatio) * 5, ")")}
 				if OptionIndex = 5 {return string_concat("6x (2304x", (240 + global.AspectRatio) * 6, ")")}
 			}
-			if TextIndex = 2
-			{
-				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.RemasteredMode} //"Remastered Mode"
-				if OptionIndex = 0 {return Localize.UI.SettingsMenu.GameSubMenu.ToggleOff} //"Off"
-				if OptionIndex = 1 {return Localize.UI.SettingsMenu.GameSubMenu.ToggleOn} //"On"
-			}
-			if TextIndex = 3 
-			{
-				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.Subtitles} //"Subtitles"
-				if OptionIndex = 0 {return Localize.UI.SettingsMenu.GameSubMenu.ToggleOff} //"Off"
-				if OptionIndex = 1 {return Localize.UI.SettingsMenu.GameSubMenu.ToggleOn} //"On"
-			}
 			if TextIndex = 4
 			{
 				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.Language} //"Language"
@@ -46,9 +46,9 @@ function UI_SettingsMenu_Text(MenuIndex,TextIndex,OptionIndex = -1)
 			}
 			if TextIndex = 5
 			{
-				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.AspectRatio} //"Aspect Ratio"
-				if OptionIndex = 0 {return "NTSC"}
-				if OptionIndex = 1 {return "PAL"}
+				if OptionIndex = -1 {return Localize.UI.SettingsMenu.GameSubMenu.Subtitles} //"Subtitles"
+				if OptionIndex = 0 {return Localize.UI.SettingsMenu.GameSubMenu.ToggleOff} //"Off"
+				if OptionIndex = 1 {return Localize.UI.SettingsMenu.GameSubMenu.ToggleOn} //"On"
 			}
 			else if TextIndex = 6 {return Localize.UI.SettingsMenu.Back} //"Back"
 			break;

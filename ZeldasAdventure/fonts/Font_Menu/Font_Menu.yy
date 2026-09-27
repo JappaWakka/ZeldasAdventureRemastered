@@ -228,7 +228,7 @@
   "regenerateBitmap":false,
   "resourceType":"GMFont",
   "resourceVersion":"2.0",
-  "sampleText":"abcdef ABCDEF\r\n0123456789 .,<>\"'&!?\r\nthe quick brown fox jumps over the lazy dog\r\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\r\nDefault character: ▯ (9647)\r\nœ",
+  "sampleText":"abcdef ABCDEF\r\n0123456789 .,<>\"'&!?\r\nthe quick brown fox jumps over the lazy dog\r\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\r\nDefault character: ▯ (9647)\r\nœ ",
   "sdfSpread":8,
   "size":12.0,
   "styleName":"Regular",

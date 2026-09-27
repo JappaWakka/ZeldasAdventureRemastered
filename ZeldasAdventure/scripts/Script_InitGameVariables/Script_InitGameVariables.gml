@@ -1,5 +1,15 @@
 function InitGameVariables()
 {
+	//Menu Variables
+	enum Menu_ElementType
+	{
+		ScriptRunner,
+		PageTransfer,
+		Toggle,
+		Shift,
+		Slider,
+		Input
+	}
 	//Save File Variables
 	global.SavePlayerNames = array_create(3,"")
 	
@@ -116,6 +126,7 @@ function InitGameVariables()
 	global.VolumeMusic = ini_read_real("Options", "VolumeMusic", 1);
 	global.VolumeSoundFX = ini_read_real("Options", "VolumeSoundFX", 1);
 	global.VolumeDialogue = ini_read_real("Options", "VolumeDialogue", 1);
+	global.FirstSetup = bool(ini_read_real("Options", "FirstSetup", 0))
 	
 	if ini_section_exists("Options")
 	{
@@ -129,6 +140,7 @@ function InitGameVariables()
 		ini_write_real("Options",	 "VolumeMusic",		global.VolumeMusic);
 		ini_write_real("Options",	 "VolumeSoundFX",	global.VolumeSoundFX);
 		ini_write_real("Options",	 "VolumeDialogue",	global.VolumeDialogue);
+		ini_write_real("Options",	 "FirstSetup",		real(global.FirstSetup));
 	}
 	
 	audio_group_set_gain(AudioGroup_Music,global.VolumeMusic * global.VolumeMaster,0);

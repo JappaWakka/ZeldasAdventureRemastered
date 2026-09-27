@@ -28,7 +28,16 @@ if audio_group_is_loaded(AudioGroup_Music) && audio_group_is_loaded(AudioGroup_S
 		{
 			window_center()
 		}
-		
-		room_goto(Room_Cutscene_Logos)
+		//First setup, skip if already done
+		if global.FirstSetup = false
+		{
+			global.FadeProgress = 1
+			global.FadeAlpha = 255
+			room_goto(Room_FirstSetup)
+		}
+		else
+		{
+			room_goto(Room_Cutscene_Logos)
+		}
 	}
 }

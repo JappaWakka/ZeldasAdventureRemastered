@@ -8,16 +8,6 @@ enum Menu_Page
 	NameInput
 }
 
-enum Menu_ElementType
-{
-	ScriptRunner,
-	PageTransfer,
-	Toggle,
-	Shift,
-	Slider,
-	Input
-}
-
 enum SaveGames
 {
 	Save1,
@@ -53,12 +43,12 @@ for (var i = 0; i <= array_length(Obj_LocalizationManager.AvailableLanguagesStru
 }
 
 ds_Menu_Game = CreateMenuPage(
-["Window Mode",			Menu_ElementType.Toggle,			ChangeWindowMode,				real(global.Fullscreen),				["Window","Full"]					],
-["Resolution",			Menu_ElementType.Shift,				ChangeResolution,				global.WindowScale - 1,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
 ["Remastered Mode",		Menu_ElementType.Toggle,			ChangeRemasteredModeEnabled,	real(global.RemasteredMode),			["Off","On"]						],
-["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			real(global.ShowSubtitles),				["Off","On"]						],
-["Language",			Menu_ElementType.Shift,				ChangeLanguage,					global.CurrentLanguage,					LanguageNameArray					],
+["Window Mode",			Menu_ElementType.Toggle,			ChangeWindowMode,				real(global.Fullscreen),				["Window","Full"]					],
 ["Aspect Ratio",		Menu_ElementType.Shift,				ChangeAspectRatio,				GetAspectRatio(),						["NTSC","PAL"]						],
+["Resolution",			Menu_ElementType.Shift,				ChangeResolution,				global.WindowScale - 1,					["1x (384x240)","2x (768x480)","3x (1152x720)","4x (1536x960)","5x (1920x1200)","6x (2304x1440)"]],
+["Language",			Menu_ElementType.Shift,				ChangeLanguage,					global.CurrentLanguage,					LanguageNameArray					],
+["Subtitles",			Menu_ElementType.Toggle,			ChangeSubtitlesEnabled,			real(global.ShowSubtitles),				["Off","On"]						],
 ["Back",				Menu_ElementType.PageTransfer,		Menu_Page.Settings				]
 );
 

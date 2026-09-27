@@ -7,6 +7,15 @@
 		"LanguageNameLocal": "Deutsch" //The name of the language, in that language
 	},
 	"UI": {
+		"FirstSetupMenu": {
+			"PreferencesInstructions": "Please set your desired preferences",
+			"RemasteredModeQuestion": "Do you want to use Remastered Mode?",
+			"RemasteredModeFeatureList": "• Separate Item Buttons: Action Button 1 = Use Weapon, Action Button 2 = Use Treasure.\n• Action Button 2 functions as the Ruby item when near something buyable.\n• Restored cut content like dialogue and additional NPC animations.\n• You no longer deal melee damage when attacking with a different Weapon than the Wand.\n• Enemies can't reach the edge of the screen for about 1.5 seconds upon entering.",
+			"CurrentMode": "Current Mode",
+			"OptionClassicMode": "Classic",
+			"OptionRemasteredMode": "Remastered",
+			"Confirm": "Confirm"
+		},
 		"MainMenu": {
 			"PlayButton": "START",
 			"DeleteButton": "LÖSCHEN",

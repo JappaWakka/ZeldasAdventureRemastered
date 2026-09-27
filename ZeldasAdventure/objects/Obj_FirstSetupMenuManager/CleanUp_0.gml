@@ -1,0 +1,2 @@
+ds_grid_destroy(ds_Menu_SettingsSetup)
+ds_grid_destroy(ds_Menu_RemasteredModeSetup)
