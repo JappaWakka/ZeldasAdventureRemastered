@@ -8,13 +8,13 @@
 	},
 	"UI": {
 		"FirstSetupMenu": {
-			"PreferencesInstructions": "Please set your desired preferences",
-			"RemasteredModeQuestion": "Do you want to use Remastered Mode?",
-			"RemasteredModeFeatureList": "• Separate Item Buttons: Action Button 1 = Use Weapon, Action Button 2 = Use Treasure.\n• Action Button 2 functions as the Ruby item when near something buyable.\n• Restored cut content like dialogue and additional NPC animations.\n• You no longer deal melee damage when attacking with a different Weapon than the Wand.\n• Enemies can't reach the edge of the screen for about 1.5 seconds upon entering.",
-			"CurrentMode": "Current Mode",
+			"PreferencesInstructions": "Bitte lege die Einstellungen fest",
+			"RemasteredModeQuestion": "Remastered-Modus aktivieren?",
+			"RemasteredModeFeatureList": "• Einzelne Aktionstasten: Aktion 1 = Waffe benutzen, Aktion 2 = Schatz benutzen.\n• Aktion 2 fungiert als Rubin-Gegenstand, wenn man sich in der Nähe eines käuflichen Gegenstands befindet.\n• Entfernte Inhalte wie Dialoge und zusätzliche NPC-Animationen wurden wiederhergestellt.\n• Du verursachst keinen Nahkampfschaden mehr, wenn du mit einer anderen Waffe als dem Zauberstab angreifst.\n• Gegner können nach dem Betreten des Bildschirms etwa 1,5 Sekunden lang den Bildschirmrand nicht erreichen.",
+			"CurrentMode": "Aktueller Modus",
 			"OptionClassicMode": "Classic",
 			"OptionRemasteredMode": "Remastered",
-			"Confirm": "Confirm"
+			"Confirm": "Bestätigen"
 		},
 		"MainMenu": {
 			"PlayButton": "START",
