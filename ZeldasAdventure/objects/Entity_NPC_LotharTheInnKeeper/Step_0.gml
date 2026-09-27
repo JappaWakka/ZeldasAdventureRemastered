@@ -4,7 +4,6 @@ if IsPlayerOnSameTile() = true and global.CameraIsFading = false
 	if Register_Registered(Registers.LotharTheInnKeeper_Intro) = false
 	{
 		global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_LotharTheInnKeeper_Intro
-		Audio_StopMusic()
 		global.CurrentDialogue_ID = audio_play_sound_relative(global.CurrentDialogue_Asset,500,false)
 		Register_Add(Registers.LotharTheInnKeeper_Intro,true)
 	}
@@ -35,16 +34,6 @@ if IsPlayerOnSameTile() = true and global.CameraIsFading = false
 				audio_pause_sound(global.CurrentDialogue_ID)
 			}
 			global.Subtitle = ""
-		}
-	}
-	else
-	{
-		if global.CameraIsFading = false
-		{
-			if global.CurrentMusic_Name = "Silence"
-			{
-				global.SwitchTracks = true
-			}
 		}
 	}
 }

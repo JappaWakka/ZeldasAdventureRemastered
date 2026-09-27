@@ -5,7 +5,6 @@ if IsPlayerOnSameTile() = true
 		if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 		{
 			global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_KrebbTheWeary_Dagger
-			Audio_StopMusic()
 			global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_KrebbTheWeary, global.CurrentDialogue_Asset,500,false)
 			Register_Add(Registers.KrebbTheWeary,true)
 		}
@@ -43,13 +42,6 @@ if IsPlayerOnSameTile() = true
 			if instance_exists(Entity_Pickup_Dagger) = false and Item_FindIndex(Spells.Dagger,1) = -1
 			{
 				instance_create_layer(4064,5192,"Items_BelowForeground",Entity_Pickup_Dagger)
-			}
-		}
-		if global.CameraIsFading = false
-		{
-			if global.CurrentMusic_Name = "Silence"
-			{
-				global.SwitchTracks = true
 			}
 		}
 	}

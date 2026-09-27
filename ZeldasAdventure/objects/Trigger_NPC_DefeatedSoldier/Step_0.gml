@@ -5,7 +5,6 @@ if IsPlayerOnSameTile() = true
 		if global.CurrentDialogue_Asset = Dialog_None and place_meeting(x,y,Entity_Player)
 		{
 			global.CurrentDialogue_Asset = Dialog_PlainOfAndor_MobilinsHeadInn_DefeatedSoldier
-			Audio_StopMusic()
 			global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_DefeatedSoldier, global.CurrentDialogue_Asset,500,false)
 			Register_Add(Registers.DefeatedSoldier)
 		}
@@ -33,16 +32,6 @@ if IsPlayerOnSameTile() = true
 				audio_pause_sound(global.CurrentDialogue_ID)
 			}
 			global.Subtitle = ""
-		}
-	}
-	else
-	{
-		if global.CameraIsFading = false
-		{
-			if global.CurrentMusic_Name = "Silence"
-			{
-				global.SwitchTracks = true
-			}
 		}
 	}
 }

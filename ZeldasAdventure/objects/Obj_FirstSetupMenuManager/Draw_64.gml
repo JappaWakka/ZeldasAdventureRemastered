@@ -14,7 +14,7 @@ var StartPosition =
 }
 if PageIndex = SetupMenu_Page.RemasteredModeSetup
 {
-	StartPosition.x = (ViewWidth / 2) - 16
+	StartPosition.x = (ViewWidth / 2) - 13
 	StartPosition.y = ViewHeight - (3.75 * SeparationDistance.y)
 }
 //Draw Background

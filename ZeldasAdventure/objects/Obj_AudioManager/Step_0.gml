@@ -23,12 +23,15 @@ if global.Initialized = true //Check if all the Audiogroups have been loaded
 	}
 	else
 	{
-		if BGAudio_Track != -1
+		if global.CurrentMusic_Asset != Music_Silence
 		{
-			var BGAudio_Position = audio_sound_get_track_position(BGAudio_Track);
-			if (BGAudio_Position > BGAudio_TotalLength) //If the playback position is larger than the intro + the loop, it's in the buffer area of the audio track
+			if BGAudio_Track != -1
 			{
-				audio_sound_set_track_position(BGAudio_Track, BGAudio_Position - BGAudio_LoopLength); //Subtract the length of the loop from the current playback position
+				var BGAudio_Position = audio_sound_get_track_position(BGAudio_Track);
+				if (BGAudio_Position > BGAudio_TotalLength) //If the playback position is larger than the intro + the loop, it's in the buffer area of the audio track
+				{
+					audio_sound_set_track_position(BGAudio_Track, BGAudio_Position - BGAudio_LoopLength); //Subtract the length of the loop from the current playback position
+				}
 			}
 		}
 	}

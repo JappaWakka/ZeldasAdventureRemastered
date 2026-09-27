@@ -3,6 +3,20 @@ delta_step()
 
 if room = Room_Overworld
 {
+	if global.CurrentDialogue_Asset = Dialog_None
+	{
+		if IsMenuVisible() = false and global.CurrentMusic_Asset = Music_Silence
+		{
+			global.SwitchTracks = true
+		}
+	}
+	else
+	{
+		if IsMenuVisible() = false and global.CurrentMusic_Asset != Music_Silence
+		{
+			Audio_StopMusic()
+		}
+	}
 	if global.HasSpawned = false
 	{
 		WarpToLocation(global.PlayerSpawn)
