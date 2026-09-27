@@ -209,10 +209,10 @@ if global.EnemyCannotTouchEdge = false
 else
 {
 	
-	if x + 52 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
-	y + 52 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
-	x - 52 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
-	y - 52 <= global.CurrentTile.y * tileHeight && vspeed < 0
+	if x + 58 >= global.CurrentTile.x * tileWidth + tileWidth && hspeed > 0 or
+	y + 58 >= global.CurrentTile.y * tileHeight + tileHeight && vspeed > 0 or
+	x - 58 <= global.CurrentTile.x * tileWidth && hspeed < 0 or
+	y - 58 <= global.CurrentTile.y * tileHeight && vspeed < 0
 	{
 		if EnemyState != EnemyStates.Damaged
 		{
