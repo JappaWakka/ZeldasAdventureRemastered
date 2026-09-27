@@ -18,6 +18,10 @@ switch room
 		FileName = working_directory + "Video/Cutscene_Shrine_Earth.webm";
 		break;
 		
+	case Room_Cutscene_Shrine_Illusion:
+		FileName = working_directory + "Video/Cutscene_Shrine_Illusion.webm";
+		break;
+		
 	case Room_Cutscene_Tutorial:
 		FileName = working_directory + "Video/Cutscene_Tutorial.webm";
 		break;

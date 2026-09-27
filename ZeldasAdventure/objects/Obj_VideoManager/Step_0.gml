@@ -31,6 +31,9 @@ if (webm_exists(CurrentVideo))
 			case Room_Cutscene_Shrine_Earth:
 				global.Subtitle = Subtitle_Cutscene_Shrine_Earth(VideoPosition)
 				break;
+			case Room_Cutscene_Shrine_Illusion:
+				global.Subtitle = Subtitle_Cutscene_Shrine_Illusion(VideoPosition)
+				break;
 			default:
 				global.Subtitle = ""
 				break;
@@ -59,6 +62,13 @@ if (webm_exists(CurrentVideo))
 			case Room_Cutscene_Shrine_Earth:
 				global.StartCutscene = ""
 				global.PlayerSpawn = "ShrineOfEarth_Outside_Warp"
+				global.FadeProgress = 1
+				global.FadeAlpha = 255
+				room_goto(Room_Overworld);
+				break;
+			case Room_Cutscene_Shrine_Illusion:
+				global.StartCutscene = ""
+				global.PlayerSpawn = "ShrineOfIllusion_Outside_Warp"
 				global.FadeProgress = 1
 				global.FadeAlpha = 255
 				room_goto(Room_Overworld);

@@ -227,6 +227,12 @@
 				"Line02": "Le temps presse.\nVous devez vous rendre à un festival.",
 				"Line03": "La rumeur dit qu'il se trouve\ndans la grande forêt au nord.",
 				"Line04": "Et rappelez-vous,\ntout n'est pas ce qu'il paraît"
+			},
+			"ShrineOfIllusion": {
+				"Line01": "Gaspra: Sweet victory,",
+				"Line02": "but your journey has barely begun, my child.",
+				"Line03": "Beware of dangerous waters that await you,",
+				"Line04": "and watch for the mists high in the mountains."
 			}
 		},
 		"Dialogue": {

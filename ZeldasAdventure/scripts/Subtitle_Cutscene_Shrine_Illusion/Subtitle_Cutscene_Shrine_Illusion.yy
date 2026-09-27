@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Subtitle_Cutscene_Shrine_Illusion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_Cutscene_Shrine_Illusion",
+  "parent":{
+    "name":"Cutscenes",
+    "path":"folders/Scripts/Localization/Subtitles/Cutscenes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

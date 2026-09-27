@@ -930,6 +930,7 @@
     {"id":{"name":"Room_Cutscene_Intro","path":"rooms/Room_Cutscene_Intro/Room_Cutscene_Intro.yy",},},
     {"id":{"name":"Room_Cutscene_Logos","path":"rooms/Room_Cutscene_Logos/Room_Cutscene_Logos.yy",},},
     {"id":{"name":"Room_Cutscene_Shrine_Earth","path":"rooms/Room_Cutscene_Shrine_Earth/Room_Cutscene_Shrine_Earth.yy",},},
+    {"id":{"name":"Room_Cutscene_Shrine_Illusion","path":"rooms/Room_Cutscene_Shrine_Illusion/Room_Cutscene_Shrine_Illusion.yy",},},
     {"id":{"name":"Room_Cutscene_Tutorial","path":"rooms/Room_Cutscene_Tutorial/Room_Cutscene_Tutorial.yy",},},
     {"id":{"name":"Room_FirstSetup","path":"rooms/Room_FirstSetup/Room_FirstSetup.yy",},},
     {"id":{"name":"Room_InitGame","path":"rooms/Room_InitGame/Room_InitGame.yy",},},
@@ -1349,6 +1350,7 @@
     {"id":{"name":"Stopwatch","path":"scripts/Stopwatch/Stopwatch.yy",},},
     {"id":{"name":"Subtitle_Cutscene_Intro","path":"scripts/Subtitle_Cutscene_Intro/Subtitle_Cutscene_Intro.yy",},},
     {"id":{"name":"Subtitle_Cutscene_Shrine_Earth","path":"scripts/Subtitle_Cutscene_Shrine_Earth/Subtitle_Cutscene_Shrine_Earth.yy",},},
+    {"id":{"name":"Subtitle_Cutscene_Shrine_Illusion","path":"scripts/Subtitle_Cutscene_Shrine_Illusion/Subtitle_Cutscene_Shrine_Illusion.yy",},},
     {"id":{"name":"Subtitle_Cutscene_Tutorial","path":"scripts/Subtitle_Cutscene_Tutorial/Subtitle_Cutscene_Tutorial.yy",},},
     {"id":{"name":"Subtitle_ForestOfFindo_03_Toadstool","path":"scripts/Subtitle_ForestOfFindo_03_Toadstool/Subtitle_ForestOfFindo_03_Toadstool.yy",},},
     {"id":{"name":"Subtitle_ForestOfOgham_02_OghamMerchant","path":"scripts/Subtitle_ForestOfOgham_02_OghamMerchant/Subtitle_ForestOfOgham_02_OghamMerchant.yy",},},
@@ -3343,6 +3345,7 @@
     {"roomId":{"name":"Room_Cutscene_Shrine_Earth","path":"rooms/Room_Cutscene_Shrine_Earth/Room_Cutscene_Shrine_Earth.yy",},},
     {"roomId":{"name":"Room_Cutscene_Tutorial","path":"rooms/Room_Cutscene_Tutorial/Room_Cutscene_Tutorial.yy",},},
     {"roomId":{"name":"Room_FirstSetup","path":"rooms/Room_FirstSetup/Room_FirstSetup.yy",},},
+    {"roomId":{"name":"Room_Cutscene_Shrine_Illusion","path":"rooms/Room_Cutscene_Shrine_Illusion/Room_Cutscene_Shrine_Illusion.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

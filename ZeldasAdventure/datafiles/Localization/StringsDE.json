@@ -224,6 +224,12 @@
 				"Line02": "Beeil dich. Du musst zu einem Ort der Feste reisen.",
 				"Line03": "Gerüchten zufolge befindet er sich im großen Wald im Norden.",
 				"Line04": "Und denke daran: Nicht alles ist so, wie es scheint."
+			},
+			"ShrineOfIllusion": {
+				"Line01": "Gaspra: Sweet victory,",
+				"Line02": "but your journey has barely begun, my child.",
+				"Line03": "Beware of dangerous waters that await you,",
+				"Line04": "and watch for the mists high in the mountains."
 			}
 		},
 		"Dialogue": {
