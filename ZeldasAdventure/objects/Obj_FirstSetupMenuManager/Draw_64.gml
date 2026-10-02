@@ -16,6 +16,10 @@ if PageIndex = SetupMenu_Page.RemasteredModeSetup
 {
 	StartPosition.x = (ViewWidth / 2) - 13
 	StartPosition.y = ViewHeight - (3.75 * SeparationDistance.y)
+	if string_lower(Localize.Meta.LanguageNameNative) = "french"
+	{
+		StartPosition.x -= 11
+	}
 }
 //Draw Background
 MenuBackground = Sprite_SettingsMenu_Background

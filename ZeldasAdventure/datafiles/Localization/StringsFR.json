@@ -8,13 +8,13 @@
 	},
 	"UI": {
 		"FirstSetupMenu": {
-			"PreferencesInstructions": "Please set your desired preferences",
-			"RemasteredModeQuestion": "Do you want to use Remastered Mode?",
-			"RemasteredModeFeatureList": "• Separate Item Buttons: Action Button 1 = Use Weapon, Action Button 2 = Use Treasure.\n• Action Button 2 functions as the Ruby item when near something buyable.\n• Restored cut content like dialogue and additional NPC animations.\n• You no longer deal melee damage when attacking with a different Weapon than the Wand.\n• Enemies can't reach the edge of the screen for about 1.5 seconds upon entering.",
-			"CurrentMode": "Current Mode",
-			"OptionClassicMode": "Classic",
-			"OptionRemasteredMode": "Remastered",
-			"Confirm": "Confirm"
+			"PreferencesInstructions": "Veuillez définir vos préférences",
+			"RemasteredModeQuestion": "Envie de jouer en mode remastérisé ?",
+			"RemasteredModeFeatureList": "• Boutons d'Actions distincts :\nBouton Action 1 = Utiliser arme.\nBouton Action 2 = Utiliser trésor.\n• Le bouton Action 2, paie en rubis près d'un objet à vendre.\n• Restauration des dialogues et des animations supprimés.\n• Correction des dégâts en combat rapproché avec une arme autre que la baguette.\n• Les ennemis ne pourront atteindre le bord de l'écran qu'après 1,5 seconde.",
+			"CurrentMode": "Mode en cours",
+			"OptionClassicMode": "Classique",
+			"OptionRemasteredMode": "Remasterisé",
+			"Confirm": "Confirmer"
 		},
 		"MainMenu": {
 			"PlayButton": "JOUER",
