@@ -832,6 +832,26 @@
 						"Line01": "Éthèra : Va-t'en, petite créature !"
 					}
 				}
+			},
+			"ShrineOfIllusion": {
+				"Shurmak": {
+					"LookBeyondIllusion": {
+						"Line01": "Shurmak: Look beyond illusion to conquer the evil Pasquinade.",
+						"Line02": "Deception is all around you."
+					}
+				},
+				"Pasquinade": {
+					"LookToYourHeart": {
+						"Line01": "Pasquinade: Look to your heart. Look to your dreams.",
+						"Line02": "You'll find that nothing is what it seems...",
+						"Line03": "*chuckling*"
+					},
+					"WelcomeMyLovely": {
+						"Line01": "Pasquinade: Welcome, my lovely!",
+						"Line02": "Come, sit and rest.",
+						"Line03": "But first, let me give you one small test."
+					}
+				}
 			}
 		}
 	}

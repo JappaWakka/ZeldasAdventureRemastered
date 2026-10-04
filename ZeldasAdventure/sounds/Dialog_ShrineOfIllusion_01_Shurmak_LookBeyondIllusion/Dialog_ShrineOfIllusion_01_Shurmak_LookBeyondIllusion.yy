@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_ShrineOfIllusion_01_Shurmak_LookBeyondIllusion",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":7.1466665,
+  "exportDir":"",
+  "name":"Dialog_ShrineOfIllusion_01_Shurmak_LookBeyondIllusion",
+  "parent":{
+    "name":"ShrineOfIllusion",
+    "path":"folders/Sounds/Dialogue/ShrineOfIllusion.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_ShrineOfIllusion_01_Shurmak_LookBeyondIllusion.ogg",
+  "volume":1.0,
+}

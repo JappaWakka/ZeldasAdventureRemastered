@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Subtitle_ShrineOfIllusion_24_Pasquinade_WelcomeMyLovely",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_ShrineOfIllusion_24_Pasquinade_WelcomeMyLovely",
+  "parent":{
+    "name":"ShrineOfIllusion",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/ShrineOfIllusion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

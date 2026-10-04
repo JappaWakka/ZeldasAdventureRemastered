@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_ShrineOfIllusion_24_Pasquinade_WelcomeMyLovely",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":10.666667,
+  "exportDir":"",
+  "name":"Dialog_ShrineOfIllusion_24_Pasquinade_WelcomeMyLovely",
+  "parent":{
+    "name":"ShrineOfIllusion",
+    "path":"folders/Sounds/Dialogue/ShrineOfIllusion.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_ShrineOfIllusion_24_Pasquinade_WelcomeMyLovely.ogg",
+  "volume":1.0,
+}

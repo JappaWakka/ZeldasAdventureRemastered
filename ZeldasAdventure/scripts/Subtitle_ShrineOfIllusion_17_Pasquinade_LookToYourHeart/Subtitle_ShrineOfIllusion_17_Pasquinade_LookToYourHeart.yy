@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Subtitle_ShrineOfIllusion_17_Pasquinade_LookToYourHeart",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Subtitle_ShrineOfIllusion_17_Pasquinade_LookToYourHeart",
+  "parent":{
+    "name":"ShrineOfIllusion",
+    "path":"folders/Scripts/Localization/Subtitles/Dialogue/ShrineOfIllusion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

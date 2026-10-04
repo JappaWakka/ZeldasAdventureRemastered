@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Dialog_ShrineOfIllusion_17_Pasquinade_LookToYourHeart",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":9.92,
+  "exportDir":"",
+  "name":"Dialog_ShrineOfIllusion_17_Pasquinade_LookToYourHeart",
+  "parent":{
+    "name":"ShrineOfIllusion",
+    "path":"folders/Sounds/Dialogue/ShrineOfIllusion.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":22050,
+  "soundFile":"Dialog_ShrineOfIllusion_17_Pasquinade_LookToYourHeart.ogg",
+  "volume":1.0,
+}

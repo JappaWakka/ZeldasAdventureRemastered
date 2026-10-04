@@ -836,6 +836,26 @@
 						"Line01": "Ethera: Maak dat je weg komt, klein wezentje!"
 					}
 				}
+			},
+			"ShrineOfIllusion": {
+				"Shurmak": {
+					"LookBeyondIllusion": {
+						"Line01": "Shurmak: Kijk door illusie heen om de kwaadaardige Pasquinade te verslaan.",
+						"Line02": "Bedrog is overal om je heen."
+					}
+				},
+				"Pasquinade": {
+					"LookToYourHeart": {
+						"Line01": "Pasquinade: Kijk naar je hart. Kijk naar je dromen.",
+						"Line02": "Je zult zien dat niet alle dingen zijn zoals ze voorkomen...",
+						"Line03": "*grinnikt*"
+					},
+					"WelcomeMyLovely": {
+						"Line01": "Pasquinade: Welkom, lieve meid.",
+						"Line02": "Kom, zit en rust bij mij.",
+						"Line03": "Maar eerst een uitdaging, daarvoor is het nu tijd."
+					}
+				}
 			}
 		}
 	}
