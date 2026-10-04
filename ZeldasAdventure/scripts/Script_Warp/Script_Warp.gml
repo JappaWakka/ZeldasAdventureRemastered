@@ -1,4 +1,4 @@
-function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
+function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, PlayerFacing = -1, FadeSpeed = 12)
 {
 	if global.FadeProgress = 3
 	{
@@ -58,6 +58,14 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 		instance_activate_layer("CandleDarkness")
 		instance_activate_region(TileX * tileWidth, TileY * tileHeight, tileWidth, tileHeight, true)
 		instance_activate_object(Entity_Parent_Player)
+		
+		if PlayerFacing != -1
+		{
+			if instance_exists(Entity_Player) = true
+			{
+				Entity_Player.Facing = PlayerFacing
+			}
+		}
 		global.SwitchTracks = true;
 				
 		global.CameraIsPanning = false;
@@ -154,84 +162,85 @@ function WarpTo(TileX, TileY, PlayerX = -1, PlayerY = -1, FadeSpeed = 12)
 global.WarpLocations =
 {
 	//Vision Henge
-	VisionHenge_Spawn : {TileX:6,TileY:22,PlayerX:192,PlayerY:128},
+	VisionHenge_Spawn : {TileX:6,TileY:22,PlayerX:192,PlayerY:128,PlayerFacing: global.Directions.South},
 	
 	//Plain Of Andor
-	PlainOfAndor_MobilinsHeadInn_Inside : {TileX:10,TileY:21,PlayerX:64,PlayerY:148},
-	PlainOfAndor_MobilinsHeadInn_Outside : {TileX:9,TileY:21,PlayerX:120,PlayerY:176},
+	PlainOfAndor_MobilinsHeadInn_Inside : {TileX:10,TileY:21,PlayerX:64,PlayerY:148,PlayerFacing: global.Directions.East},
+	PlainOfAndor_MobilinsHeadInn_Outside : {TileX:9,TileY:21,PlayerX:120,PlayerY:176,PlayerFacing: global.Directions.South},
 
 	//Forest of Ogham
-	ForestOfOgham_TektiteCave_Inside : {TileX:7,TileY:31,PlayerX:38,PlayerY:128},
-	ForestOfOgham_TektiteCave_Outside : {TileX:6,TileY:31,PlayerX:300,PlayerY:162},
-	ForestOfOgham_ShrineOfEarth_Exit : {TileX:6,TileY:31,PlayerX:266,PlayerY:74},
-	ForestOfOgham_ShrineOfEarth_Warp : {TileX:6,TileY:31,PlayerX:112,PlayerY:172},
+	ForestOfOgham_TektiteCave_Inside : {TileX:7,TileY:31,PlayerX:38,PlayerY:128,PlayerFacing: global.Directions.East},
+	ForestOfOgham_TektiteCave_Outside : {TileX:6,TileY:31,PlayerX:300,PlayerY:162,PlayerFacing: global.Directions.South},
+	ForestOfOgham_ShrineOfEarth_Exit : {TileX:6,TileY:31,PlayerX:266,PlayerY:74,PlayerFacing: global.Directions.South},
+	ForestOfOgham_ShrineOfEarth_Warp : {TileX:6,TileY:31,PlayerX:112,PlayerY:172,PlayerFacing: global.Directions.South},
 		
 	//GreatWimbich
-	GreatWimbich_GeneralStore_Inside : {TileX:7,TileY:11,PlayerX:204,PlayerY:200},
-	GreatWimbich_GeneralStore_Outside : {TileX:10,TileY:12,PlayerX:62,PlayerY:160},
-	GreatWimbich_MagicStore_Inside : {TileX:8,TileY:11,PlayerX:124,PlayerY:200},
-	GreatWimbich_MagicStore_Outside : {TileX:10,TileY:12,PlayerX:276,PlayerY:160},
-	GreatWimbich_Blacksmith_Inside : {TileX:9,TileY:11,PlayerX:156,PlayerY:200},
-	GreatWimbich_Blacksmith_Outside : {TileX:11,TileY:12,PlayerX:128,PlayerY:160},
-	GreatWimbich_TwinFatherHouse_Inside : {TileX:9,TileY:12,PlayerX:204,PlayerY:196},
-	GreatWimbich_TwinFatherHouse_Outside : {TileX:11,TileY:13,PlayerX:248,PlayerY:176},
+	GreatWimbich_GeneralStore_Inside : {TileX:7,TileY:11,PlayerX:204,PlayerY:200,PlayerFacing: global.Directions.North},
+	GreatWimbich_GeneralStore_Outside : {TileX:10,TileY:12,PlayerX:62,PlayerY:160,PlayerFacing: global.Directions.South},
+	GreatWimbich_MagicStore_Inside : {TileX:8,TileY:11,PlayerX:124,PlayerY:200,PlayerFacing: global.Directions.North},
+	GreatWimbich_MagicStore_Outside : {TileX:10,TileY:12,PlayerX:276,PlayerY:160,PlayerFacing: global.Directions.South},
+	GreatWimbich_Blacksmith_Inside : {TileX:9,TileY:11,PlayerX:156,PlayerY:200,PlayerFacing: global.Directions.North},
+	GreatWimbich_Blacksmith_Outside : {TileX:11,TileY:12,PlayerX:128,PlayerY:160,PlayerFacing: global.Directions.South},
+	GreatWimbich_TwinFatherHouse_Inside : {TileX:9,TileY:12,PlayerX:204,PlayerY:196,PlayerFacing: global.Directions.North},
+	GreatWimbich_TwinFatherHouse_Outside : {TileX:11,TileY:13,PlayerX:248,PlayerY:176,PlayerFacing: global.Directions.South},
 	
 	//Forest of Torian
-	ForestOfTorian_WhiteSteedLodge_Inside : {TileX:13,TileY:6,PlayerX:180,PlayerY:208},
-	ForestOfTorian_WhiteSteedLodge_Outside : {TileX:13,TileY:10,PlayerX:258,PlayerY:124},
-	ForestOfTorian_TreeTrunkCave_Inside : {TileX:16,TileY:10,PlayerX:268,PlayerY:60},
-	ForestOfTorian_TreeTrunkCave_Outside : {TileX:14,TileY:10,PlayerX:276,PlayerY:124},
-	ForestOfTorian_ShrineOfIllusion_Exit : {TileX:11,TileY:7,PlayerX:176,PlayerY:136},
-	ForestOfTorian_ShrineOfIllusion_Warp : {TileX:11,TileY:7,PlayerX:232,PlayerY:156},
+	ForestOfTorian_WhiteSteedLodge_Inside : {TileX:13,TileY:6,PlayerX:180,PlayerY:208,PlayerFacing: global.Directions.North},
+	ForestOfTorian_WhiteSteedLodge_Outside : {TileX:13,TileY:10,PlayerX:258,PlayerY:124,PlayerFacing: global.Directions.South},
+	ForestOfTorian_TreeTrunkCave_Inside : {TileX:16,TileY:10,PlayerX:268,PlayerY:60,PlayerFacing: global.Directions.South},
+	ForestOfTorian_TreeTrunkCave_Outside : {TileX:14,TileY:10,PlayerX:276,PlayerY:124,PlayerFacing: global.Directions.West},
+	ForestOfTorian_ShrineOfIllusion_Exit : {TileX:11,TileY:7,PlayerX:176,PlayerY:136,PlayerFacing: global.Directions.South},
+	ForestOfTorian_ShrineOfIllusion_Warp : {TileX:11,TileY:7,PlayerX:232,PlayerY:156,PlayerFacing: global.Directions.South},
 	
 	//Ubato Hills
-	UbatoHills_ShrineOfDestiny_Exit : {TileX:18,TileY:4,PlayerX:96,PlayerY:176},
+	UbatoHills_ShrineOfDestiny_Exit : {TileX:18,TileY:4,PlayerX:96,PlayerY:176,PlayerFacing: global.Directions.South},
 	
 	//Shortcuts
-	SeacoastPlainShortcut_Inside_West : {TileX:12,TileY:20,PlayerX:64,PlayerY:144},
-	SeacoastPlainShortcut_Inside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112},
-	SeacoastPlainShortcut_Outside_West : {TileX:9,TileY:20,PlayerX:320,PlayerY:124},
-	//SeacoastPlainShortcut_Outside_East : {TileX:14,TileY:21,PlayerX:248,PlayerY:112}, //working
-	SeacoastPlainShortcut_Outside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112}, //not working
+	SeacoastPlainShortcut_Inside_West : {TileX:12,TileY:20,PlayerX:64,PlayerY:144,PlayerFacing: global.Directions.East},
+	SeacoastPlainShortcut_Inside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112,PlayerFacing: global.Directions.West},
+	SeacoastPlainShortcut_Outside_West : {TileX:9,TileY:20,PlayerX:320,PlayerY:124,PlayerFacing: global.Directions.West},
+	//SeacoastPlainShortcut_Outside_East : {TileX:14,TileY:21,PlayerX:248,PlayerY:112,PlayerFacing: global.Directions.South}, //working
+	SeacoastPlainShortcut_Outside_East : {TileX:12,TileY:20,PlayerX:332,PlayerY:112,PlayerFacing: global.Directions.South}, //not working
 	
-	GubashaDesertShortcut_Inside_West : {TileX:20,TileY:4,PlayerX:52,PlayerY:116},
-	GubashaDesertShortcut_Inside_East : {TileX:20,TileY:4,PlayerX:336,PlayerY:112},
-	GubashaDesertShortcut_Outside_West : {TileX:19,TileY:5,PlayerX:284,PlayerY:112},
-	//GubashaDesertShortcut_Outside_East : {TileX:21,TileY:4,PlayerX:76,PlayerY:108}, //working
-	GubashaDesertShortcut_Outside_East : {TileX:20,TileY:4,PlayerX:336,PlayerY:112}, //not working
+	GubashaDesertShortcut_Inside_West : {TileX:20,TileY:4,PlayerX:52,PlayerY:116,PlayerFacing: global.Directions.East},
+	GubashaDesertShortcut_Inside_East : {TileX:20,TileY:4,PlayerX:336,PlayerY:112,PlayerFacing: global.Directions.West},
+	GubashaDesertShortcut_Outside_West : {TileX:19,TileY:5,PlayerX:284,PlayerY:112,PlayerFacing: global.Directions.West},
+	//GubashaDesertShortcut_Outside_East : {TileX:21,TileY:4,PlayerX:76,PlayerY:108,PlayerFacing: global.Directions.South}, //working
+	GubashaDesertShortcut_Outside_East : {TileX:20,TileY:4,PlayerX:336,PlayerY:112,PlayerFacing: global.Directions.East}, //not working
 	
 	//Shrines
-	ShrineOfEarth_Spawn_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118},
-	ShrineOfEarth_Spawn_Boss : {TileX:12,TileY:31,PlayerX:88,PlayerY:132},
-	ShrineOfEarth_09_to_11 : {TileX:11,TileY:35,PlayerX:288,PlayerY:208},
-	ShrineOfEarth_11_to_09 : {TileX:11,TileY:38,PlayerX:288,PlayerY:24},
-	ShrineOfEarth_13_to_14 : {TileX:9,TileY:34,PlayerX:360,PlayerY:136},
-	ShrineOfEarth_14_to_13 : {TileX:11,TileY:34,PlayerX:24,PlayerY:136},
-	ShrineOfEarth_20_to_21 : {TileX:12,TileY:30,PlayerX:184,PlayerY:204},
-	ShrineOfEarth_21_to_20 : {TileX:12,TileY:31,PlayerX:184,PlayerY:32},
-	ShrineOfEarth_21_to_22 : {TileX:12,TileY:29,PlayerX:176,PlayerY:208},
-	ShrineOfEarth_22_to_21 : {TileX:12,TileY:30,PlayerX:188,PlayerY:28},
+	ShrineOfEarth_Spawn_Entrance : {TileX:6,TileY:35,PlayerX:106,PlayerY:118,PlayerFacing: global.Directions.South},
+	ShrineOfEarth_Spawn_Boss : {TileX:12,TileY:31,PlayerX:87,PlayerY:136,PlayerFacing: global.Directions.East},
+	ShrineOfEarth_09_to_11 : {TileX:11,TileY:35,PlayerX:288,PlayerY:208,PlayerFacing: global.Directions.North},
+	ShrineOfEarth_11_to_09 : {TileX:11,TileY:38,PlayerX:288,PlayerY:24,PlayerFacing: global.Directions.South},
+	ShrineOfEarth_13_to_14 : {TileX:9,TileY:34,PlayerX:360,PlayerY:136,PlayerFacing: global.Directions.West},
+	ShrineOfEarth_14_to_13 : {TileX:11,TileY:34,PlayerX:24,PlayerY:136,PlayerFacing: global.Directions.East},
+	ShrineOfEarth_20_to_21 : {TileX:12,TileY:30,PlayerX:184,PlayerY:204,PlayerFacing: global.Directions.North},
+	ShrineOfEarth_21_to_20 : {TileX:12,TileY:31,PlayerX:184,PlayerY:32,PlayerFacing: global.Directions.South},
+	ShrineOfEarth_21_to_22 : {TileX:12,TileY:29,PlayerX:176,PlayerY:208,PlayerFacing: global.Directions.North},
+	ShrineOfEarth_22_to_21 : {TileX:12,TileY:30,PlayerX:188,PlayerY:28,PlayerFacing: global.Directions.South},
 
-	ShrineOfIllusion_Spawn_Entrance : {TileX:19,TileY:27,PlayerX:184,PlayerY:204},
+	ShrineOfIllusion_Spawn_Entrance : {TileX:19,TileY:27,PlayerX:184,PlayerY:204,PlayerFacing: global.Directions.North},
+	ShrineOfIllusion_Spawn_Boss : {TileX:27,TileY:20,PlayerX:190,PlayerY:182,PlayerFacing: global.Directions.North},
 	
-	ShrineOfAir_Spawn_Entrance : {TileX:5,TileY:2,PlayerX:184,PlayerY:128},
+	ShrineOfAir_Spawn_Entrance : {TileX:5,TileY:2,PlayerX:184,PlayerY:128,PlayerFacing: global.Directions.North},
 	
-	ShrineOfDestiny_Spawn_Entrance : {TileX:26,TileY:24,PlayerX:188,PlayerY:192},
+	ShrineOfDestiny_Spawn_Entrance : {TileX:26,TileY:24,PlayerX:188,PlayerY:192,PlayerFacing: global.Directions.North},
 	
-	ShrineOfWater_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	ShrineOfWater_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.East},
 	
-	ShrineOfStrength_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	ShrineOfStrength_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.South},
 	
-	ShrineOfFire_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	ShrineOfFire_Spawn_Entrance : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
 	
-	Gauntlet_Llort : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
-	Gauntlet_Pasquinade : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
-	Gauntlet_Avianna : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
-	Gauntlet_Malmort : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
-	Gauntlet_Agwanda : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
-	Gauntlet_Ursore : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
-	Gauntlet_Warbane : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
-	Gauntlet_Ganon : {TileX:0,TileY:0,PlayerX:0,PlayerY:0},
+	Gauntlet_Llort : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
+	Gauntlet_Pasquinade : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
+	Gauntlet_Avianna : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
+	Gauntlet_Malmort : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
+	Gauntlet_Agwanda : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
+	Gauntlet_Ursore : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
+	Gauntlet_Warbane : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
+	Gauntlet_Ganon : {TileX:0,TileY:0,PlayerX:0,PlayerY:0,PlayerFacing: global.Directions.North},
 	
 }
 
@@ -245,7 +254,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.VisionHenge_Spawn.TileX,
 			global.WarpLocations.VisionHenge_Spawn.TileY,
 			global.WarpLocations.VisionHenge_Spawn.PlayerX,
-			global.WarpLocations.VisionHenge_Spawn.PlayerY
+			global.WarpLocations.VisionHenge_Spawn.PlayerY,
+			global.WarpLocations.VisionHenge_Spawn.PlayerFacing
 			)
 			break;
 		
@@ -255,7 +265,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.TileX,
 			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.TileY,
 			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.PlayerX,
-			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.PlayerY
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.PlayerY,
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Inside.PlayerFacing
 			)
 			break;
 		case "MobilinsHeadInn_Outside":
@@ -263,7 +274,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.TileX,
 			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.TileY,
 			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.PlayerX,
-			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.PlayerY
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.PlayerY,
+			global.WarpLocations.PlainOfAndor_MobilinsHeadInn_Outside.PlayerFacing
 			)
 			break;
 		
@@ -274,7 +286,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.TileX,
 			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.TileY,
 			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.PlayerX,
-			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.PlayerY
+			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.PlayerY,
+			global.WarpLocations.ForestOfOgham_TektiteCave_Inside.PlayerFacing
 			)
 			break;
 		case "TektiteCave_Outside":
@@ -282,7 +295,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.TileX,
 			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.TileY,
 			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.PlayerX,
-			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.PlayerY
+			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.PlayerY,
+			global.WarpLocations.ForestOfOgham_TektiteCave_Outside.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_Outside_Exit":
@@ -290,7 +304,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.TileX,
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.TileY,
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.PlayerX,
-			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.PlayerY
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.PlayerY,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Exit.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_Outside_Warp":
@@ -298,7 +313,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.TileX,
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.TileY,
 			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerX,
-			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerY
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerY,
+			global.WarpLocations.ForestOfOgham_ShrineOfEarth_Warp.PlayerFacing
 			)
 			break;
 			
@@ -309,7 +325,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GreatWimbich_GeneralStore_Inside.TileX,
 			global.WarpLocations.GreatWimbich_GeneralStore_Inside.TileY,
 			global.WarpLocations.GreatWimbich_GeneralStore_Inside.PlayerX,
-			global.WarpLocations.GreatWimbich_GeneralStore_Inside.PlayerY
+			global.WarpLocations.GreatWimbich_GeneralStore_Inside.PlayerY,
+			global.WarpLocations.GreatWimbich_GeneralStore_Inside.PlayerFacing
 			)
 			break;
 		case "GeneralStore_Outside":
@@ -317,7 +334,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GreatWimbich_GeneralStore_Outside.TileX,
 			global.WarpLocations.GreatWimbich_GeneralStore_Outside.TileY,
 			global.WarpLocations.GreatWimbich_GeneralStore_Outside.PlayerX,
-			global.WarpLocations.GreatWimbich_GeneralStore_Outside.PlayerY
+			global.WarpLocations.GreatWimbich_GeneralStore_Outside.PlayerY,
+			global.WarpLocations.GreatWimbich_GeneralStore_Outside.PlayerFacing
 			)
 			break;
 		case "MagicStore_Inside":
@@ -325,7 +343,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GreatWimbich_MagicStore_Inside.TileX,
 			global.WarpLocations.GreatWimbich_MagicStore_Inside.TileY,
 			global.WarpLocations.GreatWimbich_MagicStore_Inside.PlayerX,
-			global.WarpLocations.GreatWimbich_MagicStore_Inside.PlayerY
+			global.WarpLocations.GreatWimbich_MagicStore_Inside.PlayerY,
+			global.WarpLocations.GreatWimbich_MagicStore_Inside.PlayerFacing
 			)
 			break;
 		case "MagicStore_Outside":
@@ -333,7 +352,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GreatWimbich_MagicStore_Outside.TileX,
 			global.WarpLocations.GreatWimbich_MagicStore_Outside.TileY,
 			global.WarpLocations.GreatWimbich_MagicStore_Outside.PlayerX,
-			global.WarpLocations.GreatWimbich_MagicStore_Outside.PlayerY
+			global.WarpLocations.GreatWimbich_MagicStore_Outside.PlayerY,
+			global.WarpLocations.GreatWimbich_MagicStore_Outside.PlayerFacing
 			)
 			break;
 		case "Blacksmith_Inside":
@@ -341,7 +361,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GreatWimbich_Blacksmith_Inside.TileX,
 			global.WarpLocations.GreatWimbich_Blacksmith_Inside.TileY,
 			global.WarpLocations.GreatWimbich_Blacksmith_Inside.PlayerX,
-			global.WarpLocations.GreatWimbich_Blacksmith_Inside.PlayerY
+			global.WarpLocations.GreatWimbich_Blacksmith_Inside.PlayerY,
+			global.WarpLocations.GreatWimbich_Blacksmith_Inside.PlayerFacing
 			)
 			break;
 		case "Blacksmith_Outside":
@@ -349,7 +370,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GreatWimbich_Blacksmith_Outside.TileX,
 			global.WarpLocations.GreatWimbich_Blacksmith_Outside.TileY,
 			global.WarpLocations.GreatWimbich_Blacksmith_Outside.PlayerX,
-			global.WarpLocations.GreatWimbich_Blacksmith_Outside.PlayerY
+			global.WarpLocations.GreatWimbich_Blacksmith_Outside.PlayerY,
+			global.WarpLocations.GreatWimbich_Blacksmith_Outside.PlayerFacing
 			)
 			break;
 		case "TwinFatherHouse_Inside":
@@ -357,7 +379,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.TileX,
 			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.TileY,
 			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.PlayerX,
-			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.PlayerY
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.PlayerY,
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Inside.PlayerFacing
 			)
 			break;
 		case "TwinFatherHouse_Outside":
@@ -365,7 +388,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.TileX,
 			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.TileY,
 			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.PlayerX,
-			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.PlayerY
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.PlayerY,
+			global.WarpLocations.GreatWimbich_TwinFatherHouse_Outside.PlayerFacing
 			)
 			break;
 			
@@ -375,7 +399,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.TileX,
 			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.TileY,
 			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.PlayerX,
-			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.PlayerY
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.PlayerY,
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Inside.PlayerFacing
 			)
 			break;
 		case "WhiteSteedLodge_Outside":
@@ -383,7 +408,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.TileX,
 			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.TileY,
 			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.PlayerX,
-			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.PlayerY
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.PlayerY,
+			global.WarpLocations.ForestOfTorian_WhiteSteedLodge_Outside.PlayerFacing
 			)
 			break;
 		case "TreeTrunkCave_Inside":
@@ -391,7 +417,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.TileX,
 			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.TileY,
 			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.PlayerX,
-			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.PlayerY
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.PlayerY,
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Inside.PlayerFacing
 			)
 			break;
 		case "TreeTrunkCave_Outside":
@@ -399,7 +426,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.TileX,
 			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.TileY,
 			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.PlayerX,
-			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.PlayerY
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.PlayerY,
+			global.WarpLocations.ForestOfTorian_TreeTrunkCave_Outside.PlayerFacing
 			)
 			break;
 		case "ShrineOfIllusion_Outside_Exit":
@@ -407,7 +435,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.TileX,
 			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.TileY,
 			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.PlayerX,
-			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.PlayerY
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.PlayerY,
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Exit.PlayerFacing
 			)
 			break;
 		case "ShrineOfIllusion_Outside_Warp":
@@ -415,7 +444,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.TileX,
 			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.TileY,
 			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.PlayerX,
-			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.PlayerY
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.PlayerY,
+			global.WarpLocations.ForestOfTorian_ShrineOfIllusion_Warp.PlayerFacing
 			)
 			break;
 		
@@ -425,7 +455,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.TileX,
 			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.TileY,
 			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.PlayerX,
-			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.PlayerY
+			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.PlayerY,
+			global.WarpLocations.UbatoHills_ShrineOfDestiny_Exit.PlayerFacing
 			)
 			break;
 			
@@ -435,7 +466,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.SeacoastPlainShortcut_Inside_West.TileX,
 			global.WarpLocations.SeacoastPlainShortcut_Inside_West.TileY,
 			global.WarpLocations.SeacoastPlainShortcut_Inside_West.PlayerX,
-			global.WarpLocations.SeacoastPlainShortcut_Inside_West.PlayerY
+			global.WarpLocations.SeacoastPlainShortcut_Inside_West.PlayerY,
+			global.WarpLocations.SeacoastPlainShortcut_Inside_West.PlayerFacing
 			)
 			break;
 		case "SeacoastPlainShortcut_Inside_East":
@@ -443,7 +475,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.SeacoastPlainShortcut_Inside_East.TileX,
 			global.WarpLocations.SeacoastPlainShortcut_Inside_East.TileY,
 			global.WarpLocations.SeacoastPlainShortcut_Inside_East.PlayerX,
-			global.WarpLocations.SeacoastPlainShortcut_Inside_East.PlayerY
+			global.WarpLocations.SeacoastPlainShortcut_Inside_East.PlayerY,
+			global.WarpLocations.SeacoastPlainShortcut_Inside_East.PlayerFacing
 			)
 			break;
 		case "SeacoastPlainShortcut_Outside_West":
@@ -451,7 +484,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.SeacoastPlainShortcut_Outside_West.TileX,
 			global.WarpLocations.SeacoastPlainShortcut_Outside_West.TileY,
 			global.WarpLocations.SeacoastPlainShortcut_Outside_West.PlayerX,
-			global.WarpLocations.SeacoastPlainShortcut_Outside_West.PlayerY
+			global.WarpLocations.SeacoastPlainShortcut_Outside_West.PlayerY,
+			global.WarpLocations.SeacoastPlainShortcut_Outside_West.PlayerFacing
 			)
 			break;
 		case "SeacoastPlainShortcut_Outside_East":
@@ -459,7 +493,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.SeacoastPlainShortcut_Outside_East.TileX,
 			global.WarpLocations.SeacoastPlainShortcut_Outside_East.TileY,
 			global.WarpLocations.SeacoastPlainShortcut_Outside_East.PlayerX,
-			global.WarpLocations.SeacoastPlainShortcut_Outside_East.PlayerY
+			global.WarpLocations.SeacoastPlainShortcut_Outside_East.PlayerY,
+			global.WarpLocations.SeacoastPlainShortcut_Outside_East.PlayerFacing
 			)
 			break;
 		case "GubashaDesertShortcut_Inside_West":
@@ -467,7 +502,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GubashaDesertShortcut_Inside_West.TileX,
 			global.WarpLocations.GubashaDesertShortcut_Inside_West.TileY,
 			global.WarpLocations.GubashaDesertShortcut_Inside_West.PlayerX,
-			global.WarpLocations.GubashaDesertShortcut_Inside_West.PlayerY
+			global.WarpLocations.GubashaDesertShortcut_Inside_West.PlayerY,
+			global.WarpLocations.GubashaDesertShortcut_Inside_West.PlayerFacing
 			)
 			break;
 		case "GubashaDesertShortcut_Inside_East":
@@ -475,7 +511,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GubashaDesertShortcut_Inside_East.TileX,
 			global.WarpLocations.GubashaDesertShortcut_Inside_East.TileY,
 			global.WarpLocations.GubashaDesertShortcut_Inside_East.PlayerX,
-			global.WarpLocations.GubashaDesertShortcut_Inside_East.PlayerY
+			global.WarpLocations.GubashaDesertShortcut_Inside_East.PlayerY,
+			global.WarpLocations.GubashaDesertShortcut_Inside_East.PlayerFacing
 			)
 			break;
 		case "GubashaDesertShortcut_Outside_West":
@@ -483,7 +520,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GubashaDesertShortcut_Outside_West.TileX,
 			global.WarpLocations.GubashaDesertShortcut_Outside_West.TileY,
 			global.WarpLocations.GubashaDesertShortcut_Outside_West.PlayerX,
-			global.WarpLocations.GubashaDesertShortcut_Outside_West.PlayerY
+			global.WarpLocations.GubashaDesertShortcut_Outside_West.PlayerY,
+			global.WarpLocations.GubashaDesertShortcut_Outside_West.PlayerFacing
 			)
 			break;
 		case "GubashaDesertShortcut_Outside_East":
@@ -491,7 +529,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.GubashaDesertShortcut_Outside_East.TileX,
 			global.WarpLocations.GubashaDesertShortcut_Outside_East.TileY,
 			global.WarpLocations.GubashaDesertShortcut_Outside_East.PlayerX,
-			global.WarpLocations.GubashaDesertShortcut_Outside_East.PlayerY
+			global.WarpLocations.GubashaDesertShortcut_Outside_East.PlayerY,
+			global.WarpLocations.GubashaDesertShortcut_Outside_East.PlayerFacing
 			)
 			break;
 			
@@ -501,7 +540,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.TileX,
 			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.TileY,
 			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.PlayerY
+			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.PlayerY,
+			global.WarpLocations.ShrineOfEarth_Spawn_Entrance.PlayerFacing
 			)
 			break;
 		case "Spawn_ShrineOfEarth_Boss":
@@ -509,7 +549,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_Spawn_Boss.TileX,
 			global.WarpLocations.ShrineOfEarth_Spawn_Boss.TileY,
 			global.WarpLocations.ShrineOfEarth_Spawn_Boss.PlayerX,
-			global.WarpLocations.ShrineOfEarth_Spawn_Boss.PlayerY
+			global.WarpLocations.ShrineOfEarth_Spawn_Boss.PlayerY,
+			global.WarpLocations.ShrineOfEarth_Spawn_Boss.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_09_to_11":
@@ -517,7 +558,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_09_to_11.TileX,
 			global.WarpLocations.ShrineOfEarth_09_to_11.TileY,
 			global.WarpLocations.ShrineOfEarth_09_to_11.PlayerX,
-			global.WarpLocations.ShrineOfEarth_09_to_11.PlayerY
+			global.WarpLocations.ShrineOfEarth_09_to_11.PlayerY,
+			global.WarpLocations.ShrineOfEarth_09_to_11.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_11_to_09":
@@ -525,7 +567,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_11_to_09.TileX,
 			global.WarpLocations.ShrineOfEarth_11_to_09.TileY,
 			global.WarpLocations.ShrineOfEarth_11_to_09.PlayerX,
-			global.WarpLocations.ShrineOfEarth_11_to_09.PlayerY
+			global.WarpLocations.ShrineOfEarth_11_to_09.PlayerY,
+			global.WarpLocations.ShrineOfEarth_11_to_09.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_13_to_14":
@@ -533,7 +576,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_13_to_14.TileX,
 			global.WarpLocations.ShrineOfEarth_13_to_14.TileY,
 			global.WarpLocations.ShrineOfEarth_13_to_14.PlayerX,
-			global.WarpLocations.ShrineOfEarth_13_to_14.PlayerY
+			global.WarpLocations.ShrineOfEarth_13_to_14.PlayerY,
+			global.WarpLocations.ShrineOfEarth_13_to_14.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_14_to_13":
@@ -541,7 +585,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_14_to_13.TileX,
 			global.WarpLocations.ShrineOfEarth_14_to_13.TileY,
 			global.WarpLocations.ShrineOfEarth_14_to_13.PlayerX,
-			global.WarpLocations.ShrineOfEarth_14_to_13.PlayerY
+			global.WarpLocations.ShrineOfEarth_14_to_13.PlayerY,
+			global.WarpLocations.ShrineOfEarth_14_to_13.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_20_to_21":
@@ -549,7 +594,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_20_to_21.TileX,
 			global.WarpLocations.ShrineOfEarth_20_to_21.TileY,
 			global.WarpLocations.ShrineOfEarth_20_to_21.PlayerX,
-			global.WarpLocations.ShrineOfEarth_20_to_21.PlayerY
+			global.WarpLocations.ShrineOfEarth_20_to_21.PlayerY,
+			global.WarpLocations.ShrineOfEarth_20_to_21.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_21_to_20":
@@ -557,7 +603,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_21_to_20.TileX,
 			global.WarpLocations.ShrineOfEarth_21_to_20.TileY,
 			global.WarpLocations.ShrineOfEarth_21_to_20.PlayerX,
-			global.WarpLocations.ShrineOfEarth_21_to_20.PlayerY
+			global.WarpLocations.ShrineOfEarth_21_to_20.PlayerY,
+			global.WarpLocations.ShrineOfEarth_21_to_20.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_21_to_22":
@@ -565,7 +612,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_21_to_22.TileX,
 			global.WarpLocations.ShrineOfEarth_21_to_22.TileY,
 			global.WarpLocations.ShrineOfEarth_21_to_22.PlayerX,
-			global.WarpLocations.ShrineOfEarth_21_to_22.PlayerY
+			global.WarpLocations.ShrineOfEarth_21_to_22.PlayerY,
+			global.WarpLocations.ShrineOfEarth_21_to_22.PlayerFacing
 			)
 			break;
 		case "ShrineOfEarth_22_to_21":
@@ -573,7 +621,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfEarth_22_to_21.TileX,
 			global.WarpLocations.ShrineOfEarth_22_to_21.TileY,
 			global.WarpLocations.ShrineOfEarth_22_to_21.PlayerX,
-			global.WarpLocations.ShrineOfEarth_22_to_21.PlayerY
+			global.WarpLocations.ShrineOfEarth_22_to_21.PlayerY,
+			global.WarpLocations.ShrineOfEarth_22_to_21.PlayerFacing
 			)
 			break;
 		
@@ -584,7 +633,17 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.TileX,
 			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.TileY,
 			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerY
+			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerY,
+			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerFacing
+			)
+			break;
+		case "Spawn_ShrineOfIllusion_Boss":
+			WarpTo(
+			global.WarpLocations.ShrineOfIllusion_Spawn_Boss.TileX,
+			global.WarpLocations.ShrineOfIllusion_Spawn_Boss.TileY,
+			global.WarpLocations.ShrineOfIllusion_Spawn_Boss.PlayerX,
+			global.WarpLocations.ShrineOfIllusion_Spawn_Boss.PlayerY,
+			global.WarpLocations.ShrineOfIllusion_Spawn_Boss.PlayerFacing
 			)
 			break;
 			
@@ -594,7 +653,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfAir_Spawn_Entrance.TileX,
 			global.WarpLocations.ShrineOfAir_Spawn_Entrance.TileY,
 			global.WarpLocations.ShrineOfAir_Spawn_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfAir_Spawn_Entrance.PlayerY
+			global.WarpLocations.ShrineOfAir_Spawn_Entrance.PlayerY,
+			global.WarpLocations.ShrineOfAir_Spawn_Entrance.PlayerFacing
 			)
 			break;
 			
@@ -604,7 +664,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.TileX,
 			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.TileY,
 			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.PlayerY
+			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.PlayerY,
+			global.WarpLocations.ShrineOfDestiny_Spawn_Entrance.PlayerFacing
 			)
 			break;
 			
@@ -614,7 +675,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfWater_Spawn_Entrance.TileX,
 			global.WarpLocations.ShrineOfWater_Spawn_Entrance.TileY,
 			global.WarpLocations.ShrineOfWater_Spawn_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfWater_Spawn_Entrance.PlayerY
+			global.WarpLocations.ShrineOfWater_Spawn_Entrance.PlayerY,
+			global.WarpLocations.ShrineOfWater_Spawn_Entrance.PlayerFacing
 			)
 			break;
 			
@@ -624,7 +686,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.TileX,
 			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.TileY,
 			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.PlayerY
+			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.PlayerY,
+			global.WarpLocations.ShrineOfStrength_Spawn_Entrance.PlayerFacing
 			)
 			break;
 			
@@ -634,7 +697,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfFire_Spawn_Entrance.TileX,
 			global.WarpLocations.ShrineOfFire_Spawn_Entrance.TileY,
 			global.WarpLocations.ShrineOfFire_Spawn_Entrance.PlayerX,
-			global.WarpLocations.ShrineOfFire_Spawn_Entrance.PlayerY
+			global.WarpLocations.ShrineOfFire_Spawn_Entrance.PlayerY,
+			global.WarpLocations.ShrineOfFire_Spawn_Entrance.PlayerFacing
 			)
 			break;
 				
@@ -644,7 +708,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.Gauntlet_Llort.TileX,
 			global.WarpLocations.Gauntlet_Llort.TileY,
 			global.WarpLocations.Gauntlet_Llort.PlayerX,
-			global.WarpLocations.Gauntlet_Llort.PlayerY
+			global.WarpLocations.Gauntlet_Llort.PlayerY,
+			global.WarpLocations.Gauntlet_Llort.PlayerFacing
 			)
 			break;
 			
@@ -653,7 +718,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.Gauntlet_Pasquinade.TileX,
 			global.WarpLocations.Gauntlet_Pasquinade.TileY,
 			global.WarpLocations.Gauntlet_Pasquinade.PlayerX,
-			global.WarpLocations.Gauntlet_Pasquinade.PlayerY
+			global.WarpLocations.Gauntlet_Pasquinade.PlayerY,
+			global.WarpLocations.Gauntlet_Pasquinade.PlayerFacing
 			)
 			break;
 			
@@ -662,7 +728,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.Gauntlet_Avianna.TileX,
 			global.WarpLocations.Gauntlet_Avianna.TileY,
 			global.WarpLocations.Gauntlet_Avianna.PlayerX,
-			global.WarpLocations.Gauntlet_Avianna.PlayerY
+			global.WarpLocations.Gauntlet_Avianna.PlayerY,
+			global.WarpLocations.Gauntlet_Avianna.PlayerFacing
 			)
 			break;
 			
@@ -671,7 +738,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.Gauntlet_Malmort.TileX,
 			global.WarpLocations.Gauntlet_Malmort.TileY,
 			global.WarpLocations.Gauntlet_Malmort.PlayerX,
-			global.WarpLocations.Gauntlet_Malmort.PlayerY
+			global.WarpLocations.Gauntlet_Malmort.PlayerY,
+			global.WarpLocations.Gauntlet_Malmort.PlayerFacing
 			)
 			break;
 			
@@ -680,7 +748,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.Gauntlet_Agwanda.TileX,
 			global.WarpLocations.Gauntlet_Agwanda.TileY,
 			global.WarpLocations.Gauntlet_Agwanda.PlayerX,
-			global.WarpLocations.Gauntlet_Agwanda.PlayerY
+			global.WarpLocations.Gauntlet_Agwanda.PlayerY,
+			global.WarpLocations.Gauntlet_Agwanda.PlayerFacing
 			)
 			break;
 			
@@ -689,7 +758,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.Gauntlet_Ursore.TileX,
 			global.WarpLocations.Gauntlet_Ursore.TileY,
 			global.WarpLocations.Gauntlet_Ursore.PlayerX,
-			global.WarpLocations.Gauntlet_Ursore.PlayerY
+			global.WarpLocations.Gauntlet_Ursore.PlayerY,
+			global.WarpLocations.Gauntlet_Ursore.PlayerFacing
 			)
 			break;
 			
@@ -698,7 +768,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.Gauntlet_Warbane.TileX,
 			global.WarpLocations.Gauntlet_Warbane.TileY,
 			global.WarpLocations.Gauntlet_Warbane.PlayerX,
-			global.WarpLocations.Gauntlet_Warbane.PlayerY
+			global.WarpLocations.Gauntlet_Warbane.PlayerY,
+			global.WarpLocations.Gauntlet_Warbane.PlayerFacing
 			)
 			break;
 			
@@ -707,7 +778,8 @@ function WarpToLocation(Name)
 			global.WarpLocations.Gauntlet_Ganon.TileX,
 			global.WarpLocations.Gauntlet_Ganon.TileY,
 			global.WarpLocations.Gauntlet_Ganon.PlayerX,
-			global.WarpLocations.Gauntlet_Ganon.PlayerY
+			global.WarpLocations.Gauntlet_Ganon.PlayerY,
+			global.WarpLocations.Gauntlet_Ganon.PlayerFacing
 			)
 			break;
 			
