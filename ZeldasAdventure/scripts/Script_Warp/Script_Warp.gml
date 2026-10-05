@@ -221,6 +221,7 @@ global.WarpLocations =
 	ShrineOfEarth_22_to_21 : {TileX:12,TileY:30,PlayerX:188,PlayerY:28,PlayerFacing: global.Directions.South},
 
 	ShrineOfIllusion_Spawn_Entrance : {TileX:19,TileY:27,PlayerX:184,PlayerY:204,PlayerFacing: global.Directions.North},
+	ShrineOfIllusion_SlideRoom : {TileX:19,TileY:26,PlayerX:226,PlayerY:106,PlayerFacing: global.Directions.South},
 	ShrineOfIllusion_Spawn_Boss : {TileX:27,TileY:20,PlayerX:190,PlayerY:182,PlayerFacing: global.Directions.North},
 	
 	ShrineOfAir_Spawn_Entrance : {TileX:5,TileY:2,PlayerX:184,PlayerY:128,PlayerFacing: global.Directions.North},
@@ -635,6 +636,15 @@ function WarpToLocation(Name)
 			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerX,
 			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerY,
 			global.WarpLocations.ShrineOfIllusion_Spawn_Entrance.PlayerFacing
+			)
+			break;
+		case "Spawn_ShrineOfIllusion_SlideRoom":
+			WarpTo(
+			global.WarpLocations.ShrineOfIllusion_SlideRoom.TileX,
+			global.WarpLocations.ShrineOfIllusion_SlideRoom.TileY,
+			global.WarpLocations.ShrineOfIllusion_SlideRoom.PlayerX,
+			global.WarpLocations.ShrineOfIllusion_SlideRoom.PlayerY,
+			global.WarpLocations.ShrineOfIllusion_SlideRoom.PlayerFacing
 			)
 			break;
 		case "Spawn_ShrineOfIllusion_Boss":

@@ -226,10 +226,10 @@
 				"Line04": "Und denke daran: Nicht alles ist so, wie es scheint."
 			},
 			"ShrineOfIllusion": {
-				"Line01": "Gaspra: Sweet victory,",
-				"Line02": "but your journey has barely begun, my child.",
-				"Line03": "Beware of dangerous waters that await you,",
-				"Line04": "and watch for the mists high in the mountains."
+				"Line01": "Gaspra: Ein schöner Sieg,",
+				"Line02": "doch deine Reise hat gerade erst begonnen, mein Kind.",
+				"Line03": "Hüte dich vor den gefährlichen Gewässern, die dich erwarten,",
+				"Line04": "und halte Ausschau nach dem Nebel hoch in den Bergen."
 			}
 		},
 		"Dialogue": {
@@ -832,20 +832,20 @@
 			"ShrineOfIllusion": {
 				"Shurmak": {
 					"LookBeyondIllusion": {
-						"Line01": "Shurmak: Look beyond illusion to conquer the evil Pasquinade.",
-						"Line02": "Deception is all around you."
+						"Line01": "Shurmak: Schau hinter die Illusion, um die böse Pasquinade zu besiegen.",
+						"Line02": "Täuschungen sind überall um dich herum."
 					}
 				},
 				"Pasquinade": {
 					"LookToYourHeart": {
-						"Line01": "Pasquinade: Look to your heart. Look to your dreams.",
-						"Line02": "You'll find that nothing is what it seems...",
-						"Line03": "*chuckling*"
+						"Line01": "Sieh in dein Herz, schau auf deine Träume.",
+						"Line02": "Die Warheit verbirgt sich in diesen Räumen...",
+						"Line03": "*kicher*"
 					},
 					"WelcomeMyLovely": {
-						"Line01": "Pasquinade: Welcome, my lovely!",
-						"Line02": "Come, sit and rest.",
-						"Line03": "But first, let me give you one small test."
+						"Line01": "Pasquinade: Willkommen, meine Liebe, komm herein,",
+						"Line02": "setz dich, ruh dich aus und fühl dich fein,",
+						"Line03": "doch vorher muss ein kleiner Test noch sein."
 					}
 				}
 			}

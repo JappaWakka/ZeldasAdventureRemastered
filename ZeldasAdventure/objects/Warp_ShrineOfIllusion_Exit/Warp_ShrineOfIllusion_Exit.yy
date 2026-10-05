@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Shrine_Illusion_01_Warp_Exit",
+    "path":"sprites/Shrine_Illusion_01_Warp_Exit/Shrine_Illusion_01_Warp_Exit.yy",
+  },
   "spriteMaskId":null,
   "visible":false,
 }
