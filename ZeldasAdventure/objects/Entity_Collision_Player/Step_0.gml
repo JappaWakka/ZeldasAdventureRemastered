@@ -102,12 +102,3 @@
 	}
 	
 #endregion
-
-if place_meeting(x,y,Parent_FadeBeforePan)
-{
-	global.FadeBeforePan = true
-}
-else
-{
-	global.FadeBeforePan = false
-}

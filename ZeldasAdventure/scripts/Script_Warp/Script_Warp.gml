@@ -231,31 +231,34 @@ function SetWarpLocations()
 		ShrineOfEarth_22_to_21 : [12,30,188,28,global.Directions.South],
 	
 		ShrineOfIllusion_Spawn_Entrance : [19,27,184,204,global.Directions.North],
-		ShrineOfIllusion_SlideRoom : [19,26,226,106,global.Directions.South],
+		ShrineOfIllusion_SlideRoom : [19,26,260,152,global.Directions.South],
 		ShrineOfIllusion_Spawn_Boss : [27,20,190,182,global.Directions.North],
-		ShrineOfIllusion_03_to_05 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_04_to_05 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_05_to_04 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_05_to_06 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_06_to_05 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_06_to_07 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_07_to_03 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_07_to_06 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_07_to_08 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_08_to_07 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_11_to_13 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_14_to_15 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_15_to_14 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_15_to_16 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_16_to_15 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_17_to_18 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_18_to_17 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_20_to_21 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_21_to_20 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_22_to_23 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_23_to_22 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_23_to_24 : [19,27,0,0,global.Directions.North],
-		ShrineOfIllusion_24_to_23 : [19,27,0,0,global.Directions.North],
+		ShrineOfIllusion_03_to_05 : [18,25,303,102,global.Directions.South],
+		ShrineOfIllusion_04_to_05 : [18,25,189,204,global.Directions.North],
+		ShrineOfIllusion_05_to_04 : [18,26,185,90,global.Directions.South],
+		ShrineOfIllusion_05_to_06 : [18,24,187,204,global.Directions.North],
+		ShrineOfIllusion_06_to_05 : [18,25,191,84,global.Directions.South],
+		ShrineOfIllusion_06_to_07 : [19,24,65,128,global.Directions.East],
+		ShrineOfIllusion_07_to_03 : [19,25,255,98,global.Directions.South],
+		ShrineOfIllusion_07_to_06 : [18,24,321,154,global.Directions.West],
+		ShrineOfIllusion_07_to_08 : [20,24,47,132,global.Directions.East],
+		ShrineOfIllusion_08_to_07 : [19,24,317,126,global.Directions.West],
+		ShrineOfIllusion_11_to_13 : [20,21,239,204,global.Directions.North],
+		ShrineOfIllusion_12_to_14 : [21,21,205,204,global.Directions.North],
+		ShrineOfIllusion_13_to_11 : [20,22,229,58,global.Directions.South],
+		ShrineOfIllusion_14_to_12 : [21,22,213,84,global.Directions.South],
+		ShrineOfIllusion_14_to_15 : [22,21,113,84,global.Directions.South],
+		ShrineOfIllusion_15_to_14 : [21,21,319,128,global.Directions.West],
+		ShrineOfIllusion_15_to_16 : [23,21,111,76,global.Directions.South],
+		ShrineOfIllusion_16_to_15 : [22,21,281,128,global.Directions.West],
+		ShrineOfIllusion_17_to_18 : [24,22,51,170,global.Directions.East],
+		ShrineOfIllusion_18_to_17 : [23,22,311,188,global.Directions.West],
+		ShrineOfIllusion_20_to_21 : [25,20,85,94,global.Directions.East],
+		ShrineOfIllusion_21_to_20 : [24,20,313,110,global.Directions.West],
+		ShrineOfIllusion_22_to_23 : [27,20,55,134,global.Directions.East],
+		ShrineOfIllusion_23_to_22 : [26,20,292,76,global.Directions.West],
+		ShrineOfIllusion_23_to_24 : [27,19,163,188,global.Directions.North],
+		ShrineOfIllusion_24_to_23 : [27,20,179,56,global.Directions.South],
 		
 		ShrineOfAir_Spawn_Entrance : [5,2,184,128,global.Directions.North],
 		
@@ -355,6 +358,9 @@ function WarpToLocation(Name)
 		case "ShrineOfIllusion_07_to_08": WarpTo(global.WarpLocations.ShrineOfIllusion_07_to_08) break;
 		case "ShrineOfIllusion_08_to_07": WarpTo(global.WarpLocations.ShrineOfIllusion_08_to_07) break;
 		case "ShrineOfIllusion_11_to_13": WarpTo(global.WarpLocations.ShrineOfIllusion_11_to_13) break;
+		case "ShrineOfIllusion_12_to_14": WarpTo(global.WarpLocations.ShrineOfIllusion_12_to_14) break;
+		case "ShrineOfIllusion_13_to_11": WarpTo(global.WarpLocations.ShrineOfIllusion_13_to_11) break;
+		case "ShrineOfIllusion_14_to_12": WarpTo(global.WarpLocations.ShrineOfIllusion_14_to_12) break;
 		case "ShrineOfIllusion_14_to_15": WarpTo(global.WarpLocations.ShrineOfIllusion_14_to_15) break;
 		case "ShrineOfIllusion_15_to_14": WarpTo(global.WarpLocations.ShrineOfIllusion_15_to_14) break;
 		case "ShrineOfIllusion_15_to_16": WarpTo(global.WarpLocations.ShrineOfIllusion_15_to_16) break;

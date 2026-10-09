@@ -95,6 +95,14 @@ function Camera_Pan()
 				}
 			}
 			
+			if instance_exists(SlipperyFloor) = true
+			{
+				Entity_Collision_Player.Acceleration = PlayerAcceleration_Slippery
+			}
+			else
+			{
+				Entity_Collision_Player.Acceleration = PlayerBaseSpeed * Entity_Collision_Player.SpeedMultiplier
+			}
 			//Do camera panning (and fading if necessary)
 			if global.FadeBeforePan = false
 			{
@@ -114,14 +122,6 @@ function Camera_Pan()
 				}
 				else
 				{
-					if instance_exists(SlipperyFloor) = true
-					{
-						Entity_Collision_Player.Acceleration = PlayerAcceleration_Slippery
-					}
-					else
-					{
-						Entity_Collision_Player.Acceleration = PlayerBaseSpeed * Entity_Collision_Player.SpeedMultiplier
-					}
 					
 					if SetEnemyCannotTouchEdge = true
 					{
@@ -262,6 +262,14 @@ function Camera_Pan()
 		}
 		else
 		{
+			if instance_exists(SlipperyFloor) = true
+			{
+				Entity_Collision_Player.Acceleration = PlayerAcceleration_Slippery
+			}
+			else
+			{
+				Entity_Collision_Player.Acceleration = PlayerBaseSpeed * Entity_Collision_Player.SpeedMultiplier
+			}
 			if global.FadeBeforePan = true
 			{
 				if global.FadeProgress = 2

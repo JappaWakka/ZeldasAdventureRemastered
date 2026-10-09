@@ -77,6 +77,15 @@ if DamageDelay > 0
 	DamageDelay -=1
 }
 
+if place_meeting(x,y,Parent_FadeBeforePan)
+{
+	global.FadeBeforePan = true
+}
+else
+{
+	global.FadeBeforePan = false
+}
+
 if global.PlayerIsDead = true
 {
 	PlayerDeath_Animation()
