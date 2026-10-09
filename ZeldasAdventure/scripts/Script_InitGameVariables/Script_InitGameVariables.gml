@@ -1,5 +1,83 @@
 function InitGameVariables()
 {
+	
+	//Entity Variables
+	#macro PlayerBaseSpeed 1.5
+	#macro PlayerAcceleration_Slippery 0.065
+	
+	global.DeathAmountForTrigger = //Amount of Entities to defeat before executing a trigger script
+	{
+		PlainOfAndor_Boomerang : [1,1],
+		TektiteCave_Ambush : [1,1],
+		ShrineOfEarth_UnderworldMapEarth : [2,2],
+		ShrineOfEarth_CompassEarth : [3,3],
+		ShrineOfIllusion_KeyMolluska : [3,3]
+	}
+	global.EnemySpeeds =
+	{
+		Still: 0,
+		Slow : 1,
+		Medium : 1.5,
+		Fast: 2.0
+	};
+	
+	global.ProjectileSpeeds =
+	{
+		Player : PlayerBaseSpeed + d(0.4),
+		Enemy : global.EnemySpeeds.Medium + d(0.4)
+	}
+	
+	global.EnemySound = [-1,-1]; //The currently playing enemy sound
+	
+	enum EnemyStates
+	{
+		Idle,
+		Move,
+		Attack,
+		Damaged
+	};
+	
+	enum NPCStates
+	{
+		Idle,
+		Wait,
+		Move,
+		StopPath,
+	};
+	
+	global.KnockbackDistances =
+	{
+		None: 0,
+		Small : 28,
+		Large : 52
+	};
+	
+	global.Directions =
+	{
+		North : 90,
+		West : 180,
+		South : 270,
+		East : 0,	
+		NorthEast : 45,
+		NorthWest : 135,
+		SouthWest : 225,
+		SouthEast : 315
+	}
+	
+	enum MapTileType
+	{
+		Regular,
+		ShrineEntrance,
+		Shortcut,
+		Interior,
+		FairyFountain,
+		Shop,
+		Large,
+		SignRoom
+	};
+	
+	SetWarpLocations()
+	
 	//Menu Variables
 	enum Menu_ElementType
 	{
@@ -160,79 +238,4 @@ function InitGameVariables()
 		file_text_write_string(KeyBindingsJSON,input_system_export())
 		file_text_close(KeyBindingsJSON)
 	}
-	//Entity Variables
-	#macro PlayerBaseSpeed 1.5
-	#macro PlayerAcceleration_Slippery 0.065
-	
-	global.DeathAmountForTrigger = //Amount of Entities to defeat before executing a trigger script
-	{
-		PlainOfAndor_Boomerang : [1,1],
-		TektiteCave_Ambush : [1,1],
-		ShrineOfEarth_UnderworldMapEarth : [2,2],
-		ShrineOfEarth_CompassEarth : [3,3],
-		ShrineOfIllusion_KeyMolluska : [3,3]
-	}
-	global.EnemySpeeds =
-	{
-		Still: 0,
-		Slow : 1,
-		Medium : 1.5,
-		Fast: 2.0
-	};
-	
-	global.ProjectileSpeeds =
-	{
-		Player : PlayerBaseSpeed + d(0.4),
-		Enemy : global.EnemySpeeds.Medium + d(0.4)
-	}
-	
-	global.EnemySound = [-1,-1]; //The currently playing enemy sound
-	
-	enum EnemyStates
-	{
-		Idle,
-		Move,
-		Attack,
-		Damaged
-	};
-	
-	enum NPCStates
-	{
-		Idle,
-		Wait,
-		Move,
-		StopPath,
-	};
-	
-	global.KnockbackDistances =
-	{
-		None: 0,
-		Small : 28,
-		Large : 52
-	};
-	
-	global.Directions =
-	{
-		North : 90,
-		West : 180,
-		South : 270,
-		East : 0,	
-		NorthEast : 45,
-		NorthWest : 135,
-		SouthWest : 225,
-		SouthEast : 315
-	}
-	
-	enum MapTileType
-	{
-		Regular,
-		ShrineEntrance,
-		Shortcut,
-		Interior,
-		FairyFountain,
-		Shop,
-		Large,
-		SignRoom
-	};
-	
 }
