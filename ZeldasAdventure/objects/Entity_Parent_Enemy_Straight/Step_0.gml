@@ -138,7 +138,7 @@ else
 {
 	//Deactivate
 	visible = false
-	if IsMenuVisible() = false && global.CameraIsFading = false
+	if IsMenuVisible() = false
 	{
 		if path_index != -1
 		{

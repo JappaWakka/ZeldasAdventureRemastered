@@ -147,7 +147,7 @@ else
 {
 	//Deactivate
 	visible = false
-	if IsMenuVisible = false && global.CameraIsFading = false
+	if IsMenuVisible = false
 	{
 		x = OriginX;
 		y = OriginY;

@@ -6,6 +6,11 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 	var PlayerY = WarpArray[3]
 	var PlayerFacing = WarpArray[4]
 	
+	if global.FadeProgress != 2
+	{
+		Entity_Collision_Player.Acceleration = PlayerBaseSpeed * SpeedMultiplier
+	}
+	
 	if global.FadeProgress = 3
 	{
 		if audio_is_playing(global.CurrentDialogue_ID)
@@ -243,9 +248,9 @@ function SetWarpLocations()
 		ShrineOfIllusion_07_to_06 : [18,24,321,154,global.Directions.West],
 		ShrineOfIllusion_07_to_08 : [20,24,47,132,global.Directions.East],
 		ShrineOfIllusion_08_to_07 : [19,24,317,126,global.Directions.West],
-		ShrineOfIllusion_11_to_13 : [20,21,239,204,global.Directions.North],
+		ShrineOfIllusion_11_to_13 : [20,21,239,200,global.Directions.North],
 		ShrineOfIllusion_12_to_14 : [21,21,205,204,global.Directions.North],
-		ShrineOfIllusion_13_to_11 : [20,22,229,58,global.Directions.South],
+		ShrineOfIllusion_13_to_11 : [20,22,234,60,global.Directions.South],
 		ShrineOfIllusion_14_to_12 : [21,22,213,84,global.Directions.South],
 		ShrineOfIllusion_14_to_15 : [22,21,113,84,global.Directions.South],
 		ShrineOfIllusion_15_to_14 : [21,21,319,128,global.Directions.West],

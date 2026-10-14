@@ -3,7 +3,7 @@
   "%Name":"Shrine_Illusion_18_FadeBeforePan",
   "bboxMode":0,
   "bbox_bottom":5,
-  "bbox_left":112,
+  "bbox_left":111,
   "bbox_right":143,
   "bbox_top":0,
   "collisionKind":1,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"1223317f-3c18-40c5-a99c-a8aa4afac857","name":"1223317f-3c18-40c5-a99c-a8aa4afac857","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"08faacdb-6510-47a0-93e0-15beb71ace37","name":"08faacdb-6510-47a0-93e0-15beb71ace37","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"d32a3028-1a55-4e3d-878b-9806a54f6587","blendMode":0,"displayName":"default","isLocked":false,"name":"d32a3028-1a55-4e3d-878b-9806a54f6587","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"28df1d46-1614-4570-a5ee-db86768c5a4a","blendMode":0,"displayName":"default","isLocked":false,"name":"28df1d46-1614-4570-a5ee-db86768c5a4a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Shrine_Illusion_18_FadeBeforePan",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1223317f-3c18-40c5-a99c-a8aa4afac857","path":"sprites/Shrine_Illusion_18_FadeBeforePan/Shrine_Illusion_18_FadeBeforePan.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"38f2d250-658b-4353-a5f2-e319a269deb7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"08faacdb-6510-47a0-93e0-15beb71ace37","path":"sprites/Shrine_Illusion_18_FadeBeforePan/Shrine_Illusion_18_FadeBeforePan.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"23b3c46b-7179-42d1-9686-6040becc9180","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

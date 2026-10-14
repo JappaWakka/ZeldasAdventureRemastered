@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"Shrine_Earth_22_Above",
   "bboxMode":0,
-  "bbox_bottom":71,
+  "bbox_bottom":76,
   "bbox_left":162,
-  "bbox_right":191,
+  "bbox_right":192,
   "bbox_top":61,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"ae79685d-4dbf-43c2-9b7f-5746c80e9ff7","name":"ae79685d-4dbf-43c2-9b7f-5746c80e9ff7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e6056401-7c18-4a36-88e2-441262e3d078","name":"e6056401-7c18-4a36-88e2-441262e3d078","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"992b85c8-fbd2-4b70-8ef4-573e677ad404","blendMode":0,"displayName":"default","isLocked":false,"name":"992b85c8-fbd2-4b70-8ef4-573e677ad404","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7544e904-0681-4763-82ab-a7ba9cdcbfe0","blendMode":0,"displayName":"default","isLocked":false,"name":"7544e904-0681-4763-82ab-a7ba9cdcbfe0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Shrine_Earth_22_Above",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae79685d-4dbf-43c2-9b7f-5746c80e9ff7","path":"sprites/Shrine_Earth_22_Above/Shrine_Earth_22_Above.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b458d8e7-d0b4-41a3-a316-e54170e65a4a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e6056401-7c18-4a36-88e2-441262e3d078","path":"sprites/Shrine_Earth_22_Above/Shrine_Earth_22_Above.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"308843e0-ecc3-4d06-8382-81795bc68bd3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

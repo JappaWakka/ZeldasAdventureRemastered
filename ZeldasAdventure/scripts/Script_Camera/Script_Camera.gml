@@ -95,14 +95,8 @@ function Camera_Pan()
 				}
 			}
 			
-			if instance_exists(SlipperyFloor) = true
-			{
-				Entity_Collision_Player.Acceleration = PlayerAcceleration_Slippery
-			}
-			else
-			{
-				Entity_Collision_Player.Acceleration = PlayerBaseSpeed * Entity_Collision_Player.SpeedMultiplier
-			}
+			Entity_Collision_Player.Acceleration = PlayerBaseSpeed * SpeedMultiplier
+			
 			//Do camera panning (and fading if necessary)
 			if global.FadeBeforePan = false
 			{
