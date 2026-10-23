@@ -6,10 +6,7 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 	var PlayerY = WarpArray[3]
 	var PlayerFacing = WarpArray[4]
 	
-	if global.FadeProgress != 2
-	{
-		Entity_Collision_Player.Acceleration = PlayerBaseSpeed * SpeedMultiplier
-	}
+	Entity_Collision_Player.Speed = 0
 	
 	if global.FadeProgress = 3
 	{
@@ -21,6 +18,7 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 		global.FadeProgress = 0;
 		global.FadeSpeed = FadeSpeed;
 		global.CameraIsPanning = true;
+		
 		return false;
 	}
 	

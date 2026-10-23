@@ -2,24 +2,34 @@
 #region Movement
 	var xdir = 0
 	var ydir = 0
-	
-	if global.CanControlPlayer = true and global.CameraIsPanning = false and Entity_Player.IsAttacking = false and IsMenuVisible() = false and global.FadeProgress = 2
+	var CanMove = true
+	if global.CanControlPlayer = true and global.CameraIsPanning = false and IsMenuVisible() = false and global.FadeProgress = 2
 	{
-		xdir = input_check("right") - input_check("left");
-		if xdir = 0
+		if Entity_Player.IsAttacking = false
 		{
-			xdir = input_check("joyright") - input_check("joyleft");
+			xdir = input_check("right") - input_check("left");
+			if xdir = 0
+			{
+				xdir = input_check("joyright") - input_check("joyleft");
+			}
+			ydir = input_check("down") - input_check("up");
+			if ydir = 0
+			{
+				ydir = input_check("joydown") - input_check("joyup");
+			}
 		}
-		ydir = input_check("down") - input_check("up");
-		if ydir = 0
+		else
 		{
-			ydir = input_check("joydown") - input_check("joyup");
+			xdir = 0
+			ydir = 0
 		}
 	}
 	else
 	{
 		xdir = 0
 		ydir = 0
+		CanMove = false
+		Speed = 0
 	}
 	
 	var MoveDistance = point_distance(0,0,xdir,ydir);
@@ -39,16 +49,25 @@
 	{
 		SpeedMultiplier = 1
 	}
-	move(Acceleration, MoveDirection, MaxSpeed * SpeedMultiplier * DiagonalSpeedMultiplier * DebugSpeedMultiplier, MoveDistance);
 	
-	if xdir != 0 or ydir != 0
+	if CanMove = true
 	{
-		Entity_Player.Moving = true
+		move(Acceleration, MoveDirection, MaxSpeed * SpeedMultiplier * DiagonalSpeedMultiplier * DebugSpeedMultiplier, MoveDistance);
+		
+		if xdir != 0 or ydir != 0
+		{
+			Entity_Player.Moving = true
+		}
+		else
+		{
+			Entity_Player.Moving = false
+		}
 	}
 	else
 	{
 		Entity_Player.Moving = false
 	}
+	
 	if Entity_Player.DamageDelay > 0 and Entity_Player.DistanceLeftToKnockBack > 0
 	{
 		move(1, Entity_Player.HitFromDirection, 1, 1);
