@@ -124,6 +124,13 @@ if room = Room_Overworld
 					room_goto(Room_Cutscene_Shrine_Earth);
 					break;
 			}
+			switch global.StartCutscene
+			{
+				case "Shrine_Illusion":
+					Audio_StopMusic()
+					room_goto(Room_Cutscene_Shrine_Illusion);
+					break;
+			}
 		}
 	}
 	
