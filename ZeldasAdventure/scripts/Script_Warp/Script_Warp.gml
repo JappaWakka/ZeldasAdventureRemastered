@@ -6,8 +6,10 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 	var PlayerY = WarpArray[3]
 	var PlayerFacing = WarpArray[4]
 	
+	//Set player's Speed variable to 0 to reset initial Slippery Floor speed
 	Entity_Collision_Player.Speed = 0
 	
+	//If a warp just got triggered
 	if global.FadeProgress = 3
 	{
 		if audio_is_playing(global.CurrentDialogue_ID)
@@ -15,13 +17,14 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 			audio_stop_sound(global.CurrentDialogue_ID)
 			global.Subtitle = ""
 		}
-		global.FadeProgress = 0;
+		global.FadeProgress = 0; //Start fading out
 		global.FadeSpeed = FadeSpeed;
 		global.CameraIsPanning = true;
 		
-		return false;
+		return false; //Player is not yet at new location
 	}
 	
+	//When fading in
 	if global.FadeProgress = 1
 	{
 		var DestinationX = PlayerX
@@ -34,17 +37,24 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 		{
 			DestinationY = Entity_Collision_Player.y
 		}
+		
+		//Set previous tile coordinates
+		global.PreviousTile.x = global.CurrentTile.x
+		global.PreviousTile.y = global.CurrentTile.y
+		
+		//Destroy Item Drops
 		instance_destroy(Entity_Pickup_ItemDrops_All)
 		instance_destroy(Entity_Pickup_ItemDrops_CanBe5Rubies)
 		instance_destroy(Entity_Pickup_ItemDrops_GuaranteedHeart)
-		var PrevousTileX = global.CurrentTile.x
-		var PrevousTileY = global.CurrentTile.y
 		
+		//Update location values and set fade speed
 		global.FadeSpeed = FadeSpeed;
 		Entity_Collision_Player.x = TileX * tileWidth + DestinationX;
 		Entity_Collision_Player.y = TileY * tileHeight + DestinationY;
 		global.CurrentTile.x = TileX;
 		global.CurrentTile.y = TileY;
+		
+		//Add new tile to visited tiles if it's not already there
 		if WorldMap_GetCurrentTileID() != -1
 		{
 			WorldMap_Add_VisitedTile(global.CurrentTile.x,global.CurrentTile.y)
@@ -62,27 +72,51 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 				Obj_WorldMapManager.BackgroundIndex = -1
 			}
 		}
+		
+		//Deactivate old tile, activate new tile
 		camera_set_view_pos(view,global.CurrentTile.x * tileWidth,global.CurrentTile.y * tileHeight);
-		instance_deactivate_region(PrevousTileX * tileWidth, PrevousTileY * tileHeight, tileWidth, tileHeight,true,true)
+		instance_deactivate_region(global.PreviousTile.x * tileWidth, global.PreviousTile.y * tileHeight, tileWidth, tileHeight,true,true)
 		instance_activate_layer("CandleDarkness")
+		instance_activate_layer("TempObjects_Below")
+		instance_activate_layer("TempObjects_Above")
 		instance_activate_region(TileX * tileWidth, TileY * tileHeight, tileWidth, tileHeight, true)
 		instance_activate_object(Entity_Parent_Player)
 		
+		//Set player's rotation
 		if PlayerFacing != -1
 		{
 			if instance_exists(Entity_Player) = true
 			{
 				Entity_Player.Facing = PlayerFacing
+				Entity_Player.image_index = 0
+				
+				switch PlayerFacing
+				{
+					case global.Directions.East:
+						Entity_Player.sprite_index = Zelda_Move_East;
+						break;
+					case global.Directions.West:
+						Entity_Player.sprite_index = Zelda_Move_West;
+						break;
+					case global.Directions.South:
+						Entity_Player.sprite_index = Zelda_Move_South;
+						break;
+					case global.Directions.North:
+						Entity_Player.sprite_index = Zelda_Move_North;
+						break;
+				}
 			}
 		}
+		//Change music track
 		global.SwitchTracks = true;
 				
 		global.CameraIsPanning = false;
 		
-		return true;
+		return true; //Player has been moved to new location
 	}
-	if global.FadeProgress = 2
+	if global.FadeProgress = 2 //Finished warping
 	{
+		//Set the player's acceleration when a Slippery Floor trigger is there or not
 		if instance_exists(SlipperyFloor) = true
 		{
 			Entity_Collision_Player.Acceleration = PlayerAcceleration_Slippery
@@ -91,6 +125,8 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 		{
 			Entity_Collision_Player.Acceleration = PlayerBaseSpeed * Entity_Collision_Player.SpeedMultiplier
 		}
+		
+		//Set the time during which enemies can't touch the edge of the tile
 		with Obj_GameManager
 		{
 			if global.RemasteredMode = true
@@ -99,6 +135,8 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 				alarm_set(0,75)
 			}
 		}
+		
+		//Activate enemies that move on a path
 		if instance_exists(Entity_Parent_Enemy_Path) = true
 		{
 			with Entity_Parent_Enemy_Path
@@ -128,6 +166,7 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 				}
 			}
 		}
+		//Activate NPCs that move on a path
 		if instance_exists(Entity_Parent_NPC_Path) = true
 		{
 			with Entity_Parent_NPC_Path
@@ -348,8 +387,8 @@ function WarpToLocation(Name)
 			
 		//Shrine of Illusion
 		case "Spawn_ShrineOfIllusion": WarpTo(global.WarpLocations.ShrineOfIllusion_Spawn_Entrance) break;
-		case "Spawn_ShrineOfIllusion_SlideRoom": WarpTo(global.WarpLocations.ShrineOfIllusion_SlideRoom) break;
 		case "Spawn_ShrineOfIllusion_Boss": WarpTo(global.WarpLocations.ShrineOfIllusion_Spawn_Boss) break;
+		case "ShrineOfIllusion_SlideRoom": WarpTo(global.WarpLocations.ShrineOfIllusion_SlideRoom) break;
 		case "ShrineOfIllusion_03_to_05": WarpTo(global.WarpLocations.ShrineOfIllusion_03_to_05) break;
 		case "ShrineOfIllusion_04_to_05": WarpTo(global.WarpLocations.ShrineOfIllusion_04_to_05) break;
 		case "ShrineOfIllusion_05_to_04": WarpTo(global.WarpLocations.ShrineOfIllusion_05_to_04) break;

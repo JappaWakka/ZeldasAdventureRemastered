@@ -110,7 +110,7 @@ function InitGameVariables()
 	global.SwapSprite = noone
 	global.SwapDirection = 0
 	global.DebugSpeedMultiplier = 1
-	
+	global.MusicPaused = false
 	global.EnemyCannotTouchEdge = false
 	global.CompassWarp = ""
 	global.HarpWarp = ""
@@ -175,6 +175,7 @@ function InitGameVariables()
 	global.Name = "ZELDA";
 	global.CurrentMap = Maps.Overworld; //To determine which map to display in the inventory
 	global.CurrentTile = {x: 6, y: 22};
+	global.PreviousTile = {x: 6, y: 22};
 	global.PlayerSpawn = "Spawn_Overworld";
 	
 	global.CurrentRubies = 0;

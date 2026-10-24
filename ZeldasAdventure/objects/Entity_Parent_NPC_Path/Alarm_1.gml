@@ -16,7 +16,6 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false && NP
 			var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
 			
 			Animating = false
-			CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
 			CanContinue = false
 			NPCState = NPCStates.Wait
 			FrameIndex += 4
@@ -59,7 +58,14 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false && NP
 				visible = true
 			}
 			CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
-			NPCState = NPCStates.Idle
+			if CurrentPath[CoordinateIndex][0] <> 0 or CurrentPath[CoordinateIndex][1] <> 0
+			{
+				NPCState = NPCStates.Move
+			}
+			else
+			{
+				NPCState = NPCStates.Idle
+			}
 			
 			CanContinue = true
 			alarm_set(1,4)
@@ -78,7 +84,6 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false && NP
 			var Delay = CurrentPath[CoordinateIndex][3] * 4
 			
 			Animating = true
-			CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
 			CanContinue = false
 			NPCState = NPCStates.Wait
 			FrameIndex += 4
@@ -92,6 +97,14 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false && NP
 			}
 			
 			break;
+		case "executescript":
+			script_execute(CurrentPath[CoordinateIndex][3])
+			NPCState = NPCStates.Idle
+			CanContinue = true
+			alarm_set(1,4)
+			break;
+		case "remove":
+			instance_destroy()
 		case "stoppath":
 			Animating = false
 			NPCState = NPCStates.StopPath

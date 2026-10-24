@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"NPCPath_ShrineOfIllusion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"NPCPath_ShrineOfIllusion",
+  "parent":{
+    "name":"NPCs",
+    "path":"folders/Scripts/Paths/NPCs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

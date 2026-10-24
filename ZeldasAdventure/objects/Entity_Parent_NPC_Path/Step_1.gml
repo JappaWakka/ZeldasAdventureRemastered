@@ -1,10 +1,6 @@
-///@description Default NPC Begin Step Event
+///@description Path NPC Begin Step Event
 if IsPlayerOnSameTile_EnemyOrNPC() = true
 {
-	if NPCState != NPCStates.StopPath
-	{
-		visible = true
-	}
 	if Animating = true
 	{
 		image_speed = d(ImageSpeed)

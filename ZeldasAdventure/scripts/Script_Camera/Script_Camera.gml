@@ -50,13 +50,18 @@ function Camera_Pan()
 				
 		if ((Desired.x != Current.x) || (Desired.y != Current.y))
 		{
-						
+			//Set previous tile coordinates
+			global.PreviousTile.x = global.CurrentTile.x
+			global.PreviousTile.y = global.CurrentTile.y
+			
 			//Deactivate old tile, activate new tile
 			instance_destroy(Entity_Pickup_ItemDrops_All)
 			instance_destroy(Entity_Pickup_ItemDrops_CanBe5Rubies)
 			instance_destroy(Entity_Pickup_ItemDrops_GuaranteedHeart)
 			instance_deactivate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y * tileHeight, tileWidth, tileHeight,true,true)
 			instance_activate_layer("CandleDarkness")
+			instance_activate_layer("TempObjects_Below")
+			instance_activate_layer("TempObjects_Above")
 			instance_activate_object(Entity_Parent_Player)
 			instance_activate_region(Desired.x, Desired.y, tileWidth, tileHeight,true)
 			
@@ -94,6 +99,8 @@ function Camera_Pan()
 					Obj_WorldMapManager.BackgroundIndex = -1
 				}
 			}
+			
+			//Set the player's acceleration when a Slippery Floor trigger is there or not
 			if instance_exists(SlipperyFloor) = true
 			{
 				Entity_Collision_Player.Acceleration = PlayerAcceleration_Slippery
@@ -122,7 +129,7 @@ function Camera_Pan()
 				}
 				else
 				{
-					
+					//Set the time during which enemies can't touch the edge of the tile
 					if SetEnemyCannotTouchEdge = true
 					{
 						global.EnemyCannotTouchEdge = true
@@ -130,6 +137,7 @@ function Camera_Pan()
 						SetEnemyCannotTouchEdge = false
 					}
 					
+					//Activate enemies that move on a path
 					if instance_exists(Entity_Parent_Enemy_Path) = true
 					{
 						with Entity_Parent_Enemy_Path
@@ -159,6 +167,7 @@ function Camera_Pan()
 							}
 						}
 					}
+					//Activate NPCs that move on a path
 					if instance_exists(Entity_Parent_NPC_Path) = true
 					{
 						with Entity_Parent_NPC_Path
@@ -188,6 +197,7 @@ function Camera_Pan()
 							}
 						}
 					}
+					//Change music track
 					if audio_is_playing(SFX_Zelda_Death) = false
 					{
 						global.SwitchTracks = true;
@@ -198,6 +208,7 @@ function Camera_Pan()
 					}
 				}
 			}
+			//Fade out and back in
 			else
 			{
 				//Remember to reset global.CandleUsed after panning
@@ -235,7 +246,8 @@ function Camera_Pan()
 					camera_set_view_pos(view,Desired.x,Desired.y);
 				}
 				if global.FadeProgress = 2
-				{					
+				{
+					//Set the time during which enemies can't touch the edge of the tile
 					if SetEnemyCannotTouchEdge = true
 					{
 						global.EnemyCannotTouchEdge = true
@@ -253,10 +265,12 @@ function Camera_Pan()
 		}
 		else
 		{
+			//After fading in and out
 			if global.FadeBeforePan = true
 			{
 				if global.FadeProgress = 2
 				{
+					//Activate enemies that move on a path
 					if instance_exists(Entity_Parent_Enemy_Path) = true
 					{
 						with Entity_Parent_Enemy_Path
@@ -285,6 +299,7 @@ function Camera_Pan()
 								alarm_set(0, 1);
 							}
 						}
+						//Activate NPCs that move on a path
 						if instance_exists(Entity_Parent_NPC_Path) = true
 						{
 							with Entity_Parent_NPC_Path
