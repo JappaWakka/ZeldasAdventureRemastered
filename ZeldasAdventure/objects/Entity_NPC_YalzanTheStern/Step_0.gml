@@ -44,7 +44,7 @@ if Register_Registered(Registers.YalzanTheStern_PaidFee) = false
 else
 {
 	instance_deactivate_object(Collision_PlainOfDonoraGate)
-	instance_deactivate_object(Entity_Enemy_FloorSpikes_PlainOfDonoraGate)
+	instance_deactivate_object(Entity_Enemy_Blocker_PlainOfDonoraGate)
 }
 if IsPlayerOnSameTile_EnemyOrNPC()
 {
@@ -80,5 +80,5 @@ else
 {
 	Register_Remove(Registers.YalzanTheStern_PaidFee)
 	instance_activate_object(Collision_PlainOfDonoraGate)
-	instance_activate_object(Entity_Enemy_FloorSpikes_PlainOfDonoraGate)
+	instance_activate_object(Entity_Enemy_Blocker_PlainOfDonoraGate)
 }

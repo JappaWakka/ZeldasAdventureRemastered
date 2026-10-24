@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Entity_Enemy_FloorSpikes_ShrineOfDestiny",
+  "%Name":"Entity_Enemy_Blocker_ShrineOfDestiny",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Entity_Enemy_FloorSpikes_ShrineOfDestiny",
+  "name":"Entity_Enemy_Blocker_ShrineOfDestiny",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"HitPoints","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"99",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"Power","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"58",},
