@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":188.86906,
+  "duration":188.8691,
   "exportDir":"",
   "name":"Music_Shrine_Illusion_Regular",
   "parent":{

@@ -305,8 +305,18 @@ else if PageIndex = Menu_Page.NameInput //Name Input Menu
 		}
 	}
 }
-else //SettingsMenu
+else //Settings Menu
 {
+	//Control the looping of the Music Volume Preview sound
+	if MusicPreviewID <> -1
+	{
+		var TotalLength = 1.751 + 305.749 //intro + loop
+		var BGAudio_Position = audio_sound_get_track_position(MusicPreviewID);
+		if (BGAudio_Position > TotalLength) //If the playback position is larger than the intro + the loop, it's in the buffer area of the audio track
+		{
+			audio_sound_set_track_position(MusicPreviewID, BGAudio_Position - 305.749); //Subtract the length of the loop from the current playback position
+		}
+	}
 	if IsFading == false
 	{
 		var CurrentGrid = Menu_Pages[PageIndex];
@@ -437,6 +447,24 @@ else //SettingsMenu
 		}
 		else
 		{
+			//Stop Volume Previews if playing
+			if MusicPreviewID <> -1
+			{
+				Audio_StopMusic(MusicAsset)
+				MusicPreviewID = -1
+			}
+			if DialoguePreviewID <> -1
+			{
+				audio_stop_sound(DialogueAsset)
+				DialoguePreviewID = -1
+			}
+			if SoundFXPreviewID <> -1
+			{
+				audio_stop_sound(SoundFXAsset)
+				SoundFXPreviewID = -1
+			}
+			
+			//Reset change value sound effect timer
 			if ChangeValueAlarm.time != ChangeValueAlarm.startTime
 			{
 				ChangeValueAlarm.restart();
@@ -480,6 +508,33 @@ else //SettingsMenu
 					case Menu_ElementType.Toggle:
 						if IsInputting = false
 						{
+							if PageIndex = Menu_Page.Audio
+							{
+								//Master or Music Volume Preview
+								if Menu_CurrentEntry[PageIndex] = 0 or Menu_CurrentEntry[PageIndex] = 1
+								{
+									if MusicPreviewID = -1
+									{
+										MusicPreviewID = Audio_PlayMusic(MusicAsset)
+									}
+								}
+								//Master or SoundFX Volume Preview
+								if Menu_CurrentEntry[PageIndex] = 0 or Menu_CurrentEntry[PageIndex] = 2
+								{
+									if SoundFXPreviewID = -1
+									{
+										SoundFXPreviewID = audio_play_sound(SoundFXAsset,1000,true)
+									}
+								}
+								//Dialogue Volume Preview
+								if Menu_CurrentEntry[PageIndex] = 3
+								{
+									if DialoguePreviewID = -1
+									{
+										DialoguePreviewID = audio_play_sound(DialogueAsset,1000,true)
+									}	
+								}
+							}
 							IsInputting = true;
 						}
 						break;

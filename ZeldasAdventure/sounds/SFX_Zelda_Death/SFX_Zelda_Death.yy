@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":4.688995,
+  "duration":4.689025,
   "exportDir":"",
   "name":"SFX_Zelda_Death",
   "parent":{

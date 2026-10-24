@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":4.494815,
+  "duration":4.49483,
   "exportDir":"",
   "name":"SFX_Use_Flute",
   "parent":{

@@ -131,6 +131,12 @@ input_ignore_key_remove(vk_ralt)
 ChangeValueAlarm = new Alarm(8, function(){audio_play_sound(Settings_ChangeValue,1000,false)}, true)
 FirstChangeDone = false
 ConfirmDelete = 0
+MusicPreviewID = -1
+MusicAsset = Music_Shrine_Earth_Regular
+DialoguePreviewID = -1
+DialogueAsset = Dialog_GreatWimbich_Yvonne_Singing
+SoundFXPreviewID = -1
+SoundFXAsset = SFX_Enemy_Tumblebot
 
 InputName = ""
 CurrentCharPositionObject = instance_create_layer(88,92,"Instances",Obj_NameEntryMenu_CurrentCharPosition)

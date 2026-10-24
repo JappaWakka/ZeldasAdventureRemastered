@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.069771,
+  "duration":1.069796,
   "exportDir":"",
   "name":"SFX_FillHearts",
   "parent":{

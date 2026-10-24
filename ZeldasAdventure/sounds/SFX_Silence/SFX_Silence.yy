@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.0,
+  "duration":0.9970975,
   "exportDir":"",
   "name":"SFX_Silence",
   "parent":{

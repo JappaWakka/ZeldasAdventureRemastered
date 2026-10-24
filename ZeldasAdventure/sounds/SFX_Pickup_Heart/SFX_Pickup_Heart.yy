@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.301481,
+  "duration":0.2879365,
   "exportDir":"",
   "name":"SFX_Pickup_Heart",
   "parent":{

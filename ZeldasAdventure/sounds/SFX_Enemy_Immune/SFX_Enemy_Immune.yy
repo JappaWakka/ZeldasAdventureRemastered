@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.318413,
+  "duration":0.34539682,
   "exportDir":"",
   "name":"SFX_Enemy_Immune",
   "parent":{

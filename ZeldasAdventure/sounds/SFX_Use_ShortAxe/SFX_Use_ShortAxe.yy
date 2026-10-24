@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.201451,
+  "duration":0.18984127,
   "exportDir":"",
   "name":"SFX_Use_ShortAxe",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.225979,
+  "duration":0.25061226,
   "exportDir":"",
   "name":"SFX_Zelda_Damage",
   "parent":{

@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.533968,
+  "duration":0.5204535,
   "exportDir":"",
   "name":"Menu_NameInput_Backspace",
   "parent":{

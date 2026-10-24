@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":1.028042,
+  "duration":1.0280726,
   "exportDir":"",
   "name":"Menu_NameInput_Confirm",
   "parent":{

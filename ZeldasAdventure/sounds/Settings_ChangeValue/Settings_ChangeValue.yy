@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":6,
   "conversionMode":0,
-  "duration":0.032751,
+  "duration":0.04063492,
   "exportDir":"",
   "name":"Settings_ChangeValue",
   "parent":{
