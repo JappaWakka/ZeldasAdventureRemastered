@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"UseTreasure_Knife",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"UseTreasure_Knife",
+  "parent":{
+    "name":"Treasures",
+    "path":"folders/Scripts/UseItem/Treasures.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

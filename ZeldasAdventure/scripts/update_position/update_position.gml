@@ -51,6 +51,14 @@ function update_position(argument0, argument1) {
 			FreeToMoveCurrent = false
 		}
 	}
+	////Knife Canvas
+	if Register_Registered(Registers.Knife_Used) = false
+	{
+		if place_meeting(x_target, y_target, UseItem_ShrineOfIllusion_15_Knife)
+		{
+			FreeToMoveCurrent = false
+		}
+	}
 	
 	//Fairy Fountains
 	if place_meeting(x_target, y_target, Parent_FairyFountain)

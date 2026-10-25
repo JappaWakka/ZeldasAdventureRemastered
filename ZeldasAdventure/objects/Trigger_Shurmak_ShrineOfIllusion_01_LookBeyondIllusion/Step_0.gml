@@ -1,0 +1,43 @@
+if IsPlayerOnSameTile() = true
+{
+	if Register_Registered(Registers.Pasquinade_Defeated) = true
+	{
+		instance_destroy()
+	}
+	
+	if Register_Registered(Registers.Shurmak_LookBeyondIllusion) = false and global.FadeAlpha = 0
+	{
+		if global.CurrentDialogue_Asset = Dialog_None
+		{
+			global.CurrentDialogue_Asset = Dialog_ShrineOfIllusion_01_Shurmak_LookBeyondIllusion
+			global.CurrentDialogue_ID = audio_play_sound(global.CurrentDialogue_Asset,500,false)
+			Register_Add(Registers.Shurmak_LookBeyondIllusion,true)
+		}
+		
+	}
+		
+	if global.CurrentDialogue_Asset != Dialog_None
+	{
+		if IsMenuVisible() = false
+		{
+			if audio_is_paused(global.CurrentDialogue_ID) = true
+			{
+				audio_resume_sound(global.CurrentDialogue_ID)
+			}
+			var AudioPosition = audio_sound_get_track_position(global.CurrentDialogue_ID)
+			if global.CurrentDialogue_Asset = Dialog_ShrineOfIllusion_01_Shurmak_LookBeyondIllusion
+			{
+				global.Subtitle = Subtitle_ShrineOfIllusion_01_Shurmak_LookBeyondIllusion(AudioPosition)
+			}
+			
+		}
+		else
+		{
+			if audio_is_paused(global.CurrentDialogue_ID) = false
+			{
+				audio_pause_sound(global.CurrentDialogue_ID)
+			}
+			global.Subtitle = ""
+		}
+	}
+}

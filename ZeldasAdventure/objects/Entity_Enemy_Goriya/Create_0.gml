@@ -11,4 +11,11 @@ y >= 23 * tileHeight && y < 23 * tileHeight + tileHeight
 {
 	TriggerScriptName = "PlainOfAndor_Boomerang"
 }
+
+if x >= 22 * tileWidth && x < 22 * tileWidth + tileWidth &&
+y >= 21 * tileHeight && y < 21 * tileHeight + tileHeight
+{
+	TriggerScriptName = "ShrineOfIllusion_Knife"
+}
+
 ResetAlarm = new Alarm(15,ResetEnemyState,false);

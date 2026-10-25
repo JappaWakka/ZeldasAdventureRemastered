@@ -19,6 +19,10 @@ if room = Room_Overworld
 	}
 	if global.HasSpawned = false
 	{
+		if global.PlayerSpawn = "Spawn_Gauntlet" and Register_Registered(Registers.Ganon_Defeated) = true
+		{
+			global.PlayerSpawn = "Spawn_Overworld"
+		}
 		WarpToLocation(global.PlayerSpawn)
 		if global.FadeProgress = 2
 		{
@@ -58,36 +62,64 @@ if room = Room_Overworld
 			
 			case "Spawn_ShrineOfEarth":
 			case "Spawn_ShrineOfEarth_Boss":
+				if Item_FindIndex(CelestialSigns.Earth,2) <> -1
+				{
+					global.PlayerSpawn = "Spawn_ShrineOfEarth"
+				}
 				global.CurrentMap = Maps.Shrine1
 				break;
 			
 			case "Spawn_ShrineOfIllusion":
 			case "Spawn_ShrineOfIllusion_Boss":
+				if Item_FindIndex(CelestialSigns.Illusion,2) <> -1
+				{
+					global.PlayerSpawn = "Spawn_ShrineOfIllusion"
+				}
 				global.CurrentMap = Maps.Shrine2
 				break;
 			
 			case "Spawn_ShrineOfAir":
 			case "Spawn_ShrineOfAir_Boss":
+				if Item_FindIndex(CelestialSigns.Air,2) <> -1
+				{
+					global.PlayerSpawn = "Spawn_ShrineOfAir"
+				}
 				global.CurrentMap = Maps.Shrine3
 				break;
 			
 			case "Spawn_ShrineOfDestiny":
 			case "Spawn_ShrineOfDestiny_Boss":
+				if Item_FindIndex(CelestialSigns.Destiny,2) <> -1
+				{
+					global.PlayerSpawn = "Spawn_ShrineOfDestiny"
+				}
 				global.CurrentMap = Maps.Shrine4
 				break;
 			
 			case "Spawn_ShrineOfWater":
 			case "Spawn_ShrineOfWater_Boss":
+				if Item_FindIndex(CelestialSigns.Water,2) <> -1
+				{
+					global.PlayerSpawn = "Spawn_ShrineOfWater"
+				}
 				global.CurrentMap = Maps.Shrine5
 				break;
 			
 			case "Spawn_ShrineOfStrength":
 			case "Spawn_ShrineOfStrength_Boss":
+				if Item_FindIndex(CelestialSigns.Strength,2) <> -1
+				{
+					global.PlayerSpawn = "Spawn_ShrineOfStrength"
+				}
 				global.CurrentMap = Maps.Shrine6
 				break;
 			
 			case "Spawn_ShrineOfFire":
 			case "Spawn_ShrineOfFire_Boss":
+				if Item_FindIndex(CelestialSigns.Fire,2) <> -1
+				{
+					global.PlayerSpawn = "Spawn_ShrineOfFire"
+				}
 				global.CurrentMap = Maps.Shrine7
 				break;
 			

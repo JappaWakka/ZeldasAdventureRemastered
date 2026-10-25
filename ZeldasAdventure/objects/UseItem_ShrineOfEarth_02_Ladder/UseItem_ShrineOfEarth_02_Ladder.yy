@@ -6,8 +6,8 @@
   "name":"UseItem_ShrineOfEarth_02_Ladder",
   "overriddenProperties":[],
   "parent":{
-    "name":"Item_Ladder",
-    "path":"folders/Objects/SpecialCollisions/Item_Ladder.yy",
+    "name":"Ladder",
+    "path":"folders/Objects/SpecialCollisions/Items/Ladder.yy",
   },
   "parentObjectId":null,
   "persistent":false,

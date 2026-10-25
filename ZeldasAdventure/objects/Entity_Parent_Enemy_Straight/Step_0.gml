@@ -279,14 +279,24 @@ if HitPoints <= 0
 			{ Color = "Yellow" }
 			Script_Trigger_ShrineOfEarth_SardakBarrier(Color) //Remove Shrine of Earth Boss Barrier
 			break
-		case Registers.Key_Molluska :
+		case "ShrineOfIllusion_Knife" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_Knife() //Spawn Knife Treasure Pickup
+			}
+			break
+		case "ShrineOfIllusion_KeyMolluska" :
 			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] > 0
 			{
 				global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] -= 1
 			}
 			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] = 0
 			{
-				Script_Trigger_ShrineOfIllusion_KeyMolluska() //Spawn Key
+				Script_Trigger_ShrineOfIllusion_KeyMolluska() //Spawn Key Pickup
 			}
 			break
 	}

@@ -51,6 +51,9 @@ function UseItem_Treasure()
 			case Treasures.Coal:
 				UseTreasure_Coal()
 				break;
+			case Treasures.Knife:
+				UseTreasure_Knife()
+				break;
 			case Treasures.Compass_Earth:
 				UseTreasure_Compass_Earth()
 				break;

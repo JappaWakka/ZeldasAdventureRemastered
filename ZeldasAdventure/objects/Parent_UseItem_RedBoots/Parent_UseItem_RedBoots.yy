@@ -6,8 +6,8 @@
   "name":"Parent_UseItem_RedBoots",
   "overriddenProperties":[],
   "parent":{
-    "name":"Item_RedBoots",
-    "path":"folders/Objects/SpecialCollisions/Item_RedBoots.yy",
+    "name":"RedBoots",
+    "path":"folders/Objects/SpecialCollisions/Items/RedBoots.yy",
   },
   "parentObjectId":null,
   "persistent":false,

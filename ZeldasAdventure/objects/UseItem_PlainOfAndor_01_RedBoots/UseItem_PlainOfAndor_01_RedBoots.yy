@@ -6,8 +6,8 @@
   "name":"UseItem_PlainOfAndor_01_RedBoots",
   "overriddenProperties":[],
   "parent":{
-    "name":"Item_RedBoots",
-    "path":"folders/Objects/SpecialCollisions/Item_RedBoots.yy",
+    "name":"RedBoots",
+    "path":"folders/Objects/SpecialCollisions/Items/RedBoots.yy",
   },
   "parentObjectId":{
     "name":"Parent_UseItem_RedBoots",

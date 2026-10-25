@@ -1,6 +1,6 @@
 if IsPlayerOnSameTile() = true
 {
-	if Register_Registered("Llort_Defeated") = true
+	if Register_Registered(Registers.Llort_Defeated) = true
 	{
 		instance_destroy()
 	}

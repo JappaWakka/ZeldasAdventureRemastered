@@ -120,8 +120,21 @@ enum Registers
 	Lonlyn_CannotHelpYou,
 	
 //Shrine of Illusion
+	Shurmak_LookBeyondIllusion,
+	Key_Vire,
 	Key_Molluska,
+	BlackOrb_Placed,
+	Knife_Used,
+	Pasquinade_LookToYourHeart,
+	Pasquinade_WelcomeMyLovely,
+	Pasquinade_Defeated,
 	
 //Forest of Canvula
 	CrystalHeart_ForestOfCanvula,
+	
+//South Port
+	Raft_Placed,
+	
+// Ganon's Gauntlet
+	Ganon_Defeated,
 }
