@@ -4,22 +4,22 @@
   "bboxMode":0,
   "bbox_bottom":187,
   "bbox_left":0,
-  "bbox_right":47,
-  "bbox_top":95,
+  "bbox_right":262,
+  "bbox_top":22,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"a82955dc-1366-4b65-91d3-ad34285d18b9","name":"a82955dc-1366-4b65-91d3-ad34285d18b9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"eaa2313c-2b0b-4f1e-8a73-8d9522b12919","name":"eaa2313c-2b0b-4f1e-8a73-8d9522b12919","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e701d24d-f23d-4e71-ae94-24ffecd2c272","blendMode":0,"displayName":"default","isLocked":false,"name":"e701d24d-f23d-4e71-ae94-24ffecd2c272","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e98f03ca-3e9e-44ec-b73d-a2601f7efd62","blendMode":0,"displayName":"default","isLocked":false,"name":"e98f03ca-3e9e-44ec-b73d-a2601f7efd62","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Shrine_Illusion_03_StalfosDoors_Above",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a82955dc-1366-4b65-91d3-ad34285d18b9","path":"sprites/Shrine_Illusion_03_StalfosDoors_Above/Shrine_Illusion_03_StalfosDoors_Above.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c6bbade8-974a-46ef-a1a4-f13c34878e98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eaa2313c-2b0b-4f1e-8a73-8d9522b12919","path":"sprites/Shrine_Illusion_03_StalfosDoors_Above/Shrine_Illusion_03_StalfosDoors_Above.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"506d6899-95e3-426d-9acd-30d93951c567","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

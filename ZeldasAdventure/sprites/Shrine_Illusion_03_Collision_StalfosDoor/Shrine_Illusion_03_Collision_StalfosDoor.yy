@@ -4,22 +4,22 @@
   "bboxMode":0,
   "bbox_bottom":178,
   "bbox_left":49,
-  "bbox_right":67,
-  "bbox_top":138,
+  "bbox_right":265,
+  "bbox_top":78,
   "collisionKind":0,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"5fee43f9-9ce1-4db7-8a6e-c3f1e854c590","name":"5fee43f9-9ce1-4db7-8a6e-c3f1e854c590","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4ddaf3fd-74c5-4245-b589-bfba9194c02f","name":"4ddaf3fd-74c5-4245-b589-bfba9194c02f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"6f6f8ec7-9f53-4a53-b478-7d1c5062e385","blendMode":0,"displayName":"default","isLocked":false,"name":"6f6f8ec7-9f53-4a53-b478-7d1c5062e385","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7a538726-c711-4482-87b3-bbe0de04baf7","blendMode":0,"displayName":"default","isLocked":false,"name":"7a538726-c711-4482-87b3-bbe0de04baf7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Shrine_Illusion_03_Collision_StalfosDoor",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5fee43f9-9ce1-4db7-8a6e-c3f1e854c590","path":"sprites/Shrine_Illusion_03_Collision_StalfosDoor/Shrine_Illusion_03_Collision_StalfosDoor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0d5d064f-1973-4d47-8170-4b1389424d70","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4ddaf3fd-74c5-4245-b589-bfba9194c02f","path":"sprites/Shrine_Illusion_03_Collision_StalfosDoor/Shrine_Illusion_03_Collision_StalfosDoor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5d3962eb-8bfe-4f1f-8a59-9532560a9416","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
