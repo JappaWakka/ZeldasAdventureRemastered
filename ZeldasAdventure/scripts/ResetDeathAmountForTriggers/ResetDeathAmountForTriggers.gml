@@ -7,4 +7,5 @@ function ResetDeathAmountForTriggers()
 	global.DeathAmountForTrigger.ShrineOfEarth_UnderworldMapEarth[1] = global.DeathAmountForTrigger.ShrineOfEarth_UnderworldMapEarth[0]
 	global.DeathAmountForTrigger.ShrineOfEarth_CompassEarth[1] = global.DeathAmountForTrigger.ShrineOfEarth_CompassEarth[0]
 	global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] = global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[0]
+	global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] = global.DeathAmountForTrigger.ShrineOfIllusion_Knife[0]
 }

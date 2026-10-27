@@ -148,6 +148,7 @@ else
 		y = OriginY;
 		image_index = 0;
 		direction = 90;
+		HitPoints = 60;
 	}
 	speed = global.EnemySpeeds.Still;
 	image_speed = 0;

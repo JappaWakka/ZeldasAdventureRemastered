@@ -2,7 +2,7 @@ if IsPlayerOnSameTile() = false
 {
 	if Register_Registered(Registers.YalzanTheStern_Attacked) = true
 	{
-		Register_Remove(Registers.YalzanTheStern_Attacked)
+		Register_Remove(Registers.YalzanTheStern_Attacked,true)
 	}
 }
 else

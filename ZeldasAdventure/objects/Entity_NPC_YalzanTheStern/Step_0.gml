@@ -78,7 +78,7 @@ if IsPlayerOnSameTile_EnemyOrNPC()
 }
 else
 {
-	Register_Remove(Registers.YalzanTheStern_PaidFee)
+	Register_Remove(Registers.YalzanTheStern_PaidFee,true)
 	instance_activate_object(Collision_PlainOfDonoraGate)
 	instance_activate_object(Entity_Enemy_Blocker_PlainOfDonoraGate)
 }

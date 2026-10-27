@@ -129,6 +129,7 @@ if room = Room_Overworld
 		}
 		if ResetEnemies = true
 		{
+			RemoveShrineRegisters()
 			global.SwappedBetweenDimensions = true
 			global.HasResetEnemies = true
 			global.SwapPosition = [Entity_Collision_Player.x,Entity_Collision_Player.y]

@@ -12,7 +12,7 @@ function UseTreasure_Knife()
 			global.CurrentItem[1] = -1
 		}
 			
-		Register_Add(Registers.Knife_Used)
+		Register_Add(Registers.Knife_Used,true)
 	}
 	else
 	{
