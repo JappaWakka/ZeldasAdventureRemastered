@@ -1414,6 +1414,7 @@
     {"id":{"name":"Script_PlayerDeath","path":"scripts/Script_PlayerDeath/Script_PlayerDeath.yy",},},
     {"id":{"name":"Script_Register_AddFindRemove","path":"scripts/Script_Register_AddFindRemove/Script_Register_AddFindRemove.yy",},},
     {"id":{"name":"Script_Registers","path":"scripts/Script_Registers/Script_Registers.yy",},},
+    {"id":{"name":"Script_RemoveShrineRegisters","path":"scripts/Script_RemoveShrineRegisters/Script_RemoveShrineRegisters.yy",},},
     {"id":{"name":"Script_ResetEnemyState","path":"scripts/Script_ResetEnemyState/Script_ResetEnemyState.yy",},},
     {"id":{"name":"Script_Rubies","path":"scripts/Script_Rubies/Script_Rubies.yy",},},
     {"id":{"name":"Script_SaveGamePatches","path":"scripts/Script_SaveGamePatches/Script_SaveGamePatches.yy",},},

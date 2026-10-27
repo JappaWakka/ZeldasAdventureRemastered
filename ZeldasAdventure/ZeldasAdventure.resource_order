@@ -985,6 +985,7 @@
     {"name":"Script_PlayerDeath","order":1,"path":"scripts/Script_PlayerDeath/Script_PlayerDeath.yy",},
     {"name":"Script_Register_AddFindRemove","order":1,"path":"scripts/Script_Register_AddFindRemove/Script_Register_AddFindRemove.yy",},
     {"name":"Script_Registers","order":9,"path":"scripts/Script_Registers/Script_Registers.yy",},
+    {"name":"Script_RemoveShrineRegisters","order":2,"path":"scripts/Script_RemoveShrineRegisters/Script_RemoveShrineRegisters.yy",},
     {"name":"Script_ResetEnemyState","order":20,"path":"scripts/Script_ResetEnemyState/Script_ResetEnemyState.yy",},
     {"name":"Script_Rubies","order":13,"path":"scripts/Script_Rubies/Script_Rubies.yy",},
     {"name":"Script_SaveGamePatches","order":25,"path":"scripts/Script_SaveGamePatches/Script_SaveGamePatches.yy",},

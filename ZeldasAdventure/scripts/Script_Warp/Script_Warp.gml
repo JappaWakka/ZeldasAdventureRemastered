@@ -1,4 +1,4 @@
-function WarpTo(WarpArray, FadeSpeed = 12)
+function WarpTo(WarpArray, DeleteEnemiesIfDied = false, FadeSpeed = 12)
 {
 	var TileX = WarpArray[0]
 	var TileY = WarpArray[1]
@@ -81,6 +81,10 @@ function WarpTo(WarpArray, FadeSpeed = 12)
 		instance_activate_layer("TempObjects_Above")
 		instance_activate_region(TileX * tileWidth, TileY * tileHeight, tileWidth, tileHeight, true)
 		instance_activate_object(Entity_Parent_Player)
+		if DeleteEnemiesIfDied = true and global.PlayerIsDead = true and instance_exists(Entity_Parent_Enemy) = true
+		{
+			instance_destroy(Entity_Parent_Enemy)
+		}
 		
 		//Set player's rotation
 		if PlayerFacing != -1
@@ -276,6 +280,7 @@ function SetWarpLocations()
 		ShrineOfIllusion_SlideRoom : [19,26,260,152,global.Directions.South],
 		ShrineOfIllusion_Spawn_Boss : [27,20,190,182,global.Directions.North],
 		ShrineOfIllusion_03_to_05 : [18,25,303,102,global.Directions.South],
+		ShrineOfIllusion_03_to_07 : [19,24,245,204,global.Directions.South],
 		ShrineOfIllusion_04_to_05 : [18,25,189,204,global.Directions.North],
 		ShrineOfIllusion_05_to_04 : [18,26,185,90,global.Directions.South],
 		ShrineOfIllusion_05_to_06 : [18,24,187,204,global.Directions.North],
@@ -374,7 +379,7 @@ function WarpToLocation(Name)
 			
 		//Shrine of Earth
 		case "Spawn_ShrineOfEarth": WarpTo(global.WarpLocations.ShrineOfEarth_Spawn_Entrance) break;
-		case "Spawn_ShrineOfEarth_Boss": WarpTo(global.WarpLocations.ShrineOfEarth_Spawn_Boss) break;
+		case "Spawn_ShrineOfEarth_Boss": WarpTo(global.WarpLocations.ShrineOfEarth_Spawn_Boss,true) break;
 		case "ShrineOfEarth_09_to_11": WarpTo(global.WarpLocations.ShrineOfEarth_09_to_11) break;
 		case "ShrineOfEarth_11_to_09": WarpTo(global.WarpLocations.ShrineOfEarth_11_to_09) break;
 		case "ShrineOfEarth_13_to_14": WarpTo(global.WarpLocations.ShrineOfEarth_13_to_14) break;
@@ -387,9 +392,10 @@ function WarpToLocation(Name)
 			
 		//Shrine of Illusion
 		case "Spawn_ShrineOfIllusion": WarpTo(global.WarpLocations.ShrineOfIllusion_Spawn_Entrance) break;
-		case "Spawn_ShrineOfIllusion_Boss": WarpTo(global.WarpLocations.ShrineOfIllusion_Spawn_Boss) break;
+		case "Spawn_ShrineOfIllusion_Boss": WarpTo(global.WarpLocations.ShrineOfIllusion_Spawn_Boss,true) break;
 		case "ShrineOfIllusion_SlideRoom": WarpTo(global.WarpLocations.ShrineOfIllusion_SlideRoom) break;
 		case "ShrineOfIllusion_03_to_05": WarpTo(global.WarpLocations.ShrineOfIllusion_03_to_05) break;
+		case "ShrineOfIllusion_03_to_07": WarpTo(global.WarpLocations.ShrineOfIllusion_03_to_07) break;
 		case "ShrineOfIllusion_04_to_05": WarpTo(global.WarpLocations.ShrineOfIllusion_04_to_05) break;
 		case "ShrineOfIllusion_05_to_04": WarpTo(global.WarpLocations.ShrineOfIllusion_05_to_04) break;
 		case "ShrineOfIllusion_05_to_06": WarpTo(global.WarpLocations.ShrineOfIllusion_05_to_06) break;
