@@ -1,6 +1,11 @@
 ///Add 1 Key to Inventory
 if PathHasEnded = true
 {
+	if x >= 18 * tileWidth && x < 18 * tileWidth + tileWidth &&
+	y >= 26 * tileHeight && y < 26 * tileHeight + tileHeight
+	{
+		Register_Add(Registers.Key_Vire)
+	}
 	if x >= 16 * tileWidth && x < 16 * tileWidth + tileWidth &&
 	y >= 10 * tileHeight && y < 10 * tileHeight + tileHeight
 	{

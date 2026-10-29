@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Script_Trigger_ShrineOfIllusion_UnderworldMapIllusion",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Script_Trigger_ShrineOfIllusion_UnderworldMapIllusion",
+  "parent":{
+    "name":"Triggers",
+    "path":"folders/Scripts/Triggers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -40,7 +40,7 @@ if ReturnToPoint = false
 		}
 		else
 		{
-			speed =  global.EnemySpeeds.Still
+			speed = global.EnemySpeeds.Still
 		}
 		alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
 		ChangeDirection = false;

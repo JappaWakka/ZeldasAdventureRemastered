@@ -6,6 +6,9 @@ function ResetDeathAmountForTriggers()
 	global.DeathAmountForTrigger.TektiteCave_Ambush[1] = global.DeathAmountForTrigger.TektiteCave_Ambush[0]
 	global.DeathAmountForTrigger.ShrineOfEarth_UnderworldMapEarth[1] = global.DeathAmountForTrigger.ShrineOfEarth_UnderworldMapEarth[0]
 	global.DeathAmountForTrigger.ShrineOfEarth_CompassEarth[1] = global.DeathAmountForTrigger.ShrineOfEarth_CompassEarth[0]
+	global.DeathAmountForTrigger.ShrineOfIllusion_KeyVire[1] = global.DeathAmountForTrigger.ShrineOfIllusion_KeyVire[0]
 	global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] = global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[0]
+	global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] = global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[0]
+	global.DeathAmountForTrigger.ShrineOfIllusion_CompassIllusion[1] = global.DeathAmountForTrigger.ShrineOfIllusion_CompassIllusion[0]
 	global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] = global.DeathAmountForTrigger.ShrineOfIllusion_Knife[0]
 }

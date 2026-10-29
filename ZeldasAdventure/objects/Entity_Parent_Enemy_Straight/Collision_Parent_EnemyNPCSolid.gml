@@ -11,7 +11,7 @@ if EnemyState != EnemyStates.Damaged
 }
 else
 {
-	speed =  global.EnemySpeeds.Still
+	speed = global.EnemySpeeds.Still
 }
 DistanceLeftToKnockBack = 0
 move_bounce_all(false);

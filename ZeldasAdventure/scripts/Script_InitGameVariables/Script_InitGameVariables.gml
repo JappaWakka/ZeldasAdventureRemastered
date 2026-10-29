@@ -11,7 +11,10 @@ function InitGameVariables()
 		TektiteCave_Ambush : [1,1],
 		ShrineOfEarth_UnderworldMapEarth : [2,2],
 		ShrineOfEarth_CompassEarth : [3,3],
+		ShrineOfIllusion_KeyVire : [1,1],
 		ShrineOfIllusion_KeyMolluska : [3,3],
+		ShrineOfIllusion_UnderworldMapIllusion : [1,1],
+		ShrineOfIllusion_CompassIllusion : [2,2],
 		ShrineOfIllusion_Knife : [2,2]
 	}
 	global.EnemySpeeds =

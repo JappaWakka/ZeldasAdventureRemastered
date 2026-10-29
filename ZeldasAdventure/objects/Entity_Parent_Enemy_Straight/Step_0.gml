@@ -289,6 +289,16 @@ if HitPoints <= 0
 				Script_Trigger_ShrineOfIllusion_Knife() //Spawn Knife Treasure Pickup
 			}
 			break
+		case "ShrineOfIllusion_KeyVire" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyVire[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_KeyVire[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyVire[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_KeyVire() //Spawn Key Pickup
+			}
+			break
 		case "ShrineOfIllusion_KeyMolluska" :
 			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] > 0
 			{
@@ -297,6 +307,16 @@ if HitPoints <= 0
 			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] = 0
 			{
 				Script_Trigger_ShrineOfIllusion_KeyMolluska() //Spawn Key Pickup
+			}
+			break
+		case "ShrineOfIllusion_UnderworldMapIllusion" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_UnderworldMapIllusion() //Spawn UnderworldMap_Illusion Treasure Pickup
 			}
 			break
 	}
