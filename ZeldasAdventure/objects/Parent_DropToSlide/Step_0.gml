@@ -1,6 +1,13 @@
 if Triggered = true
 {
-	WarpToLocation("ShrineOfIllusion_SlideRoom");
+	if Register_Registered(Registers.Pasquinade_Defeated) = true
+	{
+		WarpToLocation("Spawn_ShrineOfIllusion");
+	}
+	else
+	{
+		WarpToLocation("ShrineOfIllusion_SlideRoom");
+	}
 }
 if global.FadeProgress = 2
 {
