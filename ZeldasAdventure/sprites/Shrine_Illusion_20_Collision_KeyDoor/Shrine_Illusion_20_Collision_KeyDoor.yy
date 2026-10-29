@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"Shrine_Illusion_20_Collision_MolluskaKeyDoor",
+  "%Name":"Shrine_Illusion_20_Collision_KeyDoor",
   "bboxMode":0,
   "bbox_bottom":142,
   "bbox_left":328,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"0e85aa95-fcdd-4eef-b6bd-58129423e044","blendMode":0,"displayName":"default","isLocked":false,"name":"0e85aa95-fcdd-4eef-b6bd-58129423e044","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"Shrine_Illusion_20_Collision_MolluskaKeyDoor",
+  "name":"Shrine_Illusion_20_Collision_KeyDoor",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"Shrine_Illusion_20_Collision_MolluskaKeyDoor",
+    "%Name":"Shrine_Illusion_20_Collision_KeyDoor",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Shrine_Illusion_20_Collision_MolluskaKeyDoor",
+    "name":"Shrine_Illusion_20_Collision_KeyDoor",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"be299b80-2b57-423c-a9e4-e389d88cb641","path":"sprites/Shrine_Illusion_20_Collision_MolluskaKeyDoor/Shrine_Illusion_20_Collision_MolluskaKeyDoor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"be299b80-2b57-423c-a9e4-e389d88cb641","path":"sprites/Shrine_Illusion_20_Collision_KeyDoor/Shrine_Illusion_20_Collision_KeyDoor.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c41814b5-8bce-4efd-a70f-9bfed6d10c5f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

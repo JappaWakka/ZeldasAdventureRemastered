@@ -126,6 +126,8 @@ enum Registers
 	Door_Stalfos_19,
 	Key_Vire,
 	Key_Molluska,
+	KeyDoor_17,
+	KeyDoor_20,
 	BlackOrb_Placed,
 	Knife_Used,
 	Pasquinade_LookToYourHeart,
