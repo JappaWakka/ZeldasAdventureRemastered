@@ -50,7 +50,7 @@ if IsPlayerOnSameTile() = true
 								Register_Add(Registers.GeneralShopkeeper_PurchasedBone)
 							}
 							
-							instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
+							instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Particle_Pickup_Disappear)
 							visible = false
 						}
 						else
@@ -77,7 +77,7 @@ if IsPlayerOnSameTile() = true
 							global.CurrentDialogue_ID = audio_play_sound_relative_toentity(Entity_NPC_GeneralShopkeeper,global.CurrentDialogue_Asset,500,false)
 							Register_Add(Registers.GeneralShopkeeper_PurchasedBone)
 						}
-						instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
+						instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Particle_Pickup_Disappear)
 						visible = false
 					}
 				}

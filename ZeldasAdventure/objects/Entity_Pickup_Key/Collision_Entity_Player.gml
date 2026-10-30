@@ -12,7 +12,7 @@ if PathHasEnded = true
 		Register_Add(Registers.Key_Molluska)
 	}
 	global.CurrentKeys +=1
-	instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
+	instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Particle_Pickup_Disappear)
 	instance_destroy();
 	audio_play_sound_relative(SFX_Pickup_Item,1000,false);
 }

@@ -280,7 +280,7 @@ function SetWarpLocations()
 		ShrineOfIllusion_SlideRoom : [19,26,260,152,global.Directions.South],
 		ShrineOfIllusion_Spawn_Boss : [27,20,190,182,global.Directions.North],
 		ShrineOfIllusion_03_to_05 : [18,25,303,102,global.Directions.South],
-		ShrineOfIllusion_03_to_07 : [19,24,245,204,global.Directions.South],
+		ShrineOfIllusion_03_to_07 : [19,24,245,204,global.Directions.North],
 		ShrineOfIllusion_04_to_05 : [18,25,189,204,global.Directions.North],
 		ShrineOfIllusion_05_to_04 : [18,26,185,90,global.Directions.South],
 		ShrineOfIllusion_05_to_06 : [18,24,187,204,global.Directions.North],

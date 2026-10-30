@@ -19,7 +19,7 @@ function UseSpell_Broadsword()
 				yOffset = 16
 				break;
 		}
-		var BroadswordProjectile = instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_Broadsword)
+		var BroadswordProjectile = instance_create_layer(x + xOffset,y + yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_Broadsword)
 		audio_play_sound_relative(SFX_Use_Broadsword,600,false)
 		global.CanUseSpell = true
 	}

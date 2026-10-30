@@ -19,7 +19,7 @@ function UseSpell_JadeRing()
 				yOffset = 16
 				break;
 		}
-		var JadeRingProjectile = instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_JadeRing)
+		var JadeRingProjectile = instance_create_layer(x + xOffset,y + yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_JadeRing)
 		audio_play_sound_relative(SFX_Use_JadeRing,600,false)
 		global.CanUseSpell = true
 	}

@@ -49,7 +49,7 @@ if IsPlayerOnSameTile() = true
 									Register_Add(Registers.MadameKriggle_AfterBuySpell,true)
 								}
 								
-								instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
+								instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Particle_Pickup_Disappear)
 								visible = false
 							}
 							else
@@ -76,7 +76,7 @@ if IsPlayerOnSameTile() = true
 							Register_Add(Registers.MadameKriggle_AfterBuySpell,true)
 						}
 						
-						instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_Pickup_Disappear)
+						instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Particle_Pickup_Disappear)
 						visible = false
 					}
 				}

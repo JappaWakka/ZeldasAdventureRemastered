@@ -1,5 +1,5 @@
 if EnemyState != EnemyStates.Damaged
-{
+{	
 	//Change sprite
 	switch direction
 	{
@@ -21,7 +21,7 @@ if EnemyState != EnemyStates.Damaged
 	{
 		if speed = RegularSpeed
 		{
-			if global.EnemySoundPlaying = false
+			if global.EnemySoundPlaying = false and instance_exists(Entity_NPC_ShrineOfIllusion_ZeldaSlide) = false
 			{
 				if global.EnemySound[0] = -1 and global.EnemySound[1] = -1
 				{

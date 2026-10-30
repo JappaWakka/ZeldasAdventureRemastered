@@ -1,0 +1,2 @@
+sprite_index = Shrine_Illusion_08_Platforms_Animating
+image_speed = 1

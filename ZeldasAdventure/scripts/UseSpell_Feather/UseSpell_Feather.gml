@@ -19,13 +19,13 @@ function UseSpell_Feather()
 				yOffset = 16
 				break;
 		}
-		var CalmSpell_1 = instance_create_layer(x+xOffset,y+yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_Calm)
+		var CalmSpell_1 = instance_create_layer(x+xOffset,y+yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_Calm)
 		CalmSpell_1.direction = Facing - 25
 		CalmSpell_1.image_angle = Facing
-		var CalmSpell_2 = instance_create_layer(x+xOffset+xOffset,y+yOffset+yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_Calm)
+		var CalmSpell_2 = instance_create_layer(x+xOffset+xOffset,y+yOffset+yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_Calm)
 		CalmSpell_2.direction = Facing
 		CalmSpell_2.image_angle = Facing
-		var CalmSpell_3 = instance_create_layer(x+xOffset,y+yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_Calm)
+		var CalmSpell_3 = instance_create_layer(x+xOffset,y+yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_Calm)
 		CalmSpell_3.direction = Facing + 25
 		CalmSpell_3.image_angle = Facing
 		audio_play_sound_relative(SFX_Use_Feather,600,false)

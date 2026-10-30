@@ -79,13 +79,13 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 				yOffset = 16
 				break;
 		}
-		var Projectile = instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",ProjectileAsset)
+		var Projectile = instance_create_layer(x + xOffset,y + yOffset,"ProjectilesParticlesAndItemDrops",ProjectileAsset)
 		Projectile.direction = direction
 		EnemyState = EnemyStates.Idle
 	}
 	
 	//Deal Damage to Player
-	if collision_circle(x,y,HitRadius_Attack,Entity_Player,true,true) and EnemyState != EnemyStates.Damaged
+	if collision_circle(x,y,HitRadius_Attack,Entity_Player,true,true) and EnemyState != EnemyStates.Damaged and global.CanControlPlayer = true
 	{
 		with Entity_Player
 		{
@@ -312,15 +312,15 @@ if HitPoints <= 0
 	instance_create_layer(x,y,"Temporary_AboveForeground",Entity_Particle_EnemyDefeat)
 	if DropsItemOnDefeat = "All"
 	{
-		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops_All)
+		instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Pickup_ItemDrops_All)
 	}
 	else if DropsItemOnDefeat = "GuaranteedHeart"
 	{
-		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops_GuaranteedHeart)
+		instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Pickup_ItemDrops_GuaranteedHeart)
 	}
 	else if DropsItemOnDefeat = "5RubiesOrNothing"
 	{
-		instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Pickup_ItemDrops_CanBe5Rubies)
+		instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Pickup_ItemDrops_CanBe5Rubies)
 	}
 	instance_destroy();
 	

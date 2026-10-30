@@ -65,16 +65,15 @@ function Camera_Pan()
 			instance_activate_object(Entity_Parent_Player)
 			instance_activate_region(Desired.x, Desired.y, tileWidth, tileHeight,true)
 			
-			//Temporarily prevent ladder from disappearing
-			if Register_Registered(Registers.Ladder_Placed) = true and
-			global.CurrentTile.x = 7 && global.CurrentTile.y = 35
+			//Temporarily prevent cycling platforms from disappearing
+			if global.CurrentTile.x = 20 && global.CurrentTile.y = 24
 			{
-				DisableLadderObject = true
-				instance_activate_object(Entity_UsedItem_Ladder)
+				DisablePlatformsObject = true
+				instance_activate_object(Entity_TempObject_Platforms)
 			}
 			else
 			{
-				DisableLadderObject = false
+				DisablePlatformsObject = false
 			}
 			
 			//Update Current Tile
@@ -340,11 +339,13 @@ function Camera_Pan()
 				instance_deactivate_object(Parent_UseItem_Candle)
 				ResetCandleDarkness = false
 			}
-			//Disable Ladder Object after panning
-			if DisableLadderObject = true && global.CurrentTile.x != 7 && global.CurrentTile.y != 35
+			
+			//Disable Cycling Platforms Object after panning
+			if DisablePlatformsObject = true && global.CurrentTile.x != 20 && global.CurrentTile.y != 24
 			{
-				instance_deactivate_object(Entity_UsedItem_Ladder)
-				DisableLadderObject = false
+				Entity_TempObject_Platforms.sprite_index = Shrine_Illusion_08_Platforms_Initial
+				instance_deactivate_object(Entity_TempObject_Platforms)
+				DisablePlatformsObject = false
 			}
 		}
 	}

@@ -1,21 +1,24 @@
 //If the player is on the same tile
-if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
+if IsPlayerOnSameTile_EnemyOrNPC() = true
 {
-	//Activate
-	visible = true;
-	if alarm_get(0) = -1
+	if global.CameraIsFading = false
 	{
-		if EnemyState = EnemyStates.Move
+		//Activate
+		visible = true;
+		if alarm_get(0) = -1
 		{
-			alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
+			if EnemyState = EnemyStates.Move
+			{
+				alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
+			}
 		}
-	}
-	//Attack
-	if alarm_get(1) = -1
-	{
-		if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
+		//Attack
+		if alarm_get(1) = -1
 		{
-			alarm_set(1, round(random_range(0, 3 * FrameRate)));
+			if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
+			{
+				alarm_set(1, round(random_range(0, 3 * FrameRate)));
+			}
 		}
 	}
 }

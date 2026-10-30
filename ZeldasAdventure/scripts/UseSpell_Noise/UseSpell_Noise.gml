@@ -19,7 +19,7 @@ function UseSpell_Noise()
 				yOffset = 16
 				break;
 		}
-		var NoiseProjectile = instance_create_layer(x+xOffset,y+yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_Noise)
+		var NoiseProjectile = instance_create_layer(x+xOffset,y+yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_Noise)
 		NoiseProjectile.direction = Facing
 		NoiseProjectile.image_angle = Facing
 		audio_play_sound_relative(SFX_Use_NoiseSpell,600,false)

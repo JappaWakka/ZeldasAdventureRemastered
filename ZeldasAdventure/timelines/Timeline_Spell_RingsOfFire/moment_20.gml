@@ -15,4 +15,4 @@ switch Entity_Parent_Projectile_Player_RingsOfFire.Facing
 		yOffset = 16
 		break;
 }
-instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_RingsOfFire)
+instance_create_layer(x + xOffset,y + yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_RingsOfFire)

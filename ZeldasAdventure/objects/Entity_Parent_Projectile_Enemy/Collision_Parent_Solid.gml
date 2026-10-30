@@ -1,2 +1,2 @@
-instance_create_layer(x,y,"Temporary_BelowPlayer",Entity_Particle_ProjectileDestroy)
+instance_create_layer(x,y,"ProjectilesParticlesAndItemDrops",Entity_Particle_ProjectileDestroy)
 instance_destroy()

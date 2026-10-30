@@ -6,4 +6,3 @@ visible = false
 Animating = false
 StartSprite = Zelda_Slide
 NPCPath_ShrineOfIllusion_ZeldaSlide()
-instance_deactivate_layer("Enemies_BelowForeground")

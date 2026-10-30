@@ -121,6 +121,7 @@ enum Registers
 	
 //Shrine of Illusion
 	Shurmak_LookBeyondIllusion,
+	Door_Vire,
 	Door_PolsVoice,
 	Door_Stalfos_03,
 	Door_Stalfos_19,

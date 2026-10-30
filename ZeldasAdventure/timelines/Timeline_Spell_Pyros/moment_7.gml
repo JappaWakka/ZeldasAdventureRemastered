@@ -20,5 +20,5 @@ switch Entity_Player.Facing
 		break;
 }
 
-instance_create_layer(x + xOffset1,y + yOffset1,"Temporary_BelowPlayer",Entity_Projectile_Player_Pyros)
+instance_create_layer(x + xOffset1,y + yOffset1,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_Pyros)
 	

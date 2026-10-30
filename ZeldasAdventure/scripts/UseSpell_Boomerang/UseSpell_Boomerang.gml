@@ -19,7 +19,7 @@ function UseSpell_Boomerang()
 				yOffset = 16
 				break;
 		}
-		var BoomerangProjectile = instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_Boomerang)
+		var BoomerangProjectile = instance_create_layer(x + xOffset,y + yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_Boomerang)
 		BoomerangProjectile.direction = Facing
 		audio_play_sound_relative(SFX_Use_Boomerang,600,false)
 		global.CanUseSpell = true

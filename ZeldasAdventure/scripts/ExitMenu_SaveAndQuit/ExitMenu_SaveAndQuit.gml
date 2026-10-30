@@ -124,4 +124,5 @@ function ExitMenu_SaveAndQuit()
 	global.CameraIsFading = true;
 	global.FadeSpeed = 16;
 	global.FadeProgress = 0;
+	global.CanControlPlayer = true;
 }

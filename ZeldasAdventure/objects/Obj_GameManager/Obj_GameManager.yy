@@ -42,7 +42,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"ResetCandleDarkness","filters":[],"listItems":[],"multiselect":false,"name":"ResetCandleDarkness","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
-    {"$GMObjectProperty":"v2","%Name":"DisableLadderObject","filters":[],"listItems":[],"multiselect":false,"name":"DisableLadderObject","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"DisablePlatformsObject","filters":[],"listItems":[],"multiselect":false,"name":"DisablePlatformsObject","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"EnemySound","filters":[],"listItems":[],"multiselect":false,"name":"EnemySound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"SetEnemyCannotTouchEdge","filters":[],"listItems":[],"multiselect":false,"name":"SetEnemyCannotTouchEdge","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
   ],

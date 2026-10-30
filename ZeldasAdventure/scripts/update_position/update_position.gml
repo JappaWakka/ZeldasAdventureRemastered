@@ -13,62 +13,7 @@ function update_position(argument0, argument1) {
 	var x_target = x+lengthdir_x(_speed, _direction);
 	var y_target = y+lengthdir_y(_speed, _direction);
 	
-	var FreeToMoveCurrent = true
-	
-	////Solid Objects
-	if place_meeting(x_target, y_target, Parent_Solid)
-	{
-		FreeToMoveCurrent = false
-	}
-	
-	////Objects that only Projectiles can pass through
-	if place_meeting(x_target, y_target, Parent_ProjectilesCanPass)
-	{
-		FreeToMoveCurrent = false
-	}
-		
-	////Red Boots Water
-	
-	//Temp Disable Red Boots
-	//if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
-	//{
-	//	FreeToMoveCurrent = false
-	//}
-	
-	if Item_FindIndex(Treasures.RedBoots,0) = -1
-	{
-		if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
-		{
-			FreeToMoveCurrent = false
-		}
-	}
-	
-	////Ladder Hole
-	if Register_Registered(Registers.Ladder_Placed) = false
-	{
-		if place_meeting(x_target, y_target, UseItem_ShrineOfEarth_02_Ladder)
-		{
-			FreeToMoveCurrent = false
-		}
-	}
-	////Knife Canvas
-	if Register_Registered(Registers.Knife_Used) = false
-	{
-		if place_meeting(x_target, y_target, UseItem_ShrineOfIllusion_15_Knife)
-		{
-			FreeToMoveCurrent = false
-		}
-	}
-	
-	//Fairy Fountains
-	if place_meeting(x_target, y_target, Parent_FairyFountain)
-	{
-		FreeToMoveCurrent = false
-	}
-	if place_meeting(x_target, y_target, FairyFountain_ForestOfTorian_08)
-	{
-		FairyFountain_ForestOfTorian_08.Trigger_Start = true
-	}
+	var FreeToMoveCurrent = collisions(x_target,y_target)
 	
 	if FreeToMoveCurrent = true {
 		// Move if we are not colliding.
@@ -105,54 +50,7 @@ function update_position(argument0, argument1) {
 			
 				// If there is no collision on the new place we update or position and
 				// we exit from this script.
-				var FreeToMoveNew = true
-				
-				////Solid Objects
-				if place_meeting(x_target, y_target, Parent_Solid)
-				{
-					FreeToMoveNew = false
-				}
-				
-				////Objects that only Projectiles can pass through
-				if place_meeting(x_target, y_target, Parent_ProjectilesCanPass)
-				{
-					FreeToMoveNew = false
-				}
-				
-				////Red Boots Water
-				
-				//Temp Disable Red Boots
-				//if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
-				//{
-				//	FreeToMoveNew = false
-				//}
-				
-				if Item_FindIndex(Treasures.RedBoots,0) = -1
-				{
-					if place_meeting(x_target, y_target, Parent_UseItem_RedBoots)
-					{
-						FreeToMoveNew = false
-					}
-				}
-				
-				////Ladder Hole
-				if Register_Registered(Registers.Ladder_Placed) = false
-				{
-					if place_meeting(x_target, y_target, UseItem_ShrineOfEarth_02_Ladder)
-					{
-						FreeToMoveNew = false
-					}
-				}
-				
-				//Fairy Fountains
-				if place_meeting(x_target, y_target, Parent_FairyFountain)
-				{
-					FreeToMoveNew = false
-				}
-				if place_meeting(x_target, y_target, FairyFountain_ForestOfTorian_08)
-				{
-					FairyFountain_ForestOfTorian_08.Trigger_Start = true
-				}
+				var FreeToMoveNew = collisions(x_target,y_target)
 				
 	            if FreeToMoveNew = true {
 	                x = x_target;

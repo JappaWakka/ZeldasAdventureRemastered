@@ -19,7 +19,7 @@ function UseSpell_Dagger()
 				yOffset = 16
 				break;
 		}
-		var DaggerProjectile = instance_create_layer(x + xOffset,y + yOffset,"Temporary_BelowPlayer",Entity_Projectile_Player_Dagger)
+		var DaggerProjectile = instance_create_layer(x + xOffset,y + yOffset,"ProjectilesParticlesAndItemDrops",Entity_Projectile_Player_Dagger)
 		DaggerProjectile.direction = Facing
 		DaggerProjectile.image_angle = Facing
 		audio_play_sound_relative(SFX_Use_Dagger,600,false)

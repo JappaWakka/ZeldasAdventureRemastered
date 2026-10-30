@@ -7,4 +7,5 @@ function ExitMenu_QuitWithoutSave()
 	global.CameraIsFading = true;
 	global.FadeProgress = 0;
 	global.FadeSpeed = 16;
+	global.CanControlPlayer = true;
 }
