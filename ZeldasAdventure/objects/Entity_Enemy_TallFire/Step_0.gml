@@ -67,14 +67,14 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true
 						///Reduce HitPoints, play damage sound
 						HitPoints -= ReceivedDamage
 						//audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
-						EnemyState = EnemyStates.Damaged
+						//EnemyState = EnemyStates.Damaged
 						//StartDamageAnimation = true
 						//HitFromDirection = Entity_Player.Facing
 					}
 					else
 					{
 						//audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
-						EnemyState = EnemyStates.Damaged
+						//EnemyState = EnemyStates.Damaged
 						//StartImmuneAnimation = true
 					}
 					///Reset DamageDelay
@@ -119,14 +119,14 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true
 							///Reduce HitPoints, play damage sound
 							HitPoints -= ReceivedDamage
 							//audio_play_sound_relative(SFX_Enemy_Damage,1000,false)
-							EnemyState = EnemyStates.Damaged
+							//EnemyState = EnemyStates.Damaged
 							//StartDamageAnimation = true
 							//HitFromDirection = HitProjectile.direction
 						}
 						else
 						{
 							//audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
-							EnemyState = EnemyStates.Damaged
+							//EnemyState = EnemyStates.Damaged
 							//StartImmuneAnimation = true
 						}
 						if HitProjectile.DestroyOnEnemyImpact = true

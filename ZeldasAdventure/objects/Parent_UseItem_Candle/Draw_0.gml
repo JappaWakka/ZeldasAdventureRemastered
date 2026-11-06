@@ -11,7 +11,107 @@ draw_set_alpha(1)
 
 if Alpha > 0 && IsMenuVisible() = false && IsPlayerOnSameTile() = true
 {
-	draw_sprite(Entity_Player.sprite_index,Entity_Player.image_index,Entity_Player.x,Entity_Player.y)
+	//Draw Player
+	with Entity_Player
+	{
+		draw_self()
+	}
+	//Draw Enemies
+	if instance_exists(Entity_Parent_Enemy) = true
+	{
+		with Entity_Parent_Enemy
+		{
+			switch timerIndex
+			{
+				case 1 :
+				{
+					image_alpha = 0;
+					draw_self();
+					break;
+				}
+				case 2 :
+				{
+					image_alpha = 1;
+					draw_self();
+					break;
+				}
+				case 3 :
+				{
+					shader_set(Shader_ColorOverlay);
+					shader_set_uniform_f(_uniMix, 1);
+					if DamageOrImmune = "Damage"
+					{
+						shader_set_uniform_f_array(_uniColor, global.ColorYellow);
+					}
+					else
+					{
+						shader_set_uniform_f_array(_uniColor, global.ColorBlue);
+					}
+					draw_self();
+					shader_reset();
+					break;
+				}
+				case 4 :
+				{
+					draw_self();
+					break;
+				}
+				case 5 :
+				{
+					shader_set(Shader_ColorOverlay);
+					shader_set_uniform_f(_uniMix, 1);
+					if DamageOrImmune = "Damage"
+					{
+						shader_set_uniform_f_array(_uniColor, global.ColorRed);
+					}
+					else
+					{
+						shader_set_uniform_f_array(_uniColor, global.ColorBlue);
+					}
+					draw_self();
+					shader_reset();
+					break;
+				}
+				case 0 :
+				{
+					draw_self();
+					break;
+				}
+			}
+		}
+	}
+	//Draw Projectiles
+	if instance_exists(Entity_Parent_Projectile_Player) = true
+	{
+		with Entity_Parent_Projectile_Player
+		{
+			draw_self()
+		}
+	}
+	//Draw Projectiles
+	if instance_exists(Entity_Parent_Projectile_Enemy) = true
+	{
+		with Entity_Parent_Projectile_Enemy
+		{
+			draw_self()
+		}
+	}
+	//Draw Particles
+	if instance_exists(Entity_Particle_EnemyDefeat) = true
+	{
+		with Entity_Particle_EnemyDefeat
+		{
+			draw_self()
+		}
+	}
+	//Draw Item Drops
+	if instance_exists(Entity_Parent_Pickup_ItemDrops) = true
+	{
+		with Entity_Parent_Pickup_ItemDrops
+		{
+			draw_self()
+		}
+	}
 }
 
 if ForegroundSprite != noone

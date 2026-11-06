@@ -11,7 +11,13 @@ if Triggered = false and AlarmHasBeenSet = false
 	instance_create_layer(7416,6328,"Enemies_BelowForeground",Entity_Enemy_Jackaroo)
 	instance_create_layer(7378,6437,"Enemies_BelowForeground",Entity_Enemy_Jackaroo)
 	instance_create_layer(7616,6436,"Enemies_BelowForeground",Entity_Enemy_Jackaroo)
-	Entity_Enemy_Jackaroo.visible = false
-	
+	if global.RemasteredMode = false
+	{
+		Entity_Enemy_Jackaroo.visible = false
+	}
+	if instance_exists(Entity_Enemy_Jackaroo) = true
+	{
+		Entity_Enemy_Jackaroo.Activated = false
+	}
 	AlarmHasBeenSet = true
 }

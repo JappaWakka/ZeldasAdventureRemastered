@@ -1,59 +1,75 @@
-if EnemyState != EnemyStates.Damaged
-{	
-	//Change sprite
-	switch direction
-	{
-		case global.Directions.East :
-			sprite_index = Sprite_Enemy_Jackaroo_East
-			break;
-		case global.Directions.South :
-			sprite_index = Sprite_Enemy_Jackaroo_South
-			break;
-		case global.Directions.West :
-			sprite_index = Sprite_Enemy_Jackaroo_West
-			break;
-		case global.Directions.North :
-			sprite_index = Sprite_Enemy_Jackaroo_North
-			break;
-	}
+if global.RemasteredMode = true or Activated = true
+{
+	visible = true;
+}
+else
+{
+	visible = false;
+}
 
-	if Script_AggroRange() = true
-	{
-		if speed = RegularSpeed
+if Activated = true
+{	
+	if EnemyState != EnemyStates.Damaged
+	{	
+		//Change sprite
+		switch direction
 		{
-			if global.EnemySoundPlaying = false and instance_exists(Entity_NPC_ShrineOfIllusion_ZeldaSlide) = false
+			case global.Directions.East :
+				sprite_index = Sprite_Enemy_Jackaroo_East
+				break;
+			case global.Directions.South :
+				sprite_index = Sprite_Enemy_Jackaroo_South
+				break;
+			case global.Directions.West :
+				sprite_index = Sprite_Enemy_Jackaroo_West
+				break;
+			case global.Directions.North :
+				sprite_index = Sprite_Enemy_Jackaroo_North
+				break;
+		}
+	
+		if Script_AggroRange() = true
+		{
+			if speed = RegularSpeed
 			{
-				if global.EnemySound[0] = -1 and global.EnemySound[1] = -1
+				if global.EnemySoundPlaying = false and instance_exists(Entity_NPC_ShrineOfIllusion_ZeldaSlide) = false
 				{
-					global.EnemySound = [EnemySoundName,x]
-				}
-				else
-				{
-					if irandom_range(0,100) <= 50
+					if global.EnemySound[0] = -1 and global.EnemySound[1] = -1
 					{
 						global.EnemySound = [EnemySoundName,x]
 					}
+					else
+					{
+						if irandom_range(0,100) <= 50
+						{
+							global.EnemySound = [EnemySoundName,x]
+						}
+					}
 				}
 			}
+			speed = AggroSpeed
 		}
-		speed = AggroSpeed
+		else
+		{
+			speed = RegularSpeed
+		}
 	}
-	else
+	
+	if ChangeDirection = true
 	{
-		speed = RegularSpeed
+		if EnemyState != EnemyStates.Damaged
+		{
+			EnemyChangeDirection_Straight()
+		}
+		else
+		{
+			speed = global.EnemySpeeds.Still
+		}
+		alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
+		ChangeDirection = false;
 	}
 }
-
-if ChangeDirection = true
+else
 {
-	if EnemyState != EnemyStates.Damaged
-	{
-		EnemyChangeDirection_Straight()
-	}
-	else
-	{
-		speed = global.EnemySpeeds.Still
-	}
-	alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
-	ChangeDirection = false;
+	speed = global.EnemySpeeds.Still
 }

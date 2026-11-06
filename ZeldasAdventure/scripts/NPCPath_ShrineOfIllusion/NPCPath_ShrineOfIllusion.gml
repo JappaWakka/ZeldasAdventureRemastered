@@ -1,10 +1,15 @@
 function Script_BeforeSlide()
 {
-	instance_deactivate_object(Entity_Enemy_Jackaroo)
+	if global.RemasteredMode = false
+	{
+		instance_deactivate_object(Entity_Enemy_Jackaroo)
+	}
 }
 function Script_AfterSlide()
 {
 	global.CanControlPlayer = true
+			
+	instance_activate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y *tileHeight, tileWidth, tileHeight,true);
 	if instance_exists(Entity_Player) = true
 	{
 		Entity_Player.visible = true
@@ -19,11 +24,14 @@ function Script_AfterSlide()
 			instance_create_layer(7616,6436,"Enemies_BelowForeground",Entity_Enemy_Jackaroo)
 		}
 	}
-	instance_activate_region(global.CurrentTile.x * tileWidth, global.CurrentTile.y *tileHeight, tileWidth, tileHeight,true);
-	if instance_exists(Entity_Enemy_Jackaroo) = true
+	if global.RemasteredMode = false
 	{
-		Entity_Enemy_Jackaroo.visible = true
+		if instance_exists(Entity_Enemy_Jackaroo) = true
+		{
+			Entity_Enemy_Jackaroo.visible = true
+		}
 	}
+	Entity_Enemy_Jackaroo.Activated = true
 }
 
 function NPCPath_ShrineOfIllusion_ZeldaSlide()

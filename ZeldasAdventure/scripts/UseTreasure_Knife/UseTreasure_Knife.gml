@@ -2,7 +2,6 @@ function UseTreasure_Knife()
 {
 	if global.CurrentTile.x = 22 && global.CurrentTile.y = 21
 	{
-		Item_Remove(Treasures.Knife,0);
 		if global.RemasteredMode = true
 		{
 			global.CurrentTreasure = -1

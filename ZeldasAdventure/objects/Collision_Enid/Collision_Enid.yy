@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"ForestOfOgham",
-    "path":"folders/Objects/SpecialCollisions/NPCsAndBlockades/ForestOfOgham.yy",
+    "path":"folders/Objects/SpecialCollisions/BlockadesAndNPCs/ForestOfOgham.yy",
   },
   "parentObjectId":{
     "name":"Parent_Solid",

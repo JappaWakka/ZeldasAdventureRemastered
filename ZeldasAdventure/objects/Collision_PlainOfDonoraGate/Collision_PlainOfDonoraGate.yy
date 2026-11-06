@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"PlainOfDonora",
-    "path":"folders/Objects/SpecialCollisions/NPCsAndBlockades/PlainOfDonora.yy",
+    "path":"folders/Objects/SpecialCollisions/BlockadesAndNPCs/PlainOfDonora.yy",
   },
   "parentObjectId":{
     "name":"Parent_Solid",

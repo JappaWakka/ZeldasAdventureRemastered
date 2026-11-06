@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"PlainOfAndor",
-    "path":"folders/Objects/SpecialCollisions/NPCsAndBlockades/PlainOfAndor.yy",
+    "path":"folders/Objects/SpecialCollisions/BlockadesAndNPCs/PlainOfAndor.yy",
   },
   "parentObjectId":{
     "name":"Parent_Solid",

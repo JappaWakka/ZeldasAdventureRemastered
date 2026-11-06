@@ -17,7 +17,10 @@
     "name":"Other",
     "path":"folders/Objects/Entities/Pickups/Other.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Entity_Parent_Pickup_ItemDrops",
+    "path":"objects/Entity_Parent_Pickup_ItemDrops/Entity_Parent_Pickup_ItemDrops.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

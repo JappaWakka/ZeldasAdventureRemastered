@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"ShrineOfEarth",
-    "path":"folders/Objects/SpecialCollisions/NPCsAndBlockades/ShrineOfEarth.yy",
+    "path":"folders/Objects/SpecialCollisions/BlockadesAndNPCs/ShrineOfEarth.yy",
   },
   "parentObjectId":{
     "name":"Parent_Solid",

@@ -312,6 +312,36 @@ if HitPoints <= 0
 				Script_Trigger_ShrineOfIllusion_KeyMolluska() //Spawn Key Pickup
 			}
 			break
+		case "ShrineOfIllusion_StalfosDoors" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_StalfosDoors[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_StalfosDoors[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_StalfosDoors[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_StalfosDoors() //Open Doors
+			}
+			break
+		case "ShrineOfIllusion_StalfosSpikes" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_StalfosSpikes[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_StalfosSpikes[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_StalfosSpikes[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_StalfosSpikes() //Remove Spikes
+			}
+			break
+		case "ShrineOfIllusion_PolsVoiceDoors" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_PolsVoiceDoors[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_PolsVoiceDoors[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_PolsVoiceDoors[1] = 0
+			{
+				//Script_Trigger_ShrineOfIllusion_PolsVoiceDoors() //Open Doors
+			}
+			break
 		case "ShrineOfIllusion_UnderworldMapIllusion" :
 			if global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] > 0
 			{

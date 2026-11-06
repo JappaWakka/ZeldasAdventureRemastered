@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"ShrineOfIllusion",
-    "path":"folders/Objects/SpecialCollisions/NPCsAndBlockades/ShrineOfIllusion.yy",
+    "path":"folders/Objects/SpecialCollisions/BlockadesAndNPCs/ShrineOfIllusion.yy",
   },
   "parentObjectId":{
     "name":"Parent_Solid",
