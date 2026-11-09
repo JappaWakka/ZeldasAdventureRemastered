@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script_Trigger_ShrineOfIllusion_StalfosDoorsAndSpikes",
+  "%Name":"Script_Trigger_ShrineOfIllusion_DoorsAndSpikes",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script_Trigger_ShrineOfIllusion_StalfosDoorsAndSpikes",
+  "name":"Script_Trigger_ShrineOfIllusion_DoorsAndSpikes",
   "parent":{
     "name":"Triggers",
     "path":"folders/Scripts/Triggers.yy",

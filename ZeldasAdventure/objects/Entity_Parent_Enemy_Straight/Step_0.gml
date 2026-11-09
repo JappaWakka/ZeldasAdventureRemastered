@@ -339,7 +339,7 @@ if HitPoints <= 0
 			}
 			if global.DeathAmountForTrigger.ShrineOfIllusion_PolsVoiceDoors[1] = 0
 			{
-				//Script_Trigger_ShrineOfIllusion_PolsVoiceDoors() //Open Doors
+				Script_Trigger_ShrineOfIllusion_PolsVoiceDoors() //Open Doors
 			}
 			break
 		case "ShrineOfIllusion_UnderworldMapIllusion" :
