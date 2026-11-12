@@ -7,7 +7,7 @@ else
 	visible = false;
 }
 
-if Activated = true
+if Activated = true and IsMenuVisible() = false
 {	
 	if EnemyState != EnemyStates.Damaged
 	{	

@@ -1,64 +1,71 @@
-if EnemyState != EnemyStates.Damaged
+if IsMenuVisible() = false
 {
-	//Change sprite
-	switch direction
+	if EnemyState != EnemyStates.Damaged
 	{
-		case global.Directions.East :
-			sprite_index = Sprite_Enemy_Goriya_East
-			break;
-		case global.Directions.South :
-			sprite_index = Sprite_Enemy_Goriya_South
-			break;
-		case global.Directions.West :
-			sprite_index = Sprite_Enemy_Goriya_West
-			break;
-		case global.Directions.North :
-			sprite_index = Sprite_Enemy_Goriya_North
-			break;
-	}
-
-	if Script_AggroRange() = true
-	{
-		if speed = RegularSpeed
+		//Change sprite
+		switch direction
 		{
-			if global.EnemySoundPlaying = false
+			case global.Directions.East :
+				sprite_index = Sprite_Enemy_Goriya_East
+				break;
+			case global.Directions.South :
+				sprite_index = Sprite_Enemy_Goriya_South
+				break;
+			case global.Directions.West :
+				sprite_index = Sprite_Enemy_Goriya_West
+				break;
+			case global.Directions.North :
+				sprite_index = Sprite_Enemy_Goriya_North
+				break;
+		}
+	
+		if Script_AggroRange() = true
+		{
+			if speed = RegularSpeed
 			{
-				if global.EnemySound[0] = -1 and global.EnemySound[1] = -1
+				if global.EnemySoundPlaying = false
 				{
-					global.EnemySound = [EnemySoundName,x]
-				}
-				else
-				{
-					if irandom_range(0,100) <= 50
+					if global.EnemySound[0] = -1 and global.EnemySound[1] = -1
 					{
 						global.EnemySound = [EnemySoundName,x]
 					}
+					else
+					{
+						if irandom_range(0,100) <= 50
+						{
+							global.EnemySound = [EnemySoundName,x]
+						}
+					}
 				}
 			}
+			speed = AggroSpeed
 		}
-		speed = AggroSpeed
+		else
+		{
+			speed = RegularSpeed
+		}
 	}
-	else
+	
+	if EnemyState = EnemyStates.Attack
 	{
-		speed = RegularSpeed
+		run_alarm(ResetAlarm)
+	}
+	
+	if ChangeDirection = true
+	{
+		if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
+		{
+			EnemyChangeDirection_Straight()
+		}
+		else
+		{
+			speed = global.EnemySpeeds.Still
+		}
+		alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
+		ChangeDirection = false;
 	}
 }
-
-if EnemyState = EnemyStates.Attack
+else
 {
-	run_alarm(ResetAlarm)
-}
-
-if ChangeDirection = true
-{
-	if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
-	{
-		EnemyChangeDirection_Straight()
-	}
-	else
-	{
-		speed = global.EnemySpeeds.Still
-	}
-	alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
-	ChangeDirection = false;
+	speed = global.EnemySpeeds.Still
 }

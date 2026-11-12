@@ -1,4 +1,4 @@
-if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
+if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false and IsMenuVisible() = false
 {
 	if EnemyState != EnemyStates.Damaged
 	{

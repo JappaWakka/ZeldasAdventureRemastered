@@ -1,47 +1,54 @@
-if EnemyState != EnemyStates.Damaged
+if IsMenuVisible() = false
 {
-	if Script_AggroRange() = true
+	if EnemyState != EnemyStates.Damaged
 	{
-		if speed = RegularSpeed
+		if Script_AggroRange() = true
 		{
-			if global.EnemySoundPlaying = false
+			if speed = RegularSpeed
 			{
-				if global.EnemySound[0] = -1 and global.EnemySound[1] = -1
+				if global.EnemySoundPlaying = false
 				{
-					global.EnemySound = [EnemySoundName,x]
-				}
-				else
-				{
-					if irandom_range(0,100) <= 50
+					if global.EnemySound[0] = -1 and global.EnemySound[1] = -1
 					{
 						global.EnemySound = [EnemySoundName,x]
 					}
+					else
+					{
+						if irandom_range(0,100) <= 50
+						{
+							global.EnemySound = [EnemySoundName,x]
+						}
+					}
 				}
 			}
+			speed = AggroSpeed
 		}
-		speed = AggroSpeed
+		else
+		{
+			speed = RegularSpeed
+		}
 	}
-	else
+	
+	if EnemyState = EnemyStates.Attack
 	{
-		speed = RegularSpeed
+		run_alarm(ResetAlarm)
+	}
+	
+	if ChangeDirection = true
+	{
+		if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
+		{
+			EnemyChangeDirection_Straight()
+		}
+		else
+		{
+			speed = global.EnemySpeeds.Still
+		}
+		alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
+		ChangeDirection = false;
 	}
 }
-
-if EnemyState = EnemyStates.Attack
+else
 {
-	run_alarm(ResetAlarm)
-}
-
-if ChangeDirection = true
-{
-	if EnemyState != EnemyStates.Damaged && EnemyState != EnemyStates.Attack
-	{
-		EnemyChangeDirection_Straight()
-	}
-	else
-	{
-		speed = global.EnemySpeeds.Still
-	}
-	alarm_set(0, round(random_range(ChangeDelay_Min,ChangeDelay_Max)));
-	ChangeDirection = false;
+	speed = global.EnemySpeeds.Still
 }

@@ -1,7 +1,7 @@
 //If the player is on the same tile
 if IsPlayerOnSameTile_EnemyOrNPC() = true
 {
-	if global.CameraIsFading = false
+	if global.CameraIsFading = false and IsMenuVisible() = false
 	{
 		//Activate
 		visible = true;
