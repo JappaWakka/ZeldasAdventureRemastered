@@ -282,16 +282,6 @@ if HitPoints <= 0
 			{ Color = "Yellow" }
 			Script_Trigger_ShrineOfEarth_SardakBarrier(Color) //Remove Shrine of Earth Boss Barrier
 			break
-		case "ShrineOfIllusion_Knife" :
-			if global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] > 0
-			{
-				global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] -= 1
-			}
-			if global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] = 0
-			{
-				Script_Trigger_ShrineOfIllusion_Knife() //Spawn Knife Treasure Pickup
-			}
-			break
 		case "ShrineOfIllusion_KeyVire" :
 			if global.DeathAmountForTrigger.ShrineOfIllusion_KeyVire[1] > 0
 			{
@@ -342,14 +332,44 @@ if HitPoints <= 0
 				Script_Trigger_ShrineOfIllusion_PolsVoiceDoors() //Open Doors
 			}
 			break
-		case "ShrineOfIllusion_UnderworldMapIllusion" :
-			if global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] > 0
+		case "ShrineOfIllusion_CompassIllusion" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_CompassIllusion[1] > 0
 			{
-				global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] -= 1
+				global.DeathAmountForTrigger.ShrineOfIllusion_CompassIllusion[1] -= 1
 			}
-			if global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] = 0
+			if global.DeathAmountForTrigger.ShrineOfIllusion_CompassIllusion[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_CompassIllusion() //Spawn Compass_Illusion Treasure Pickup
+			}
+			break
+		case "ShrineOfIllusion_UnderworldMapIllusionAndVireDoor" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusionAndVireDoor[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusionAndVireDoor[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusionAndVireDoor[1] = 0
 			{
 				Script_Trigger_ShrineOfIllusion_UnderworldMapIllusionAndVireDoor() //Spawn UnderworldMap_Illusion Treasure Pickup
+			}
+			break
+		case "ShrineOfIllusion_Knife" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_Knife() //Spawn Knife Treasure Pickup
+			}
+			break
+		case "ShrineOfIllusion_BlackOrb" :
+			if global.DeathAmountForTrigger.ShrineOfIllusion_BlackOrb[1] > 0
+			{
+				global.DeathAmountForTrigger.ShrineOfIllusion_BlackOrb[1] -= 1
+			}
+			if global.DeathAmountForTrigger.ShrineOfIllusion_BlackOrb[1] = 0
+			{
+				Script_Trigger_ShrineOfIllusion_BlackOrb() //Spawn Black Orb Treasure Pickup
 			}
 			break
 	}

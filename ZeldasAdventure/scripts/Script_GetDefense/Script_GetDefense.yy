@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Script_GetDefense",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"PlayerFunctions",
+    "path":"folders/Scripts/PlayerFunctions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

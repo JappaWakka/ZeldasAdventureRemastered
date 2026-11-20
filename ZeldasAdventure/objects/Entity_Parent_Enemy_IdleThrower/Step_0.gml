@@ -23,7 +23,7 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 				image_speed = 0
 				if EnemyState = EnemyStates.Idle and alarm[1] = -1
 				{
-					alarm_set(1, round(random_range(2, 9 * FrameRate)));
+					alarm_set(1, round(random_range(MinThrowDelay, MaxThrowDelay)));
 				}
 			}
 			PreviousFrame = floor(image_index)
@@ -34,7 +34,7 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 			image_speed = 0
 			if EnemyState = EnemyStates.Idle and alarm[1] = -1
 			{
-				alarm_set(1, round(random_range(2, 9 * FrameRate)));
+				alarm_set(1, round(random_range(MinThrowDelay, MaxThrowDelay)));
 			}
 		}
 	}
@@ -42,7 +42,7 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false
 	{
 		if EnemyState = EnemyStates.Idle and alarm[1] = -1
 		{
-			alarm_set(1, round(random_range(2, 9 * FrameRate)));
+			alarm_set(1, round(random_range(MinThrowDelay, MaxThrowDelay)));
 		}
 	}
 	

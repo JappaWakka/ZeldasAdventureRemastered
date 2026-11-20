@@ -12,7 +12,7 @@
   "managed":true,
   "name":"Entity_Parent_Enemy_IdleThrower",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"KnockbackDistance","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.KnockbackDistances.None",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"KnockbackDistance","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.KnockbackDistances.Large",},
   ],
   "parent":{
     "name":"Enemies",
@@ -40,6 +40,8 @@
     {"$GMObjectProperty":"v2","%Name":"ProjectileAsset","filters":[],"listItems":[],"multiselect":false,"name":"ProjectileAsset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"StillFrame","filters":[],"listItems":[],"multiselect":false,"name":"StillFrame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v2","%Name":"PreviousFrame","filters":[],"listItems":[],"multiselect":false,"name":"PreviousFrame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"MinThrowDelay","filters":[],"listItems":[],"multiselect":false,"name":"MinThrowDelay","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":1,},
+    {"$GMObjectProperty":"v2","%Name":"MaxThrowDelay","filters":[],"listItems":[],"multiselect":false,"name":"MaxThrowDelay","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"9 * FrameRate","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

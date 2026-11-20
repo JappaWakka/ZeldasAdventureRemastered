@@ -11,7 +11,8 @@ function ResetDeathAmountForTriggers()
 	global.DeathAmountForTrigger.ShrineOfIllusion_PolsVoiceDoors[1] = global.DeathAmountForTrigger.ShrineOfIllusion_PolsVoiceDoors[0]
 	global.DeathAmountForTrigger.ShrineOfIllusion_KeyVire[1] = global.DeathAmountForTrigger.ShrineOfIllusion_KeyVire[0]
 	global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[1] = global.DeathAmountForTrigger.ShrineOfIllusion_KeyMolluska[0]
-	global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[1] = global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusion[0]
+	global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusionAndVireDoor[1] = global.DeathAmountForTrigger.ShrineOfIllusion_UnderworldMapIllusionAndVireDoor[0]
 	global.DeathAmountForTrigger.ShrineOfIllusion_CompassIllusion[1] = global.DeathAmountForTrigger.ShrineOfIllusion_CompassIllusion[0]
 	global.DeathAmountForTrigger.ShrineOfIllusion_Knife[1] = global.DeathAmountForTrigger.ShrineOfIllusion_Knife[0]
+	global.DeathAmountForTrigger.ShrineOfIllusion_BlackOrb[1] = global.DeathAmountForTrigger.ShrineOfIllusion_BlackOrb[0]
 }

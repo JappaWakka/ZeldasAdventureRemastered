@@ -16,9 +16,10 @@ function InitGameVariables()
 		ShrineOfIllusion_PolsVoiceDoors : [1,1],
 		ShrineOfIllusion_KeyVire : [1,1],
 		ShrineOfIllusion_KeyMolluska : [3,3],
-		ShrineOfIllusion_UnderworldMapIllusion : [1,1],
+		ShrineOfIllusion_UnderworldMapIllusionAndVireDoor : [1,1],
 		ShrineOfIllusion_CompassIllusion : [2,2],
-		ShrineOfIllusion_Knife : [2,2]
+		ShrineOfIllusion_Knife : [2,2],
+		ShrineOfIllusion_BlackOrb : [4,4]
 	}
 	global.EnemySpeeds =
 	{

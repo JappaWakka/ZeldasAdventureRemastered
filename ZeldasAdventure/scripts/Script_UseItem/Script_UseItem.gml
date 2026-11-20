@@ -54,6 +54,9 @@ function UseItem_Treasure()
 			case Treasures.Knife:
 				UseTreasure_Knife()
 				break;
+			case Treasures.BlackOrb:
+				UseTreasure_BlackOrb()
+				break;
 			case Treasures.Compass_Earth:
 				UseTreasure_Compass_Earth()
 				break;

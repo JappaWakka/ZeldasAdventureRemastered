@@ -12,11 +12,10 @@ function SaveGamePatches()
 		}
 		
 		if Item_FindIndex(CelestialSigns.Earth,2) <> -1 and
-		global.MaxHealth = 60 and global.Power = 30 and global.Defense = 30
+		global.MaxHealth = 60
 		{
 			FillHP(false,true)
 			IncreaseMaxHealth()
-			IncreaseDefenseAndPower()
 		}
 				
 		ini_open(global.SaveDataFileName)

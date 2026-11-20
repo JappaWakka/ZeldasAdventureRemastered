@@ -10,3 +10,8 @@ y >= 26 * tileHeight && y < 26 * tileHeight + tileHeight
 {
 	TriggerScriptName = "ShrineOfIllusion_KeyVire"
 }
+if x >= 18 * tileWidth && x < 18 * tileWidth + tileWidth &&
+y >= 24 * tileHeight && y < 24 * tileHeight + tileHeight
+{
+	TriggerScriptName = "ShrineOfIllusion_UnderworldMapIllusionAndVireDoor"
+}
