@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Music_Marsh_Ocean",
+  "audioGroupId":{
+    "name":"AudioGroup_Music",
+    "path":"audiogroups/AudioGroup_Music",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":41.766376,
+  "exportDir":"",
+  "name":"Music_Marsh_Ocean",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":32000,
+  "soundFile":"Music_Marsh_Ocean.ogg",
+  "volume":1.0,
+}

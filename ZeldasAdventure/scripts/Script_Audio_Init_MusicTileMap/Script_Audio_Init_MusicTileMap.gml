@@ -201,9 +201,9 @@ function Audio_Init_MusicTileMap()
 	global.Music[15][13] = "Plain_Stream";
 	global.Music[16][13] = "Plain_Stream";
 	
-	global.Music[19][13] = "Marsh";
-	global.Music[20][13] = "Marsh";
-	global.Music[21][13] = "Marsh";
+	global.Music[19][13] = "Marsh_Normal";
+	global.Music[20][13] = "Marsh_Normal";
+	global.Music[21][13] = "Marsh_Normal";
 	global.Music[22][13] = "Desert_Ocean";
 	global.Music[23][13] = "Forest_Ocean";
 	global.Music[24][13] = "Forest_Ocean";
@@ -219,11 +219,11 @@ function Audio_Init_MusicTileMap()
 	global.Music[15][14] = "Canyon_Normal";
 	global.Music[16][14] = "Plain_Stream";
 	global.Music[17][14] = "Plain";
-	global.Music[18][14] = "Marsh";
-	global.Music[19][14] = "Marsh";
-	global.Music[20][14] = "Marsh";
-	global.Music[21][14] = "Marsh";
-	global.Music[22][14] = "Marsh";
+	global.Music[18][14] = "Marsh_Normal";
+	global.Music[19][14] = "Marsh_Normal";
+	global.Music[20][14] = "Marsh_Normal";
+	global.Music[21][14] = "Marsh_Normal";
+	global.Music[22][14] = "Marsh_Normal";
 	global.Music[23][14] = "Forest";
 	global.Music[24][14] = "Forest";
 	global.Music[25][14] = "Forest";
@@ -239,11 +239,11 @@ function Audio_Init_MusicTileMap()
 	global.Music[15][15] = "Canyon_Normal";
 	global.Music[16][15] = "Canyon_Normal";
 	global.Music[17][15] = "Plain_Stream";
-	global.Music[18][15] = "Marsh";
-	global.Music[19][15] = "Marsh";
-	global.Music[20][15] = "Marsh";
-	global.Music[21][15] = "Marsh";
-	global.Music[22][15] = "Marsh";
+	global.Music[18][15] = "Marsh_Normal";
+	global.Music[19][15] = "Marsh_Normal";
+	global.Music[20][15] = "Marsh_Normal";
+	global.Music[21][15] = "Marsh_Normal";
+	global.Music[22][15] = "Marsh_Normal";
 	global.Music[23][15] = "Forest";
 	global.Music[24][15] = "Forest";
 	global.Music[25][15] = "Canyon_Normal";
@@ -268,10 +268,10 @@ function Audio_Init_MusicTileMap()
 	
 	global.Music[16][15] = "Canyon_Normal";
 	global.Music[17][15] = "Canyon_Normal";
-	global.Music[18][15] = "Marsh";
-	global.Music[19][15] = "Marsh";
-	global.Music[20][15] = "Marsh";
-	global.Music[21][15] = "Marsh";
+	global.Music[18][15] = "Marsh_Normal";
+	global.Music[19][15] = "Marsh_Normal";
+	global.Music[20][15] = "Marsh_Normal";
+	global.Music[21][15] = "Marsh_Normal";
 	global.Music[22][16] = "Sirram";
 	
 	global.Music[24][16] = "Canyon_Normal";
@@ -288,9 +288,9 @@ function Audio_Init_MusicTileMap()
 	
 	global.Music[16][17] = "Canyon_Normal";
 	global.Music[17][17] = "Canyon_Normal";
-	global.Music[18][17] = "Marsh";
-	global.Music[19][17] = "Marsh";
-	global.Music[20][17] = "Marsh";
+	global.Music[18][17] = "Marsh_Normal";
+	global.Music[19][17] = "Marsh_Normal";
+	global.Music[20][17] = "Marsh_Normal";
 	global.Music[21][17] = "Marsh_Ocean";
 	
 	global.Music[28][17] = "Fairy_Canyon";
@@ -303,9 +303,9 @@ function Audio_Init_MusicTileMap()
 	global.Music[15][18] = "Fireplace_Normal";
 	global.Music[16][18] = "Canyon_Normal";
 	global.Music[17][18] = "Canyon_Normal";
-	global.Music[18][18] = "Marsh";
-	global.Music[19][18] = "Marsh";
-	global.Music[20][18] = "Marsh";
+	global.Music[18][18] = "Marsh_Normal";
+	global.Music[19][18] = "Marsh_Normal";
+	global.Music[20][18] = "Marsh_Normal";
 	global.Music[21][18] = "Beach_Ocean";
 	
 	global.Music[27][18] = "Shrine_Illusion_Sign";

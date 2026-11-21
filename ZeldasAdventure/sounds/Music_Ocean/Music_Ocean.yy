@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Music_Ocean",
+  "audioGroupId":{
+    "name":"AudioGroup_Music",
+    "path":"audiogroups/AudioGroup_Music",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":41.319717,
+  "exportDir":"",
+  "name":"Music_Ocean",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":32000,
+  "soundFile":"Music_Ocean.ogg",
+  "volume":1.0,
+}

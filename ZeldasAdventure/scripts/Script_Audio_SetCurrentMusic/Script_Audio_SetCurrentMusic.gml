@@ -96,10 +96,10 @@ function Audio_SetCurrentMusic(TrackName)
 				global.CurrentMusic_IntroLength = global.MusicTracks.Lava_Wind.IntroLength;
 				global.CurrentMusic_LoopLength = global.MusicTracks.Lava_Wind.LoopLength;
 				break;
-			case "Marsh" :
-				global.CurrentMusic_Asset = global.MusicTracks.Marsh.Asset;
-				global.CurrentMusic_IntroLength = global.MusicTracks.Marsh.IntroLength;
-				global.CurrentMusic_LoopLength = global.MusicTracks.Marsh.LoopLength;
+			case "Marsh_Normal" :
+				global.CurrentMusic_Asset = global.MusicTracks.Marsh_Normal.Asset;
+				global.CurrentMusic_IntroLength = global.MusicTracks.Marsh_Normal.IntroLength;
+				global.CurrentMusic_LoopLength = global.MusicTracks.Marsh_Normal.LoopLength;
 				break;
 			case "Marsh_Ocean" :
 				global.CurrentMusic_Asset = global.MusicTracks.Marsh_Ocean.Asset;
