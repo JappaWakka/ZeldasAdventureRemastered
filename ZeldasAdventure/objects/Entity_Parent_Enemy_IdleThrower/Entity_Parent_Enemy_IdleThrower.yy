@@ -12,7 +12,9 @@
   "managed":true,
   "name":"Entity_Parent_Enemy_IdleThrower",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"KnockbackDistance","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.KnockbackDistances.Large",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"KnockbackDistance","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.KnockbackDistances.None",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"HitPoints","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Entity_Parent_Enemy","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"propertyId":{"name":"Defense","path":"objects/Entity_Parent_Enemy/Entity_Parent_Enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
   ],
   "parent":{
     "name":"Enemies",

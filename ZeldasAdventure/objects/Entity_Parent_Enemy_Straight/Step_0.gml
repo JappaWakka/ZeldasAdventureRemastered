@@ -61,8 +61,8 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true
 						ReturnPointPosition = [x,y]
 					}
 					
-					var ReceivedDamage = GetPower() - Defense
-					if ReceivedDamage > 0
+					var ReceivedDamage = clamp(GetPower() - Defense,0,GetPower())
+					if ReceivedDamage >= HealthPerHalfHeart
 					{
 						///Reduce HitPoints, play damage sound
 						HitPoints -= ReceivedDamage
@@ -73,6 +73,8 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true
 					}
 					else
 					{
+						///Reduce HitPoints, play no or not enough damage sound
+						HitPoints -= ReceivedDamage
 						audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
 						EnemyState = EnemyStates.Damaged
 						StartImmuneAnimation = true
@@ -111,7 +113,7 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true
 							ReceivedDamage = clamp(HitProjectile.Power - Defense,0,HitProjectile.Power)
 						}
 						
-						if ReceivedDamage > 0
+						if ReceivedDamage >= HealthPerHalfHeart
 						{
 							
 							///Reduce HitPoints, play damage sound
@@ -123,6 +125,8 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true
 						}
 						else
 						{
+							///Reduce HitPoints, play no or not enough damage sound
+							HitPoints -= ReceivedDamage
 							audio_play_sound_relative(SFX_Enemy_Immune,1000,false)
 							EnemyState = EnemyStates.Damaged
 							StartImmuneAnimation = true
