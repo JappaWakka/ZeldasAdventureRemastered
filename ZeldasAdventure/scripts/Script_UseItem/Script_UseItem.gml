@@ -95,44 +95,47 @@ function UseItem_Spell()
 		// Use Spell
 		switch Item_FindValue(SpellItem,1)
 		{
-			case Spells.Wand:
-				UseSpell_Wand();
+			case Spells.Boomerang:
+				UseSpell_Boomerang()
 				break;
-			case Spells.Firestorm:
-				UseSpell_Firestorm()
-				break;
-			case Spells.JadeRing:
-				UseSpell_JadeRing()
+			case Spells.Broadsword:
+				UseSpell_Broadsword()
 				break;
 			case Spells.Calm:
 				UseSpell_Calm()
 				break;
-			case Spells.Boomerang:
-				UseSpell_Boomerang()
-				break;
 			case Spells.Dagger:
 				UseSpell_Dagger()
-				break;
-			case Spells.Pyros:
-				UseSpell_Pyros()
-				break;
-			case Spells.TurquoiseRing:
-				UseSpell_TurquoiseRing()
-				break;
-			case Spells.JadeAmulet:
-				UseSpell_JadeAmulet()
-				break;
-			case Spells.ShortAxe:
-				UseSpell_ShortAxe()
-				break;
-			case Spells.RingsOfFire:
-				UseSpell_RingsOfFire()
 				break;
 			case Spells.Feather:
 				UseSpell_Feather()
 				break;
-			case Spells.Broadsword:
-				UseSpell_Broadsword()
+			case Spells.Firestorm:
+				UseSpell_Firestorm()
+				break;
+			case Spells.JadeAmulet:
+				UseSpell_JadeAmulet()
+				break;
+			case Spells.JadeRing:
+				UseSpell_JadeRing()
+				break;
+			case Spells.Noise:
+				UseSpell_Noise()
+				break;
+			case Spells.Pyros:
+				UseSpell_Pyros()
+				break;
+			case Spells.RingsOfFire:
+				UseSpell_RingsOfFire()
+				break;
+			case Spells.ShortAxe:
+				UseSpell_ShortAxe()
+				break;
+			case Spells.TurquoiseRing:
+				UseSpell_TurquoiseRing()
+				break;
+			case Spells.Wand:
+				UseSpell_Wand();
 				break;
 		}
 			

@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"eaa2313c-2b0b-4f1e-8a73-8d9522b12919","name":"eaa2313c-2b0b-4f1e-8a73-8d9522b12919","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"0579a5d0-6c9e-4f11-93b5-dfd2858b6e3d","name":"0579a5d0-6c9e-4f11-93b5-dfd2858b6e3d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e98f03ca-3e9e-44ec-b73d-a2601f7efd62","blendMode":0,"displayName":"default","isLocked":false,"name":"e98f03ca-3e9e-44ec-b73d-a2601f7efd62","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3015295f-eb65-412b-ba89-ae683832fd22","blendMode":0,"displayName":"default","isLocked":false,"name":"3015295f-eb65-412b-ba89-ae683832fd22","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Shrine_Illusion_03_StalfosDoors_Above",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eaa2313c-2b0b-4f1e-8a73-8d9522b12919","path":"sprites/Shrine_Illusion_03_StalfosDoors_Above/Shrine_Illusion_03_StalfosDoors_Above.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"506d6899-95e3-426d-9acd-30d93951c567","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0579a5d0-6c9e-4f11-93b5-dfd2858b6e3d","path":"sprites/Shrine_Illusion_03_StalfosDoors_Above/Shrine_Illusion_03_StalfosDoors_Above.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"20b3ab5f-9809-4bdb-91d6-c1f820c9ff7d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -5,7 +5,6 @@ if IsPlayerOnSameTile_EnemyOrNPC() = true && global.CameraIsFading = false and I
 		if ReturnPointPosition[0] <> -1 or ReturnPointPosition[1] <> -1
 		{
 			EnemyState = EnemyStates.Move
-			image_speed = 1
 			speed = global.EnemySpeeds.Slow
 			
 			if ReturnPointPosition[0] <> x or ReturnPointPosition[1] <> y

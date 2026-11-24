@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EnemyPath_Wallmaster_ShrineOfIllusion_22",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EnemyPath_Wallmaster_ShrineOfIllusion_22",
+  "parent":{
+    "name":"Enemy",
+    "path":"folders/Scripts/Paths/Enemy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

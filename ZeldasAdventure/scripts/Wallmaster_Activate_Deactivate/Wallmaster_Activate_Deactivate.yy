@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Wallmaster_Activate_Deactivate",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Wallmaster_Activate_Deactivate",
+  "parent":{
+    "name":"Enemy",
+    "path":"folders/Scripts/Paths/Enemy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

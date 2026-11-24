@@ -31,7 +31,10 @@ function Script_AfterSlide()
 			Entity_Enemy_Jackaroo.visible = true
 		}
 	}
-	Entity_Enemy_Jackaroo.Activated = true
+	if instance_exists(Entity_Enemy_Jackaroo) = true
+	{
+		Entity_Enemy_Jackaroo.Activated = true
+	}
 }
 
 function NPCPath_ShrineOfIllusion_ZeldaSlide()

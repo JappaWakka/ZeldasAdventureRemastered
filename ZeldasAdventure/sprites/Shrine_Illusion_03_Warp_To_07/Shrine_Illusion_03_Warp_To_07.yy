@@ -3,8 +3,8 @@
   "%Name":"Shrine_Illusion_03_Warp_To_07",
   "bboxMode":0,
   "bbox_bottom":42,
-  "bbox_left":210,
-  "bbox_right":256,
+  "bbox_left":215,
+  "bbox_right":250,
   "bbox_top":34,
   "collisionKind":0,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6c780575-f2f0-4837-ba8f-a84f1b08062a","name":"6c780575-f2f0-4837-ba8f-a84f1b08062a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8d06a0c2-f8f3-462a-ae78-abf0bdf5227a","name":"8d06a0c2-f8f3-462a-ae78-abf0bdf5227a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"675565da-990f-4b6a-afe1-0f5b8922ac24","blendMode":0,"displayName":"default","isLocked":false,"name":"675565da-990f-4b6a-afe1-0f5b8922ac24","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"7418bb7b-ae3a-4bae-9548-6fa5439b859d","blendMode":0,"displayName":"default","isLocked":false,"name":"7418bb7b-ae3a-4bae-9548-6fa5439b859d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Shrine_Illusion_03_Warp_To_07",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c780575-f2f0-4837-ba8f-a84f1b08062a","path":"sprites/Shrine_Illusion_03_Warp_To_07/Shrine_Illusion_03_Warp_To_07.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"99b8542f-a798-4476-8fba-bd8cd225c7b5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8d06a0c2-f8f3-462a-ae78-abf0bdf5227a","path":"sprites/Shrine_Illusion_03_Warp_To_07/Shrine_Illusion_03_Warp_To_07.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0b746c72-ab7a-43f7-a422-d7366c3a0669","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -81,8 +81,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"TextureGroup_Maps",
+    "path":"texturegroups/TextureGroup_Maps",
   },
   "type":0,
   "VTile":false,

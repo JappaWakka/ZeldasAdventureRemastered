@@ -79,6 +79,7 @@ function WarpTo(WarpArray, DeleteEnemiesIfDied = false, FadeSpeed = 12)
 		instance_activate_layer("CandleDarkness")
 		instance_activate_layer("TempObjects_Below")
 		instance_activate_layer("TempObjects_Above")
+		instance_activate_layer("SpecialCollisions")
 		instance_activate_region(TileX * tileWidth, TileY * tileHeight, tileWidth, tileHeight, true)
 		instance_activate_object(Entity_Parent_Player)
 		if DeleteEnemiesIfDied = true and global.PlayerIsDead = true and instance_exists(Entity_Parent_Enemy) = true
@@ -148,7 +149,16 @@ function WarpTo(WarpArray, DeleteEnemiesIfDied = false, FadeSpeed = 12)
 				var CoordinateIndex = floor(FrameIndex / 4)
 				if CurrentPath[CoordinateIndex][2] = "wait"
 				{
-					var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+					var randomDelay = 0
+				
+					if array_length(CurrentPath[CoordinateIndex]) > 4
+					{
+						randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+					}
+					else
+					{
+						randomDelay = CurrentPath[CoordinateIndex][3]
+					}
 					
 					image_speed = 0
 					CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]

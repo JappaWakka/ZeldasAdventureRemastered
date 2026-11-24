@@ -1,6 +1,12 @@
 //If the player is on the same tile
 if IsPlayerOnSameTile() = true
 {
+	if SetDirectionLater = true and instance_exists(Entity_Player) = true
+	{
+		direction = point_direction(x,y,Entity_Player.x,Entity_Player.y)
+		SetDirectionLater = false
+	}
+	
 	if global.CameraIsFading = false
 	{
 		//Activate
@@ -18,7 +24,10 @@ if IsPlayerOnSameTile() = true
 }
 else
 {
-	instance_destroy()
+	if IsMenuVisible() = false
+	{
+		instance_destroy()
+	}
 }
 
 

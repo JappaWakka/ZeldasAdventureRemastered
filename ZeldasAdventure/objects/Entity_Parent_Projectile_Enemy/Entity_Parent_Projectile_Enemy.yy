@@ -36,6 +36,7 @@
         "\"Straight\"",
         "\"TowardsPlayer\"",
       ],"multiselect":false,"name":"ProjectileDirection","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Straight\"","varType":6,},
+    {"$GMObjectProperty":"v2","%Name":"SetDirectionLater","filters":[],"listItems":[],"multiselect":false,"name":"SetDirectionLater","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -62,6 +62,7 @@ function Camera_Pan()
 			instance_activate_layer("CandleDarkness")
 			instance_activate_layer("TempObjects_Below")
 			instance_activate_layer("TempObjects_Above")
+			instance_activate_layer("SpecialCollisions")
 			instance_activate_object(Entity_Parent_Player)
 			instance_activate_region(Desired.x, Desired.y, tileWidth, tileHeight,true)
 			
@@ -141,10 +142,20 @@ function Camera_Pan()
 					{
 						with Entity_Parent_Enemy_Path
 						{
+							FrameIndex = 0
 							var CoordinateIndex = floor(FrameIndex / 4)
 							if CurrentPath[CoordinateIndex][2] = "wait"
 							{
-								var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+								var randomDelay = 0
+				
+								if array_length(CurrentPath[CoordinateIndex]) > 4
+								{
+									randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+								}
+								else
+								{
+									randomDelay = CurrentPath[CoordinateIndex][3]
+								}
 								
 								image_speed = 0
 								CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
@@ -275,27 +286,39 @@ function Camera_Pan()
 						with Entity_Parent_Enemy_Path
 						{
 							var CoordinateIndex = floor(FrameIndex / 4)
-							if CurrentPath[CoordinateIndex][2] = "wait"
+							if CoordinateIndex = 0
 							{
-								var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
-								
-								image_speed = 0
-								CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
-								CanContinue = false
-								EnemyState = EnemyStates.Idle
-								FrameIndex = 4
-								if randomDelay = 0
+								if CurrentPath[CoordinateIndex][2] = "wait"
 								{
-									alarm_set(0,4)
+									var randomDelay = 0
+								
+									if array_length(CurrentPath[CoordinateIndex]) > 4
+									{
+										randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+									}
+									else
+									{
+										randomDelay = CurrentPath[CoordinateIndex][3]
+									}
+									
+									image_speed = 0
+									CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+									CanContinue = false
+									EnemyState = EnemyStates.Idle
+									FrameIndex = 4
+									if randomDelay = 0
+									{
+										alarm_set(0,4)
+									}
+									else
+									{
+										alarm_set(0, randomDelay);
+									}
 								}
 								else
 								{
-									alarm_set(0, randomDelay);
+									alarm_set(0, 1);
 								}
-							}
-							else
-							{
-								alarm_set(0, 1);
 							}
 						}
 						//Activate NPCs that move on a path
@@ -304,27 +327,30 @@ function Camera_Pan()
 							with Entity_Parent_NPC_Path
 							{
 								var CoordinateIndex = floor(FrameIndex / 4)
-								if CurrentPath[CoordinateIndex][2] = "wait"
+								if CoordinateIndex = 0
 								{
-									var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
-									
-									image_speed = 0
-									CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
-									CanContinue = false
-									EnemyState = NPCStates.Idle
-									FrameIndex = 4
-									if randomDelay = 0
+									if CurrentPath[CoordinateIndex][2] = "wait"
 									{
-										alarm_set(1,4)
+										var randomDelay = round(random_range(CurrentPath[CoordinateIndex][3],CurrentPath[CoordinateIndex][4]))
+										
+										image_speed = 0
+										CurrentCoordinates = [x + CurrentPath[CoordinateIndex][0], y + CurrentPath[CoordinateIndex][1]]
+										CanContinue = false
+										EnemyState = NPCStates.Idle
+										FrameIndex = 4
+										if randomDelay = 0
+										{
+											alarm_set(1,4)
+										}
+										else
+										{
+											alarm_set(1, randomDelay);
+										}
 									}
 									else
 									{
-										alarm_set(1, randomDelay);
+										alarm_set(1, 1);
 									}
-								}
-								else
-								{
-									alarm_set(1, 1);
 								}
 							}
 						}
